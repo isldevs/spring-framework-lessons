@@ -1,0 +1,13 @@
+spring-context-6.2.11.jar 1358054 published SHA-1 verified
+spring-aop-6.2.11.jar 420148 published SHA-1 verified
+spring-beans-6.2.11.jar 890054 published SHA-1 verified
+spring-core-6.2.11.jar 1968177 published SHA-1 verified
+spring-expression-6.2.11.jar 317833 published SHA-1 verified
+spring-jcl-6.2.11.jar 24540 published SHA-1 verified
+micrometer-observation-1.14.11.jar 75082 published SHA-1 verified
+micrometer-commons-1.14.11.jar 47932 published SHA-1 verified
+ecj-3.40.0.jar 3312549 published SHA-1 verified
+manual wiring: true
+spring wiring: true
+same singleton: true
+unmanaged same as bean: false

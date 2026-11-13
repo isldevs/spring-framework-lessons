@@ -1,0 +1,11 @@
+# Recreate environments and large downloaded model caches with setup scripts.
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+**/source/voice/models/
+# Local credentials/configuration never belong in generated lesson artifacts.
+.env
+.env.*
+!.env.example
+.DS_Store

@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:01,691
+Who creates your Java objects?
+
+2
+00:00:01,891 --> 00:00:03,040
+Without Spring, your code
+
+3
+00:00:03,040 --> 00:00:04,880
+creates a repository,
+
+4
+00:00:04,880 --> 00:00:06,907
+then passes it into a service.
+
+5
+00:00:07,147 --> 00:00:10,080
+With Spring, you register bean definitions.
+
+6
+00:00:10,080 --> 00:00:11,660
+The container uses them to create
+
+7
+00:00:11,660 --> 00:00:12,620
+managed objects
+
+8
+00:00:12,620 --> 00:00:15,100
+and wire their dependencies.
+
+9
+00:00:15,350 --> 00:00:18,300
+Here, the service bean asks for a repository.
+
+10
+00:00:18,300 --> 00:00:19,923
+Spring supplies that bean.
+
+11
+00:00:20,163 --> 00:00:21,880
+Your application calls getBean
+
+12
+00:00:21,880 --> 00:00:24,180
+to request the ready service.
+
+13
+00:00:24,180 --> 00:00:25,720
+In our Java run, its repository
+
+14
+00:00:25,720 --> 00:00:28,991
+is the same bean from the container.
+
+15
+00:00:29,251 --> 00:00:31,340
+That’s inversion of control.
+
+16
+00:00:31,340 --> 00:00:32,980
+Construction and wiring move to Spring,
+
+17
+00:00:32,980 --> 00:00:34,440
+for managed beans,
+
+18
+00:00:34,440 --> 00:00:36,466
+not every Java object.
+

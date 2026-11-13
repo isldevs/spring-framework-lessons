@@ -1,0 +1,15 @@
+{
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-i",
+    "/workspace/output/week-01/day-01/video.mp4",
+    "-af",
+    "loudnorm=I=-16:TP=-1.5:LRA=7:print_format=json",
+    "-f",
+    "null",
+    "-"
+  ],
+  "exit_code": 0
+}

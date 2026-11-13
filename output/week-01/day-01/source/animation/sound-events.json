@@ -1,0 +1,22 @@
+[
+  {
+    "time": 4.623965,
+    "purpose": "manual reference connected"
+  },
+  {
+    "time": 12.56066,
+    "purpose": "container graph wired"
+  },
+  {
+    "time": 16.312441,
+    "purpose": "dependency reference supplied"
+  },
+  {
+    "time": 22.707805,
+    "purpose": "service reference returned"
+  },
+  {
+    "time": 32.163293,
+    "purpose": "ownership shift complete"
+  }
+]

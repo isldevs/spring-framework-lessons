@@ -1,0 +1,13 @@
+{
+  "command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-i",
+    "/workspace/output/week-01/day-01/platforms/youtube-shorts/youtube-shorts.mp4",
+    "-f",
+    "null",
+    "-"
+  ],
+  "exit_code": 0
+}

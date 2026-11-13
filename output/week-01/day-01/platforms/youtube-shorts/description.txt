@@ -1,0 +1,11 @@
+Who creates and wires your Java objects? See manual construction beside Spring’s IoC container, follow a repository into a service, and watch the application request the ready service with getBean().
+
+Spring manages the beans you register. It does not create every Java object.
+
+Official Spring references:
+https://docs.spring.io/spring-framework/reference/core/beans/introduction.html
+https://docs.spring.io/spring-framework/reference/core/beans/java/bean-annotation.html
+
+iSLDevs — practical Java and Spring, made visual.
+
+#SpringFramework #Java #DependencyInjection #SpringIoC #Shorts #iSLDevs

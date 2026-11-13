@@ -1,0 +1,139 @@
+synth 0 Who creates your Java objects?
+single scene batch; phonemes 38
+duration 1.6910833333333333 total 1.8910833333333332 phoneme timings 0
+synth 1 Without Spring, your code creates a repository, then passes it into a service.
+single scene batch; phonemes 85
+duration 5.015541666666667 total 7.146625 phoneme timings 0
+synth 2 With Spring, you register bean definitions. The container uses them to create managed objects and wire their dependencies.
+single scene batch; phonemes 131
+duration 7.953083333333334 total 15.349708333333334 phoneme timings 0
+synth 3 Here, the service bean asks for a repository. Spring supplies that bean.
+single scene batch; phonemes 76
+duration 4.573666666666667 total 20.163375000000002 phoneme timings 0
+synth 4 Your application calls get bean to request the ready service. In our Java run, its repository is the same bean from the container.
+single scene batch; phonemes 140
+duration 8.82725 total 29.250625 phoneme timings 0
+synth 5 That’s inversion of control. Construction and wiring move to Spring, for managed beans, not every Java object.
+single scene batch; phonemes 124
+duration 7.214916666666666 total 36.91554166666667 phoneme timings 0
+{
+  "sample_rate": 48000,
+  "voice": "am_puck80_fenrir20",
+  "voice_blend": {
+    "am_puck": 0.8,
+    "am_fenrir": 0.2
+  },
+  "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
+  "speed": 1.02,
+  "one_inference_batch_per_scene": true,
+  "duration": 36.91554166666667,
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 1.891083
+    },
+    {
+      "scene": 2,
+      "start": 1.891083,
+      "end": 7.146625
+    },
+    {
+      "scene": 3,
+      "start": 7.146625,
+      "end": 15.349708
+    },
+    {
+      "scene": 4,
+      "start": 15.349708,
+      "end": 20.163375
+    },
+    {
+      "scene": 5,
+      "start": 20.163375,
+      "end": 29.250625
+    },
+    {
+      "scene": 6,
+      "start": 29.250625,
+      "end": 36.915542
+    }
+  ],
+  "phrases": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 1.691083,
+      "text": "Who creates your Java objects?"
+    },
+    {
+      "scene": 2,
+      "start": 1.891083,
+      "end": 6.906625,
+      "text": "Without Spring, your code creates a repository, then passes it into a service."
+    },
+    {
+      "scene": 3,
+      "start": 7.146625,
+      "end": 15.099708,
+      "text": "With Spring, you register bean definitions. The container uses them to create managed objects and wire their dependencies."
+    },
+    {
+      "scene": 4,
+      "start": 15.349708,
+      "end": 19.923375,
+      "text": "Here, the service bean asks for a repository. Spring supplies that bean."
+    },
+    {
+      "scene": 5,
+      "start": 20.163375,
+      "end": 28.990625,
+      "text": "Your application calls get bean to request the ready service. In our Java run, its repository is the same bean from the container."
+    },
+    {
+      "scene": 6,
+      "start": 29.250625,
+      "end": 36.465542,
+      "text": "That\u2019s inversion of control. Construction and wiring move to Spring, for managed beans, not every Java object."
+    }
+  ],
+  "captions": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 1.691083,
+      "text": "Who creates your Java objects?"
+    },
+    {
+      "scene": 2,
+      "start": 1.891083,
+      "end": 6.906625,
+      "text": "Without Spring, your code creates a repository, then passes it into a service."
+    },
+    {
+      "scene": 3,
+      "start": 7.146625,
+      "end": 15.099708,
+      "text": "With Spring, you register bean definitions. The container uses them to create managed objects and wire their dependencies."
+    },
+    {
+      "scene": 4,
+      "start": 15.349708,
+      "end": 19.923375,
+      "text": "Here, the service bean asks for a repository. Spring supplies that bean."
+    },
+    {
+      "scene": 5,
+      "start": 20.163375,
+      "end": 28.990625,
+      "text": "Your application calls get bean to request the ready service. In our Java run, its repository is the same bean from the container."
+    },
+    {
+      "scene": 6,
+      "start": 29.250625,
+      "end": 36.465542,
+      "text": "That\u2019s inversion of control. Construction and wiring move to Spring, for managed beans, not every Java object."
+    }
+  ],
+  "caption_method": "Scene utterance boundaries are exact synthesis edit points. Shorter display captions will use independent ASR word timing."
+}

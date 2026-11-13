@@ -1,0 +1,5 @@
+Initial FFprobe detected missing transfer_characteristics and colour_primaries despite encoding flags.
+Corrected final H.264 VUI and MP4 color tags losslessly using:
+ffmpeg -i video.mp4 -map 0 -c copy -bsf:v h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1 -color_primaries bt709 -color_trc bt709 -colorspace bt709 -movflags +faststart tagged.mp4
+FFmpeg warned: 4 bytes left at end of AVCC header. Final decode validation and FFprobe determine acceptance.
+Renderer now includes the same h264_metadata bitstream filter for reproducibility.

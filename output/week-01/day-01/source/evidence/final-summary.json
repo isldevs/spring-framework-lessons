@@ -1,0 +1,32 @@
+{
+  "duration": 36.916667,
+  "video_duration": 36.916667,
+  "audio_duration": 36.915,
+  "frames": 2215,
+  "timestamps_checked": 2215,
+  "fps": "60/1",
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "pixel_format": "yuv420p",
+  "color_space": "bt709",
+  "color_transfer": "bt709",
+  "color_primaries": "bt709",
+  "audio_sample_rate": "48000",
+  "audio_channels": 2,
+  "srt_cues": 18,
+  "source_safe_bounds_samples": 173,
+  "source_first_second_exact_cover": true,
+  "caption_words_match_script": true,
+  "approved_scenes_count": 6,
+  "integrated_loudness_lufs": -16.18,
+  "true_peak_dbtp": -1.36,
+  "loudness_range_lu": 4.4,
+  "first_second_ssim_average": 0.998971,
+  "first_second_ssim_minimum": 0.998913,
+  "first_second_compared_frames": 60,
+  "decode_error_log_empty": true,
+  "black_intervals_detected": 0,
+  "silence_intervals": [
+    "36.533"
+  ]
+}

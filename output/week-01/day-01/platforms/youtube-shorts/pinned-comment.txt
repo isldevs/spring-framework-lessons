@@ -1,0 +1,1 @@
+getBean() retrieves a bean from the Spring container. In this example, the default singleton beans are created when the context starts. The service receives the same repository bean that the context returns. Which part should we visualize next: bean scopes or constructor injection?

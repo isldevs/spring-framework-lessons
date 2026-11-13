@@ -1,0 +1,14 @@
+{
+  "command": [
+    "ffprobe",
+    "-v",
+    "error",
+    "-count_frames",
+    "-show_streams",
+    "-show_format",
+    "-of",
+    "json",
+    "/workspace/output/week-01/day-01/platforms/facebook-reels/facebook-reels.mp4"
+  ],
+  "exit_code": 0
+}

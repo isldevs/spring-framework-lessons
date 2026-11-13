@@ -1,0 +1,4 @@
+manual wiring: true
+spring wiring: true
+same singleton: true
+unmanaged same as bean: false

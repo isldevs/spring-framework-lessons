@@ -1,0 +1,30 @@
+[aist#0:0/pcm_s16le @ 0x564110115400] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/output/week-01/day-01/source/animation/premix.wav':
+  Duration: 00:00:36.92, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s24le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/workspace/output/week-01/day-01/source/animation/mix.wav':
+  Metadata:
+    ISFT            : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s24le
+size=    4096KiB time=00:00:14.99 bitrate=2237.0kbits/s speed=  30x    
+size=    8960KiB time=00:00:32.39 bitrate=2265.5kbits/s speed=32.4x    
+[Parsed_loudnorm_0 @ 0x7fe668002800] 
+{
+	"input_i" : "-17.68",
+	"input_tp" : "-1.50",
+	"input_lra" : "4.30",
+	"input_thresh" : "-28.29",
+	"output_i" : "-16.01",
+	"output_tp" : "-1.50",
+	"output_lra" : "3.20",
+	"output_thresh" : "-26.54",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.01"
+}
+[out#0/wav @ 0x5641101155c0] video:0KiB audio:10382KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000959%
+size=   10383KiB time=00:00:37.00 bitrate=2298.8kbits/s speed=29.5x    

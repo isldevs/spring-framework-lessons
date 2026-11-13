@@ -1,0 +1,7 @@
+Who creates your Java objects? ☕
+
+With manual construction, your code creates a repository and passes it to a service. With Spring IoC, the container creates and wires the managed beans you register. Your application can then request the ready service with getBean().
+
+That shift in control is inversion of control. Spring manages registered beans; other Java objects can still be created by your code.
+
+#SpringFramework #Java #DependencyInjection #SpringIoC #JavaDevelopers #iSLDevs
