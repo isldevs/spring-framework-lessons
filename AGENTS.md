@@ -13,3 +13,28 @@ The user has authorized this repository as the destination for generated iSLDevs
 - Exclude virtual environments, Python bytecode, model caches, downloaded binary speech models and large transient caches. Keep the model hashes, license evidence, dependency locks, download scripts and reproduction instructions needed to recreate those dependencies.
 - Verify actual encoded files and packaged copies. Never fabricate Java output, test results or listening reviews. Keep any unmet quality requirement clearly documented; automated transcript or pitch checks do not establish human voice naturalness.
 - Push to GitHub only. Do not upload, schedule or publish videos to YouTube or Facebook unless the user explicitly authorizes that separate action.
+
+## Required handoff after every video generation or update
+
+This is the user's mandatory delivery format. A link-only or shortened handoff is insufficient.
+
+1. Start with the actual video title, duration, resolution, FPS, video/audio codecs, audio sample rate, color space, and verification status. Report measured values and clearly identify any incomplete requirement. Never claim an unperformed check.
+2. Provide direct clickable download links for every item below:
+   - Finished MP4 and complete ZIP.
+   - Cover and synchronized SRT subtitles.
+   - Narration audio and narration script.
+   - Timed storyboard.
+   - YouTube metadata, hashtags, and tags.
+   - Facebook metadata and hashtags.
+   - Asset-rights record and originality review.
+   - QA report and SHA-256 checksums.
+   - YouTube Shorts and Facebook Reels upload packages.
+3. In the same final response, paste all publishing text directly in chat, each field in its own copyable text block, because the user uploads from a phone:
+   - YouTube title.
+   - YouTube description with hashtags.
+   - YouTube comma-separated tags.
+   - YouTube pinned comment.
+   - Facebook Reels caption with hashtags.
+4. Do not substitute metadata download links for the inline copyable publishing text. Include both.
+5. Push generated files and reproducible sources to https://github.com/isldevs/spring-framework-lessons.git, following the safe normal-push workflow above. Include the resulting GitHub commit link in the handoff.
+6. Keep status truthful: completed rendering/packaging or automated checks do not establish perceptual listening acceptance. Disclose outstanding requirements without inventing results.
