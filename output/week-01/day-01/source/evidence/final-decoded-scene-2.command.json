@@ -8,10 +8,10 @@
     "-ss",
     "6.095516600000001",
     "-i",
-    "/workspace/output/week-01/day-01/video.mp4",
+    "/workspace/spring-framework-lessons/output/week-01/day-01/video.mp4",
     "-frames:v",
     "1",
-    "/workspace/output/week-01/day-01/source/evidence/final-decoded-scene-2.png"
+    "/workspace/spring-framework-lessons/output/week-01/day-01/source/evidence/final-decoded-scene-2.png"
   ],
   "exit_code": 0
 }

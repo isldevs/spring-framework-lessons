@@ -13,9 +13,9 @@ duration 4.573666666666667 total 20.163375000000002 phoneme timings 0
 synth 4 Your application calls get bean to request the ready service. In our Java run, its repository is the same bean from the container.
 single scene batch; phonemes 140
 duration 8.82725 total 29.250625 phoneme timings 0
-synth 5 That’s inversion of control. Construction and wiring move to Spring, for managed beans, not every Java object.
-single scene batch; phonemes 124
-duration 7.214916666666666 total 36.91554166666667 phoneme timings 0
+synth 5 Here’s the whole flow. Define your beans. Spring creates them and wires their dependencies. Your application requests the ready service. That’s inversion of control—for managed beans, not every Java object.
+single scene batch; phonemes 218
+duration 13.117166666666666 total 44.36779166666666 phoneme timings 0
 {
   "sample_rate": 48000,
   "voice": "am_puck80_fenrir20",
@@ -26,7 +26,8 @@ duration 7.214916666666666 total 36.91554166666667 phoneme timings 0
   "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
   "speed": 1.02,
   "one_inference_batch_per_scene": true,
-  "duration": 36.91554166666667,
+  "final_hold_seconds": 2.0,
+  "duration": 44.36779166666667,
   "scenes": [
     {
       "scene": 1,
@@ -56,7 +57,7 @@ duration 7.214916666666666 total 36.91554166666667 phoneme timings 0
     {
       "scene": 6,
       "start": 29.250625,
-      "end": 36.915542
+      "end": 44.367792
     }
   ],
   "phrases": [
@@ -93,8 +94,8 @@ duration 7.214916666666666 total 36.91554166666667 phoneme timings 0
     {
       "scene": 6,
       "start": 29.250625,
-      "end": 36.465542,
-      "text": "That\u2019s inversion of control. Construction and wiring move to Spring, for managed beans, not every Java object."
+      "end": 42.367792,
+      "text": "Here\u2019s the whole flow. Define your beans. Spring creates them and wires their dependencies. Your application requests the ready service. That\u2019s inversion of control\u2014for managed beans, not every Java object."
     }
   ],
   "captions": [
@@ -131,8 +132,8 @@ duration 7.214916666666666 total 36.91554166666667 phoneme timings 0
     {
       "scene": 6,
       "start": 29.250625,
-      "end": 36.465542,
-      "text": "That\u2019s inversion of control. Construction and wiring move to Spring, for managed beans, not every Java object."
+      "end": 42.367792,
+      "text": "Here\u2019s the whole flow. Define your beans. Spring creates them and wires their dependencies. Your application requests the ready service. That\u2019s inversion of control\u2014for managed beans, not every Java object."
     }
   ],
   "caption_method": "Scene utterance boundaries are exact synthesis edit points. Shorter display captions will use independent ASR word timing."

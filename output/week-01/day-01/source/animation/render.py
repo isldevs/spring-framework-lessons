@@ -74,7 +74,7 @@ def cover():
     return im
 COVER=cover()
 
-def scene(k,u):
+def scene(k,u,elapsed=None,recap=None,scene_duration=None):
     if k==0:
         im=COVER.copy()
         # The first second is EXACTLY cover.png; a traveling reference follows.
@@ -149,24 +149,71 @@ def scene(k,u):
             txt(im,'Same Repo instance',148,1225,28,WHITE)
         return im
     if k==5:
-        im=base(k,'INVERSION OF CONTROL',['Control changes','hands.'])
-        # Ownership of the construction process moves, with a separate unmanaged object.
-        node(im,'App',130,662,255,127,CYAN,'your code')
-        box(im,(559,633,960,1070),fill='#112532',outline=GREEN,r=26,width=2)
-        txt(im,'SPRING',760,654,34,GREEN,True,center=True)
-        arrow(im,(397,730),(539,730),reveal(u,0,.25),PURPLE)
-        p=reveal(u,.05,.32);x=150+440*p;y=835-70*p
-        box(im,(x,y,x+340,y+126),fill='#1f2b46',outline=PURPLE,r=18)
-        lines(im,['creation','+ wiring'],x+170,y+13,34,WHITE,True,center=True,gap=1.25)
-        if u>.38:
-            txt(im,'managed beans',760,936,33,GREEN,True,center=True)
-            txt(im,'Repo + Service',760,993,29,WHITE,center=True)
-        if u>.57:
-            box(im,(130,1132,960,1268),fill=CARD,outline=EDGE,r=18)
-            txt(im,'new Repo()',155,1152,36,CYAN,mono=True)
-            txt(im,'Other objects stay yours.',155,1210,31,WHITE)
-        return im
+        return recap_scene(u,elapsed,recap,scene_duration)
     raise ValueError(k)
+
+def recap_complete_at(cues):
+    """Scene-relative time when the final diagram is fully assembled and static."""
+    ready=float(cues.get('ready',8.0));request=float(cues.get('request',7.1))
+    returned=max(ready,request+.60)+.70
+    return max(returned,float(cues.get('qualifier',cues.get('takeaway',9.3)))+.05)
+
+def recap_scene(u,elapsed=None,cues=None,scene_duration=None):
+    """One progressive overview: definitions, creation/wiring, then lookup.
+
+    The application arrows only appear after the managed object graph exists.
+    No creation animation follows getBean. All diagram elements stop moving
+    before the reserved final two-second hold. Caption/progress areas are separate.
+    """
+    cues=cues or {};duration=scene_duration or 15.117167
+    t=u*duration if elapsed is None else elapsed
+    at=lambda key,default:float(cues.get(key,default))
+    define=at('define',1.4);create=at('create',3.2);wire=at('wire',4.6)
+    request=at('request',7.1);ready=at('ready',8.0);takeaway=at('takeaway',9.3)
+    qualifier=at('qualifier',takeaway)
+    assert define<=create<=wire<=request<=ready<=takeaway
+    im=base(5,'THE BIG PICTURE',['The whole flow.'])
+    if t>=qualifier:
+        txt(im,'Managed beans only',540,544,35,GREEN,True,center=True)
+    else:
+        txt(im,'Define / Create + wire / Request',540,546,30,MUTED,center=True)
+
+    # A definition is metadata, not an application request for a new instance.
+    if t>=define:
+        box(im,(170,618,910,738),fill=CARD,outline=PURPLE,r=20,width=2)
+        txt(im,'DEFINE',198,630,25,PURPLE,True)
+        txt(im,'@Bean definitions',540,672,40,WHITE,mono=True,center=True)
+    if t>=create-.45:
+        arrow(im,(540,749),(540,808),reveal(t,create-.45,.45),PURPLE,4)
+        txt(im,'register',579,758,27,MUTED)
+    if t>=create:
+        box(im,(135,825,945,1057),fill='#112532',outline=GREEN,r=25,width=2)
+        txt(im,'SPRING',165,843,31,GREEN,True)
+        # Align the second header to the container's right edge.
+        d=ImageDraw.Draw(im)
+        tw=d.textlength('CREATES + WIRES',font=font(27,True))
+        txt(im,'CREATES + WIRES',912-tw,845,27,GREEN,True)
+        node(im,'Repo',175,913,260,100,CYAN)
+        node(im,'Service',645,913,260,100,GREEN)
+    if t>=wire:
+        # Repo is the constructor dependency, and the arrow carries its reference.
+        p=reveal(t,wire,min(.70,max(.20,request-wire-.15)))
+        arrow(im,(435,963),(625,963),p,PURPLE,5)
+        if p<1:
+            x=435+190*p
+            ImageDraw.Draw(im).ellipse((x-8,955,x+8,971),fill=WHITE)
+        txt(im,'repo reference',540,1014,25,PURPLE,center=True)
+    if t>=request:
+        box(im,(175,1172,905,1285),fill=CARD,outline=CYAN,r=20,width=2)
+        txt(im,'APPLICATION',200,1182,25,CYAN,True)
+        txt(im,'getBean(Service.class)',540,1218,40,WHITE,mono=True,center=True)
+        arrow(im,(540,1171),(540,1061),reveal(t,request,.60),CYAN,5)
+        txt(im,'request',389,1093,30,CYAN)
+    return_start=max(ready,request+.60)
+    if t>=return_start:
+        arrow(im,(760,1061),(760,1158),reveal(t,return_start,.70),GREEN,5)
+        lines(im,['ready','service'],790,1073,29,GREEN,gap=1.16)
+    return im
 
 def read_timing():
     data=json.loads((ROOT/'source/timing.json').read_text())
@@ -190,7 +237,7 @@ def render_frame(t,data,with_caption=True):
     s=scenes[k];u=(t-s['start'])/(s['end']-s['start'])
     # The initial exact cover is guaranteed even though narration starts at t=0.
     if t<1:return COVER.copy()
-    im=scene(k,u)
+    im=scene(k,u,elapsed=t-s['start'],recap=data.get('recap_cues'),scene_duration=s['end']-s['start']) if k==5 else scene(k,u)
     if with_caption:
         c=next((c for c in data['captions'] if c['start']<=t<c['end']),None)
         if c:caption(im,c['text'])
@@ -217,6 +264,10 @@ def main():
         contact=Image.new('RGB',(324*4,576*2),NAVY)
         for i,im in enumerate(thumbs):contact.paste(im,(i%4*324,i//4*576))
         contact.save(out/'mobile-contact-sheet.png')
+        closing=data['scenes'][-1]
+        completed_at=data['duration']-min(1.0,data.get('final_hold_seconds',2.0)/2)
+        recap=scene(5,1.0,elapsed=completed_at-closing['start'],recap=data.get('recap_cues'),scene_duration=closing['end']-closing['start'])
+        recap.save(ROOT/'recap.png')
     if a.render:
         frames=math.ceil(data['duration']*FPS)
         cmd=['ffmpeg','-y','-hide_banner','-loglevel','warning','-f','rawvideo','-vcodec','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','pipe:0','-i',str(ROOT/'source/animation/mix.wav'),'-map','0:v','-map','1:a','-vf','scale=in_range=full:out_range=tv:out_color_matrix=bt709,format=yuv420p','-c:v','libx264','-preset','fast','-crf','19','-threads','2','-bsf:v','h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1','-color_range','tv','-colorspace','bt709','-color_trc','bt709','-color_primaries','bt709','-c:a','aac','-b:a','192k','-ar','48000','-ac','2','-t',str(frames/FPS),'-movflags','+faststart',str(ROOT/'video.mp4')]

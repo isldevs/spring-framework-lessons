@@ -30,7 +30,12 @@ fx=np.zeros((n,2));events=[]
 for i,s in enumerate(data['scenes'][1:],1):
     dur=s['end']-s['start']
     offset={1:.52,2:.66,3:.20,4:.28,5:.38}[i]
-    start=s['start']+dur*offset;events.append({'time':round(start,6),'purpose':['','manual reference connected','container graph wired','dependency reference supplied','service reference returned','ownership shift complete'][i]})
+    start=s['start']+dur*offset
+    purpose=['','manual reference connected','container graph wired','dependency reference supplied','service reference returned','recap ready service reference returned'][i]
+    if i==5 and 'recap_cues_absolute' in data:
+        cues=data['recap_cues_absolute']
+        start=max(cues['ready'],cues['request']+.60)+.70
+    events.append({'time':round(start,6),'purpose':purpose})
     j=int(start*SR);tt=np.arange(int(.20*SR))/SR
     a=.010*np.sin(2*np.pi*(660+110*i)*tt)*np.exp(-tt*28)*(1-np.exp(-tt*180))
     fx[j:j+len(a),:]+=a[:,None]*np.array([[.85,1.]])

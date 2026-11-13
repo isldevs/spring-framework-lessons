@@ -4,7 +4,7 @@
     "-hide_banner",
     "-nostats",
     "-i",
-    "/workspace/output/week-01/day-01/video.mp4",
+    "/workspace/spring-framework-lessons/output/week-01/day-01/video.mp4",
     "-af",
     "silencedetect=noise=-50dB:d=0.15",
     "-f",

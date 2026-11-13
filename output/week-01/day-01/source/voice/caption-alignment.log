@@ -1,0 +1,140 @@
+[
+  {
+    "scene": 1,
+    "start": 0.0,
+    "end": 1.691083,
+    "text": "Who creates your Java objects?"
+  },
+  {
+    "scene": 2,
+    "start": 1.891083,
+    "end": 3.04,
+    "text": "Without Spring, your code"
+  },
+  {
+    "scene": 2,
+    "start": 3.04,
+    "end": 4.86,
+    "text": "creates a repository,"
+  },
+  {
+    "scene": 2,
+    "start": 4.86,
+    "end": 6.906625,
+    "text": "then passes it into a service."
+  },
+  {
+    "scene": 3,
+    "start": 7.146625,
+    "end": 10.08,
+    "text": "With Spring, you register bean definitions."
+  },
+  {
+    "scene": 3,
+    "start": 10.08,
+    "end": 11.66,
+    "text": "The container uses them to create"
+  },
+  {
+    "scene": 3,
+    "start": 11.66,
+    "end": 12.64,
+    "text": "managed objects"
+  },
+  {
+    "scene": 3,
+    "start": 12.64,
+    "end": 15.099708,
+    "text": "and wire their dependencies."
+  },
+  {
+    "scene": 4,
+    "start": 15.349708,
+    "end": 18.3,
+    "text": "Here, the service bean asks for a repository."
+  },
+  {
+    "scene": 4,
+    "start": 18.3,
+    "end": 19.923375,
+    "text": "Spring supplies that bean."
+  },
+  {
+    "scene": 5,
+    "start": 20.163375,
+    "end": 21.9,
+    "text": "Your application calls getBean"
+  },
+  {
+    "scene": 5,
+    "start": 21.9,
+    "end": 24.18,
+    "text": "to request the ready service."
+  },
+  {
+    "scene": 5,
+    "start": 24.18,
+    "end": 25.72,
+    "text": "In our Java run, its repository"
+  },
+  {
+    "scene": 5,
+    "start": 25.72,
+    "end": 28.990625,
+    "text": "is the same bean from the container."
+  },
+  {
+    "scene": 6,
+    "start": 29.250625,
+    "end": 30.62,
+    "text": "Here’s the whole flow."
+  },
+  {
+    "scene": 6,
+    "start": 30.62,
+    "end": 32.12,
+    "text": "Define your beans."
+  },
+  {
+    "scene": 6,
+    "start": 32.12,
+    "end": 32.98,
+    "text": "Spring creates them"
+  },
+  {
+    "scene": 6,
+    "start": 32.98,
+    "end": 35.14,
+    "text": "and wires their dependencies."
+  },
+  {
+    "scene": 6,
+    "start": 35.14,
+    "end": 36.16,
+    "text": "Your application requests"
+  },
+  {
+    "scene": 6,
+    "start": 36.16,
+    "end": 37.68,
+    "text": "the ready service."
+  },
+  {
+    "scene": 6,
+    "start": 37.68,
+    "end": 38.58,
+    "text": "That’s inversion of control—"
+  },
+  {
+    "scene": 6,
+    "start": 38.58,
+    "end": 39.98,
+    "text": "for managed beans,"
+  },
+  {
+    "scene": 6,
+    "start": 39.98,
+    "end": 42.367792,
+    "text": "not every Java object."
+  }
+]

@@ -1,6 +1,6 @@
 # YouTube Shorts upload notes
 
-Use `youtube-shorts.mp4`. It is a 36.916667-second vertical video: 1080 × 1920, H.264/AAC, 60 FPS, Rec.709 SDR, with the revised male Kokoro narration and English captions burned into the picture.
+Use `youtube-shorts.mp4`. It is a 44.383333-second vertical video: 1080 × 1920, H.264/AAC, 60 FPS, Rec.709 SDR, with the revised male Kokoro narration and English captions burned into the picture.
 
 1. Select the MP4 for upload and paste `title.txt` and `description.txt` into the corresponding fields. `tags.txt` supplies optional comma-separated search tags where a tags field is available.
 2. Use `cover.png` wherever a custom cover can be supplied. If only an existing video frame can be selected, choose a frame from the first second; that section displays the exact cover without a fade.
@@ -9,3 +9,5 @@ Use `youtube-shorts.mp4`. It is a 36.916667-second vertical video: 1080 × 1920,
 5. After publication, `pinned-comment.txt` supplies the comment text to post and pin manually if desired.
 
 No account upload, scheduling or publication has been performed. The public copy contains no internal schedule or lesson numbering.
+
+The closing recap diagram connects bean definitions, Spring creation/wiring, and the application request/ready-reference return. The completed diagram remains visible for at least two seconds.

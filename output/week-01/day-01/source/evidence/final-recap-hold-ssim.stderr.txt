@@ -1,0 +1,37 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/spring-framework-lessons/output/week-01/day-01/video.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:00:44.38, start: 0.000000, bitrate: 409 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 204 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Input #1, png_pipe, from '/workspace/spring-framework-lessons/output/week-01/day-01/source/evidence/final-recap-hold-reference.png':
+  Duration: N/A, bitrate: N/A
+  Stream #1:0: Video: png, rgb24(pc, gbr/unknown/unknown), 880x766, 60 fps, 60 tbr, 60 tbn
+Stream mapping:
+  Stream #0:0 (h264) -> trim:default
+  Stream #1:0 (png) -> scale:default
+  ssim:default -> Stream #0:0 (wrapped_avframe)
+Press [q] to stop, [?] for help
+[Parsed_ssim_5 @ 0x7f8420002a40] not matching timebases found between first input: 1/15360 and second input 1/60, results may be incorrect!
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, bt709, progressive), 880x766, q=2-31, 200 kb/s, 15360 tbn
+      Metadata:
+        encoder         : Lavc61.19.101 wrapped_avframe
+[Parsed_ssim_5 @ 0x7f8420002a40] SSIM Y:0.999165 (30.783809) U:0.997076 (25.340659) V:0.996814 (24.966988) All:0.998425 (28.027379)
+[out#0/null @ 0x55a794cf1640] video:52KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  120 fps= 31 q=-0.0 Lsize=N/A time=00:00:01.98 bitrate=N/A speed=0.505x    

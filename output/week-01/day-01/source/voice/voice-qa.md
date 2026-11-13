@@ -1,30 +1,35 @@
-# Revised narration verification
+# Recap narration verification
 
-Current voice: **80% local Kokoro `am_puck` + 20% `am_fenrir`**, both American English male, speed 1.02, CPU inference through kokoro-onnx 0.6.1. Delivery target is younger to middle adult, smooth explanatory speech. Perceived age and human naturalness cannot be certified by numeric metrics.
+Current voice is **80% local Kokoro am_puck + 20% am_fenrir**, American English male style embeddings, speed 1.02, CPU inference through kokoro-onnx 0.6.1. Delivery target remains a younger-to-middle adult explanatory male voice. Perceived age and smooth human naturalness are not established by these measurements.
 
-## Delivery revision
+## Actual generation
 
-The former eleven short clause chunks have been replaced by six complete scene utterances. Each scene fits exactly one inference batch, asserted before synthesis. Punctuation and the model's continuous utterance context provide internal sentence phrasing; there are no mid-scene speech edits. No pitch shifting or substitute speech system was used. Quiet edit endpoints receive 4 ms microfades. Extra scene separation is 200–260 ms, with a programmed 450 ms final tail. Model-generated decays add silence around some sentence endings.
+The first five scene texts and edit timings are unchanged. Scene six is a whole-flow recap: define the beans, Spring creates and wires them, the application requests the ready service, and the managed-bean qualification. All six complete scenes fit exactly one model inference batch; scene six has 218 phonemes. There are no mid-scene speech edits. Source script and full G2P phoneme checks are retained in `generate.py` and `pronunciation-g2p.json`.
 
-## Objective actual results
+Inter-scene added gaps are 200–260 ms. The final scene speech edit ends at **42.367792 s**, followed by an exact **2.0-second programmed diagram hold** to **44.367792 s**. Model ending decay adds quiet time beyond those explicit gaps. Quiet edit endpoints use 4 ms microfades. There is no pitch shifting, time stretching, substitute TTS or artificial initial silence.
 
-- Narration length **36.915542 s**, 48,000 Hz, mono, PCM 24-bit.
-- First signal above −60 dBFS at **0.015250 s**. Immediate start with no artificial initial silence.
-- Peak **−1.514415 dBFS**, RMS **−20.686998 dBFS**, **0 clipped samples**. Both endpoint samples are exactly zero; final mix loudness is handled by the renderer.
-- Independent **Whisper base.en int8**, beam size 5, **no initial prompt**, recognizes all **88 words**. Normalized word error rate **0.0**. Singular bean, get bean and managed beans are recognized. Raw output is retained in `asr.json` and `asr-summary.json`.
-- Diagnostic tiny.en initially substituted being for five singular instances of bean. The larger independent model resolves those correctly. This was a reason to check rather than silently correct the ASR. `pronunciation-g2p.json` records actual phonemes: bean `/bˈiːn/`, being `/bˈiːɪŋ/`, and get bean `/ɡɛt bˈiːn/`.
-- pYIN voiced F0 10th/50th/90th percentiles: **87.34 / 112.61 / 173.67 Hz**; pitch variation **4.71 semitones standard deviation** across 2,292 voiced frames. The contour varies; this does not certify naturalness or age.
-- Source silence scan at −45 dBFS with a 120 ms minimum: the longest internal quiet interval is **0.837562 s**, between the verification scene and takeaway. It spans the model's end-of-sentence decay and the designed scene gap. Other scene transitions contain about 0.37–0.74 s of low-level quiet. The longest within-scene sentence pause is approximately 0.326 s. The final quiet span is **0.868542 s**, including decay and the final tail. The word transcript is complete; no unexpected missing speech was detected. Full log: `silence-scan.txt`.
-- Scene edit bounds are exact sample-based synthesis boundaries. The **18** display captions split at independent base.en word timestamps, which are approximate (20 ms grid). Every cue is at most 45 characters. `getBean` is the caption display for spoken “get bean.” Original exact narration is preserved in `../timing.json` under `phrases`.
+## Objective measurements
 
-## Perceptual acceptance remains blocked
+- Source narration length **44.367792 s**, 48 kHz mono PCM24.
+- First signal above −60 dBFS at **0.015250 s**. Last above-threshold signal at **42.352583 s**.
+- Peak **-1.514415 dBFS**, RMS **-20.874903 dBFS**; **0 clipped samples**. Both endpoint samples are exactly zero.
+- pYIN voiced pitch 10th/50th/90th percentiles: **86.34/112.61/168.73 Hz**; **4.85 semitones** standard deviation across **2700** voiced frames. This supports varied pitch, not age or naturalness acceptance.
+- Source FFmpeg −45 dBFS silence scan, 120 ms minimum: longest internal quiet interval is **0.846646 s** at the verification-to-recap transition; source final quiet interval is **2.688479 s**, including native decay plus the deliberate two-second hold. Longest within-scene sentence pause is approximately 0.325 s. Full log is `silence-scan.txt`.
 
-The runtime does not support audio input for listening review. No auditory listening was performed or claimed. Automated checks show a complete intelligible transcript, varied pitch, deliberate pauses, and no clipping or long missing-speech dropout. They cannot establish that a listener perceives the voice as the requested age range or as smoothly human, nor exclude subtle synthesis artifacts. Listening acceptance is still required before calling the strict voice-quality requirement complete.
+## Independent recognition and caption alignment
 
-No noise MOS estimator or transcript prompt was used as a substitute for subjective listening.
+Whisper **base.en int8**, beam size 5, no initial prompt: **102 expected words**, **103 ASR tokens**, raw edit distance **2**, raw normalized WER **1.96%**. The sole lexical discrepancy is “inversion” segmented into “in version.” It is retained in the actual raw transcript; it is not missing speech and no 0-WER claim is made. The source G2P uses the intended inversion phonemes. Bean `/bˈiːn/` and being `/bˈiːɪŋ/` remain distinct in the phoneme evidence.
 
-## Reproduction
+For caption alignment only, those two adjacent ASR tokens are merged into inversion with their combined start/end interval. This explicit normalization is recorded in `alignment-normalization.json`; all remaining aligned words must match the intended narration exactly or the script stops. There are **23** short display cues, at most **45** characters, using approximate ASR word timestamps on a 20 ms grid. Spoken get bean is displayed as `getBean`.
+
+`../timing.json` records exact scene edit boundaries, the original script, relative and absolute recap anchors, and final hold timing. ASR-based anchors include Define 30.62 s, create 32.12 s, wire 33.16 s, application request 35.14 s, ready 36.56 s, takeaway 37.68 s, qualifier 38.58 s, and complete graph by 39.98 s. The final two-second hold starts at 42.367792 s.
+
+## Perceptual limitation
+
+This runtime cannot ingest audio for listening review. No auditory review was performed or claimed. Automated transcript, peak, pause and pitch checks cannot certify the requested age impression, smooth human naturalness or absence of every synthesis artifact. Strict perceptual voice acceptance remains **unverified**.
+
+## Reproduce
 
 `./setup.sh`; `.venv/bin/python generate.py --speed 1.02 --voice am_puck80_fenrir20`; `.venv/bin/python qa.py --asr-model base.en`; `.venv/bin/python split_captions.py`.
 
-Model, voice bundle and software license evidence are retained in `licenses/`. Model/voice downloads are pinned by `models.sha256`; dependencies by `requirements-lock.txt`. Whisper base.en is a verification-only model and contributes no audio to the deliverable.
+The local model and voice bundle are pinned by `models.sha256`; inference and verification dependencies by `requirements-lock.txt`. Model/voice/software license evidence remains in `licenses/`. Verification-only Whisper contributes no speech audio.

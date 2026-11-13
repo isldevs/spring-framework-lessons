@@ -1,6 +1,6 @@
 # Reproduce this iSLDevs short
 
-The MP4 is fully rendered. Strict completion is **INCOMPLETE** because this runtime cannot ingest audio for perceptual naturalness review. See `../verification-report.md` and `voice/voice-qa.md`. Do not treat an objective speech transcript check as a listening review. Nothing has been published.
+The MP4 is fully rendered. Strict completion is **INCOMPLETE** because this runtime cannot ingest audio for perceptual naturalness review. See `../verification-report.md` and `voice/voice-qa.md`. Do not treat an objective speech transcript check as a listening review. Nothing has been published to YouTube or Facebook.
 
 ## Toolchain
 
@@ -34,7 +34,9 @@ source/animation/.venv/bin/python source/animation/render.py --render
 
 ## Audio and animation
 
-The animation design and cover were approved by the user and retained for this voice revision. The requested voice direction is a younger to middle-aged adult male explaining smoothly and conversationally. Six whole-scene utterances replace eleven clause snippets, allowing prosody to flow without mid-sentence edit splices. The source male styles are blended at inference time; there is no pitch shifting. Perceived age and human-like naturalness remain listening-acceptance criteria, not facts established by the voice names or automated metrics.
+The approved cover and first five explanatory scenes are retained. The user-approved revision replaces the closing responsibility tile with a progressive recap of the complete mechanism: define beans, Spring creates and wires its managed objects, then the application requests a ready service reference. Hold the completed diagram for at least two seconds. The user permits up to 45 seconds when the explanation needs it; clarity takes priority over forcing the video into 35–40 seconds. The requested voice direction is a younger to middle-aged adult male explaining smoothly and conversationally. Six whole-scene utterances replace eleven clause snippets, allowing prosody to flow without mid-sentence edit splices. The source male styles are blended at inference time; there is no pitch shifting. Perceived age and human-like naturalness remain listening-acceptance criteria, not facts established by the voice names or automated metrics.
+
+The current narration timeline is 44.367792 seconds, including `final_hold_seconds: 2.0`; the video rounds to 44.383333 seconds at 60 FPS. `recap_cues` and `recap_cues_absolute` in `timing.json` align the final diagram to the actual word timestamps. The complete graph is held after narration from 42.367792 to 44.367792 seconds. The first five scenes retain their existing boundaries.
 
 `animation/audio_mix.py` creates original harmonic background audio and brief reference-transfer tones with NumPy, ducks the music beneath speech, and applies measured two-pass EBU R128 normalization. `animation/sound-events.json` records each visual cue time. The narrator is retained separately as `../narration.wav`. `animation/render.py` is the full original Pillow motion source, including all six scenes and burned-in caption layout. `timing.json` includes the full unmodified script as `phrases`, display cues as `captions`, and scene boundaries.
 

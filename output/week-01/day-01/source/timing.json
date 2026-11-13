@@ -8,7 +8,8 @@
   "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
   "speed": 1.02,
   "one_inference_batch_per_scene": true,
-  "duration": 36.91554166666667,
+  "final_hold_seconds": 2.0,
+  "duration": 44.36779166666667,
   "scenes": [
     {
       "scene": 1,
@@ -38,7 +39,7 @@
     {
       "scene": 6,
       "start": 29.250625,
-      "end": 36.915542
+      "end": 44.367792
     }
   ],
   "phrases": [
@@ -75,8 +76,8 @@
     {
       "scene": 6,
       "start": 29.250625,
-      "end": 36.465542,
-      "text": "That’s inversion of control. Construction and wiring move to Spring, for managed beans, not every Java object."
+      "end": 42.367792,
+      "text": "Here’s the whole flow. Define your beans. Spring creates them and wires their dependencies. Your application requests the ready service. That’s inversion of control—for managed beans, not every Java object."
     }
   ],
   "captions": [
@@ -95,12 +96,12 @@
     {
       "scene": 2,
       "start": 3.04,
-      "end": 4.88,
+      "end": 4.86,
       "text": "creates a repository,"
     },
     {
       "scene": 2,
-      "start": 4.88,
+      "start": 4.86,
       "end": 6.906625,
       "text": "then passes it into a service."
     },
@@ -119,12 +120,12 @@
     {
       "scene": 3,
       "start": 11.66,
-      "end": 12.62,
+      "end": 12.64,
       "text": "managed objects"
     },
     {
       "scene": 3,
-      "start": 12.62,
+      "start": 12.64,
       "end": 15.099708,
       "text": "and wire their dependencies."
     },
@@ -143,12 +144,12 @@
     {
       "scene": 5,
       "start": 20.163375,
-      "end": 21.88,
+      "end": 21.9,
       "text": "Your application calls getBean"
     },
     {
       "scene": 5,
-      "start": 21.88,
+      "start": 21.9,
       "end": 24.18,
       "text": "to request the ready service."
     },
@@ -167,27 +168,83 @@
     {
       "scene": 6,
       "start": 29.250625,
-      "end": 31.34,
-      "text": "That’s inversion of control."
+      "end": 30.62,
+      "text": "Here’s the whole flow."
     },
     {
       "scene": 6,
-      "start": 31.34,
+      "start": 30.62,
+      "end": 32.12,
+      "text": "Define your beans."
+    },
+    {
+      "scene": 6,
+      "start": 32.12,
       "end": 32.98,
-      "text": "Construction and wiring move to Spring,"
+      "text": "Spring creates them"
     },
     {
       "scene": 6,
       "start": 32.98,
-      "end": 34.44,
+      "end": 35.14,
+      "text": "and wires their dependencies."
+    },
+    {
+      "scene": 6,
+      "start": 35.14,
+      "end": 36.16,
+      "text": "Your application requests"
+    },
+    {
+      "scene": 6,
+      "start": 36.16,
+      "end": 37.68,
+      "text": "the ready service."
+    },
+    {
+      "scene": 6,
+      "start": 37.68,
+      "end": 38.58,
+      "text": "That’s inversion of control—"
+    },
+    {
+      "scene": 6,
+      "start": 38.58,
+      "end": 39.98,
       "text": "for managed beans,"
     },
     {
       "scene": 6,
-      "start": 34.44,
-      "end": 36.465542,
+      "start": 39.98,
+      "end": 42.367792,
       "text": "not every Java object."
     }
   ],
-  "caption_method": "Six complete scene utterances are each synthesized in one inference batch; exact scene edit bounds. Short display captions split at independently recognized faster-whisper base.en word starts (approximate 20ms grid). Spoken get bean is displayed as getBean. Phrases retain the exact spoken script."
+  "caption_method": "Six complete scene utterances are each synthesized in one inference batch; exact scene edit bounds. Short display captions split at independently recognized faster-whisper base.en word starts (approximate 20ms grid). Spoken get bean is displayed as getBean. One ASR in/version word-boundary split is merged only for alignment (alignment-normalization.json); raw WER/transcript remain unchanged. Phrases retain the exact spoken script.",
+  "final_hold_start": 42.367792,
+  "recap_cues": {
+    "relative_to": "scene_start",
+    "define": 1.369375,
+    "create": 2.869375,
+    "wire": 3.909375,
+    "request": 5.889375,
+    "request_verb": 6.349375,
+    "ready": 7.309375,
+    "takeaway": 8.429375,
+    "qualifier": 9.329375,
+    "complete_at": 10.729375,
+    "final_hold_start": 13.117167
+  },
+  "recap_cues_absolute": {
+    "define": 30.62,
+    "create": 32.12,
+    "wire": 33.16,
+    "request": 35.14,
+    "request_verb": 35.6,
+    "ready": 36.56,
+    "takeaway": 37.68,
+    "qualifier": 38.58,
+    "complete_at": 39.98,
+    "final_hold_start": 42.367792
+  }
 }

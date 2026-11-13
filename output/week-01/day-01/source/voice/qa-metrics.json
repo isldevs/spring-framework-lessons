@@ -1,17 +1,17 @@
 {
-  "duration_s": 36.91554166666667,
+  "duration_s": 44.36779166666667,
   "sample_rate": 48000,
   "channels": 1,
   "peak_dbfs": -1.514415166281326,
-  "rms_dbfs": -20.686998020669343,
+  "rms_dbfs": -20.874903085926604,
   "clipped_samples": 0,
   "speech_above_minus60db_onset_s": 0.01525,
-  "speech_above_minus60db_end_s": 36.44954166666667,
+  "speech_above_minus60db_end_s": 42.352583333333335,
   "endpoint_first_sample": 0.0,
   "endpoint_last_sample": 0.0,
-  "f0_voiced_frames": 2292,
-  "f0_10pct_hz": 87.33919097053123,
+  "f0_voiced_frames": 2700,
+  "f0_10pct_hz": 86.33601480064921,
   "f0_50pct_hz": 112.61255960053718,
-  "f0_90pct_hz": 173.6723084928454,
-  "f0_std_semitones": 4.713296066971233
+  "f0_90pct_hz": 168.72819499468193,
+  "f0_std_semitones": 4.852862517863447
 }

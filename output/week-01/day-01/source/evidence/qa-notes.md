@@ -1,16 +1,33 @@
-# Independent revised-artifact QA
+# Independent final artifact QA — closing recap revision
 
-The revised artifact passes technical checks. Overall strict voice acceptance remains unverified because the runtime does not support perceptual audio input. These measurements do not certify perceived age or human naturalness.
+Technical checks PASS for the actual revised MP4. Final perceptual voice acceptance remains incomplete because this runtime cannot ingest audio for listening review. No perceived-age or human-naturalness approval is claimed.
 
-Run `python source/animation/validate.py` from the deliverable directory. Actual commands, stdout, stderr, FFprobe JSON, per-frame scores, timestamp data, and decoded PNGs are retained under `source/evidence/final-*`.
+Run `python source/animation/validate.py` from the lesson directory. It preserves actual commands, FFprobe JSON, stdout/stderr, frame timestamps, SSIM scores, decoded frames and safe-area samples under `source/evidence/final-*`.
 
-- Final revised MP4: H.264 High, 1080×1920, yuv420p 8-bit SDR, 60/1 FPS, 2,215 decoded frames. Container/video duration 36.916667 s; AAC LC stereo 48,000 Hz duration 36.915 s. All 2,215 video presentation timestamps start at zero and increment by 1/60 s.
-- Rec.709 matrix, transfer and primaries plus limited/TV range are present in this revised encode. H.264 metadata filtering is applied inline by the current renderer. Full decoding returns exit 0 with empty error output. `baseline-initial-color-check.json` is historical evidence from the original, superseded production, not a problem observed in this revised encode.
-- Encoded AAC measured −16.18 LUFS integrated, −1.36 dBTP true peak, 4.40 LU loudness range. The −50 dBFS silence scan with a 0.15 s minimum found no internal silent intervals. Only the intended final quiet tail starts at 36.533 s. The decoder reports its end at 36.928 s due to AAC frame padding; the container/video ends at 36.916667 s, inside that quiet tail.
-- This revision uses local Kokoro 80% am_puck / 20% am_fenrir, both officially male American English voices, targeting a younger to middle adult style without pitch shifting. The source is six continuous scene utterances rather than eleven short clause chunks. Source voice QA records 88/88 words recognized by independent, unprompted Whisper base.en (0 normalized WER), zero clipped samples, 15 ms onset, and varied pitch. Tiny.en lexical confusions and the phoneme check are preserved rather than hidden; see `source/voice/voice-qa.md`. This is objective pronunciation support, not an auditory acceptance claim.
-- `cover.png` remains byte-identical to the user-approved cover in `day-01-original-production.zip`. Source frames 0–59 are pixel-identical to that cover with no fade. All first 60 decoded frames compared against the cover have mean SSIM 0.998971 and minimum SSIM 0.998913. Lossy compression explains the small differences. No black intervals were detected across the full file.
-- All 18 actual SRT cues are ordered, have positive duration, do not overlap, stay within runtime, and match the timing manifest within 0.51 ms of rounding. Every SRT cue's exact display text matches its timing record. All caption words match the preserved script phrases after normalizing punctuation and the spoken/display form of getBean. Maximum caption length is 43 characters; the renderer raises on any cue that would exceed two lines.
-- The approved six scenes remain in place. Safe-area checks pass at 173 source samples across scene progress, captions and opening frames: bright foreground content remains inside X=90..990, Y=250..1520. Background grid/panels are decorative and excluded from the brightness test. Six actual decoded scene frames were visually inspected at 360×640 phone scale; headlines, code and captions are readable, with no visible clipping or new crowding. See `final-decoded-mobile-contact.png`.
-- Educational meaning still matches the real Java run: application construction, @Bean definitions, Spring resolving the Repo parameter and supplying it to the Service constructor, application lookup of the ready service, actual `spring wiring: true`, and unmanaged construction kept separate. The new voice preserves all words; no claim that Spring creates every Java object was introduced.
+## Actual encoded artifact
 
-No checksum manifest or parent verification report was written by this reviewer. All revised QA evidence writes are complete. The parent may now generate final hashes and package the revision.
+- MP4 duration **44.383333 s**, within the user's approved 45-second ceiling and strictly under 45 s. The source narration/edit timeline is 44.367792 s; frame rounding produces 2,663 video frames at constant 60/1 FPS.
+- H.264 High, 1080 × 1920 progressive, yuv420p 8-bit SDR, BT.709 matrix/transfer/primaries, limited/TV range. AAC stereo, 48,000 Hz, encoded audio duration 44.368 s. The 15.333 ms video/audio duration difference is less than one 60 FPS frame.
+- Full FFmpeg decode exits 0 with an empty error log. All 2,663 presentation timestamps begin at zero and increment by 1/60 s. No black intervals were detected.
+- Encoded mix measures **−16.08 LUFS integrated**, **−1.31 dBTP**, and **4.00 LU** loudness range. A −50 dBFS silence scan with a 150 ms minimum finds only the intended final quiet/fade starting 44.076292 s; no internal silent interval occurs before the final reading hold. Decoder-reported quiet ends at 44.373333 s; the container/video ends at 44.383333 s.
+
+## Cover, captions and mobile readability
+
+- Source frames 0–59 are pixel-identical to the supplied cover, without a fade. All 60 decoded opening frames were compared against equivalent Rec.709-converted cover pixels: mean SSIM **0.998971**, minimum **0.998913**. Differences are normal lossy compression.
+- All **23 SRT cues** have positive duration, remain ordered/non-overlapping and inside runtime, match the timing manifest within millisecond rounding, and preserve the actual narration words (including displayed `getBean` for spoken “get bean”). Rendering enforces at most two caption lines; no overflow occurred.
+- **178 source samples** across opening frames, scene progress and caption intervals keep bright foreground pixels inside X=90..990/Y=250..1520. Background grid/glow is decorative and excluded from the brightness check.
+- Six actual decoded scene frames were inspected at 360 × 640 phone scale. Headlines, code, graph nodes and captions are readable; no clipped or overlapping primary content was observed. The original first five scene branches and cover function are unchanged, documented in `recap-change-summary.json`; the normalized progress rail follows the new total duration.
+
+## Closing recap review
+
+The actual decoded final scene shows `@Bean definitions` registering with the Spring container, `Repo → Service` carrying the repository reference inside that boundary, an application `getBean(Service.class)` request pointing **up into the container**, and a green ready-service reference pointing **down to the application**. The qualifier **Managed beans only** remains visible. The already-created object graph precedes the request/return arrows, so the overview does not suggest that every lookup creates a new service or that the service calls getBean internally.
+
+The recap's source edit interval is 29.250625–44.367792 s. Speech-aligned source anchors are retained in the timing manifest; the graph is fully assembled before the reserved final hold. The source reading hold is 42.367792–44.367792 s.
+
+The final two seconds were tested independently using the completed diagram crop X=100..980/Y=534..1300, excluding captions and progress rail. **120 source crops are pixel-identical. All 120 actual encoded frames** of the corresponding final two-second crop match the complete reference with mean/minimum SSIM **0.998425**, above the 0.995 acceptance threshold. The final graph is stable long enough to inspect; this is an actual visual-content check rather than a duration label alone. Raw evidence is `final-recap-hold-ssim-*` and `final-recap-hold-reference.png`.
+
+## Review limits
+
+The existing actual Java execution evidence remains valid because the Java example and first five scene branches are unchanged. No new Java result was fabricated or claimed to have been rerun. The source narration's base.en recognition has 102 reference words/103 observed words and raw WER 1.9608%, attributable to the recognizer splitting “inversion” as “in version”; the raw transcript was retained. Caption alignment separately documents that word-boundary normalization. These checks do not establish voice naturalness and do not constitute auditory review.
+
+This reviewer did not modify the final MP4, root verification report, platform packages, or checksum manifests.

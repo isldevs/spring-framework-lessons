@@ -1,8 +1,47 @@
 {
-  "bean": "bˈiːn",
-  "being": "bˈiːɪŋ",
-  "beans": "bˈiːnz",
-  "get bean": "ɡɛt bˈiːn",
-  "get being": "ɡɛt bˈiːɪŋ",
-  "Here, the service bean asks for a repository. Spring supplies that bean.": "hˈɪɹ, ðə sˈɜːvɪs bˈiːn ˈæsks fɚɹɚ ɹᵻpˈɑːzɪtˌɔːɹi. spɹˈɪŋ səplˈaɪz ðæt bˈiːn."
+  "word_distinctions": {
+    "bean": "bˈiːn",
+    "being": "bˈiːɪŋ",
+    "beans": "bˈiːnz",
+    "get bean": "ɡɛt bˈiːn",
+    "get being": "ɡɛt bˈiːɪŋ"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "Who creates your Java objects?",
+      "phonemes": "hˌuː kɹiːˈeɪts jʊɹ dʒˈɑːvə ˈɑːbdʒɛkts?",
+      "inference_batches": 1
+    },
+    {
+      "scene": 2,
+      "text": "Without Spring, your code creates a repository, then passes it into a service.",
+      "phonemes": "wɪðˌaʊt spɹˈɪŋ, jʊɹ kˈoʊd kɹiːˈeɪts ɐ ɹᵻpˈɑːzɪtˌɔːɹi, ðˈɛn pˈæsᵻz ɪɾ ˌɪntʊ ɐ sˈɜːvɪs.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 3,
+      "text": "With Spring, you register bean definitions. The container uses them to create managed objects and wire their dependencies.",
+      "phonemes": "wɪð spɹˈɪŋ, juː ɹˈɛdʒɪstɚ bˈiːn dˌɛfɪnˈɪʃənz. ðə kəntˈeɪnɚ jˈuːsᵻz ðˌɛm tə kɹiːˈeɪt mˈænɪdʒd ˈɑːbdʒɛkts ænd wˈaɪɚ ðɛɹ dᵻpˈɛndənsiz.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 4,
+      "text": "Here, the service bean asks for a repository. Spring supplies that bean.",
+      "phonemes": "hˈɪɹ, ðə sˈɜːvɪs bˈiːn ˈæsks fɚɹɚ ɹᵻpˈɑːzɪtˌɔːɹi. spɹˈɪŋ səplˈaɪz ðæt bˈiːn.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 5,
+      "text": "Your application calls get bean to request the ready service. In our Java run, its repository is the same bean from the container.",
+      "phonemes": "jʊɹ ˌæplɪkˈeɪʃən kˈɔːlz ɡɛt bˈiːn tə ɹᵻkwˈɛst ðə ɹˈɛdi sˈɜːvɪs. ɪn ˌaʊɚ dʒˈɑːvɚ ɹˈʌn, ɪts ɹᵻpˈɑːzɪtˌɔːɹi ɪz ðə sˈeɪm bˈiːn fɹʌmðə kəntˈeɪnɚ.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 6,
+      "text": "Here’s the whole flow. Define your beans. Spring creates them and wires their dependencies. Your application requests the ready service. That’s inversion of control—for managed beans, not every Java object.",
+      "phonemes": "hˈɪɹz ðə hˈoʊl flˈoʊ. dᵻfˈaɪn jʊɹ bˈiːnz. spɹˈɪŋ kɹiːˈeɪts ðˌɛm ænd wˈaɪɚz ðɛɹ dᵻpˈɛndənsiz. jʊɹ ˌæplɪkˈeɪʃən ɹᵻkwˈɛsts ðə ɹˈɛdi sˈɜːvɪs. ðæts ɪnvˈɜːʒən ʌv kəntɹˈoʊl—fɔːɹ mˈænɪdʒd bˈiːnz, nˌɑːt ˈɛvɹi dʒˈɑːvə ˈɑːbdʒɛkt.",
+      "inference_batches": 1
+    }
+  ]
 }

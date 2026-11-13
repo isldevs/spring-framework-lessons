@@ -20,7 +20,7 @@ assert (v['codec_name'],v['width'],v['height'],v['pix_fmt'])==('h264',1080,1920,
 assert v['r_frame_rate']=='60/1' and v['avg_frame_rate']=='60/1'
 assert all(v[k]=='bt709' for k in ['color_space','color_transfer','color_primaries'])
 assert v['color_range']=='tv' and a['codec_name']=='aac' and a['sample_rate']=='48000' and a['channels']==2
-D=float(probe['format']['duration']);assert 35<=D<=40 and D<45
+D=float(probe['format']['duration']);assert 35<=D<45
 run(['ffmpeg','-v','error','-i',str(V),'-f','null','-'],'decode')
 run(['ffmpeg','-hide_banner','-nostats','-i',str(V),'-af','loudnorm=I=-16:TP=-1.5:LRA=7:print_format=json','-f','null','-'],'audio-loudness')
 run(['ffmpeg','-hide_banner','-nostats','-i',str(V),'-af','silencedetect=noise=-50dB:d=0.15','-f','null','-'],'audio-silence')
@@ -62,6 +62,21 @@ def normalized_words(text):
 phrases=data.get('phrases',data['captions'])
 assert normalized_words(' '.join(actual_caption_text))==normalized_words(' '.join(x['text'] for x in phrases))
 assert len(data['scenes'])==6
+# A completed mechanism overview must be stable long enough to read. Compare
+# source pixels, then every encoded frame in the final two seconds against the
+# same complete diagram. Caption/progress-rail regions are deliberately excluded.
+hold_seconds=float(data.get('final_hold_seconds',0));assert hold_seconds>=2.0
+hold_frames=120;hold_first=int(v['nb_read_frames'])-hold_frames
+assert hold_first/60>=data['duration']-2.0-1e-6
+recap_crop=(100,534,980,1300)
+reference=r.render_frame(data['duration']-.03,data).crop(recap_crop)
+reference_array=np.asarray(reference)
+hold_samples=[hold_first/60+j/60 for j in range(hold_frames)]
+assert all(np.array_equal(np.asarray(r.render_frame(t,data).crop(recap_crop)),reference_array) for t in hold_samples),'Final recap diagram is still moving during its reading hold'
+reference.save(E/'final-recap-hold-reference.png')
+run(['ffmpeg','-hide_banner','-nostats','-i',str(V),'-loop','1','-framerate','60','-i',str(E/'final-recap-hold-reference.png'),'-filter_complex',f'[0:v]trim=start_frame={hold_first},setpts=PTS-STARTPTS,crop=880:766:100:534[recap];[1:v]scale=in_range=full:out_range=tv:out_color_matrix=bt709,format=yuv420p[ref];[recap][ref]ssim=stats_file={E}/final-recap-hold-ssim-frames.txt','-frames:v',str(hold_frames),'-an','-f','null','-'],'recap-hold-ssim')
+hold_ssims=[float(re.search(r'All:([0-9.]+)',x).group(1)) for x in (E/'final-recap-hold-ssim-frames.txt').read_text().splitlines()]
+assert len(hold_ssims)==hold_frames and min(hold_ssims)>.995,('Encoded recap differs from its completed reading hold',min(hold_ssims))
 # Sample actual decoded frames at all scene late points, not source previews.
 thumbs=[]
 for i,s in enumerate(data['scenes']):
@@ -75,4 +90,9 @@ summary={'duration':D,'video_duration':float(v['duration']),'audio_duration':flo
 loud=(E/'final-audio-loudness.stderr.txt').read_text();metrics=json.JSONDecoder().raw_decode(loud[loud.rfind('{'):])[0]
 ssimlog=(E/'final-opening-ssim.stderr.txt').read_text();ssims=[float(re.search(r'All:([0-9.]+)',x).group(1)) for x in (E/'final-opening-ssim-frames.txt').read_text().splitlines()]
 summary.update({'integrated_loudness_lufs':float(metrics['input_i']),'true_peak_dbtp':float(metrics['input_tp']),'loudness_range_lu':float(metrics['input_lra']),'first_second_ssim_average':float(re.search(r'All:([0-9.]+)',ssimlog).group(1)),'first_second_ssim_minimum':min(ssims),'first_second_compared_frames':len(ssims),'decode_error_log_empty':not (E/'final-decode.stderr.txt').read_text().strip(),'black_intervals_detected':len(re.findall(r'black_start:',(E/'final-black-detect.stderr.txt').read_text())),'silence_intervals':re.findall(r'silence_start: ([0-9.]+)',(E/'final-audio-silence.stderr.txt').read_text())})
+assert summary['decode_error_log_empty'] and summary['black_intervals_detected']==0
+assert summary['first_second_ssim_minimum']>.995
+assert summary['true_peak_dbtp']<0 and -18<summary['integrated_loudness_lufs']<-14
+assert all(float(start)>=data['duration']-hold_seconds-.05 for start in summary['silence_intervals']),'Unexpected internal silent interval before the final reading hold'
+summary.update({'final_recap_hold_seconds':hold_frames/60,'final_recap_hold_source_samples':len(hold_samples),'final_recap_hold_crop':list(recap_crop),'final_recap_hold_source_pixel_identical':True,'final_recap_hold_decoded_frames':len(hold_ssims),'final_recap_hold_ssim_minimum':min(hold_ssims),'final_recap_hold_ssim_average':sum(hold_ssims)/len(hold_ssims),'intentional_final_quiet_tail_allowed':True})
 (E/'final-summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2))

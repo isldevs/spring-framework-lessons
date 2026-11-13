@@ -1,16 +1,16 @@
-Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/output/week-01/day-01/video.mp4':
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/spring-framework-lessons/output/week-01/day-01/video.mp4':
   Metadata:
     major_brand     : isom
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf61.7.103
-  Duration: 00:00:36.92, start: 0.000000, bitrate: 425 kb/s
-  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 218 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+  Duration: 00:00:44.38, start: 0.000000, bitrate: 409 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 204 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
       Metadata:
         handler_name    : VideoHandler
         vendor_id       : [0][0][0][0]
         encoder         : Lavc61.19.101 libx264
-  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 193 kb/s (default)
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
       Metadata:
         handler_name    : SoundHandler
         vendor_id       : [0][0][0][0]
@@ -34,18 +34,18 @@ Output #0, null, to 'pipe:':
         handler_name    : SoundHandler
         vendor_id       : [0][0][0][0]
         encoder         : Lavc61.19.101 pcm_s16le
-[Parsed_loudnorm_0 @ 0x7f3650002080] 
+[Parsed_loudnorm_0 @ 0x7f6100002080] 
 {
-	"input_i" : "-16.18",
-	"input_tp" : "-1.36",
-	"input_lra" : "4.40",
-	"input_thresh" : "-26.78",
-	"output_i" : "-16.16",
+	"input_i" : "-16.08",
+	"input_tp" : "-1.31",
+	"input_lra" : "4.00",
+	"input_thresh" : "-26.96",
+	"output_i" : "-16.20",
 	"output_tp" : "-1.50",
-	"output_lra" : "3.10",
-	"output_thresh" : "-26.66",
+	"output_lra" : "3.80",
+	"output_thresh" : "-26.81",
 	"normalization_type" : "dynamic",
-	"target_offset" : "0.16"
+	"target_offset" : "0.20"
 }
-[out#0/null @ 0x556cbe0d4a00] video:952KiB audio:27696KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame= 2215 fps=529 q=-0.0 Lsize=N/A time=00:00:36.91 bitrate=N/A speed=8.81x    
+[out#0/null @ 0x55f1cb3cc440] video:1144KiB audio:33280KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2663 fps=527 q=-0.0 Lsize=N/A time=00:00:44.38 bitrate=N/A speed=8.78x    

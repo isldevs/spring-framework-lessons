@@ -20,4 +20,4 @@ The retained third-party asset licenses permit commercial use subject to their t
 
 The iSLDevs name is rendered as text according to the user brief. No external iSLDevs logo file or third-party Spring/Java logo was imported. Java and Spring names and identifiers are used for factual technical explanation.
 
-The narrator is AI-generated from licensed model styles, not a newly recorded human voice and not a requested imitation of a named person. The delivery target is a younger-to-middle adult male. Perceived age and human naturalness have not been accepted by listening because this environment cannot ingest audio; that quality limitation is separate from this asset-license record. No upload or publication has occurred.
+The narrator is AI-generated from licensed model styles, not a newly recorded human voice and not a requested imitation of a named person. The delivery target is a younger-to-middle adult male. Perceived age and human naturalness have not been accepted by listening because this environment cannot ingest audio; that quality limitation is separate from this asset-license record. Nothing has been uploaded or published to YouTube or Facebook.
