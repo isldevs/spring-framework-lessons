@@ -150,69 +150,103 @@ def scene(k,u,elapsed=None,recap=None,scene_duration=None):
         return im
     if k==5:
         return recap_scene(u,elapsed,recap,scene_duration)
+    if k==6:
+        return thanks_scene(u,elapsed,scene_duration)
     raise ValueError(k)
 
 def recap_complete_at(cues):
-    """Scene-relative time when the final diagram is fully assembled and static."""
-    ready=float(cues.get('ready',8.0));request=float(cues.get('request',7.1))
-    returned=max(ready,request+.60)+.70
-    return max(returned,float(cues.get('qualifier',cues.get('takeaway',9.3)))+.05)
+    """Scene-relative completion time, before the separately recorded recap hold."""
+    retrieve=float(cues.get('retrieve',cues.get('request',7.0)))
+    ready=float(cues.get('ready',retrieve+.7))
+    returned=float(cues.get('return_complete',max(ready,retrieve+.35)+.50))
+    return max(returned,float(cues.get('qualifier',returned))+.05)
+
+def code_runs(im,runs,x,y,size=38):
+    """Syntax-colored code without shrinking real API/class names."""
+    d=ImageDraw.Draw(im);f=font(size,mono=True)
+    for text,color in runs:
+        txt(im,text,x,y,size,color,mono=True)
+        x+=d.textlength(text,font=f)
 
 def recap_scene(u,elapsed=None,cues=None,scene_duration=None):
-    """One progressive overview: definitions, creation/wiring, then lookup.
+    """App bootstrap -> real Config recipes -> factory calls -> ready lookup.
 
-    The application arrows only appear after the managed object graph exists.
-    No creation animation follows getBean. All diagram elements stop moving
-    before the reserved final two-second hold. Caption/progress areas are separate.
+    Config is visibly a configuration class with two factory signatures. The
+    startup expression supplies Config.class to the context. Spring highlights
+    each factory call before creating its corresponding object. The later
+    getBean lookup only returns the existing service reference; it never creates
+    a replacement object. Everything is static for the explicit recap hold.
     """
-    cues=cues or {};duration=scene_duration or 15.117167
+    cues=cues or {};duration=scene_duration or 12.712042
     t=u*duration if elapsed is None else elapsed
     at=lambda key,default:float(cues.get(key,default))
-    define=at('define',1.4);create=at('create',3.2);wire=at('wire',4.6)
-    request=at('request',7.1);ready=at('ready',8.0);takeaway=at('takeaway',9.3)
-    qualifier=at('qualifier',takeaway)
-    assert define<=create<=wire<=request<=ready<=takeaway
-    im=base(5,'THE BIG PICTURE',['The whole flow.'])
+    startup=at('startup',0.0);load=at('config_load',1.23)
+    methods=at('methods',2.33);create=at('create',3.93);wire=at('wire',5.19)
+    retrieve=at('retrieve',at('request',6.91));ready=at('ready',7.63)
+    returned=at('return_complete',max(ready,retrieve+.35)+.50)
+    qualifier=at('qualifier',8.69)
+    assert startup<=load<=methods<=create<=wire<=retrieve<=ready<=returned
+    im=base(5,'INVERSION OF CONTROL',['Config is the recipe.'])
     if t>=qualifier:
-        txt(im,'Managed beans only',540,544,35,GREEN,True,center=True)
-    else:
-        txt(im,'Define / Create + wire / Request',540,546,30,MUTED,center=True)
+        tag(im,'Managed beans only',625,350,GREEN,31)
 
-    # A definition is metadata, not an application request for a new instance.
-    if t>=define:
-        box(im,(170,618,910,738),fill=CARD,outline=PURPLE,r=20,width=2)
-        txt(im,'DEFINE',198,630,25,PURPLE,True)
-        txt(im,'@Bean definitions',540,672,40,WHITE,mono=True,center=True)
-    if t>=create-.45:
-        arrow(im,(540,749),(540,808),reveal(t,create-.45,.45),PURPLE,4)
-        txt(im,'register',579,758,27,MUTED)
+    if t>=startup:
+        # This is the actual startup API, not a fabricated Context alias.
+        box(im,(110,527,970,720),fill=CARD,outline=CYAN,r=20,width=2)
+        txt(im,'APP STARTS SPRING',132,538,29,CYAN,True)
+        code_runs(im,[('var ctx = ',WHITE),('new',PURPLE)],132,573,36)
+        txt(im,'AnnotationConfigApplicationContext',132,615,36,WHITE,mono=True)
+        code_runs(im,[('    (',WHITE),('Config.class',CYAN),(');',WHITE)],132,657,36)
+    if t>=load:
+        # The class literal supplied above is what Spring now reads.
+        arrow(im,(300,722),(300,755),reveal(t,load,.32),CYAN,4)
+        txt(im,'reads Config',336,722,27,CYAN)
+        box(im,(110,759,970,943),fill=CARD,outline=PURPLE,r=20,width=2)
+        code_runs(im,[('@Configuration ',PURPLE),('class Config',WHITE)],132,769,36)
+        # Whole valid factory signatures remain visible throughout the overview.
+        # A colored row identifies the factory Spring is invoking right now.
+        if t>=methods:
+            box(im,(125,818,955,866),fill='#123047',outline=CYAN,r=8,width=2 if t<wire else 1)
+        if t>=wire:
+            box(im,(125,875,955,926),fill='#17392f',outline=GREEN,r=8,width=2 if t<wire+.60 else 1)
+        code_runs(im,[('@Bean ',PURPLE),('Repo repo()',CYAN)],140,818,38)
+        code_runs(im,[('@Bean ',PURPLE),('Service service(',GREEN),('Repo repo',CYAN),(')',GREEN)],140,875,38)
+    if t>=methods:
+        arrow(im,(540,945),(540,976),reveal(t,methods,.36),PURPLE,4)
+        txt(im,'calls @Bean methods',574,943,32,PURPLE,True)
+        box(im,(110,982,970,1137),fill='#112532',outline=GREEN,r=22,width=2)
+        txt(im,'SPRING CONTAINER',132,991,30,GREEN,True)
+        status='created + wired' if t>=wire+.60 else 'calls service(repo)' if t>=wire else 'calls repo()'
+        f=font(25,mono=True);tw=ImageDraw.Draw(im).textlength(status,font=f)
+        txt(im,status,946-tw,992,25,WHITE,mono=True)
     if t>=create:
-        box(im,(135,825,945,1057),fill='#112532',outline=GREEN,r=25,width=2)
-        txt(im,'SPRING',165,843,31,GREEN,True)
-        # Align the second header to the container's right edge.
-        d=ImageDraw.Draw(im)
-        tw=d.textlength('CREATES + WIRES',font=font(27,True))
-        txt(im,'CREATES + WIRES',912-tw,845,27,GREEN,True)
-        node(im,'Repo',175,913,260,100,CYAN)
-        node(im,'Service',645,913,260,100,GREEN)
+        node(im,'Repo',145,1035,220,83,CYAN)
     if t>=wire:
-        # Repo is the constructor dependency, and the arrow carries its reference.
-        p=reveal(t,wire,min(.70,max(.20,request-wire-.15)))
-        arrow(im,(435,963),(625,963),p,PURPLE,5)
+        node(im,'Service',695,1035,245,83,GREEN)
+        p=reveal(t,wire,min(.60,max(.20,retrieve-wire-.10)))
+        arrow(im,(365,1077),(675,1077),p,PURPLE,5)
         if p<1:
-            x=435+190*p
-            ImageDraw.Draw(im).ellipse((x-8,955,x+8,971),fill=WHITE)
-        txt(im,'repo reference',540,1014,25,PURPLE,center=True)
-    if t>=request:
-        box(im,(175,1172,905,1285),fill=CARD,outline=CYAN,r=20,width=2)
-        txt(im,'APPLICATION',200,1182,25,CYAN,True)
-        txt(im,'getBean(Service.class)',540,1218,40,WHITE,mono=True,center=True)
-        arrow(im,(540,1171),(540,1061),reveal(t,request,.60),CYAN,5)
-        txt(im,'request',389,1093,30,CYAN)
-    return_start=max(ready,request+.60)
-    if t>=return_start:
-        arrow(im,(760,1061),(760,1158),reveal(t,return_start,.70),GREEN,5)
-        lines(im,['ready','service'],790,1073,29,GREEN,gap=1.16)
+            x=365+310*p
+            ImageDraw.Draw(im).ellipse((x-8,1069,x+8,1085),fill=WHITE)
+        txt(im,'passes repo',520,1093,28,PURPLE,center=True)
+    if t>=retrieve:
+        box(im,(110,1220,970,1305),fill=CARD,outline=CYAN,r=18,width=2)
+        txt(im,'APP LATER REQUESTS',132,1226,25,CYAN,True)
+        txt(im,'ctx.getBean(Service.class)',540,1254,38,WHITE,mono=True,center=True)
+        arrow(im,(540,1218),(540,1140),reveal(t,retrieve,.35),CYAN,5)
+        txt(im,'request',357,1162,28,CYAN)
+    if t>=ready:
+        arrow(im,(780,1140),(780,1211),reveal(t,ready,max(.10,returned-ready)),GREEN,5)
+        lines(im,['ready','Service'],808,1146,27,GREEN,gap=1.10)
+    return im
+
+def thanks_scene(u,elapsed=None,scene_duration=None):
+    """A brief requested thank-you, after the recap reading hold has finished."""
+    duration=scene_duration or 1.45;t=u*duration if elapsed is None else elapsed
+    im=BG.copy();txt(im,'iSLDevs',100,264,31,WHITE,True)
+    lines(im,['Thanks for','watching.'],540,760,88,WHITE,True,center=True,gap=1.16)
+    p=reveal(t,0,.38)
+    line(im,[(320,1008),(320+440*p,1008)],CYAN,5)
     return im
 
 def read_timing():
@@ -237,8 +271,9 @@ def render_frame(t,data,with_caption=True):
     s=scenes[k];u=(t-s['start'])/(s['end']-s['start'])
     # The initial exact cover is guaranteed even though narration starts at t=0.
     if t<1:return COVER.copy()
-    im=scene(k,u,elapsed=t-s['start'],recap=data.get('recap_cues'),scene_duration=s['end']-s['start']) if k==5 else scene(k,u)
-    if with_caption:
+    im=scene(k,u,elapsed=t-s['start'],recap=data.get('recap_cues'),scene_duration=s['end']-s['start']) if k>=5 else scene(k,u)
+    if with_caption and k!=6:
+        # The thanks card itself displays its spoken words; avoid duplicate text.
         c=next((c for c in data['captions'] if c['start']<=t<c['end']),None)
         if c:caption(im,c['text'])
     ImageDraw.Draw(im).line((100,1510,100+880*min(1,t/data['duration']),1510),fill=GREEN,width=3)
@@ -264,10 +299,12 @@ def main():
         contact=Image.new('RGB',(324*4,576*2),NAVY)
         for i,im in enumerate(thumbs):contact.paste(im,(i%4*324,i//4*576))
         contact.save(out/'mobile-contact-sheet.png')
-        closing=data['scenes'][-1]
-        completed_at=data['duration']-min(1.0,data.get('final_hold_seconds',2.0)/2)
+        closing=next(s for s in data['scenes'] if s['scene']==6)
+        completed_at=(data.get('recap_hold_start',closing['end']-2.0)+data.get('recap_hold_end',closing['end']))/2
         recap=scene(5,1.0,elapsed=completed_at-closing['start'],recap=data.get('recap_cues'),scene_duration=closing['end']-closing['start'])
         recap.save(ROOT/'recap.png')
+        thanks=next((s for s in data['scenes'] if s['scene']==7),None)
+        if thanks:thanks_scene(1.0,elapsed=thanks['end']-thanks['start'],scene_duration=thanks['end']-thanks['start']).save(ROOT/'thanks.png')
     if a.render:
         frames=math.ceil(data['duration']*FPS)
         cmd=['ffmpeg','-y','-hide_banner','-loglevel','warning','-f','rawvideo','-vcodec','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','pipe:0','-i',str(ROOT/'source/animation/mix.wav'),'-map','0:v','-map','1:a','-vf','scale=in_range=full:out_range=tv:out_color_matrix=bt709,format=yuv420p','-c:v','libx264','-preset','fast','-crf','19','-threads','2','-bsf:v','h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1','-color_range','tv','-colorspace','bt709','-color_trc','bt709','-color_primaries','bt709','-c:a','aac','-b:a','192k','-ar','48000','-ac','2','-t',str(frames/FPS),'-movflags','+faststart',str(ROOT/'video.mp4')]

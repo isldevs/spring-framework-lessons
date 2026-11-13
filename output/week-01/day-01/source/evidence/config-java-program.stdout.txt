@@ -1,0 +1,10 @@
+App starts Spring with Config.class
+Spring instantiates Config
+Spring calls Config.repo(): create Repo
+Spring calls Config.service(repo): wire Repo into Service
+Spring context is ready
+App calls getBean(Service.class)
+same Repo bean: true
+App calls getBean(Service.class) again
+same Service bean: true
+factory calls after lookups: 2 (unchanged)

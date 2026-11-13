@@ -4,7 +4,12 @@
     "being": "bˈiːɪŋ",
     "beans": "bˈiːnz",
     "get bean": "ɡɛt bˈiːn",
-    "get being": "ɡɛt bˈiːɪŋ"
+    "get being": "ɡɛt bˈiːɪŋ",
+    "Config": "kənfˈɪɡ",
+    "Config’s": "kənfˈɪɡz",
+    "Repo": "ɹˈiːpoʊ",
+    "Service": "sˈɜːvɪs",
+    "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
   },
   "scenes": [
     {
@@ -39,8 +44,14 @@
     },
     {
       "scene": 6,
-      "text": "Here’s the whole flow. Define your beans. Spring creates them and wires their dependencies. Your application requests the ready service. That’s inversion of control—for managed beans, not every Java object.",
-      "phonemes": "hˈɪɹz ðə hˈoʊl flˈoʊ. dᵻfˈaɪn jʊɹ bˈiːnz. spɹˈɪŋ kɹiːˈeɪts ðˌɛm ænd wˈaɪɚz ðɛɹ dᵻpˈɛndənsiz. jʊɹ ˌæplɪkˈeɪʃən ɹᵻkwˈɛsts ðə ɹˈɛdi sˈɜːvɪs. ðæts ɪnvˈɜːʒən ʌv kəntɹˈoʊl—fɔːɹ mˈænɪdʒd bˈiːnz, nˌɑːt ˈɛvɹi dʒˈɑːvə ˈɑːbdʒɛkt.",
+      "text": "Your app starts Spring with Config. Spring calls Config’s bean methods, creates Repo, and wires Service. Your app retrieves the ready service. Managed beans only.",
+      "phonemes": "jʊɹ ˈæp stˈɑːɹts spɹˈɪŋ wɪð kənfˈɪɡ. spɹˈɪŋ kˈɔːlz kənfˈɪɡz bˈiːn mˈɛθədz, kɹiːˈeɪts ɹˈiːpoʊ, ænd wˈaɪɚz sˈɜːvɪs. jʊɹ ˈæp ɹᵻtɹˈiːvz ðə ɹˈɛdi sˈɜːvɪs. mˈænɪdʒd bˈiːnz ˈoʊnli.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 7,
+      "text": "Thanks for watching.",
+      "phonemes": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ.",
       "inference_batches": 1
     }
   ]

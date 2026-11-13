@@ -1,4 +1,4 @@
-"""Local Kokoro adult-male explanatory narration; six coherent scene utterances."""
+"""Local Kokoro adult-male explanatory narration; seven coherent scene utterances."""
 import argparse,json
 from pathlib import Path
 import numpy as np
@@ -14,7 +14,8 @@ CHUNKS=[
 (3,'With Spring, you register bean definitions. The container uses them to create managed objects and wire their dependencies.',0.25),
 (4,'Here, the service bean asks for a repository. Spring supplies that bean.',0.24),
 (5,'Your application calls get bean to request the ready service. In our Java run, its repository is the same bean from the container.',0.26),
-(6,'Here’s the whole flow. Define your beans. Spring creates them and wires their dependencies. Your application requests the ready service. That’s inversion of control—for managed beans, not every Java object.',2.0),
+(6,'Your app starts Spring with Config. Spring calls Config’s bean methods, creates Repo, and wires Service. Your app retrieves the ready service. Managed beans only.',2.0),
+(7,'Thanks for watching.',0.35),
 ]
 def main():
  p=argparse.ArgumentParser();p.add_argument('--speed',type=float,default=1.02);p.add_argument('--voice',default='am_puck80_fenrir20');p.add_argument('--sample',action='store_true');a=p.parse_args()
@@ -45,13 +46,13 @@ def main():
   scenes.append({'scene':scene,'start':round(t,6),'end':round(t+dur+pause,6)})
   audio.extend([x,np.zeros(round(pause*48000),np.float32)]);t+=dur+pause
   print('duration',dur,'total',t,'phoneme timings',len(timings),flush=True)
- word_checks={word:k._prepare(word,style,a.speed,'en-us',False,0.18,0.045)[1] for word in ['bean','being','beans','get bean','get being']}
+ word_checks={word:k._prepare(word,style,a.speed,'en-us',False,0.18,0.045)[1] for word in ['bean','being','beans','get bean','get being','Config','Config’s','Repo','Service','Thanks for watching.']}
  (ROOT/'pronunciation-g2p.json').write_text(json.dumps({'word_distinctions':word_checks,'scenes':phoneme_checks},indent=2,ensure_ascii=False)+'\n')
  y=np.concatenate(audio)
  y*=min(0.84/np.max(np.abs(y)),1.6)
  dest=OUT/('sample.wav' if a.sample else 'narration.wav')
  sf.write(dest,y,48000,subtype='PCM_24')
- meta={'sample_rate':48000,'voice':a.voice,'voice_blend':{'am_puck':0.8,'am_fenrir':0.2} if a.voice=='am_puck80_fenrir20' else None,'delivery_target':'Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.','speed':a.speed,'one_inference_batch_per_scene':True,'final_hold_seconds':2.0,'final_hold_start':round(len(y)/48000-2.0,6),'duration':len(y)/48000,'scenes':scenes,'phrases':phrases,'captions':phrases,'caption_method':'Scene utterance boundaries are exact synthesis edit points. Shorter display captions will use independent ASR word timing.'}
+ meta={'sample_rate':48000,'voice':a.voice,'voice_blend':{'am_puck':0.8,'am_fenrir':0.2} if a.voice=='am_puck80_fenrir20' else None,'delivery_target':'Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.','speed':a.speed,'one_inference_batch_per_scene':True,'recap_hold_seconds':2.0,'recap_hold_start':phrases[5]['end'] if len(phrases)>5 else None,'recap_hold_end':scenes[5]['end'] if len(scenes)>5 else None,'thanks_start':scenes[6]['start'] if len(scenes)>6 else None,'thanks_end':scenes[6]['end'] if len(scenes)>6 else None,'duration':len(y)/48000,'scenes':scenes,'phrases':phrases,'captions':phrases,'caption_method':'Scene utterance boundaries are exact synthesis edit points. Shorter display captions will use independent ASR word timing.'}
  (ROOT.parent/('sample-timing.json' if a.sample else 'timing.json')).write_text(json.dumps(meta,indent=2,ensure_ascii=False)+'\n')
  print(json.dumps(meta,indent=2),flush=True)
 if __name__=='__main__':main()

@@ -1,0 +1,21 @@
+{
+  "compiler": "Eclipse ECJ 3.40.0",
+  "java_target": 17,
+  "runtime": "OpenJDK 21.0.13",
+  "spring": "6.2.11",
+  "compile_exit_code": 0,
+  "program_exit_code": 0,
+  "compile_stderr_empty": true,
+  "program_stderr_empty": true,
+  "actual_stdout": "App starts Spring with Config.class\nSpring instantiates Config\nSpring calls Config.repo(): create Repo\nSpring calls Config.service(repo): wire Repo into Service\nSpring context is ready\nApp calls getBean(Service.class)\nsame Repo bean: true\nApp calls getBean(Service.class) again\nsame Service bean: true\nfactory calls after lookups: 2 (unchanged)\n",
+  "assertions_passed": [
+    "Repo factory before Service factory",
+    "Both factories during context startup before getBean",
+    "Service holds the same Repo bean",
+    "Repeated service lookup returns same singleton",
+    "No additional factory invocation after lookups"
+  ],
+  "factory_calls_after_lookups": 2,
+  "existing_example_sources_unchanged": true,
+  "network_used": false
+}

@@ -46,7 +46,7 @@ def main():
 - Actual full decode exit 0, empty error log; {v['nb_read_frames']} video frames.
 - Byte-identical lossless copy of the master. Video SHA-256: `{master_hash}`.
 - Exact supplied cover from 0–1 s; burned English captions; separate SRT with {len(timing['captions'])} valid cues.
-- Progressive closing recap, with completed diagram held for {timing.get('final_hold_seconds',2):.2f}s. User authorizes up to 45 s; this export stays strictly below 45 s.
+- Progressive closing recap, with completed diagram held for {timing['recap_hold_seconds']:.2f}s before a separate Thanks for watching end card. User authorizes up to 45 s; this export stays strictly below 45 s.
 - Encoded master loudness {qa['integrated_loudness_lufs']:.2f}LUFS, true peak {qa['true_peak_dbtp']:.2f}dBTP.
 - Voice: local Kokoro 80% am_puck / 20% am_fenrir, adult male explanatory style. Independent base.en ASR: {asr['reference_words']} expected words, raw normalized WER {asr['normalized_word_error_rate']:.6f}; raw transcript and alignment exceptions retained in production source.
 

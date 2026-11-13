@@ -1,8 +1,8 @@
 {
-  "reference_words": 102,
-  "asr_words": 103,
-  "edit_distance": 2,
-  "normalized_word_error_rate": 0.0196078431372549,
-  "transcript": "who creates your Java objects. Without Spring, your code creates a repository, then passes it into a service. With Spring, you register bean definitions. The container uses them to create managed objects and wire their dependencies. Here, the service bean asks for a repository. Spring supplies that bean. Your application calls get bean to request the ready service. In our Java run, its repository is the same bean from the container. Here's the whole flow. Define your beans. Spring creates them and wires their dependencies. Your application requests the ready service. That's in version of control for managed beans, not every Java object.",
+  "reference_words": 99,
+  "asr_words": 99,
+  "edit_distance": 0,
+  "normalized_word_error_rate": 0.0,
+  "transcript": "who creates your Java objects. Without Spring, your code creates a repository, then passes it into a service. With Spring, you register Bean definitions. The container uses them to create managed objects and wire their dependencies. Here, the service Bean asks for a repository. Spring supplies that Bean. Your application calls get Bean to request the ready service. In our Java run, its repository is the same Bean from the container. Your app starts Spring with config. Spring calls configs Bean methods, creates repo and wires service. Your app retrieves the ready service, managed Bean's only. Thanks for watching.",
   "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
 }

@@ -5,6 +5,7 @@ command -v java >/dev/null
 command -v ffmpeg >/dev/null
 command -v ffprobe >/dev/null
 bash source/java/run.sh
+bash source/java/run-config-flow.sh
 bash source/voice/setup.sh
 source/voice/.venv/bin/python source/voice/generate.py --speed 1.02 --voice am_puck80_fenrir20
 source/voice/.venv/bin/python source/voice/qa.py

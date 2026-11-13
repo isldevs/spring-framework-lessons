@@ -1,0 +1,17 @@
+{
+  "baseline_commit": "b7a28063097c5f0f93bc8e7fbed32fd321485d07",
+  "first_five_branches_unchanged": true,
+  "cover_function_unchanged": true,
+  "cover_sha256": "c334fb74f1df9cd0250e0e27ddf0549d4e664a4bb6ee3339003e4a621482f686",
+  "recap_hold_start": 39.962667,
+  "recap_hold_end": 41.962667,
+  "thanks_start": 41.962667,
+  "thanks_end": 43.403417,
+  "video_sha256": "03eeaca3cb3fcfd445587ba1ef6e35b8e06e5ba7a4d15873fd1194c822a144ff",
+  "technical_status": "PASS",
+  "recap_hold_decoded_frames": 120,
+  "thanks_final_frame_ssim": 0.998802,
+  "source_safety_samples": 192,
+  "actual_java_trace_verified": true,
+  "perceptual_voice_acceptance": "UNVERIFIED"
+}

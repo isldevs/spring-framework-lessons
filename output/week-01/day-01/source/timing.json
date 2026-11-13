@@ -8,8 +8,12 @@
   "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
   "speed": 1.02,
   "one_inference_batch_per_scene": true,
-  "final_hold_seconds": 2.0,
-  "duration": 44.36779166666667,
+  "recap_hold_seconds": 2.0,
+  "recap_hold_start": 39.962667,
+  "recap_hold_end": 41.962667,
+  "thanks_start": 41.962667,
+  "thanks_end": 43.403417,
+  "duration": 43.403416666666665,
   "scenes": [
     {
       "scene": 1,
@@ -39,7 +43,12 @@
     {
       "scene": 6,
       "start": 29.250625,
-      "end": 44.367792
+      "end": 41.962667
+    },
+    {
+      "scene": 7,
+      "start": 41.962667,
+      "end": 43.403417
     }
   ],
   "phrases": [
@@ -76,8 +85,14 @@
     {
       "scene": 6,
       "start": 29.250625,
-      "end": 42.367792,
-      "text": "Here’s the whole flow. Define your beans. Spring creates them and wires their dependencies. Your application requests the ready service. That’s inversion of control—for managed beans, not every Java object."
+      "end": 39.962667,
+      "text": "Your app starts Spring with Config. Spring calls Config’s bean methods, creates Repo, and wires Service. Your app retrieves the ready service. Managed beans only."
+    },
+    {
+      "scene": 7,
+      "start": 41.962667,
+      "end": 43.053417,
+      "text": "Thanks for watching."
     }
   ],
   "captions": [
@@ -90,18 +105,18 @@
     {
       "scene": 2,
       "start": 1.891083,
-      "end": 3.04,
+      "end": 3.06,
       "text": "Without Spring, your code"
     },
     {
       "scene": 2,
-      "start": 3.04,
-      "end": 4.86,
+      "start": 3.06,
+      "end": 4.88,
       "text": "creates a repository,"
     },
     {
       "scene": 2,
-      "start": 4.86,
+      "start": 4.88,
       "end": 6.906625,
       "text": "then passes it into a service."
     },
@@ -120,131 +135,126 @@
     {
       "scene": 3,
       "start": 11.66,
-      "end": 12.64,
+      "end": 12.62,
       "text": "managed objects"
     },
     {
       "scene": 3,
-      "start": 12.64,
+      "start": 12.62,
       "end": 15.099708,
       "text": "and wire their dependencies."
     },
     {
       "scene": 4,
       "start": 15.349708,
-      "end": 18.3,
+      "end": 18.32,
       "text": "Here, the service bean asks for a repository."
     },
     {
       "scene": 4,
-      "start": 18.3,
+      "start": 18.32,
       "end": 19.923375,
       "text": "Spring supplies that bean."
     },
     {
       "scene": 5,
       "start": 20.163375,
-      "end": 21.9,
+      "end": 21.86,
       "text": "Your application calls getBean"
     },
     {
       "scene": 5,
-      "start": 21.9,
+      "start": 21.86,
       "end": 24.18,
       "text": "to request the ready service."
     },
     {
       "scene": 5,
       "start": 24.18,
-      "end": 25.72,
+      "end": 25.7,
       "text": "In our Java run, its repository"
     },
     {
       "scene": 5,
-      "start": 25.72,
+      "start": 25.7,
       "end": 28.990625,
       "text": "is the same bean from the container."
     },
     {
       "scene": 6,
       "start": 29.250625,
-      "end": 30.62,
-      "text": "Here’s the whole flow."
+      "end": 31.58,
+      "text": "Your app starts Spring with Config."
     },
     {
       "scene": 6,
-      "start": 30.62,
-      "end": 32.12,
-      "text": "Define your beans."
+      "start": 31.58,
+      "end": 33.18,
+      "text": "Spring calls Config’s bean methods,"
     },
     {
       "scene": 6,
-      "start": 32.12,
-      "end": 32.98,
-      "text": "Spring creates them"
+      "start": 33.18,
+      "end": 34.02,
+      "text": "creates Repo,"
     },
     {
       "scene": 6,
-      "start": 32.98,
-      "end": 35.14,
-      "text": "and wires their dependencies."
+      "start": 34.02,
+      "end": 35.92,
+      "text": "and wires Service."
     },
     {
       "scene": 6,
-      "start": 35.14,
-      "end": 36.16,
-      "text": "Your application requests"
+      "start": 35.92,
+      "end": 37.94,
+      "text": "Your app retrieves the ready service."
     },
     {
       "scene": 6,
-      "start": 36.16,
-      "end": 37.68,
-      "text": "the ready service."
+      "start": 37.94,
+      "end": 39.962667,
+      "text": "Managed beans only."
     },
     {
-      "scene": 6,
-      "start": 37.68,
-      "end": 38.58,
-      "text": "That’s inversion of control—"
-    },
-    {
-      "scene": 6,
-      "start": 38.58,
-      "end": 39.98,
-      "text": "for managed beans,"
-    },
-    {
-      "scene": 6,
-      "start": 39.98,
-      "end": 42.367792,
-      "text": "not every Java object."
+      "scene": 7,
+      "start": 41.962667,
+      "end": 43.053417,
+      "text": "Thanks for watching."
     }
   ],
-  "caption_method": "Six complete scene utterances are each synthesized in one inference batch; exact scene edit bounds. Short display captions split at independently recognized faster-whisper base.en word starts (approximate 20ms grid). Spoken get bean is displayed as getBean. One ASR in/version word-boundary split is merged only for alignment (alignment-normalization.json); raw WER/transcript remain unchanged. Phrases retain the exact spoken script.",
-  "final_hold_start": 42.367792,
+  "caption_method": "Seven complete scene utterances synthesized in one inference batch each; exact scene edit boundaries. Display captions and Config overview cues use independent unprompted faster-whisper base.en word starts (approximate20ms grid). Spoken get bean is displayed as getBean. Raw ASR transcript/WER are retained; alignment exceptions, if any, are documented in alignment-normalization.json. Scene6 has the two-second diagram reading hold before scene7 thanks.",
   "recap_cues": {
     "relative_to": "scene_start",
-    "define": 1.369375,
-    "create": 2.869375,
-    "wire": 3.909375,
-    "request": 5.889375,
-    "request_verb": 6.349375,
-    "ready": 7.309375,
-    "takeaway": 8.429375,
-    "qualifier": 9.329375,
-    "complete_at": 10.729375,
-    "final_hold_start": 13.117167
+    "startup": 0.0,
+    "config_load": 1.229375,
+    "methods": 2.329375,
+    "define": 1.229375,
+    "create": 3.929375,
+    "wire": 5.189375,
+    "retrieve": 6.909375,
+    "request": 6.909375,
+    "request_verb": 6.909375,
+    "ready": 7.629375,
+    "qualifier": 8.689375,
+    "recap_hold_start": 10.712042,
+    "recap_hold_end": 12.712042,
+    "return_complete": 8.129375
   },
   "recap_cues_absolute": {
-    "define": 30.62,
-    "create": 32.12,
-    "wire": 33.16,
-    "request": 35.14,
-    "request_verb": 35.6,
-    "ready": 36.56,
-    "takeaway": 37.68,
-    "qualifier": 38.58,
-    "complete_at": 39.98,
-    "final_hold_start": 42.367792
+    "startup": 29.250625,
+    "config_load": 30.48,
+    "methods": 31.58,
+    "define": 30.48,
+    "create": 33.18,
+    "wire": 34.44,
+    "retrieve": 36.16,
+    "request": 36.16,
+    "request_verb": 36.16,
+    "ready": 36.88,
+    "qualifier": 37.94,
+    "recap_hold_start": 39.962667,
+    "recap_hold_end": 41.962667,
+    "return_complete": 37.38
   }
 }

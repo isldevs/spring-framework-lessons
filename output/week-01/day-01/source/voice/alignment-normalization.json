@@ -1,12 +1,1 @@
-[
-  {
-    "source_tokens": [
-      "in",
-      "version"
-    ],
-    "aligned_token": "inversion",
-    "start": 37.84,
-    "end": 38.14,
-    "reason": "ASR lexical word-boundary split; raw transcript and raw WER retained unchanged"
-  }
-]
+[]

@@ -1,104 +1,110 @@
-# Verification report — closing overview revision
+# Verification report — explicit Config flow and Thanks ending
 
-**Video rendering, technical verification and two-platform packaging: COMPLETE. Strict perceptual voice acceptance: INCOMPLETE.** This runtime cannot ingest audio for a listening review, so perceived age, human naturalness and subtle synthesis artifacts remain unverified. No auditory acceptance is claimed. Nothing has been uploaded, scheduled or published to YouTube or Facebook.
+**Rendering and technical QA: COMPLETE. Platform packaging: COMPLETE after the recorded per-export checks. Perceptual voice acceptance: INCOMPLETE.** This runtime cannot ingest audio for a listening review, so perceived age, human naturalness and subtle voice artifacts remain unverified. No auditory approval is claimed. Nothing has been uploaded, scheduled or published to YouTube or Facebook.
 
-Review date: 2026-11-13, Asia/Bangkok. Planned production date: 2026-11-16. These internal dates and schedule identifiers are not displayed publicly in the video or publishing copy.
+Review date:2026-11-13 (Asia/Bangkok). Planned production date:2026-11-16. Internal tracking labels are not displayed in the video or public publishing copy.
 
-## Approved change and persistent preference
+## User-requested change
 
-The user approved a closing overview diagram and allowed up to 45 seconds when explanation needs more time. The final output remains strictly below 45 seconds. `AGENTS.md` now records that future lessons should finish with a progressively revealed mechanism recap, hold the complete diagram for at least two seconds, allow up to 45 seconds for clarity, and commit/push after each generation or revision.
+The generic definitions overview has been replaced with the actual causal Config sequence. The cover and first five explanatory scene branches are unchanged. A seventh scene says and displays **Thanks for watching** after the completed recap has been held for two seconds. The total remains strictly below the authorized45-second ceiling. `AGENTS.md` records these future production preferences and the standing push-after-generation instruction.
 
-The original cover and first five explanatory scene branches are unchanged; source-level comparison against the previous commit and cover SHA-256 are retained in `source/evidence/recap-change-summary.json`. Scene 6 replaces the former responsibility marker with the complete flow:
+The recap now shows:
 
-1. Register `@Bean` definitions.
-2. Spring creates managed Repo and Service objects, then passes the Repo reference into Service.
-3. The application sends a `getBean(Service.class)` request UP to the container.
-4. The ready service reference returns DOWN to the application.
-5. The qualification **Managed beans only** remains visible.
+1. Application code starts `AnnotationConfigApplicationContext` with `Config.class`, assigning it to `ctx`.
+2. Spring reads `@Configuration class Config`, which declares actual `@Bean Repo repo()` and `@Bean Service service(Repo repo)` factory signatures.
+3. Spring calls the factories, creates Repo, and passes the repository reference to Service. The corresponding rows and objects are revealed sequentially.
+4. The application later calls `ctx.getBean(Service.class)` on that same context and receives the ready Service reference.
+5. **Managed beans only** remains visible; no new object creation is animated during lookup.
 
-Creation/wiring visibly precedes the application request; getBean does not trigger a new-object animation. The container graph is already present when the lookup occurs. `recap.png` is a separate full-resolution image of the completed overview; the recap itself is embedded in the same MP4, not a separate clip.
+The overview badge spells out **Inversion of Control** to name the mechanism being explained. `recap.png` shows the completed diagram. `thanks.png` shows the end card. Both sequences are inside the same final MP4, and the opening still uses the exact original cover from0–1s.
 
-## Actual encoded master
+## Actual encoded file
 
 | Check | Actual result |
 | --- | --- |
-| Video/container duration | 44.383333s, below the authorized45s ceiling |
-| Resolution and frame rate | Native 1080×1920, progressive, constant 60FPS |
-| Codecs | H.264 High, AAC LC stereo 48kHz |
-| Frames and timestamps | 2,663 decoded frames; every presentation timestamp checked at 1/60 s intervals |
-| Pixel format / color | yuv420p 8-bit SDR, limited/TV range; BT.709 matrix, transfer and primaries |
-| Audio duration | 44.368000s; video frame rounding adds approximately15ms of already quiet tail |
-| Full decode | FFmpeg exit 0, empty error log |
-| Encoded loudness | -16.08LUFS integrated, -1.31dBTP true peak, 4.00LU loudness range |
-| Cover at start | Source frames0–59 are pixel-identical to cover.png before encoding, no fade-in; narration begins immediately |
-| Encoded cover comparison | All60 decoded opening frames compared; mean SSIM 0.998971, minimum0.998913; ordinary lossy compression differences |
-| Black frames | No black intervals detected |
-| Final-mix continuity | No internal quiet interval at−50dBFS lasting≥0.15s; intended final quiet tail starts44.076292s |
-| Subtitles | 23 synchronized cues; ordered, positive duration, nonoverlapping, within runtime; caption words match the scripted narration |
-| Safe bounds | 178 source samples across scene/caption/opening states; bright foreground stays within X90..990/Y250..1520 |
+| Container/video duration | 43.416667s, strictly below 45s |
+| Display / frame rate | Native 1080×1920, progressive, constant 60FPS |
+| Codecs | H.264 High; AAC LC stereo 48kHz |
+| Frames/timestamps | 2,605 decoded frames; all timestamp intervals verified at1/60s |
+| Color | yuv420p 8-bit SDR; BT.709 matrix, transfer and primaries; limited/TV range |
+| Audio duration | 43.403000s; ordinary final video-frame rounding |
+| Full decoding | Exit 0, empty error log |
+| Loudness / peak | -15.94 LUFS, -1.38 dBTP, 4.40 LU loudness range |
+| Opening cover | All 60 source frames pixel-identical; decoded meanSSIM0.998971/min0.998913 |
+| Black intervals | None detected |
+| Continuity | No unexpected internal silence at−50dBFS/150ms; intended final quiet tail begins43.228646s |
+| Captions | 21 positive-duration, ordered, nonoverlapping SRT cues within runtime; exact script-word match |
+| Safe bounds | 192 samples pass X90..990/Y250..1520 |
 
 Final MP4 SHA-256:
 
 ```text
-bf2210acd945924d60504bb564904dae180e90ef73038106e4e4256d7e66f334
+03eeaca3cb3fcfd445587ba1ef6e35b8e06e5ba7a4d15873fd1194c822a144ff
 ```
 
-Raw FFprobe, full-decode, timestamp, loudness, silence, black-frame and opening-comparison results are retained under `source/evidence/final-*`. The current encoder explicitly writes H.264 VUI and MP4 Rec.709 tags; no post-render metadata repair was required.
+## Recap hold and actual last-frame checks
 
-## Completed-diagram reading hold
+The completed mechanism is held for exactly **2.0s**, **39.962667–41.962667s**, inside scene 6. This is before the Thanks card, not at the file's endpoint.
 
-The reserved source reading hold runs **42.367792–44.367792s**, exactly 2.0seconds. The graph finishes earlier and remains stationary throughout that interval. The progress rail outside the diagram can continue moving.
+All 120 source diagram crops are pixel-identical. All 120 actual encoded hold frames compare against the completed source at minimumSSIM0.997218, mean0.997248; the threshold is0.995. The crop includes the Config recipe, startup, container, lookup and managed-bean qualifier, while excluding captions and progress rail.
 
-The validator independently compared **120 source diagram crops pixel-for-pixel**, then compared **all 120 actual decoded hold frames** against the completed graph. The diagram crop is X100..980/Y534..1300, excluding captions and the progress rail. Source crops are identical; encoded SSIM minimum/mean is **0.998425/0.998425**, above the 0.995acceptance threshold. This verifies the actual delivered MP4, not merely an intended timeline.
+The Thanks scene starts at **41.962667s** and continues through the movie end. The actual final encoded frame2604 was checked against the source Thanks card atSSIM0.998802 Its spoken phrase matches the SRT. The large main-card lettering supplies the visible words without a duplicate lower caption band.
 
-Actual decoded frames were reviewed at mobile size: `source/evidence/final-decoded-mobile-contact.png` and `final-decoded-scene-6.png`. The request/return arrow directions are distinct, the Repo→Service reference is clear inside Spring, and the managed-bean qualification remains readable. No primary text clipping or crowding was observed. See `source/evidence/qa-notes.md` and `recap-qa-review.json` for the independent review.
+Actual decoded frames were inspected for mobile readability and clipping: `source/evidence/final-decoded-mobile-contact.png`, `final-decoded-scene-6.png`, and `final-decoded-scene-7.png`. Source/evidence/qa-notes.md and config-qa-review.json record review scope. Current final-* and config-* files are authoritative; earlier recap-* artifacts preserve the previous generic ending.
 
-## Narration, timing and review limits
+## Fresh actual Java verification of Config
 
-Local Kokoro v1.0 float32ONNX uses the same80%am_puck/20%am_fenrir American-English male style blend at speed1.02. The styles are combined before inference to produce one consistent voice, not overlaid as two recordings. No pitch shifting, waveform time stretching, external speech service or substitute TTS was used. All six scenes fit one inference batch each. First-five-scene durations match the prior version.
-
-Narration WAV is 44.367792s,48kHz mono PCM24, including the programmed2.0s final tail. Signal starts at 0.015250s; peak -1.514415dBFS, RMS -20.874903dBFS, zero clipped samples, zero endpoint samples. Four-millisecond quiet-edge microfades prevent edit clicks. Pitch10th/50th/90th percentiles are 86.34/112.61/168.73Hz, with 4.85semitones standard deviation. These metrics cannot certify perceived age or naturalness.
-
-Independent Whisper base.en, without an initial prompt, returns 103 tokens for 102 expected words. Raw normalized WER is **1.9608%**: it splits “inversion” into “in version,” producing two edit-distance operations. The unmodified raw transcript and score are retained. The actual pronunciation input has the correct inversion phonemes. For caption alignment only, this one documented word-boundary split is merged; the audio and raw ASR score are not changed. This is NOT a claim of zero WER. See `source/voice/alignment-normalization.json`, `pronunciation-g2p.json`, `asr.json`, and `asr-summary.json`.
-
-Caption and animation anchors use independent ASR word timestamps on an approximate20msgrid. Exact synthesis edit boundaries remain in `source/timing.json`. Recap anchors include Define30.620s, creation32.120s, wiring33.160s, request35.140s, ready36.560s, and the managed-bean qualifier38.580s. The quiet reference-return tone is synchronized to the return-arrow arrival at37.260s. The complete graph remains visible during the final 2 s reading hold while the original background bed fades naturally.
-
-**Outstanding voice requirement:** no auditory listening review could be performed. The runtime does not support audio input. Humanlike smoothness, intended age impression and subtle speech artifacts must still be accepted or rejected by listening; automated ASR and pitch metrics do not substitute for that requirement. Details remain in `source/voice/voice-qa.md`.
-
-## Scene timings
-
-| Scene | Actual source timeline |
-| --- | --- |
-| 1 | 0.000000–1.891083 s |
-| 2 | 1.891083–7.146625 s |
-| 3 | 7.146625–15.349708 s |
-| 4 | 15.349708–20.163375 s |
-| 5 | 20.163375–29.250625 s |
-| 6 | 29.250625–44.367792 s |
-
-## Java/Spring verification retained
-
-The Java example and pinned dependencies are unchanged. It was actually compiled with ECJ3.40.0 and executed with OpenJDK21.0.13/Spring6.2.11. Successful exit 0 with empty stderr; actual preserved stdout:
+The new companion `source/java/ConfigFlowDemo.java` was compiled and run using existing pinned ECJ3.40.0, OpenJDK21.0.13 and Spring6.2.11 dependencies. Both compilation and execution exited 0 with empty stderr. Actual stdout:
 
 ```text
-manual wiring: true
-spring wiring: true
-same singleton: true
-unmanaged same as bean: false
+App starts Spring with Config.class
+Spring instantiates Config
+Spring calls Config.repo(): create Repo
+Spring calls Config.service(repo): wire Repo into Service
+Spring context is ready
+App calls getBean(Service.class)
+same Repo bean: true
+App calls getBean(Service.class) again
+same Service bean: true
+factory calls after lookups: 2 (unchanged)
 ```
 
-`@Bean Service service(Repo repo)` receives the repository bean from Spring and passes it to `new Service(repo)`. The application requests Service through `ctx.getBean(Service.class)`, and the assertion verifies its repository is the same instance returned by `ctx.getBean(Repo.class)`. Repeated service lookup returns the same default singleton; an independent `new Repo()` is distinct. These non-lazy singleton beans are created at context refresh, before lookup. The on-screen `spring wiring: true` is an excerpt of that actual run.
+Assertions verify factory order and that both factories execute during startup, before the ready context is returned and before application lookup. Repeated default-singleton lookups do not invoke the factories again. This is the concrete behavior represented by the new ending. Run `bash source/java/run-config-flow.sh`; see source/java/config-flow-notes.md and source/evidence/config-java-*.
 
-Reproduce with `bash source/java/run.sh`. Official Spring documentation snapshots/excerpts remain under `source/evidence/java-*`, including IoC introduction, @Bean factory parameters and default singleton scope:
+The earlier `IoCDemo.java` and its runner are unchanged. Their original actual identity checks still back the scene 5 excerpt `spring wiring: true`: the Service holds the same Repo bean returned by the container. An independently constructed Repo remains a different object. Spring manages registered beans, not all Java objects.
+
+Official documentation retained in source/evidence/java-*:
 
 - https://docs.spring.io/spring-framework/reference/core/beans/introduction.html
 - https://docs.spring.io/spring-framework/reference/core/beans/java/bean-annotation.html
 - https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html
 
-## Rights, packages and reproduction
+## Narration and listening limit
 
-`asset-rights.md` and `originality-review.md` document actual provenance and limitations. The cover, recap, animation, narration text, NumPy music and sound effects were created for this production. Licensed OpenSans/DejaVu fonts, Apache-2.0 Kokoro male styles and open-source tools are retained with their license evidence. No paid stock footage, proprietary font, sampled song, named-person voice imitation, or exhaustive-plagiarism-search claim is involved.
+Local Kokoro v1.0 float32ONNX uses the same80%am_puck/20%am_fenrir male style blend at speed1.02, without pitch shifting, time stretching, external speech service or replacement TTS. Each of seven scenes fits one inference batch. First five scene durations remain unchanged.
 
-Both platform MP4s were independently probed and fully decoded with exit 0/empty error logs. Their SHA-256 equals the master, and both covers/SRT copies equal their source files. `source/evidence/platform-validation-summary.json` and platform-specific command logs contain current values. Each self-contained upload ZIP includes the video, cover, synchronized SRT, paste-ready platform copy, upload notes, technical/voice review notes and checksums. YouTube also includes search tags and pinned comment text. No YouTube/Facebook publication or scheduling occurred.
+Narration is 43.403417s,48kHz mono PCM24; onset0.015250s, peak-1.514414dBFS, RMS-21.123701dBFS, zero clipped samples and zero endpoint samples. Quiet-edge4ms microfades prevent edit clicks. Voiced pitch10th/50th/90th percentiles are 86.84/111.96/171.08Hz, with 4.80semitones variation.
 
-Run `source/rebuild.sh` for generation, validation and platform packaging. `checksums.sha256` covers the requested deliverables and current source/evidence, excluding itself, virtual environments, model caches and Python bytecode. Downloaded model/voice hashes have their own verified manifest. The complete production ZIP contains the current lesson, recap PNG, both platform folders, scripts, evidence and licenses. Run `sha256sum -c checksums.sha256` inside the lesson directory; the two platform ZIPs have a separate `platform-archives.sha256`. Normal Git commits retain previous delivered versions, and `AGENTS.md` persists the user's future-generation preferences.
+Independent unprompted Whisper base.en recognizes all **99 normalized words**, including Config, Repo, Service and Thanks for watching. Raw normalized WER is **0.000000**; no manual transcript correction was needed. G2P inputs and raw ASR are retained. Caption/animation word anchors use approximate20ms-grid ASR timestamps; scene edit boundaries and the two-second recap pause are sample-derived. The return-reference tone occurs at37.380s; the Thanks card continues the original music fade without another effect.
+
+**Unmet voice requirement:** automated transcript, pitch and continuity checks cannot certify smooth human delivery, perceived age or subtle synthesis artifacts. This environment has no audio-input listening capability. Perceptual acceptance remains incomplete and is not claimed. See source/voice/voice-qa.md.
+
+## Scene times
+
+| Scene | Actual source timeline |
+| --- | --- |
+| 1 | 0.000000–1.891083s |
+| 2 | 1.891083–7.146625s |
+| 3 | 7.146625–15.349708s |
+| 4 | 15.349708–20.163375s |
+| 5 | 20.163375–29.250625s |
+| 6 | 29.250625–41.962667s |
+| 7 | 41.962667–43.403417s |
+
+## Rights, platform packages and reproduction
+
+All animation, cover, Config overview, Thanks card, script, background audio and sound effects are original production material. Licensed OpenSans/DejaVu fonts and Apache-2.0 Kokoro styles are retained with notices; tools are free/open-source. Asset-rights.md and originality-review.md describe actual provenance and review limits. No paid stock, sampled music, proprietary font, named-person voice cloning or exhaustive-originality-search claim is involved.
+
+Each actual platform MP4 is independently probed and fully decoded; it is byte-identical to the master. Covers and SRTs match their source files. Current per-export values and command logs are in source/evidence/platform-*. Both upload ZIPs include video, cover, SRT, platform copy, upload notes, technical/voice notes and checksums. YouTube also includes tags and pinned comment text. No platform posting or scheduling occurred.
+
+`source/rebuild.sh` reproduces both Java checks, narration, rendering, technical validation and platform packaging. `checksums.sha256` covers all current requested deliverables and source/evidence outside virtual environments/model caches/bytecode, excluding itself. Model hashes are retained separately. The complete production ZIP includes the current seven-scene lesson, recap/Thanks PNGs, reproduction files, rights and evidence. Both platform ZIPs have separate archive hashes. Previous revisions remain in Git history; the repository AGENTS.md persists the user's future-generation preferences.

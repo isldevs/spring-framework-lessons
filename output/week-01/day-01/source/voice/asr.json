@@ -6,487 +6,487 @@
       "start": 0.0,
       "end": 1.18,
       "text": " who creates your Java objects.",
-      "avg_logprob": -0.11638272443303356,
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " who",
           "start": 0.0,
           "end": 0.06,
-          "probability": 0.35506388545036316
+          "probability": 0.3663393557071686
         },
         {
           "word": " creates",
           "start": 0.06,
           "end": 0.32,
-          "probability": 0.9884628653526306
+          "probability": 0.9888843297958374
         },
         {
           "word": " your",
           "start": 0.32,
           "end": 0.48,
-          "probability": 0.9923074245452881
+          "probability": 0.9932467937469482
         },
         {
           "word": " Java",
           "start": 0.48,
           "end": 0.74,
-          "probability": 0.9769401550292969
+          "probability": 0.9827066659927368
         },
         {
           "word": " objects.",
           "start": 0.74,
           "end": 1.18,
-          "probability": 0.9426496624946594
+          "probability": 0.943178117275238
         }
       ]
     },
     {
       "start": 1.9,
-      "end": 4.02,
+      "end": 4.08,
       "text": " Without Spring, your code creates a repository,",
-      "avg_logprob": -0.11638272443303356,
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " Without",
           "start": 1.9,
           "end": 2.06,
-          "probability": 0.9556592702865601
+          "probability": 0.9522245526313782
         },
         {
           "word": " Spring,",
           "start": 2.06,
           "end": 2.4,
-          "probability": 0.6866627931594849
+          "probability": 0.6873840689659119
         },
         {
           "word": " your",
           "start": 2.72,
           "end": 2.8,
-          "probability": 0.9947699904441833
+          "probability": 0.9946198463439941
         },
         {
           "word": " code",
           "start": 2.8,
-          "end": 3.04,
-          "probability": 0.9900882840156555
+          "end": 3.06,
+          "probability": 0.9893442988395691
         },
         {
           "word": " creates",
-          "start": 3.04,
+          "start": 3.06,
           "end": 3.58,
-          "probability": 0.9979216456413269
+          "probability": 0.9979215264320374
         },
         {
           "word": " a",
           "start": 3.58,
           "end": 3.74,
-          "probability": 0.9969314336776733
+          "probability": 0.9975441098213196
         },
         {
           "word": " repository,",
           "start": 3.74,
-          "end": 4.02,
-          "probability": 0.977849006652832
+          "end": 4.08,
+          "probability": 0.979477047920227
         }
       ]
     },
     {
-      "start": 4.86,
-      "end": 6.34,
+      "start": 4.88,
+      "end": 6.32,
       "text": " then passes it into a service.",
-      "avg_logprob": -0.11638272443303356,
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " then",
-          "start": 4.86,
+          "start": 4.88,
           "end": 4.98,
-          "probability": 0.9890479445457458
+          "probability": 0.9875174164772034
         },
         {
           "word": " passes",
           "start": 4.98,
-          "end": 5.36,
-          "probability": 0.9955697655677795
+          "end": 5.32,
+          "probability": 0.9955234527587891
         },
         {
           "word": " it",
-          "start": 5.36,
+          "start": 5.32,
           "end": 5.66,
-          "probability": 0.9848916530609131
+          "probability": 0.9871236085891724
         },
         {
           "word": " into",
           "start": 5.66,
           "end": 5.88,
-          "probability": 0.9917951226234436
+          "probability": 0.9937134385108948
         },
         {
           "word": " a",
           "start": 5.88,
           "end": 6.02,
-          "probability": 0.9977173805236816
+          "probability": 0.9982609152793884
         },
         {
           "word": " service.",
           "start": 6.02,
-          "end": 6.34,
-          "probability": 0.9807692766189575
+          "end": 6.32,
+          "probability": 0.9827086329460144
         }
       ]
     },
     {
-      "start": 7.14,
-      "end": 9.08,
-      "text": " With Spring, you register bean definitions.",
-      "avg_logprob": -0.11638272443303356,
+      "start": 7.12,
+      "end": 9.06,
+      "text": " With Spring, you register Bean definitions.",
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " With",
-          "start": 7.14,
+          "start": 7.12,
           "end": 7.26,
-          "probability": 0.9973656535148621
+          "probability": 0.9975639581680298
         },
         {
           "word": " Spring,",
           "start": 7.26,
-          "end": 7.54,
-          "probability": 0.9851396679878235
+          "end": 7.52,
+          "probability": 0.9870268702507019
         },
         {
           "word": " you",
           "start": 7.92,
-          "end": 7.98,
-          "probability": 0.9976133108139038
+          "end": 8.0,
+          "probability": 0.9972623586654663
         },
         {
           "word": " register",
-          "start": 7.98,
+          "start": 8.0,
           "end": 8.38,
-          "probability": 0.998046875
+          "probability": 0.9978742599487305
         },
         {
-          "word": " bean",
+          "word": " Bean",
           "start": 8.38,
           "end": 8.76,
-          "probability": 0.35227978229522705
+          "probability": 0.5626466274261475
         },
         {
           "word": " definitions.",
           "start": 8.76,
-          "end": 9.08,
-          "probability": 0.9974155426025391
+          "end": 9.06,
+          "probability": 0.772057831287384
         }
       ]
     },
     {
       "start": 10.08,
-      "end": 12.64,
+      "end": 12.62,
       "text": " The container uses them to create managed objects",
-      "avg_logprob": -0.11638272443303356,
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " The",
           "start": 10.08,
           "end": 10.1,
-          "probability": 0.9970390796661377
+          "probability": 0.9972426891326904
         },
         {
           "word": " container",
           "start": 10.1,
           "end": 10.4,
-          "probability": 0.9738138914108276
+          "probability": 0.9650166630744934
         },
         {
           "word": " uses",
           "start": 10.4,
           "end": 10.88,
-          "probability": 0.9970656037330627
+          "probability": 0.997123658657074
         },
         {
           "word": " them",
           "start": 10.88,
           "end": 11.2,
-          "probability": 0.998854398727417
+          "probability": 0.9990535378456116
         },
         {
           "word": " to",
           "start": 11.2,
           "end": 11.38,
-          "probability": 0.9990532994270325
+          "probability": 0.9991051554679871
         },
         {
           "word": " create",
           "start": 11.38,
           "end": 11.66,
-          "probability": 0.9992005228996277
+          "probability": 0.9992591738700867
         },
         {
           "word": " managed",
           "start": 11.66,
           "end": 12.06,
-          "probability": 0.9764947295188904
+          "probability": 0.9660683274269104
         },
         {
           "word": " objects",
           "start": 12.06,
-          "end": 12.64,
-          "probability": 0.9981600642204285
+          "end": 12.62,
+          "probability": 0.9972996115684509
         }
       ]
     },
     {
-      "start": 12.64,
-      "end": 14.02,
+      "start": 12.62,
+      "end": 14.04,
       "text": " and wire their dependencies.",
-      "avg_logprob": -0.11638272443303356,
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " and",
-          "start": 12.64,
-          "end": 13.1,
-          "probability": 0.8853676319122314
+          "start": 12.62,
+          "end": 13.12,
+          "probability": 0.908003032207489
         },
         {
           "word": " wire",
-          "start": 13.1,
+          "start": 13.12,
           "end": 13.36,
-          "probability": 0.9943999648094177
+          "probability": 0.9949330687522888
         },
         {
           "word": " their",
           "start": 13.36,
           "end": 13.66,
-          "probability": 0.9938772320747375
+          "probability": 0.9938971400260925
         },
         {
           "word": " dependencies.",
           "start": 13.66,
-          "end": 14.02,
-          "probability": 0.9940285682678223
+          "end": 14.04,
+          "probability": 0.9941311478614807
         }
       ]
     },
     {
-      "start": 15.38,
+      "start": 15.34,
       "end": 17.46,
-      "text": " Here, the service bean asks for a repository.",
-      "avg_logprob": -0.11638272443303356,
+      "text": " Here, the service Bean asks for a repository.",
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " Here,",
-          "start": 15.38,
+          "start": 15.34,
           "end": 15.52,
-          "probability": 0.9841275811195374
+          "probability": 0.9831793308258057
         },
         {
           "word": " the",
-          "start": 15.58,
+          "start": 15.62,
           "end": 15.7,
-          "probability": 0.9967097043991089
+          "probability": 0.9961876273155212
         },
         {
           "word": " service",
           "start": 15.7,
           "end": 16.04,
-          "probability": 0.9780822992324829
+          "probability": 0.9695932865142822
         },
         {
-          "word": " bean",
+          "word": " Bean",
           "start": 16.04,
           "end": 16.28,
-          "probability": 0.9041813015937805
+          "probability": 0.6700923442840576
         },
         {
           "word": " asks",
           "start": 16.28,
-          "end": 16.64,
-          "probability": 0.9808918833732605
+          "end": 16.68,
+          "probability": 0.9885551333427429
         },
         {
           "word": " for",
-          "start": 16.64,
+          "start": 16.68,
           "end": 16.96,
-          "probability": 0.999047577381134
+          "probability": 0.9987233281135559
         },
         {
           "word": " a",
           "start": 16.96,
           "end": 17.04,
-          "probability": 0.9942551255226135
+          "probability": 0.9951926469802856
         },
         {
           "word": " repository.",
           "start": 17.04,
           "end": 17.46,
-          "probability": 0.9973496198654175
+          "probability": 0.996566116809845
         }
       ]
     },
     {
-      "start": 18.3,
-      "end": 19.36,
-      "text": " Spring supplies that bean.",
-      "avg_logprob": -0.11638272443303356,
+      "start": 18.32,
+      "end": 19.38,
+      "text": " Spring supplies that Bean.",
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " Spring",
-          "start": 18.3,
-          "end": 18.38,
-          "probability": 0.9902721047401428
+          "start": 18.32,
+          "end": 18.4,
+          "probability": 0.9899270534515381
         },
         {
           "word": " supplies",
-          "start": 18.38,
-          "end": 18.76,
-          "probability": 0.9974929094314575
+          "start": 18.4,
+          "end": 18.74,
+          "probability": 0.9970157146453857
         },
         {
           "word": " that",
-          "start": 18.76,
+          "start": 18.74,
           "end": 19.12,
-          "probability": 0.9947360157966614
+          "probability": 0.9945647716522217
         },
         {
-          "word": " bean.",
+          "word": " Bean.",
           "start": 19.12,
-          "end": 19.36,
-          "probability": 0.9619491100311279
+          "end": 19.38,
+          "probability": 0.9411150217056274
         }
       ]
     },
     {
       "start": 20.16,
       "end": 23.44,
-      "text": " Your application calls get bean to request the ready service.",
-      "avg_logprob": -0.11638272443303356,
+      "text": " Your application calls get Bean to request the ready service.",
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " Your",
           "start": 20.16,
           "end": 20.3,
-          "probability": 0.9880650639533997
+          "probability": 0.9855825901031494
         },
         {
           "word": " application",
           "start": 20.3,
-          "end": 20.66,
-          "probability": 0.9972164630889893
+          "end": 20.62,
+          "probability": 0.9930288195610046
         },
         {
           "word": " calls",
-          "start": 20.66,
-          "end": 21.32,
-          "probability": 0.9980657696723938
+          "start": 20.62,
+          "end": 21.3,
+          "probability": 0.9982215762138367
         },
         {
           "word": " get",
-          "start": 21.32,
+          "start": 21.3,
           "end": 21.64,
-          "probability": 0.8544192910194397
+          "probability": 0.7577171325683594
         },
         {
-          "word": " bean",
+          "word": " Bean",
           "start": 21.64,
-          "end": 21.9,
-          "probability": 0.8114004731178284
+          "end": 21.86,
+          "probability": 0.910888671875
         },
         {
           "word": " to",
-          "start": 21.9,
+          "start": 21.86,
           "end": 22.22,
-          "probability": 0.9969080090522766
+          "probability": 0.9961012601852417
         },
         {
           "word": " request",
           "start": 22.22,
           "end": 22.52,
-          "probability": 0.9988665580749512
+          "probability": 0.9987917542457581
         },
         {
           "word": " the",
           "start": 22.52,
           "end": 22.9,
-          "probability": 0.9968408346176147
+          "probability": 0.9961442947387695
         },
         {
           "word": " ready",
           "start": 22.9,
           "end": 23.08,
-          "probability": 0.839251697063446
+          "probability": 0.7696194648742676
         },
         {
           "word": " service.",
           "start": 23.08,
           "end": 23.44,
-          "probability": 0.9954602122306824
+          "probability": 0.9924617409706116
         }
       ]
     },
     {
       "start": 24.18,
       "end": 27.28,
-      "text": " In our Java run, its repository is the same bean",
-      "avg_logprob": -0.11638272443303356,
+      "text": " In our Java run, its repository is the same Bean",
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " In",
           "start": 24.18,
           "end": 24.24,
-          "probability": 0.9969070553779602
+          "probability": 0.996683657169342
         },
         {
           "word": " our",
           "start": 24.24,
           "end": 24.34,
-          "probability": 0.9977222084999084
+          "probability": 0.997298538684845
         },
         {
           "word": " Java",
           "start": 24.34,
           "end": 24.56,
-          "probability": 0.9905513525009155
+          "probability": 0.9912487268447876
         },
         {
           "word": " run,",
           "start": 24.56,
           "end": 25.0,
-          "probability": 0.904488205909729
+          "probability": 0.9095585942268372
         },
         {
           "word": " its",
           "start": 25.3,
           "end": 25.4,
-          "probability": 0.6699625849723816
+          "probability": 0.6966291666030884
         },
         {
           "word": " repository",
           "start": 25.4,
-          "end": 25.72,
-          "probability": 0.9939833283424377
+          "end": 25.7,
+          "probability": 0.9909433722496033
         },
         {
           "word": " is",
-          "start": 25.72,
+          "start": 25.7,
           "end": 26.56,
-          "probability": 0.9970508813858032
+          "probability": 0.9977140426635742
         },
         {
           "word": " the",
           "start": 26.56,
           "end": 26.7,
-          "probability": 0.998916506767273
+          "probability": 0.9990090131759644
         },
         {
           "word": " same",
           "start": 26.7,
           "end": 26.98,
-          "probability": 0.9997913241386414
+          "probability": 0.9997867941856384
         },
         {
-          "word": " bean",
+          "word": " Bean",
           "start": 26.98,
           "end": 27.28,
-          "probability": 0.9677831530570984
+          "probability": 0.9655282497406006
         }
       ]
     },
@@ -494,265 +494,233 @@
       "start": 27.28,
       "end": 28.08,
       "text": " from the container.",
-      "avg_logprob": -0.11638272443303356,
+      "avg_logprob": -0.1159205333226257,
       "words": [
         {
           "word": " from",
           "start": 27.28,
           "end": 27.66,
-          "probability": 0.9963311553001404
+          "probability": 0.9955314993858337
         },
         {
           "word": " the",
           "start": 27.66,
           "end": 27.8,
-          "probability": 0.9987356066703796
+          "probability": 0.9984585046768188
         },
         {
           "word": " container.",
           "start": 27.8,
           "end": 28.08,
-          "probability": 0.9948486089706421
+          "probability": 0.9889145493507385
         }
       ]
     },
     {
-      "start": 28.919999999999998,
-      "end": 30.14,
-      "text": " Here's the whole flow.",
-      "avg_logprob": -0.21321999695565966,
-      "words": [
-        {
-          "word": " Here's",
-          "start": 28.919999999999998,
-          "end": 29.52,
-          "probability": 0.7051019966602325
-        },
-        {
-          "word": " the",
-          "start": 29.52,
-          "end": 29.64,
-          "probability": 0.9936390519142151
-        },
-        {
-          "word": " whole",
-          "start": 29.64,
-          "end": 29.8,
-          "probability": 0.9756788611412048
-        },
-        {
-          "word": " flow.",
-          "start": 29.8,
-          "end": 30.14,
-          "probability": 0.9579183459281921
-        }
-      ]
-    },
-    {
-      "start": 30.62,
-      "end": 31.26,
-      "text": " Define your beans.",
-      "avg_logprob": -0.21321999695565966,
-      "words": [
-        {
-          "word": " Define",
-          "start": 30.62,
-          "end": 30.88,
-          "probability": 0.9623329937458038
-        },
-        {
-          "word": " your",
-          "start": 30.88,
-          "end": 31.06,
-          "probability": 0.9918035268783569
-        },
-        {
-          "word": " beans.",
-          "start": 31.06,
-          "end": 31.26,
-          "probability": 0.9246171712875366
-        }
-      ]
-    },
-    {
-      "start": 32.12,
-      "end": 34.38,
-      "text": " Spring creates them and wires their dependencies.",
-      "avg_logprob": -0.21321999695565966,
-      "words": [
-        {
-          "word": " Spring",
-          "start": 32.12,
-          "end": 32.12,
-          "probability": 0.9767836332321167
-        },
-        {
-          "word": " creates",
-          "start": 32.12,
-          "end": 32.64,
-          "probability": 0.9974973797798157
-        },
-        {
-          "word": " them",
-          "start": 32.64,
-          "end": 32.98,
-          "probability": 0.9991409778594971
-        },
-        {
-          "word": " and",
-          "start": 32.98,
-          "end": 33.16,
-          "probability": 0.9108179807662964
-        },
-        {
-          "word": " wires",
-          "start": 33.16,
-          "end": 33.44,
-          "probability": 0.9360745549201965
-        },
-        {
-          "word": " their",
-          "start": 33.44,
-          "end": 33.86,
-          "probability": 0.9858712553977966
-        },
-        {
-          "word": " dependencies.",
-          "start": 33.86,
-          "end": 34.38,
-          "probability": 0.9922531247138977
-        }
-      ]
-    },
-    {
-      "start": 35.14,
-      "end": 37.06,
-      "text": " Your application requests the ready service.",
-      "avg_logprob": -0.21321999695565966,
+      "start": 29.080000000000002,
+      "end": 30.72,
+      "text": " Your app starts Spring with config.",
+      "avg_logprob": -0.41480279838045436,
       "words": [
         {
           "word": " Your",
-          "start": 35.14,
-          "end": 35.18,
-          "probability": 0.992743968963623
+          "start": 29.029999999999998,
+          "end": 29.38,
+          "probability": 0.27274981141090393
         },
         {
-          "word": " application",
-          "start": 35.18,
-          "end": 35.6,
-          "probability": 0.9962238073348999
+          "word": " app",
+          "start": 29.38,
+          "end": 29.6,
+          "probability": 0.9348006844520569
         },
         {
-          "word": " requests",
-          "start": 35.6,
-          "end": 36.16,
-          "probability": 0.9887586832046509
+          "word": " starts",
+          "start": 29.6,
+          "end": 29.86,
+          "probability": 0.9869287014007568
         },
         {
-          "word": " the",
-          "start": 36.16,
-          "end": 36.56,
-          "probability": 0.9968600273132324
+          "word": " Spring",
+          "start": 29.86,
+          "end": 30.2,
+          "probability": 0.8526758551597595
         },
         {
-          "word": " ready",
-          "start": 36.56,
-          "end": 36.72,
-          "probability": 0.8413076400756836
+          "word": " with",
+          "start": 30.2,
+          "end": 30.48,
+          "probability": 0.9838927984237671
+        },
+        {
+          "word": " config.",
+          "start": 30.48,
+          "end": 30.72,
+          "probability": 0.5116372108459473
+        }
+      ]
+    },
+    {
+      "start": 31.58,
+      "end": 33.18,
+      "text": " Spring calls configs Bean methods,",
+      "avg_logprob": -0.41480279838045436,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 31.58,
+          "end": 31.58,
+          "probability": 0.988120436668396
+        },
+        {
+          "word": " calls",
+          "start": 31.58,
+          "end": 31.9,
+          "probability": 0.8921471238136292
+        },
+        {
+          "word": " configs",
+          "start": 31.9,
+          "end": 32.6,
+          "probability": 0.6551221609115601
+        },
+        {
+          "word": " Bean",
+          "start": 32.6,
+          "end": 32.76,
+          "probability": 0.5629234910011292
+        },
+        {
+          "word": " methods,",
+          "start": 32.76,
+          "end": 33.18,
+          "probability": 0.7931641340255737
+        }
+      ]
+    },
+    {
+      "start": 33.18,
+      "end": 35.18,
+      "text": " creates repo and wires service.",
+      "avg_logprob": -0.41480279838045436,
+      "words": [
+        {
+          "word": " creates",
+          "start": 33.18,
+          "end": 33.68,
+          "probability": 0.9182024002075195
+        },
+        {
+          "word": " repo",
+          "start": 33.68,
+          "end": 34.02,
+          "probability": 0.972004771232605
+        },
+        {
+          "word": " and",
+          "start": 34.02,
+          "end": 34.44,
+          "probability": 0.5281343460083008
+        },
+        {
+          "word": " wires",
+          "start": 34.44,
+          "end": 34.7,
+          "probability": 0.6443873047828674
         },
         {
           "word": " service.",
-          "start": 36.72,
-          "end": 37.06,
-          "probability": 0.9929284453392029
+          "start": 34.7,
+          "end": 35.18,
+          "probability": 0.9181918501853943
         }
       ]
     },
     {
-      "start": 37.68,
-      "end": 39.8,
-      "text": " That's in version of control for managed beans,",
-      "avg_logprob": -0.21321999695565966,
+      "start": 35.92,
+      "end": 39.1,
+      "text": " Your app retrieves the ready service, managed Bean's only.",
+      "avg_logprob": -0.41480279838045436,
       "words": [
         {
-          "word": " That's",
-          "start": 37.68,
-          "end": 37.84,
-          "probability": 0.989475667476654
+          "word": " Your",
+          "start": 35.92,
+          "end": 35.94,
+          "probability": 0.9899051785469055
         },
         {
-          "word": " in",
-          "start": 37.84,
-          "end": 37.92,
-          "probability": 0.9919720888137817
+          "word": " app",
+          "start": 35.94,
+          "end": 36.16,
+          "probability": 0.9935212731361389
         },
         {
-          "word": " version",
-          "start": 37.92,
-          "end": 38.14,
-          "probability": 0.6081175208091736
+          "word": " retrieves",
+          "start": 36.16,
+          "end": 36.76,
+          "probability": 0.9971849918365479
         },
         {
-          "word": " of",
-          "start": 38.14,
-          "end": 38.4,
-          "probability": 0.9915306568145752
+          "word": " the",
+          "start": 36.76,
+          "end": 36.88,
+          "probability": 0.9977582693099976
         },
         {
-          "word": " control",
-          "start": 38.4,
-          "end": 38.58,
-          "probability": 0.8482431173324585
+          "word": " ready",
+          "start": 36.88,
+          "end": 37.06,
+          "probability": 0.8312389254570007
         },
         {
-          "word": " for",
-          "start": 38.58,
-          "end": 39.08,
-          "probability": 0.9929801821708679
+          "word": " service,",
+          "start": 37.06,
+          "end": 37.48,
+          "probability": 0.9907369017601013
         },
         {
           "word": " managed",
-          "start": 39.08,
-          "end": 39.36,
-          "probability": 0.901671290397644
+          "start": 37.94,
+          "end": 38.16,
+          "probability": 0.6852443218231201
         },
         {
-          "word": " beans,",
-          "start": 39.36,
-          "end": 39.8,
-          "probability": 0.9929218888282776
+          "word": " Bean's",
+          "start": 38.16,
+          "end": 38.8,
+          "probability": 0.4565448984503746
+        },
+        {
+          "word": " only.",
+          "start": 38.8,
+          "end": 39.1,
+          "probability": 0.9868653416633606
         }
       ]
     },
     {
-      "start": 39.98,
-      "end": 41.36,
-      "text": " not every Java object.",
-      "avg_logprob": -0.21321999695565966,
+      "start": 41.96,
+      "end": 42.76,
+      "text": " Thanks for watching.",
+      "avg_logprob": -0.41480279838045436,
       "words": [
         {
-          "word": " not",
-          "start": 39.98,
-          "end": 40.26,
-          "probability": 0.9965904951095581
+          "word": " Thanks",
+          "start": 41.69,
+          "end": 42.04,
+          "probability": 0.9819979071617126
         },
         {
-          "word": " every",
-          "start": 40.26,
-          "end": 40.56,
-          "probability": 0.9965672492980957
+          "word": " for",
+          "start": 42.04,
+          "end": 42.24,
+          "probability": 0.997530996799469
         },
         {
-          "word": " Java",
-          "start": 40.56,
-          "end": 40.86,
-          "probability": 0.9766374826431274
-        },
-        {
-          "word": " object.",
-          "start": 40.86,
-          "end": 41.36,
-          "probability": 0.9868908524513245
+          "word": " watching.",
+          "start": 42.24,
+          "end": 42.76,
+          "probability": 0.9988453388214111
         }
       ]
     }

@@ -1,6 +1,6 @@
 # YouTube Shorts upload notes
 
-Use `youtube-shorts.mp4`. It is a 44.383333-second vertical video: 1080 × 1920, H.264/AAC, 60 FPS, Rec.709 SDR, with the revised male Kokoro narration and English captions burned into the picture.
+Use `youtube-shorts.mp4`. It is a 43.416667-second vertical video: 1080 × 1920, H.264/AAC, 60 FPS, Rec.709 SDR, with the revised male Kokoro narration and English captions burned into the picture.
 
 1. Select the MP4 for upload and paste `title.txt` and `description.txt` into the corresponding fields. `tags.txt` supplies optional comma-separated search tags where a tags field is available.
 2. Use `cover.png` wherever a custom cover can be supplied. If only an existing video frame can be selected, choose a frame from the first second; that section displays the exact cover without a fade.

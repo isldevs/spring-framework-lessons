@@ -6,7 +6,7 @@
     "-loglevel",
     "error",
     "-ss",
-    "41.3443586",
+    "39.420258600000004",
     "-i",
     "/workspace/spring-framework-lessons/output/week-01/day-01/video.mp4",
     "-frames:v",

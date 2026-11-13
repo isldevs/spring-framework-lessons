@@ -3,15 +3,15 @@
 Who creates your Java objects?
 
 2
-00:00:01,891 --> 00:00:03,040
+00:00:01,891 --> 00:00:03,060
 Without Spring, your code
 
 3
-00:00:03,040 --> 00:00:04,860
+00:00:03,060 --> 00:00:04,880
 creates a repository,
 
 4
-00:00:04,860 --> 00:00:06,907
+00:00:04,880 --> 00:00:06,907
 then passes it into a service.
 
 5
@@ -23,70 +23,62 @@ With Spring, you register bean definitions.
 The container uses them to create
 
 7
-00:00:11,660 --> 00:00:12,640
+00:00:11,660 --> 00:00:12,620
 managed objects
 
 8
-00:00:12,640 --> 00:00:15,100
+00:00:12,620 --> 00:00:15,100
 and wire their dependencies.
 
 9
-00:00:15,350 --> 00:00:18,300
+00:00:15,350 --> 00:00:18,320
 Here, the service bean asks for a repository.
 
 10
-00:00:18,300 --> 00:00:19,923
+00:00:18,320 --> 00:00:19,923
 Spring supplies that bean.
 
 11
-00:00:20,163 --> 00:00:21,900
+00:00:20,163 --> 00:00:21,860
 Your application calls getBean
 
 12
-00:00:21,900 --> 00:00:24,180
+00:00:21,860 --> 00:00:24,180
 to request the ready service.
 
 13
-00:00:24,180 --> 00:00:25,720
+00:00:24,180 --> 00:00:25,700
 In our Java run, its repository
 
 14
-00:00:25,720 --> 00:00:28,991
+00:00:25,700 --> 00:00:28,991
 is the same bean from the container.
 
 15
-00:00:29,251 --> 00:00:30,620
-Here’s the whole flow.
+00:00:29,251 --> 00:00:31,580
+Your app starts Spring with Config.
 
 16
-00:00:30,620 --> 00:00:32,120
-Define your beans.
+00:00:31,580 --> 00:00:33,180
+Spring calls Config’s bean methods,
 
 17
-00:00:32,120 --> 00:00:32,980
-Spring creates them
+00:00:33,180 --> 00:00:34,020
+creates Repo,
 
 18
-00:00:32,980 --> 00:00:35,140
-and wires their dependencies.
+00:00:34,020 --> 00:00:35,920
+and wires Service.
 
 19
-00:00:35,140 --> 00:00:36,160
-Your application requests
+00:00:35,920 --> 00:00:37,940
+Your app retrieves the ready service.
 
 20
-00:00:36,160 --> 00:00:37,680
-the ready service.
+00:00:37,940 --> 00:00:39,963
+Managed beans only.
 
 21
-00:00:37,680 --> 00:00:38,580
-That’s inversion of control—
-
-22
-00:00:38,580 --> 00:00:39,980
-for managed beans,
-
-23
-00:00:39,980 --> 00:00:42,368
-not every Java object.
+00:00:41,963 --> 00:00:43,053
+Thanks for watching.
 

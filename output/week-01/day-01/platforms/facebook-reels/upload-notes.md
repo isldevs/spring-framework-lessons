@@ -1,6 +1,6 @@
 # Facebook Reels upload notes
 
-Use `facebook-reels.mp4`. It is a 44.383333-second vertical video: 1080 × 1920, H.264/AAC, 60 FPS, Rec.709 SDR, with the revised male Kokoro narration and English captions burned into the picture.
+Use `facebook-reels.mp4`. It is a 43.416667-second vertical video: 1080 × 1920, H.264/AAC, 60 FPS, Rec.709 SDR, with the revised male Kokoro narration and English captions burned into the picture.
 
 1. Select the MP4 for a Reel and paste the complete text from `caption.txt`, including its hashtags.
 2. Use `cover.png` wherever a custom cover can be supplied. If only an existing video frame can be selected, choose a frame from the first second; that section displays the exact cover without a fade.
