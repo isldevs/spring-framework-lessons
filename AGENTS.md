@@ -1,5 +1,7 @@
 # Lesson generation workflow
 
+Before every new video or revision, read [MEMORY.md](MEMORY.md) for the consolidated production decisions and apply them alongside this file. New explicit user instructions override saved defaults.
+
 The user has authorized this repository as the destination for generated iSLDevs Spring lessons: https://github.com/isldevs/spring-framework-lessons.git.
 
 - After every new lesson generation or regeneration, finish the actual deliverables, run the applicable verification, then commit and push the results to this repository on the current branch. This standing instruction does not require another routine push confirmation.

@@ -20,3 +20,7 @@ Technical checks passed for the final master and both platform copies, including
 ## Continuing production
 
 After each lesson is generated or regenerated, verify the actual outputs, retain the reproducible source and evidence, then commit and push the update here. [AGENTS.md](AGENTS.md) records this standing workflow. Future lessons should show a concrete cause-and-effect recap, including the configuration/startup step where relevant, hold the completed overview for at least two seconds, then show a brief “Thanks for watching” card. The user permits up to 45 seconds when the explanation needs it. Platform publication remains a separate user-authorized action.
+
+## Saved production preferences
+
+[Production memory](MEMORY.md) consolidates the agreed video style, male voice target, embedded opening cover, explicit technical recap, two-second reading hold, Thanks ending, verification requirements, full download handoff, phone-copyable publishing text and GitHub push workflow. [AGENTS.md](AGENTS.md) requires reading it before future generations and revisions. New explicit user instructions take precedence.
