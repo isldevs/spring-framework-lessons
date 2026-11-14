@@ -1,0 +1,37 @@
+{
+  "compile_exit_code": 0,
+  "program_exit_code": 0,
+  "compile_stderr_empty": true,
+  "program_stderr_empty": true,
+  "stdout_lines": [
+    "App starts Spring with Config.class",
+    "definitions registered: repo, orderService",
+    "Repo created",
+    "OrderService constructed with Repo",
+    "context ready",
+    "same Repo bean: true",
+    "application result: ready",
+    "scanned definitions: repo, orderService"
+  ],
+  "runtime": "openjdk version \"21.0.13\" 2026-10-20\nOpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)",
+  "spring_framework": "6.2.11",
+  "ecj": "3.40.0",
+  "class_file_target": "Java17",
+  "source_sha256": {
+    "src/lesson/di/Config.java": "9879a8781c6ce9d9d6c6c22c253a08163ab69e1a11856c84a92f11545bba459c",
+    "src/lesson/di/DiDemo.java": "982f40bbcf57fe7a645ea8702e676268fb08324cbf92b4f354707a6e6286ae86",
+    "src/lesson/di/OrderService.java": "8df83a5b1ffd04d40afeddb1cfc1b405001ed7081fcab4334bcb5b4ab0825b9e",
+    "src/lesson/di/Repo.java": "ad0acf6cbdd71c6d753f777ceb3492599d56ae78d608dcb19fc560b7c6bdec85"
+  },
+  "dependency_hash_check_exit_code": 0,
+  "verified_assertions": [
+    "configured component definitions exist before singleton constructors",
+    "Repo constructed before OrderService receives it",
+    "OrderService wired before context ready/application use",
+    "single unannotated constructor used",
+    "injected Repo is same managed Repo bean",
+    "one unambiguous Repo candidate",
+    "default singleton lookup does not reconstruct graph",
+    "application reaches repository through injected service"
+  ]
+}

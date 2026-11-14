@@ -66,7 +66,16 @@ Follow the full mandatory checklist in `AGENTS.md`; do not shorten it to a video
 - The user uploads from a phone. Metadata files or download links do NOT replace inline copyable publishing text. Include both formats every time a video is generated or updated.
 - Never say completed/verified without identifying any remaining incomplete essential requirement.
 
-## Current implemented reference
+## Latest implemented reference: Spring dependency injection
+
+- Topic: How Spring Dependency Injection Works. Source/media: `output/week-01/day-02/`.
+- Actual master: 35.650000s,1080×1920,60FPS,H.264/AAC48kHz,Rec.709;7scenes,16SRT cues. Cover is inside the first second. Complete recap hold32.209083–34.209083s precedes the narrated Thanks card.
+- This example uses configured `@ComponentScan("lesson.di")`, `@Repository Repo`, and `@Service OrderService` with a single constructor accepting Repo. There are NO user @Bean factory methods in this demo. Do not substitute the previous lesson's factory-method explanation for component scanning and constructor injection.
+- The actual Java diagnostic observes registered definitions before constructors, then Repo construction, OrderService receiving Repo, context readiness, same-bean identity and business use. The animated graph is ready17.06s before app use22.84s; actual decoded anchor frames and120recap-hold frames are verified.
+- Master and both exported copies passed technical QA. Voice listening acceptance remains unverified. Preserve raw full-stream ASR70/73 (4.1096%WER), while noting separate unprompted final-phrase decoding recognizesThanksforwatching3/3; do not claim full-stream zeroWER.
+- New archives use day-02-prefixed platform names to preserve the first lesson. Keep the mandatory full-link handoff AND all five phone-copyable publishing blocks for this and every future generation.
+
+## Previous implemented reference: Spring IoC
 
 - Topic: What Is Spring IoC? Latest media revision: commit044ce2f4ef40c8fc66ff99a12ac5b410d20b498a.
 - Master:43.416667seconds,1080×1920,60FPS,H.264/AAC48kHz,Rec.709; seven scenes and21SRT cues.

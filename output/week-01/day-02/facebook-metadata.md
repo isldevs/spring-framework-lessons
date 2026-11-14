@@ -1,0 +1,13 @@
+# Facebook Reels metadata
+
+## Caption with hashtags
+
+Your service needs a repository. Who supplies it? ☕
+
+Spring finds annotated classes in a configured scan, registers bean definitions, resolves the constructor's Repo parameter, and passes that reference into OrderService.
+
+Our Java example verifies that the injected reference is the same Repo bean from the context. The application uses the service after its dependency is wired.
+
+Scan → Register → Resolve → Inject → Use.
+
+#SpringFramework #DependencyInjection #Java #SpringDI #JavaDevelopers #iSLDevs

@@ -1,0 +1,8 @@
+{
+  "reference_words": 73,
+  "asr_words": 70,
+  "edit_distance": 3,
+  "normalized_word_error_rate": 0.0410958904109589,
+  "transcript": "How does a repository reach your service? Configured scanning finds annotated classes and registers bean definitions. A single constructor needs a repository, Spring resolves that parameter by type. Spring creates the repository, then passes its reference into the service constructor. Our Java run confirms the same repository bean, only then does the application use the service. Scan register resolve inject then use, Spring supplies dependencies your service doesn't construct them.",
+  "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
+}

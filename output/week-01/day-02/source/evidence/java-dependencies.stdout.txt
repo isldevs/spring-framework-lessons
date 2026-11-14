@@ -1,0 +1,9 @@
+lib/spring-context-6.2.11.jar: OK
+lib/spring-aop-6.2.11.jar: OK
+lib/spring-beans-6.2.11.jar: OK
+lib/spring-core-6.2.11.jar: OK
+lib/spring-expression-6.2.11.jar: OK
+lib/spring-jcl-6.2.11.jar: OK
+lib/micrometer-observation-1.14.11.jar: OK
+lib/micrometer-commons-1.14.11.jar: OK
+lib/ecj-3.40.0.jar: OK

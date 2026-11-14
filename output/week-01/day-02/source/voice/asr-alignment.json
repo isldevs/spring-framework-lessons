@@ -1,0 +1,541 @@
+{
+  "model": "faster-whisper base.en int8",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.78,
+      "text": " How does a repository reach your service?",
+      "avg_logprob": -0.1287263506337216,
+      "words": [
+        {
+          "word": " How",
+          "start": 0.0,
+          "end": 0.12,
+          "probability": 0.8298367261886597
+        },
+        {
+          "word": " does",
+          "start": 0.12,
+          "end": 0.2,
+          "probability": 0.9965785145759583
+        },
+        {
+          "word": " a",
+          "start": 0.2,
+          "end": 0.3,
+          "probability": 0.9934428930282593
+        },
+        {
+          "word": " repository",
+          "start": 0.3,
+          "end": 0.8,
+          "probability": 0.8828785419464111
+        },
+        {
+          "word": " reach",
+          "start": 0.8,
+          "end": 1.3,
+          "probability": 0.9971522092819214
+        },
+        {
+          "word": " your",
+          "start": 1.3,
+          "end": 1.46,
+          "probability": 0.9932854175567627
+        },
+        {
+          "word": " service?",
+          "start": 1.46,
+          "end": 1.78,
+          "probability": 0.9962196946144104
+        }
+      ]
+    },
+    {
+      "start": 2.4,
+      "end": 4.68,
+      "text": " Configured scanning finds annotated classes",
+      "avg_logprob": -0.1287263506337216,
+      "words": [
+        {
+          "word": " Configured",
+          "start": 2.4,
+          "end": 2.88,
+          "probability": 0.9406605064868927
+        },
+        {
+          "word": " scanning",
+          "start": 2.88,
+          "end": 3.1,
+          "probability": 0.9764748215675354
+        },
+        {
+          "word": " finds",
+          "start": 3.1,
+          "end": 3.6,
+          "probability": 0.9896008372306824
+        },
+        {
+          "word": " annotated",
+          "start": 3.6,
+          "end": 4.38,
+          "probability": 0.9928974807262421
+        },
+        {
+          "word": " classes",
+          "start": 4.38,
+          "end": 4.68,
+          "probability": 0.9943892359733582
+        }
+      ]
+    },
+    {
+      "start": 4.68,
+      "end": 6.28,
+      "text": " and registers bean definitions.",
+      "avg_logprob": -0.1287263506337216,
+      "words": [
+        {
+          "word": " and",
+          "start": 4.68,
+          "end": 5.16,
+          "probability": 0.9857743978500366
+        },
+        {
+          "word": " registers",
+          "start": 5.16,
+          "end": 5.5,
+          "probability": 0.9900734424591064
+        },
+        {
+          "word": " bean",
+          "start": 5.5,
+          "end": 5.96,
+          "probability": 0.48373526334762573
+        },
+        {
+          "word": " definitions.",
+          "start": 5.96,
+          "end": 6.28,
+          "probability": 0.998241662979126
+        }
+      ]
+    },
+    {
+      "start": 7.38,
+      "end": 9.56,
+      "text": " A single constructor needs a repository,",
+      "avg_logprob": -0.1287263506337216,
+      "words": [
+        {
+          "word": " A",
+          "start": 7.38,
+          "end": 7.42,
+          "probability": 0.9743122458457947
+        },
+        {
+          "word": " single",
+          "start": 7.42,
+          "end": 7.72,
+          "probability": 0.9987637996673584
+        },
+        {
+          "word": " constructor",
+          "start": 7.72,
+          "end": 8.24,
+          "probability": 0.9919862747192383
+        },
+        {
+          "word": " needs",
+          "start": 8.24,
+          "end": 8.68,
+          "probability": 0.997676432132721
+        },
+        {
+          "word": " a",
+          "start": 8.68,
+          "end": 8.92,
+          "probability": 0.9986683130264282
+        },
+        {
+          "word": " repository,",
+          "start": 8.92,
+          "end": 9.56,
+          "probability": 0.9977589845657349
+        }
+      ]
+    },
+    {
+      "start": 10.18,
+      "end": 12.16,
+      "text": " Spring resolves that parameter by type.",
+      "avg_logprob": -0.1287263506337216,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 10.18,
+          "end": 10.32,
+          "probability": 0.8731074929237366
+        },
+        {
+          "word": " resolves",
+          "start": 10.32,
+          "end": 10.74,
+          "probability": 0.8191825747489929
+        },
+        {
+          "word": " that",
+          "start": 10.74,
+          "end": 11.14,
+          "probability": 0.9949098229408264
+        },
+        {
+          "word": " parameter",
+          "start": 11.14,
+          "end": 11.52,
+          "probability": 0.9932373762130737
+        },
+        {
+          "word": " by",
+          "start": 11.52,
+          "end": 11.9,
+          "probability": 0.9921588897705078
+        },
+        {
+          "word": " type.",
+          "start": 11.9,
+          "end": 12.16,
+          "probability": 0.9947211742401123
+        }
+      ]
+    },
+    {
+      "start": 13.0,
+      "end": 14.5,
+      "text": " Spring creates the repository,",
+      "avg_logprob": -0.1287263506337216,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 13.0,
+          "end": 13.14,
+          "probability": 0.9954056739807129
+        },
+        {
+          "word": " creates",
+          "start": 13.14,
+          "end": 13.64,
+          "probability": 0.9980670809745789
+        },
+        {
+          "word": " the",
+          "start": 13.64,
+          "end": 13.92,
+          "probability": 0.9976179003715515
+        },
+        {
+          "word": " repository,",
+          "start": 13.92,
+          "end": 14.5,
+          "probability": 0.9961913824081421
+        }
+      ]
+    },
+    {
+      "start": 15.12,
+      "end": 17.5,
+      "text": " then passes its reference into the service constructor.",
+      "avg_logprob": -0.1287263506337216,
+      "words": [
+        {
+          "word": " then",
+          "start": 15.12,
+          "end": 15.18,
+          "probability": 0.9975579977035522
+        },
+        {
+          "word": " passes",
+          "start": 15.18,
+          "end": 15.52,
+          "probability": 0.9973433613777161
+        },
+        {
+          "word": " its",
+          "start": 15.52,
+          "end": 15.9,
+          "probability": 0.9651363492012024
+        },
+        {
+          "word": " reference",
+          "start": 15.9,
+          "end": 16.22,
+          "probability": 0.9943115711212158
+        },
+        {
+          "word": " into",
+          "start": 16.22,
+          "end": 16.6,
+          "probability": 0.9850447773933411
+        },
+        {
+          "word": " the",
+          "start": 16.6,
+          "end": 16.74,
+          "probability": 0.9979003667831421
+        },
+        {
+          "word": " service",
+          "start": 16.74,
+          "end": 17.06,
+          "probability": 0.9787991046905518
+        },
+        {
+          "word": " constructor.",
+          "start": 17.06,
+          "end": 17.5,
+          "probability": 0.992918074131012
+        }
+      ]
+    },
+    {
+      "start": 18.48,
+      "end": 21.38,
+      "text": " Our Java run confirms the same repository bean,",
+      "avg_logprob": -0.1287263506337216,
+      "words": [
+        {
+          "word": " Our",
+          "start": 18.48,
+          "end": 18.52,
+          "probability": 0.9817695021629333
+        },
+        {
+          "word": " Java",
+          "start": 18.52,
+          "end": 18.74,
+          "probability": 0.947422206401825
+        },
+        {
+          "word": " run",
+          "start": 18.74,
+          "end": 19.16,
+          "probability": 0.6840341091156006
+        },
+        {
+          "word": " confirms",
+          "start": 19.16,
+          "end": 19.62,
+          "probability": 0.9972518086433411
+        },
+        {
+          "word": " the",
+          "start": 19.62,
+          "end": 20.0,
+          "probability": 0.9984990358352661
+        },
+        {
+          "word": " same",
+          "start": 20.0,
+          "end": 20.26,
+          "probability": 0.9957311749458313
+        },
+        {
+          "word": " repository",
+          "start": 20.26,
+          "end": 20.82,
+          "probability": 0.9916810393333435
+        },
+        {
+          "word": " bean,",
+          "start": 20.82,
+          "end": 21.38,
+          "probability": 0.9001815319061279
+        }
+      ]
+    },
+    {
+      "start": 21.9,
+      "end": 24.28,
+      "text": " only then does the application use the service.",
+      "avg_logprob": -0.1287263506337216,
+      "words": [
+        {
+          "word": " only",
+          "start": 21.9,
+          "end": 22.16,
+          "probability": 0.9970622658729553
+        },
+        {
+          "word": " then",
+          "start": 22.16,
+          "end": 22.4,
+          "probability": 0.9963123202323914
+        },
+        {
+          "word": " does",
+          "start": 22.4,
+          "end": 22.7,
+          "probability": 0.9840108752250671
+        },
+        {
+          "word": " the",
+          "start": 22.7,
+          "end": 22.84,
+          "probability": 0.9951924085617065
+        },
+        {
+          "word": " application",
+          "start": 22.84,
+          "end": 23.2,
+          "probability": 0.998996913433075
+        },
+        {
+          "word": " use",
+          "start": 23.2,
+          "end": 23.72,
+          "probability": 0.9939975738525391
+        },
+        {
+          "word": " the",
+          "start": 23.72,
+          "end": 23.94,
+          "probability": 0.9965060949325562
+        },
+        {
+          "word": " service.",
+          "start": 23.94,
+          "end": 24.28,
+          "probability": 0.995877742767334
+        }
+      ]
+    },
+    {
+      "start": 25.42,
+      "end": 27.82,
+      "text": " Scan register resolve inject then use,",
+      "avg_logprob": -0.1287263506337216,
+      "words": [
+        {
+          "word": " Scan",
+          "start": 25.42,
+          "end": 25.42,
+          "probability": 0.933812141418457
+        },
+        {
+          "word": " register",
+          "start": 25.42,
+          "end": 25.92,
+          "probability": 0.5780104398727417
+        },
+        {
+          "word": " resolve",
+          "start": 25.92,
+          "end": 26.38,
+          "probability": 0.9125152826309204
+        },
+        {
+          "word": " inject",
+          "start": 26.38,
+          "end": 27.1,
+          "probability": 0.9395888447761536
+        },
+        {
+          "word": " then",
+          "start": 27.1,
+          "end": 27.56,
+          "probability": 0.8231890797615051
+        },
+        {
+          "word": " use,",
+          "start": 27.56,
+          "end": 27.82,
+          "probability": 0.9795907735824585
+        }
+      ]
+    },
+    {
+      "start": 27.82,
+      "end": 31.68,
+      "text": " Spring supplies dependencies your service doesn't construct them.",
+      "avg_logprob": -0.5113005087925837,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 27.82,
+          "end": 28.66,
+          "probability": 0.004355245269834995
+        },
+        {
+          "word": " supplies",
+          "start": 28.66,
+          "end": 29.1,
+          "probability": 0.9358533024787903
+        },
+        {
+          "word": " dependencies",
+          "start": 29.1,
+          "end": 29.76,
+          "probability": 0.965514063835144
+        },
+        {
+          "word": " your",
+          "start": 29.76,
+          "end": 30.2,
+          "probability": 0.8280845284461975
+        },
+        {
+          "word": " service",
+          "start": 30.2,
+          "end": 30.62,
+          "probability": 0.9935997724533081
+        },
+        {
+          "word": " doesn't",
+          "start": 30.62,
+          "end": 31.02,
+          "probability": 0.9927615225315094
+        },
+        {
+          "word": " construct",
+          "start": 31.02,
+          "end": 31.34,
+          "probability": 0.9949653744697571
+        },
+        {
+          "word": " them.",
+          "start": 31.34,
+          "end": 31.68,
+          "probability": 0.9987581968307495
+        }
+      ]
+    },
+    {
+      "start": 34.209083,
+      "end": 34.869083,
+      "text": " Thanks for watching.",
+      "avg_logprob": -0.2294160553387233,
+      "words": [
+        {
+          "word": " Thanks",
+          "start": 34.209083,
+          "end": 34.329083,
+          "probability": 0.9457902312278748
+        },
+        {
+          "word": " for",
+          "start": 34.329083,
+          "end": 34.489083,
+          "probability": 0.9964166879653931
+        },
+        {
+          "word": " watching.",
+          "start": 34.489083,
+          "end": 34.869083,
+          "probability": 0.99763023853302
+        }
+      ]
+    }
+  ],
+  "alignment_provenance": "First six scenes use untouched full-stream ASR; final Thanks uses independent unprompted transcription of its actual audio crop. Full-stream raw WER/transcript remain unchanged."
+}

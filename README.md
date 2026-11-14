@@ -2,6 +2,20 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## How Spring Dependency Injection Works
+
+Rendered **35.65 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The cover is embedded from0–1s. Configured scanning registers bean definitions; Spring resolves the Repo constructor parameter and injects the reference before application use. The complete recap holds for two seconds, then a narrated Thanks card closes the video.
+
+- [Finished MP4](output/week-01/day-02/video.mp4) · [Complete ZIP](output/week-01/day-02-production.zip)
+- [Cover](output/week-01/day-02/cover.png) · [Subtitles](output/week-01/day-02/subtitles.srt) · [Narration audio](output/week-01/day-02/narration.wav)
+- [Narration script](output/week-01/day-02/narration-script.md) · [Timed storyboard](output/week-01/day-02/storyboard.md) · [Recap](output/week-01/day-02/recap.png)
+- [YouTube metadata/tags](output/week-01/day-02/youtube-metadata.md) · [Facebook metadata](output/week-01/day-02/facebook-metadata.md)
+- [YouTube package](output/week-01/day-02-youtube-shorts-upload.zip) · [Facebook package](output/week-01/day-02-facebook-reels-upload.zip)
+- [Asset rights](output/week-01/day-02/asset-rights.md) · [Originality review](output/week-01/day-02/originality-review.md)
+- [QA report](output/week-01/day-02/verification-report.md) · [SHA-256](output/week-01/day-02/checksums.sha256) · [Actual Java/source](output/week-01/day-02/source/java/README.md)
+
+Java, encoded master and both packaged copies passed technical verification. **Perceptual voice acceptance remains incomplete** because listening review is unavailable in this runtime. Raw full-stream ASR omission and independent successful Thanks-clip recognition are documented rather than hidden. Nothing was posted to YouTube/Facebook.
+
 ## What Is Spring IoC?
 
 The rendered video is **43.42 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The exact cover is embedded in the same MP4 from **00:00–00:01**, starting on the first frame without a fade, so it can be selected as a thumbnail. The revised ending shows the missing Config step: the application starts Spring with `Config.class`, Spring calls its `@Bean` factory methods to create Repo and wire Service, then the application requests the ready service. The completed diagram is held for two seconds before a brief “Thanks for watching” card.

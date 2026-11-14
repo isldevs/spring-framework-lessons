@@ -1,0 +1,27 @@
+{
+  "technical_status": "PASS",
+  "perceptual_voice_acceptance": "UNVERIFIED: no auditory listening review performed",
+  "video_sha256": "5aa13ce8c9dab3ec4d24cb32a188cb495ef8632ba85752281a64c75b72cdfa28",
+  "duration_s": 35.65,
+  "target_duration_35_40_pass": true,
+  "native_resolution": [
+    1080,
+    1920
+  ],
+  "fps": 60,
+  "decoded_frames": 2139,
+  "recap_hold_before_thanks": true,
+  "recap_hold_decoded_frames": 120,
+  "thanks_final_frame_ssim": 0.998781,
+  "graph_ready_s": 17.06,
+  "application_use_start_s": 22.84,
+  "graph_ready_before_application_use": true,
+  "actual_decoded_mobile_frames_reviewed": 7,
+  "source_safe_bounds_samples": 188,
+  "raw_full_stream_asr_wer": 0.0410958904109589,
+  "raw_full_stream_expected_words": 73,
+  "raw_full_stream_recognized_words": 70,
+  "thanks_supplementary_asr_exact": true,
+  "java_definitions_before_objects_trace_reviewed": true,
+  "no_full_stream_zero_wer_claim": true
+}

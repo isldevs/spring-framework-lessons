@@ -1,0 +1,6 @@
+{
+  "text_transformations": [],
+  "timing_sources": "asr-alignment.json; raw full-stream ASR plus independent unprompted final-phrase crop where needed",
+  "raw_wer_unchanged": true,
+  "scan_anchor": "exact scene6 sample edit because ASR first word has zero duration"
+}

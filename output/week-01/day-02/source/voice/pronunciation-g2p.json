@@ -1,0 +1,58 @@
+{
+  "word_distinctions": {
+    "bean": "bˈiːn",
+    "beans": "bˈiːnz",
+    "repository": "ɹᵻpˈɑːzɪtˌɔːɹi",
+    "constructor": "kənstɹˈʌktɚ",
+    "Spring": "spɹˈɪŋ",
+    "Scan": "skˈæn",
+    "register": "ɹˈɛdʒɪstɚ",
+    "resolve": "ɹᵻzˈɑːlv",
+    "inject": "ɪndʒˈɛkt",
+    "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "How does a repository reach your service?",
+      "phonemes": "hˌaʊ dˈʌz ɐ ɹᵻpˈɑːzɪtˌɔːɹi ɹˈiːtʃ jʊɹ sˈɜːvɪs?",
+      "inference_batches": 1
+    },
+    {
+      "scene": 2,
+      "text": "Configured scanning finds annotated classes and registers bean definitions.",
+      "phonemes": "kənfˈɪɡɚd skˈænɪŋ fˈaɪndz ˈænətˌeɪɾᵻd klˈæsᵻz ænd ɹˈɛdʒɪstɚz bˈiːn dˌɛfɪnˈɪʃənz.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 3,
+      "text": "A single constructor needs a repository. Spring resolves that parameter by type.",
+      "phonemes": "ɐ sˈɪŋɡəl kənstɹˈʌktɚ nˈiːdz ɐ ɹᵻpˈɑːzɪtˌɔːɹi. spɹˈɪŋ ɹᵻzˈɑːlvz ðæt pɚɹˈæmɪɾɚ baɪ tˈaɪp.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 4,
+      "text": "Spring creates the repository, then passes its reference into the service constructor.",
+      "phonemes": "spɹˈɪŋ kɹiːˈeɪts ðə ɹᵻpˈɑːzɪtˌɔːɹi, ðˈɛn pˈæsᵻz ɪts ɹˈɛfɹəns ˌɪntʊ ðə sˈɜːvɪs kənstɹˈʌktɚ.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 5,
+      "text": "Our Java run confirms the same repository bean. Only then does the application use the service.",
+      "phonemes": "ˌaʊɚ dʒˈɑːvɚ ɹˈʌn kənfˈɜːmz ðə sˈeɪm ɹᵻpˈɑːzɪtˌɔːɹi bˈiːn. ˈoʊnli ðˈɛn dˈʌz ðɪ ˌæplɪkˈeɪʃən jˈuːs ðə sˈɜːvɪs.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 6,
+      "text": "Scan, register, resolve, inject, then use. Spring supplies dependencies; your service doesn’t construct them.",
+      "phonemes": "skˈæn, ɹˈɛdʒɪstɚ, ɹᵻzˈɑːlv, ɪndʒˈɛkt, ðˈɛn jˈuːz. spɹˈɪŋ səplˈaɪz dᵻpˈɛndənsiz; jʊɹ sˈɜːvɪs dˈʌzənt kənstɹˈʌkt ðˌɛm.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 7,
+      "text": "Thanks for watching.",
+      "phonemes": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ.",
+      "inference_batches": 1
+    }
+  ]
+}

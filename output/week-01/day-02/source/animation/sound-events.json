@@ -1,0 +1,22 @@
+[
+  {
+    "time": 5.16,
+    "purpose": "definitions registered"
+  },
+  {
+    "time": 11.9,
+    "purpose": "unique Repo type matched"
+  },
+  {
+    "time": 15.18,
+    "purpose": "Repo reference injection begins"
+  },
+  {
+    "time": 22.84,
+    "purpose": "application uses wired service"
+  },
+  {
+    "time": 28.21,
+    "purpose": "complete dependency-injection recap"
+  }
+]

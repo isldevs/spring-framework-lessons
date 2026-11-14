@@ -1,0 +1,3 @@
+Scanning must be configured. Here, one Repo bean matches the single OrderService constructor's parameter, so Spring can inject it without @Autowired on that constructor.
+
+Multiple matching candidates need disambiguation, for example @Qualifier or @Primary. Which should we visualize next?

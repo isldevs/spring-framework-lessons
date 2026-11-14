@@ -1,0 +1,39 @@
+{
+  "needed": true,
+  "model": "faster-whisper base.en int8",
+  "initial_prompt": null,
+  "segment_start": 34.209083,
+  "segment_end": 35.649833,
+  "expected": "Thanks for watching.",
+  "recognized": " Thanks for watching.",
+  "exact_normalized_phrase_match": true,
+  "segments": [
+    {
+      "start": 34.209083,
+      "end": 34.869083,
+      "text": " Thanks for watching.",
+      "avg_logprob": -0.2294160553387233,
+      "words": [
+        {
+          "word": " Thanks",
+          "start": 34.209083,
+          "end": 34.329083,
+          "probability": 0.9457902312278748
+        },
+        {
+          "word": " for",
+          "start": 34.329083,
+          "end": 34.489083,
+          "probability": 0.9964166879653931
+        },
+        {
+          "word": " watching.",
+          "start": 34.489083,
+          "end": 34.869083,
+          "probability": 0.99763023853302
+        }
+      ]
+    }
+  ],
+  "full_stream_raw_score_unchanged": true
+}

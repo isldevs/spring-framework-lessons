@@ -1,0 +1,30 @@
+{
+  "type_matching_http_status": 200,
+  "claims": [
+    {
+      "claim": "scanning registers definitions",
+      "source_url": "https://docs.spring.io/spring-framework/reference/core/beans/classpath-scanning.html",
+      "verbatim_context": " Registering Bean Definitions Spring can automatically detect stereotyped classes and register corresponding BeanDefinition instances with the ApplicationContext . For example, the following two classes are eligible for such autodetection: Java Kotlin @Service public class SimpleMovieLister { private final MovieFinder movieFinder; public SimpleMovieLister(MovieFinder movieFinder) { this.movieFinder = movieFi"
+    },
+    {
+      "claim": "default stereotypes",
+      "source_url": "https://docs.spring.io/spring-framework/reference/core/beans/classpath-scanning.html",
+      "verbatim_context": "Filters to Customize Scanning By default, classes annotated with @Component , @Repository , @Service , @Controller , @Configuration , or a custom annotation that itself is annotated with @Component are the only detected candidate components. However, you can modify and extend this behavior by applying custom filters. Add them as includeFilters or excludeFilters attributes of the"
+    },
+    {
+      "claim": "single constructor without annotation",
+      "source_url": "https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html",
+      "verbatim_context": "or (if present) will be used. If a class only declares a single constructor to begin with, it will always be used, even if not annotated. Note that an annotated constructor does not have to be public. Alternatively, you can express the non-required nature of a particular dependency through Java’s java.util.Optional , as the following example shows: public class SimpleMovieLister { @Au"
+    },
+    {
+      "claim": "type-driven dependency matching",
+      "source_url": "https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired-qualifiers.html",
+      "verbatim_context": " beans by name, @Autowired is fundamentally about type-driven injection with optional semantic qualifiers. This means that qualifier values, even with the bean name fallback, always have narrowing semantics within the set of type matches. They do not semantically express a reference to a unique bean id . Good qualifier "
+    },
+    {
+      "claim": "container supplies dependencies",
+      "source_url": "https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html",
+      "verbatim_context": "turned from a factory method. The container then injects those dependencies when it creates the bean. This process is fundamentally the inverse (hence the name, Inversion of Control) of the bean itself controlling the instantiation or location of its dependencies on its own by using direct construction of classes or the Service Locator pattern. Code"
+    }
+  ]
+}

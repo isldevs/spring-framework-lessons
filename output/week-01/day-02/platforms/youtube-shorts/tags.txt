@@ -1,0 +1,1 @@
+Spring dependency injection, Spring DI, constructor injection, Spring Framework, Java, component scanning, ComponentScan, Spring beans, Repository, Service, Autowired, dependency graph, iSLDevs

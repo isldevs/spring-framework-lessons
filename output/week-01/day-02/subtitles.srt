@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:02,194
+How does a repository reach your service?
+
+2
+00:00:02,374 --> 00:00:04,680
+Configured scanning finds annotated classes
+
+3
+00:00:04,680 --> 00:00:07,163
+and registers bean definitions.
+
+4
+00:00:07,383 --> 00:00:10,180
+A single constructor needs a repository.
+
+5
+00:00:10,180 --> 00:00:12,751
+Spring resolves that parameter by type.
+
+6
+00:00:12,971 --> 00:00:15,120
+Spring creates the repository,
+
+7
+00:00:15,120 --> 00:00:16,220
+then passes its reference
+
+8
+00:00:16,220 --> 00:00:18,222
+into the service constructor.
+
+9
+00:00:18,442 --> 00:00:19,620
+Our Java run confirms
+
+10
+00:00:19,620 --> 00:00:21,900
+the same repository bean.
+
+11
+00:00:21,900 --> 00:00:23,200
+Only then does the application
+
+12
+00:00:23,200 --> 00:00:24,934
+use the service.
+
+13
+00:00:25,154 --> 00:00:27,820
+Scan, register, resolve, inject, then use.
+
+14
+00:00:27,820 --> 00:00:29,760
+Spring supplies dependencies;
+
+15
+00:00:29,760 --> 00:00:32,209
+your service doesn’t construct them.
+
+16
+00:00:34,209 --> 00:00:35,300
+Thanks for watching.
+

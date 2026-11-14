@@ -1,0 +1,164 @@
+synth 0 How does a repository reach your service?
+single scene batch; phonemes 46
+duration 2.1939166666666665 total 2.3739166666666667 phoneme timings 0
+synth 1 Configured scanning finds annotated classes and registers bean definitions.
+single scene batch; phonemes 80
+duration 4.788875 total 7.382791666666666 phoneme timings 0
+synth 2 A single constructor needs a repository. Spring resolves that parameter by type.
+single scene batch; phonemes 88
+duration 5.367958333333333 total 12.970749999999999 phoneme timings 0
+synth 3 Spring creates the repository, then passes its reference into the service constructor.
+single scene batch; phonemes 90
+duration 5.250958333333333 total 18.44170833333333 phoneme timings 0
+synth 4 Our Java run confirms the same repository bean. Only then does the application use the service.
+single scene batch; phonemes 109
+duration 6.49225 total 25.153958333333332 phoneme timings 0
+synth 5 Scan, register, resolve, inject, then use. Spring supplies dependencies; your service doesn’t construct them.
+single scene batch; phonemes 116
+duration 7.055125 total 34.20908333333333 phoneme timings 0
+synth 6 Thanks for watching.
+single scene batch; phonemes 21
+duration 1.09075 total 35.64983333333333 phoneme timings 0
+{
+  "sample_rate": 48000,
+  "voice": "am_puck80_fenrir20",
+  "voice_blend": {
+    "am_puck": 0.8,
+    "am_fenrir": 0.2
+  },
+  "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
+  "speed": 1.02,
+  "one_inference_batch_per_scene": true,
+  "recap_hold_seconds": 2.0,
+  "recap_hold_start": 32.209083,
+  "recap_hold_end": 34.209083,
+  "thanks_start": 34.209083,
+  "thanks_end": 35.649833,
+  "duration": 35.64983333333333,
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.373917
+    },
+    {
+      "scene": 2,
+      "start": 2.373917,
+      "end": 7.382792
+    },
+    {
+      "scene": 3,
+      "start": 7.382792,
+      "end": 12.97075
+    },
+    {
+      "scene": 4,
+      "start": 12.97075,
+      "end": 18.441708
+    },
+    {
+      "scene": 5,
+      "start": 18.441708,
+      "end": 25.153958
+    },
+    {
+      "scene": 6,
+      "start": 25.153958,
+      "end": 34.209083
+    },
+    {
+      "scene": 7,
+      "start": 34.209083,
+      "end": 35.649833
+    }
+  ],
+  "phrases": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.193917,
+      "text": "How does a repository reach your service?"
+    },
+    {
+      "scene": 2,
+      "start": 2.373917,
+      "end": 7.162792,
+      "text": "Configured scanning finds annotated classes and registers bean definitions."
+    },
+    {
+      "scene": 3,
+      "start": 7.382792,
+      "end": 12.75075,
+      "text": "A single constructor needs a repository. Spring resolves that parameter by type."
+    },
+    {
+      "scene": 4,
+      "start": 12.97075,
+      "end": 18.221708,
+      "text": "Spring creates the repository, then passes its reference into the service constructor."
+    },
+    {
+      "scene": 5,
+      "start": 18.441708,
+      "end": 24.933958,
+      "text": "Our Java run confirms the same repository bean. Only then does the application use the service."
+    },
+    {
+      "scene": 6,
+      "start": 25.153958,
+      "end": 32.209083,
+      "text": "Scan, register, resolve, inject, then use. Spring supplies dependencies; your service doesn\u2019t construct them."
+    },
+    {
+      "scene": 7,
+      "start": 34.209083,
+      "end": 35.299833,
+      "text": "Thanks for watching."
+    }
+  ],
+  "captions": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.193917,
+      "text": "How does a repository reach your service?"
+    },
+    {
+      "scene": 2,
+      "start": 2.373917,
+      "end": 7.162792,
+      "text": "Configured scanning finds annotated classes and registers bean definitions."
+    },
+    {
+      "scene": 3,
+      "start": 7.382792,
+      "end": 12.75075,
+      "text": "A single constructor needs a repository. Spring resolves that parameter by type."
+    },
+    {
+      "scene": 4,
+      "start": 12.97075,
+      "end": 18.221708,
+      "text": "Spring creates the repository, then passes its reference into the service constructor."
+    },
+    {
+      "scene": 5,
+      "start": 18.441708,
+      "end": 24.933958,
+      "text": "Our Java run confirms the same repository bean. Only then does the application use the service."
+    },
+    {
+      "scene": 6,
+      "start": 25.153958,
+      "end": 32.209083,
+      "text": "Scan, register, resolve, inject, then use. Spring supplies dependencies; your service doesn\u2019t construct them."
+    },
+    {
+      "scene": 7,
+      "start": 34.209083,
+      "end": 35.299833,
+      "text": "Thanks for watching."
+    }
+  ],
+  "caption_method": "Scene utterance boundaries are exact synthesis edit points. Shorter display captions will use independent ASR word timing."
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "java",
+    "-cp",
+    "build:lib/*",
+    "lesson.di.DiDemo"
+  ],
+  "cwd": "/workspace/spring-framework-lessons/output/week-01/day-02/source/java",
+  "exit_code": 0
+}

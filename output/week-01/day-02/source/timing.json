@@ -1,0 +1,243 @@
+{
+  "sample_rate": 48000,
+  "voice": "am_puck80_fenrir20",
+  "voice_blend": {
+    "am_puck": 0.8,
+    "am_fenrir": 0.2
+  },
+  "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
+  "speed": 1.02,
+  "one_inference_batch_per_scene": true,
+  "recap_hold_seconds": 2.0,
+  "recap_hold_start": 32.209083,
+  "recap_hold_end": 34.209083,
+  "thanks_start": 34.209083,
+  "thanks_end": 35.649833,
+  "duration": 35.64983333333333,
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.373917
+    },
+    {
+      "scene": 2,
+      "start": 2.373917,
+      "end": 7.382792
+    },
+    {
+      "scene": 3,
+      "start": 7.382792,
+      "end": 12.97075
+    },
+    {
+      "scene": 4,
+      "start": 12.97075,
+      "end": 18.441708
+    },
+    {
+      "scene": 5,
+      "start": 18.441708,
+      "end": 25.153958
+    },
+    {
+      "scene": 6,
+      "start": 25.153958,
+      "end": 34.209083
+    },
+    {
+      "scene": 7,
+      "start": 34.209083,
+      "end": 35.649833
+    }
+  ],
+  "phrases": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.193917,
+      "text": "How does a repository reach your service?"
+    },
+    {
+      "scene": 2,
+      "start": 2.373917,
+      "end": 7.162792,
+      "text": "Configured scanning finds annotated classes and registers bean definitions."
+    },
+    {
+      "scene": 3,
+      "start": 7.382792,
+      "end": 12.75075,
+      "text": "A single constructor needs a repository. Spring resolves that parameter by type."
+    },
+    {
+      "scene": 4,
+      "start": 12.97075,
+      "end": 18.221708,
+      "text": "Spring creates the repository, then passes its reference into the service constructor."
+    },
+    {
+      "scene": 5,
+      "start": 18.441708,
+      "end": 24.933958,
+      "text": "Our Java run confirms the same repository bean. Only then does the application use the service."
+    },
+    {
+      "scene": 6,
+      "start": 25.153958,
+      "end": 32.209083,
+      "text": "Scan, register, resolve, inject, then use. Spring supplies dependencies; your service doesn’t construct them."
+    },
+    {
+      "scene": 7,
+      "start": 34.209083,
+      "end": 35.299833,
+      "text": "Thanks for watching."
+    }
+  ],
+  "captions": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.193917,
+      "text": "How does a repository reach your service?"
+    },
+    {
+      "scene": 2,
+      "start": 2.373917,
+      "end": 4.68,
+      "text": "Configured scanning finds annotated classes"
+    },
+    {
+      "scene": 2,
+      "start": 4.68,
+      "end": 7.162792,
+      "text": "and registers bean definitions."
+    },
+    {
+      "scene": 3,
+      "start": 7.382792,
+      "end": 10.18,
+      "text": "A single constructor needs a repository."
+    },
+    {
+      "scene": 3,
+      "start": 10.18,
+      "end": 12.75075,
+      "text": "Spring resolves that parameter by type."
+    },
+    {
+      "scene": 4,
+      "start": 12.97075,
+      "end": 15.12,
+      "text": "Spring creates the repository,"
+    },
+    {
+      "scene": 4,
+      "start": 15.12,
+      "end": 16.22,
+      "text": "then passes its reference"
+    },
+    {
+      "scene": 4,
+      "start": 16.22,
+      "end": 18.221708,
+      "text": "into the service constructor."
+    },
+    {
+      "scene": 5,
+      "start": 18.441708,
+      "end": 19.62,
+      "text": "Our Java run confirms"
+    },
+    {
+      "scene": 5,
+      "start": 19.62,
+      "end": 21.9,
+      "text": "the same repository bean."
+    },
+    {
+      "scene": 5,
+      "start": 21.9,
+      "end": 23.2,
+      "text": "Only then does the application"
+    },
+    {
+      "scene": 5,
+      "start": 23.2,
+      "end": 24.933958,
+      "text": "use the service."
+    },
+    {
+      "scene": 6,
+      "start": 25.153958,
+      "end": 27.82,
+      "text": "Scan, register, resolve, inject, then use."
+    },
+    {
+      "scene": 6,
+      "start": 27.82,
+      "end": 29.76,
+      "text": "Spring supplies dependencies;"
+    },
+    {
+      "scene": 6,
+      "start": 29.76,
+      "end": 32.209083,
+      "text": "your service doesn’t construct them."
+    },
+    {
+      "scene": 7,
+      "start": 34.209083,
+      "end": 35.299833,
+      "text": "Thanks for watching."
+    }
+  ],
+  "caption_method": "Seven complete scene utterances, one inference batch per scene; exact sample-derived scene edits. Short display captions and DI step anchors use unprompted faster-whisper base.en word starts (approximate20ms grid). Raw full-stream ASR/WER retained unchanged. The short late Thanks crop is independently transcribed without a prompt when omitted by the full decoder; its absolute word timing is supplemental-asr.json. Scan starts at the exact scene edit because its ASR word duration is zero. Recap complete cue is a derived animation completion .65s after spoken use, with an additional exact2s reading hold before Thanks.",
+  "recap_cues": {
+    "relative_to": "scene_start",
+    "register": 0.266042,
+    "resolve": 0.766042,
+    "inject": 1.226042,
+    "use": 2.406042,
+    "scan": 0.0,
+    "complete": 3.056042,
+    "recap_hold_start": 7.055125,
+    "recap_hold_end": 9.055125
+  },
+  "recap_cues_absolute": {
+    "register": 25.42,
+    "resolve": 25.92,
+    "inject": 26.38,
+    "use": 27.56,
+    "scan": 25.153958,
+    "complete": 28.21,
+    "recap_hold_start": 32.209083,
+    "recap_hold_end": 34.209083
+  },
+  "scene_cues_absolute": {
+    "discovery": {
+      "scan": 2.88,
+      "find": 3.1,
+      "register": 5.16
+    },
+    "resolution": {
+      "constructor": 7.72,
+      "repository": 8.92,
+      "resolve": 10.32,
+      "type": 11.9
+    },
+    "injection": {
+      "create": 13.14,
+      "pass": 15.18,
+      "reference": 15.9,
+      "constructor": 17.06
+    },
+    "proof": {
+      "confirm": 19.16,
+      "same": 20.0,
+      "application": 22.84,
+      "use": 23.2
+    }
+  }
+}
