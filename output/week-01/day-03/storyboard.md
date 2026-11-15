@@ -1,0 +1,30 @@
+# Constructor Injection in Spring Boot — timed storyboard
+
+Seven scenes use the actual sample-derived narration edits in `source/timing.json`. Times below are seconds from the start; the 60 FPS encoder displays each change on the next applicable frame. Source audio ends at 35.819167s; the rendered picture is planned to end at 35.833333s (2150 frames). Actual encoded measurements belong in `verification-report.md`.
+
+The visual language is dark navy with white text, cyan concrete gateway references, purple interface/constructor links and Spring-green service/readiness accents. Important picture content and burned captions stay inside X=90..990, Y=250..1520. The interface contract is never drawn as a newly created object.
+
+| Time | Narration | Progressive mechanism animation and audience purpose |
+| --- | --- | --- |
+| 0.000000–2.886958 | “How does an order service get its payment gateway?” | Display the exact supplied `cover.png` unchanged for frames 0–59 (0–1s), with narration starting immediately. The cover names constructor injection and distinguishes the PaymentGateway interface from DemoGateway and OrderService. After the initial cover interval, one reference pulse crosses the gateway-to-service link to introduce the question. |
+| 2.886958–8.517500 | “Require a payment gateway in the constructor, and keep its reference in a final field.” | Build the OrderService constructor signature, reveal the PaymentGateway parameter around the constructor word (4.620s), then reveal and underline the `private final PaymentGateway gateway;` reference at 6.880s. This is one declaration-to-storage progression; code is split into short readable lines. |
+| 8.517500–13.553625 | “Boot scans the components. One gateway bean matches that interface type.” | Begin with the real `@SpringBootApplication` / `SpringApplication.run(CheckoutApplication.class)` startup. Reveal the required PaymentGateway interface, the `@Component DemoGateway` implementation and “ONE MATCH” at 11.220s, then draw the type-match link at 11.960s. This shows how this application's package scan supplies one candidate. |
+| 13.553625–19.240167 | “Spring passes it into the service constructor before the application places an order.” | Inside the Spring container, animate the managed DemoGateway reference into the OrderService constructor from 13.780s. Change the service to READY with its final gateway reference assigned at 15.610s. Only afterward, at 17.180s, reveal application use: `placeOrder`, `order-1042 / USD 19.99`, marked SIMULATED. The causal sequence is explicit: reference supplied → service ready → business call. |
+| 19.240167–25.193375 | “Our Boot test confirms the same bean. A fake gateway passes a separate service test.” | Reveal the actual integration proof line `same gateway bean: true` at 20.720s. At 21.840s build a separate pure Java test panel with `new OrderService(fake)`, animate the fake reference into the service and show `fake gateway test: passed`. The fake test is visually distinct from production bean resolution. |
+| 25.193375–34.283125 | “Require, resolve, inject, then use. Constructor injection makes required dependencies explicit.” | Assemble a top-to-bottom overview: Boot startup and component scanning; OrderService's required PaymentGateway constructor parameter; the single matching DemoGateway; Spring supplying its reference; application `placeOrder(orderId, cents)` use. Require begins at 25.193375s, resolve at 25.720s, inject at 26.140s, and use at 27.400s; the complete mechanism is present by 28.050s. After narration ends, hold the completed diagram from **32.283125 to 34.283125s**, exactly **2 seconds**, for reading. |
+| 34.283125–35.819167 | “Thanks for watching.” | Cut to a separate, uncluttered Thanks for watching card, with one short cyan underline reveal. The card's text serves as its on-screen caption; the separate SRT retains the spoken closing cue. Preserve the natural audio tail to the end. |
+
+## Captions and sound
+
+- There are 18 synchronized SRT cues. Burned captions begin after the exact initial one-second cover interval, so the cover itself receives no caption, progress rail or fade overlay. The separate SRT begins at 0.000s with the immediate narration.
+- Captions reserve Y=1322..1487. The mechanism recap fits above that band; the complete recap remains visible during its two-second silent reading hold. The progress rail sits at Y=1510.
+- Seven coherent local Kokoro utterances use the licensed 80% am_puck / 20% am_fenrir male blend at model inference speed 0.90. No pitch shift or waveform stretching is used. Pronunciation, perceived age and smooth human naturalness still require an auditory review; no such approval is claimed.
+- An original NumPy harmonic bed runs continuously, ducks beneath speech and fades at its ends. Quiet synthesized event tones mark final-reference declaration (6.880s), one gateway match (11.220s), constructor passage (13.780s), the separate fake test (21.840s) and complete recap (28.050s).
+
+## Technical boundaries
+
+PaymentGateway is an interface; DemoGateway is the concrete managed bean. OrderService's single constructor needs no `@Autowired` annotation in this example. One matching gateway bean makes resolution unambiguous. A final reference cannot be reassigned; this does not make the gateway object immutable. The diagram's timing is an explanatory edit rather than a measurement of Spring's runtime execution speed.
+
+The real non-web Boot example and its two JUnit tests preserve actual output under `source/evidence/java-*`. All approvals are local simulations. The recording fake is manually supplied only in the separate service test; it is not an additional production bean. No real payment or external gateway is contacted.
+
+The overview precedes the closing Thanks card in the same video. Public visuals, narration and publishing copy contain no internal schedule, day, week, lesson or episode numbering. Final technical file checks and any incomplete essential review must be reported separately; this storyboard does not certify the encoded MP4 or perceptual voice quality.

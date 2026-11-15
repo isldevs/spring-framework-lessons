@@ -1,0 +1,60 @@
+{
+  "word_distinctions": {
+    "bean": "bˈiːn",
+    "beans": "bˈiːnz",
+    "constructor": "kənstɹˈʌktɚ",
+    "Spring Boot": "spɹˈɪŋ bˈuːt",
+    "payment gateway": "pˈeɪmənt ɡˈeɪtweɪ",
+    "PaymentGateway": "pˈeɪmənt ɡˈeɪtweɪ",
+    "OrderService": "ˈɔːɹdɚ sˈɜːvɪs",
+    "final field": "fˈaɪnəl fˈiːld",
+    "Require": "ɹᵻkwˈaɪɚ",
+    "resolve": "ɹᵻzˈɑːlv",
+    "inject": "ɪndʒˈɛkt",
+    "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "How does an order service get its payment gateway?",
+      "phonemes": "hˌaʊ dˈʌz ɐn ˈɔːɹdɚ sˈɜːvɪs ɡɛt ɪts pˈeɪmənt ɡˈeɪtweɪ?",
+      "inference_batches": 1
+    },
+    {
+      "scene": 2,
+      "text": "Require a payment gateway in the constructor, and keep its reference in a final field.",
+      "phonemes": "ɹᵻkwˈaɪɚɹ ɐ pˈeɪmənt ɡˈeɪtweɪ ɪnðə kənstɹˈʌktɚ, ænd kˈiːp ɪts ɹˈɛfɹəns ɪn ɐ fˈaɪnəl fˈiːld.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 3,
+      "text": "Boot scans the components. One gateway bean matches that interface type.",
+      "phonemes": "bˈuːt skˈænz ðə kəmpˈoʊnənts. wˈʌn ɡˈeɪtweɪ bˈiːn mˈætʃᵻz ðæt ˈɪntɚfˌeɪs tˈaɪp.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 4,
+      "text": "Spring passes it into the service constructor before the application places an order.",
+      "phonemes": "spɹˈɪŋ pˈæsᵻz ɪɾ ˌɪntʊ ðə sˈɜːvɪs kənstɹˈʌktɚ bᵻfˌɔːɹ ðɪ ˌæplɪkˈeɪʃən plˈeɪsᵻz ɐn ˈɔːɹdɚ.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 5,
+      "text": "Our Boot test confirms the same bean. A fake gateway passes a separate service test.",
+      "phonemes": "ˌaʊɚ bˈuːt tˈɛst kənfˈɜːmz ðə sˈeɪm bˈiːn. ɐ fˈeɪk ɡˈeɪtweɪ pˈæsᵻz ɐ sˈɛpɹət sˈɜːvɪs tˈɛst.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 6,
+      "text": "Require, resolve, inject, then use. Constructor injection makes required dependencies explicit.",
+      "phonemes": "ɹᵻkwˈaɪɚ, ɹᵻzˈɑːlv, ɪndʒˈɛkt, ðˈɛn jˈuːz. kənstɹˈʌktɚɹ ɪndʒˈɛkʃən mˌeɪks ɹᵻkwˈaɪɚd dᵻpˈɛndənsiz ɛksplˈɪsɪt.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 7,
+      "text": "Thanks for watching.",
+      "phonemes": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ.",
+      "inference_batches": 1
+    }
+  ]
+}

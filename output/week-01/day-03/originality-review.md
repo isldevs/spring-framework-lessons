@@ -1,0 +1,13 @@
+# Originality review — Constructor Injection in Spring Boot
+
+This review documents production provenance and conventional technical material. It is not an exhaustive web-similarity search, plagiarism certification or finding of worldwide novelty. Actual encoded-file QA and subjective listening acceptance are recorded separately.
+
+The English script and publishing copy were written for this lesson: an OrderService explicitly requires a PaymentGateway, Spring Boot resolves a managed implementation and supplies it through the constructor, and a separate fake-gateway test exercises the same constructor without a Spring container. Standard concepts such as constructor injection, final fields, component scanning and interface matching are established ideas, not claimed as exclusive intellectual property.
+
+The Java sources under `source/java/` implement a minimal example assembled for the demonstration. The inspected actual JUnit result records two successful tests with no failures, including real non-web Spring Boot integration and a separate plain-Java recording fake. The runtime proof lines and simulated receipt are preserved under `source/evidence/java-*`; they are not invented terminal output. All approvals are local simulated results rather than real payment processing.
+
+The lesson-specific graphics follow the continuing iSLDevs palette and reusable Pillow drawing primitives. The original production mechanism is a concrete reference supplied through a constructor into a final field, with PaymentGateway kept distinct from its DemoGateway implementation. The recap and requested Thanks card continue the agreed video format. Reusing the project's own fonts, helpers, background pattern or musical synthesis code is not represented as newly inventing those assets for this lesson.
+
+The background and event tones are synthesized from NumPy waveforms and envelopes rather than sampled from a recording. Narration is generated locally using licensed pretrained Kokoro male styles; it is not an original human voice recording or a clone requested to impersonate a named person. `asset-rights.md` records the model, software, font and dependency permissions with retained notices.
+
+Official Spring documentation supports technical accuracy and is cited as reference material. No comprehensive external plagiarism service, music-fingerprint check or third-party clearance service was performed. Source provenance supports the stated production origin but cannot prove global uniqueness. No auditory listening review was performed or claimed; perceived voice age, human naturalness and subtle synthesis artifacts remain unverified by that method.

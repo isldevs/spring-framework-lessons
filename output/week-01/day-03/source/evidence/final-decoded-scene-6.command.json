@@ -1,0 +1,17 @@
+{
+  "command": [
+    "ffmpeg",
+    "-y",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-ss",
+    "32.465175",
+    "-i",
+    "/workspace/spring-framework-lessons/output/week-01/day-03/video.mp4",
+    "-frames:v",
+    "1",
+    "/workspace/spring-framework-lessons/output/week-01/day-03/source/evidence/final-decoded-scene-6.png"
+  ],
+  "exit_code": 0
+}

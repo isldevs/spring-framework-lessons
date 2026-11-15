@@ -1,0 +1,39 @@
+[aist#0:0/pcm_s24le @ 0x557a00191fc0] Guessed Channel Layout: mono
+Input #0, wav, from '../../narration.wav':
+  Duration: 00:00:35.82, bitrate: 1152 kb/s
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, mono, s32 (24 bit), 1152 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, mono, s16, 768 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[silencedetect @ 0x7efd18002000] silence_start: 2.420667
+[silencedetect @ 0x7efd18002000] silence_end: 2.906083 | silence_duration: 0.485417
+[silencedetect @ 0x7efd18002000] silence_start: 5.445333
+[silencedetect @ 0x7efd18002000] silence_end: 5.617708 | silence_duration: 0.172375
+[silencedetect @ 0x7efd18002000] silence_start: 7.903062
+[silencedetect @ 0x7efd18002000] silence_end: 8.5355 | silence_duration: 0.632437
+[silencedetect @ 0x7efd18002000] silence_start: 10.197542
+[silencedetect @ 0x7efd18002000] silence_end: 10.387458 | silence_duration: 0.189917
+[silencedetect @ 0x7efd18002000] silence_start: 13.024458
+[silencedetect @ 0x7efd18002000] silence_end: 13.576833 | silence_duration: 0.552375
+[silencedetect @ 0x7efd18002000] silence_start: 16.236229
+[silencedetect @ 0x7efd18002000] silence_end: 16.357417 | silence_duration: 0.121187
+[silencedetect @ 0x7efd18002000] silence_start: 18.635437
+[silencedetect @ 0x7efd18002000] silence_end: 19.260208 | silence_duration: 0.624771
+[silencedetect @ 0x7efd18002000] silence_start: 21.615146
+[silencedetect @ 0x7efd18002000] silence_end: 21.797708 | silence_duration: 0.182562
+[silencedetect @ 0x7efd18002000] silence_start: 24.601104
+[silencedetect @ 0x7efd18002000] silence_end: 25.213833 | silence_duration: 0.612729
+[silencedetect @ 0x7efd18002000] silence_start: 28.066771
+[silencedetect @ 0x7efd18002000] silence_end: 28.3195 | silence_duration: 0.252729
+[silencedetect @ 0x7efd18002000] silence_start: 31.759208
+[silencedetect @ 0x7efd18002000] silence_end: 34.326479 | silence_duration: 2.567271
+[silencedetect @ 0x7efd18002000] silence_start: 35.326812
+[silencedetect @ 0x7efd18002000] silence_end: 35.819167 | silence_duration: 0.492354
+[out#0/null @ 0x557a00192180] video:0KiB audio:3358KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:35.81 bitrate=N/A speed=1.02e+03x    

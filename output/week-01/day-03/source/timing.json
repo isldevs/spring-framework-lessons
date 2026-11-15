@@ -1,0 +1,261 @@
+{
+  "sample_rate": 48000,
+  "voice": "am_puck80_fenrir20",
+  "voice_blend": {
+    "am_puck": 0.8,
+    "am_fenrir": 0.2
+  },
+  "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
+  "speed": 0.9,
+  "one_inference_batch_per_scene": true,
+  "recap_hold_seconds": 2.0,
+  "recap_hold_start": 32.283125,
+  "recap_hold_end": 34.283125,
+  "thanks_start": 34.283125,
+  "thanks_end": 35.819167,
+  "duration": 35.81916666666667,
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.886958
+    },
+    {
+      "scene": 2,
+      "start": 2.886958,
+      "end": 8.5175
+    },
+    {
+      "scene": 3,
+      "start": 8.5175,
+      "end": 13.553625
+    },
+    {
+      "scene": 4,
+      "start": 13.553625,
+      "end": 19.240167
+    },
+    {
+      "scene": 5,
+      "start": 19.240167,
+      "end": 25.193375
+    },
+    {
+      "scene": 6,
+      "start": 25.193375,
+      "end": 34.283125
+    },
+    {
+      "scene": 7,
+      "start": 34.283125,
+      "end": 35.819167
+    }
+  ],
+  "phrases": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.706958,
+      "text": "How does an order service get its payment gateway?"
+    },
+    {
+      "scene": 2,
+      "start": 2.886958,
+      "end": 8.2975,
+      "text": "Require a payment gateway in the constructor, and keep its reference in a final field."
+    },
+    {
+      "scene": 3,
+      "start": 8.5175,
+      "end": 13.333625,
+      "text": "Boot scans the components. One gateway bean matches that interface type."
+    },
+    {
+      "scene": 4,
+      "start": 13.553625,
+      "end": 19.020167,
+      "text": "Spring passes it into the service constructor before the application places an order."
+    },
+    {
+      "scene": 5,
+      "start": 19.240167,
+      "end": 24.973375,
+      "text": "Our Boot test confirms the same bean. A fake gateway passes a separate service test."
+    },
+    {
+      "scene": 6,
+      "start": 25.193375,
+      "end": 32.283125,
+      "text": "Require, resolve, inject, then use. Constructor injection makes required dependencies explicit."
+    },
+    {
+      "scene": 7,
+      "start": 34.283125,
+      "end": 35.469167,
+      "text": "Thanks for watching."
+    }
+  ],
+  "captions": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 0.98,
+      "text": "How does an order service"
+    },
+    {
+      "scene": 1,
+      "start": 0.98,
+      "end": 2.706958,
+      "text": "get its payment gateway?"
+    },
+    {
+      "scene": 2,
+      "start": 2.886958,
+      "end": 4.24,
+      "text": "Require a payment gateway"
+    },
+    {
+      "scene": 2,
+      "start": 4.24,
+      "end": 5.34,
+      "text": "in the constructor,"
+    },
+    {
+      "scene": 2,
+      "start": 5.34,
+      "end": 8.2975,
+      "text": "and keep its reference in a final field."
+    },
+    {
+      "scene": 3,
+      "start": 8.5175,
+      "end": 10.46,
+      "text": "Boot scans the components."
+    },
+    {
+      "scene": 3,
+      "start": 10.46,
+      "end": 11.68,
+      "text": "One gateway bean matches"
+    },
+    {
+      "scene": 3,
+      "start": 11.68,
+      "end": 13.333625,
+      "text": "that interface type."
+    },
+    {
+      "scene": 4,
+      "start": 13.553625,
+      "end": 14.82,
+      "text": "Spring passes it into"
+    },
+    {
+      "scene": 4,
+      "start": 14.82,
+      "end": 16.08,
+      "text": "the service constructor"
+    },
+    {
+      "scene": 4,
+      "start": 16.08,
+      "end": 19.020167,
+      "text": "before the application places an order."
+    },
+    {
+      "scene": 5,
+      "start": 19.240167,
+      "end": 21.82,
+      "text": "Our Boot test confirms the same bean."
+    },
+    {
+      "scene": 5,
+      "start": 21.82,
+      "end": 22.96,
+      "text": "A fake gateway passes"
+    },
+    {
+      "scene": 5,
+      "start": 22.96,
+      "end": 24.973375,
+      "text": "a separate service test."
+    },
+    {
+      "scene": 6,
+      "start": 25.193375,
+      "end": 27.66,
+      "text": "Require, resolve, inject, then use."
+    },
+    {
+      "scene": 6,
+      "start": 27.66,
+      "end": 29.66,
+      "text": "Constructor injection makes"
+    },
+    {
+      "scene": 6,
+      "start": 29.66,
+      "end": 32.283125,
+      "text": "required dependencies explicit."
+    },
+    {
+      "scene": 7,
+      "start": 34.283125,
+      "end": 35.469167,
+      "text": "Thanks for watching."
+    }
+  ],
+  "caption_method": "Seven coherent utterances, one inference batch per scene; exact sample-derived scene edits. Captions and constructor-injection cues use independent unprompted faster-whisper base.en word starts (approximate20ms grid). Raw transcript/WER remain unchanged. Supplemental independent outro transcription is used only if required and preserved separately. Captions retain ordinary spaced payment gateway/order service wording. Animation-ready and complete anchors are documented derived timings; recap has an exact2s reading hold before spoken Thanks.",
+  "recap_cues": {
+    "relative_to": "scene_start",
+    "require": 0.0,
+    "resolve": 0.526625,
+    "inject": 0.946625,
+    "use": 2.206625,
+    "complete": 2.856625,
+    "recap_hold_start": 7.08975,
+    "recap_hold_end": 9.08975
+  },
+  "recap_cues_absolute": {
+    "require": 25.193375,
+    "resolve": 25.72,
+    "inject": 26.14,
+    "use": 27.4,
+    "complete": 28.05,
+    "recap_hold_start": 32.283125,
+    "recap_hold_end": 34.283125
+  },
+  "scene_cues_absolute": {
+    "requirement": {
+      "require": 2.886958,
+      "constructor": 4.62,
+      "reference": 6.1,
+      "final": 6.88,
+      "field": 7.12
+    },
+    "discovery": {
+      "boot": 8.5175,
+      "scan": 8.66,
+      "match": 11.22,
+      "interface": 11.96,
+      "type": 12.3
+    },
+    "injection": {
+      "pass": 13.78,
+      "constructor": 15.26,
+      "application": 16.72,
+      "place": 17.18,
+      "order": 18.04,
+      "ready": 15.61
+    },
+    "proof": {
+      "boot": 19.32,
+      "confirm": 19.84,
+      "same": 20.72,
+      "bean": 21.0,
+      "fake": 21.84,
+      "boot_test": 19.52,
+      "test": 23.86
+    }
+  }
+}

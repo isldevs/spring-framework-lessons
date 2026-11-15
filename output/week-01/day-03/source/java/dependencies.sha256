@@ -1,0 +1,13 @@
+05cc22a24e7982970f63a405fc6c820bc80b806f27f3c5a6236fc475f8f7152b  lib/ecj-3.40.0.jar
+329bd10288875a74d04c9ca6b7c9889c265ddf87b21a9ea42a7f7392f391472a  lib/junit-platform-console-standalone-1.12.2.jar
+d9971273957d7cd695887cbc680772b75844bfcf3fa7017189171683798b9181  lib/micrometer-commons-1.15.4.jar
+49693a239af0219384fd41f6cf5e48639e097c5da0f628433e1f9b7bf3120d1b  lib/micrometer-observation-1.15.4.jar
+ef779af5d29a9dde8cc70ce0341f5c6f7735e23edff9685ceaa9d35359b7bb7f  lib/snakeyaml-2.4.jar
+91e6cd420cd601a34dc41fc33364cfe77d40b6281ee472a0b72d43791f06a1dd  lib/spring-aop-6.2.11.jar
+f9ba5dedee94947b11d930209ff1a12bbe9e28b1b4f73c5baeba2fb3fe32d08e  lib/spring-beans-6.2.11.jar
+4e66f6f3152e148c028977c33ab12c91ae381701b5d9d9951882a84f05ff5fea  lib/spring-boot-3.5.6.jar
+1f8284cefaffb3018d803e4c9cf065eaa88dc3e09a9aa2abea8e876981b1be7a  lib/spring-boot-autoconfigure-3.5.6.jar
+a2c732fce8b24ead7caf4a21a157167bce991048638805cf1277a5ed6a568057  lib/spring-context-6.2.11.jar
+a1de6ff2d88c05442468360b89f881b77ff7a393b8cd5b1d5758756b2e247f8a  lib/spring-core-6.2.11.jar
+0fd8753b1ad861019ab1e1cedbba82c1354bab0313f0c8509799edd3fc98bbb3  lib/spring-expression-6.2.11.jar
+a5d92923b658637c62c481dc44eab029afc1b816b10d8d0fda5ed63715f3cf85  lib/spring-jcl-6.2.11.jar

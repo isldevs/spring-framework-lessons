@@ -1,0 +1,101 @@
+[
+  {
+    "name": "boot-di",
+    "url": "https://docs.spring.io/spring-boot/3.5/reference/using/spring-beans-and-dependency-injection.html",
+    "resolved_url": "https://docs.spring.io/spring-boot/3.5/reference/using/spring-beans-and-dependency-injection.html",
+    "http_status": 200,
+    "html_sha256": "f7feebb773f818c51872e66cf2e5a61738c9cce58d4492ff270247d4cbe5f426",
+    "excerpts": [
+      {
+        "needle": "constructor injection",
+        "verbatim_context": "njection You are free to use any of the standard Spring Framework techniques to define your beans and their injected dependencies. We generally recommend using constructor injection to wire up dependencies and @ComponentScan to find beans. If you structure your code as suggested above (locating your application class in a top package), you can add @ComponentScan without any arguments or use the @SpringBootApplication annotation which implicitly includes it. All of your application components ( @Component , @Service , @Repository , @Con"
+      },
+      {
+        "needle": "constructor injection",
+        "verbatim_context": "ponent , @Service , @Repository , @Controller , and others) are automatically registered as Spring Beans. The following example shows a @Service Bean that uses constructor injection to obtain a required RiskAssessor bean: Java Kotlin import org.springframework.stereotype.Service; @Service public class MyAccountService implements AccountService { private final RiskAssessor riskAssessor; public MyAccountService(RiskAssessor riskAssessor) { this.riskAssessor = riskAssessor; } // ... } import org.springframework.stereotype.Service @Service"
+      },
+      {
+        "needle": "constructor injection",
+        "verbatim_context": "ssor out = System.out } constructor(riskAssessor: RiskAssessor, out: PrintStream) { this.riskAssessor = riskAssessor this.out = out } // ... } Notice how using constructor injection lets the riskAssessor field be marked as final , indicating that it cannot be subsequently changed. Auto-configuration Using the @SpringBootApplication Annotation Spring Boot Stable 4.1.2 4.0.9 3.5.16 3.4.13 3.3.13 Preview 4.2.0-RC2 Snapshot 4.2.0-SNAPSHOT 4.1.3-SNAPSHOT 4.0.10-SNAPSHOT Related Spring Documentation Spring Boot Spring Framework Spring Cloud "
+      },
+      {
+        "needle": "@SpringBootApplication",
+        "verbatim_context": "erence Developing with Spring Boot Build Systems Structuring Your Code Configuration Classes Auto-configuration Spring Beans and Dependency Injection Using the @SpringBootApplication Annotation Running Your Application Developer Tools Packaging Your Application for Production Core Features SpringApplication Externalized Configuration Profiles Logging Internationalization Aspect-Oriented Programming JSON Task Execution and Scheduling Development-time Services Creating Your Own Auto-configuration Kotlin Support SSL Web Servlet Web Applica"
+      },
+      {
+        "needle": "@SpringBootApplication",
+        "verbatim_context": ". If you structure your code as suggested above (locating your application class in a top package), you can add @ComponentScan without any arguments or use the @SpringBootApplication annotation which implicitly includes it. All of your application components ( @Component , @Service , @Repository , @Controller , and others) are automatically registered as Spring Beans. The following example shows a @Service Bean that uses constructor injection to obtain a required RiskAssessor bean: Java Kotlin import org.springframework.stereotype.Servi"
+      },
+      {
+        "needle": "@SpringBootApplication",
+        "verbatim_context": "ow using constructor injection lets the riskAssessor field be marked as final , indicating that it cannot be subsequently changed. Auto-configuration Using the @SpringBootApplication Annotation Spring Boot Stable 4.1.2 4.0.9 3.5.16 3.4.13 3.3.13 Preview 4.2.0-RC2 Snapshot 4.2.0-SNAPSHOT 4.1.3-SNAPSHOT 4.0.10-SNAPSHOT Related Spring Documentation Spring Boot Spring Framework Spring Cloud Spring Cloud Build Spring Cloud Bus Spring Cloud Circuit Breaker Spring Cloud Commons Spring Cloud Config Spring Cloud Consul Spring Cloud Contract Spri"
+      },
+      {
+        "needle": "@ComponentScan",
+        "verbatim_context": "pring Framework techniques to define your beans and their injected dependencies. We generally recommend using constructor injection to wire up dependencies and @ComponentScan to find beans. If you structure your code as suggested above (locating your application class in a top package), you can add @ComponentScan without any arguments or use the @SpringBootApplication annotation which implicitly includes it. All of your application components ( @Component , @Service , @Repository , @Controller , and others) are automatically reg"
+      },
+      {
+        "needle": "@ComponentScan",
+        "verbatim_context": "up dependencies and @ComponentScan to find beans. If you structure your code as suggested above (locating your application class in a top package), you can add @ComponentScan without any arguments or use the @SpringBootApplication annotation which implicitly includes it. All of your application components ( @Component , @Service , @Repository , @Controller , and others) are automatically registered as Spring Beans. The following example shows a @Service Bean that uses constructor injection to obtain a required RiskAssessor bean:"
+      }
+    ]
+  },
+  {
+    "name": "spring-constructor",
+    "url": "https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html",
+    "http_status": 200,
+    "html_sha256": "747573263bce63eeeee4af923667d8a2124b2ae382f76e4425bd1590e58d1205",
+    "excerpts": [
+      {
+        "needle": "single constructor",
+        "verbatim_context": "rue , indicating the constructor to autowire when used as a Spring bean. As a consequence, if the required attribute is left at its default value true , only a single constructor may be annotated with @Autowired . If multiple constructors declare the annotation, they will all have to declare required=false in order to be considered as candidates for autowiring (analogous to autowire=constructor in XML). The constructor with the greatest number of dependencies that can be satisfied by matching beans in the Spring container will be ch"
+      },
+      {
+        "needle": "single constructor",
+        "verbatim_context": " multiple constructors but none of them is annotated with @Autowired , then a primary/default constructor (if present) will be used. If a class only declares a single constructor to begin with, it will always be used, even if not annotated. Note that an annotated constructor does not have to be public. Alternatively, you can express the non-required nature of a particular dependency through Java’s java.util.Optional , as the following example shows: public class SimpleMovieLister { @Autowired public void setMovieFinder(Optional<Movi"
+      },
+      {
+        "needle": "only declares a single constructor",
+        "verbatim_context": "a class declares multiple constructors but none of them is annotated with @Autowired , then a primary/default constructor (if present) will be used. If a class only declares a single constructor to begin with, it will always be used, even if not annotated. Note that an annotated constructor does not have to be public. Alternatively, you can express the non-required nature of a particular dependency through Java’s java.util.Optional , as the following example shows: public class SimpleMovieLister { @Autowired public void setMovieFinder(Optional<Movi"
+      },
+      {
+        "needle": "even if not annotated",
+        "verbatim_context": "@Autowired , then a primary/default constructor (if present) will be used. If a class only declares a single constructor to begin with, it will always be used, even if not annotated. Note that an annotated constructor does not have to be public. Alternatively, you can express the non-required nature of a particular dependency through Java’s java.util.Optional , as the following example shows: public class SimpleMovieLister { @Autowired public void setMovieFinder(Optional<MovieFinder> movieFinder) { ... } } You can also use a parameter-"
+      }
+    ]
+  },
+  {
+    "name": "boot-application",
+    "url": "https://docs.spring.io/spring-boot/3.5/reference/features/spring-application.html",
+    "resolved_url": "https://docs.spring.io/spring-boot/3.5/reference/features/spring-application.html",
+    "http_status": 200,
+    "html_sha256": "5dbfef099d95a9de0d3d46397b23ad52568f0029c96cb296e512ea6ccd62e3cb",
+    "excerpts": [
+      {
+        "needle": "SpringApplication",
+        "verbatim_context": "SpringApplication :: Spring Boot Why Spring Overview Trending Generative AI Cloud Architecture Patterns Microservices Reactive Event Driven Application Types Web Applications Serverless Batch Learn Getting Started Quickstart Guides Academy Courses Get Certified Projects Overview Projects Spring Boot Spring Framework Spring Cloud Spring AI Spring Data Spring Integration Sprin"
+      },
+      {
+        "needle": "SpringApplication",
+        "verbatim_context": "pendency Injection Using the @SpringBootApplication Annotation Running Your Application Developer Tools Packaging Your Application for Production Core Features SpringApplication Externalized Configuration Profiles Logging Internationalization Aspect-Oriented Programming JSON Task Execution and Scheduling Development-time Services Creating Your Own Auto-configuration Kotlin Support SSL Web Servlet Web Applications Reactive Web Applications Graceful Shutdown Spring Security Spring Session Spring for GraphQL Spring HATEOAS Data SQL Da"
+      },
+      {
+        "needle": "SpringApplication",
+        "verbatim_context": "s Dependency Versions Managed Dependency Coordinates Version Properties Search Edit this Page GitHub Project Stack Overflow Spring Boot Reference Core Features SpringApplication For the latest stable version, please use Spring Boot 4.1.2 ! SpringApplication The SpringApplication class provides a convenient way to bootstrap a Spring application that is started from a main() method. In many situations, you can delegate to the static SpringApplication.run(Class, String...) method, as shown in the following example: Java Kotlin import "
+      },
+      {
+        "needle": "SpringApplication",
+        "verbatim_context": "dit this Page GitHub Project Stack Overflow Spring Boot Reference Core Features SpringApplication For the latest stable version, please use Spring Boot 4.1.2 ! SpringApplication The SpringApplication class provides a convenient way to bootstrap a Spring application that is started from a main() method. In many situations, you can delegate to the static SpringApplication.run(Class, String...) method, as shown in the following example: Java Kotlin import org.springframework.boot.SpringApplication; import org.springframework.boot.auto"
+      },
+      {
+        "needle": "SpringApplication",
+        "verbatim_context": "roject Stack Overflow Spring Boot Reference Core Features SpringApplication For the latest stable version, please use Spring Boot 4.1.2 ! SpringApplication The SpringApplication class provides a convenient way to bootstrap a Spring application that is started from a main() method. In many situations, you can delegate to the static SpringApplication.run(Class, String...) method, as shown in the following example: Java Kotlin import org.springframework.boot.SpringApplication; import org.springframework.boot.autoconfigure.SpringBootAp"
+      },
+      {
+        "needle": "WebApplicationType.NONE",
+        "verbatim_context": " complete control of the ApplicationContext type that is used by calling setApplicationContextFactory(…​) . It is often desirable to call setWebApplicationType(WebApplicationType.NONE) when using SpringApplication within a JUnit test. Accessing Application Arguments If you need to access the application arguments that were passed to SpringApplication.run(…​) , you can inject a ApplicationArguments bean. The ApplicationArguments interface provides access to both the raw String[] arguments as well as parsed option and non-option arguments,"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "time": 6.88,
+    "purpose": "required final reference declared"
+  },
+  {
+    "time": 11.22,
+    "purpose": "DemoGateway matches PaymentGateway interface"
+  },
+  {
+    "time": 13.78,
+    "purpose": "gateway reference enters constructor"
+  },
+  {
+    "time": 21.84,
+    "purpose": "separate fake-gateway service test"
+  },
+  {
+    "time": 28.05,
+    "purpose": "complete constructor-injection recap"
+  }
+]

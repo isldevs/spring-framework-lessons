@@ -1,0 +1,24 @@
+{
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-i",
+    "/workspace/spring-framework-lessons/output/week-01/day-03/video.mp4",
+    "-loop",
+    "1",
+    "-framerate",
+    "60",
+    "-i",
+    "/workspace/spring-framework-lessons/output/week-01/day-03/source/evidence/final-thanks-reference.png",
+    "-filter_complex",
+    "[0:v]trim=start_frame=2149,setpts=PTS-STARTPTS,crop=880:980:100:330[ending];[1:v]scale=in_range=full:out_range=tv:out_color_matrix=bt709,format=yuv420p[ref];[ending][ref]ssim=stats_file=/workspace/spring-framework-lessons/output/week-01/day-03/source/evidence/final-thanks-ssim-frames.txt",
+    "-frames:v",
+    "1",
+    "-an",
+    "-f",
+    "null",
+    "-"
+  ],
+  "exit_code": 0
+}

@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:00,980
+How does an order service
+
+2
+00:00:00,980 --> 00:00:02,707
+get its payment gateway?
+
+3
+00:00:02,887 --> 00:00:04,240
+Require a payment gateway
+
+4
+00:00:04,240 --> 00:00:05,340
+in the constructor,
+
+5
+00:00:05,340 --> 00:00:08,298
+and keep its reference in a final field.
+
+6
+00:00:08,518 --> 00:00:10,460
+Boot scans the components.
+
+7
+00:00:10,460 --> 00:00:11,680
+One gateway bean matches
+
+8
+00:00:11,680 --> 00:00:13,334
+that interface type.
+
+9
+00:00:13,554 --> 00:00:14,820
+Spring passes it into
+
+10
+00:00:14,820 --> 00:00:16,080
+the service constructor
+
+11
+00:00:16,080 --> 00:00:19,020
+before the application places an order.
+
+12
+00:00:19,240 --> 00:00:21,820
+Our Boot test confirms the same bean.
+
+13
+00:00:21,820 --> 00:00:22,960
+A fake gateway passes
+
+14
+00:00:22,960 --> 00:00:24,973
+a separate service test.
+
+15
+00:00:25,193 --> 00:00:27,660
+Require, resolve, inject, then use.
+
+16
+00:00:27,660 --> 00:00:29,660
+Constructor injection makes
+
+17
+00:00:29,660 --> 00:00:32,283
+required dependencies explicit.
+
+18
+00:00:34,283 --> 00:00:35,469
+Thanks for watching.
+

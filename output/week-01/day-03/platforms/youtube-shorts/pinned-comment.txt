@@ -1,0 +1,5 @@
+One constructor, one matching PaymentGateway bean: this constructor does not need @Autowired.
+
+DemoGateway simulates approval locally. The recording fake is supplied manually only in the separate service test.
+
+Which would help next: testing constructor injection or handling multiple matching gateway beans?

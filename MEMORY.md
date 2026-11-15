@@ -66,7 +66,19 @@ Follow the full mandatory checklist in `AGENTS.md`; do not shorten it to a video
 - The user uploads from a phone. Metadata files or download links do NOT replace inline copyable publishing text. Include both formats every time a video is generated or updated.
 - Never say completed/verified without identifying any remaining incomplete essential requirement.
 
-## Latest implemented reference: Spring dependency injection
+## Latest implemented reference: Constructor injection in Spring Boot
+
+- Topic: Constructor Injection in Spring Boot. Source/media: `output/week-01/day-03/`.
+- Actual master: 35.833333s,1080×1920,60FPS,H.264/AAC48kHz,Rec.709;7scenes,18SRT cues,2150frames. Exact cover source fills the opening second. Complete recap hold32.283125–34.283125s precedes the narrated Thanks card.
+- Use real Spring Boot, not a bare context called Boot. This example runs non-web Spring Boot3.5.6 with Spring6.2.11. `@SpringBootApplication` scans `@Component DemoGateway` and `@Service OrderService`; the sole constructor requires the PaymentGateway interface and stores its reference in a final field with a null guard. No user @Bean factories are involved. A final reference is not object immutability.
+- Two actual JUnit tests pass: real Boot startup verifies the sole managed gateway candidate, injected identity, construction-before-readiness/order, simulated receipt and singleton reuse; a separate pure Java test manually supplies a recording fake and verifies forwarding/call count/result. DemoGateway and the fake simulate payment outcomes; no real processor is contacted.
+- Runtime is JDK21.0.13; the reproducible runner uses pinned ECJ3.40.0 to compile Java17-target classes without installed Maven or javac. Retain actual commands, exit codes, JUnit XML, aligned dependency hashes/BOM and license notices.
+- The animation keeps PaymentGateway interface and DemoGateway object distinct. Constructor-ready anchor15.610s precedes application order use17.180s. The overview includes Boot startup/scanning, type matching, constructor requirement, supplied reference and later order use. These animation times are not runtime timings.
+- This lesson's male Kokoro candidate uses80%am_puck/20%am_fenrir at inference speed0.90 to meet the duration target; this is a lesson-specific pace, not a universally approved voice setting. No waveform stretching or pitch shifting. Full-stream ASR74/77words,3.8961%WER; separate unprompted Thanks crop3/3. Preserve the raw omission and separate alignment provenance.
+- Master and both platform copies passed actual probe, decode and hash checks;120encoded recap-hold frames and the actual last Thanks frame were compared. Perceptual voice acceptance remains unverified because no listening review was available. Do not treat automated metrics as humanlike-voice approval.
+- Archives use day-03-prefixed names. Every handoff still requires all links AND five separate phone-copyable publishing blocks. Read newer explicit prompt requirements first; this lesson meets35–40seconds while retaining the requested reading hold.
+
+## Previous implemented reference: Spring dependency injection
 
 - Topic: How Spring Dependency Injection Works. Source/media: `output/week-01/day-02/`.
 - Actual master: 35.650000s,1080×1920,60FPS,H.264/AAC48kHz,Rec.709;7scenes,16SRT cues. Cover is inside the first second. Complete recap hold32.209083–34.209083s precedes the narrated Thanks card.

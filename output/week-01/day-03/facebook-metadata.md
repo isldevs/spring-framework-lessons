@@ -1,0 +1,15 @@
+# Facebook Reels metadata
+
+## Caption and hashtags
+
+Your OrderService needs a PaymentGateway. Make that dependency explicit. ☕
+
+Spring supplies one matching gateway bean through the service's constructor. The service keeps the reference in a final field, then places an order through the gateway.
+
+The Boot check verifies the managed gateway reference. A separate test supplies a fake gateway through the same constructor to check service behavior.
+
+Demo only: approvals are simulated. No real payment is processed.
+
+Require → Resolve → Inject → Use.
+
+#SpringBoot #ConstructorInjection #DependencyInjection #Java #JavaDevelopers #iSLDevs

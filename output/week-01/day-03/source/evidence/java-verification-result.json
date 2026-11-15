@@ -1,0 +1,78 @@
+{
+  "spring_boot_version": "3.5.6",
+  "spring_framework_version": "6.2.11",
+  "micrometer_version": "1.15.4",
+  "compiler": "ECJ3.40.0",
+  "class_file_target": "Java17",
+  "runtime": "openjdk version \"21.0.13\" 2026-10-20\nOpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)",
+  "compile_main_exit_code": 0,
+  "compile_tests_exit_code": 0,
+  "junit_exit_code": 0,
+  "application_exit_code": 0,
+  "compile_stderr_empty": true,
+  "junit_stderr_empty": true,
+  "application_stderr_empty": true,
+  "junit_reports": [
+    {
+      "file": "build/test-results/TEST-junit-jupiter.xml",
+      "name": "JUnit Jupiter",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.627",
+      "hostname": "788ada864540",
+      "timestamp": "2026-11-15T03:36:32"
+    },
+    {
+      "file": "build/test-results/TEST-junit-platform-suite.xml",
+      "name": "JUnit Platform Suite",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.002",
+      "hostname": "788ada864540",
+      "timestamp": "2026-11-15T03:36:32"
+    },
+    {
+      "file": "build/test-results/TEST-junit-vintage.xml",
+      "name": "JUnit Vintage",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.001",
+      "hostname": "788ada864540",
+      "timestamp": "2026-11-15T03:36:32"
+    }
+  ],
+  "tests_found": 2,
+  "tests_succeeded": 2,
+  "tests_failed": 0,
+  "proof_lines": [
+    "App starts Spring Boot",
+    "DemoGateway created",
+    "OrderService constructed with PaymentGateway",
+    "Boot context ready",
+    "same gateway bean: true",
+    "receipt: APPROVED order-1042 USD 19.99",
+    "Spring Boot integration test: passed",
+    "OrderService constructed with PaymentGateway",
+    "fake gateway test: passed"
+  ],
+  "application_stdout_lines": [
+    "DemoGateway created",
+    "OrderService constructed with PaymentGateway",
+    "receipt: APPROVED order-1042 USD 19.99"
+  ],
+  "source_sha256": {
+    "src/main/java/lesson/orders/CheckoutApplication.java": "cb64ae149202e6c2f42ba832ece53fb5c02566cb9e40fc8ba45533a03c1935b6",
+    "src/main/java/lesson/orders/DemoGateway.java": "b0f270322a8e0b818ab0449f2f60664a78c8fa201a55e0556bce6e950a5baf40",
+    "src/main/java/lesson/orders/OrderService.java": "9077552fe746266a2051653718583abec0ba547138f71dc706a1985588eec79e",
+    "src/main/java/lesson/orders/PaymentGateway.java": "74e3cc5b638275d70fd340ccd8ab15c43771f750274c88877108aad8208707c2",
+    "src/main/java/lesson/orders/Trace.java": "c247808aa6e4404e08b66d08eb0ec54a3dea840ea608a32be00c56bf9880680b",
+    "src/test/java/lesson/orders/ConstructorInjectionTests.java": "a52465aa5f534e71d9ddba6265f6d09ab2d928af9ba9885a7901775843a8dc38"
+  },
+  "scope": "Actual non-web SpringApplication startup and separate pure Java fake-gateway test; no real payment or external gateway contact."
+}

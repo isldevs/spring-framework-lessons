@@ -1,0 +1,6 @@
+{
+  "graph_ready_s": 15.61,
+  "application_use_start_s": 17.18,
+  "graph_ready_before_application_use": true,
+  "basis": "ASR-aligned constructor/field wiring completion and order-use renderer anchors; actual decoded frame samples retained for visual inspection"
+}

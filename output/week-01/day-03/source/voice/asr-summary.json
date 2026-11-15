@@ -1,0 +1,8 @@
+{
+  "reference_words": 77,
+  "asr_words": 74,
+  "edit_distance": 3,
+  "normalized_word_error_rate": 0.03896103896103896,
+  "transcript": "How does an order service get its payment gateway? Require a payment gateway in the constructor and keep its reference in a final field. Boot scans the components. One gateway bean matches that interface type. Spring passes it into the service constructor before the application places an order. Our boot test confirms the same bean. A fake gateway passes a separate service test. Require resolve inject then use. Constructor injection makes required dependencies explicit.",
+  "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
+}

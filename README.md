@@ -2,6 +2,20 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## Constructor Injection in Spring Boot
+
+Rendered **35.83 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The opening second contains the exact cover. Spring Boot finds the concrete DemoGateway bean, matches the PaymentGateway interface and supplies its reference through the OrderService constructor before application use. The complete recap holds for two seconds before the narrated Thanks card.
+
+- [Finished MP4](output/week-01/day-03/video.mp4) · [Complete ZIP](output/week-01/day-03-production.zip)
+- [Cover](output/week-01/day-03/cover.png) · [Subtitles](output/week-01/day-03/subtitles.srt) · [Narration audio](output/week-01/day-03/narration.wav)
+- [Narration script](output/week-01/day-03/narration-script.md) · [Timed storyboard](output/week-01/day-03/storyboard.md) · [Recap](output/week-01/day-03/recap.png)
+- [YouTube metadata, hashtags and tags](output/week-01/day-03/youtube-metadata.md) · [Facebook metadata and hashtags](output/week-01/day-03/facebook-metadata.md)
+- [YouTube upload package](output/week-01/day-03-youtube-shorts-upload.zip) · [Facebook upload package](output/week-01/day-03-facebook-reels-upload.zip)
+- [Asset rights](output/week-01/day-03/asset-rights.md) · [Originality review](output/week-01/day-03/originality-review.md)
+- [QA report](output/week-01/day-03/verification-report.md) · [SHA-256](output/week-01/day-03/checksums.sha256) · [Actual Boot example and tests](output/week-01/day-03/source/java/README.md)
+
+Real Spring Boot 3.5.6 compilation/startup and both JUnit tests passed. The encoded master and both platform copies passed technical verification. Payments are simulated locally. **Strict overall approval remains incomplete because perceptual voice listening review is unavailable in this runtime.** Local licensed Kokoro male audio, raw ASR results and review limitations are delivered. Nothing was posted to YouTube/Facebook.
+
 ## How Spring Dependency Injection Works
 
 Rendered **35.65 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The cover is embedded from0–1s. Configured scanning registers bean definitions; Spring resolves the Repo constructor parameter and injects the reference before application use. The complete recap holds for two seconds, then a narrated Thanks card closes the video.

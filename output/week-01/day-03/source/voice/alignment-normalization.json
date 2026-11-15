@@ -1,0 +1,10 @@
+{
+  "text_transformations": [],
+  "timing_sources": "asr-alignment.json; raw full-stream ASR plus independent unprompted final-phrase crop only when needed",
+  "raw_wer_unchanged": true,
+  "first_word_anchors": "require starts at exact scene6 sample edit; scene-start clamps only for ASR rounding",
+  "derived_animation_anchors": {
+    "injection_ready": "constructor word start + .35s, capped .15s before place word start",
+    "recap_complete": ".65s after use word start, before the exact recap hold"
+  }
+}

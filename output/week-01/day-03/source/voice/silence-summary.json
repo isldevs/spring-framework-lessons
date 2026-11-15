@@ -1,0 +1,73 @@
+{
+  "threshold_dbfs": -45,
+  "minimum_duration_s": 0.12,
+  "intervals": [
+    {
+      "start": 2.420667,
+      "end": 2.906083,
+      "duration": 0.485417
+    },
+    {
+      "start": 5.445333,
+      "end": 5.617708,
+      "duration": 0.172375
+    },
+    {
+      "start": 7.903062,
+      "end": 8.5355,
+      "duration": 0.632437
+    },
+    {
+      "start": 10.197542,
+      "end": 10.387458,
+      "duration": 0.189917
+    },
+    {
+      "start": 13.024458,
+      "end": 13.576833,
+      "duration": 0.552375
+    },
+    {
+      "start": 16.236229,
+      "end": 16.357417,
+      "duration": 0.121187
+    },
+    {
+      "start": 18.635437,
+      "end": 19.260208,
+      "duration": 0.624771
+    },
+    {
+      "start": 21.615146,
+      "end": 21.797708,
+      "duration": 0.182562
+    },
+    {
+      "start": 24.601104,
+      "end": 25.213833,
+      "duration": 0.612729
+    },
+    {
+      "start": 28.066771,
+      "end": 28.3195,
+      "duration": 0.252729
+    },
+    {
+      "start": 31.759208,
+      "end": 34.326479,
+      "duration": 2.567271
+    },
+    {
+      "start": 35.326812,
+      "end": 35.819167,
+      "duration": 0.492354
+    }
+  ],
+  "longest_pre_hold_internal": {
+    "start": 7.903062,
+    "end": 8.5355,
+    "duration": 0.632437
+  },
+  "recap_hold_start": 32.283125,
+  "recap_hold_end": 34.283125
+}

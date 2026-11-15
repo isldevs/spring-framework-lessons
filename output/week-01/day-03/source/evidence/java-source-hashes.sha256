@@ -1,0 +1,6 @@
+cb64ae149202e6c2f42ba832ece53fb5c02566cb9e40fc8ba45533a03c1935b6  src/main/java/lesson/orders/CheckoutApplication.java
+b0f270322a8e0b818ab0449f2f60664a78c8fa201a55e0556bce6e950a5baf40  src/main/java/lesson/orders/DemoGateway.java
+9077552fe746266a2051653718583abec0ba547138f71dc706a1985588eec79e  src/main/java/lesson/orders/OrderService.java
+74e3cc5b638275d70fd340ccd8ab15c43771f750274c88877108aad8208707c2  src/main/java/lesson/orders/PaymentGateway.java
+c247808aa6e4404e08b66d08eb0ec54a3dea840ea608a32be00c56bf9880680b  src/main/java/lesson/orders/Trace.java
+a52465aa5f534e71d9ddba6265f6d09ab2d928af9ba9885a7901775843a8dc38  src/test/java/lesson/orders/ConstructorInjectionTests.java
