@@ -10,6 +10,13 @@ These are the user's standing preferences and the decisions made while producing
 - YouTube Shorts and Facebook Reels are the delivery targets. Prepare separate upload packages and platform copy. Never upload, schedule or publish to those platforms without separate explicit authorization.
 - Keep virtual environments, bytecode, downloaded speech models and model caches out of Git. Retain dependency locks, download scripts, model hashes, licenses, source and verification evidence.
 
+## Approved curriculum and schedule
+
+- Preserve the curriculum exactly as supplied in each new production prompt. Never replace an approved lesson with an adjacent topic or move its publication date.
+- The current approved slot is Week01 — Spring IoC Foundations, Day2 Tuesday: exact topic **ApplicationContext**, publish date **2026-11-17**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). The proposed time remains a metadata field; do not automatically schedule or publish.
+- The earlier generated How Spring Dependency Injection Works at day-02 was superseded by this explicit curriculum correction. Its media/source remain in Git history at d3040a5; the current day-02 directory must contain ApplicationContext.
+- New explicit instructions take precedence over older lesson-specific visual defaults, including the previous static opening-cover hold.
+
 ## Video specification and composition
 
 - Deliver an actual finished native1080×1920 vertical MP4, H.264 video and AAC audio at48kHz, Rec.709 SDR, preferably60FPS. The current standard is60FPS.
@@ -20,12 +27,12 @@ These are the user's standing preferences and the decisions made while producing
 - Keep important content inside X=90..990 and Y=250..1520. Inspect actual decoded frames at mobile size. Avoid clipped text, tiny code, crowding and unrequested footer slogans.
 - Week/day/date identifiers are internal organization only. Do not show public lesson/day/episode numbering unless a newer request explicitly changes this.
 
-## Opening cover is part of the same video
+## Immediate hook and separate cover
 
-- Create a separate1080×1920 `cover.png` AND embed that exact cover as the opening frame of the final MP4.
-- Display the cover from00:00 through approximately00:01, with no fade-in or black frames. The opening second must not add an overlay that changes the exact cover image.
-- Begin narration immediately. Keep the cover within the safe region so it works as a thumbnail.
-- This is important for phone uploads: when only an existing video frame can be selected as the thumbnail, the user can choose the first frame/opening second. A separate PNG alone is insufficient.
+- The latest approved brief requires an immediate visible and spoken technical hook at frame one. Start with a concrete mechanism and purposeful motion; no greeting, title-card hold, static cover hold, logo intro, fade-in or black frame.
+- Create a separate1080×1920 branded `cover.png` inside the safe region. Keep this asset useful for platform cover upload without delaying the video hook.
+- Inspect actual encoded opening frames and verify source narration onset. The first two seconds must communicate a clear question or surprising technical distinction.
+- Earlier videos intentionally embedded an exact cover from0–1s for phone thumbnail selection. That is a historical implementation, superseded for the current brief by its explicit hook-first requirement. Follow any newer opening instructions supplied by the user.
 
 ## Voice and audio
 
@@ -66,7 +73,18 @@ Follow the full mandatory checklist in `AGENTS.md`; do not shorten it to a video
 - The user uploads from a phone. Metadata files or download links do NOT replace inline copyable publishing text. Include both formats every time a video is generated or updated.
 - Never say completed/verified without identifying any remaining incomplete essential requirement.
 
-## Latest implemented reference: Constructor injection in Spring Boot
+## Latest implemented reference: ApplicationContext
+
+- Approved exact topic ApplicationContext; current media/source at `output/week-01/day-02/`. Publication2026-11-17, proposed19:00Asia/Phnom_Penh (12:00UTC); no automatic upload/scheduling/publication.
+- Actual master35.816667s,1080×1920,60FPS,H.264/AAC48kHz,Rec.709SDR,2149frames;7scenes and18SRT cues. Immediate animated/spoken hook “What's inside ApplicationContext?” replaces the older static-cover hold. A separatecoverPNG is delivered.
+- Real Spring6.2.11 AnnotationConfigApplicationContext: no-arg creation → registerConfig → refresh (discover @Bean definitions, create default non-lazy Repo/Service) → getBean same wired Service → publishDemoEvent → close/singletoncleanup. BeanFactory area illustrates demo beans; infrastructure definitions already exist. Definitions remain distinct from created instances.
+- Actual two JUnit tests pass: lifecycle/definitions-before-instances/wiring/identity/events/cleanup plus a separate @Lazy definition-without-instance contrast. Main/test compile, JUnit and standalone application exit0 with emptystderr. Pinned10jars, ECJ3.40 Java17-target, JDK21.0.13; no Boot/Maven/javac used. Exact proof same service:true/events handled:1/cleanup called:true.
+- Animated applicationdefinitions11.460s, Service13.080s, completegraph13.430s, lookup15.260s, reference15.740s, event21.560s, close22.480s, cleanup23.480s. These are explanatory edit anchors, not Spring runtime measurements.
+- Complete recap hold32.275958–34.275958s precedes Thanks. Actual encoded opening snapshots,6transitionpairs,7scene stills,120recapholdframes,lastframe andall2149timestamps were checked;249sourcebounds plus217preflightsamples pass.
+- Male Kokoro80%am_puck/20%am_fenrir: hookinference1.00, remaining0.90,67/67rawunpromptedASRwords0WER. Rawoutrotimestampsdriftedintoquietreadinghold; finalcaptionusesknownsampleedit, withrawASR/provenanceretained. Listening acceptance is still INCOMPLETE; no perceivedage/humannaturalness approval claimed.
+- CurrentmasterSHA25691335571e3011105f6aa29f8a8024ac3b4d6d929e9a547b7174cd9f32e0e7a9e. Bothplatformcopies independentlyprobe/decode/hashPASS andbyteidentical. Refreshallchecksums/ZIPsafterchanges. KeepmandatorydownloadlinksANDfivephonecopyblocks.
+
+## Previous implemented reference: Constructor injection in Spring Boot
 
 - Topic: Constructor Injection in Spring Boot. Source/media: `output/week-01/day-03/`.
 - Actual master: 35.833333s,1080×1920,60FPS,H.264/AAC48kHz,Rec.709;7scenes,18SRT cues,2150frames. Exact cover source fills the opening second. Complete recap hold32.283125–34.283125s precedes the narrated Thanks card.
@@ -78,14 +96,11 @@ Follow the full mandatory checklist in `AGENTS.md`; do not shorten it to a video
 - Master and both platform copies passed actual probe, decode and hash checks;120encoded recap-hold frames and the actual last Thanks frame were compared. Perceptual voice acceptance remains unverified because no listening review was available. Do not treat automated metrics as humanlike-voice approval.
 - Archives use day-03-prefixed names. Every handoff still requires all links AND five separate phone-copyable publishing blocks. Read newer explicit prompt requirements first; this lesson meets35–40seconds while retaining the requested reading hold.
 
-## Previous implemented reference: Spring dependency injection
+## Superseded earlier revision: dependency injection in the Day 2 directory
 
-- Topic: How Spring Dependency Injection Works. Source/media: `output/week-01/day-02/`.
-- Actual master: 35.650000s,1080×1920,60FPS,H.264/AAC48kHz,Rec.709;7scenes,16SRT cues. Cover is inside the first second. Complete recap hold32.209083–34.209083s precedes the narrated Thanks card.
-- This example uses configured `@ComponentScan("lesson.di")`, `@Repository Repo`, and `@Service OrderService` with a single constructor accepting Repo. There are NO user @Bean factory methods in this demo. Do not substitute the previous lesson's factory-method explanation for component scanning and constructor injection.
-- The actual Java diagnostic observes registered definitions before constructors, then Repo construction, OrderService receiving Repo, context readiness, same-bean identity and business use. The animated graph is ready17.06s before app use22.84s; actual decoded anchor frames and120recap-hold frames are verified.
-- Master and both exported copies passed technical QA. Voice listening acceptance remains unverified. Preserve raw full-stream ASR70/73 (4.1096%WER), while noting separate unprompted final-phrase decoding recognizesThanksforwatching3/3; do not claim full-stream zeroWER.
-- New archives use day-02-prefixed platform names to preserve the first lesson. Keep the mandatory full-link handoff AND all five phone-copyable publishing blocks for this and every future generation.
+- Earlier generated topic: How Spring Dependency Injection Works. Its35.65s media/source and actual component-scan/constructor verification remain in Git history at d3040a5d98ec5566a47c8337087d16cea9a30d73 under output/week-01/day-02.
+- This revision has been replaced in the working directory by the explicitly approved ApplicationContext lesson. Do not describe current day-02 paths as the earlier DI topic or copy its static-cover opening into the current prompt.
+- Prior actual verification and unaccepted listening status remain historical facts, not results for the new media.
 
 ## Previous implemented reference: Spring IoC
 

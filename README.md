@@ -2,6 +2,20 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## ApplicationContext
+
+Approved curriculum topic **ApplicationContext**, publication date **2026-11-17**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Rendered **35.82 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The video begins with an immediate spoken and animated definition-versus-object hook; its cover is a separate PNG. It follows register → refresh → bean definitions and singleton creation → getBean → event → close, then holds the complete recap for two seconds before Thanks.
+
+- [Finished MP4](output/week-01/day-02/video.mp4) · [Complete ZIP](output/week-01/day-02-production.zip)
+- [Cover](output/week-01/day-02/cover.png) · [Subtitles](output/week-01/day-02/subtitles.srt) · [Narration audio](output/week-01/day-02/narration.wav)
+- [Narration script](output/week-01/day-02/narration-script.md) · [Timed storyboard](output/week-01/day-02/storyboard.md) · [Recap](output/week-01/day-02/recap.png)
+- [YouTube metadata, hashtags and tags](output/week-01/day-02/youtube-metadata.md) · [Facebook metadata and hashtags](output/week-01/day-02/facebook-metadata.md)
+- [YouTube upload package](output/week-01/day-02-youtube-shorts-upload.zip) · [Facebook upload package](output/week-01/day-02-facebook-reels-upload.zip)
+- [Asset rights](output/week-01/day-02/asset-rights.md) · [Originality review](output/week-01/day-02/originality-review.md)
+- [QA report](output/week-01/day-02/verification-report.md) · [SHA-256](output/week-01/day-02/checksums.sha256) · [Actual Java and tests](output/week-01/day-02/source/java/README.md)
+
+Actual Spring 6.2.11 compilation, standalone execution and both JUnit tests passed, including a separate lazy-definition test. Master and both platform copies passed technical checks. **Overall strict completion remains incomplete because auditory voice acceptance is unavailable in this runtime.** Local licensed male Kokoro narration and objective evidence are delivered; no listening review is claimed. Nothing was uploaded, scheduled or published to either platform.
+
 ## Constructor Injection in Spring Boot
 
 Rendered **35.83 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The opening second contains the exact cover. Spring Boot finds the concrete DemoGateway bean, matches the PaymentGateway interface and supplies its reference through the OrderService constructor before application use. The complete recap holds for two seconds before the narrated Thanks card.
@@ -16,19 +30,9 @@ Rendered **35.83 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **
 
 Real Spring Boot 3.5.6 compilation/startup and both JUnit tests passed. The encoded master and both platform copies passed technical verification. Payments are simulated locally. **Strict overall approval remains incomplete because perceptual voice listening review is unavailable in this runtime.** Local licensed Kokoro male audio, raw ASR results and review limitations are delivered. Nothing was posted to YouTube/Facebook.
 
-## How Spring Dependency Injection Works
+## Earlier dependency-injection revision
 
-Rendered **35.65 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The cover is embedded from0–1s. Configured scanning registers bean definitions; Spring resolves the Repo constructor parameter and injects the reference before application use. The complete recap holds for two seconds, then a narrated Thanks card closes the video.
-
-- [Finished MP4](output/week-01/day-02/video.mp4) · [Complete ZIP](output/week-01/day-02-production.zip)
-- [Cover](output/week-01/day-02/cover.png) · [Subtitles](output/week-01/day-02/subtitles.srt) · [Narration audio](output/week-01/day-02/narration.wav)
-- [Narration script](output/week-01/day-02/narration-script.md) · [Timed storyboard](output/week-01/day-02/storyboard.md) · [Recap](output/week-01/day-02/recap.png)
-- [YouTube metadata/tags](output/week-01/day-02/youtube-metadata.md) · [Facebook metadata](output/week-01/day-02/facebook-metadata.md)
-- [YouTube package](output/week-01/day-02-youtube-shorts-upload.zip) · [Facebook package](output/week-01/day-02-facebook-reels-upload.zip)
-- [Asset rights](output/week-01/day-02/asset-rights.md) · [Originality review](output/week-01/day-02/originality-review.md)
-- [QA report](output/week-01/day-02/verification-report.md) · [SHA-256](output/week-01/day-02/checksums.sha256) · [Actual Java/source](output/week-01/day-02/source/java/README.md)
-
-Java, encoded master and both packaged copies passed technical verification. **Perceptual voice acceptance remains incomplete** because listening review is unavailable in this runtime. Raw full-stream ASR omission and independent successful Thanks-clip recognition are documented rather than hidden. Nothing was posted to YouTube/Facebook.
+The superseded Day 2 dependency-injection media/source remain available in [Git history at d3040a5](https://github.com/isldevs/spring-framework-lessons/tree/d3040a5d98ec5566a47c8337087d16cea9a30d73/output/week-01/day-02). The approved current topic for that slot is ApplicationContext, assigned to the original November 17 publication date.
 
 ## What Is Spring IoC?
 

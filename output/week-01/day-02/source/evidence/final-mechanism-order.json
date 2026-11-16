@@ -1,0 +1,18 @@
+{
+  "anchors": {
+    "config_registered_s": 7.556042,
+    "refresh_s": 9.46,
+    "definitions_registered_s": 11.46,
+    "instances_created_s": 13.08,
+    "graph_ready_s": 13.43,
+    "lookup_s": 15.26,
+    "reference_return_s": 15.74,
+    "event_s": 21.56,
+    "close_s": 22.48,
+    "cleanup_s": 23.48
+  },
+  "definitions_before_instances": true,
+  "ready_before_lookup": true,
+  "event_before_close_and_cleanup": true,
+  "basis": "Explanatory renderer anchors, not measurements of Spring wall-clock execution; Java tests verify actual behavior separately."
+}

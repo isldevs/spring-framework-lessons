@@ -1,29 +1,29 @@
-# Narration QA — Spring dependency injection
+# Narration QA — ApplicationContext
 
-## Actual source measurements
+## Actual source and opening
 
-- Local Kokoro 80% am_puck / 20% am_fenrir, speed 1.02; seven single-batch scene utterances. No fallback TTS or pitch shifting.
-- **35.649833 s**, 48 kHz mono PCM24; frame-rounded video duration **35.650000 s** at 60 FPS.
-- Signal above −60 dBFS begins **0.016667 s** and ends **35.284458 s**. No artificial initial silence.
-- Peak **-1.514415 dBFS**, RMS **-20.677608 dBFS**, **0 clipped samples**. Both endpoints zero; quiet joins have 4 ms microfades.
-- pYIN voiced F0 10th/50th/90th percentiles **89.38/117.26/173.67 Hz**, variation **4.31 semitones** across 1990 voiced frames. This supports varied pitch, not perceived age or human naturalness.
+- Local Kokoro v1.0,80% am_puck /20% am_fenrir, one coherent inference batch per scene. Hook inference speed1.00; scenes2–7 speed0.90. No fallback TTS, pitch shifting or waveform time stretching.
+- Final source duration **35.812000s**,48kHz mono PCM24. Picture rounds up to **35.816667s / 2149frames** at60FPS.
+- Spoken hook: **What’s inside application context?** Public type spelling is ApplicationContext. The source utterance spans0–1.963s; raw unprompted ASR places its last context word end at **1.400s**. Signal above−60dBFS begins **0.015125s**, so there is no delayed narration or title-card silence.
+- Source peak **-1.514414dBFS**, RMS **-20.529496dBFS**, **0clipped samples**. Both endpoints are zero; quiet joins use4ms microfades.
+- Voiced pYIN F0 10th/50th/90th percentiles **89.90/114.58/168.73Hz**, variation **4.21semitones** over2031voiced frames. These metrics do not prove perceived age or human naturalness.
 
-## Independent recognition: preserve the actual omission
+## Independent recognition and alignment
 
-Unprompted Whisper base.en int8, beam 5, full-stream decoding recognizes the first 70 normalized words exactly but omits the three-word Thanks for watching after the deliberate recap hold. Raw result: **73 expected / 70 recognized**, edit distance **3**, normalized WER **0.041096 (4.1096%)**. Original `asr.json` and `asr-summary.json` remain unchanged. Do NOT report zero full-stream WER.
+Actual unprompted faster-whisper base.en int8, beam5, no initial prompt recognizes **67/67normalized words**, edit distance **0**, normalized WER **0.000000** across the full stream, including Thanks for watching. This zero-WER result describes the actual final narration, not a manufactured expectation prompt. Raw text, word confidence and approximate timestamps remain in asr.json/asr-summary.json. supplemental-asr.json records that no separate phrase transcription was needed.
 
-An independent, unprompted transcription of the real final audio crop **34.209083–35.649833 s** recognizes **Thanks for watching** exactly (3/3 words). `supplemental-asr.json` preserves this result and absolute word times. `asr-alignment.json` combines those independently observed final-phrase times with the untouched first-six-scene ASR. No expected words were silently inserted; the supplemental phrase had to match before alignment could continue.
+There are **18caption cues**, maximum **36characters**. Public ApplicationContext/getBean spellings map explicitly to spoken application context/get bean; no spoken words are changed or inserted. A conditional cleanup/clean up orthographic alignment rule is retained for reproducibility but was not needed in the final exact transcript. A rejected “What’s in…” candidate remains separately labelled under candidates/; its poorer raw score is not the final score.
 
-Combined recognition covers all 73 expected normalized words. `alignment-normalization.json` records no text transformations and documents its timing sources. The exact script is retained in `../timing.json`. Captions total **16**, maximum **43 characters**. Word boundaries use an approximate 20 ms grid; source scene/hold edits are sample-derived.
+ASR recognition accuracy does not establish exact word timing: the raw Thanks word begins33.32s even though that scene’s known sample edit is34.275958s. Caption first/last boundaries therefore use exact synthesized utterance edits, preserving the raw ASR evidence; intermediate word starts are clamped within their own utterance. This is an alignment correction based on actual edit points, not a claim that audio existed during the silent reading hold. G2P inputs and every scene’s phonemes remain in pronunciation-g2p.json.
 
-## Rhythm and synchronization
+## Rhythm and sync anchors
 
-At −45 dBFS / 120 ms, the longest non-hold internal quiet span is 0.606271 s at the verification-to-recap transition. The deliberate recap-to-Thanks quiet interval **31.820375–34.231167 s** lasts 2.410792 s, including native decay and the exact two-second reading hold. The final quiet tail **35.166583–35.649833 s** lasts 0.483250 s. Full log: `silence-scan.txt`.
+The−45dBFS/120ms source scan finds the longest pre-hold quiet interval **0.662604s** at14.330396–14.993000s, between creation and lookup. The recap-to-Thanks quiet span31.819250–34.319292s includes native decay plus the exact reading hold **32.275958–34.275958s**. Thanks begins at **34.275958s**, followed by the final quiet tail through35.812000s. Raw scan logs and thresholds are retained.
 
-The completed recap hold is **32.209083–34.209083 s**, followed by Thanks from **34.209083–35.649833 s**. Recap scan/register/resolve/inject/use anchors are **25.153958 / 25.42 / 25.92 / 26.38 / 27.56 s**. Scan uses the exact scene start because ASR gave its first word zero duration. Completion **28.21 s** is derived as 0.65 s after use; it is not claimed as an observed word boundary.
+Animation anchors use observed words and documented illustrative substeps: refresh9.460s; definitions11.460s; creation12.400s; derived Repo12.480s then Service13.080s; lookup request15.260s and return15.740s; custom event21.560s; close22.480s; cleanup23.480s. The overview completes28.680s before its two-second reading hold. These are explanatory animation/speech times, not measurements of Spring’s runtime execution speed. The parent separately verifies the actual Java behavior and final encoded mix.
 
-## Outstanding perceptual requirement
+## Outstanding essential voice requirement
 
-No auditory listening review was performed. The established runtime limitation prevents accepting smooth human delivery, perceived age or subtle synthesis artifacts. ASR, pitch, pauses and clipping metrics do not replace listening. Under the user's strict completion criterion, **voice naturalness acceptance remains incomplete**, despite the actual licensed Kokoro narration existing and passing the documented source checks.
+**No auditory review was performed or claimed.** This runtime cannot ingest audio for listening. Perceived younger-to-middle adult male age, smooth human explanation, subtle robotic artifacts and every pronunciation detail cannot be perceptually accepted or rejected here. Automated transcript, F0, clipping, silence and loudness checks are not substitutes. Under the user’s final quality gate, **voice naturalness acceptance remains incomplete** despite the actual licensed Kokoro audio and objective evidence.
 
-No MOS estimator or transcript prompt was used as a substitute. Final mixed AAC loudness/continuity are checked separately by the production validator; these figures describe clean narration only. Models/voice hashes and license evidence are retained.
+Model and voice bundle hashes were rechecked successfully. Final AAC loudness/audio continuity are verified separately by the parent; the measurements above describe the clean WAV. No YouTube/Facebook upload or publication is performed by these voice tools.

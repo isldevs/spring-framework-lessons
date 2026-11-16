@@ -1,8 +1,0 @@
-App starts Spring with Config.class
-definitions registered: repo, orderService
-Repo created
-OrderService constructed with Repo
-context ready
-same Repo bean: true
-application result: ready
-scanned definitions: repo, orderService

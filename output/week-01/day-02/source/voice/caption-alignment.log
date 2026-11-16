@@ -3,133 +3,179 @@
     {
       "scene": 1,
       "start": 0.0,
-      "end": 2.193917,
-      "text": "How does a repository reach your service?"
+      "end": 1.963,
+      "text": "What's inside ApplicationContext?"
     },
     {
       "scene": 2,
-      "start": 2.373917,
-      "end": 4.68,
-      "text": "Configured scanning finds annotated classes"
+      "start": 2.083,
+      "end": 4.5,
+      "text": "Bean definitions are recipes."
     },
     {
       "scene": 2,
-      "start": 4.68,
-      "end": 7.162792,
-      "text": "and registers bean definitions."
+      "start": 4.5,
+      "end": 5.16,
+      "text": "Managed instances"
+    },
+    {
+      "scene": 2,
+      "start": 5.16,
+      "end": 7.376042,
+      "text": "are the actual objects."
     },
     {
       "scene": 3,
-      "start": 7.382792,
-      "end": 10.18,
-      "text": "A single constructor needs a repository."
+      "start": 7.556042,
+      "end": 9.42,
+      "text": "Register configuration,"
     },
     {
       "scene": 3,
-      "start": 10.18,
-      "end": 12.75075,
-      "text": "Spring resolves that parameter by type."
+      "start": 9.42,
+      "end": 10.8,
+      "text": "then refresh."
+    },
+    {
+      "scene": 3,
+      "start": 10.8,
+      "end": 12.02,
+      "text": "Spring reads the definitions"
+    },
+    {
+      "scene": 3,
+      "start": 12.02,
+      "end": 14.796708,
+      "text": "and creates our singleton beans."
     },
     {
       "scene": 4,
-      "start": 12.97075,
-      "end": 15.12,
-      "text": "Spring creates the repository,"
+      "start": 14.976708,
+      "end": 16.88,
+      "text": "Calling getBean returns the service,"
     },
     {
       "scene": 4,
-      "start": 15.12,
-      "end": 16.22,
-      "text": "then passes its reference"
-    },
-    {
-      "scene": 4,
-      "start": 16.22,
-      "end": 18.221708,
-      "text": "into the service constructor."
+      "start": 16.88,
+      "end": 19.860875,
+      "text": "already wired to its repository."
     },
     {
       "scene": 5,
-      "start": 18.441708,
-      "end": 19.62,
-      "text": "Our Java run confirms"
+      "start": 20.040875,
+      "end": 22.48,
+      "text": "The context also publishes events."
     },
     {
       "scene": 5,
-      "start": 19.62,
-      "end": 21.9,
-      "text": "the same repository bean."
+      "start": 22.48,
+      "end": 22.92,
+      "text": "Close it,"
     },
     {
       "scene": 5,
-      "start": 21.9,
-      "end": 23.2,
-      "text": "Only then does the application"
-    },
-    {
-      "scene": 5,
-      "start": 23.2,
-      "end": 24.933958,
-      "text": "use the service."
+      "start": 22.92,
+      "end": 24.95625,
+      "text": "and managed cleanup runs."
     },
     {
       "scene": 6,
-      "start": 25.153958,
-      "end": 27.82,
-      "text": "Scan, register, resolve, inject, then use."
+      "start": 25.13625,
+      "end": 27.04,
+      "text": "Our tests confirm: same service,"
     },
     {
       "scene": 6,
-      "start": 27.82,
-      "end": 29.76,
-      "text": "Spring supplies dependencies;"
+      "start": 27.04,
+      "end": 28.58,
+      "text": "one event, cleanup called."
     },
     {
       "scene": 6,
-      "start": 29.76,
-      "end": 32.209083,
-      "text": "your service doesn’t construct them."
+      "start": 28.58,
+      "end": 30.02,
+      "text": "Definitions describe;"
+    },
+    {
+      "scene": 6,
+      "start": 30.02,
+      "end": 32.275958,
+      "text": "instances do the work."
     },
     {
       "scene": 7,
-      "start": 34.209083,
-      "end": 35.299833,
+      "start": 34.275958,
+      "end": 35.462,
       "text": "Thanks for watching."
     }
   ],
   "recap_cues_absolute": {
-    "register": 25.42,
-    "resolve": 25.92,
-    "inject": 26.38,
-    "use": 27.56,
-    "scan": 25.153958,
-    "complete": 28.21,
-    "recap_hold_start": 32.209083,
-    "recap_hold_end": 34.209083
+    "register": 25.13625,
+    "definitions": 25.48625,
+    "create": 25.93625,
+    "lookup": 26.02,
+    "event": 27.34,
+    "close": 27.68,
+    "complete": 28.68,
+    "recap_hold_start": 32.275958,
+    "recap_hold_end": 34.275958
   },
   "scene_cues_absolute": {
-    "discovery": {
-      "scan": 2.88,
-      "find": 3.1,
-      "register": 5.16
+    "distinction": {
+      "recipe": 2.083,
+      "definitions": 2.22,
+      "instance": 4.5,
+      "objects": 6.08
     },
-    "resolution": {
-      "constructor": 7.72,
-      "repository": 8.92,
-      "resolve": 10.32,
-      "type": 11.9
+    "initialization": {
+      "register": 7.556042,
+      "configuration": 7.9,
+      "refresh": 9.46,
+      "definitions": 11.46,
+      "create": 12.4,
+      "repo": 12.48,
+      "service": 13.08
     },
-    "injection": {
-      "create": 13.14,
-      "pass": 15.18,
-      "reference": 15.9,
-      "constructor": 17.06
+    "mechanism": {
+      "register": 7.556042,
+      "configuration": 7.9,
+      "refresh": 9.46,
+      "definitions": 11.46,
+      "create": 12.4,
+      "repo": 12.48,
+      "service": 13.08
+    },
+    "lookup": {
+      "request": 15.26,
+      "return": 15.74,
+      "returns": 15.74,
+      "wired": 17.46,
+      "repository": 18.46
+    },
+    "services": {
+      "event": 21.56,
+      "publish": 20.98,
+      "close": 22.48,
+      "cleanup": 23.48
     },
     "proof": {
-      "confirm": 19.16,
-      "same": 20.0,
-      "application": 22.84,
-      "use": 23.2
+      "same": 26.02,
+      "event": 27.34,
+      "cleanup": 27.68,
+      "takeaway": 28.58,
+      "complete": 28.68
+    },
+    "recap": {
+      "register": 25.13625,
+      "definitions": 25.48625,
+      "create": 25.93625,
+      "lookup": 26.02,
+      "event": 27.34,
+      "close": 27.68,
+      "complete": 28.68,
+      "recap_hold_start": 32.275958,
+      "recap_hold_end": 34.275958
     }
-  }
+  },
+  "hook_asr_last_word_end": 1.4
 }

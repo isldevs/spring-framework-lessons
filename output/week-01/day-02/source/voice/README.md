@@ -1,28 +1,24 @@
-# Local Kokoro narration — Spring dependency injection
+# Local ApplicationContext narration
 
-Delivery target: younger-to-middle-aged adult male, calm and conversational. Perceived age and naturalness are not established by a preset name or numeric metric.
-
-The narrator uses local Kokoro v1.0 float32 ONNX, kokoro-onnx 0.6.1, **80% am_puck / 20% am_fenrir**, speed **1.02**. Both styles are official American English male voices with target grade B. Style embeddings are blended before inference into one consistent voice, not overlaid recordings. No pitch shifting, waveform time stretching, external service or replacement TTS was used.
-
-Seven complete scene utterances each fit a single inference batch, asserted before synthesis. Additional gaps are 180–220 ms, the completed-recap reading hold is exactly 2.0 s, and Thanks has a 350 ms final tail. Native decays add low-level quiet. Scene edits use 4 ms quiet-edge microfades. No artificial opening silence is inserted.
-
-Actual clean narration: **35.649833 s, 48 kHz mono PCM24**. Source and scene timing are in `../../narration.wav` and `../timing.json`; seven before-normalization synthesis clips are in `segments/`.
+The actual delivered clean narration is `../../narration.wav`, generated locally using Kokoro v1.0 and an80% am_puck /20% am_fenrir male-style blend. Both styles come from the retained Apache-2.0 model distribution; kokoro-onnx inference code is MIT-licensed. Model card, voice table, project license and release evidence are retained in licenses/. Fixed model/voice download hashes are in models.sha256.
 
 ## Reproduce
 
+From the lesson directory:
+
 ```sh
-./setup.sh
-.venv/bin/python generate.py --speed 1.02 --voice am_puck80_fenrir20
-.venv/bin/python qa.py --asr-model base.en
-.venv/bin/python split_captions.py
+bash source/voice/setup.sh
+source/voice/.venv/bin/python source/voice/generate.py --speed 0.90 --hook-speed 1.00 --voice am_puck80_fenrir20
+source/voice/.venv/bin/python source/voice/qa.py --asr-model base.en
+source/voice/.venv/bin/python source/voice/split_captions.py
 ```
 
-The setup script downloads the production model and voice bundle, pinned by `models.sha256`; Python dependencies are locked. `qa.py` preserves the complete unprompted ASR transcript/score. If its only omission is the short final Thanks phrase, `late_phrase_qa.py` independently transcribes that actual audio crop without a prompt. It creates supplemental word timing only after an exact normalized phrase match; raw full-stream output and WER never change. Other mismatches stop alignment for inspection. `asr-alignment.json` records the actual timing provenance used for captions.
+The hook uses inference speed1.00; scenes2–7 use0.90. This is model inference pacing, not waveform stretching. Each scene is one coherent inference batch, with no word-level audio splices or pitch shifting. The original hook was shortened to “What’s inside ApplicationContext?” for spoken pacing; the technical topic stays unchanged. Public captions spell Java identifiers ApplicationContext/getBean while speech expands them naturally to application context/get bean. Both spelling transformations are recorded in alignment-normalization.json.
 
-`split_captions.py` creates 16 display cues and scan/register/resolve/inject/use anchors. ASR word times are approximate on a 20 ms grid. The first Scan anchor uses the exact scene edit because ASR gave that word zero duration. Animation completion is a declared derived time, not a spoken-word observation.
+The model emits24kHz audio, resampled with polyphase filtering to48kHz PCM24. Only exterior quiet padding is trimmed, with a15ms guard and4ms endpoint microfades. A continuous original background mix is produced separately by the parent animation workflow. Intermediate scenes include short intended pauses; the complete recap has an exact2s reading hold before the separately spoken Thanks card.
 
-## Licenses and review scope
+The setup script recreates the locked voice environment and downloads checksum-pinned models. The production run used already cached local model files and the same locked dependencies; temporary model symlinks, environments and downloaded caches are excluded from Git/delivery. `candidates/` retains one rejected wording candidate with its own raw ASR evidence so it cannot be confused with final narration.
 
-Kokoro official model card declares Apache-2.0 and explicitly discusses commercial deployment. The official male voice table, Apache license, ONNX release metadata, and kokoro-onnx MIT license are retained in `licenses/`. No separate noncommercial restriction was identified for the two used male styles. Whisper base.en is a verification-only model and contributes no audio.
+Final ASR and signal metrics are in asr*.json, qa-metrics.json, silence-summary.json and voice-qa.md. Raw scores are never silently rewritten. Caption edit points use known sample-derived utterance boundaries; intermediate word starts come from independent unprompted ASR. ASR word timing can drift across silence and is not phonetic ground truth.
 
-No auditory listening review is claimed. This runtime has not established audio-input support for judging human naturalness, age impression or subtle artifacts. Automated ASR/prosody checks cannot fulfill that perceptual acceptance. Actual metrics, the full-stream ASR omission and supplemental check are documented in `voice-qa.md`.
+**Essential review remains incomplete:** no audio-ingestion/listening capability is available here. Perceived younger-to-middle adult male age, smooth human naturalness and subtle synthesis/pronunciation artifacts require a real auditory review. Objective metrics are not listening approval; no such approval or MOS surrogate is claimed. No other TTS was substituted.

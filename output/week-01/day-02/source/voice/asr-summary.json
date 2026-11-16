@@ -1,8 +1,8 @@
 {
-  "reference_words": 73,
-  "asr_words": 70,
-  "edit_distance": 3,
-  "normalized_word_error_rate": 0.0410958904109589,
-  "transcript": "How does a repository reach your service? Configured scanning finds annotated classes and registers bean definitions. A single constructor needs a repository, Spring resolves that parameter by type. Spring creates the repository, then passes its reference into the service constructor. Our Java run confirms the same repository bean, only then does the application use the service. Scan register resolve inject then use, Spring supplies dependencies your service doesn't construct them.",
+  "reference_words": 67,
+  "asr_words": 67,
+  "edit_distance": 0,
+  "normalized_word_error_rate": 0.0,
+  "transcript": "What's Inside Application Context? Bean definitions are recipes. Managed instances are the actual objects. Register configuration, then refresh. Spring reads the definitions and creates our singleton beans. Calling get bean returns the service already wired to its repository. The context also publishes events, close it and managed cleanup runs. Our tests confirm same service one event cleanup called definitions describe instances do the work. Thanks for watching.",
   "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
 }

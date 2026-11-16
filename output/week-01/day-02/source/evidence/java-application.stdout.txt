@@ -1,0 +1,12 @@
+context created
+configuration registered
+bean definitions: repo, service
+instances at definition stage: 0
+repo created
+service created with repo
+context refreshed
+same service: true
+service result: hello from repo
+events handled: 1
+service cleanup
+cleanup called: true

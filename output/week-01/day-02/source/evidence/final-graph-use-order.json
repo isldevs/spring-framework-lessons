@@ -1,6 +1,0 @@
-{
-  "graph_ready_s": 17.06,
-  "application_use_start_s": 22.84,
-  "graph_ready_before_application_use": true,
-  "basis": "ASR-aligned renderer phase anchors; actual decoded frame samples retained for visual inspection"
-}

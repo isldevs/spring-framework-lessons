@@ -1,3 +1,3 @@
-Scanning must be configured. Here, one Repo bean matches the single OrderService constructor's parameter, so Spring can inject it without @Autowired on that constructor.
+A bean definition describes an object; it is not the object itself. This example uses default non-lazy singletons, so refresh creates them before getBean. Lazy beans behave differently—the separate test covers that distinction.
 
-Multiple matching candidates need disambiguation, for example @Qualifier or @Primary. Which should we visualize next?
+Which container service should we animate next: events, resources or message lookup?

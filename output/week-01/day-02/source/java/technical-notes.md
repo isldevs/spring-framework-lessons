@@ -1,36 +1,11 @@
-# Technical verification notes
+# ApplicationContext: actual runtime and animation boundaries
 
-Actual execution completed successfully with compiler and Java process exit codes **0**, empty compiler/runtime stderr, and dependency SHA-256 validation exit **0**. `../evidence/java-verification-result.json` stores the measured results, source hashes and exact stdout. Each phase's command, exit code, stdout and stderr are retained separately. Run `python source/java/verify.py` from the lesson directory to recreate them.
+The production example intentionally uses manual lifecycle calls, not the convenience constructor taking `Config.class`. Its no-arg context must be registered and refreshed explicitly. The API's configuration-taking constructor would register and refresh automatically, which would conceal the distinction this lesson teaches.
 
-## What is actually demonstrated
+The postprocessor observation is after `ConfigurationClassPostProcessor` has registered the `@Bean` definitions, but before ordinary Repo and Service singleton creation. The observation checks definition existence, absence from the singleton registry, zero application constructors and then the subsequent construction order. This is a real lifecycle observation, not an invented list of definitions or a timing benchmark.
 
-1. The application supplies `Config.class` to an annotation configuration context via register/refresh.
-2. `@ComponentScan("lesson.di")` finds the `@Repository Repo` and `@Service OrderService` candidates in that configured package and registers bean definitions. A metadata-only postprocessor observes both definitions before either application component's constructor event.
-3. OrderService has one constructor requiring Repo. There is one Repo candidate. Spring uses that constructor and supplies the repository reference; the constructor does not call getBean or create its dependency.
-4. Repo's construction is observed before the OrderService constructor receives it. Both events precede `context ready` and application use.
-5. `service.repo() == context.getBean(Repo.class)` is true. `service.useRepository()` returns `ready` by calling its injected Repo. Repeated OrderService lookup returns the same default-singleton service and does not rebuild the graph.
+`Service` is both a dependency consumer and a narrowly typed event listener to keep the project minimal. It also implements the managed singleton destruction contract. This combines lookup, event publication and cleanup without adding another application bean and does not suggest every production service should implement all three interfaces. Resource loading and message resolution are additional ApplicationContext services supported by the official docs; this example does not claim to have tested those extra services.
 
-Spring's internal infrastructure objects are not the subject of the construction trace; the ordering assertions concern the demonstrated Repo/OrderService graph. Scanning, bean definitions and runtime instances are different stages. A definition is metadata, not an already-constructed service. Do not show the application using the service before the reference has been injected.
+The root-level narration/visual timeline has explanatory durations, not Java runtime measurements. Internal infrastructure definitions are deliberately omitted from the small demo diagram. `Config` itself is a managed configuration bean as well as the source of the two illustrated `@Bean` definitions; the video focuses on the two named application beans rather than pretending the full context contains only them.
 
-No `@Bean` factory method is used in this lesson. This differs from the prior Java-configuration factory example: here, stereotype scanning plus constructor autowiring is the mechanism. No `@Autowired` annotation is required for the single-constructor case, but this is not a claim that every overloaded-constructor arrangement is resolved automatically.
-
-## Official documentation actually consulted
-
-- https://docs.spring.io/spring-framework/reference/core/beans/classpath-scanning.html — automatic detection and registration of stereotyped classes, and default candidate annotations including `@Repository` and `@Service`.
-- https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html — “If a class only declares a single constructor to begin with, it will always be used, even if not annotated.”
-- https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired-qualifiers.html — type-driven injection and optional semantic qualifiers.
-- https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html — container-supplied dependencies when creating a bean.
-
-All four fetched sources returned HTTP 200. HTML snapshots, extracted text and exact supporting quote contexts are retained under `../evidence/java-official-*`. The reference pages establish framework semantics; the pinned Spring 6.2.11 execution establishes that this actual example behaves as described.
-
-## Production-safe claims
-
-“Configured scanning finds annotated classes and registers definitions.”
-
-“Spring resolves this constructor's Repo parameter by type.”
-
-“Spring creates the repository and passes its reference to OrderService.”
-
-“In this default-singleton run, the graph is wired before application use.”
-
-“same Repo bean: true” and “application result: ready” are excerpts of the actual stdout, not fabricated terminal results.
+No Spring Boot startup, HTTP server, external database, remote event broker or performance benchmark is involved. Tests and app execute locally using actual Spring Framework6.2.11.

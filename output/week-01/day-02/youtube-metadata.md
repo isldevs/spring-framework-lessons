@@ -1,31 +1,36 @@
 # YouTube Shorts metadata
 
+## Publication plan
+
+- Approved lesson topic: ApplicationContext
+- Publish date: 2026-11-17 (Tuesday)
+- Proposed publish time: 19:00 Asia/Phnom_Penh (UTC+07:00; 12:00 UTC)
+- Publication status: Prepared metadata only. No upload, scheduling or publication has been performed.
+
 ## Title
 
-How Spring Dependency Injection Works
+What's Inside ApplicationContext?
 
-## Description with hashtags
+## Description and hashtags
 
-How does Spring get a repository into your service?
+ApplicationContext holds more than objects. Bean definitions describe what to build; managed instances are the actual objects.
 
-Follow a configured component scan, bean-definition registration, a constructor parameter matched by type, and the repository reference passed into OrderService before application use.
+Follow an AnnotationConfigApplicationContext as it registers configuration, refreshes, creates the demo's non-lazy singleton beans and returns an already wired service through getBean.
 
-This Java example has one Repo bean and one OrderService constructor. Spring supplies the same repository bean from the context; that single constructor does not need @Autowired.
+The context also dispatches an application event and runs managed bean cleanup when closed. The runnable example checks bean identity, one handled event and cleanup. A separate lazy-bean test shows that a definition can exist before its object is created.
 
 Official Spring references:
-https://docs.spring.io/spring-framework/reference/core/beans/classpath-scanning.html
-https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html
+https://docs.spring.io/spring-framework/6.2/reference/core/beans/basics.html
+https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html
 
-iSLDevs — Java and Spring, made visual.
+#ApplicationContext #SpringFramework #SpringIoC #Java #DependencyInjection #Shorts #iSLDevs
 
-#SpringFramework #DependencyInjection #Java #SpringDI #Shorts #iSLDevs
+## Tags (comma-separated)
 
-## Tags — comma-separated
-
-Spring dependency injection, Spring DI, constructor injection, Spring Framework, Java, component scanning, ComponentScan, Spring beans, Repository, Service, Autowired, dependency graph, iSLDevs
+ApplicationContext, Spring Framework, Spring IoC, bean definitions, managed beans, singleton beans, getBean, AnnotationConfigApplicationContext, Spring lifecycle, application events, Java, iSLDevs
 
 ## Pinned comment
 
-Scanning must be configured. Here, one Repo bean matches the single OrderService constructor's parameter, so Spring can inject it without @Autowired on that constructor.
+A bean definition describes an object; it is not the object itself. This example uses default non-lazy singletons, so refresh creates them before getBean. Lazy beans behave differently—the separate test covers that distinction.
 
-Multiple matching candidates need disambiguation, for example @Qualifier or @Primary. Which should we visualize next?
+Which container service should we animate next: events, resources or message lookup?

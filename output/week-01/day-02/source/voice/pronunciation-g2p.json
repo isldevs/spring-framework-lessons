@@ -2,50 +2,54 @@
   "word_distinctions": {
     "bean": "bˈiːn",
     "beans": "bˈiːnz",
+    "application context": "ˌæplɪkˈeɪʃən kˈɑːntɛkst",
+    "ApplicationContext": "ˌæplɪkˈeɪʃən kˈɑːntɛkst",
+    "bean definitions": "bˈiːn dˌɛfɪnˈɪʃənz",
+    "managed instances": "mˈænɪdʒd ˈɪnstənsᵻz",
+    "configuration": "kənfˌɪɡjɚɹˈeɪʃən",
+    "refresh": "ɹᵻfɹˈɛʃ",
+    "get bean": "ɡɛt bˈiːn",
+    "getBean": "ɡɛt bˈiːn",
+    "singleton": "sˈɪŋɡəltən",
     "repository": "ɹᵻpˈɑːzɪtˌɔːɹi",
-    "constructor": "kənstɹˈʌktɚ",
-    "Spring": "spɹˈɪŋ",
-    "Scan": "skˈæn",
-    "register": "ɹˈɛdʒɪstɚ",
-    "resolve": "ɹᵻzˈɑːlv",
-    "inject": "ɪndʒˈɛkt",
+    "cleanup": "klˈiːnʌp",
     "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
   },
   "scenes": [
     {
       "scene": 1,
-      "text": "How does a repository reach your service?",
-      "phonemes": "hˌaʊ dˈʌz ɐ ɹᵻpˈɑːzɪtˌɔːɹi ɹˈiːtʃ jʊɹ sˈɜːvɪs?",
+      "text": "What's inside application context?",
+      "phonemes": "wˌʌts ɪnsˈaɪd ˌæplɪkˈeɪʃən kˈɑːntɛkst?",
       "inference_batches": 1
     },
     {
       "scene": 2,
-      "text": "Configured scanning finds annotated classes and registers bean definitions.",
-      "phonemes": "kənfˈɪɡɚd skˈænɪŋ fˈaɪndz ˈænətˌeɪɾᵻd klˈæsᵻz ænd ɹˈɛdʒɪstɚz bˈiːn dˌɛfɪnˈɪʃənz.",
+      "text": "Bean definitions are recipes. Managed instances are the actual objects.",
+      "phonemes": "bˈiːn dˌɛfɪnˈɪʃənz ɑːɹ ɹˈɛsᵻpˌiːz. mˈænɪdʒd ˈɪnstənsᵻz ɑːɹ ðɪ ˈæktʃuːəl ˈɑːbdʒɛkts.",
       "inference_batches": 1
     },
     {
       "scene": 3,
-      "text": "A single constructor needs a repository. Spring resolves that parameter by type.",
-      "phonemes": "ɐ sˈɪŋɡəl kənstɹˈʌktɚ nˈiːdz ɐ ɹᵻpˈɑːzɪtˌɔːɹi. spɹˈɪŋ ɹᵻzˈɑːlvz ðæt pɚɹˈæmɪɾɚ baɪ tˈaɪp.",
+      "text": "Register configuration, then refresh. Spring reads the definitions and creates our singleton beans.",
+      "phonemes": "ɹˈɛdʒɪstɚ kənfˌɪɡjɚɹˈeɪʃən, ðˈɛn ɹᵻfɹˈɛʃ. spɹˈɪŋ ɹˈiːdz ðə dˌɛfɪnˈɪʃənz ænd kɹiːˈeɪts ˌaʊɚ sˈɪŋɡəltən bˈiːnz.",
       "inference_batches": 1
     },
     {
       "scene": 4,
-      "text": "Spring creates the repository, then passes its reference into the service constructor.",
-      "phonemes": "spɹˈɪŋ kɹiːˈeɪts ðə ɹᵻpˈɑːzɪtˌɔːɹi, ðˈɛn pˈæsᵻz ɪts ɹˈɛfɹəns ˌɪntʊ ðə sˈɜːvɪs kənstɹˈʌktɚ.",
+      "text": "Calling get bean returns the service, already wired to its repository.",
+      "phonemes": "kˈɔːlɪŋ ɡɛt bˈiːn ɹᵻtˈɜːnz ðə sˈɜːvɪs, ɔːlɹˌɛdi wˈaɪɚd tʊ ɪts ɹᵻpˈɑːzɪtˌɔːɹi.",
       "inference_batches": 1
     },
     {
       "scene": 5,
-      "text": "Our Java run confirms the same repository bean. Only then does the application use the service.",
-      "phonemes": "ˌaʊɚ dʒˈɑːvɚ ɹˈʌn kənfˈɜːmz ðə sˈeɪm ɹᵻpˈɑːzɪtˌɔːɹi bˈiːn. ˈoʊnli ðˈɛn dˈʌz ðɪ ˌæplɪkˈeɪʃən jˈuːs ðə sˈɜːvɪs.",
+      "text": "The context also publishes events. Close it, and managed cleanup runs.",
+      "phonemes": "ðə kˈɑːntɛkst ˈɔːlsoʊ pˈʌblɪʃᵻz ᵻvˈɛnts. klˈoʊs ɪt, ænd mˈænɪdʒd klˈiːnʌp ɹˈʌnz.",
       "inference_batches": 1
     },
     {
       "scene": 6,
-      "text": "Scan, register, resolve, inject, then use. Spring supplies dependencies; your service doesn’t construct them.",
-      "phonemes": "skˈæn, ɹˈɛdʒɪstɚ, ɹᵻzˈɑːlv, ɪndʒˈɛkt, ðˈɛn jˈuːz. spɹˈɪŋ səplˈaɪz dᵻpˈɛndənsiz; jʊɹ sˈɜːvɪs dˈʌzənt kənstɹˈʌkt ðˌɛm.",
+      "text": "Our tests confirm: same service, one event, cleanup called. Definitions describe; instances do the work.",
+      "phonemes": "ˌaʊɚ tˈɛsts kənfˈɜːm: sˈeɪm sˈɜːvɪs, wˈʌn ᵻvˈɛnt, klˈiːnʌp kˈɔːld. dˌɛfɪnˈɪʃənz dᵻskɹˈaɪb; ˈɪnstənsᵻz dˈuː ðə wˈɜːk.",
       "inference_batches": 1
     },
     {

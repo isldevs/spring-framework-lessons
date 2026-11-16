@@ -1,0 +1,72 @@
+[
+  {
+    "claim": "No-arg context requires explicit register then refresh",
+    "source_file": "java-doc-annotation-context.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html",
+    "needle": "that needs to be populated through",
+    "verbatim_context": "tionConfigApplicationContext () Create a new AnnotationConfigApplicationContext that needs to be populated through register(java.lang.Class<?>...) calls and then manually refreshed . AnnotationConfigApplicationContext ( Class <?>... componentClasses) Create a new AnnotationConfigApplicationContext, deriving bean definitions from the given component classes and automatically refreshing the context. AnnotationConfigApplicationContext ( String ... basePackages) Create a new AnnotationConfigApplicationContext, scanning for components in the given packages, regis"
+  },
+  {
+    "claim": "Register accepts configuration classes and refresh fully processes them",
+    "source_file": "java-doc-annotation-context.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html",
+    "needle": "must be called in order for the context to fully process",
+    "verbatim_context": "mponent classes to be processed. Note that AbstractApplicationContext.refresh() must be called in order for the context to fully process the new classes. Specified by: register in interface AnnotationConfigRegistry Parameters: componentClasses - one or more component classes \u2014 for example, @Configuration classes See Also: scan(String...) AbstractApplicationContext.refresh() scan public void scan ( String ... basePackages) Perform a scan within the specified base packages. Note that AbstractApplicationContext.refresh() must be called in order for the context to fully process the n"
+  },
+  {
+    "claim": "Definitions are bean metadata, not instantiated objects",
+    "source_file": "java-doc-bean-definition.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/config/BeanDefinition.html",
+    "needle": "A BeanDefinition describes a bean instance",
+    "verbatim_context": "public interface BeanDefinition extends AttributeAccessor , BeanMetadataElement A BeanDefinition describes a bean instance, which has property values, constructor argument values, and further information supplied by concrete implementations. This is just a minimal interface: The main intention is to allow a BeanFactoryPostProcessor to introspect and modify property values and other bean metadata. Since: 19.03.2004 Author: Juergen Hoeller, Rob Harrop See Also: ConfigurableListableBeanFactory.getBeanDefinition(java.lang.String) RootBeanDefinition ChildBeanDefinition F"
+  },
+  {
+    "claim": "BFPP may inspect definitions without creating application beans",
+    "source_file": "java-doc-factory-postprocessor.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/config/BeanFactoryPostProcessor.html",
+    "needle": "may interact with and modify bean definitions, but never bean instances",
+    "verbatim_context": "box solutions that address such configuration needs. A BeanFactoryPostProcessor may interact with and modify bean definitions, but never bean instances. Doing so may cause premature bean instantiation, violating the container and causing unintended side effects. If bean instance interaction is required, consider implementing BeanPostProcessor instead. Registration An ApplicationContext auto-detects BeanFactoryPostProcessor beans in its bean definitions and applies them before any other beans get created. A BeanFactoryPostProcessor may also be registered programmatically with a ConfigurableAppli"
+  },
+  {
+    "claim": "BeanFactoryPostProcessors run before ordinary beans are created",
+    "source_file": "java-doc-factory-postprocessor.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/config/BeanFactoryPostProcessor.html",
+    "needle": "applies them before any other beans get created",
+    "verbatim_context": "Context auto-detects BeanFactoryPostProcessor beans in its bean definitions and applies them before any other beans get created. A BeanFactoryPostProcessor may also be registered programmatically with a ConfigurableApplicationContext . Ordering BeanFactoryPostProcessor beans that are autodetected in an ApplicationContext will be ordered according to PriorityOrdered and Ordered semantics. In contrast, BeanFactoryPostProcessor beans that are registered programmatically with a ConfigurableApplicationContext will be applied in the order of registration; any ordering semantic"
+  },
+  {
+    "claim": "ApplicationContext extends bean access with resources/events/messages",
+    "source_file": "java-doc-application-context.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/ApplicationContext.html",
+    "needle": "An ApplicationContext provides",
+    "verbatim_context": "pplication is running, but may be reloaded if the implementation supports this. An ApplicationContext provides: Bean factory methods for accessing application components. Inherited from ListableBeanFactory . The ability to load file resources in a generic fashion. Inherited from the ResourceLoader interface. The ability to publish events to registered listeners. Inherited from the ApplicationEventPublisher interface. The ability to resolve messages, supporting internationalization. Inherited from the MessageSource interface. Inheritance from a parent con"
+  },
+  {
+    "claim": "Closing this concrete context destroys its managed beans",
+    "source_file": "java-doc-abstract-context.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/support/AbstractApplicationContext.html",
+    "needle": "Close this application context, destroying all beans",
+    "verbatim_context": "ourceCaches () Clear all resource caches in this resource loader. void close () Close this application context, destroying all beans in its bean factory. protected abstract void closeBeanFactory () Subclasses must implement this method to release their internal bean factory. boolean containsBean ( String name) Does this bean factory contain a bean definition or externally registered singleton instance with the given name? boolean containsBeanDefinition ( String beanName) Check if this bean factory contains a bean definition with the given name. boolean containsLocalBean ( Str"
+  },
+  {
+    "claim": "DisposableBean callback supports resource cleanup on singleton shutdown",
+    "source_file": "java-doc-disposable-bean.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/DisposableBean.html",
+    "needle": "An ApplicationContext is supposed to dispose all of its singletons on shutdown",
+    "verbatim_context": "tory will invoke the destroy method on individual destruction of a scoped bean. An ApplicationContext is supposed to dispose all of its singletons on shutdown, driven by the application lifecycle. A Spring-managed bean may also implement Java's AutoCloseable interface for the same purpose. An alternative to implementing an interface is specifying a custom destroy method, for example in an XML bean definition. For a list of all bean lifecycle methods, see the BeanFactory javadocs . Since: 12.08.2003 Author: Juergen Hoeller See Also: InitializingBean AbstractBeanDefinition.getDestroyMethodName() Configu"
+  },
+  {
+    "claim": "Default singleton initialization is eager; lazy beans are an exception",
+    "source_file": "java-doc-lazy-singletons.html",
+    "official_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/dependencies/factory-lazy-init.html",
+    "needle": "By default, ApplicationContext implementations eagerly",
+    "verbatim_context": "est stable version, please use Spring Framework 7.0.10 ! Lazy-initialized Beans By default, ApplicationContext implementations eagerly create and configure all singleton beans as part of the initialization process. Generally, this pre-instantiation is desirable, because errors in the configuration or surrounding environment are discovered immediately, as opposed to hours or even days later. When this behavior is not desirable, you can prevent pre-instantiation of a singleton bean by marking the bean definition as being lazy-initialized. A lazy-initialized bean tells the IoC con"
+  },
+  {
+    "claim": "Event publication is not universally synchronous or immediate",
+    "source_file": "java-doc-event-publisher.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/ApplicationEventPublisher.html",
+    "needle": "does not imply synchronous/asynchronous execution or even immediate execution at all",
+    "verbatim_context": "Such an event publication step is effectively a hand-off to the multicaster and does not imply synchronous/asynchronous execution or even immediate execution at all. Event listeners are encouraged to be as efficient as possible, individually using asynchronous execution for longer-running and potentially blocking operations. For usage in a reactive call stack, include event publication as a simple hand-off: Mono.fromRunnable(() -> eventPublisher.publishEvent(...)) . As with any asynchronous execution, thread-local data is not going to be available for reactive listener methods. All state which is necessary "
+  }
+]

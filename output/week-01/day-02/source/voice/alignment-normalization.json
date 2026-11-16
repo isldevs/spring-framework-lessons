@@ -1,6 +1,25 @@
 {
-  "text_transformations": [],
-  "timing_sources": "asr-alignment.json; raw full-stream ASR plus independent unprompted final-phrase crop where needed",
+  "text_transformations": [
+    {
+      "display": "ApplicationContext",
+      "spoken": "application context",
+      "reason": "Conventional Java type spelling; words and raw ASR unchanged"
+    },
+    {
+      "display": "getBean",
+      "spoken": "get bean",
+      "reason": "Conventional Java method spelling; words and raw ASR unchanged"
+    }
+  ],
+  "orthographic_alignment_normalization": "If observed as separate 'clean up', merge timing spans for the spoken noun cleanup. Raw ASR text/strict WER remain unchanged.",
+  "timing_sources": "asr-alignment.json: untouched full-stream ASR, plus separate unprompted final-phrase crop only if required",
   "raw_wer_unchanged": true,
-  "scan_anchor": "exact scene6 sample edit because ASR first word has zero duration"
+  "derived_animation_anchors": {
+    "repo": "creates word start + .08s",
+    "service": "repo anchor + .60s, capped .20s before lookup scene",
+    "recap_register_definitions_create": "sample-derived recap scene start plus 0/.35/.80s, overview staging before observed proof words",
+    "recap_complete": "called word end + .10s, capped .10s before recap hold"
+  },
+  "scene_start_clamps": "First/last cue boundaries use exact sample-derived utterance edits. Intermediate ASR times are clamped within their utterance. Raw ASR may place the short Thanks word inside the preceding quiet hold; known synthesis boundaries take precedence and raw ASR is preserved. No word insertion",
+  "hook_ending_asr_s": 1.4
 }

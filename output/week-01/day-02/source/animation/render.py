@@ -6,7 +6,7 @@ Timing is from actual locally synthesized Kokoro speech, not estimated duration.
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
-import json, math, subprocess, argparse, wave
+import json, math, subprocess, argparse
 ROOT=Path(__file__).resolve().parents[2]
 ASSETS=ROOT/'source/assets'
 W,H,FPS=1080,1920,60
@@ -50,9 +50,8 @@ def make_bg():
     return im
 BG=make_bg()
 def base(k,label,title,subtitle=None):
-    im=BG.copy();txt(im,'iSLDevs',100,264,31,WHITE,True);txt(im,'JAVA / SPRING',980,270,24,MUTED,center=False)
+    im=BG.copy();txt(im,'iSLDevs',100,264,31,WHITE,True)
     # right aligned topic marker within the safe area
-    d=ImageDraw.Draw(im);d.rectangle((880,255,1080,320),fill=NAVY)
     txt(im,'JAVA / SPRING',980-ImageDraw.Draw(im).textlength('JAVA / SPRING',font=font(24)),270,24,MUTED)
     tag(im,label,100,350,GREEN,25)
     lines(im,title if isinstance(title,list) else [title],100,425,62,WHITE,True,gap=1.13)
@@ -75,154 +74,175 @@ def definition(im,name,x,y,w,color,annotation=None):
     if annotation:txt(im,annotation,x+18,y+8,32,PURPLE,mono=True)
     txt(im,name,x+w/2,y+55,40,color,True,center=True)
 
-def cover():
+def recipe(im,name,x,y,w=310,h=150,detail=None,size=40):
+    """Paper-shaped metadata. This remains present after objects are created."""
+    d=ImageDraw.Draw(im);fold=25
+    d.polygon([(x,y),(x+w-fold,y),(x+w,y+fold),(x+w,y+h),(x,y+h)],fill='#171d36',outline=PURPLE,width=2)
+    line(im,[(x+w-fold,y),(x+w-fold,y+fold),(x+w,y+fold)],PURPLE,2)
+    txt(im,name,x+20,y+14,size,PURPLE,True)
+    if detail:txt(im,detail,x+20,y+h-50,29,WHITE,mono=True)
+
+def context_frame(im,xy,label='ApplicationContext',factory=True):
+    box(im,xy,fill='#0d1d2d',outline=PURPLE,r=25,width=2)
+    x,y,x2,y2=xy
+    txt(im,label,x+23,y+13,38,PURPLE,True)
+    if factory:txt(im,'BEAN FACTORY · DEMO BEANS',x+23,y+65,25,MUTED,True)
+
+def header_hook():
     im=BG.copy();txt(im,'iSLDevs',100,264,31,WHITE,True)
-    tag(im,'JAVA / SPRING',100,360,GREEN,27)
-    txt(im,'Spring DI',100,463,108,WHITE,True)
-    lines(im,['How does Repo','reach your service?'],100,622,65,WHITE,True,gap=1.2)
-    tag(im,'DEPENDENCY INJECTION',100,858,PURPLE,27)
-    object_node(im,'Repo',135,1030,280,140,CYAN,48,'dependency')
-    object_node(im,'OrderService',590,1030,355,140,GREEN,40,'needs a Repo')
-    arrow(im,(415,1100),(570,1100),1,PURPLE,5)
-    txt(im,'Spring supplies the reference',540,1220,37,WHITE,center=True)
+    tag(im,'APPLICATIONCONTEXT',100,350,GREEN,26)
+    lines(im,["What's inside?"],100,442,76,WHITE,True)
+    return im
+
+def hook_scene(t,with_motion=True):
+    im=header_hook()
+    context_frame(im,(120,626,960,1270))
+    txt(im,'DEFINITIONS',150,766,30,PURPLE,True)
+    txt(im,'INSTANCES',616,766,30,GREEN,True)
+    recipe(im,'repo',150,834,320,135,'@Bean recipe',41)
+    recipe(im,'service',150,1030,320,135,'needs Repo',41)
+    object_node(im,'Repo',620,834,310,130,GREEN,44,'created object')
+    object_node(im,'Service',620,1030,310,135,GREEN,44,'holds Repo')
+    arrow(im,(775,972),(775,1019),1,PURPLE,5)
+    txt(im,'≠',538,935,69,WHITE,True,center=True)
+    if with_motion:
+        # Scanning the recipe column begins immediately, then the corresponding
+        # object is highlighted; metadata is never moved out of the container.
+        p=(t%2.2)/2.2
+        y=834+331*p
+        # A reading bracket moves along the metadata rather than striking
+        # through its labels, so no definition appears deleted or crossed out.
+        line(im,[(149,y),(138,y),(138,y+42),(149,y+42)],CYAN,4)
+        x=620+310*((t/.95)%1)
+        ImageDraw.Draw(im).ellipse((x-6,821,x+6,833),fill=CYAN)
+    txt(im,'A REFRESHED CONTEXT',540,1211,26,MUTED,True,center=True)
+    return im
+
+def cover():
+    im=hook_scene(0,False)
+    # Standalone thumbnail only: it is deliberately not held in the video.
     return im
 COVER=cover()
 
 def scene(k,u,elapsed=None,recap=None,scene_duration=None,scene_cues=None):
-    scene_duration=scene_duration or {0:2.373917,1:5.008875,2:5.587958,3:5.470958,4:6.712250,5:9.055125,6:1.440750}[k]
-    elapsed=u*scene_duration if elapsed is None else elapsed
-    cues=scene_cues or {}
-    if k==0:
-        im=COVER.copy()
-        if u>.55:
-            x=415+155*reveal(u,.55,.4)
-            ImageDraw.Draw(im).ellipse((x-9,1091,x+9,1109),fill=WHITE)
-        return im
+    duration=scene_duration or {0:2.3,1:5.5,2:7.4,3:5.1,4:5.1,5:9.1,6:1.5}[k]
+    t=u*duration if elapsed is None else elapsed;cues=scene_cues or {}
+    at=lambda key,default:float(cues.get(key,default))
+    if k==0:return hook_scene(t)
     if k==1:
-        im=base(k,'DISCOVER + REGISTER',['Scanning starts','with configuration.'])
-        txt(im,'App: register Config.class, then refresh',120,588,32,CYAN)
-        box(im,(120,645,960,813),fill=CARD,outline=PURPLE,r=20)
-        txt(im,'@Configuration',145,662,36,PURPLE,mono=True)
-        txt(im,'@ComponentScan("lesson.di")',145,720,38,WHITE,mono=True)
-        if u>.12:
-            definition(im,'Repo',130,860,335,CYAN,'@Repository')
-        if u>.25:
-            definition(im,'OrderService',535,860,415,GREEN,'@Service')
-        if elapsed>=cues.get('register',(scene_duration or 5)*.65)-.55:
-            p=reveal(elapsed,cues.get('register',(scene_duration or 5)*.65)-.55,.55)
-            arrow(im,(300,984),(300,1100),p,PURPLE,4)
-            arrow(im,(740,984),(740,1100),p,PURPLE,4)
-            txt(im,'register metadata',540,1020,31,PURPLE,center=True)
-        box(im,(120,1110,960,1285),fill=NAVY,outline=EDGE,r=20)
-        txt(im,'BEAN DEFINITIONS',145,1125,29,WHITE,True)
-        if elapsed>=cues.get('register',(scene_duration or 5)*.65):
-            tag(im,'Repo',155,1180,CYAN,36)
-            tag(im,'OrderService',530,1180,GREEN,36)
+        instance=at('instance',duration*.55)
+        im=base(k,'METADATA ≠ OBJECT',['Recipes describe.','Instances do the work.'])
+        context_frame(im,(120,631,960,1278))
+        txt(im,'BEAN DEFINITION',150,769,29,PURPLE,True)
+        recipe(im,'service',150,831,350,320,None,44)
+        code_runs(im,[('type: ',MUTED),('Service',WHITE)],171,918,32)
+        txt(im,'scope: singleton',171,978,32,WHITE,mono=True)
+        txt(im,'needs: Repo',171,1038,32,WHITE,mono=True)
+        if t>=instance:
+            txt(im,'MANAGED INSTANCE',605,769,28,GREEN,True)
+            object_node(im,'Service',610,892,310,185,GREEN,47,'actual Java object')
+            arrow(im,(505,991),(596,991),reveal(t,instance,.40),CYAN,5)
+            txt(im,'build',550,918,29,CYAN,True,center=True)
+            txt(im,'Definition stays.',540,1196,36,PURPLE,True,center=True)
         return im
     if k==2:
-        im=base(k,'RESOLVE BY TYPE',['The constructor','declares the need.'])
-        box(im,(120,636,960,830),fill=CARD,outline=EDGE,r=20)
-        txt(im,'SINGLE CONSTRUCTOR',145,651,29,MUTED,True)
-        code_runs(im,[('OrderService(',WHITE),('Repo',CYAN),(' repo)',WHITE)],145,716,43)
-        if elapsed>=cues.get('resolve',(scene_duration or 5)*.53):
-            resolve=cues.get('resolve',(scene_duration or 5)*.53);match=cues.get('type',(scene_duration or 5)*.81)
-            arrow(im,(538,803),(325,1002),reveal(elapsed,resolve,max(.2,match-resolve)),PURPLE,5)
-            box(im,(540,866,947,925),fill=NAVY,outline=None,r=10)
-            txt(im,'match the Repo type',555,877,32,PURPLE,True)
-        box(im,(120,969,960,1235),fill=NAVY,outline=EDGE,r=22)
-        txt(im,'REGISTERED DEFINITIONS',145,985,28,MUTED,True)
-        definition(im,'Repo',150,1040,340,CYAN)
-        definition(im,'OrderService',530,1040,390,GREEN)
-        if elapsed>=cues.get('type',(scene_duration or 5)*.81):tag(im,'ONE MATCH',155,1171,GREEN,31)
-        txt(im,'One constructor: no @Autowired needed',120,1260,31,WHITE)
+        register=at('register',0);refresh=at('refresh',duration*.3)
+        defs=at('definitions',duration*.48);repo=at('repo',duration*.70);service=at('service',duration*.86)
+        im=base(k,'REGISTER, THEN REFRESH',['Refresh turns recipes','into managed beans.'])
+        box(im,(120,623,960,910),fill=CARD,outline=EDGE,r=20)
+        txt(im,'var ctx = new',145,638,37,WHITE,mono=True)
+        txt(im,'AnnotationConfigApplicationContext();',145,691,35,WHITE,mono=True)
+        if t>=register:code_runs(im,[('ctx.',WHITE),('register',PURPLE),('(Config.class);',WHITE)],145,759,37)
+        if t>=refresh:code_runs(im,[('ctx.',WHITE),('refresh',GREEN),('();',WHITE)],145,828,40)
+        if t>=defs:
+            txt(im,'@Bean DEFINITIONS',145,933,27,PURPLE,True)
+            recipe(im,'repo',145,1002,305,111,None,37)
+            recipe(im,'service(Repo)',145,1157,305,111,None,33)
+        if t>=repo:
+            txt(im,'OUR DEFAULT SINGLETONS',625,933,25,GREEN,True)
+            object_node(im,'Repo',625,1002,310,111,GREEN,41)
+        if t>=service:
+            arrow(im,(780,1116),(780,1148),reveal(t,service,.25),PURPLE,4)
+            object_node(im,'Service',625,1157,310,111,GREEN,41)
+            arrow(im,(453,1212),(611,1212),reveal(t,service,.32),CYAN,4)
         return im
     if k==3:
-        im=base(k,'CONSTRUCTOR INJECTION',['Create Repo.','Pass its reference.'])
-        box(im,(120,625,960,854),fill=CARD,outline=EDGE,r=20)
-        txt(im,'OrderService(Repo repo) {',145,647,39,WHITE,mono=True)
-        if elapsed>=cues.get('pass',(scene_duration or 5)*.40):code_runs(im,[('  this.repo = ',WHITE),('repo',CYAN),(';',WHITE)],145,713,39)
-        txt(im,'}',145,778,39,WHITE,mono=True)
-        box(im,(120,930,960,1270),fill='#112532',outline=GREEN,r=25,width=2)
-        txt(im,'SPRING ASSEMBLES THE OBJECT GRAPH',145,950,28,GREEN,True)
-        if elapsed>=cues.get('create',(scene_duration or 5)*.03):object_node(im,'Repo',155,1038,275,145,CYAN,46,'created first')
-        if elapsed>=cues.get('pass',(scene_duration or 5)*.40):
-            begin=cues.get('pass',(scene_duration or 5)*.40);end=cues.get('constructor',(scene_duration or 5)*.75)
-            p=reveal(elapsed,begin,max(.2,end-begin))
-            arrow(im,(430,1109),(595,1109),p,PURPLE,5)
-            if p<1:
-                x=430+165*p
-                ImageDraw.Draw(im).ellipse((x-11,1098,x+11,1120),fill=WHITE)
-            txt(im,'Repo reference',540,1210,32,PURPLE,center=True)
-        if elapsed>=cues.get('pass',(scene_duration or 5)*.40):
-            if elapsed<cues.get('constructor',(scene_duration or 5)*.75):
-                box(im,(615,1038,920,1183),fill=CARD,outline=GREEN,r=20,width=2)
-                txt(im,'constructor',767,1065,37,GREEN,True,center=True)
-                txt(im,'receives repo',767,1127,29,WHITE,center=True)
-            else:object_node(im,'OrderService',615,1038,305,145,GREEN,37,'ready + wired')
+        request=at('request',0);returned=at('return',at('returns',duration*.46))
+        im=base(k,'LOOK UP THE READY BEAN',['getBean returns','the managed service.'])
+        context_frame(im,(120,631,960,1067))
+        object_node(im,'Repo',145,804,300,144,GREEN,44,'same managed Repo')
+        object_node(im,'Service',630,804,300,144,GREEN,44,'already wired')
+        arrow(im,(450,876),(615,876),1,PURPLE,5)
+        txt(im,'dependency',540,772,28,PURPLE,True,center=True)
+        box(im,(120,1175,960,1306),fill=CARD,outline=CYAN,r=20)
+        txt(im,'APP REQUEST',145,1185,28,CYAN,True)
+        txt(im,'ctx.getBean(Service.class)',145,1233,39,WHITE,mono=True)
+        if t>=request:
+            arrow(im,(780,1170),(780,964),reveal(t,request,.45),CYAN,5)
+            txt(im,'lookup',812,1092,28,CYAN,True)
+        if t>=returned:
+            p=reveal(t,returned,.55)
+            # Return a reference while the managed object remains in context.
+            line(im,[(630,920),(530,920),(530,1138)],CYAN,4)
+            arrow(im,(530,1115),(530,1165),p,CYAN,4)
+            txt(im,'same service reference',145,1098,31,CYAN,True)
+            if p<1:ImageDraw.Draw(im).ellipse((522,1090+60*p,538,1106+60*p),fill=WHITE)
         return im
     if k==4:
-        im=base(k,'VERIFY, THEN USE',['The graph is ready.','Now the app uses it.'])
-        box(im,(120,620,960,710),fill=CARD,outline=EDGE,r=18)
-        txt(im,'ctx.getBean(OrderService.class)',145,639,39,WHITE,mono=True)
-        object_node(im,'App',130,833,240,135,CYAN,44,'uses service' if elapsed>=cues.get('application',(scene_duration or 6.7)*.66) else 'caller')
-        box(im,(574,756,960,1052),fill='#112532',outline=GREEN,r=24,width=2)
-        txt(im,'SPRING CONTAINER',597,774,27,GREEN,True)
-        txt(im,'Repo',770,835,34,CYAN,True,center=True)
-        arrow(im,(770,881),(770,902),1,PURPLE,4)
-        object_node(im,'OrderService',620,909,300,100,GREEN,37)
-        if elapsed>.12:
-            arrow(im,(382,843),(603,843),reveal(elapsed,.12,.20),CYAN)
-            txt(im,'request',488,792,28,CYAN,center=True)
-        if elapsed>.33:
-            arrow(im,(603,998),(249,998),reveal(elapsed,.33,.28),GREEN)
-            txt(im,'wired reference',425,1033,28,GREEN,center=True)
-        box(im,(120,1125,960,1285),fill='#112532',outline=GREEN,r=18)
-        txt(im,'ACTUAL JAVA RUN · EXCERPT',145,1140,25,MUTED,True)
-        if elapsed>=cues.get('confirm',.7):txt(im,'same Repo bean: true',145,1182,39,GREEN,mono=True)
-        if elapsed>=cues.get('use',(scene_duration or 6.7)*.71):txt(im,'application result: ready',145,1237,32,WHITE,mono=True)
+        event=at('event',0);close=at('close',duration*.55);cleanup=at('cleanup',duration*.80)
+        im=base(k,'EVENTS + LIFECYCLE',['More than bean lookup.'])
+        context_frame(im,(120,631,960,1287),factory=False)
+        code_runs(im,[('ctx.',WHITE),('publishEvent',CYAN),('(',WHITE)],145,709,38)
+        txt(im,'  new DemoEvent(ctx));',145,767,38,WHITE,mono=True)
+        if t>=event:
+            box(im,(145,897,438,1007),fill=CARD,outline=CYAN,r=17)
+            txt(im,'DemoEvent',290,921,35,CYAN,True,center=True)
+            object_node(im,'Service',628,879,300,145,GREEN,43,'event listener')
+            p=reveal(t,event,.65)
+            arrow(im,(445,951),(611,951),p,CYAN,5)
+            if t<close:
+                x=445+166*p;ImageDraw.Draw(im).ellipse((x-9,942,x+9,960),fill=WHITE)
+            txt(im,'one event handled',145,1054,33,GREEN,True)
+        if t>=close:
+            code_runs(im,[('ctx.',WHITE),('close',PURPLE),('();',WHITE)],145,1158,41)
+            tag(im,'CLOSED',752,646,PURPLE,25)
+        if t>=cleanup:
+            # right align the success text inside the container
+            d=ImageDraw.Draw(im)
+            txt(im,'cleanup called',930-d.textlength('cleanup called',font=font(33,True)),1217,33,GREEN,True)
         return im
-    if k==5:return recap_scene(u,elapsed,recap,scene_duration)
-    if k==6:return thanks_scene(u,elapsed,scene_duration)
+    if k==5:return recap_scene(u,t,recap,duration,cues)
+    if k==6:return thanks_scene(u,t,duration)
     raise ValueError(k)
 
-def recap_complete_at(cues):
-    return float(cues.get('complete',float(cues.get('use',3.0))+.65))
-
-def recap_scene(u,elapsed=None,cues=None,scene_duration=None):
-    cues=cues or {};duration=scene_duration or 9.055125
-    t=u*duration if elapsed is None else elapsed
-    at=lambda key,default:float(cues.get(key,default))
-    scan=at('scan',0);register=at('register',.30);resolve=at('resolve',.80)
-    inject=at('inject',1.25);use=at('use',2.4);complete=at('complete',use+.65)
-    im=base(5,'DEPENDENCY INJECTION',['Before the app uses it.'])
-    if t>=scan:
-        box(im,(120,555,960,741),fill=CARD,outline=PURPLE,r=20,width=2)
-        txt(im,'APP: REGISTER + REFRESH',145,569,29,CYAN,True)
-        txt(im,'ctx.register(Config.class)',145,612,37,WHITE,mono=True)
-        txt(im,'@ComponentScan("lesson.di")',145,674,37,PURPLE,mono=True)
-    if t>=register:
-        arrow(im,(540,744),(540,779),reveal(t,register,.22),PURPLE,4)
-        box(im,(120,784,960,936),fill=NAVY,outline=EDGE,r=20)
-        txt(im,'REGISTER BEAN DEFINITIONS',145,795,28,MUTED,True)
-        code_runs(im,[('@Repository ',PURPLE),('Repo',CYAN)],145,837,37)
-        code_runs(im,[('@Service ',PURPLE),('OrderService',GREEN)],145,886,37)
-    if t>=resolve:
-        arrow(im,(540,940),(540,974),reveal(t,resolve,.22),PURPLE,4)
-        box(im,(120,978,960,1102),fill=CARD,outline=CYAN,r=20)
-        txt(im,'RESOLVE THE Repo PARAMETER',145,990,28,CYAN,True)
-        code_runs(im,[('OrderService(',WHITE),('Repo',CYAN),(' repo)',WHITE)],145,1034,41)
-    if t>=inject:
-        arrow(im,(460,1105),(460,1137),reveal(t,inject,.25),PURPLE,4)
-        box(im,(120,1140,775,1308),fill='#112532',outline=GREEN,r=20,width=2)
-        txt(im,'INJECT REFERENCE',142,1151,27,GREEN,True)
-        object_node(im,'Repo',142,1200,205,84,CYAN,40)
-        object_node(im,'OrderService',447,1200,305,84,GREEN,36)
-        arrow(im,(347,1242),(430,1242),reveal(t,inject,.55),PURPLE,4)
-    if t>=use:
-        box(im,(815,1196,950,1284),fill=CARD,outline=CYAN,r=18,width=2)
-        txt(im,'App',882,1215,40,CYAN,True,center=True)
-        arrow(im,(778,1240),(805,1240),reveal(t,use,max(.1,complete-use)),GREEN,4)
-        txt(im,'USE',881,1154,29,GREEN,True,center=True)
+def recap_complete_at(cues):return float(cues.get('complete',4.8))
+def recap_scene(u,elapsed=None,cues=None,scene_duration=None,proof_cues=None):
+    cues=cues or {};proof_cues=proof_cues or {};duration=scene_duration or 9.1;t=u*duration if elapsed is None else elapsed
+    at=lambda key,default:float(proof_cues.get(key,cues.get(key,default)))
+    same=at('same',1);event=at('event',1.8);cleanup=at('cleanup',2.6)
+    complete=at('complete',4.8);takeaway=at('takeaway',complete)
+    im=base(5,'ACTUAL SPRING TESTS',['Definitions describe.','Instances do the work.'])
+    box(im,(120,624,960,830),fill='#112532',outline=GREEN,r=20,width=2)
+    if t>=same:txt(im,'same service: true',145,637,37,GREEN,mono=True)
+    if t>=event:txt(im,'events handled: 1',145,694,37,GREEN,mono=True)
+    if t>=cleanup:txt(im,'cleanup called: true',145,751,37,GREEN,mono=True)
+    box(im,(120,860,960,945),fill=CARD,outline=PURPLE,r=18)
+    txt(im,'new context → register Config',145,878,36,PURPLE,mono=True)
+    if t>=max(0,same-.35):
+        arrow(im,(540,947),(540,976),1,PURPLE,4)
+        box(im,(120,982,960,1075),fill=CARD,outline=PURPLE,r=18)
+        code_runs(im,[('refresh()',GREEN),(' : recipes → objects',WHITE)],145,1005,36)
+    if t>=same:
+        arrow(im,(540,1078),(540,1104),1,CYAN,4)
+        box(im,(120,1110,960,1195),fill=CARD,outline=CYAN,r=18)
+        code_runs(im,[('getBean()',CYAN),(' → same Service',WHITE)],145,1129,36)
+    if t>=cleanup:
+        arrow(im,(540,1198),(540,1222),1,GREEN,4)
+        box(im,(120,1227,960,1307),fill=CARD,outline=GREEN,r=18)
+        txt(im,'event → close → cleanup',145,1242,37,GREEN,mono=True)
+    if t>=takeaway:
+        # The full graph remains unchanged through the silent reading hold.
+        line(im,[(100,585),(100+690*reveal(t,takeaway,.35),585)],GREEN,4)
     return im
 
 def thanks_scene(u,elapsed=None,scene_duration=None):
@@ -232,26 +252,23 @@ def thanks_scene(u,elapsed=None,scene_duration=None):
     line(im,[(320,1008),(320+440*reveal(t,0,.38),1008)],CYAN,5)
     return im
 
-
-def graph_ready_at(data):
-    """Absolute time at which constructor injection has completed in scene 4."""
-    return float(data['scene_cues_absolute']['injection']['constructor'])
-
-def application_use_start(data):
-    """Absolute time of scene 5 business use, after graph assembly."""
-    return float(data['scene_cues_absolute']['proof']['application'])
-
-def read_timing():
-    data=json.loads((ROOT/'source/timing.json').read_text())
-    return data
+def mechanism_anchors(data):
+    c=data['scene_cues_absolute'];i=c['initialization'];l=c['lookup'];s=c['services']
+    return {'config_registered_s':float(i['register']),'refresh_s':float(i['refresh']),
+            'definitions_registered_s':float(i['definitions']),'instances_created_s':float(i['service']),
+            'graph_ready_s':float(i['service'])+.35,'lookup_s':float(l['request']),
+            'reference_return_s':float(l.get('return',l.get('returns'))),
+            'event_s':float(s['event']),'close_s':float(s['close']),'cleanup_s':float(s['cleanup'])}
+def graph_ready_at(data):return mechanism_anchors(data)['graph_ready_s']
+def application_use_start(data):return mechanism_anchors(data)['lookup_s']
+def read_timing():return json.loads((ROOT/'source/timing.json').read_text())
 
 def caption(im,text):
-    # Captions use a reserved high contrast band, no more than two lines.
-    size=43;f=font(size,True);d=ImageDraw.Draw(im)
-    words=text.replace('get bean','getBean').split();out=[];row=''
+    size=43;f=font(size,True);d=ImageDraw.Draw(im);words=text.replace('get bean','getBean').split();out=[];row=''
     for word in words:
-        if d.textlength((row+' '+word).strip(),font=f)>830 and row:out.append(row);row=word
-        else:row=(row+' '+word).strip()
+        candidate=(row+' '+word).strip()
+        if d.textlength(candidate,font=f)>830 and row:out.append(row);row=word
+        else:row=candidate
     if row:out.append(row)
     if len(out)>2:raise ValueError(('caption too long',text,out))
     box(im,(100,1322,980,1487),fill='#0a1326',outline=None,r=17)
@@ -261,13 +278,10 @@ def caption(im,text):
 def render_frame(t,data,with_caption=True):
     scenes=data['scenes'];k=next((i for i,s in enumerate(scenes) if s['start']<=t<s['end']),len(scenes)-1)
     s=scenes[k];u=(t-s['start'])/(s['end']-s['start'])
-    # The initial exact cover is guaranteed even though narration starts at t=0.
-    if t<1:return COVER.copy()
-    cue_key={1:'discovery',2:'resolution',3:'injection',4:'proof'}.get(k)
-    stage_cues={key:val-s['start'] for key,val in data.get('scene_cues_absolute',{}).get(cue_key,{}).items()}
-    im=scene(k,u,elapsed=t-s['start'],recap=data.get('recap_cues'),scene_duration=s['end']-s['start'],scene_cues=stage_cues)
+    key={1:'distinction',2:'initialization',3:'lookup',4:'services',5:'proof'}.get(k)
+    stage={key:val-s['start'] for key,val in data.get('scene_cues_absolute',{}).get(key,{}).items()}
+    im=scene(k,u,t-s['start'],data.get('recap_cues'),s['end']-s['start'],stage)
     if with_caption and k!=6:
-        # The thanks card itself displays its spoken words; avoid duplicate text.
         c=next((c for c in data['captions'] if c['start']<=t<c['end']),None)
         if c:caption(im,c['text'])
     ImageDraw.Draw(im).line((100,1510,100+880*min(1,t/data['duration']),1510),fill=GREEN,width=3)
@@ -282,23 +296,20 @@ def write_srt(data):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--previews',action='store_true');p.add_argument('--render',action='store_true');a=p.parse_args()
-    COVER.save(ROOT/'cover.png')
-    data=read_timing();write_srt(data)
+    COVER.save(ROOT/'cover.png');data=read_timing();write_srt(data)
     if a.previews:
         out=ROOT/'source/evidence';out.mkdir(exist_ok=True)
         samples=[0]+[s['start']+(s['end']-s['start'])*.78 for s in data['scenes']]
         thumbs=[]
         for j,t in enumerate(samples):
             im=render_frame(t,data);im.save(out/f'preview-{j}.png');thumbs.append(im.resize((324,576),Image.Resampling.LANCZOS))
-        contact=Image.new('RGB',(324*4,576*2),NAVY)
-        for i,im in enumerate(thumbs):contact.paste(im,(i%4*324,i//4*576))
+        contact=Image.new('RGB',(1296,1152),NAVY)
+        for j,im in enumerate(thumbs):contact.paste(im,(j%4*324,j//4*576))
         contact.save(out/'mobile-contact-sheet.png')
-        closing=next(s for s in data['scenes'] if s['scene']==6)
-        completed_at=(data.get('recap_hold_start',closing['end']-2.0)+data.get('recap_hold_end',closing['end']))/2
-        recap=scene(5,1.0,elapsed=completed_at-closing['start'],recap=data.get('recap_cues'),scene_duration=closing['end']-closing['start'])
-        recap.save(ROOT/'recap.png')
-        thanks=next((s for s in data['scenes'] if s['scene']==7),None)
-        if thanks:thanks_scene(1.0,elapsed=thanks['end']-thanks['start'],scene_duration=thanks['end']-thanks['start']).save(ROOT/'thanks.png')
+        closing=data['scenes'][-2];t=(data['recap_hold_start']+data['recap_hold_end'])/2
+        proof={key:val-closing['start'] for key,val in data.get('scene_cues_absolute',{}).get('proof',{}).items()}
+        scene(5,1,t-closing['start'],data.get('recap_cues'),closing['end']-closing['start'],proof).save(ROOT/'recap.png')
+        thanks=data['scenes'][-1];thanks_scene(1,thanks['end']-thanks['start'],thanks['end']-thanks['start']).save(ROOT/'thanks.png')
     if a.render:
         frames=math.ceil(data['duration']*FPS)
         cmd=['ffmpeg','-y','-hide_banner','-loglevel','warning','-f','rawvideo','-vcodec','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','pipe:0','-i',str(ROOT/'source/animation/mix.wav'),'-map','0:v','-map','1:a','-vf','scale=in_range=full:out_range=tv:out_color_matrix=bt709,format=yuv420p','-c:v','libx264','-preset','fast','-crf','19','-threads','2','-bsf:v','h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1','-color_range','tv','-colorspace','bt709','-color_trc','bt709','-color_primaries','bt709','-c:a','aac','-b:a','192k','-ar','48000','-ac','2','-t',str(frames/FPS),'-movflags','+faststart',str(ROOT/'video.mp4')]

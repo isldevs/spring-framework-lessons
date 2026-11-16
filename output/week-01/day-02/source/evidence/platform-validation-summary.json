@@ -1,16 +1,16 @@
 {
-  "master_sha256": "5aa13ce8c9dab3ec4d24cb32a188cb495ef8632ba85752281a64c75b72cdfa28",
+  "master_sha256": "91335571e3011105f6aa29f8a8024ac3b4d6d929e9a547b7174cd9f32e0e7a9e",
   "results": [
     {
       "platform": "youtube-shorts",
       "path": "platforms/youtube-shorts/youtube-shorts.mp4",
-      "sha256": "5aa13ce8c9dab3ec4d24cb32a188cb495ef8632ba85752281a64c75b72cdfa28",
+      "sha256": "91335571e3011105f6aa29f8a8024ac3b4d6d929e9a547b7174cd9f32e0e7a9e",
       "byte_identical_to_master": true,
-      "duration_s": 35.65,
+      "duration_s": 35.816667,
       "width": 1080,
       "height": 1920,
       "fps": "60/1",
-      "decoded_frames": 2139,
+      "decoded_frames": 2149,
       "video_codec": "h264",
       "audio_codec": "aac",
       "color_primaries": "bt709",
@@ -27,19 +27,19 @@
       ],
       "cover_byte_identical_to_master": true,
       "subtitles_byte_identical_to_master": true,
-      "subtitle_cues": 16,
+      "subtitle_cues": 18,
       "technical_result": "PASS"
     },
     {
       "platform": "facebook-reels",
       "path": "platforms/facebook-reels/facebook-reels.mp4",
-      "sha256": "5aa13ce8c9dab3ec4d24cb32a188cb495ef8632ba85752281a64c75b72cdfa28",
+      "sha256": "91335571e3011105f6aa29f8a8024ac3b4d6d929e9a547b7174cd9f32e0e7a9e",
       "byte_identical_to_master": true,
-      "duration_s": 35.65,
+      "duration_s": 35.816667,
       "width": 1080,
       "height": 1920,
       "fps": "60/1",
-      "decoded_frames": 2139,
+      "decoded_frames": 2149,
       "video_codec": "h264",
       "audio_codec": "aac",
       "color_primaries": "bt709",
@@ -56,7 +56,7 @@
       ],
       "cover_byte_identical_to_master": true,
       "subtitles_byte_identical_to_master": true,
-      "subtitle_cues": 16,
+      "subtitle_cues": 18,
       "technical_result": "PASS"
     }
   ],

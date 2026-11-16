@@ -1,1 +1,1 @@
-Spring dependency injection, Spring DI, constructor injection, Spring Framework, Java, component scanning, ComponentScan, Spring beans, Repository, Service, Autowired, dependency graph, iSLDevs
+ApplicationContext, Spring Framework, Spring IoC, bean definitions, managed beans, singleton beans, getBean, AnnotationConfigApplicationContext, Spring lifecycle, application events, Java, iSLDevs

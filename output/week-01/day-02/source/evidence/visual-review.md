@@ -1,0 +1,9 @@
+# Actual encoded visual inspection
+
+The production agent viewed three actual decoded contact sheets: `final-opening-mobile-contact.png` (0, .25, .5, 1 and 2 seconds), `final-decoded-mobile-contact.png` (all seven scenes at 360×640 scale), and `final-decoded-transition-contact.png` (before/after all six scene cuts). The opening has an immediate concrete definition-versus-instance comparison with changing metadata/object highlights, rather than a title-card hold. The definition paper remains when its object appears; the lookup returns a reference while the managed Service remains inside the context. Captions, code, event/close sequence, proof lines, recap and Thanks card have no observed clipping or collisions at those preview scales.
+
+Source/Java review confirms the illustrated BeanFactory area is limited to the demo application beans. Infrastructure beans and the Config definition are not represented as absent. Configuration registration precedes refresh; the repo/service definitions are discovered inside refresh before their corresponding ordinary singleton instances. The completed reference graph precedes lookup. The Java example actually handles one DemoEvent and performs singleton cleanup on close.
+
+Automated evidence separately checks all2149frame timestamps/full decoding, 120unique core opening frames, 249source safe-bound samples, 120encoded recap-hold comparisons and the actual last Thanks frame. Independent editorial and Java agents reviewed source-preview stills and technical accuracy; those reviews did not decode the new MP4 or listen to narration.
+
+This is still-frame inspection plus automated animation/timing verification. No continuous real-time playback on a physical phone or auditory listening review is claimed. Humanlike voice naturalness, subtle artifacts, pronunciation acceptance and perceived age remain unverified by listening.

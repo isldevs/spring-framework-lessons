@@ -1,13 +1,11 @@
-How does Spring get a repository into your service?
+ApplicationContext holds more than objects. Bean definitions describe what to build; managed instances are the actual objects.
 
-Follow a configured component scan, bean-definition registration, a constructor parameter matched by type, and the repository reference passed into OrderService before application use.
+Follow an AnnotationConfigApplicationContext as it registers configuration, refreshes, creates the demo's non-lazy singleton beans and returns an already wired service through getBean.
 
-This Java example has one Repo bean and one OrderService constructor. Spring supplies the same repository bean from the context; that single constructor does not need @Autowired.
+The context also dispatches an application event and runs managed bean cleanup when closed. The runnable example checks bean identity, one handled event and cleanup. A separate lazy-bean test shows that a definition can exist before its object is created.
 
 Official Spring references:
-https://docs.spring.io/spring-framework/reference/core/beans/classpath-scanning.html
-https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html
+https://docs.spring.io/spring-framework/6.2/reference/core/beans/basics.html
+https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html
 
-iSLDevs — Java and Spring, made visual.
-
-#SpringFramework #DependencyInjection #Java #SpringDI #Shorts #iSLDevs
+#ApplicationContext #SpringFramework #SpringIoC #Java #DependencyInjection #Shorts #iSLDevs

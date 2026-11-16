@@ -1,37 +1,87 @@
 {
-  "compile_exit_code": 0,
-  "program_exit_code": 0,
-  "compile_stderr_empty": true,
-  "program_stderr_empty": true,
-  "stdout_lines": [
-    "App starts Spring with Config.class",
-    "definitions registered: repo, orderService",
-    "Repo created",
-    "OrderService constructed with Repo",
-    "context ready",
-    "same Repo bean: true",
-    "application result: ready",
-    "scanned definitions: repo, orderService"
-  ],
-  "runtime": "openjdk version \"21.0.13\" 2026-10-20\nOpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)",
-  "spring_framework": "6.2.11",
-  "ecj": "3.40.0",
+  "spring_framework_version": "6.2.11",
+  "micrometer_version": "1.15.4",
+  "compiler": "ECJ3.40.0",
   "class_file_target": "Java17",
+  "runtime": "openjdk version \"21.0.13\" 2026-10-20\nOpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)",
+  "compile_main_exit_code": 0,
+  "compile_tests_exit_code": 0,
+  "junit_exit_code": 0,
+  "application_exit_code": 0,
+  "compile_stderr_empty": true,
+  "junit_stderr_empty": true,
+  "application_stderr_empty": true,
+  "junit_reports": [
+    {
+      "file": "build/test-results/TEST-junit-jupiter.xml",
+      "name": "JUnit Jupiter",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.222",
+      "hostname": "5d163ff444a0",
+      "timestamp": "2026-11-16T05:00:09"
+    },
+    {
+      "file": "build/test-results/TEST-junit-platform-suite.xml",
+      "name": "JUnit Platform Suite",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.002",
+      "hostname": "5d163ff444a0",
+      "timestamp": "2026-11-16T05:00:08"
+    },
+    {
+      "file": "build/test-results/TEST-junit-vintage.xml",
+      "name": "JUnit Vintage",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.001",
+      "hostname": "5d163ff444a0",
+      "timestamp": "2026-11-16T05:00:09"
+    }
+  ],
+  "tests_found": 2,
+  "tests_succeeded": 2,
+  "tests_failed": 0,
+  "proof_lines": [
+    "definitions before instances: true",
+    "repo created",
+    "service created with repo",
+    "context refreshed",
+    "same service: true",
+    "events handled: 1",
+    "service cleanup",
+    "cleanup called: true",
+    "lazy definition before instance: true"
+  ],
+  "application_stdout_lines": [
+    "context created",
+    "configuration registered",
+    "bean definitions: repo, service",
+    "instances at definition stage: 0",
+    "repo created",
+    "service created with repo",
+    "context refreshed",
+    "same service: true",
+    "service result: hello from repo",
+    "events handled: 1",
+    "service cleanup",
+    "cleanup called: true"
+  ],
   "source_sha256": {
-    "src/lesson/di/Config.java": "9879a8781c6ce9d9d6c6c22c253a08163ab69e1a11856c84a92f11545bba459c",
-    "src/lesson/di/DiDemo.java": "982f40bbcf57fe7a645ea8702e676268fb08324cbf92b4f354707a6e6286ae86",
-    "src/lesson/di/OrderService.java": "8df83a5b1ffd04d40afeddb1cfc1b405001ed7081fcab4334bcb5b4ab0825b9e",
-    "src/lesson/di/Repo.java": "ad0acf6cbdd71c6d753f777ceb3492599d56ae78d608dcb19fc560b7c6bdec85"
+    "src/main/java/lesson/context/Config.java": "48e247fbf8689594de042ca1cbcbdb8392e10fc0728d70b6de28ff4c4cc182d3",
+    "src/main/java/lesson/context/ContextDemo.java": "b8c71848f87e5e5b138f173a35ad5a9021da0e4a67a0df59db40c44c178bdd79",
+    "src/main/java/lesson/context/DemoEvent.java": "f32305000343e5f98fd40718a4e9b36d1d005fe6a240843abb1e72e30f5c4c04",
+    "src/main/java/lesson/context/Repo.java": "b4c9dd4ed06cd3046b7d7e2c90edc3f8eaa98bafee3ef0f50b004fbf703a5dbb",
+    "src/main/java/lesson/context/Service.java": "f4777bdc6d6bedf333e3885f465423aa326c97e1154f3c986e7fd7ebdaebf382",
+    "src/main/java/lesson/context/Trace.java": "83f49d854db58f8154cc126bf1b4db0fed5f15d6f80b8ca8ca0bbec2c1149cc5",
+    "src/test/java/lesson/context/ApplicationContextTests.java": "c00cdc98a65fcaf400e172199451153ea46675855c27df86c5fdc5b46488b5ab"
   },
-  "dependency_hash_check_exit_code": 0,
-  "verified_assertions": [
-    "configured component definitions exist before singleton constructors",
-    "Repo constructed before OrderService receives it",
-    "OrderService wired before context ready/application use",
-    "single unannotated constructor used",
-    "injected Repo is same managed Repo bean",
-    "one unambiguous Repo candidate",
-    "default singleton lookup does not reconstruct graph",
-    "application reaches repository through injected service"
-  ]
+  "scope": "Actual Spring6.2.11 explicit register/refresh/getBean/publishEvent/close lifecycle, BeanDefinition-before-singleton observation and separate lazy-definition test."
 }

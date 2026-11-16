@@ -28,7 +28,7 @@ def main():
         assert (v['codec_name'],v['width'],v['height'],v['avg_frame_rate'],a['codec_name'])==('h264',1080,1920,'60/1','aac')
         assert all(v[k]=='bt709' for k in ['color_space','color_transfer','color_primaries'])
         assert v['color_range']=='tv' and a['channels']==2 and a['sample_rate']=='48000'
-        assert 35<=duration<45 and abs(duration-qa['duration'])<.002
+        assert 35<=duration<=40 and duration<45 and abs(duration-qa['duration'])<.002
         cmd=['ffmpeg','-v','error','-i',str(video),'-f','null','-'];p=subprocess.run(cmd,capture_output=True,text=True)
         (ROOT/'source/evidence'/f'platform-{name}-decode.stderr.txt').write_text(p.stderr)
         write_json(ROOT/'source/evidence'/f'platform-{name}-decode.command.json',{'command':cmd,'exit_code':p.returncode})
@@ -38,7 +38,7 @@ def main():
         notes=out/'upload-notes.md';text=notes.read_text()
         text=re.sub(r'\d+\.\d+-second',f'{duration:.6f}-second',text)
         text=text.replace('[the verification report](../../verification-report.md)','[technical and voice review notes](technical-checks.md)')
-        if 'closing recap' not in text.lower():text+='\nThe closing recap connects configured component scanning, registered definitions, Repo type resolution, constructor injection and application use. The completed diagram remains visible for at least two seconds.\n'
+        if 'closing recap' not in text.lower():text+='\nThe closing recap connects context registration, refresh, bean definitions, managed instances, getBean lookup, event publication and close cleanup. The completed diagram remains visible for at least two seconds.\n'
         notes.write_text(text)
         (out/'technical-checks.md').write_text(f'''# {label} technical checks
 
@@ -48,7 +48,7 @@ def main():
 - Rec.709 matrix/transfer/primaries, limited range, yuv420p 8-bit SDR confirmed by actual FFprobe.
 - Actual full decode exit 0, empty error log; {v['nb_read_frames']} video frames.
 - Byte-identical lossless copy of the master. Video SHA-256: `{master_hash}`.
-- Exact supplied cover from 0–1 s; burned English captions; separate SRT with {len(timing['captions'])} valid cues.
+- Immediate spoken and animated mechanism hook from frame one; separate branded cover PNG; burned English captions; separate SRT with {len(timing['captions'])} valid cues.
 - Progressive closing recap, with completed diagram held for {timing['recap_hold_seconds']:.2f}s before a separate Thanks for watching end card. User authorizes up to 45 s; this export stays strictly below 45 s.
 - Encoded master loudness {qa['integrated_loudness_lufs']:.2f}LUFS, true peak {qa['true_peak_dbtp']:.2f}dBTP.
 - Voice: local Kokoro 80% am_puck / 20% am_fenrir, adult male explanatory style. Independent base.en ASR: {asr['reference_words']} expected words, raw normalized WER {asr['normalized_word_error_rate']:.6f}; raw transcript and alignment provenance retained in production source. {supplement_note}

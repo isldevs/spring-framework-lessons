@@ -1,6 +1,6 @@
 """Independent late-phrase ASR when full-stream decoding drops the short outro.
 
-This never rewrites the original transcript/score. It permits a supplemental
+This never rewrites the original transcript/score. Alignment comparison treats recognized 'clean up' as the spoken noun 'cleanup' only; raw WER remains strict. It permits a supplemental
 alignment only when the full transcript is an exact prefix of the script and
 all omitted words are precisely the separately synthesized final utterance.
 """
@@ -10,7 +10,7 @@ import numpy as np,soundfile as sf
 from scipy.signal import resample_poly
 ROOT=Path(__file__).resolve().parent
 
-def norm(s):return re.findall(r'[a-z0-9]+',s.lower().replace('’','').replace("'",''))
+def norm(s):return re.findall(r'[a-z0-9]+',s.lower().replace('clean up','cleanup').replace('’','').replace("'",''))
 def main(model=None):
  d=json.loads((ROOT.parent/'timing.json').read_text());a=json.loads((ROOT/'asr.json').read_text())
  ref=norm(' '.join(x['text'] for x in d['phrases']));full=norm(' '.join(x['text'] for x in a['segments']))

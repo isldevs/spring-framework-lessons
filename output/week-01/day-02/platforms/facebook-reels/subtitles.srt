@@ -1,64 +1,72 @@
 1
-00:00:00,000 --> 00:00:02,194
-How does a repository reach your service?
+00:00:00,000 --> 00:00:01,963
+What's inside ApplicationContext?
 
 2
-00:00:02,374 --> 00:00:04,680
-Configured scanning finds annotated classes
+00:00:02,083 --> 00:00:04,500
+Bean definitions are recipes.
 
 3
-00:00:04,680 --> 00:00:07,163
-and registers bean definitions.
+00:00:04,500 --> 00:00:05,160
+Managed instances
 
 4
-00:00:07,383 --> 00:00:10,180
-A single constructor needs a repository.
+00:00:05,160 --> 00:00:07,376
+are the actual objects.
 
 5
-00:00:10,180 --> 00:00:12,751
-Spring resolves that parameter by type.
+00:00:07,556 --> 00:00:09,420
+Register configuration,
 
 6
-00:00:12,971 --> 00:00:15,120
-Spring creates the repository,
+00:00:09,420 --> 00:00:10,800
+then refresh.
 
 7
-00:00:15,120 --> 00:00:16,220
-then passes its reference
+00:00:10,800 --> 00:00:12,020
+Spring reads the definitions
 
 8
-00:00:16,220 --> 00:00:18,222
-into the service constructor.
+00:00:12,020 --> 00:00:14,797
+and creates our singleton beans.
 
 9
-00:00:18,442 --> 00:00:19,620
-Our Java run confirms
+00:00:14,977 --> 00:00:16,880
+Calling getBean returns the service,
 
 10
-00:00:19,620 --> 00:00:21,900
-the same repository bean.
+00:00:16,880 --> 00:00:19,861
+already wired to its repository.
 
 11
-00:00:21,900 --> 00:00:23,200
-Only then does the application
+00:00:20,041 --> 00:00:22,480
+The context also publishes events.
 
 12
-00:00:23,200 --> 00:00:24,934
-use the service.
+00:00:22,480 --> 00:00:22,920
+Close it,
 
 13
-00:00:25,154 --> 00:00:27,820
-Scan, register, resolve, inject, then use.
+00:00:22,920 --> 00:00:24,956
+and managed cleanup runs.
 
 14
-00:00:27,820 --> 00:00:29,760
-Spring supplies dependencies;
+00:00:25,136 --> 00:00:27,040
+Our tests confirm: same service,
 
 15
-00:00:29,760 --> 00:00:32,209
-your service doesn’t construct them.
+00:00:27,040 --> 00:00:28,580
+one event, cleanup called.
 
 16
-00:00:34,209 --> 00:00:35,300
+00:00:28,580 --> 00:00:30,020
+Definitions describe;
+
+17
+00:00:30,020 --> 00:00:32,276
+instances do the work.
+
+18
+00:00:34,276 --> 00:00:35,462
 Thanks for watching.
 

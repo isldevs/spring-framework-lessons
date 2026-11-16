@@ -1,9 +1,9 @@
-Your service needs a repository. Who supplies it? ☕
+A recipe is not an object. Neither is a bean definition. ☕
 
-Spring finds annotated classes in a configured scan, registers bean definitions, resolves the constructor's Repo parameter, and passes that reference into OrderService.
+Look inside ApplicationContext: configuration → refresh → managed beans → getBean. Then see the same context dispatch an event and run cleanup when it closes.
 
-Our Java example verifies that the injected reference is the same Repo bean from the context. The application uses the service after its dependency is wired.
+The Java tests check the same service reference, one handled event and cleanup. A separate lazy-bean test shows why a definition can exist without an instance.
 
-Scan → Register → Resolve → Inject → Use.
+Definitions describe. Instances do the work.
 
-#SpringFramework #DependencyInjection #Java #SpringDI #JavaDevelopers #iSLDevs
+#ApplicationContext #SpringFramework #SpringIoC #Java #JavaDevelopers #iSLDevs

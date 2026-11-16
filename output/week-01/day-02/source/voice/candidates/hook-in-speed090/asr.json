@@ -1,0 +1,492 @@
+{
+  "model": "faster-whisper base.en int8",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.26,
+      "text": " What's an application context?",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " What's",
+          "start": 0.0,
+          "end": 0.2,
+          "probability": 0.941660612821579
+        },
+        {
+          "word": " an",
+          "start": 0.2,
+          "end": 0.26,
+          "probability": 0.830457329750061
+        },
+        {
+          "word": " application",
+          "start": 0.26,
+          "end": 0.58,
+          "probability": 0.8955510854721069
+        },
+        {
+          "word": " context?",
+          "start": 0.58,
+          "end": 1.26,
+          "probability": 0.9961368441581726
+        }
+      ]
+    },
+    {
+      "start": 2.0,
+      "end": 3.48,
+      "text": " Bean definitions are recipes.",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " Bean",
+          "start": 2.0,
+          "end": 2.1,
+          "probability": 0.8459999561309814
+        },
+        {
+          "word": " definitions",
+          "start": 2.1,
+          "end": 2.56,
+          "probability": 0.9905219078063965
+        },
+        {
+          "word": " are",
+          "start": 2.56,
+          "end": 3.12,
+          "probability": 0.9962576627731323
+        },
+        {
+          "word": " recipes.",
+          "start": 3.12,
+          "end": 3.48,
+          "probability": 0.9917152523994446
+        }
+      ]
+    },
+    {
+      "start": 4.4,
+      "end": 6.5,
+      "text": " Managed instances are the actual objects.",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " Managed",
+          "start": 4.4,
+          "end": 4.64,
+          "probability": 0.9675686359405518
+        },
+        {
+          "word": " instances",
+          "start": 4.64,
+          "end": 5.06,
+          "probability": 0.9961601495742798
+        },
+        {
+          "word": " are",
+          "start": 5.06,
+          "end": 5.52,
+          "probability": 0.9992371797561646
+        },
+        {
+          "word": " the",
+          "start": 5.52,
+          "end": 5.64,
+          "probability": 0.9977571368217468
+        },
+        {
+          "word": " actual",
+          "start": 5.64,
+          "end": 5.96,
+          "probability": 0.9995958209037781
+        },
+        {
+          "word": " objects.",
+          "start": 5.96,
+          "end": 6.5,
+          "probability": 0.9955912828445435
+        }
+      ]
+    },
+    {
+      "start": 7.4,
+      "end": 9.64,
+      "text": " Register configuration, then refresh.",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " Register",
+          "start": 7.4,
+          "end": 7.76,
+          "probability": 0.9611908793449402
+        },
+        {
+          "word": " configuration,",
+          "start": 7.76,
+          "end": 8.28,
+          "probability": 0.9832582473754883
+        },
+        {
+          "word": " then",
+          "start": 9.28,
+          "end": 9.34,
+          "probability": 0.9980348944664001
+        },
+        {
+          "word": " refresh.",
+          "start": 9.34,
+          "end": 9.64,
+          "probability": 0.9813432097434998
+        }
+      ]
+    },
+    {
+      "start": 10.66,
+      "end": 11.7,
+      "text": " Spring reads the definitions",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 10.66,
+          "end": 10.66,
+          "probability": 0.9742553234100342
+        },
+        {
+          "word": " reads",
+          "start": 10.66,
+          "end": 11.08,
+          "probability": 0.9966515898704529
+        },
+        {
+          "word": " the",
+          "start": 11.08,
+          "end": 11.34,
+          "probability": 0.9980087876319885
+        },
+        {
+          "word": " definitions",
+          "start": 11.34,
+          "end": 11.7,
+          "probability": 0.9972288012504578
+        }
+      ]
+    },
+    {
+      "start": 12.200000000000001,
+      "end": 13.76,
+      "text": " and creates our singleton beans.",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " and",
+          "start": 11.92,
+          "end": 12.28,
+          "probability": 0.9557872414588928
+        },
+        {
+          "word": " creates",
+          "start": 12.28,
+          "end": 12.6,
+          "probability": 0.994744062423706
+        },
+        {
+          "word": " our",
+          "start": 12.6,
+          "end": 12.9,
+          "probability": 0.9589214324951172
+        },
+        {
+          "word": " singleton",
+          "start": 12.9,
+          "end": 13.52,
+          "probability": 0.7623145580291748
+        },
+        {
+          "word": " beans.",
+          "start": 13.52,
+          "end": 13.76,
+          "probability": 0.9694905281066895
+        }
+      ]
+    },
+    {
+      "start": 14.76,
+      "end": 16.74,
+      "text": " Calling get bean returns the service",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " Calling",
+          "start": 14.76,
+          "end": 15.14,
+          "probability": 0.94586181640625
+        },
+        {
+          "word": " get",
+          "start": 15.14,
+          "end": 15.38,
+          "probability": 0.6871541142463684
+        },
+        {
+          "word": " bean",
+          "start": 15.38,
+          "end": 15.6,
+          "probability": 0.39879781007766724
+        },
+        {
+          "word": " returns",
+          "start": 15.6,
+          "end": 16.08,
+          "probability": 0.9976366758346558
+        },
+        {
+          "word": " the",
+          "start": 16.08,
+          "end": 16.38,
+          "probability": 0.9961995482444763
+        },
+        {
+          "word": " service",
+          "start": 16.38,
+          "end": 16.74,
+          "probability": 0.9968350529670715
+        }
+      ]
+    },
+    {
+      "start": 16.74,
+      "end": 19.02,
+      "text": " already wired to its repository.",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " already",
+          "start": 16.74,
+          "end": 17.32,
+          "probability": 0.5685857534408569
+        },
+        {
+          "word": " wired",
+          "start": 17.32,
+          "end": 17.8,
+          "probability": 0.9973817467689514
+        },
+        {
+          "word": " to",
+          "start": 17.8,
+          "end": 18.14,
+          "probability": 0.9991279244422913
+        },
+        {
+          "word": " its",
+          "start": 18.14,
+          "end": 18.32,
+          "probability": 0.9622672200202942
+        },
+        {
+          "word": " repository.",
+          "start": 18.32,
+          "end": 19.02,
+          "probability": 0.9978830218315125
+        }
+      ]
+    },
+    {
+      "start": 19.96,
+      "end": 21.9,
+      "text": " The context also publishes events,",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " The",
+          "start": 19.96,
+          "end": 19.98,
+          "probability": 0.9233331084251404
+        },
+        {
+          "word": " context",
+          "start": 19.98,
+          "end": 20.38,
+          "probability": 0.989850640296936
+        },
+        {
+          "word": " also",
+          "start": 20.38,
+          "end": 20.86,
+          "probability": 0.9980971217155457
+        },
+        {
+          "word": " publishes",
+          "start": 20.86,
+          "end": 21.44,
+          "probability": 0.995908260345459
+        },
+        {
+          "word": " events,",
+          "start": 21.44,
+          "end": 21.9,
+          "probability": 0.9978606104850769
+        }
+      ]
+    },
+    {
+      "start": 22.34,
+      "end": 24.08,
+      "text": " close it and managed cleanup runs.",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " close",
+          "start": 22.34,
+          "end": 22.52,
+          "probability": 0.8855765461921692
+        },
+        {
+          "word": " it",
+          "start": 22.52,
+          "end": 22.8,
+          "probability": 0.9435383677482605
+        },
+        {
+          "word": " and",
+          "start": 22.8,
+          "end": 23.02,
+          "probability": 0.48377275466918945
+        },
+        {
+          "word": " managed",
+          "start": 23.02,
+          "end": 23.36,
+          "probability": 0.7845566868782043
+        },
+        {
+          "word": " cleanup",
+          "start": 23.36,
+          "end": 23.66,
+          "probability": 0.4645899832248688
+        },
+        {
+          "word": " runs.",
+          "start": 23.66,
+          "end": 24.08,
+          "probability": 0.9970811009407043
+        }
+      ]
+    },
+    {
+      "start": 24.8,
+      "end": 28.44,
+      "text": " Our tests confirm same service one event clean up called",
+      "avg_logprob": -0.15445880795779982,
+      "words": [
+        {
+          "word": " Our",
+          "start": 24.8,
+          "end": 25.1,
+          "probability": 0.9838354587554932
+        },
+        {
+          "word": " tests",
+          "start": 25.1,
+          "end": 25.3,
+          "probability": 0.896744966506958
+        },
+        {
+          "word": " confirm",
+          "start": 25.3,
+          "end": 25.9,
+          "probability": 0.9802246689796448
+        },
+        {
+          "word": " same",
+          "start": 25.9,
+          "end": 26.38,
+          "probability": 0.9757258892059326
+        },
+        {
+          "word": " service",
+          "start": 26.38,
+          "end": 26.92,
+          "probability": 0.9743680357933044
+        },
+        {
+          "word": " one",
+          "start": 26.92,
+          "end": 27.22,
+          "probability": 0.9690653085708618
+        },
+        {
+          "word": " event",
+          "start": 27.22,
+          "end": 27.54,
+          "probability": 0.9943704009056091
+        },
+        {
+          "word": " clean",
+          "start": 27.54,
+          "end": 27.94,
+          "probability": 0.2940577566623688
+        },
+        {
+          "word": " up",
+          "start": 27.94,
+          "end": 28.16,
+          "probability": 0.7888908982276917
+        },
+        {
+          "word": " called",
+          "start": 28.16,
+          "end": 28.44,
+          "probability": 0.9753274321556091
+        }
+      ]
+    },
+    {
+      "start": 28.44,
+      "end": 31.48,
+      "text": " definitions describe instances do the work.",
+      "avg_logprob": -0.6333266258239746,
+      "words": [
+        {
+          "word": " definitions",
+          "start": 28.44,
+          "end": 29.32,
+          "probability": 0.2547498643398285
+        },
+        {
+          "word": " describe",
+          "start": 29.32,
+          "end": 29.92,
+          "probability": 0.9851823449134827
+        },
+        {
+          "word": " instances",
+          "start": 29.92,
+          "end": 30.68,
+          "probability": 0.9704996943473816
+        },
+        {
+          "word": " do",
+          "start": 30.68,
+          "end": 31.1,
+          "probability": 0.965231716632843
+        },
+        {
+          "word": " the",
+          "start": 31.1,
+          "end": 31.22,
+          "probability": 0.9940316081047058
+        },
+        {
+          "word": " work.",
+          "start": 31.22,
+          "end": 31.48,
+          "probability": 0.9990924596786499
+        }
+      ]
+    }
+  ]
+}

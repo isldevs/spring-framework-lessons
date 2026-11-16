@@ -6,92 +6,102 @@
     "am_fenrir": 0.2
   },
   "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
-  "speed": 1.02,
+  "speed": 0.9,
+  "hook_speed": 1.0,
+  "inference_speed_per_scene": {
+    "1": 1.0,
+    "2": 0.9,
+    "3": 0.9,
+    "4": 0.9,
+    "5": 0.9,
+    "6": 0.9,
+    "7": 0.9
+  },
   "one_inference_batch_per_scene": true,
   "recap_hold_seconds": 2.0,
-  "recap_hold_start": 32.209083,
-  "recap_hold_end": 34.209083,
-  "thanks_start": 34.209083,
-  "thanks_end": 35.649833,
-  "duration": 35.64983333333333,
+  "recap_hold_start": 32.275958,
+  "recap_hold_end": 34.275958,
+  "thanks_start": 34.275958,
+  "thanks_end": 35.812,
+  "duration": 35.812,
   "scenes": [
     {
       "scene": 1,
       "start": 0.0,
-      "end": 2.373917
+      "end": 2.083
     },
     {
       "scene": 2,
-      "start": 2.373917,
-      "end": 7.382792
+      "start": 2.083,
+      "end": 7.556042
     },
     {
       "scene": 3,
-      "start": 7.382792,
-      "end": 12.97075
+      "start": 7.556042,
+      "end": 14.976708
     },
     {
       "scene": 4,
-      "start": 12.97075,
-      "end": 18.441708
+      "start": 14.976708,
+      "end": 20.040875
     },
     {
       "scene": 5,
-      "start": 18.441708,
-      "end": 25.153958
+      "start": 20.040875,
+      "end": 25.13625
     },
     {
       "scene": 6,
-      "start": 25.153958,
-      "end": 34.209083
+      "start": 25.13625,
+      "end": 34.275958
     },
     {
       "scene": 7,
-      "start": 34.209083,
-      "end": 35.649833
+      "start": 34.275958,
+      "end": 35.812
     }
   ],
   "phrases": [
     {
       "scene": 1,
       "start": 0.0,
-      "end": 2.193917,
-      "text": "How does a repository reach your service?"
+      "end": 1.963,
+      "text": "What's inside application context?"
     },
     {
       "scene": 2,
-      "start": 2.373917,
-      "end": 7.162792,
-      "text": "Configured scanning finds annotated classes and registers bean definitions."
+      "start": 2.083,
+      "end": 7.376042,
+      "text": "Bean definitions are recipes. Managed instances are the actual objects."
     },
     {
       "scene": 3,
-      "start": 7.382792,
-      "end": 12.75075,
-      "text": "A single constructor needs a repository. Spring resolves that parameter by type."
+      "start": 7.556042,
+      "end": 14.796708,
+      "text": "Register configuration, then refresh. Spring reads the definitions and creates our singleton beans."
     },
     {
       "scene": 4,
-      "start": 12.97075,
-      "end": 18.221708,
-      "text": "Spring creates the repository, then passes its reference into the service constructor."
+      "start": 14.976708,
+      "end": 19.860875,
+      "text": "Calling get bean returns the service, already wired to its repository."
     },
     {
       "scene": 5,
-      "start": 18.441708,
-      "end": 24.933958,
-      "text": "Our Java run confirms the same repository bean. Only then does the application use the service."
+      "start": 20.040875,
+      "end": 24.95625,
+      "text": "The context also publishes events. Close it, and managed cleanup runs."
     },
     {
       "scene": 6,
-      "start": 25.153958,
-      "end": 32.209083,
-      "text": "Scan, register, resolve, inject, then use. Spring supplies dependencies; your service doesn’t construct them."
+      "start": 25.13625,
+      "end": 32.275958,
+      "text": "Our tests confirm: same service, one event, cleanup called. Definitions describe; instances do the work."
     },
     {
       "scene": 7,
-      "start": 34.209083,
-      "end": 35.299833,
+      "start": 34.275958,
+      "end": 35.462,
       "text": "Thanks for watching."
     }
   ],
@@ -99,145 +109,194 @@
     {
       "scene": 1,
       "start": 0.0,
-      "end": 2.193917,
-      "text": "How does a repository reach your service?"
+      "end": 1.963,
+      "text": "What's inside ApplicationContext?"
     },
     {
       "scene": 2,
-      "start": 2.373917,
-      "end": 4.68,
-      "text": "Configured scanning finds annotated classes"
+      "start": 2.083,
+      "end": 4.5,
+      "text": "Bean definitions are recipes."
     },
     {
       "scene": 2,
-      "start": 4.68,
-      "end": 7.162792,
-      "text": "and registers bean definitions."
+      "start": 4.5,
+      "end": 5.16,
+      "text": "Managed instances"
+    },
+    {
+      "scene": 2,
+      "start": 5.16,
+      "end": 7.376042,
+      "text": "are the actual objects."
     },
     {
       "scene": 3,
-      "start": 7.382792,
-      "end": 10.18,
-      "text": "A single constructor needs a repository."
+      "start": 7.556042,
+      "end": 9.42,
+      "text": "Register configuration,"
     },
     {
       "scene": 3,
-      "start": 10.18,
-      "end": 12.75075,
-      "text": "Spring resolves that parameter by type."
+      "start": 9.42,
+      "end": 10.8,
+      "text": "then refresh."
+    },
+    {
+      "scene": 3,
+      "start": 10.8,
+      "end": 12.02,
+      "text": "Spring reads the definitions"
+    },
+    {
+      "scene": 3,
+      "start": 12.02,
+      "end": 14.796708,
+      "text": "and creates our singleton beans."
     },
     {
       "scene": 4,
-      "start": 12.97075,
-      "end": 15.12,
-      "text": "Spring creates the repository,"
+      "start": 14.976708,
+      "end": 16.88,
+      "text": "Calling getBean returns the service,"
     },
     {
       "scene": 4,
-      "start": 15.12,
-      "end": 16.22,
-      "text": "then passes its reference"
-    },
-    {
-      "scene": 4,
-      "start": 16.22,
-      "end": 18.221708,
-      "text": "into the service constructor."
+      "start": 16.88,
+      "end": 19.860875,
+      "text": "already wired to its repository."
     },
     {
       "scene": 5,
-      "start": 18.441708,
-      "end": 19.62,
-      "text": "Our Java run confirms"
+      "start": 20.040875,
+      "end": 22.48,
+      "text": "The context also publishes events."
     },
     {
       "scene": 5,
-      "start": 19.62,
-      "end": 21.9,
-      "text": "the same repository bean."
+      "start": 22.48,
+      "end": 22.92,
+      "text": "Close it,"
     },
     {
       "scene": 5,
-      "start": 21.9,
-      "end": 23.2,
-      "text": "Only then does the application"
-    },
-    {
-      "scene": 5,
-      "start": 23.2,
-      "end": 24.933958,
-      "text": "use the service."
+      "start": 22.92,
+      "end": 24.95625,
+      "text": "and managed cleanup runs."
     },
     {
       "scene": 6,
-      "start": 25.153958,
-      "end": 27.82,
-      "text": "Scan, register, resolve, inject, then use."
+      "start": 25.13625,
+      "end": 27.04,
+      "text": "Our tests confirm: same service,"
     },
     {
       "scene": 6,
-      "start": 27.82,
-      "end": 29.76,
-      "text": "Spring supplies dependencies;"
+      "start": 27.04,
+      "end": 28.58,
+      "text": "one event, cleanup called."
     },
     {
       "scene": 6,
-      "start": 29.76,
-      "end": 32.209083,
-      "text": "your service doesn’t construct them."
+      "start": 28.58,
+      "end": 30.02,
+      "text": "Definitions describe;"
+    },
+    {
+      "scene": 6,
+      "start": 30.02,
+      "end": 32.275958,
+      "text": "instances do the work."
     },
     {
       "scene": 7,
-      "start": 34.209083,
-      "end": 35.299833,
+      "start": 34.275958,
+      "end": 35.462,
       "text": "Thanks for watching."
     }
   ],
-  "caption_method": "Seven complete scene utterances, one inference batch per scene; exact sample-derived scene edits. Short display captions and DI step anchors use unprompted faster-whisper base.en word starts (approximate20ms grid). Raw full-stream ASR/WER retained unchanged. The short late Thanks crop is independently transcribed without a prompt when omitted by the full decoder; its absolute word timing is supplemental-asr.json. Scan starts at the exact scene edit because its ASR word duration is zero. Recap complete cue is a derived animation completion .65s after spoken use, with an additional exact2s reading hold before Thanks.",
+  "caption_method": "Seven coherent single-batch utterances; exact sample-derived scene edits. Caption and event anchors use independent unprompted base.en ASR (~20ms grid). Public ApplicationContext/getBean spelling is explicitly normalized to the spoken words for comparison. Raw transcript/WER unchanged; independent outro crop used only if required. Repo/service and recap substeps are documented illustrative timings, not runtime measurements. Exact2s recap reading hold precedes separate spoken Thanks.",
   "recap_cues": {
     "relative_to": "scene_start",
-    "register": 0.266042,
-    "resolve": 0.766042,
-    "inject": 1.226042,
-    "use": 2.406042,
-    "scan": 0.0,
-    "complete": 3.056042,
-    "recap_hold_start": 7.055125,
-    "recap_hold_end": 9.055125
+    "register": 0.0,
+    "definitions": 0.35,
+    "create": 0.8,
+    "lookup": 0.88375,
+    "event": 2.20375,
+    "close": 2.54375,
+    "complete": 3.54375,
+    "recap_hold_start": 7.139708,
+    "recap_hold_end": 9.139708
   },
   "recap_cues_absolute": {
-    "register": 25.42,
-    "resolve": 25.92,
-    "inject": 26.38,
-    "use": 27.56,
-    "scan": 25.153958,
-    "complete": 28.21,
-    "recap_hold_start": 32.209083,
-    "recap_hold_end": 34.209083
+    "register": 25.13625,
+    "definitions": 25.48625,
+    "create": 25.93625,
+    "lookup": 26.02,
+    "event": 27.34,
+    "close": 27.68,
+    "complete": 28.68,
+    "recap_hold_start": 32.275958,
+    "recap_hold_end": 34.275958
   },
   "scene_cues_absolute": {
-    "discovery": {
-      "scan": 2.88,
-      "find": 3.1,
-      "register": 5.16
+    "distinction": {
+      "recipe": 2.083,
+      "definitions": 2.22,
+      "instance": 4.5,
+      "objects": 6.08
     },
-    "resolution": {
-      "constructor": 7.72,
-      "repository": 8.92,
-      "resolve": 10.32,
-      "type": 11.9
+    "initialization": {
+      "register": 7.556042,
+      "configuration": 7.9,
+      "refresh": 9.46,
+      "definitions": 11.46,
+      "create": 12.4,
+      "repo": 12.48,
+      "service": 13.08
     },
-    "injection": {
-      "create": 13.14,
-      "pass": 15.18,
-      "reference": 15.9,
-      "constructor": 17.06
+    "mechanism": {
+      "register": 7.556042,
+      "configuration": 7.9,
+      "refresh": 9.46,
+      "definitions": 11.46,
+      "create": 12.4,
+      "repo": 12.48,
+      "service": 13.08
+    },
+    "lookup": {
+      "request": 15.26,
+      "return": 15.74,
+      "returns": 15.74,
+      "wired": 17.46,
+      "repository": 18.46
+    },
+    "services": {
+      "event": 21.56,
+      "publish": 20.98,
+      "close": 22.48,
+      "cleanup": 23.48
     },
     "proof": {
-      "confirm": 19.16,
-      "same": 20.0,
-      "application": 22.84,
-      "use": 23.2
+      "same": 26.02,
+      "event": 27.34,
+      "cleanup": 27.68,
+      "takeaway": 28.58,
+      "complete": 28.68
+    },
+    "recap": {
+      "register": 25.13625,
+      "definitions": 25.48625,
+      "create": 25.93625,
+      "lookup": 26.02,
+      "event": 27.34,
+      "close": 27.68,
+      "complete": 28.68,
+      "recap_hold_start": 32.275958,
+      "recap_hold_end": 34.275958
     }
-  }
+  },
+  "opening_cover_hold": false,
+  "hook_text_display": "What's inside ApplicationContext?",
+  "hook_asr_last_word_end": 1.4
 }

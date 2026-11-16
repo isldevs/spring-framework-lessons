@@ -15,9 +15,9 @@ assert sr==SR
 speech=raw.astype(np.float64)/np.iinfo(raw.dtype).max
 if speech.ndim>1:speech=speech.mean(axis=1)
 speech=np.pad(speech,(0,max(0,n-len(speech))))[:n]
-# Soft harmonic pad: D major 9, with smooth independent swells and stereo phase.
+# Soft harmonic pad: C minor add9, with smooth independent swells and stereo phase.
 bed=np.zeros((n,2))
-for k,freq in enumerate([146.832,184.997,220.,329.628]):
+for k,freq in enumerate([130.8128,155.5635,195.9977,293.6648]):
     swell=(.62+.38*np.sin(2*np.pi*(.043+k*.007)*t+k)**2)
     for c in range(2):
         bed[:,c]+=.0024*swell*np.sin(2*np.pi*freq*t+(.13*c*(k+1)))*(.7+.3*np.sin(2*np.pi*.13*t+k))
@@ -29,11 +29,11 @@ bed*= (duck*fade)[:,None]
 fx=np.zeros((n,2));events=[]
 cues=data['scene_cues_absolute'];recap=data['recap_cues_absolute']
 # Each subtle ping marks the same narrated reveal used by the animation.
-marks=[(cues['discovery']['register'],'definitions registered'),
-       (cues['resolution']['type'],'unique Repo type matched'),
-       (cues['injection']['pass'],'Repo reference injection begins'),
-       (cues['proof']['application'],'application uses wired service'),
-       (recap['complete'],'complete dependency-injection recap')]
+marks=[(cues['mechanism']['refresh'],'refresh starts definition processing'),
+       (cues['mechanism']['create'],'definitions become managed singleton instances'),
+       (cues['lookup']['returns'],'getBean returns the ready service reference'),
+       (cues['services']['event'],'context publishes the verified event'),
+       (recap['complete'],'complete context lifecycle recap')]
 for i,(start,purpose) in enumerate(marks,1):
     events.append({'time':round(start,6),'purpose':purpose})
     j=int(start*SR);tt=np.arange(int(.20*SR))/SR

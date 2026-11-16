@@ -1,13 +1,11 @@
 # YouTube Shorts upload notes
 
-Use `youtube-shorts.mp4`. It is a 35.650000-second native 1080×1920 vertical MP4: H.264/AAC, 60 FPS, 48 kHz stereo, Rec.709 SDR. English captions are already burned in. The same approved cover is embedded from 0–1 s, and the completed recap is held for two seconds before the Thanks card.
+Approved topic: ApplicationContext. Publish date: **2026-11-17**. Proposed time: **19:00 Asia/Phnom_Penh (UTC+07:00; 12:00 UTC)**. This plan does not schedule or publish anything.
 
-1. Select the MP4, then paste title.txt and description.txt into the corresponding fields. Description already includes hashtags. Tags.txt provides separate comma-separated search tags where a tags field is available.
-2. Use cover.png where custom cover upload is supported. If only a frame can be selected, choose the first frame/opening second of this same MP4.
-3. The separate subtitles.srt is supplied for accessibility and compatible caption-track workflows. Avoid adding a second decorative or automatic on-screen caption layer over the captions already rendered in the video.
-4. Review the actual upload preview, crop, sound and caption visibility. Perceptual voice acceptance remains unverified in this runtime; see technical-checks.md for actual package checks and review limits.
-5. After publication, pinned-comment.txt supplies the optional comment to post and pin manually.
+1. Select `youtube-shorts.mp4` and paste the corresponding fields from title.txt, description.txt, tags.txt and pinned-comment.txt.
+2. Use `cover.png` where the interface accepts a separate custom cover. The video begins with an immediate animated hook; it does not hold the separate cover. If the interface selects only an existing frame, choose a clear opening mechanism frame.
+3. Captions are already burned into the video. Retain `subtitles.srt` for accessibility where supported and avoid a second overlapping automatic/decorative caption layer.
+4. Review the platform's actual preview for audio, crop, text and opening. The technical properties and remaining voice-review limit are documented in `technical-checks.md`. No auditory voice approval was possible in this runtime.
+5. The closing recap shows configuration registration, refresh, definitions, created instances, lookup, event delivery and cleanup; it remains complete for two seconds before a separate Thanks for watching card.
 
-No upload, scheduling or publication has been performed. Public copy contains no internal schedule identifiers. Archive: ../day-02-youtube-shorts-upload.zip in the production output layout.
-
-The closing recap connects configured component scanning, registered definitions, Repo type resolution, constructor injection and application use. The completed diagram remains visible for at least two seconds.
+The default non-lazy singleton example does not claim every bean definition immediately has an instance. The separate lazy-bean test covers that distinction. Public copy contains no week/day/episode numbering. No YouTube/Facebook account upload, scheduling or publication has been performed.

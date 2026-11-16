@@ -1,0 +1,62 @@
+[
+  {
+    "name": "annotation-context",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html",
+    "http_status": 200,
+    "html_sha256": "da884c7bb73fbc12b14d81eb7050573359163366b46cc774a25f312280c5d1f0"
+  },
+  {
+    "name": "factory-postprocessor",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/config/BeanFactoryPostProcessor.html",
+    "http_status": 200,
+    "html_sha256": "119758bc2bc9be2c0ee50b079f356976653f546932b1b68e3ce6b4beab6654b7"
+  },
+  {
+    "name": "abstract-context",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/support/AbstractApplicationContext.html",
+    "http_status": 200,
+    "html_sha256": "34aea6a464f6693c833dcd30638c2562cc4f3549eeef004cc4623c4849e33a61"
+  },
+  {
+    "name": "bean-definition",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/config/BeanDefinition.html",
+    "http_status": 200,
+    "html_sha256": "696de216ff66a429b234cad8052dcb10825f91b5e074567e52eac0d3e8f3192a"
+  },
+  {
+    "name": "bean-definition-reference",
+    "url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/definition.html",
+    "http_status": 200,
+    "html_sha256": "61b33e0b527811f8941374f1d49d69b46299c3a072291c734672089c45a14710"
+  },
+  {
+    "name": "application-context",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/ApplicationContext.html",
+    "http_status": 200,
+    "html_sha256": "6948dd15483fe9efc71f5a68a626cc3b221d1bf6908037f794b1e051402b9806"
+  },
+  {
+    "name": "configurable-context",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html",
+    "http_status": 200,
+    "html_sha256": "6f49ef18c3a28f3a101d8a926f1983d195c9c7655e03b0ee299cf539e477ba18"
+  },
+  {
+    "name": "event-publisher",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/ApplicationEventPublisher.html",
+    "http_status": 200,
+    "html_sha256": "fb1527ee36942866c6e71edeada610f331356b42698e5516f73fe33ac64dd556"
+  },
+  {
+    "name": "disposable-bean",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/DisposableBean.html",
+    "http_status": 200,
+    "html_sha256": "e67ee1c3061a1f22b8f8e88d2286763699c8c0430b412fc243285a8773d1c338"
+  },
+  {
+    "name": "lazy-singletons",
+    "url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/dependencies/factory-lazy-init.html",
+    "http_status": 200,
+    "html_sha256": "e7186a6180163f2fbe6228f7cf5bc9ed3833cd5d362f76e920a9e2bc03e57ac0"
+  }
+]

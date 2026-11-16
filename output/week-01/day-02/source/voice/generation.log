@@ -1,24 +1,24 @@
-synth 0 How does a repository reach your service?
-single scene batch; phonemes 46
-duration 2.1939166666666665 total 2.3739166666666667 phoneme timings 0
-synth 1 Configured scanning finds annotated classes and registers bean definitions.
-single scene batch; phonemes 80
-duration 4.788875 total 7.382791666666666 phoneme timings 0
-synth 2 A single constructor needs a repository. Spring resolves that parameter by type.
-single scene batch; phonemes 88
-duration 5.367958333333333 total 12.970749999999999 phoneme timings 0
-synth 3 Spring creates the repository, then passes its reference into the service constructor.
-single scene batch; phonemes 90
-duration 5.250958333333333 total 18.44170833333333 phoneme timings 0
-synth 4 Our Java run confirms the same repository bean. Only then does the application use the service.
+synth 0 What's inside application context? speed 1.0
+single scene batch; phonemes 38
+duration 1.963 total 2.083 phoneme timings 0
+synth 1 Bean definitions are recipes. Managed instances are the actual objects. speed 0.9
+single scene batch; phonemes 83
+duration 5.293041666666666 total 7.556041666666666 phoneme timings 0
+synth 2 Register configuration, then refresh. Spring reads the definitions and creates our singleton beans. speed 0.9
 single scene batch; phonemes 109
-duration 6.49225 total 25.153958333333332 phoneme timings 0
-synth 5 Scan, register, resolve, inject, then use. Spring supplies dependencies; your service doesn’t construct them.
+duration 7.240666666666667 total 14.976708333333333 phoneme timings 0
+synth 3 Calling get bean returns the service, already wired to its repository. speed 0.9
+single scene batch; phonemes 77
+duration 4.884166666666666 total 20.040875 phoneme timings 0
+synth 4 The context also publishes events. Close it, and managed cleanup runs. speed 0.9
+single scene batch; phonemes 80
+duration 4.915375 total 25.13625 phoneme timings 0
+synth 5 Our tests confirm: same service, one event, cleanup called. Definitions describe; instances do the work. speed 0.9
 single scene batch; phonemes 116
-duration 7.055125 total 34.20908333333333 phoneme timings 0
-synth 6 Thanks for watching.
+duration 7.139708333333333 total 34.275958333333335 phoneme timings 0
+synth 6 Thanks for watching. speed 0.9
 single scene batch; phonemes 21
-duration 1.09075 total 35.64983333333333 phoneme timings 0
+duration 1.1860416666666667 total 35.812000000000005 phoneme timings 0
 {
   "sample_rate": 48000,
   "voice": "am_puck80_fenrir20",
@@ -27,92 +27,102 @@ duration 1.09075 total 35.64983333333333 phoneme timings 0
     "am_fenrir": 0.2
   },
   "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
-  "speed": 1.02,
+  "speed": 0.9,
+  "hook_speed": 1.0,
+  "inference_speed_per_scene": {
+    "1": 1.0,
+    "2": 0.9,
+    "3": 0.9,
+    "4": 0.9,
+    "5": 0.9,
+    "6": 0.9,
+    "7": 0.9
+  },
   "one_inference_batch_per_scene": true,
   "recap_hold_seconds": 2.0,
-  "recap_hold_start": 32.209083,
-  "recap_hold_end": 34.209083,
-  "thanks_start": 34.209083,
-  "thanks_end": 35.649833,
-  "duration": 35.64983333333333,
+  "recap_hold_start": 32.275958,
+  "recap_hold_end": 34.275958,
+  "thanks_start": 34.275958,
+  "thanks_end": 35.812,
+  "duration": 35.812,
   "scenes": [
     {
       "scene": 1,
       "start": 0.0,
-      "end": 2.373917
+      "end": 2.083
     },
     {
       "scene": 2,
-      "start": 2.373917,
-      "end": 7.382792
+      "start": 2.083,
+      "end": 7.556042
     },
     {
       "scene": 3,
-      "start": 7.382792,
-      "end": 12.97075
+      "start": 7.556042,
+      "end": 14.976708
     },
     {
       "scene": 4,
-      "start": 12.97075,
-      "end": 18.441708
+      "start": 14.976708,
+      "end": 20.040875
     },
     {
       "scene": 5,
-      "start": 18.441708,
-      "end": 25.153958
+      "start": 20.040875,
+      "end": 25.13625
     },
     {
       "scene": 6,
-      "start": 25.153958,
-      "end": 34.209083
+      "start": 25.13625,
+      "end": 34.275958
     },
     {
       "scene": 7,
-      "start": 34.209083,
-      "end": 35.649833
+      "start": 34.275958,
+      "end": 35.812
     }
   ],
   "phrases": [
     {
       "scene": 1,
       "start": 0.0,
-      "end": 2.193917,
-      "text": "How does a repository reach your service?"
+      "end": 1.963,
+      "text": "What's inside application context?"
     },
     {
       "scene": 2,
-      "start": 2.373917,
-      "end": 7.162792,
-      "text": "Configured scanning finds annotated classes and registers bean definitions."
+      "start": 2.083,
+      "end": 7.376042,
+      "text": "Bean definitions are recipes. Managed instances are the actual objects."
     },
     {
       "scene": 3,
-      "start": 7.382792,
-      "end": 12.75075,
-      "text": "A single constructor needs a repository. Spring resolves that parameter by type."
+      "start": 7.556042,
+      "end": 14.796708,
+      "text": "Register configuration, then refresh. Spring reads the definitions and creates our singleton beans."
     },
     {
       "scene": 4,
-      "start": 12.97075,
-      "end": 18.221708,
-      "text": "Spring creates the repository, then passes its reference into the service constructor."
+      "start": 14.976708,
+      "end": 19.860875,
+      "text": "Calling get bean returns the service, already wired to its repository."
     },
     {
       "scene": 5,
-      "start": 18.441708,
-      "end": 24.933958,
-      "text": "Our Java run confirms the same repository bean. Only then does the application use the service."
+      "start": 20.040875,
+      "end": 24.95625,
+      "text": "The context also publishes events. Close it, and managed cleanup runs."
     },
     {
       "scene": 6,
-      "start": 25.153958,
-      "end": 32.209083,
-      "text": "Scan, register, resolve, inject, then use. Spring supplies dependencies; your service doesn\u2019t construct them."
+      "start": 25.13625,
+      "end": 32.275958,
+      "text": "Our tests confirm: same service, one event, cleanup called. Definitions describe; instances do the work."
     },
     {
       "scene": 7,
-      "start": 34.209083,
-      "end": 35.299833,
+      "start": 34.275958,
+      "end": 35.462,
       "text": "Thanks for watching."
     }
   ],
@@ -120,43 +130,43 @@ duration 1.09075 total 35.64983333333333 phoneme timings 0
     {
       "scene": 1,
       "start": 0.0,
-      "end": 2.193917,
-      "text": "How does a repository reach your service?"
+      "end": 1.963,
+      "text": "What's inside application context?"
     },
     {
       "scene": 2,
-      "start": 2.373917,
-      "end": 7.162792,
-      "text": "Configured scanning finds annotated classes and registers bean definitions."
+      "start": 2.083,
+      "end": 7.376042,
+      "text": "Bean definitions are recipes. Managed instances are the actual objects."
     },
     {
       "scene": 3,
-      "start": 7.382792,
-      "end": 12.75075,
-      "text": "A single constructor needs a repository. Spring resolves that parameter by type."
+      "start": 7.556042,
+      "end": 14.796708,
+      "text": "Register configuration, then refresh. Spring reads the definitions and creates our singleton beans."
     },
     {
       "scene": 4,
-      "start": 12.97075,
-      "end": 18.221708,
-      "text": "Spring creates the repository, then passes its reference into the service constructor."
+      "start": 14.976708,
+      "end": 19.860875,
+      "text": "Calling get bean returns the service, already wired to its repository."
     },
     {
       "scene": 5,
-      "start": 18.441708,
-      "end": 24.933958,
-      "text": "Our Java run confirms the same repository bean. Only then does the application use the service."
+      "start": 20.040875,
+      "end": 24.95625,
+      "text": "The context also publishes events. Close it, and managed cleanup runs."
     },
     {
       "scene": 6,
-      "start": 25.153958,
-      "end": 32.209083,
-      "text": "Scan, register, resolve, inject, then use. Spring supplies dependencies; your service doesn\u2019t construct them."
+      "start": 25.13625,
+      "end": 32.275958,
+      "text": "Our tests confirm: same service, one event, cleanup called. Definitions describe; instances do the work."
     },
     {
       "scene": 7,
-      "start": 34.209083,
-      "end": 35.299833,
+      "start": 34.275958,
+      "end": 35.462,
       "text": "Thanks for watching."
     }
   ],

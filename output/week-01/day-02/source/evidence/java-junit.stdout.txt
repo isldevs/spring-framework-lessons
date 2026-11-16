@@ -1,0 +1,31 @@
+definitions before instances: true
+repo created
+service created with repo
+context refreshed
+same service: true
+events handled: 1
+service cleanup
+cleanup called: true
+lazy definition before instance: true
+╷
+├─ JUnit Platform Suite ✔
+├─ JUnit Jupiter ✔
+│  └─ ApplicationContextTests ✔
+│     ├─ definitionsPrecedeSingletonsAndContextProvidesLookupEventsAndCleanup() ✔
+│     └─ lazyDefinitionDoesNotImplyAnInstanceExistsAfterRefresh() ✔
+└─ JUnit Vintage ✔
+
+Test run finished after 322 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         2 tests found           ]
+[         0 tests skipped         ]
+[         2 tests started         ]
+[         0 tests aborted         ]
+[         2 tests successful      ]
+[         0 tests failed          ]
+
