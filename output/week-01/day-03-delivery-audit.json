@@ -1,6 +1,6 @@
 {
-  "master_sha256": "e67a50ac287f8377a3a50a05eea8a7efc5e169d4a80c7e8f2769685efb931440",
-  "lesson_manifest_files_verified": 288,
+  "master_sha256": "b4ca78bb820dd008a9b598b525dc4041353e0bf49007f006b2f76bee28eb63b9",
+  "lesson_manifest_files_verified": 430,
   "platforms": [
     {
       "platform": "youtube-shorts",
@@ -21,18 +21,18 @@
   "archives": [
     {
       "file": "day-03-youtube-shorts-upload.zip",
-      "bytes": 1979167,
-      "sha256": "74b6e646d1c39a08357aa4060f072561c1165ac347653448b24d93dd9d669a3b"
+      "bytes": 1967768,
+      "sha256": "d23f767e97e4cd6dba8c831342c273e0f7cefbf757467099ec59ef6b7af6fbed"
     },
     {
       "file": "day-03-facebook-reels-upload.zip",
-      "bytes": 1978039,
-      "sha256": "918cd73138d2b098b41b488dc7bd2b846bd9eeb762fa3389c1364619852a006b"
+      "bytes": 1966611,
+      "sha256": "e451912d3648598c6ddb91e94c7a2152fd58f321ec2f9fcc93744a993e2d7272"
     },
     {
       "file": "day-03-production.zip",
-      "bytes": 52004045,
-      "sha256": "4d3c3e4efe3b1b11ff4d6b99745ec4ff1d2f949f6d587e2a3a27b89f35461df9"
+      "bytes": 58673013,
+      "sha256": "4b0b7a1d06506852de4896b3efc93af114cf39c374fa5ee1320399c20a9c0e20"
     }
   ],
   "excluded": [

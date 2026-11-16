@@ -2,6 +2,20 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## Bean registration
+
+Approved topic **Bean registration**, publication date **2026-11-18**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Rendered **38.40 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. An immediate spoken/animated missing-bean hook leads through registered @Bean factory configuration, configured @Component scanning and an excluded package. The complete two-path recap holds for two seconds before Thanks; the cover is a separate PNG.
+
+- [Finished MP4](output/week-01/day-03/video.mp4) · [Complete ZIP](output/week-01/day-03-production.zip)
+- [Cover](output/week-01/day-03/cover.png) · [Subtitles](output/week-01/day-03/subtitles.srt) · [Narration audio](output/week-01/day-03/narration.wav)
+- [Narration script](output/week-01/day-03/narration-script.md) · [Timed storyboard](output/week-01/day-03/storyboard.md) · [Recap](output/week-01/day-03/recap.png)
+- [YouTube metadata, hashtags and tags](output/week-01/day-03/youtube-metadata.md) · [Facebook metadata and hashtags](output/week-01/day-03/facebook-metadata.md)
+- [YouTube upload package](output/week-01/day-03-youtube-shorts-upload.zip) · [Facebook upload package](output/week-01/day-03-facebook-reels-upload.zip)
+- [Asset rights](output/week-01/day-03/asset-rights.md) · [Originality review](output/week-01/day-03/originality-review.md)
+- [QA report](output/week-01/day-03/verification-report.md) · [SHA-256](output/week-01/day-03/checksums.sha256) · [Actual Java and tests](output/week-01/day-03/source/java/README.md)
+
+Three actual Spring 6.2.11 JUnit tests passed. Main/test compilation and standalone execution passed, and both platform copies passed probe/decode/hash checks. **Overall strict completion remains incomplete because auditory voice acceptance is unavailable in this runtime.** Licensed local male Kokoro narration and objective QA are delivered; no listening approval is claimed. Nothing was uploaded, scheduled or published to either social platform.
+
 ## ApplicationContext
 
 Approved curriculum topic **ApplicationContext**, publication date **2026-11-17**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Rendered **35.82 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The video begins with an immediate spoken and animated definition-versus-object hook; its cover is a separate PNG. It follows register → refresh → bean definitions and singleton creation → getBean → event → close, then holds the complete recap for two seconds before Thanks.
@@ -16,19 +30,9 @@ Approved curriculum topic **ApplicationContext**, publication date **2026-11-17*
 
 Actual Spring 6.2.11 compilation, standalone execution and both JUnit tests passed, including a separate lazy-definition test. Master and both platform copies passed technical checks. **Overall strict completion remains incomplete because auditory voice acceptance is unavailable in this runtime.** Local licensed male Kokoro narration and objective evidence are delivered; no listening review is claimed. Nothing was uploaded, scheduled or published to either platform.
 
-## Constructor Injection in Spring Boot
+## Earlier constructor-injection revision
 
-Rendered **35.83 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The opening second contains the exact cover. Spring Boot finds the concrete DemoGateway bean, matches the PaymentGateway interface and supplies its reference through the OrderService constructor before application use. The complete recap holds for two seconds before the narrated Thanks card.
-
-- [Finished MP4](output/week-01/day-03/video.mp4) · [Complete ZIP](output/week-01/day-03-production.zip)
-- [Cover](output/week-01/day-03/cover.png) · [Subtitles](output/week-01/day-03/subtitles.srt) · [Narration audio](output/week-01/day-03/narration.wav)
-- [Narration script](output/week-01/day-03/narration-script.md) · [Timed storyboard](output/week-01/day-03/storyboard.md) · [Recap](output/week-01/day-03/recap.png)
-- [YouTube metadata, hashtags and tags](output/week-01/day-03/youtube-metadata.md) · [Facebook metadata and hashtags](output/week-01/day-03/facebook-metadata.md)
-- [YouTube upload package](output/week-01/day-03-youtube-shorts-upload.zip) · [Facebook upload package](output/week-01/day-03-facebook-reels-upload.zip)
-- [Asset rights](output/week-01/day-03/asset-rights.md) · [Originality review](output/week-01/day-03/originality-review.md)
-- [QA report](output/week-01/day-03/verification-report.md) · [SHA-256](output/week-01/day-03/checksums.sha256) · [Actual Boot example and tests](output/week-01/day-03/source/java/README.md)
-
-Real Spring Boot 3.5.6 compilation/startup and both JUnit tests passed. The encoded master and both platform copies passed technical verification. Payments are simulated locally. **Strict overall approval remains incomplete because perceptual voice listening review is unavailable in this runtime.** Local licensed Kokoro male audio, raw ASR results and review limitations are delivered. Nothing was posted to YouTube/Facebook.
+The superseded constructor-injection media/source remain in [Git history at d05b1a3](https://github.com/isldevs/spring-framework-lessons/tree/d05b1a388b573666af199cbd9985b94ab7feb604/output/week-01/day-03). The approved current topic for that slot is Bean registration, assigned to2026-11-18 with proposed19:00Asia/Phnom_Penh publication time.
 
 ## Earlier dependency-injection revision
 

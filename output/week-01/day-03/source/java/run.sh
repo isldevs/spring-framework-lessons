@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")"
-python3 fetch-dependencies.py
-python3 verify.py
+if [[ ! -f lib/spring-context-6.2.11.jar || ! -f dependencies.sha256 ]]; then
+  python fetch-dependencies.py
+fi
+python verify.py

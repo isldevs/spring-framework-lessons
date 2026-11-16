@@ -1,41 +1,57 @@
-# Actual Spring Boot constructor-injection example
+# Actual Spring bean-registration example
 
-This example starts a real **Spring Boot 3.5.6** application, rather than a bare Spring context labelled as Boot. `CheckoutApplication` has `@SpringBootApplication` and starts a non-web `SpringApplication`. Its application package `lesson.orders` is scanned, finding `@Component DemoGateway` and `@Service OrderService`.
+This minimal project demonstrates two valid registration paths with **Spring Framework 6.2.11**. It does not use Spring Boot. `Client` is an ordinary unannotated Java class. A refreshed context with no application configuration cannot retrieve it. Registering `FactoryConfig` supplies its `@Bean Client client()` method; Spring records factory-method metadata and later calls that method to obtain the managed Client.
 
-`OrderService` declares a `private final PaymentGateway gateway` and one constructor receiving that interface. Spring can use the sole constructor without an `@Autowired` annotation. The current application has one matching implementation, so the dependency is unambiguous. A `final` field prevents reassignment of this reference; it does not make the gateway's internal state immutable.
+The second context registers `ScanConfig`, whose `@ComponentScan("lesson.scan")` discovers `@Component Worker` in that package. `@Component Outside` is on the same Java classpath in `lesson.outside`, but lies outside this configured scan and is not registered through another route. It therefore remains unavailable in this example. The annotation makes a class a scanning candidate; it does not make every context discover every annotated class.
 
-`placeOrder(orderId, amountCents)` validates the arguments and delegates to the supplied gateway. `DemoGateway` only formats an in-memory simulated approval and counts calls. **No payment processor is contacted and no money moves.**
+These are two demonstrated registration paths, not an exhaustive list. Explicit programmatic registration, imports and other supported configuration mechanisms are outside this short lesson. Client and Worker are different demo bean types in separate contexts, not two instances of one bean or two competing registrations.
 
 ## Reproduce
 
-Requirements: Python 3 and a Java runtime 17 or newer. The verified environment is OpenJDK 21.0.13. Maven and javac are not required by this runner: Eclipse ECJ 3.40.0 compiles Java17-target classes.
+Requirements: Python 3 and a Java runtime 17 or newer. The verified environment is OpenJDK 21.0.13. Eclipse ECJ 3.40.0 compiles Java17-target classes, so the provided runner does not require installed Maven or javac.
+
+From the lesson directory:
 
 ```sh
 bash source/java/run.sh
 ```
 
-From this source directory, `./run.sh` is equivalent. `fetch-dependencies.py` downloads fixed Maven Central coordinates, verifies published SHA-1 checksums, records SHA-256 hashes and retains jar license/notice evidence. `verify.py` then checks that manifest, compiles main and test sources separately, executes JUnit and runs the standalone Boot application. All actual commands/stdout/stderr/exit codes are retained in `../evidence/java-*`.
+From this Java directory, `./run.sh` is equivalent. `verify.py` checks `dependencies.sha256`, compiles main and test sources separately, runs JUnit and executes the standalone `lesson.registration.RegistrationDemo`. All actual commands, stdout, stderr and exit codes remain in `../evidence/java-*`.
 
-The pinned versions are coherent with the retained Spring Boot 3.5.6 BOM: Spring Framework 6.2.11, Micrometer 1.15.4, SnakeYAML 2.4, JUnit Jupiter 5.12.2 (console standalone/platform 1.12.2). `lib/` includes the compiler and fixed runtime/test jars so the exact verified run can be repeated offline after download.
+Ten fixed jars are included under `lib/`: Spring Framework 6.2.11 modules, Micrometer 1.15.4, ECJ 3.40.0 and JUnit Platform Console Standalone 1.12.2 (Jupiter 5.12.2). `fetch-dependencies.py` can download them again from Maven Central, checks published SHA-1 checksums, records SHA-256, and extracts their license/notice files. The current ten jars were checked against published checksums during this production, not merely copied without verification. `dependency-sources.json` records coordinates and provenance.
 
-## Two actual tests
+## Three actual tests
 
-1. `bootInjectsTheManagedGatewayBeforeOrderUse` starts Boot, verifies its actual runtime version, checks one gateway candidate and identity of the injected/managed reference, and verifies gateway construction and service constructor invocation precede context readiness. It then places a simulated order, verifies the exact receipt, verifies one gateway call and reuses the default singleton service.
-2. `aRecordingFakeTestsOrderForwardingWithoutSpring` manually supplies a recording fake to the same OrderService constructor. It verifies the order ID, amount in cents, call count and returned fake approval. This is a separate pure Java service test, not another Spring-managed gateway bean.
+1. `aPlainClasspathClassHasNoDefinitionOrManagedInstance` refreshes an AnnotationConfigApplicationContext without application configuration. It checks the actual Spring version, no Client definition or singleton, an expected `NoSuchBeanDefinitionException` from Client lookup, and zero Client constructor calls. The negative case is an expected assertion, not an uncaught failure.
+2. `registeredConfigurationAddsAFactoryDefinitionAndRetrievableSingleton` registers FactoryConfig, then observes the `client` definition inside refresh before Client construction. Its metadata points to factory bean `factoryConfig` and factory method `client`. After refresh, lookup by type/name returns the same Client, its method returns `explicit`, and the constructor/factory each ran once.
+3. `configuredScanRegistersItsComponentAndExcludesAnAnnotatedOutsideClass` registers ScanConfig and observes Worker metadata before construction. After refresh, Worker is retrievable by type/name and is the same singleton; its method returns `scanned`. Outside is demonstrably annotated but has no definition and produces the expected missing-bean exception because its package was not scanned. Its constructor never runs.
 
-Actual JUnit result: **2 tests found, 2 started, 2 successful, 0 failed**. Compile/test/standalone application all returned exit0 with empty stderr. JUnit XML reports are retained both in build/test-results and as evidence.
+Actual JUnit result: **3 tests found, 3 started, 3 successful, 0 failed**. Main compilation, test compilation, JUnit and standalone execution all exited **0**, with empty stderr. JUnit XML reports and actual source hashes are retained alongside command evidence.
 
-Actual proof lines:
+Actual captured proof lines include:
 
 ```text
-same gateway bean: true
-receipt: APPROVED order-1042 USD 19.99
-Spring Boot integration test: passed
-fake gateway test: passed
+plain class missing: true
+@Bean definition before instance: true
+@Bean retrieved: true
+scan definition before instance: true
+scan retrieved: true
+outside scan missing: true
 ```
 
-The receipt describes the local demo outcome only. The simulated gateway constructor runs before the service constructor, which stores its supplied reference before any order is placed. This default non-lazy singleton example does not claim every scope/lazy arrangement initializes before lookup.
+The standalone application also captures `@Bean definition: client`, `@Bean factory called`, `Client created`, `scan definition: worker` and `Worker created` in that order within their respective contexts. `java-verification-result.json` records the actual full output and test summary.
+
+## Registration, construction and scope
+
+`ctx.register(FactoryConfig.class)` adds configuration metadata to a new unrefreshed context. During `refresh()`, configuration processing discovers the @Bean method and creates its bean definition. A BeanFactoryPostProcessor observes this metadata without calling getBean or otherwise triggering Client construction. Spring then invokes the factory to create this example's default non-lazy singleton. Scanning likewise registers Worker metadata before its constructor runs.
+
+The context already contains infrastructure definitions; diagrams focus on these demo application beans. The tests do not claim every bean is eagerly constructed, that all Java classes become beans, that scanning covers packages outside its configured boundary, or that only these two registration mechanisms exist. Default singleton identity and creation timing here do not describe every scope or lazy arrangement.
 
 ## Documentation and rights
 
-Versioned official Spring Boot 3.5 dependency-injection and SpringApplication documentation, plus Spring Framework single-constructor guidance, are saved in `../evidence/java-doc-*`. Their source URLs, HTTP statuses, SHA-256s and small verbatim claim excerpts are retained. Dependency source URLs and SHA-256s are in `dependency-sources.json` and `dependencies.sha256`; third-party licenses/notices are in `licenses/`.
+Eight official Spring pages were actually retrieved with HTTP200. Versioned 6.2.11 API pages and Spring 6.2 reference pages, hashes, HTML/text and relevant claim excerpts are retained under `../evidence/java-doc-*`. Recommended publishing references verified during this production:
+
+- https://docs.spring.io/spring-framework/reference/6.2/core/beans/java/bean-annotation.html
+- https://docs.spring.io/spring-framework/reference/6.2/core/beans/classpath-scanning.html
+
+Project code is under the retained MIT license. Third-party compiler/runtime/test notices are under `licenses/`. No external service, paid tool or fabricated result is involved in executing this example.

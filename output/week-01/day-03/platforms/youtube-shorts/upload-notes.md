@@ -1,13 +1,11 @@
 # YouTube Shorts upload notes
 
-Use `youtube-shorts.mp4`. The video is 35.833333 seconds, native1080×1920,60FPS,H.264/AAC48kHz,Rec.709SDR, with local male Kokoro narration and burned English captions. The exact cover is embedded in the opening second, and the complete recap holds for two seconds before the Thanks card.
+Approved topic: **Bean registration**. Publish date: **2026-11-18**. Proposed time: **19:00 Asia/Phnom_Penh (UTC+07:00;12:00 UTC)**. This plan does not schedule or publish anything.
 
-1. Select the MP4 and paste `title.txt` and `description.txt` into the corresponding fields. `tags.txt` provides optional comma-separated search tags where a tags field is available.
-2. Use `cover.png` wherever custom cover upload is offered. If the interface only permits selecting an existing frame, choose a frame from the opening second; it displays this exact cover without a fade.
-3. Captions are already burned into the video. `subtitles.srt` is retained as a separate accessibility track where supported; avoid another automatic or decorative on-screen caption layer that repeats the same words.
-4. Review the actual upload preview for sound, crop, text and opening cover. Voice naturalness and perceived age have not been accepted by listening in this runtime. See `technical-checks.md` for current technical and voice-review status.
-5. `pinned-comment.txt` contains a comment to post and pin manually after publication if desired.
+1. Select `youtube-shorts.mp4` and paste title.txt, description.txt and optional comma-separated tags.txt into the corresponding fields. pinned-comment.txt supplies a comment to post and pin manually after publication if desired.
+2. Upload `cover.png` wherever a separate custom cover is accepted. The video begins with the animated and spoken hook, without a static cover hold. If only a video frame can be selected, choose a clear opening mechanism frame.
+3. Captions are already burned into the MP4. Retain subtitles.srt for accessibility where supported; avoid another overlapping automatic/decorative caption layer.
+4. Review the actual platform preview for sound, crop, captions and hook. See technical-checks.md for measured export properties and voice-review limitations. Human naturalness, pronunciation and perceived age have not been auditorily approved in this runtime.
+5. The closing recap shows registered factory configuration and configured component scanning leading to managed beans. It holds complete for two seconds before the separate Thanks card.
 
-DemoGateway simulates an approval locally. The fake gateway belongs only to a separate service test. No real payment is processed and no payment API is called. No upload, scheduling or publication has been performed by this production workflow. Public copy contains no internal schedule or lesson numbering.
-
-The closing recap connects Spring Boot startup, the PaymentGateway constructor requirement, the matching DemoGateway bean, reference injection and order placement. The completed diagram remains visible for at least two seconds.
+The two registration examples use separate contexts and default non-lazy singletons. @Component must be discovered or explicitly registered; an annotation alone does not activate a package scan. Public copy has no week/day/episode numbering. No account upload, scheduling or publication has been performed.

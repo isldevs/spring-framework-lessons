@@ -24,12 +24,6 @@
     "published_sha1_verified": true
   },
   {
-    "artifact": "snakeyaml-2.4.jar",
-    "sha256": "ef779af5d29a9dde8cc70ce0341f5c6f7735e23edff9685ceaa9d35359b7bb7f",
-    "url": "https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar",
-    "published_sha1_verified": true
-  },
-  {
     "artifact": "spring-aop-6.2.11.jar",
     "sha256": "91e6cd420cd601a34dc41fc33364cfe77d40b6281ee472a0b72d43791f06a1dd",
     "url": "https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.2.11/spring-aop-6.2.11.jar",
@@ -39,18 +33,6 @@
     "artifact": "spring-beans-6.2.11.jar",
     "sha256": "f9ba5dedee94947b11d930209ff1a12bbe9e28b1b4f73c5baeba2fb3fe32d08e",
     "url": "https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.2.11/spring-beans-6.2.11.jar",
-    "published_sha1_verified": true
-  },
-  {
-    "artifact": "spring-boot-3.5.6.jar",
-    "sha256": "4e66f6f3152e148c028977c33ab12c91ae381701b5d9d9951882a84f05ff5fea",
-    "url": "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/3.5.6/spring-boot-3.5.6.jar",
-    "published_sha1_verified": true
-  },
-  {
-    "artifact": "spring-boot-autoconfigure-3.5.6.jar",
-    "sha256": "1f8284cefaffb3018d803e4c9cf065eaa88dc3e09a9aa2abea8e876981b1be7a",
-    "url": "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/3.5.6/spring-boot-autoconfigure-3.5.6.jar",
     "published_sha1_verified": true
   },
   {

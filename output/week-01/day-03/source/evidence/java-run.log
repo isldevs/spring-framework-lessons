@@ -1,0 +1,45 @@
+plain class missing: true
+@Bean definition before instance: true
+@Bean factory called
+Client created
+@Bean retrieved: true
+scan definition before instance: true
+Worker created
+scan retrieved: true
+outside scan missing: true
+╷
+├─ JUnit Platform Suite ✔
+├─ JUnit Jupiter ✔
+│  └─ RegistrationTests ✔
+│     ├─ aPlainClasspathClassHasNoDefinitionOrManagedInstance() ✔
+│     ├─ registeredConfigurationAddsAFactoryDefinitionAndRetrievableSingleton() ✔
+│     └─ configuredScanRegistersItsComponentAndExcludesAnAnnotatedOutsideClass() ✔
+└─ JUnit Vintage ✔
+
+Test run finished after 344 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         3 tests found           ]
+[         0 tests skipped         ]
+[         3 tests started         ]
+[         0 tests aborted         ]
+[         3 tests successful      ]
+[         0 tests failed          ]
+
+
+ACTUAL APPLICATION OUTPUT
+plain class missing: true
+@Bean definition: client
+@Bean factory called
+Client created
+@Bean retrieved: true
+scan definition: worker
+Worker created
+scan retrieved: true
+outside scan missing: true
+
+Actual bean registration tests: 3 tests passed; application exited0.

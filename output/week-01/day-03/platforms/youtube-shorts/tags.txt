@@ -1,1 +1,1 @@
-constructor injection, Spring Boot, Spring dependency injection, OrderService, PaymentGateway, Java, final field, single constructor, Autowired, unit testing, fake gateway, dependency graph, iSLDevs
+bean registration, Spring Framework, Spring IoC, Bean, Component, ComponentScan, Java, bean definition, getBean, Spring configuration, singleton beans, iSLDevs

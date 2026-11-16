@@ -1,0 +1,33 @@
+{
+  "anchors": {
+    "missing_request_s": 1.956333,
+    "failed_lookup_s": 4.46,
+    "factory_register_s": 8.966292,
+    "factory_definition_s": 12.16,
+    "factory_call_s": 12.88,
+    "factory_instance_s": 15.52,
+    "factory_lookup_s": 15.92,
+    "scan_start_s": 19.5,
+    "scan_definition_s": 19.62,
+    "scan_instance_s": 19.88,
+    "scan_lookup_s": 21.265917,
+    "outside_missing_s": 26.06
+  },
+  "missing_lookup_precedes_registration": true,
+  "factory_definition_before_factory_call": true,
+  "factory_definition_before_instance_and_lookup": true,
+  "scan_definition_before_instance_and_lookup": true,
+  "completed_scan_graph_before_lookup": true,
+  "outside_scan_annotated_class_verified_missing": true,
+  "java_tests_found": 3,
+  "java_tests_succeeded": 3,
+  "java_current_sources_match_tested_hashes": true,
+  "java_raw_application_stdout_matches_proofs": true,
+  "actual_java_proof_lines": [
+    "@Bean retrieved: true",
+    "outside scan missing: true",
+    "plain class missing: true",
+    "scan retrieved: true"
+  ],
+  "basis": "Explanatory renderer anchors verify visual ordering, not Spring wall-clock execution. Passed compiled Java evidence separately verifies missing definitions and both registration paths; this validator does not claim to run Java again."
+}

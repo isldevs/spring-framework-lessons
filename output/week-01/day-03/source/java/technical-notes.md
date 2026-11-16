@@ -1,15 +1,19 @@
-# Technical verification notes
+# Bean-registration technical notes
 
-The verified startup uses `new SpringApplication(CheckoutApplication.class)` and `run(...)` with `WebApplicationType.NONE`. `@SpringBootApplication(proxyBeanMethods = false)` remains the actual Boot entry annotation; disabling proxying does not remove scanning or auto-configuration. No HTTP server is started.
+Verified runtime: Spring Framework 6.2.11, Micrometer 1.15.4, OpenJDK 21.0.13. ECJ 3.40.0 compiled Java17-target classes. JUnit Jupiter 5.12.2 executes through console/platform 1.12.2. Ten pinned jars and their hashes/notices are retained. Maven, javac and Spring Boot were not used.
 
-The code uses constructor injection into a final field, through the PaymentGateway interface. DemoGateway is a single scanned component implementing that interface. OrderService has a sole constructor and no field/setter injection or @Autowired annotation. Spring supplies an existing managed candidate reference as a constructor argument. With multiple candidates, disambiguation would be necessary; this example intentionally has one.
+## Actual causal observations
 
-The integration test calls actual SpringApplication startup, verifies `SpringBootVersion.getVersion()` equals3.5.6, obtains the context-managed service and interface bean and checks their identity. Trace ordering asserts DemoGateway creation precedes service construction and both precede context-ready. The gateway call count is zero until the first order, then one. The second lookup returns the same service singleton. Thus dependency injection is verified before business use, not inferred from annotation presence.
+- The negative lookup occurs only after refresh, so the expected error is `NoSuchBeanDefinitionException`, not a context-not-active error. Client is present on the Java classpath but has neither a definition nor a managed instance in that context.
+- FactoryConfig is explicitly registered. Before refresh, its own definition exists but the method-derived `client` definition has not yet been processed. A non-instantiating BeanFactoryPostProcessor inside refresh observes `client` factory-method metadata while Client/factory counters remain zero. The factory and constructor then run once, and getBean returns that default singleton.
+- ScanConfig explicitly scans `lesson.scan`. Worker has class-based definition metadata and no factory method; its definition exists before its constructor runs. The annotated Outside class is in `lesson.outside` and remains absent without another registration mechanism. The two positive paths use separate contexts and different bean types.
 
-The separate fake test invokes the public constructor directly and verifies externally observable delegation: order ID, cents, exactly one call and returned fake response. The fake is not annotated and is not a component-scan candidate. No mocking library is required.
+These assertions establish registration-before-construction for the illustrated ordinary application beans. Infrastructure processing is intentionally not illustrated as an empty global registry. Default eager-singleton timing is qualified; the example is not a statement about every lazy/scope/custom-processor setup.
 
-The actual receipt is `APPROVED order-1042 USD 19.99`. It is generated in memory using Locale.ROOT and integer cents. This is a pedagogical payment port/adapter scenario, with no credential, payment network or real financial action.
+## Actual result and reproduction scope
 
-The runner uses ECJ because javac and Maven are absent in this environment. It compiles against pinned real Boot/Framework jars and executes JUnit ConsoleLauncher. JUnit XML and raw output are evidence; results are not fabricated. Logging/banner suppression only removes unrelated startup noise. All actual main/test compilation and test/application processes exited0 with empty stderr.
+Three JUnit tests passed; none failed. Main/test compile, JUnit and standalone application exit codes are all0 with empty stderr. The raw output, expected-exception assertions, XML, actual command arrays and source SHA-256s support each reported proof line. The diagrams' speech/edit times are production timing, not Java performance measurements.
 
-Consult `../evidence/java-verification-result.json` for actual values and source hashes. Official docs explicitly recommend constructor injection, state a single constructor works without @Autowired, and support non-web SpringApplication startup for a JUnit test. A final dependency reference cannot be reassigned, but the supplied object may be mutable.
+The @Bean snippet can omit Trace instrumentation on screen while preserving the real factory operation: `@Bean public Client client() { return new Client(); }`. The scan snippet must preserve the actual package `lesson.scan` and actual Worker/Outside boundaries. A generic plain-class example does not imply unannotated classes can never be beans: the Client factory path demonstrates that they can.
+
+The official evidence includes eight HTTP200 documents and nine matched claim excerpts. Both publishing URLs are real retrieved pages. These two registration paths are valid examples, not the only Spring registration APIs.

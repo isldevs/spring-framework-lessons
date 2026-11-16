@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Pinned Spring Boot/JUnit verification classpath; TLS and published checksums on."""
+"""Pinned Spring Framework/JUnit verification classpath; TLS and published checksums on."""
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 import hashlib,urllib.request,zipfile,json
 ROOT=Path(__file__).resolve().parent;LIB=ROOT/'lib';LIB.mkdir(exist_ok=True)
-COORDINATES=[('org.springframework.boot','spring-boot','3.5.6'),('org.springframework.boot','spring-boot-autoconfigure','3.5.6'),*[('org.springframework',a,'6.2.11') for a in ['spring-context','spring-aop','spring-beans','spring-core','spring-expression','spring-jcl']],('io.micrometer','micrometer-observation','1.15.4'),('io.micrometer','micrometer-commons','1.15.4'),('org.yaml','snakeyaml','2.4'),('org.eclipse.jdt','ecj','3.40.0'),('org.junit.platform','junit-platform-console-standalone','1.12.2')]
+COORDINATES=[*[('org.springframework',a,'6.2.11') for a in ['spring-context','spring-aop','spring-beans','spring-core','spring-expression','spring-jcl']],('io.micrometer','micrometer-observation','1.15.4'),('io.micrometer','micrometer-commons','1.15.4'),('org.eclipse.jdt','ecj','3.40.0'),('org.junit.platform','junit-platform-console-standalone','1.12.2')]
 def fetch(c):
  g,a,v=c;name=f'{a}-{v}.jar';url=f"https://repo.maven.apache.org/maven2/{g.replace('.', '/')}/{a}/{v}/{name}";p=LIB/name
  data=p.read_bytes() if p.exists() else urllib.request.urlopen(url,timeout=60).read()
@@ -23,7 +23,7 @@ for n,h,u in results:
    if entry.startswith('META-INF/') and ('LICENSE' in leaf.upper() or 'NOTICE' in leaf.upper()) and not entry.endswith('/'):
     (licenses/(n[:-4]+'-'+leaf)).write_bytes(z.read(entry))
  print(n,'published checksum verified')
-# ECJ and SnakeYAML carry their license evidence outside some jar distributions.
-for name,url in [('ecj-EPL-2.0.html','https://www.eclipse.org/legal/epl-2.0/'),('snakeyaml-LICENSE.txt','https://raw.githubusercontent.com/snakeyaml/snakeyaml/master/LICENSE.txt')]:
+# ECJ additional license evidence.
+for name,url in [('ecj-EPL-2.0.html','https://www.eclipse.org/legal/epl-2.0/')]:
  try:(licenses/name).write_bytes(urllib.request.urlopen(url,timeout=30).read())
  except Exception as e:print('Additional license URL:',name,type(e).__name__)

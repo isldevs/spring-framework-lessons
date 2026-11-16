@@ -2,52 +2,55 @@
   "word_distinctions": {
     "bean": "bˈiːn",
     "beans": "bˈiːnz",
-    "constructor": "kənstɹˈʌktɚ",
-    "Spring Boot": "spɹˈɪŋ bˈuːt",
-    "payment gateway": "pˈeɪmənt ɡˈeɪtweɪ",
-    "PaymentGateway": "pˈeɪmənt ɡˈeɪtweɪ",
-    "OrderService": "ˈɔːɹdɚ sˈɜːvɪs",
-    "final field": "fˈaɪnəl fˈiːld",
-    "Require": "ɹᵻkwˈaɪɚ",
-    "resolve": "ɹᵻzˈɑːlv",
-    "inject": "ɪndʒˈɛkt",
+    "Spring bean": "spɹˈɪŋ bˈiːn",
+    "classpath": "klˈæspæθ",
+    "registered": "ɹˈɛdʒɪstɚd",
+    "bean definition": "bˈiːn dˌɛfɪnˈɪʃən",
+    "bean method": "bˈiːn mˈɛθəd",
+    "component": "kəmpˈoʊnənt",
+    "configuration": "kənfˌɪɡjɚɹˈeɪʃən",
+    "factory": "fˈæktɚɹi",
+    "scan": "skˈæn",
+    "package": "pˈækɪdʒ",
+    "annotated": "ˈænətˌeɪɾᵻd",
+    "unregistered": "ˌʌnɹˈɛdʒɪstɚd",
     "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
   },
   "scenes": [
     {
       "scene": 1,
-      "text": "How does an order service get its payment gateway?",
-      "phonemes": "hˌaʊ dˈʌz ɐn ˈɔːɹdɚ sˈɜːvɪs ɡɛt ɪts pˈeɪmənt ɡˈeɪtweɪ?",
+      "text": "Why isn't this a Spring bean?",
+      "phonemes": "wˌaɪ ˌɪzənt ðɪs ɐ spɹˈɪŋ bˈiːn?",
       "inference_batches": 1
     },
     {
       "scene": 2,
-      "text": "Require a payment gateway in the constructor, and keep its reference in a final field.",
-      "phonemes": "ɹᵻkwˈaɪɚɹ ɐ pˈeɪmənt ɡˈeɪtweɪ ɪnðə kənstɹˈʌktɚ, ænd kˈiːp ɪts ɹˈɛfɹəns ɪn ɐ fˈaɪnəl fˈiːld.",
+      "text": "A class on the classpath isn't automatically registered. Give Spring a registration path.",
+      "phonemes": "ɐ klˈæs ɔnðə klˈæspæθ ˌɪzənt ˌɔːɾəmˈæɾɪkli ɹˈɛdʒɪstɚd. ɡˈɪv spɹˈɪŋ ɐ ɹˌɛdʒɪstɹˈeɪʃən pˈæθ.",
       "inference_batches": 1
     },
     {
       "scene": 3,
-      "text": "Boot scans the components. One gateway bean matches that interface type.",
-      "phonemes": "bˈuːt skˈænz ðə kəmpˈoʊnənts. wˈʌn ɡˈeɪtweɪ bˈiːn mˈætʃᵻz ðæt ˈɪntɚfˌeɪs tˈaɪp.",
+      "text": "Register configuration with a bean method. Spring calls the factory and manages its result.",
+      "phonemes": "ɹˈɛdʒɪstɚ kənfˌɪɡjɚɹˈeɪʃən wɪð ɐ bˈiːn mˈɛθəd. spɹˈɪŋ kˈɔːlz ðə fˈæktɚɹi ænd mˈænɪdʒᵻz ɪts ɹɪzˈʌlt.",
       "inference_batches": 1
     },
     {
       "scene": 4,
-      "text": "Spring passes it into the service constructor before the application places an order.",
-      "phonemes": "spɹˈɪŋ pˈæsᵻz ɪɾ ˌɪntʊ ðə sˈɜːvɪs kənstɹˈʌktɚ bᵻfˌɔːɹ ðɪ ˌæplɪkˈeɪʃən plˈeɪsᵻz ɐn ˈɔːɹdɚ.",
+      "text": "Or add the component annotation, then scan the package containing your class.",
+      "phonemes": "ɔːɹ ˈæd ðə kəmpˈoʊnənt ˌænətˈeɪʃən, ðˈɛn skˈæn ðə pˈækɪdʒ kəntˈeɪnɪŋ jʊɹ klˈæs.",
       "inference_batches": 1
     },
     {
       "scene": 5,
-      "text": "Our Boot test confirms the same bean. A fake gateway passes a separate service test.",
-      "phonemes": "ˌaʊɚ bˈuːt tˈɛst kənfˈɜːmz ðə sˈeɪm bˈiːn. ɐ fˈeɪk ɡˈeɪtweɪ pˈæsᵻz ɐ sˈɛpɹət sˈɜːvɪs tˈɛst.",
+      "text": "Miss that package, and even an annotated class stays unregistered.",
+      "phonemes": "mˈɪs ðæt pˈækɪdʒ, ænd ˈiːvən ɐn ˈænətˌeɪɾᵻd klˈæs stˈeɪz ˌʌnɹˈɛdʒɪstɚd.",
       "inference_batches": 1
     },
     {
       "scene": 6,
-      "text": "Require, resolve, inject, then use. Constructor injection makes required dependencies explicit.",
-      "phonemes": "ɹᵻkwˈaɪɚ, ɹᵻzˈɑːlv, ɪndʒˈɛkt, ðˈɛn jˈuːz. kənstɹˈʌktɚɹ ɪndʒˈɛkʃən mˌeɪks ɹᵻkwˈaɪɚd dᵻpˈɛndənsiz ɛksplˈɪsɪt.",
+      "text": "Our tests retrieve both. Two paths, one result: Spring knows which beans to manage.",
+      "phonemes": "ˌaʊɚ tˈɛsts ɹᵻtɹˈiːv bˈoʊθ. tˈuː pˈæθs, wˈʌn ɹɪzˈʌlt: spɹˈɪŋ nˈoʊz wˌɪtʃ bˈiːnz tə mˈænɪdʒ.",
       "inference_batches": 1
     },
     {

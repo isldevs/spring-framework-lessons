@@ -13,7 +13,7 @@ These are the user's standing preferences and the decisions made while producing
 ## Approved curriculum and schedule
 
 - Preserve the curriculum exactly as supplied in each new production prompt. Never replace an approved lesson with an adjacent topic or move its publication date.
-- The current approved slot is Week01 — Spring IoC Foundations, Day2 Tuesday: exact topic **ApplicationContext**, publish date **2026-11-17**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). The proposed time remains a metadata field; do not automatically schedule or publish.
+- Approved Week01 — Spring IoC Foundations slots: Day2 Tuesday **ApplicationContext**, publish date **2026-11-17**; Day3 Wednesday **Bean registration**, publish date **2026-11-18**. Both use proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). The proposed time remains a metadata field; do not automatically schedule or publish.
 - The earlier generated How Spring Dependency Injection Works at day-02 was superseded by this explicit curriculum correction. Its media/source remain in Git history at d3040a5; the current day-02 directory must contain ApplicationContext.
 - New explicit instructions take precedence over older lesson-specific visual defaults, including the previous static opening-cover hold.
 
@@ -73,7 +73,19 @@ Follow the full mandatory checklist in `AGENTS.md`; do not shorten it to a video
 - The user uploads from a phone. Metadata files or download links do NOT replace inline copyable publishing text. Include both formats every time a video is generated or updated.
 - Never say completed/verified without identifying any remaining incomplete essential requirement.
 
-## Latest implemented reference: ApplicationContext
+## Latest implemented reference: Bean registration
+
+- Exact approved topic **Bean registration**, current media/source `output/week-01/day-03/`. Publication **2026-11-18**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). No automatic upload, scheduling or publication.
+- Actual master **38.400000s**, native1080×1920,60FPS,H.264/AAC48kHz,Rec.709SDR,2304frames;7scenes and18SRT cues. Immediate hook “Why isn't this a Spring bean?” lasts1.486333s, with the plain Java class visible from frame one. Separate cover PNG; no static opening hold.
+- Three actual Spring6.2.11 tests pass: an unregistered Client lookup fails after context refresh; registered FactoryConfig/@Bean yields Client; registered ScanConfig/@ComponentScan("lesson.scan") finds Worker while annotated Outside in lesson.outside stays absent. Both positive definitions are observed before constructors; repeated lookups reuse default singletons. Tests, both compilations and standalone app exit0 with empty stderr.
+- The factory definition is observed with factoryConfig/client metadata before the factory call. The scanned definition names lesson.scan.Worker without a factory method. Both are valid registration paths; do not claim these are the only routes or that direct singleton registration requires a BeanDefinition. Script takeaway: registration tells Spring what to manage.
+- Toolchain: JDK21.0.13, ECJ3.40.0 compiling Java17-target classes,10pinned jars, no Boot/Maven/javac. Eight official Spring pages retrieved HTTP200; both final publishing links separately fetched and hashed. Use /reference/6.2/... for versioned reference URLs.
+- Actual animation anchors: missing request1.956333/failure4.460; factory register8.966292/definition12.160/call12.880/instance15.520/lookup15.920; scan19.500/definition19.620/instance19.880/complete graph20.230/lookup21.265917; outside missing26.060. These illustrate ordering, not Spring runtime timings. Lookup displays last1.011125s and1.50s, avoiding unreadable flashes.
+- Complete recap hold **34.679125–36.679125s**, followed by separate spoken Thanks. All2304timestamps,5opening snapshots,6transition pairs,7scene stills,120encoded recap frames and final frame checked;250source bounds plus217preflight states pass.
+- Local male Kokoro blend80%am_puck/20%am_fenrir; hook inference1.00, body0.80,7coherent batches. Ambiguous component wording was regenerated as a whole phrase. Raw ASR72expected/73recognized,2edits,WER2.7778%, solely classpath/class path spacing; preserve raw result and separate compound alignment provenance. Human naturalness, pronunciation and perceived age remain **INCOMPLETE by listening**; no auditory approval claimed.
+- Master SHA-256 **b4ca78bb820dd008a9b598b525dc4041353e0bf49007f006b2f76bee28eb63b9**. Both platform copies independently probe/decode/hash PASS and equal the master. Refresh every manifest/ZIP after edits. Preserve the mandatory full-link handoff and all five phone-copyable publishing blocks.
+
+## Previous implemented reference: ApplicationContext
 
 - Approved exact topic ApplicationContext; current media/source at `output/week-01/day-02/`. Publication2026-11-17, proposed19:00Asia/Phnom_Penh (12:00UTC); no automatic upload/scheduling/publication.
 - Actual master35.816667s,1080×1920,60FPS,H.264/AAC48kHz,Rec.709SDR,2149frames;7scenes and18SRT cues. Immediate animated/spoken hook “What's inside ApplicationContext?” replaces the older static-cover hold. A separatecoverPNG is delivered.
@@ -84,17 +96,10 @@ Follow the full mandatory checklist in `AGENTS.md`; do not shorten it to a video
 - Male Kokoro80%am_puck/20%am_fenrir: hookinference1.00, remaining0.90,67/67rawunpromptedASRwords0WER. Rawoutrotimestampsdriftedintoquietreadinghold; finalcaptionusesknownsampleedit, withrawASR/provenanceretained. Listening acceptance is still INCOMPLETE; no perceivedage/humannaturalness approval claimed.
 - CurrentmasterSHA25691335571e3011105f6aa29f8a8024ac3b4d6d929e9a547b7174cd9f32e0e7a9e. Bothplatformcopies independentlyprobe/decode/hashPASS andbyteidentical. Refreshallchecksums/ZIPsafterchanges. KeepmandatorydownloadlinksANDfivephonecopyblocks.
 
-## Previous implemented reference: Constructor injection in Spring Boot
+## Superseded earlier revision: constructor injection in the Day 3 directory
 
-- Topic: Constructor Injection in Spring Boot. Source/media: `output/week-01/day-03/`.
-- Actual master: 35.833333s,1080×1920,60FPS,H.264/AAC48kHz,Rec.709;7scenes,18SRT cues,2150frames. Exact cover source fills the opening second. Complete recap hold32.283125–34.283125s precedes the narrated Thanks card.
-- Use real Spring Boot, not a bare context called Boot. This example runs non-web Spring Boot3.5.6 with Spring6.2.11. `@SpringBootApplication` scans `@Component DemoGateway` and `@Service OrderService`; the sole constructor requires the PaymentGateway interface and stores its reference in a final field with a null guard. No user @Bean factories are involved. A final reference is not object immutability.
-- Two actual JUnit tests pass: real Boot startup verifies the sole managed gateway candidate, injected identity, construction-before-readiness/order, simulated receipt and singleton reuse; a separate pure Java test manually supplies a recording fake and verifies forwarding/call count/result. DemoGateway and the fake simulate payment outcomes; no real processor is contacted.
-- Runtime is JDK21.0.13; the reproducible runner uses pinned ECJ3.40.0 to compile Java17-target classes without installed Maven or javac. Retain actual commands, exit codes, JUnit XML, aligned dependency hashes/BOM and license notices.
-- The animation keeps PaymentGateway interface and DemoGateway object distinct. Constructor-ready anchor15.610s precedes application order use17.180s. The overview includes Boot startup/scanning, type matching, constructor requirement, supplied reference and later order use. These animation times are not runtime timings.
-- This lesson's male Kokoro candidate uses80%am_puck/20%am_fenrir at inference speed0.90 to meet the duration target; this is a lesson-specific pace, not a universally approved voice setting. No waveform stretching or pitch shifting. Full-stream ASR74/77words,3.8961%WER; separate unprompted Thanks crop3/3. Preserve the raw omission and separate alignment provenance.
-- Master and both platform copies passed actual probe, decode and hash checks;120encoded recap-hold frames and the actual last Thanks frame were compared. Perceptual voice acceptance remains unverified because no listening review was available. Do not treat automated metrics as humanlike-voice approval.
-- Archives use day-03-prefixed names. Every handoff still requires all links AND five separate phone-copyable publishing blocks. Read newer explicit prompt requirements first; this lesson meets35–40seconds while retaining the requested reading hold.
+- The earlier Constructor Injection in Spring Boot production remains in Git history at d05b1a388b573666af199cbd9985b94ab7feb604 under output/week-01/day-03. Its Boot3.5.6 example, tests,35.833333s media and unaccepted listening status are historical results.
+- Current day-03 files implement the explicitly approved **Bean registration** topic for2026-11-18. Do not reuse the old topic or its static opening-cover hold for this slot.
 
 ## Superseded earlier revision: dependency injection in the Day 2 directory
 

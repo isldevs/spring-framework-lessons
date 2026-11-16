@@ -1,33 +1,32 @@
-BOOT INTEGRATION TEST
-App starts Spring Boot
-DemoGateway created
-OrderService constructed with PaymentGateway
-Boot context ready
-same gateway bean: true
-receipt: APPROVED order-1042 USD 19.99
-Spring Boot integration test: passed
-PURE JAVA SERVICE TEST
-OrderService constructed with PaymentGateway
-fake gateway test: passed
+plain class missing: true
+@Bean definition before instance: true
+@Bean factory called
+Client created
+@Bean retrieved: true
+scan definition before instance: true
+Worker created
+scan retrieved: true
+outside scan missing: true
 ╷
 ├─ JUnit Platform Suite ✔
 ├─ JUnit Jupiter ✔
-│  └─ ConstructorInjectionTests ✔
-│     ├─ bootInjectsTheManagedGatewayBeforeOrderUse() ✔
-│     └─ aRecordingFakeTestsOrderForwardingWithoutSpring() ✔
+│  └─ RegistrationTests ✔
+│     ├─ aPlainClasspathClassHasNoDefinitionOrManagedInstance() ✔
+│     ├─ registeredConfigurationAddsAFactoryDefinitionAndRetrievableSingleton() ✔
+│     └─ configuredScanRegistersItsComponentAndExcludesAnAnnotatedOutsideClass() ✔
 └─ JUnit Vintage ✔
 
-Test run finished after 742 ms
+Test run finished after 344 ms
 [         4 containers found      ]
 [         0 containers skipped    ]
 [         4 containers started    ]
 [         0 containers aborted    ]
 [         4 containers successful ]
 [         0 containers failed     ]
-[         2 tests found           ]
+[         3 tests found           ]
 [         0 tests skipped         ]
-[         2 tests started         ]
+[         3 tests started         ]
 [         0 tests aborted         ]
-[         2 tests successful      ]
+[         3 tests successful      ]
 [         0 tests failed          ]
 

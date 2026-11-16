@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="JUnit Jupiter" tests="2" skipped="0" failures="0" errors="0" time="0.627" hostname="788ada864540" timestamp="2026-11-15T03:36:32">
+<testsuite name="JUnit Jupiter" tests="3" skipped="0" failures="0" errors="0" time="0.241" hostname="5d163ff444a0" timestamp="2026-11-16T14:49:43">
 <properties>
-<property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
-<property name="FILE_LOG_CHARSET" value="UTF-8"/>
-<property name="PID" value="1017"/>
 <property name="file.encoding" value="UTF-8"/>
 <property name="file.separator" value="/"/>
-<property name="java.awt.headless" value="true"/>
-<property name="java.class.path" value="build/main:build/test:lib/ecj-3.40.0.jar:lib/junit-platform-console-standalone-1.12.2.jar:lib/micrometer-commons-1.15.4.jar:lib/micrometer-observation-1.15.4.jar:lib/snakeyaml-2.4.jar:lib/spring-aop-6.2.11.jar:lib/spring-beans-6.2.11.jar:lib/spring-boot-3.5.6.jar:lib/spring-boot-autoconfigure-3.5.6.jar:lib/spring-context-6.2.11.jar:lib/spring-core-6.2.11.jar:lib/spring-expression-6.2.11.jar:lib/spring-jcl-6.2.11.jar"/>
+<property name="java.class.path" value="build/main:build/test:lib/ecj-3.40.0.jar:lib/junit-platform-console-standalone-1.12.2.jar:lib/micrometer-commons-1.15.4.jar:lib/micrometer-observation-1.15.4.jar:lib/spring-aop-6.2.11.jar:lib/spring-beans-6.2.11.jar:lib/spring-context-6.2.11.jar:lib/spring-core-6.2.11.jar:lib/spring-expression-6.2.11.jar:lib/spring-jcl-6.2.11.jar"/>
 <property name="java.class.version" value="65.0"/>
 <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
 <property name="java.io.tmpdir" value="/tmp"/>
@@ -44,7 +40,7 @@
 <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
 <property name="sun.cpu.endian" value="little"/>
 <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-<property name="sun.java.command" value="org.junit.platform.console.ConsoleLauncher execute --disable-banner --disable-ansi-colors --class-path build/main:build/test --select-class lesson.orders.ConstructorInjectionTests --reports-dir build/test-results --details tree"/>
+<property name="sun.java.command" value="org.junit.platform.console.ConsoleLauncher execute --disable-banner --disable-ansi-colors --class-path build/main:build/test --select-class lesson.registration.RegistrationTests --reports-dir build/test-results --details tree"/>
 <property name="sun.java.launcher" value="SUN_STANDARD"/>
 <property name="sun.jnu.encoding" value="UTF-8"/>
 <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -54,16 +50,22 @@
 <property name="user.name" value="agent"/>
 <property name="user.timezone" value="Etc/UTC"/>
 </properties>
-<testcase name="aRecordingFakeTestsOrderForwardingWithoutSpring()" classname="lesson.orders.ConstructorInjectionTests" time="0">
+<testcase name="configuredScanRegistersItsComponentAndExcludesAnAnnotatedOutsideClass()" classname="lesson.registration.RegistrationTests" time="0.027">
 <system-out><![CDATA[
-unique-id: [engine:junit-jupiter]/[class:lesson.orders.ConstructorInjectionTests]/[method:aRecordingFakeTestsOrderForwardingWithoutSpring()]
-display-name: aRecordingFakeTestsOrderForwardingWithoutSpring()
+unique-id: [engine:junit-jupiter]/[class:lesson.registration.RegistrationTests]/[method:configuredScanRegistersItsComponentAndExcludesAnAnnotatedOutsideClass()]
+display-name: configuredScanRegistersItsComponentAndExcludesAnAnnotatedOutsideClass()
 ]]></system-out>
 </testcase>
-<testcase name="bootInjectsTheManagedGatewayBeforeOrderUse()" classname="lesson.orders.ConstructorInjectionTests" time="0.606">
+<testcase name="aPlainClasspathClassHasNoDefinitionOrManagedInstance()" classname="lesson.registration.RegistrationTests" time="0.153">
 <system-out><![CDATA[
-unique-id: [engine:junit-jupiter]/[class:lesson.orders.ConstructorInjectionTests]/[method:bootInjectsTheManagedGatewayBeforeOrderUse()]
-display-name: bootInjectsTheManagedGatewayBeforeOrderUse()
+unique-id: [engine:junit-jupiter]/[class:lesson.registration.RegistrationTests]/[method:aPlainClasspathClassHasNoDefinitionOrManagedInstance()]
+display-name: aPlainClasspathClassHasNoDefinitionOrManagedInstance()
+]]></system-out>
+</testcase>
+<testcase name="registeredConfigurationAddsAFactoryDefinitionAndRetrievableSingleton()" classname="lesson.registration.RegistrationTests" time="0.035">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:lesson.registration.RegistrationTests]/[method:registeredConfigurationAddsAFactoryDefinitionAndRetrievableSingleton()]
+display-name: registeredConfigurationAddsAFactoryDefinitionAndRetrievableSingleton()
 ]]></system-out>
 </testcase>
 <system-out><![CDATA[

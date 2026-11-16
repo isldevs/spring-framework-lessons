@@ -1,38 +1,65 @@
 [
   {
-    "claim": "Boot recommends constructor injection",
-    "source": "java-doc-boot-di.html",
-    "needle": "We generally recommend using constructor injection",
-    "verbatim_context": "y of the standard Spring Framework techniques to define your beans and their injected dependencies. We generally recommend using constructor injection to wire up dependencies and @ComponentScan to find beans. If you structure your code as suggested above (locating your application class in a top package), you can add @ComponentScan without any arguments or use the @SpringBootApplication annotation which implicitly includes it. All of your application components ( @Component , @Service , @Repository , @Controller , and others) are automatically registered as Spring"
+    "claim": "No-argument AnnotationConfigApplicationContext is explicitly registered and refreshed",
+    "source_file": "java-doc-annotation-context.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html",
+    "needle": "must be called in order for the context to fully process",
+    "verbatim_context": "ister one or more component classes to be processed. Note that AbstractApplicationContext.refresh() must be called in order for the context to fully process the new classes. Specified by: register in interface AnnotationConfigRegistry Parameters: componentClasses - one or more component classes \u2014 for example, @Configuration classes See Also: scan(String...) AbstractApplicationContext.refresh() scan public void scan ( String ... basePackages) Perform a scan within the specified base packages. Note that"
   },
   {
-    "claim": "Boot scans application package",
-    "source": "java-doc-boot-di.html",
-    "needle": "implicitly includes it",
-    "verbatim_context": "you can add @ComponentScan without any arguments or use the @SpringBootApplication annotation which implicitly includes it. All of your application components ( @Component , @Service , @Repository , @Controller , and others) are automatically registered as Spring Beans. The following example shows a @Service Bean that uses constructor injection to obtain a required RiskAssessor bean: Java Kotlin import org.springframework.stereotype.Service; @Service public class MyAccountService implements AccountService { private final RiskAssessor ri"
+    "claim": "Registered configuration may declare Bean methods and bootstraps with register/refresh",
+    "source_file": "java-doc-configuration.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/Configuration.html",
+    "needle": "ctx.register(AppConfig.class); ctx.refresh();",
+    "verbatim_context": " former follows: AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(); ctx.register(AppConfig.class); ctx.refresh(); MyBean myBean = ctx.getBean(MyBean.class); // use myBean ... See the AnnotationConfigApplicationContext javadocs for further details, and see AnnotationConfigWebApplicationContext for web configuration instructions in a Servlet container. Via Spring <beans> XML As an alternative to registering @Configuration classes directly against an AnnotationC"
   },
   {
-    "claim": "final dependency reference cannot be reassigned",
-    "source": "java-doc-boot-di.html",
-    "needle": "Notice how using constructor injection",
-    "verbatim_context": "essor: RiskAssessor, out: PrintStream) { this.riskAssessor = riskAssessor this.out = out } // ... } Notice how using constructor injection lets the riskAssessor field be marked as final , indicating that it cannot be subsequently changed. Auto-configuration Using the @SpringBootApplication Annotation Spring Boot Stable 4.1.2 4.0.9 3.5.16 3.4.13 3.3.13 Preview 4.2.0-RC2 Snapshot 4.2.0-SNAPSHOT 4.1.3-SNAPSHOT 4.0.10-SNAPSHOT Related Spring Documentation Spring Boot Spring Framework Spring Cloud Spring Cloud Build Spring Cloud Bus Spring Cloud Circuit Bre"
+    "claim": "Bean method declares an object-producing factory managed by Spring",
+    "source_file": "java-doc-bean-annotation.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/Bean.html",
+    "needle": "Indicates that a method produces a bean to be managed by the Spring container.",
+    "verbatim_context": "an @Target ({ METHOD , ANNOTATION_TYPE }) @Retention ( RUNTIME ) @Documented public @interface Bean Indicates that a method produces a bean to be managed by the Spring container. Overview The names and semantics of the attributes to this annotation are intentionally similar to those of the <bean/> element in the Spring XML schema. For example: @Bean public MyBean myBean() { // instantiate and configure MyBean obj return obj; } Bean Names While a name() attribute is available, the default strategy for determining the name o"
   },
   {
-    "claim": "One constructor needs no Autowired",
-    "source": "java-doc-spring-constructor.html",
-    "needle": "If a class only declares a single constructor",
-    "verbatim_context": "f them is annotated with @Autowired , then a primary/default constructor (if present) will be used. If a class only declares a single constructor to begin with, it will always be used, even if not annotated. Note that an annotated constructor does not have to be public. Alternatively, you can express the non-required nature of a particular dependency through Java’s java.util.Optional , as the following example shows: public class SimpleMovieLister { @Autowired public void setMovieFinder(Optional<MovieFinder> movieFinder) { ... } } You can also use a parameter"
+    "claim": "Bean annotation on a method registers a bean definition of its return type",
+    "source_file": "java-doc-bean-reference.html",
+    "official_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/java/bean-annotation.html",
+    "needle": "You use this method to register a bean definition within an ApplicationContext",
+    "verbatim_context": "ted class. Declaring a Bean To declare a bean, you can annotate a method with the @Bean annotation. You use this method to register a bean definition within an ApplicationContext of the type specified as the method\u2019s return value. By default, the bean name is the same as the method name. The following example shows a @Bean method declaration: Java Kotlin @Configuration public class AppConfig { @Bean public TransferServiceImpl transferService() { return new TransferServiceImpl(); } } @Configuration class AppConfig { @Bean f"
   },
   {
-    "claim": "SpringApplication boots application",
-    "source": "java-doc-boot-application.html",
-    "needle": "The SpringApplication class provides",
-    "verbatim_context": "s SpringApplication For the latest stable version, please use Spring Boot 4.1.2 ! SpringApplication The SpringApplication class provides a convenient way to bootstrap a Spring application that is started from a main() method. In many situations, you can delegate to the static SpringApplication.run(Class, String...) method, as shown in the following example: Java Kotlin import org.springframework.boot.SpringApplication; import org.springframework.boot.autoconfigure.SpringBootApplication; @SpringBootApplication public class MyApplication { public stati"
+    "claim": "Component annotation makes a class a candidate rather than scanning every class automatically",
+    "source_file": "java-doc-component.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/stereotype/Component.html",
+    "needle": "Such classes are considered as candidates for auto-detection",
+    "verbatim_context": "Documented @Indexed public @interface Component Indicates that the annotated class is a component . Such classes are considered as candidates for auto-detection when using annotation-based configuration and classpath scanning. A component may optionally specify a logical component name via the value attribute of this annotation. Other class-level annotations may be considered as identifying a component as well, typically a special kind of component \u2014 for example, the @Repository annotation or AspectJ's @A"
   },
   {
-    "claim": "Non-web application",
-    "source": "java-doc-boot-application.html",
-    "needle": "WebApplicationType.NONE",
-    "verbatim_context": "d by calling setApplicationContextFactory(…​) . It is often desirable to call setWebApplicationType(WebApplicationType.NONE) when using SpringApplication within a JUnit test. Accessing Application Arguments If you need to access the application arguments that were passed to SpringApplication.run(…​) , you can inject a ApplicationArguments bean. The ApplicationArguments interface provides access to both the raw String[] arguments as well as parsed option and non-option arguments, as shown in the following example: Java Kotlin import java."
+    "claim": "ComponentScan chooses packages; the configured package boundary matters",
+    "source_file": "java-doc-component-scan.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/ComponentScan.html",
+    "needle": "may be specified to define specific packages to scan.",
+    "verbatim_context": "-scan> XML namespace element. Either basePackageClasses() or basePackages() (or its alias value() ) may be specified to define specific packages to scan. If specific packages are not defined, scanning will occur recursively beginning with the package of the class that declares this annotation. Note that the <context:component-scan> element has an annotation-config attribute; however, this annotation does not. This is because in almost all cases when using @ComponentScan , default annotation config "
+  },
+  {
+    "claim": "Component scanning detects stereotyped classes and registers their BeanDefinitions",
+    "source_file": "java-doc-classpath-scanning.html",
+    "official_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/classpath-scanning.html",
+    "needle": "Spring can automatically detect stereotyped classes and register corresponding BeanDefinition instances with the ApplicationContext",
+    "verbatim_context": "ation Programming Model wiki page. Automatically Detecting Classes and Registering Bean Definitions Spring can automatically detect stereotyped classes and register corresponding BeanDefinition instances with the ApplicationContext . For example, the following two classes are eligible for such autodetection: Java Kotlin @Service public class SimpleMovieLister { private MovieFinder movieFinder; public SimpleMovieLister(MovieFinder movieFinder) { this.movieFinder = movieFinder; } } @Service class SimpleMovieLister(private val movieFinder: MovieFinder) Java Kotlin @Repository p"
+  },
+  {
+    "claim": "BeanDefinition holds construction metadata rather than an already created instance",
+    "source_file": "java-doc-bean-definition.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/config/BeanDefinition.html",
+    "needle": "A BeanDefinition describes a bean instance",
+    "verbatim_context": "nericBeanDefinition public interface BeanDefinition extends AttributeAccessor , BeanMetadataElement A BeanDefinition describes a bean instance, which has property values, constructor argument values, and further information supplied by concrete implementations. This is just a minimal interface: The main intention is to allow a BeanFactoryPostProcessor to introspect and modify property values and other bean metadata. Since: 19.03.2004 Author: Juergen Hoeller, Rob Harrop See Also: Configur"
+  },
+  {
+    "claim": "BeanDefinition can record a factory method",
+    "source_file": "java-doc-bean-definition.html",
+    "official_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/config/BeanDefinition.html",
+    "needle": "getFactoryMethodName () Return a factory method, if any.",
+    "verbatim_context": "me of the destroy method. String getFactoryBeanName () Return the factory bean name, if any. String getFactoryMethodName () Return a factory method, if any. String getInitMethodName () Return the name of the initializer method. BeanDefinition getOriginatingBeanDefinition () Return the originating BeanDefinition, or null if none. String getParentName () Return the name of the parent definition of this bean definition, if any. MutablePropertyValues getPropertyValues () Return the property values to be a"
   }
 ]

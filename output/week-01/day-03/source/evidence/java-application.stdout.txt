@@ -1,3 +1,9 @@
-DemoGateway created
-OrderService constructed with PaymentGateway
-receipt: APPROVED order-1042 USD 19.99
+plain class missing: true
+@Bean definition: client
+@Bean factory called
+Client created
+@Bean retrieved: true
+scan definition: worker
+Worker created
+scan retrieved: true
+outside scan missing: true

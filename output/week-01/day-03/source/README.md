@@ -1,30 +1,41 @@
-# Reproduce: Constructor Injection in Spring Boot
+# Reproduce: Bean registration
 
-This lesson uses actual Spring Boot startup, a constructor-required PaymentGateway dependency, original Pillow graphics, NumPy audio and local licensed Kokoro male narration. Source speech is 35.819167 seconds, rounded up to 35.833333 seconds at 60 FPS. Final encoded stream measurements and remaining voice-acceptance limits are in ../verification-report.md.
+The approved topic is **Bean registration**, with the original publication date **2026-11-18** and proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). These are metadata fields only. Nothing is uploaded, scheduled or published by this production.
 
-## Actual Boot example and tests
+## Actual Java examples and tests
 
-CheckoutApplication has @SpringBootApplication in package lesson.orders and starts a real non-web SpringApplication. Its package scan discovers @Component DemoGateway and @Service OrderService. PaymentGateway is the interface; DemoGateway is the unique managed implementation in this example. OrderService's only constructor requires PaymentGateway, checks it with Objects.requireNonNull, and stores the supplied reference in a private final field. A final reference cannot be reassigned; it does not make the gateway object's state immutable.
-
-The actual Boot integration test checks the runtime version, unique interface candidate, managed/injected reference identity, constructor-before-use ordering, simulated receipt and singleton reuse. A separate pure Java service test manually constructs OrderService with a RecordingGateway and verifies forwarded order ID, amount, call count and returned result. It does not add another production gateway bean.
+From the lesson directory:
 
 ```sh
 bash source/java/run.sh
 ```
 
-The runner downloads/checks pinned jars, compiles main and test sources separately, runs JUnit, then executes the standalone Boot application. Source and exact Java reproduction details are under java/. The verified toolchain is OpenJDK 21.0.13, ECJ 3.40.0 targeting Java 17, Spring Boot 3.5.6, Spring Framework 6.2.11, Micrometer 1.15.4, SnakeYAML 2.4 and JUnit Jupiter 5.12.2 / console platform 1.12.2. Maven and javac are not required by the provided runner.
+The application uses separate AnnotationConfigApplicationContext instances for the missing class, explicit factory configuration and component scan. A plain Client class on the classpath has no registration in the first refreshed context, so getBean(Client.class) throws the expected NoSuchBeanDefinitionException. The demonstration catches that expected missing-bean result rather than crashing or fabricating an error log.
 
-Actual result: two JUnit tests succeeded, none failed; compilation, tests and standalone application exited 0 with empty stderr. Current stdout, commands, exit codes, JUnit XML, dependency/source hashes and official documentation evidence remain under evidence/java-*.
+For the factory path, ctx.register(FactoryConfig.class) activates @Configuration with an @Bean Client client() method. During refresh, Spring registers its factory-method definition before invoking the method and managing the returned Client. A BeanFactoryPostProcessor observes the definition, factory bean/method metadata and lack of a Client singleton before creation.
 
-DemoGateway only returns an in-memory simulated approval such as APPROVED order-1042 USD 19.99. The recording fake is a separate test double. No real payment, card data or external payment API is involved.
+For the scanning path, the application registers ScanConfig, whose @ComponentScan("lesson.scan") discovers @Component Worker. Its class-based definition exists before the Worker singleton. The annotated Outside class lives in lesson.outside and remains excluded from that configured scan. An annotation alone does not activate scanning, and the package boundary matters. The pictures illustrate selected application definitions, not an exhaustive list of Spring infrastructure beans.
+
+Actual verification: **3 JUnit tests passed; 0 failed**. They check the unregistered lookup, factory definition and single factory call, both retrievable default singletons, repeated-lookup identity, scanned class metadata and outside-package exclusion. Main compilation, test compilation, JUnit and the standalone application all exited 0 with empty stderr. Actual proof includes:
+
+```text
+plain class missing: true
+@Bean retrieved: true
+scan retrieved: true
+outside scan missing: true
+```
+
+Exact commands, stdout, exit codes, source/dependency hashes, JUnit XML and official documentation evidence are under evidence/java-*. See java/README.md for full reproduction and scope. The actual toolchain is OpenJDK 21.0.13, Eclipse ECJ 3.40.0 compiling Java17-target classes, Spring Framework 6.2.11, Micrometer 1.15.4 and JUnit Jupiter 5.12.2 / console platform 1.12.2. Ten pinned jars have download provenance, hashes and notices. The provided runner does not require Maven or javac. Spring Boot is not used.
+
+Both illustrated paths create bean definitions before their corresponding instances. This is not a universal claim that every Spring registration API requires a BeanDefinition: direct singleton registration and other APIs are outside this focused lesson. Creation and reuse shown here are default non-lazy singleton behavior, not a promise for every scope or lazy arrangement.
 
 ## Rebuild narration and video
 
-From the lesson directory, run source/rebuild.sh or the explicit steps:
+Run source/rebuild.sh, or the explicit steps from the lesson directory:
 
 ```sh
 bash source/voice/setup.sh
-source/voice/.venv/bin/python source/voice/generate.py --speed 0.90 --voice am_puck80_fenrir20
+source/voice/.venv/bin/python source/voice/generate.py --speed 0.80 --hook-speed 1.00 --voice am_puck80_fenrir20
 source/voice/.venv/bin/python source/voice/qa.py --asr-model base.en
 source/voice/.venv/bin/python source/voice/split_captions.py
 python -m venv source/animation/.venv
@@ -35,24 +46,26 @@ source/animation/.venv/bin/python source/animation/validate.py
 source/animation/.venv/bin/python source/animation/package_platforms.py
 ```
 
-The production toolchain uses Python 3.12, Pillow 13.0.0, NumPy 2.3.5, SciPy 1.17.0 and FFmpeg/FFprobe 7.1.5. Voice dependencies have a separate locked environment. The Kokoro float32 model and voice bundle are locally inferred and checksum-pinned by voice/models.sha256; downloaded model caches and virtual environments are excluded from Git and the delivery ZIP.
+The production environment uses Python 3.12, Pillow 13.0.0, NumPy 2.3.5, SciPy 1.17.0 and FFmpeg/FFprobe 7.1.5. Voice dependencies have a separate locked environment. Kokoro model and voice bundle downloads are checksum-pinned in voice/models.sha256. Downloaded models, caches, environments and Python bytecode are excluded from Git and ZIP delivery.
 
-This lesson uses 80% am_puck / 20% am_fenrir at actual inference speed 0.90, allowing calm phrasing while meeting the requested duration. This is model inference pacing, not waveform stretching or pitch shifting. Each of seven scenes is one coherent inference batch. Source narration is ../narration.wav; actual ASR, phonemes, pitch, pauses and review limits are in voice/. Those metrics do not constitute listening acceptance of human naturalness or intended age.
+Seven coherent utterances use the licensed 80% am_puck / 20% am_fenrir male English blend. Only the short hook uses inference speed 1.00; the other phrases use 0.80. These are model inference controls, not waveform stretching or pitch shifting. Actual sample-derived utterance times, scene cuts, caption cues and the exact two-second recap hold are retained in timing.json and ../storyboard.md. Actual source narration is38.387208s, frame-rounded to38.400000s/2304frames. The complete recap hold is34.679125–36.679125s before Thanks. Source narration is ../narration.wav. Raw full-stream ASR is72expected/73recognized words, edit distance2, WER2.7778%; the classpath/class path spacing discrepancy is preserved in raw results and separately normalized for alignment. Phonemes, signal/pitch/pause measurements and alignment provenance are in voice/.
 
-## Cover, recap and Thanks timing
+No auditory acceptance is claimed. Humanlike naturalness, perceived younger-to-middle adult male age, subtle synthesis artifacts and final pronunciation require listening that is unavailable in this runtime. Objective recognition and signal metrics do not satisfy that essential review, so strict overall approval remains incomplete.
 
-The exact separate cover.png is the unchanged source for frames 0–59, without an overlay or fade; narration begins immediately. Encoded H.264 frames are compared against the supplied cover with normal lossy tolerance. This keeps the first video frame usable as a thumbnail for phone uploads.
+## Immediate hook, separate cover and recap
 
-The recap starts at 25.193375s. The completed-diagram reading hold runs **32.283125–34.283125s**, exactly 2 seconds. The requested Thanks card follows from **34.283125 to 35.819167s**, including the closing audio tail. The recap hold is not the last two seconds of the file.
+The video starts from frame one with a visible plain-class/missing-registration mechanism and spoken hook. It has no title-card hold, fade-in, logo intro or black opening. cover.png is a separate 1080×1920 branded asset. If an upload interface selects a video frame rather than a separate cover, choose a clear opening mechanism frame.
 
-The renderer keeps the interface contract, concrete DemoGateway object, constructor parameter, stored final reference, application use and separate fake test distinct. Its recap is a concrete Boot-startup/type-resolution/injection/use overview. The standalone recap.png and thanks.png supplement the sequence embedded in the same MP4. English captions are burned into the picture and subtitles.srt is supplied separately.
+Seven scenes follow missing class → missing definition/cause → registered @Bean factory configuration → configured component scan → outside-package annotation still missing → genuine proof and two-path overview → Thanks for watching. The overview is complete for at least two seconds before the separate narrated Thanks card. recap.png and thanks.png supplement the same ending embedded in the video.
 
-animation/audio_mix.py generates an original quiet harmonic bed and synchronized reference/verification cues with NumPy, ducks it beneath narration and preserves continuity across scene cuts. No sampled song or stock effect is used.
+Captions are burned into the picture from the opening hook and exported as synchronized subtitles.srt. The recap fits above its reserved caption band. Important content remains inside X=90..990, Y=250..1520; the encoded-file report separately records actual safe-bound, mobile-scale, transition and closing inspections. Animation timestamps explain the mechanism rather than benchmark Spring's execution speed.
 
-## Packages and review scope
+animation/audio_mix.py synthesizes a quiet original harmonic bed and timed registration effects with NumPy. Speech ducking and smooth envelopes preserve continuity. No sampled song, stock recording or paid production service is used.
 
-Platform copies and their own manifests, FFprobe output, notes and paste-ready copy live in platforms/. Parent archives use day-03-youtube-shorts-upload.zip, day-03-facebook-reels-upload.zip and day-03-production.zip, preserving earlier lessons. Nothing is uploaded, scheduled or published to YouTube/Facebook.
+## Packages, rights and finalization
 
-../asset-rights.md and ../originality-review.md document actual asset provenance, licenses and review limits. Font notices are in assets/; model/voice and inference software evidence in voice/licenses/; runtime/compiler/test dependency notices in java/licenses/. Standard Java/Spring concepts are not claimed as globally novel; no exhaustive plagiarism search is claimed.
+Platform folders have separate filenames, paste-ready copy, technical notes, FFprobe output and manifests. Parent archives use day-03-youtube-shorts-upload.zip, day-03-facebook-reels-upload.zip and day-03-production.zip. Current Bean registration media replace the earlier different-topic production at this approved destination; earlier versions remain in Git history.
 
-After regeneration, inspect the actual encoded master and both platform copies, then refresh verification-report.md. Run `python source/animation/finalize_delivery.py` after the report and editorial files are final. It checks both current platform manifests and ZIP members, creates the lesson SHA-256 manifest and complete production ZIP, verifies every archived member and writes the parent archive hashes/delivery audit. The local rebuild script does not push or publish; repository AGENTS.md requires the production agent to commit and push verified artifacts afterward. Any incomplete essential quality requirement must remain honestly disclosed.
+../asset-rights.md and ../originality-review.md record provenance, permissions and review limitations. Font notices are in assets/, model/voice/inference evidence in voice/licenses/, and compiler/runtime/test notices in java/licenses/. Both public Spring reference URLs were actually retrieved with HTTP200; response hashes and resolved URLs are in evidence/publishing-reference-check.json. No exhaustive plagiarism check or worldwide novelty claim is made.
+
+After regeneration, inspect the actual encoded master and both platform copies, then update ../verification-report.md from current results. Run `python source/animation/finalize_delivery.py` after all editorial and review files are final. It checks platform manifests and ZIP members, refreshes the lesson SHA-256 manifest and complete production ZIP, verifies archived members and writes parent archive hashes/delivery audit. The rebuild script does not push or publish. Repository AGENTS.md requires the production agent to push artifacts after applicable checks while disclosing every incomplete requirement.

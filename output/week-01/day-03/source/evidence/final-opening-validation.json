@@ -1,0 +1,40 @@
+{
+  "static_cover_hold": false,
+  "unique_source_core_frames_in_first_two_seconds": 100,
+  "first_source_visual_change_s": 0.016666666666666666,
+  "maximum_changed_core_pixels": 398196,
+  "core_crop": [
+    100,
+    330,
+    980,
+    1310
+  ],
+  "encoded_snapshots": [
+    {
+      "frame": 0,
+      "time_s": 0.0,
+      "source_ssim": 0.998607
+    },
+    {
+      "frame": 15,
+      "time_s": 0.25,
+      "source_ssim": 0.99865
+    },
+    {
+      "frame": 30,
+      "time_s": 0.5,
+      "source_ssim": 0.998652
+    },
+    {
+      "frame": 60,
+      "time_s": 1.0,
+      "source_ssim": 0.998653
+    },
+    {
+      "frame": 120,
+      "time_s": 2.0,
+      "source_ssim": 0.999298
+    }
+  ],
+  "scope": "Motion and source correspondence; human review must assess the hook wording and meaning."
+}

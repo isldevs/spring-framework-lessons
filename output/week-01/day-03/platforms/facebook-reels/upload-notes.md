@@ -1,12 +1,11 @@
 # Facebook Reels upload notes
 
-Use `facebook-reels.mp4`. The video is 35.833333 seconds, native1080×1920,60FPS,H.264/AAC48kHz,Rec.709SDR, with local male Kokoro narration and burned English captions. The exact cover is embedded in the opening second, and the complete recap holds for two seconds before the Thanks card.
+Approved topic: **Bean registration**. Publish date: **2026-11-18**. Proposed time: **19:00 Asia/Phnom_Penh (UTC+07:00;12:00 UTC)**. This is metadata only; nothing is scheduled or published.
 
-1. Select the MP4 for a Reel and paste the complete `caption.txt`, including its hashtags.
-2. Use `cover.png` wherever custom cover upload is offered. If the interface only permits selecting an existing frame, choose a frame from the opening second; it displays this exact cover without a fade.
-3. English captions are already in the picture. `subtitles.srt` is available separately where caption-track import is supported. Avoid a second automatic or decorative caption layer repeating the same words.
-4. Review the actual upload preview for sound, crop, text and cover. Voice naturalness and perceived age have not been accepted by listening in this runtime. See `technical-checks.md` for current technical and voice-review status.
+1. Select `facebook-reels.mp4` and paste caption.txt, including its Facebook hashtags.
+2. Use cover.png where a separate cover is supported. Otherwise choose a clear frame from the immediate animated hook; the MP4 does not hold a static title/cover card at its start.
+3. Captions are already part of the picture. subtitles.srt is supplied for accessibility where supported; avoid a duplicate decorative caption overlay.
+4. Check the platform's preview for crop, readability and audio. The measured properties and incomplete auditory voice acceptance are in technical-checks.md. This runtime cannot certify smooth human naturalness, pronunciation or perceived age by listening.
+5. The closing recap compares @Bean configuration and component scanning, then holds complete for two seconds before a brief Thanks for watching card.
 
-DemoGateway simulates an approval locally. The fake gateway belongs only to a separate service test. No real payment is processed and no payment API is called. No upload, scheduling or publication has been performed by this production workflow. Public copy contains no internal schedule or lesson numbering.
-
-The closing recap connects Spring Boot startup, the PaymentGateway constructor requirement, the matching DemoGateway bean, reference injection and order placement. The completed diagram remains visible for at least two seconds.
+The Java examples verify both registration paths and the missing outside-scan component. Public copy contains no week/day/episode numbering. No Facebook upload, scheduling or publication has been performed.

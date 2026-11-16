@@ -1,0 +1,25 @@
+{
+  "curriculum": {
+    "week": "01",
+    "week_name": "Spring IoC Foundations",
+    "day": 3,
+    "weekday": "Wednesday",
+    "exact_topic": "Bean registration",
+    "publish_date": "2026-11-18",
+    "publish_time": "19:00",
+    "timezone": "Asia/Phnom_Penh",
+    "publication_time_status": "proposed",
+    "equivalent_utc": "2026-11-18T12:00:00Z"
+  },
+  "public_numbering": false,
+  "opening": "Immediate spoken/animated missing-bean hook from frame one; separate cover only",
+  "target_seconds": [
+    35,
+    40
+  ],
+  "strict_max_seconds": 45,
+  "fps": 60,
+  "voice_perceptual_review": "INCOMPLETE: no auditory listening review available or performed",
+  "publication": "No automatic upload, scheduling or publication",
+  "technical_status": "PASS: actual three Java tests, encoded master and both platform copies"
+}

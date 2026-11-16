@@ -3,152 +3,167 @@
     {
       "scene": 1,
       "start": 0.0,
-      "end": 0.98,
-      "text": "How does an order service"
-    },
-    {
-      "scene": 1,
-      "start": 0.98,
-      "end": 2.706958,
-      "text": "get its payment gateway?"
+      "end": 1.486333,
+      "text": "Why isn't this a Spring bean?"
     },
     {
       "scene": 2,
-      "start": 2.886958,
-      "end": 4.24,
-      "text": "Require a payment gateway"
+      "start": 1.606333,
+      "end": 3.12,
+      "text": "A class on the classpath"
     },
     {
       "scene": 2,
-      "start": 4.24,
-      "end": 5.34,
-      "text": "in the constructor,"
+      "start": 3.12,
+      "end": 6.06,
+      "text": "isn't automatically registered."
     },
     {
       "scene": 2,
-      "start": 5.34,
-      "end": 8.2975,
-      "text": "and keep its reference in a final field."
+      "start": 6.06,
+      "end": 8.786292,
+      "text": "Give Spring a registration path."
     },
     {
       "scene": 3,
-      "start": 8.5175,
-      "end": 10.46,
-      "text": "Boot scans the components."
+      "start": 8.966292,
+      "end": 9.92,
+      "text": "Register configuration"
     },
     {
       "scene": 3,
-      "start": 10.46,
-      "end": 11.68,
-      "text": "One gateway bean matches"
+      "start": 9.92,
+      "end": 12.66,
+      "text": "with a @Bean method."
     },
     {
       "scene": 3,
-      "start": 11.68,
-      "end": 13.333625,
-      "text": "that interface type."
+      "start": 12.66,
+      "end": 14.02,
+      "text": "Spring calls the factory"
+    },
+    {
+      "scene": 3,
+      "start": 14.02,
+      "end": 16.751125,
+      "text": "and manages its result."
     },
     {
       "scene": 4,
-      "start": 13.553625,
-      "end": 14.82,
-      "text": "Spring passes it into"
+      "start": 16.931125,
+      "end": 19.44,
+      "text": "Or add the @Component annotation,"
     },
     {
       "scene": 4,
-      "start": 14.82,
-      "end": 16.08,
-      "text": "the service constructor"
+      "start": 19.44,
+      "end": 20.54,
+      "text": "then scan the package"
     },
     {
       "scene": 4,
-      "start": 16.08,
-      "end": 19.020167,
-      "text": "before the application places an order."
+      "start": 20.54,
+      "end": 22.585917,
+      "text": "containing your class."
     },
     {
       "scene": 5,
-      "start": 19.240167,
-      "end": 21.82,
-      "text": "Our Boot test confirms the same bean."
+      "start": 22.765917,
+      "end": 23.68,
+      "text": "Miss that package,"
     },
     {
       "scene": 5,
-      "start": 21.82,
-      "end": 22.96,
-      "text": "A fake gateway passes"
+      "start": 23.68,
+      "end": 25.56,
+      "text": "and even an annotated class"
     },
     {
       "scene": 5,
-      "start": 22.96,
-      "end": 24.973375,
-      "text": "a separate service test."
+      "start": 25.56,
+      "end": 27.821333,
+      "text": "stays unregistered."
     },
     {
       "scene": 6,
-      "start": 25.193375,
-      "end": 27.66,
-      "text": "Require, resolve, inject, then use."
+      "start": 28.001333,
+      "end": 29.64,
+      "text": "Our tests retrieve both."
     },
     {
       "scene": 6,
-      "start": 27.66,
-      "end": 29.66,
-      "text": "Constructor injection makes"
+      "start": 29.64,
+      "end": 31.88,
+      "text": "Two paths, one result:"
     },
     {
       "scene": 6,
-      "start": 29.66,
-      "end": 32.283125,
-      "text": "required dependencies explicit."
+      "start": 31.88,
+      "end": 34.679125,
+      "text": "Spring knows which beans to manage."
     },
     {
       "scene": 7,
-      "start": 34.283125,
-      "end": 35.469167,
+      "start": 36.679125,
+      "end": 38.037208,
       "text": "Thanks for watching."
     }
   ],
   "recap_cues_absolute": {
-    "require": 25.193375,
-    "resolve": 25.72,
-    "inject": 26.14,
-    "use": 27.4,
-    "complete": 28.05,
-    "recap_hold_start": 32.283125,
-    "recap_hold_end": 34.283125
+    "register": 28.001333,
+    "bean": 28.4,
+    "factory": 28.4,
+    "scan": 29.02,
+    "definition": 31.88,
+    "lookup": 33.54,
+    "complete": 34.04,
+    "recap_hold_start": 34.679125,
+    "recap_hold_end": 36.679125
   },
   "scene_cues_absolute": {
-    "requirement": {
-      "require": 2.886958,
-      "constructor": 4.62,
-      "reference": 6.1,
-      "final": 6.88,
-      "field": 7.12
+    "missing": {
+      "request": 1.956333,
+      "fail": 4.46,
+      "definition": 6.78,
+      "registration": 6.78
     },
-    "discovery": {
-      "boot": 8.5175,
-      "scan": 8.66,
-      "match": 11.22,
-      "interface": 11.96,
-      "type": 12.3
+    "factory": {
+      "register": 8.966292,
+      "configuration": 9.38,
+      "definition": 12.16,
+      "call": 12.88,
+      "instance": 15.52,
+      "lookup": 15.92
     },
-    "injection": {
-      "pass": 13.78,
-      "constructor": 15.26,
-      "application": 16.72,
-      "place": 17.18,
-      "order": 18.04,
-      "ready": 15.61
+    "scanning": {
+      "annotation": 17.62,
+      "scan": 19.5,
+      "definition": 19.62,
+      "instance": 19.88,
+      "lookup": 21.265917
+    },
+    "boundary": {
+      "outside": 22.765917,
+      "annotation": 24.52,
+      "miss": 26.06
     },
     "proof": {
-      "boot": 19.32,
-      "confirm": 19.84,
-      "same": 20.72,
-      "bean": 21.0,
-      "fake": 21.84,
-      "boot_test": 19.52,
-      "test": 23.86
+      "bean": 28.4,
+      "scan": 29.02,
+      "takeaway": 29.64,
+      "complete": 34.04
+    },
+    "recap": {
+      "register": 28.001333,
+      "bean": 28.4,
+      "factory": 28.4,
+      "scan": 29.02,
+      "definition": 31.88,
+      "lookup": 33.54,
+      "complete": 34.04,
+      "recap_hold_start": 34.679125,
+      "recap_hold_end": 36.679125
     }
-  }
+  },
+  "hook_asr_last_word_end": 1.04
 }

@@ -1,35 +1,40 @@
 # YouTube Shorts metadata
 
+## Publication plan
+
+- Approved lesson topic: Bean registration
+- Publish date: 2026-11-18 (Wednesday)
+- Proposed publish time: 19:00 Asia/Phnom_Penh (UTC+07:00; 12:00 UTC)
+- Publication status: Prepared metadata only. No upload, scheduling or publication has been performed.
+
 ## Title
 
-Constructor Injection in Spring Boot
+Why Isn't This Class a Spring Bean?
 
 ## Description and hashtags
 
-OrderService needs a PaymentGateway. How does Spring Boot supply it?
+Why is a plain Java class missing from Spring?
 
-Follow a PaymentGateway reference through the OrderService constructor into a final field. Boot starts Spring, scans the application's package, and resolves one matching DemoGateway component.
+Compare two bean registration paths: an @Bean factory method in registered configuration, and an @Component class found by component scanning.
 
-The example checks that OrderService receives the managed gateway bean. A separate service test supplies a recording fake through the same constructor.
+Follow each path into Spring's bean definitions and then retrieve the managed bean with getBean. The example also checks that an annotated class outside the configured scan package stays unregistered.
 
-Demo only: payment approvals are simulated. No real transaction or payment API is called.
+The runnable Spring Framework tests check missing lookups, both successful registration paths and default singleton reuse.
 
 Official Spring references:
-https://docs.spring.io/spring-boot/reference/using/spring-beans-and-dependency-injection.html
-https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html
+https://docs.spring.io/spring-framework/reference/6.2/core/beans/java/bean-annotation.html
+https://docs.spring.io/spring-framework/reference/6.2/core/beans/classpath-scanning.html
 
-iSLDevs — Java and Spring, made visual.
-
-#SpringBoot #ConstructorInjection #DependencyInjection #Java #Shorts #iSLDevs
+#BeanRegistration #SpringFramework #SpringIoC #Java #Shorts #iSLDevs
 
 ## Tags (comma-separated)
 
-constructor injection, Spring Boot, Spring dependency injection, OrderService, PaymentGateway, Java, final field, single constructor, Autowired, unit testing, fake gateway, dependency graph, iSLDevs
+bean registration, Spring Framework, Spring IoC, Bean, Component, ComponentScan, Java, bean definition, getBean, Spring configuration, singleton beans, iSLDevs
 
 ## Pinned comment
 
-One constructor, one matching PaymentGateway bean: this constructor does not need @Autowired.
+The configured scan must cover the class's package. Merely adding @Component does not activate scanning.
 
-DemoGateway simulates approval locally. The recording fake is supplied manually only in the separate service test.
+For the factory path, the configuration class must also be registered. The demo tests those steps in separate contexts.
 
-Which would help next: testing constructor injection or handling multiple matching gateway beans?
+Which registration path do you use most: @Bean or component scanning?

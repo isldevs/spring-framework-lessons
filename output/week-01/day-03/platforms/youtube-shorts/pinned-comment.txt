@@ -1,5 +1,5 @@
-One constructor, one matching PaymentGateway bean: this constructor does not need @Autowired.
+The configured scan must cover the class's package. Merely adding @Component does not activate scanning.
 
-DemoGateway simulates approval locally. The recording fake is supplied manually only in the separate service test.
+For the factory path, the configuration class must also be registered. The demo tests those steps in separate contexts.
 
-Which would help next: testing constructor injection or handling multiple matching gateway beans?
+Which registration path do you use most: @Bean or component scanning?

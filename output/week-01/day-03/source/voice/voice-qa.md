@@ -1,29 +1,32 @@
-# Narration QA — constructor injection in Spring Boot
+# Narration QA — Bean registration
 
-## Actual source measurements
+## Delivered source and measured signal
 
-- Local Kokoro 80%am_puck/20%am_fenrir, model inference speed0.90, seven coherent single-batch utterances. No substitute TTS, pitch shifting or waveform time stretching.
-- **35.819167s**,48 kHz mono PCM24; frame-rounded MP4 **35.833333s**.
-- Signal above−60dBFS begins **0.015813s** and ends **35.419271s**. No artificial initial silence.
-- Peak **-1.514415dBFS**, RMS **-22.351673dBFS**, **0clipped samples**. Both waveform endpoints are zero; quiet joins use4ms microfades.
-- Voiced pYIN F0 10th/50th/90th percentiles **91.47/117.26/164.87Hz**, variation **4.04semitones** over2009voiced frames. These support varied pitch, not humanlike naturalness or perceived age.
+- Local Kokoro v1.0,80%am_puck/20%am_fenrir male English blend; one coherent batch per scene. Hook inference1.00, body0.80. No pitch shifting, waveform stretching or substitute TTS.
+- WAV **38.387208s**,48000Hz mono PCM24. Frame-rounded video **38.400000s /2304frames**.
+- Hook utterance **1.486333s**; raw ASR recognizes its final bean word by **1.040s**. Source signal above−60dBFS begins **0.015104s** and ends **37.998396s**.
+- Peak **−1.514415dBFS**, RMS **−20.434558dBFS**, **0clipped samples**. Both waveform endpoints are zero; quiet joins use4ms microfades.
+- Voiced pYIN F0 10th/50th/90th percentiles **92.53/115.24/162.98Hz**; variation **3.88semitones**,2127voiced frames. These are objective signal properties, not proof of perceived age or human naturalness.
+- Narration SHA-256: `d790098c38e089af4ae0522e9b34b9ca9f1baaee3c32884f85bc103859e633a7`.
 
-## Independent recognition and preserved raw omission
+## Final independent recognition and caption provenance
 
-Unprompted Whisper base.en int8, beam5, no initial prompt, full-stream decoding recognizes74normalized main-lesson words exactly and omits only the three-word Thanks for watching after the recap reading hold. Raw measurements: **77expected/74recognized**, edit distance **3**, normalized WER **0.038961 (3.8961%)**. Original asr.json/asr-summary.json are preserved; do not claim full-stream zero WER.
+Unprompted Whisper base.en int8, beam5, without an initial prompt, produces **72expected /73recognized words**, edit distance **2**, strict normalized WER **0.0277778 (2.7778%)**. The only mismatch is **classpath → class path**. The full raw transcript and score remain in `asr.json` / `asr-summary.json`; do not claim zero full-stream WER.
 
-A separate unprompted transcription of the actual final crop **34.283125–35.819167s** recognizes **Thanks for watching** exactly,3/3words. supplemental-asr.json records recognized words, confidence values and absolute times. asr-alignment.json combines untouched first-six-scene ASR with these independently observed final-phrase times; no expected words were silently inserted and raw WER remains unchanged.
+Caption alignment explicitly merges the independently recognized class/path timing spans into the technical compound classpath, preserving their actual boundaries. `@Bean` and `@Component` are the displayed Java annotation spellings of spoken bean and component; punctuation is omitted for token comparison. No expected words were inserted. The final Thanks phrase is present in the unprompted full stream; `supplemental-asr.json` records that no additional crop was required. First/last display cue boundaries follow known sample-derived synthesis edits rather than allowing raw ASR drift into the preceding quiet hold.
 
-Combined recognition covers all77expected normalized words. Captions retain ordinary spaced 'payment gateway'/'order service' wording. There are **18display cues**, maximum **40characters**. Word boundaries use approximate20ms-grid ASR times; scene/hold edits are sample-derived. alignment-normalization.json records no text changes and explains the derived constructor-ready and recap-complete animation anchors. Full G2P inputs are in pronunciation-g2p.json.
+The final scanning phrase was regenerated after both full-stream and independent crop recognition heard the original class-as sequence as class's. Parent-approved rewording removes that ambiguity. Rejected original-phrase evidence is retained only under `trials/`. The initial0.95-body candidate was rejected because30.733292s was below the target; neither rejection is represented as an auditory naturalness judgment.
 
-## Rhythm and synchronization
+There are **18synchronized display cues**, maximum **35characters**. Word times have approximately20ms ASR resolution; scene cuts and silence inserts are sample-derived. Factory/scanning registration, creation and lookup anchors include documented illustrative offsets, not runtime benchmark timings.
 
-The−45dBFS/120ms source silence scan finds the longest pre-hold quiet interval **0.632437s** at7.903062–8.535500s, between explanation and Boot discovery. The recap-to-Thanks quiet span **31.759208–34.326479s** lasts2.567271s, including native decay and the exact2s reading hold. The final quiet tail35.326812–35.819167s lasts0.492354s. The complete transcript is present across the two independent decoding passes; no unexpected missing speech was observed. silence-scan.txt and silence-summary.json preserve raw thresholds and intervals.
+## Pauses and continuity scope
 
-Recap hold: **32.283125–34.283125s**, before the Thanks card. Constructor passage begins13.780s; constructor word15.260s; documented graph-ready completion15.610s precedes business-order placement17.180s. These are animation/speech anchors, not Java wall-clock execution timings. Parent production separately verifies the actual Spring Boot behavior and encoded mix.
+The source−45dBFS/120ms scan finds the longest pre-reading-hold quiet interval **0.675875s**,16.275958–16.951833s, between scene phrases. The recap-to-Thanks quiet span34.264083–36.745125s lasts2.481042s, including natural decay and the exact2s inserted reading hold. The final quiet tail37.888500–38.387208s lasts0.498708s. Raw thresholds and intervals are retained in `silence-scan.txt` and `silence-summary.json`.
+
+Complete recap hold: **34.679125–36.679125s**. Thanks begins only afterward. Factory definition12.160s, factory call12.880s, instance15.520s, lookup15.920000s; scanned definition19.620s, instance19.880s, lookup21.265917s. Lookup reveals were moved within their existing phrases to provide1.011125s and1.50s reading windows, while preserving completed creation before lookup. These are explanatory edit anchors aligned to speech, not measurements of Java/Spring wall-clock behavior. The parent production verifies the actual compiled examples and encoded AAC mix separately.
 
 ## Outstanding essential voice requirement
 
-No auditory review was performed or claimed. This runtime cannot ingest audio for listening, so perceived younger-to-middle adult age, smooth human explanation, subtle synthesis artifacts and every aspect of pronunciation cannot be perceptually accepted or rejected here. ASR, pitch, silence and clipping metrics are not substitutes for listening. Under the user's completion criterion, **voice naturalness acceptance remains incomplete**, despite actual licensed Kokoro audio and objective evidence being delivered.
+**No auditory review was performed or claimed.** This runtime has no audio-ingestion/listening capability. Perceived younger-to-middle adult male age, smooth human explanation, every aspect of pronunciation and subtle synthesis artifacts cannot be perceptually accepted or rejected here. ASR, pitch, clipping and silence checks do not replace listening. Under the user's quality gate, **naturalness/listening acceptance remains incomplete**, despite actual licensed Kokoro narration and objective evidence being delivered.
 
-No MOS surrogate or transcript prompt was used to manufacture a listening result. Final AAC loudness and continuity are checked separately; these figures describe the clean source WAV. Model/voice bundle hashes were rechecked successfully; license evidence and reproduction inputs remain under this source folder.
+Model/voice bundle hash checks passed. License evidence, locked dependencies, literal input/phoneme records and rebuild code are retained. Large model caches and virtual environments are excluded. No MOS surrogate, expected-transcript prompt or invented human approval was used.

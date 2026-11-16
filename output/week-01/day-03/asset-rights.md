@@ -1,24 +1,22 @@
-# Asset rights — Constructor Injection in Spring Boot
+# Asset rights — Bean registration
 
-This is a record of the production inputs and retained license evidence. It does not claim final perceptual acceptance of the voice or exhaustive legal clearance of every possible use.
+This record identifies actual production inputs and retained license evidence. Encoded-file verification and perceptual voice acceptance are recorded separately.
 
 | Input | Source and role | Rights evidence |
 | --- | --- | --- |
-| English script and publishing copy | Original lesson text explaining the required PaymentGateway constructor parameter, final reference, Spring-managed injection and separate fake-gateway test | Narration script and platform metadata retained with the source; no supplied third-party transcript used as the script |
-| Cover, animation, recap and Thanks card | Procedural Pillow typography, shapes and reference-flow graphics in the continuing iSLDevs style | `source/animation/render.py`; no stock photography, footage or imported third-party illustration used |
-| Background bed and effects | Own-production NumPy harmonic synthesis and timed reference/verification tones | `source/animation/audio_mix.py`; no sampled song or stock recording |
-| Male AI narration | Local Kokoro v1.0 style blend of am_puck and am_fenrir | Apache-2.0 model distribution; official model card, male-voice table, project license and release evidence under `source/voice/licenses/` |
-| TTS inference code | kokoro-onnx | MIT license retained in `source/voice/licenses/kokoro-onnx-LICENSE.txt` |
-| Open Sans fonts | Unmodified local Bold, Regular and Semibold font assets | Apache-2.0; copyright/notices in `source/assets/OpenSans-LICENSE.txt`, full license in `source/assets/Apache-2.0.txt` |
-| DejaVu Sans Mono | Unmodified local code font | Bitstream Vera permission terms and public-domain DejaVu changes; `source/assets/DejaVu-LICENSE.txt` |
-| Spring Boot, Spring Framework and Micrometer jars | Actual non-web Boot verification runtime, pinned and version aligned | Apache-2.0 licenses/notices retained under `source/java/licenses/` |
-| Java compiler | Eclipse ECJ, used with the installed Java runtime | EPL-2.0 evidence under `source/java/licenses/` |
-| JUnit verification tools | JUnit Platform Console Standalone 1.12.2, including bundled helper libraries | Actual JUnit/bundled-library license and notice files retained under `source/java/licenses/` |
+| Narration and publishing copy | Original explanation of an unregistered class, @Bean factory configuration, component scanning and package boundaries | Script and platform copy retained; no third-party transcript copied as the script |
+| Cover, animated hook, mechanisms, recap and Thanks card | Procedural Pillow typography, class/definition/reference graphics and shapes in the continuing iSLDevs style | `source/animation/render.py`; no stock footage, photography or imported illustration |
+| Background bed and effects | Own-production NumPy harmonic synthesis and timed registration cues | `source/animation/audio_mix.py`; no sampled song or stock recording |
+| Male AI narration | Local Kokoro v1.0, am_puck/am_fenrir style blend | Apache-2.0 model distribution, model card, voice table and release/license evidence in `source/voice/licenses/` |
+| TTS inference code | kokoro-onnx | MIT license retained in `source/voice/licenses/` |
+| Open Sans fonts | Unmodified local Bold, Regular and Semibold files | Apache-2.0 notices and full license in `source/assets/` |
+| DejaVu Sans Mono | Unmodified local code font | Bitstream Vera permission terms and public-domain DejaVu changes in `source/assets/DejaVu-LICENSE.txt` |
+| Spring Framework and Micrometer jars | Pinned Java verification runtime | Apache-2.0 licenses/notices in `source/java/licenses/` |
+| Java compiler | Eclipse ECJ with installed Java runtime | EPL-2.0 evidence in `source/java/licenses/` |
+| JUnit verification tools | JUnit Platform Console Standalone and bundled helper libraries | Actual licenses/notices retained in `source/java/licenses/` |
 
-The retained third-party asset licenses permit commercial use subject to their terms. Both used Kokoro styles are officially listed male English voices in the same licensed model distribution; no separate noncommercial restriction has been identified for these styles. Model and voice downloads are pinned by `source/voice/models.sha256`. Code dependencies have their own pinned download records and hashes.
+The retained third-party licenses permit commercial use subject to their terms. Both Kokoro styles are listed as male English voices in the licensed model distribution. Model and voice downloads are pinned by `source/voice/models.sha256`; Java dependencies have pinned provenance and SHA-256 records. Downloaded speech models, caches, environments and Python bytecode are excluded from Git and delivery ZIPs.
 
-Production uses free/open-source Python, Pillow, NumPy, SciPy and FFmpeg/libx264/AAC tools. Source helpers and the brand's own previously generated visual/audio primitives may be reused; that reuse is not represented as fresh worldwide invention. Downloaded model caches and virtual environments are not redistributed in the production ZIP or Git.
+Production uses free/open-source Python, Pillow, NumPy, SciPy and FFmpeg/libx264/AAC tools. The project's own drawing/audio helpers and font assets may be reused across lessons; such reuse is not represented as fresh worldwide invention. The iSLDevs name is rendered as text according to the user brief, without an imported logo file. Java and Spring names identify the technical example.
 
-The iSLDevs name is rendered as text according to the user brief; no external brand-logo file is imported. Spring Boot and Java names describe the technical example. All payment outcomes are local simulations by DemoGateway or a recording test fake. No real financial transaction, card information, external payment API or paid service is involved.
-
-The voice is synthesized from licensed pretrained styles, not a newly recorded human voice or a requested imitation of a named person. Intended age and smooth human naturalness remain listening-review criteria. No auditory approval is claimed here. No YouTube or Facebook upload, scheduling or publication has occurred.
+The narration is synthesized from licensed pretrained styles, rather than recorded from a human or requested as an imitation of a named person. Perceived adult male age, smooth human naturalness and final pronunciation require listening review. No auditory approval is claimed because this runtime cannot ingest audio for that review. No YouTube/Facebook upload, scheduling or publication is performed.

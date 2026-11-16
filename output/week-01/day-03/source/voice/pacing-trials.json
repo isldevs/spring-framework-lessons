@@ -1,0 +1,21 @@
+{
+  "trials": [
+    {
+      "body_inference_speed": 0.95,
+      "hook_inference_speed": 1.0,
+      "duration_s": 30.733291666666666,
+      "hook_duration_s": 1.486333,
+      "status": "Rejected: below35-second target. No listening judgment claimed."
+    },
+    {
+      "body_inference_speed": 0.8,
+      "hook_inference_speed": 1.0,
+      "duration_s": 36.33620833333333,
+      "status": "Scene4 phrasing rejected for independently observed class-as/classs recognition ambiguity; raw crop and full ASR retained in trials/. No auditory listening claim."
+    }
+  ],
+  "final_body_inference_speed": 0.8,
+  "final_hook_inference_speed": 1.0,
+  "final_duration_s": 38.387208333333334,
+  "final_narration_sha256": "d790098c38e089af4ae0522e9b34b9ca9f1baaee3c32884f85bc103859e633a7"
+}

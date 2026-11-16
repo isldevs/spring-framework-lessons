@@ -4,8 +4,8 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/spring-framework-lessons/out
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf61.7.103
-  Duration: 00:00:35.83, start: 0.000000, bitrate: 452 kb/s
-  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 246 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+  Duration: 00:00:38.40, start: 0.000000, bitrate: 424 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 218 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
       Metadata:
         handler_name    : VideoHandler
         vendor_id       : [0][0][0][0]
@@ -22,7 +22,7 @@ Stream mapping:
   Stream #1:0 (png) -> scale:default
   ssim:default -> Stream #0:0 (wrapped_avframe)
 Press [q] to stop, [?] for help
-[Parsed_ssim_5 @ 0x7f3eac002c00] not matching timebases found between first input: 1/15360 and second input 1/60, results may be incorrect!
+[Parsed_ssim_5 @ 0x7f247c003000] not matching timebases found between first input: 1/15360 and second input 1/60, results may be incorrect!
 Output #0, null, to 'pipe:':
   Metadata:
     major_brand     : isom
@@ -32,6 +32,6 @@ Output #0, null, to 'pipe:':
   Stream #0:0: Video: wrapped_avframe, yuv420p(tv, bt709, progressive), 880x980, q=2-31, 200 kb/s, 15360 tbn
       Metadata:
         encoder         : Lavc61.19.101 wrapped_avframe
-[Parsed_ssim_5 @ 0x7f3eac002c00] SSIM Y:0.998958 (29.821599) U:0.995139 (23.133010) V:0.995231 (23.216005) All:0.997700 (26.383624)
-[out#0/null @ 0x5595b6dab640] video:52KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame=  120 fps= 42 q=-0.0 Lsize=N/A time=00:00:01.98 bitrate=N/A speed=0.686x    
+[Parsed_ssim_5 @ 0x7f247c003000] SSIM Y:0.999108 (30.496829) U:0.996761 (24.895450) V:0.996075 (24.061618) All:0.998211 (27.474737)
+[out#0/null @ 0x55db9dd6e780] video:52KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  120 fps= 34 q=-0.0 Lsize=N/A time=00:00:01.98 bitrate=N/A speed=0.569x    

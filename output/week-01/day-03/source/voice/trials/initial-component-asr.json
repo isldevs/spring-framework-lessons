@@ -1,0 +1,522 @@
+{
+  "model": "faster-whisper base.en int8",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.04,
+      "text": " Why isn't this a spring bean?",
+      "avg_logprob": -0.1382754572563701,
+      "words": [
+        {
+          "word": " Why",
+          "start": 0.0,
+          "end": 0.14,
+          "probability": 0.8962687849998474
+        },
+        {
+          "word": " isn't",
+          "start": 0.14,
+          "end": 0.36,
+          "probability": 0.9936806261539459
+        },
+        {
+          "word": " this",
+          "start": 0.36,
+          "end": 0.46,
+          "probability": 0.9930972456932068
+        },
+        {
+          "word": " a",
+          "start": 0.46,
+          "end": 0.56,
+          "probability": 0.9936659932136536
+        },
+        {
+          "word": " spring",
+          "start": 0.56,
+          "end": 0.78,
+          "probability": 0.5719869136810303
+        },
+        {
+          "word": " bean?",
+          "start": 0.78,
+          "end": 1.04,
+          "probability": 0.8428007960319519
+        }
+      ]
+    },
+    {
+      "start": 1.62,
+      "end": 5.12,
+      "text": " A class on the class path isn't automatically registered.",
+      "avg_logprob": -0.1382754572563701,
+      "words": [
+        {
+          "word": " A",
+          "start": 1.62,
+          "end": 1.68,
+          "probability": 0.9823490977287292
+        },
+        {
+          "word": " class",
+          "start": 1.68,
+          "end": 2.0,
+          "probability": 0.9898624420166016
+        },
+        {
+          "word": " on",
+          "start": 2.0,
+          "end": 2.32,
+          "probability": 0.9955654740333557
+        },
+        {
+          "word": " the",
+          "start": 2.32,
+          "end": 2.42,
+          "probability": 0.9841541051864624
+        },
+        {
+          "word": " class",
+          "start": 2.42,
+          "end": 2.68,
+          "probability": 0.9298411011695862
+        },
+        {
+          "word": " path",
+          "start": 2.68,
+          "end": 3.16,
+          "probability": 0.9868953824043274
+        },
+        {
+          "word": " isn't",
+          "start": 3.16,
+          "end": 3.64,
+          "probability": 0.9929217398166656
+        },
+        {
+          "word": " automatically",
+          "start": 3.64,
+          "end": 4.44,
+          "probability": 0.9953827261924744
+        },
+        {
+          "word": " registered.",
+          "start": 4.44,
+          "end": 5.12,
+          "probability": 0.9947749376296997
+        }
+      ]
+    },
+    {
+      "start": 6.06,
+      "end": 8.1,
+      "text": " Give spring a registration path.",
+      "avg_logprob": -0.1382754572563701,
+      "words": [
+        {
+          "word": " Give",
+          "start": 6.06,
+          "end": 6.08,
+          "probability": 0.9669358134269714
+        },
+        {
+          "word": " spring",
+          "start": 6.08,
+          "end": 6.42,
+          "probability": 0.7921691536903381
+        },
+        {
+          "word": " a",
+          "start": 6.42,
+          "end": 6.78,
+          "probability": 0.9860381484031677
+        },
+        {
+          "word": " registration",
+          "start": 6.78,
+          "end": 7.26,
+          "probability": 0.9945229291915894
+        },
+        {
+          "word": " path.",
+          "start": 7.26,
+          "end": 8.1,
+          "probability": 0.995746910572052
+        }
+      ]
+    },
+    {
+      "start": 8.9,
+      "end": 12.1,
+      "text": " Register configuration with a bean method.",
+      "avg_logprob": -0.1382754572563701,
+      "words": [
+        {
+          "word": " Register",
+          "start": 8.9,
+          "end": 9.38,
+          "probability": 0.9735427498817444
+        },
+        {
+          "word": " configuration",
+          "start": 9.38,
+          "end": 9.92,
+          "probability": 0.964436411857605
+        },
+        {
+          "word": " with",
+          "start": 9.92,
+          "end": 11.14,
+          "probability": 0.9924821257591248
+        },
+        {
+          "word": " a",
+          "start": 11.14,
+          "end": 11.26,
+          "probability": 0.9877610206604004
+        },
+        {
+          "word": " bean",
+          "start": 11.26,
+          "end": 11.5,
+          "probability": 0.8904364705085754
+        },
+        {
+          "word": " method.",
+          "start": 11.5,
+          "end": 12.1,
+          "probability": 0.9944866299629211
+        }
+      ]
+    },
+    {
+      "start": 12.66,
+      "end": 15.96,
+      "text": " Spring calls the factory and manages its result.",
+      "avg_logprob": -0.1382754572563701,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 12.66,
+          "end": 12.88,
+          "probability": 0.9576371908187866
+        },
+        {
+          "word": " calls",
+          "start": 12.88,
+          "end": 13.32,
+          "probability": 0.9982569813728333
+        },
+        {
+          "word": " the",
+          "start": 13.32,
+          "end": 13.64,
+          "probability": 0.9990328550338745
+        },
+        {
+          "word": " factory",
+          "start": 13.64,
+          "end": 14.02,
+          "probability": 0.9871699810028076
+        },
+        {
+          "word": " and",
+          "start": 14.02,
+          "end": 14.54,
+          "probability": 0.9839164614677429
+        },
+        {
+          "word": " manages",
+          "start": 14.54,
+          "end": 15.02,
+          "probability": 0.9969900846481323
+        },
+        {
+          "word": " its",
+          "start": 15.02,
+          "end": 15.52,
+          "probability": 0.9553519487380981
+        },
+        {
+          "word": " result.",
+          "start": 15.52,
+          "end": 15.96,
+          "probability": 0.9399302005767822
+        }
+      ]
+    },
+    {
+      "start": 16.96,
+      "end": 19.92,
+      "text": " Or mark a class's component and scan its package.",
+      "avg_logprob": -0.1382754572563701,
+      "words": [
+        {
+          "word": " Or",
+          "start": 16.96,
+          "end": 17.06,
+          "probability": 0.8977592587471008
+        },
+        {
+          "word": " mark",
+          "start": 17.06,
+          "end": 17.26,
+          "probability": 0.5464353561401367
+        },
+        {
+          "word": " a",
+          "start": 17.26,
+          "end": 17.42,
+          "probability": 0.9941839575767517
+        },
+        {
+          "word": " class's",
+          "start": 17.42,
+          "end": 17.94,
+          "probability": 0.8240564167499542
+        },
+        {
+          "word": " component",
+          "start": 17.94,
+          "end": 18.32,
+          "probability": 0.9934640526771545
+        },
+        {
+          "word": " and",
+          "start": 18.32,
+          "end": 18.9,
+          "probability": 0.9625115990638733
+        },
+        {
+          "word": " scan",
+          "start": 18.9,
+          "end": 19.16,
+          "probability": 0.9985910058021545
+        },
+        {
+          "word": " its",
+          "start": 19.16,
+          "end": 19.44,
+          "probability": 0.9661467671394348
+        },
+        {
+          "word": " package.",
+          "start": 19.44,
+          "end": 19.92,
+          "probability": 0.9978349804878235
+        }
+      ]
+    },
+    {
+      "start": 20.82,
+      "end": 23.5,
+      "text": " Miss that package and even an annotated class",
+      "avg_logprob": -0.1382754572563701,
+      "words": [
+        {
+          "word": " Miss",
+          "start": 20.82,
+          "end": 20.9,
+          "probability": 0.8231671452522278
+        },
+        {
+          "word": " that",
+          "start": 20.9,
+          "end": 21.14,
+          "probability": 0.9955333471298218
+        },
+        {
+          "word": " package",
+          "start": 21.14,
+          "end": 21.64,
+          "probability": 0.9973644614219666
+        },
+        {
+          "word": " and",
+          "start": 21.64,
+          "end": 22.04,
+          "probability": 0.8069854378700256
+        },
+        {
+          "word": " even",
+          "start": 22.04,
+          "end": 22.34,
+          "probability": 0.9966321587562561
+        },
+        {
+          "word": " an",
+          "start": 22.34,
+          "end": 22.48,
+          "probability": 0.9862117767333984
+        },
+        {
+          "word": " annotated",
+          "start": 22.48,
+          "end": 23.22,
+          "probability": 0.9968435764312744
+        },
+        {
+          "word": " class",
+          "start": 23.22,
+          "end": 23.5,
+          "probability": 0.9972935318946838
+        }
+      ]
+    },
+    {
+      "start": 23.5,
+      "end": 24.86,
+      "text": " stays unregistered.",
+      "avg_logprob": -0.1382754572563701,
+      "words": [
+        {
+          "word": " stays",
+          "start": 23.5,
+          "end": 23.98,
+          "probability": 0.9964978098869324
+        },
+        {
+          "word": " unregistered.",
+          "start": 23.98,
+          "end": 24.86,
+          "probability": 0.963250994682312
+        }
+      ]
+    },
+    {
+      "start": 26.0,
+      "end": 27.74,
+      "text": " Our tests retrieve both.",
+      "avg_logprob": -0.1382754572563701,
+      "words": [
+        {
+          "word": " Our",
+          "start": 26.0,
+          "end": 26.06,
+          "probability": 0.9936211705207825
+        },
+        {
+          "word": " tests",
+          "start": 26.06,
+          "end": 26.36,
+          "probability": 0.987885057926178
+        },
+        {
+          "word": " retrieve",
+          "start": 26.36,
+          "end": 27.0,
+          "probability": 0.9934253692626953
+        },
+        {
+          "word": " both.",
+          "start": 27.0,
+          "end": 27.74,
+          "probability": 0.9970079064369202
+        }
+      ]
+    },
+    {
+      "start": 27.74,
+      "end": 29.36,
+      "text": " Two paths, one result.",
+      "avg_logprob": -0.3355892524123192,
+      "words": [
+        {
+          "word": " Two",
+          "start": 27.74,
+          "end": 28.18,
+          "probability": 0.5465344786643982
+        },
+        {
+          "word": " paths,",
+          "start": 28.18,
+          "end": 28.56,
+          "probability": 0.9704838395118713
+        },
+        {
+          "word": " one",
+          "start": 28.92,
+          "end": 29.02,
+          "probability": 0.9830785393714905
+        },
+        {
+          "word": " result.",
+          "start": 29.02,
+          "end": 29.36,
+          "probability": 0.9976389408111572
+        }
+      ]
+    },
+    {
+      "start": 30.0,
+      "end": 32.06,
+      "text": " Spring knows which beans to manage.",
+      "avg_logprob": -0.3355892524123192,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 30.0,
+          "end": 30.0,
+          "probability": 0.970980703830719
+        },
+        {
+          "word": " knows",
+          "start": 30.0,
+          "end": 30.38,
+          "probability": 0.6782861351966858
+        },
+        {
+          "word": " which",
+          "start": 30.38,
+          "end": 30.78,
+          "probability": 0.9919020533561707
+        },
+        {
+          "word": " beans",
+          "start": 30.78,
+          "end": 31.06,
+          "probability": 0.9123910069465637
+        },
+        {
+          "word": " to",
+          "start": 31.06,
+          "end": 31.48,
+          "probability": 0.9978038668632507
+        },
+        {
+          "word": " manage.",
+          "start": 31.48,
+          "end": 32.06,
+          "probability": 0.9917193651199341
+        }
+      ]
+    },
+    {
+      "start": 33.94,
+      "end": 35.6,
+      "text": " Thanks for watching.",
+      "avg_logprob": -0.3355892524123192,
+      "words": [
+        {
+          "word": " Thanks",
+          "start": 33.94,
+          "end": 34.76,
+          "probability": 0.8827376365661621
+        },
+        {
+          "word": " for",
+          "start": 34.76,
+          "end": 35.0,
+          "probability": 0.9952865839004517
+        },
+        {
+          "word": " watching.",
+          "start": 35.0,
+          "end": 35.6,
+          "probability": 0.9962085485458374
+        }
+      ]
+    }
+  ]
+}

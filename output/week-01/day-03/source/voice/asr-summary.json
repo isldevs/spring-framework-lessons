@@ -1,8 +1,8 @@
 {
-  "reference_words": 77,
-  "asr_words": 74,
-  "edit_distance": 3,
-  "normalized_word_error_rate": 0.03896103896103896,
-  "transcript": "How does an order service get its payment gateway? Require a payment gateway in the constructor and keep its reference in a final field. Boot scans the components. One gateway bean matches that interface type. Spring passes it into the service constructor before the application places an order. Our boot test confirms the same bean. A fake gateway passes a separate service test. Require resolve inject then use. Constructor injection makes required dependencies explicit.",
+  "reference_words": 72,
+  "asr_words": 73,
+  "edit_distance": 2,
+  "normalized_word_error_rate": 0.027777777777777776,
+  "transcript": "Why isn't this a spring bean? A class on the class path isn't automatically registered. Give spring a registration path. Register configuration with a bean method. Spring calls the factory and manages its result. Or add the component annotation, then scan the package containing your class. Miss that package and even an annotated class stays unregistered. Our tests retrieve both two paths, one result, spring knows which beans to manage. Thanks for watching.",
   "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
 }

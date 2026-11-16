@@ -1,0 +1,8 @@
+{
+  "reference_words": 70,
+  "asr_words": 70,
+  "edit_distance": 4,
+  "normalized_word_error_rate": 0.05714285714285714,
+  "transcript": "Why isn't this a spring bean? A class on the class path isn't automatically registered. Give spring a registration path. Register configuration with a bean method. Spring calls the factory and manages its result. Or mark a class's component and scan its package. Miss that package and even an annotated class stays unregistered. Our tests retrieve both. Two paths, one result. Spring knows which beans to manage. Thanks for watching.",
+  "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
+}

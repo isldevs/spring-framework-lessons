@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate an original quiet NumPy ambient score + synchronized reference pings.
+"""Generate an original quiet NumPy ambient score + synchronized registration cues.
 No sampled/third-party music. Measured two-pass EBU R128 normalization.
 """
 from pathlib import Path
@@ -15,9 +15,9 @@ assert sr==SR
 speech=raw.astype(np.float64)/np.iinfo(raw.dtype).max
 if speech.ndim>1:speech=speech.mean(axis=1)
 speech=np.pad(speech,(0,max(0,n-len(speech))))[:n]
-# Soft harmonic pad: D major 9, with smooth independent swells and stereo phase.
+# Soft harmonic pad: A minor add9, with smooth independent swells and stereo phase.
 bed=np.zeros((n,2))
-for k,freq in enumerate([146.832,184.997,220.,329.628]):
+for k,freq in enumerate([110.0,130.8128,164.8138,246.9417]):
     swell=(.62+.38*np.sin(2*np.pi*(.043+k*.007)*t+k)**2)
     for c in range(2):
         bed[:,c]+=.0024*swell*np.sin(2*np.pi*freq*t+(.13*c*(k+1)))*(.7+.3*np.sin(2*np.pi*.13*t+k))
@@ -29,11 +29,11 @@ bed*= (duck*fade)[:,None]
 fx=np.zeros((n,2));events=[]
 cues=data['scene_cues_absolute'];recap=data['recap_cues_absolute']
 # Each subtle ping marks the same narrated reveal used by the animation.
-marks=[(cues['requirement']['final'],'required final reference declared'),
-       (cues['discovery']['match'],'DemoGateway matches PaymentGateway interface'),
-       (cues['injection']['pass'],'gateway reference enters constructor'),
-       (cues['proof']['fake'],'separate fake-gateway service test'),
-       (recap['complete'],'complete constructor-injection recap')]
+marks=[(cues['missing']['fail'],'unregistered class lookup is missing'),
+       (cues['factory']['call'],'registered bean factory is called'),
+       (cues['scanning']['definition'],'configured scan registers Worker definition'),
+       (cues['boundary']['miss'],'annotated class outside scan remains missing'),
+       (recap['complete'],'complete two-path registration overview')]
 for i,(start,purpose) in enumerate(marks,1):
     events.append({'time':round(start,6),'purpose':purpose})
     j=int(start*SR);tt=np.arange(int(.20*SR))/SR
@@ -48,4 +48,4 @@ m=json.JSONDecoder().raw_decode(r.stderr[r.stderr.rfind('{'):])[0];(OUT/'loudnes
 filt=f"loudnorm=I=-16:TP=-1.5:LRA=7:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true:print_format=json"
 r=subprocess.run(['ffmpeg','-y','-hide_banner','-i',str(OUT/'premix.wav'),'-af',filt,'-ar','48000','-c:a','pcm_s24le',str(OUT/'mix.wav')],capture_output=True,text=True,check=True)
 (OUT/'loudness-second-pass.txt').write_text(r.stderr)
-print('Original bed and reference pings mixed, two-pass loudnorm complete.')
+print('Original bed and registration cues mixed, two-pass loudnorm complete.')

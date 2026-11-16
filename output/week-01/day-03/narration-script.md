@@ -1,29 +1,51 @@
-# Constructor Injection in Spring Boot
+# Bean registration — narration script
 
-Original English narration for iSLDevs. Seven coherent scene utterances. The local male Kokoro style targets a younger-to-middle adult explaining smoothly and conversationally. Actual source timing and model inference speed are recorded in source/timing.json; perceptual acceptance requires a listening review rather than only numeric checks.
+Original English narration for the approved Bean registration lesson. Java annotation names are displayed as @Bean and @Component while spoken as “bean” and “component.” The literal synthesis inputs and phoneme evidence are retained in source/voice/.
 
-1. How does an order service get its payment gateway?
+The original hook “Why isn't this Java class a Spring bean?” is shortened only for spoken pacing to **“Why isn't this a Spring bean?”** The plain Java Client class and missing Spring registration are visible from frame one. The generated hook utterance lasts1.486333s; no greeting, title-card hold, logo intro or fade delays it.
 
-2. Require a payment gateway in the constructor, and keep its reference in a final field.
+## Spoken script
 
-3. Boot scans the components. One gateway bean matches that interface type.
+Why isn't this a Spring bean?
 
-4. Spring passes it into the service constructor before the application places an order.
+A class on the classpath isn't automatically registered. Give Spring a registration path.
 
-5. Our Boot test confirms the same bean. A fake gateway passes a separate service test.
+Register configuration with a bean method. Spring calls the factory and manages its result.
 
-6. Require, resolve, inject, then use. Constructor injection makes required dependencies explicit.
+Or add the component annotation, then scan the package containing your class.
 
-7. Thanks for watching.
+Miss that package, and even an annotated class stays unregistered.
 
-## Delivery and technical notes
+Our tests retrieve both. Two paths, one result: Spring knows which beans to manage.
 
-- PaymentGateway is an interface; DemoGateway is the matching Spring-managed implementation. Do not depict an interface as an instantiated object.
-- OrderService has one constructor accepting PaymentGateway and stores that reference in a final field. A final reference cannot be reassigned; it does not imply that the gateway object is immutable.
-- @SpringBootApplication on CheckoutApplication starts the real Boot example and enables scanning from its application package. Do not imply that arbitrary packages are discovered automatically.
-- This example has one matching gateway bean. Multiple candidates can need disambiguation. The single constructor does not need an @Autowired annotation.
-- Spring supplies the managed gateway reference during service construction before application use. The OrderService does not construct its own gateway.
-- The Boot integration check and the recording-fake service check are distinct: the latter manually supplies a fake through the constructor and does not register it as another production gateway bean.
-- All approvals use a local simulated gateway. No real payment, card charge, external payment API or financial transaction occurs.
-- Build the whole mechanism overview, hold the complete diagram for two seconds, then show and speak Thanks for watching. Do not speak internal scene labels or schedule identifiers.
-- Public output contains no day, week, lesson or episode numbering.
+Thanks for watching.
+
+## Timed delivery
+
+| Time in seconds | Spoken phrase |
+| --- | --- |
+| 0.000000–1.486333 | Why isn't this a Spring bean? |
+| 1.606333–8.786292 | A class on the classpath isn't automatically registered. Give Spring a registration path. |
+| 8.966292–16.751125 | Register configuration with a bean method. Spring calls the factory and manages its result. |
+| 16.931125–22.585917 | Or add the component annotation, then scan the package containing your class. |
+| 22.765917–27.821333 | Miss that package, and even an annotated class stays unregistered. |
+| 28.001333–34.679125 | Our tests retrieve both. Two paths, one result: Spring knows which beans to manage. |
+| 36.679125–38.037208 | Thanks for watching. |
+
+Source narration lasts **38.387208s**; picture rounds up to **38.400000s** at60FPS (2304frames). The hook uses model inference1.00, the other six coherent utterances0.80. No waveform stretching or pitch shifting is used. The complete overview holds **34.679125–36.679125s**, exactly2s, before the separate spoken Thanks card.
+
+## Technical scope and actual verification
+
+The first lookup occurs in a refreshed context without Client registration and produces the expected NoSuchBeanDefinitionException. A class merely existing on the classpath does not become a managed bean by that fact alone.
+
+The two successful examples use separate contexts. One registers FactoryConfig, whose @Bean method contributes factory metadata during refresh before Spring calls the method and manages its returned Client. The other registers ScanConfig, whose configured @ComponentScan("lesson.scan") discovers @Component Worker before creating its singleton. The annotated Outside class is in lesson.outside and is excluded from that configured scan.
+
+Both illustrated paths create bean definitions before their instances, and both examples use default non-lazy singletons. These are two valid registration paths, not an exhaustive list of every Spring registration API or a claim that all scopes initialize at the same time. The definition registry shown contains selected application beans rather than all internal infrastructure registrations.
+
+Actual Java evidence records **3 JUnit tests passed,0failed**, with compiler, JUnit and standalone execution exit0 and empty stderr. Real proof lines include `plain class missing: true`, `@Bean retrieved: true`, `scan retrieved: true` and `outside scan missing: true`. No code output or test result was invented for the narration. Official Spring documentation and actual runtime evidence remain under source/evidence/java-*.
+
+## Voice acceptance status
+
+The local licensed male Kokoro blend is80%am_puck/20%am_fenrir. Raw unprompted full-stream ASR measures72expected/73recognized words, edit distance2, normalized WER0.027778 (2.7778%). Its discrepancy is the transcription spacing of “classpath” versus “class path”; raw text and scores remain untouched. Alignment provenance documents formatting/word-span normalization separately.
+
+No auditory approval is claimed. Perceived younger-to-middle adult male age, smooth human naturalness, subtle synthesis artifacts and final pronunciation acceptance remain incomplete because this runtime cannot ingest audio for listening review. Objective ASR/signal measurements do not establish those qualities.

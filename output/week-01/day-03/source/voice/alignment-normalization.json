@@ -1,10 +1,26 @@
 {
-  "text_transformations": [],
-  "timing_sources": "asr-alignment.json; raw full-stream ASR plus independent unprompted final-phrase crop only when needed",
+  "text_transformations": [
+    {
+      "display": "@Bean",
+      "spoken": "bean",
+      "reason": "Java annotation spelling; punctuation omitted for strict speech-word comparison"
+    },
+    {
+      "display": "@Component",
+      "spoken": "component",
+      "reason": "Java annotation spelling; punctuation omitted for strict speech-word comparison"
+    }
+  ],
+  "timing_sources": "asr-alignment.json: unprompted full-stream ASR plus separate unprompted final-phrase crop only if required",
   "raw_wer_unchanged": true,
-  "first_word_anchors": "require starts at exact scene6 sample edit; scene-start clamps only for ASR rounding",
+  "orthographic_alignment_normalization": "Recognized 'class path' uses one technical compound classpath for caption alignment; raw transcript and strict WER are unchanged.",
   "derived_animation_anchors": {
-    "injection_ready": "constructor word start + .35s, capped .15s before place word start",
-    "recap_complete": ".65s after use word start, before the exact recap hold"
-  }
+    "factory_definition": "method word end +.06s, capped .12s before calls",
+    "factory_lookup": "instance reveal +.40s; current1.011125s reading window before next scene",
+    "scan_registration_instance_lookup": "definition scan+.12s, instance scan+.38s; lookup next scene start\u22121.50s, instance capped .45s before lookup",
+    "missing_request": "sample-derived scene2start+.35s",
+    "recap_steps": "known scene start and observed retrieve/both/Spring/manage word anchors; illustrative overview stages"
+  },
+  "scene_start_clamps": "First/last cue boundaries use exact sample-derived utterance edits. Intermediate ASR times are clamped within their utterance. ASR short-outro drift into the reading hold is overridden by known synthesis edits, with raw timestamps retained. No words inserted.",
+  "hook_ending_asr_s": 1.04
 }

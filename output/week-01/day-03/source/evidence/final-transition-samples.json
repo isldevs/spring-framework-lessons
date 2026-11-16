@@ -1,0 +1,80 @@
+[
+  {
+    "scene_start_s": 1.606333,
+    "before_after": [
+      {
+        "requested_time_s": 1.556333,
+        "image": "final-transition-1-0.png"
+      },
+      {
+        "requested_time_s": 1.656333,
+        "image": "final-transition-1-1.png"
+      }
+    ]
+  },
+  {
+    "scene_start_s": 8.966292,
+    "before_after": [
+      {
+        "requested_time_s": 8.916291999999999,
+        "image": "final-transition-2-0.png"
+      },
+      {
+        "requested_time_s": 9.016292,
+        "image": "final-transition-2-1.png"
+      }
+    ]
+  },
+  {
+    "scene_start_s": 16.931125,
+    "before_after": [
+      {
+        "requested_time_s": 16.881125,
+        "image": "final-transition-3-0.png"
+      },
+      {
+        "requested_time_s": 16.981125000000002,
+        "image": "final-transition-3-1.png"
+      }
+    ]
+  },
+  {
+    "scene_start_s": 22.765917,
+    "before_after": [
+      {
+        "requested_time_s": 22.715917,
+        "image": "final-transition-4-0.png"
+      },
+      {
+        "requested_time_s": 22.815917000000002,
+        "image": "final-transition-4-1.png"
+      }
+    ]
+  },
+  {
+    "scene_start_s": 28.001333,
+    "before_after": [
+      {
+        "requested_time_s": 27.951332999999998,
+        "image": "final-transition-5-0.png"
+      },
+      {
+        "requested_time_s": 28.051333,
+        "image": "final-transition-5-1.png"
+      }
+    ]
+  },
+  {
+    "scene_start_s": 36.679125,
+    "before_after": [
+      {
+        "requested_time_s": 36.629125,
+        "image": "final-transition-6-0.png"
+      },
+      {
+        "requested_time_s": 36.729124999999996,
+        "image": "final-transition-6-1.png"
+      }
+    ]
+  }
+]

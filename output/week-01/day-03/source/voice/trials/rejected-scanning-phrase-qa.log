@@ -1,0 +1,74 @@
+{
+  "model": "faster-whisper base.en int8",
+  "initial_prompt": null,
+  "scene": 4,
+  "segment_start": 16.931125,
+  "segment_end": 20.534917,
+  "expected": "Or mark a class as component, and scan its package.",
+  "recognized": " or mark a class's component and scan its package.",
+  "segments": [
+    {
+      "start": 16.931125,
+      "end": 19.891125000000002,
+      "text": " or mark a class's component and scan its package.",
+      "avg_logprob": -0.38159715277808054,
+      "words": [
+        {
+          "word": " or",
+          "start": 16.931125,
+          "end": 17.071125000000002,
+          "probability": 0.8132186532020569
+        },
+        {
+          "word": " mark",
+          "start": 17.071125000000002,
+          "end": 17.251125000000002,
+          "probability": 0.30465084314346313
+        },
+        {
+          "word": " a",
+          "start": 17.251125000000002,
+          "end": 17.431125,
+          "probability": 0.9876818060874939
+        },
+        {
+          "word": " class's",
+          "start": 17.431125,
+          "end": 17.931125,
+          "probability": 0.8090448081493378
+        },
+        {
+          "word": " component",
+          "start": 17.931125,
+          "end": 18.331125,
+          "probability": 0.9780780673027039
+        },
+        {
+          "word": " and",
+          "start": 18.331125,
+          "end": 18.911125000000002,
+          "probability": 0.9465685486793518
+        },
+        {
+          "word": " scan",
+          "start": 18.911125000000002,
+          "end": 19.171125000000004,
+          "probability": 0.9985150694847107
+        },
+        {
+          "word": " its",
+          "start": 19.171125000000004,
+          "end": 19.431125,
+          "probability": 0.9667131304740906
+        },
+        {
+          "word": " package.",
+          "start": 19.431125,
+          "end": 19.891125000000002,
+          "probability": 0.9961967468261719
+        }
+      ]
+    }
+  ],
+  "full_stream_raw_score_unchanged": true
+}

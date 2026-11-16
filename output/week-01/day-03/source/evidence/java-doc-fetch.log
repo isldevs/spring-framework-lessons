@@ -1,0 +1,50 @@
+[
+  {
+    "name": "annotation-context",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html",
+    "http_status": 200,
+    "html_sha256": "da884c7bb73fbc12b14d81eb7050573359163366b46cc774a25f312280c5d1f0"
+  },
+  {
+    "name": "bean-annotation",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/Bean.html",
+    "http_status": 200,
+    "html_sha256": "005f85b5dffd7c175b515635bbd5bfc2d0d6c71a0a96efa5d82dcc381c0297e9"
+  },
+  {
+    "name": "configuration",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/Configuration.html",
+    "http_status": 200,
+    "html_sha256": "bf4a7fee658f7afd37c1391d5340a08a7bf402c60f66bfd35619c657945445a4"
+  },
+  {
+    "name": "component",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/stereotype/Component.html",
+    "http_status": 200,
+    "html_sha256": "392a6be880685a59ccace5bfc8766f30705a0d542c0e41d343e4966136c75b74"
+  },
+  {
+    "name": "component-scan",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/ComponentScan.html",
+    "http_status": 200,
+    "html_sha256": "71a4789e8494215785a1753340e110ba9b695818d550071f32936665f959cbc5"
+  },
+  {
+    "name": "bean-definition",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/config/BeanDefinition.html",
+    "http_status": 200,
+    "html_sha256": "696de216ff66a429b234cad8052dcb10825f91b5e074567e52eac0d3e8f3192a"
+  },
+  {
+    "name": "bean-reference",
+    "url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/java/bean-annotation.html",
+    "http_status": 200,
+    "html_sha256": "ea48f83543031a356a85c1eee45100eb74460821846fa8dc9d0f98c4cece6bc9"
+  },
+  {
+    "name": "classpath-scanning",
+    "url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/classpath-scanning.html",
+    "http_status": 200,
+    "html_sha256": "4cc4b711761c0ba7994c86a6c77d58a3bbc1d3e9d34d1e9208c025a18de9bbf5"
+  }
+]
