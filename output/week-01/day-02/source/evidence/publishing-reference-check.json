@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/definition.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/definition.html",
+    "http_status": 200,
+    "response_sha256": "61b33e0b527811f8941374f1d49d69b46299c3a072291c734672089c45a14710"
+  },
+  {
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html",
+    "http_status": 200,
+    "response_sha256": "da884c7bb73fbc12b14d81eb7050573359163366b46cc774a25f312280c5d1f0"
+  }
+]

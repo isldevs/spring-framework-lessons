@@ -20,7 +20,7 @@ Follow an AnnotationConfigApplicationContext as it registers configuration, refr
 The context also dispatches an application event and runs managed bean cleanup when closed. The runnable example checks bean identity, one handled event and cleanup. A separate lazy-bean test shows that a definition can exist before its object is created.
 
 Official Spring references:
-https://docs.spring.io/spring-framework/6.2/reference/core/beans/basics.html
+https://docs.spring.io/spring-framework/reference/6.2/core/beans/definition.html
 https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html
 
 #ApplicationContext #SpringFramework #SpringIoC #Java #DependencyInjection #Shorts #iSLDevs
