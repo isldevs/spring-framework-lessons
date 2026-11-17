@@ -1,0 +1,34 @@
+{
+  "previous_commit": "b2faf0913dcd5353af483db231b6a8bfe82ec00e",
+  "old": {
+    "narration_duration_s": 38.387208333333334,
+    "words": 72,
+    "utterance_seconds_including_native_pauses": 35.197207999999996,
+    "utterance_words_per_minute": 122.7370080035894,
+    "external_normal_scene_joins_s": 0.8400000000000061,
+    "total_inserted_silence_s": 3.1900003333333373,
+    "body_inference_speed": 0.8,
+    "factory_scene_start_s": 8.966292,
+    "request_to_failure_s": 2.503667,
+    "factory_call_to_instance_s": 2.639999999999999,
+    "outside_reveal_to_missing_s": 3.294082999999997,
+    "recap_hold_s": 2.0
+  },
+  "new": {
+    "narration_duration_s": 39.23075,
+    "words": 96,
+    "utterance_seconds_including_native_pauses": 36.58075,
+    "utterance_words_per_minute": 157.4598661864505,
+    "external_normal_scene_joins_s": 0.3999999999999968,
+    "total_inserted_silence_s": 2.6499999999999986,
+    "body_inference_speed": 1.02,
+    "factory_scene_start_s": 7.25225,
+    "request_to_failure_s": 0.30000000000000004,
+    "factory_call_to_instance_s": 0.6799999999999997,
+    "outside_reveal_to_missing_s": 0.3000000000000007,
+    "recap_hold_s": 2.0
+  },
+  "utterance_word_rate_increase_percent": 28.290455134645008,
+  "interpretation": "Old speech began almost immediately; slow model pacing, stacked pauses and late visual cues created the perceived delay. New generation uses normal model pacing and earlier cues. Word-rate arithmetic and ASR are not auditory acceptance.",
+  "listening_status": "UNVERIFIED for revised voice; no auditory review performed"
+}

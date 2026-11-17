@@ -1,0 +1,445 @@
+{
+  "commit": "b2faf0913dcd5353af483db231b6a8bfe82ec00e",
+  "user_feedback": "Voiceover feels delayed and slow; this earlier pacing is rejected.",
+  "timing": {
+    "sample_rate": 48000,
+    "voice": "am_puck80_fenrir20",
+    "voice_blend": {
+      "am_puck": 0.8,
+      "am_fenrir": 0.2
+    },
+    "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
+    "speed": 0.8,
+    "hook_speed": 1.0,
+    "inference_speed_per_scene": {
+      "1": 1.0,
+      "2": 0.8,
+      "3": 0.8,
+      "4": 0.8,
+      "5": 0.8,
+      "6": 0.8,
+      "7": 0.8
+    },
+    "one_inference_batch_per_scene": true,
+    "regenerated_scene_only": 4,
+    "reused_scene_segments": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "recap_hold_seconds": 2.0,
+    "recap_hold_start": 34.679125,
+    "recap_hold_end": 36.679125,
+    "thanks_start": 36.679125,
+    "thanks_end": 38.387208,
+    "duration": 38.387208333333334,
+    "scenes": [
+      {
+        "scene": 1,
+        "start": 0.0,
+        "end": 1.606333
+      },
+      {
+        "scene": 2,
+        "start": 1.606333,
+        "end": 8.966292
+      },
+      {
+        "scene": 3,
+        "start": 8.966292,
+        "end": 16.931125
+      },
+      {
+        "scene": 4,
+        "start": 16.931125,
+        "end": 22.765917
+      },
+      {
+        "scene": 5,
+        "start": 22.765917,
+        "end": 28.001333
+      },
+      {
+        "scene": 6,
+        "start": 28.001333,
+        "end": 36.679125
+      },
+      {
+        "scene": 7,
+        "start": 36.679125,
+        "end": 38.387208
+      }
+    ],
+    "phrases": [
+      {
+        "scene": 1,
+        "start": 0.0,
+        "end": 1.486333,
+        "text": "Why isn't this a Spring bean?"
+      },
+      {
+        "scene": 2,
+        "start": 1.606333,
+        "end": 8.786292,
+        "text": "A class on the classpath isn't automatically registered. Give Spring a registration path."
+      },
+      {
+        "scene": 3,
+        "start": 8.966292,
+        "end": 16.751125,
+        "text": "Register configuration with a bean method. Spring calls the factory and manages its result."
+      },
+      {
+        "scene": 4,
+        "start": 16.931125,
+        "end": 22.585917,
+        "text": "Or add the component annotation, then scan the package containing your class."
+      },
+      {
+        "scene": 5,
+        "start": 22.765917,
+        "end": 27.821333,
+        "text": "Miss that package, and even an annotated class stays unregistered."
+      },
+      {
+        "scene": 6,
+        "start": 28.001333,
+        "end": 34.679125,
+        "text": "Our tests retrieve both. Two paths, one result: Spring knows which beans to manage."
+      },
+      {
+        "scene": 7,
+        "start": 36.679125,
+        "end": 38.037208,
+        "text": "Thanks for watching."
+      }
+    ],
+    "captions": [
+      {
+        "scene": 1,
+        "start": 0.0,
+        "end": 1.486333,
+        "text": "Why isn't this a Spring bean?"
+      },
+      {
+        "scene": 2,
+        "start": 1.606333,
+        "end": 3.12,
+        "text": "A class on the classpath"
+      },
+      {
+        "scene": 2,
+        "start": 3.12,
+        "end": 6.06,
+        "text": "isn't automatically registered."
+      },
+      {
+        "scene": 2,
+        "start": 6.06,
+        "end": 8.786292,
+        "text": "Give Spring a registration path."
+      },
+      {
+        "scene": 3,
+        "start": 8.966292,
+        "end": 9.92,
+        "text": "Register configuration"
+      },
+      {
+        "scene": 3,
+        "start": 9.92,
+        "end": 12.66,
+        "text": "with a @Bean method."
+      },
+      {
+        "scene": 3,
+        "start": 12.66,
+        "end": 14.02,
+        "text": "Spring calls the factory"
+      },
+      {
+        "scene": 3,
+        "start": 14.02,
+        "end": 16.751125,
+        "text": "and manages its result."
+      },
+      {
+        "scene": 4,
+        "start": 16.931125,
+        "end": 19.44,
+        "text": "Or add the @Component annotation,"
+      },
+      {
+        "scene": 4,
+        "start": 19.44,
+        "end": 20.54,
+        "text": "then scan the package"
+      },
+      {
+        "scene": 4,
+        "start": 20.54,
+        "end": 22.585917,
+        "text": "containing your class."
+      },
+      {
+        "scene": 5,
+        "start": 22.765917,
+        "end": 23.68,
+        "text": "Miss that package,"
+      },
+      {
+        "scene": 5,
+        "start": 23.68,
+        "end": 25.56,
+        "text": "and even an annotated class"
+      },
+      {
+        "scene": 5,
+        "start": 25.56,
+        "end": 27.821333,
+        "text": "stays unregistered."
+      },
+      {
+        "scene": 6,
+        "start": 28.001333,
+        "end": 29.64,
+        "text": "Our tests retrieve both."
+      },
+      {
+        "scene": 6,
+        "start": 29.64,
+        "end": 31.88,
+        "text": "Two paths, one result:"
+      },
+      {
+        "scene": 6,
+        "start": 31.88,
+        "end": 34.679125,
+        "text": "Spring knows which beans to manage."
+      },
+      {
+        "scene": 7,
+        "start": 36.679125,
+        "end": 38.037208,
+        "text": "Thanks for watching."
+      }
+    ],
+    "caption_method": "Seven coherent scene utterances; exact sample-derived edit boundaries. Intermediate caption/event anchors use independent unprompted base.en ASR (~20ms grid). Annotation display punctuation is explicit. Raw WER unchanged. Derived factory/scanning/lookup/recap stages are explanatory timings, not runtime measurements. Exact2s reading hold precedes separate spoken Thanks.",
+    "recap_cues": {
+      "relative_to": "scene_start",
+      "register": 0.0,
+      "bean": 0.398667,
+      "factory": 0.398667,
+      "scan": 1.018667,
+      "definition": 3.878667,
+      "lookup": 5.538667,
+      "complete": 6.038667,
+      "recap_hold_start": 6.677792,
+      "recap_hold_end": 8.677792
+    },
+    "recap_cues_absolute": {
+      "register": 28.001333,
+      "bean": 28.4,
+      "factory": 28.4,
+      "scan": 29.02,
+      "definition": 31.88,
+      "lookup": 33.54,
+      "complete": 34.04,
+      "recap_hold_start": 34.679125,
+      "recap_hold_end": 36.679125
+    },
+    "scene_cues_absolute": {
+      "missing": {
+        "request": 1.956333,
+        "fail": 4.46,
+        "definition": 6.78,
+        "registration": 6.78
+      },
+      "factory": {
+        "register": 8.966292,
+        "configuration": 9.38,
+        "definition": 12.16,
+        "call": 12.88,
+        "instance": 15.52,
+        "lookup": 15.92
+      },
+      "scanning": {
+        "annotation": 17.62,
+        "scan": 19.5,
+        "definition": 19.62,
+        "instance": 19.88,
+        "lookup": 21.265917
+      },
+      "boundary": {
+        "outside": 22.765917,
+        "annotation": 24.52,
+        "miss": 26.06
+      },
+      "proof": {
+        "bean": 28.4,
+        "scan": 29.02,
+        "takeaway": 29.64,
+        "complete": 34.04
+      },
+      "recap": {
+        "register": 28.001333,
+        "bean": 28.4,
+        "factory": 28.4,
+        "scan": 29.02,
+        "definition": 31.88,
+        "lookup": 33.54,
+        "complete": 34.04,
+        "recap_hold_start": 34.679125,
+        "recap_hold_end": 36.679125
+      }
+    },
+    "opening_cover_hold": false,
+    "hook_text_display": "Why isn't this a Spring bean?",
+    "hook_asr_last_word_end": 1.04
+  },
+  "asr_summary": {
+    "reference_words": 72,
+    "asr_words": 73,
+    "edit_distance": 2,
+    "normalized_word_error_rate": 0.027777777777777776,
+    "transcript": "Why isn't this a spring bean? A class on the class path isn't automatically registered. Give spring a registration path. Register configuration with a bean method. Spring calls the factory and manages its result. Or add the component annotation, then scan the package containing your class. Miss that package and even an annotated class stays unregistered. Our tests retrieve both two paths, one result, spring knows which beans to manage. Thanks for watching.",
+    "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
+  },
+  "qa_metrics": {
+    "duration_s": 38.387208333333334,
+    "sample_rate": 48000,
+    "channels": 1,
+    "peak_dbfs": -1.514415166281326,
+    "rms_dbfs": -20.43455815768645,
+    "clipped_samples": 0,
+    "speech_above_minus60db_onset_s": 0.015104166666666667,
+    "speech_above_minus60db_end_s": 37.99839583333333,
+    "endpoint_first_sample": 0.0,
+    "endpoint_last_sample": 0.0,
+    "f0_voiced_frames": 2127,
+    "f0_10pct_hz": 92.53264952447644,
+    "f0_50pct_hz": 115.24475340612051,
+    "f0_90pct_hz": 162.98069325927855,
+    "f0_std_semitones": 3.880547311797425
+  },
+  "encoded_summary": {
+    "video_sha256": "b4ca78bb820dd008a9b598b525dc4041353e0bf49007f006b2f76bee28eb63b9",
+    "duration": 38.4,
+    "video_duration": 38.4,
+    "audio_duration": 38.387,
+    "frames": 2304,
+    "timestamps_checked": 2304,
+    "fps": "60/1",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "pixel_format": "yuv420p",
+    "color_space": "bt709",
+    "color_transfer": "bt709",
+    "color_primaries": "bt709",
+    "audio_sample_rate": "48000",
+    "audio_channels": 2,
+    "srt_cues": 18,
+    "source_safe_bounds_samples": 250,
+    "caption_words_match_script": true,
+    "scenes_count": 7,
+    "target_duration_35_40_pass": true,
+    "caption_max_characters": 35,
+    "opening_static_cover_hold": false,
+    "opening_source_unique_core_frames": 100,
+    "opening_first_visual_change_s": 0.016666666666666666,
+    "opening_frame0_source_ssim": 0.998607,
+    "opening_ssim_minimum": 0.998607,
+    "opening_encoded_snapshots_compared": 5,
+    "decoded_transition_pairs_retained": 6,
+    "source_narration_onset_s": 0.015104166666666667,
+    "encoded_first_two_seconds_rms_dbfs": -15.576760862144976,
+    "integrated_loudness_lufs": -15.81,
+    "true_peak_dbtp": -0.87,
+    "loudness_range_lu": 3.6,
+    "decode_error_log_empty": true,
+    "black_intervals_detected": 0,
+    "silence_intervals": [
+      "38.1985"
+    ],
+    "definitions_before_instances": true,
+    "factory_definition_before_factory_call": true,
+    "both_registration_paths_verified": true,
+    "plain_class_missing_verified": true,
+    "outside_scan_missing_verified": true,
+    "graph_ready_s": 20.23,
+    "application_use_start_s": 21.265917,
+    "graph_ready_before_application_use": true,
+    "mechanism_anchors": {
+      "missing_request_s": 1.956333,
+      "failed_lookup_s": 4.46,
+      "factory_register_s": 8.966292,
+      "factory_definition_s": 12.16,
+      "factory_call_s": 12.88,
+      "factory_instance_s": 15.52,
+      "factory_lookup_s": 15.92,
+      "scan_start_s": 19.5,
+      "scan_definition_s": 19.62,
+      "scan_instance_s": 19.88,
+      "scan_lookup_s": 21.265917,
+      "outside_missing_s": 26.06
+    },
+    "registration_causality": {
+      "anchors": {
+        "missing_request_s": 1.956333,
+        "failed_lookup_s": 4.46,
+        "factory_register_s": 8.966292,
+        "factory_definition_s": 12.16,
+        "factory_call_s": 12.88,
+        "factory_instance_s": 15.52,
+        "factory_lookup_s": 15.92,
+        "scan_start_s": 19.5,
+        "scan_definition_s": 19.62,
+        "scan_instance_s": 19.88,
+        "scan_lookup_s": 21.265917,
+        "outside_missing_s": 26.06
+      },
+      "missing_lookup_precedes_registration": true,
+      "factory_definition_before_factory_call": true,
+      "factory_definition_before_instance_and_lookup": true,
+      "scan_definition_before_instance_and_lookup": true,
+      "completed_scan_graph_before_lookup": true,
+      "outside_scan_annotated_class_verified_missing": true,
+      "java_tests_found": 3,
+      "java_tests_succeeded": 3,
+      "java_current_sources_match_tested_hashes": true,
+      "java_raw_application_stdout_matches_proofs": true,
+      "actual_java_proof_lines": [
+        "@Bean retrieved: true",
+        "outside scan missing: true",
+        "plain class missing: true",
+        "scan retrieved: true"
+      ],
+      "basis": "Explanatory renderer anchors verify visual ordering, not Spring wall-clock execution. Passed compiled Java evidence separately verifies missing definitions and both registration paths; this validator does not claim to run Java again."
+    },
+    "recap_hold_start": 34.679125,
+    "recap_hold_end": 36.679125,
+    "recap_hold_seconds": 2.0,
+    "recap_hold_is_before_thanks": true,
+    "recap_hold_source_samples": 120,
+    "recap_hold_crop": [
+      100,
+      330,
+      980,
+      1310
+    ],
+    "recap_hold_source_pixel_identical": true,
+    "recap_hold_decoded_frames": 120,
+    "recap_hold_ssim_minimum": 0.997991,
+    "recap_hold_ssim_average": 0.9982115666666667,
+    "thanks_start": 36.679125,
+    "thanks_end": 38.387208,
+    "thanks_frame_checked": 2303,
+    "thanks_final_frame_ssim": 0.99869,
+    "thanks_caption_and_script_match": true,
+    "intentional_recap_hold_or_closing_quiet_allowed": true,
+    "perceptual_voice_review": "UNVERIFIED: no auditory listening review performed"
+  }
+}

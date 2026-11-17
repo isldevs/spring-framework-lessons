@@ -1,6 +1,6 @@
-[aist#0:0/pcm_s16le @ 0x5559b5278500] Guessed Channel Layout: stereo
+[aist#0:0/pcm_s16le @ 0x558b6d9f4500] Guessed Channel Layout: stereo
 Input #0, wav, from '/workspace/spring-framework-lessons/output/week-01/day-03/source/animation/premix.wav':
-  Duration: 00:00:38.39, bitrate: 1536 kb/s
+  Duration: 00:00:39.23, bitrate: 1536 kb/s
   Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
 Stream mapping:
   Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s24le (native))
@@ -11,20 +11,20 @@ Output #0, wav, to '/workspace/spring-framework-lessons/output/week-01/day-03/so
   Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
       Metadata:
         encoder         : Lavc61.19.101 pcm_s24le
-size=    4608KiB time=00:00:16.69 bitrate=2260.4kbits/s speed=33.4x    
-size=    9728KiB time=00:00:34.69 bitrate=2296.6kbits/s speed=34.7x    
-[Parsed_loudnorm_0 @ 0x7f2d3c002800] 
+size=    3840KiB time=00:00:14.39 bitrate=2184.6kbits/s speed=28.8x    
+size=    9216KiB time=00:00:33.39 bitrate=2260.4kbits/s speed=33.4x    
+[Parsed_loudnorm_0 @ 0x7f1824002800] 
 {
-	"input_i" : "-17.08",
-	"input_tp" : "-1.47",
-	"input_lra" : "3.90",
-	"input_thresh" : "-27.95",
-	"output_i" : "-16.00",
+	"input_i" : "-18.20",
+	"input_tp" : "-1.51",
+	"input_lra" : "4.00",
+	"input_thresh" : "-29.03",
+	"output_i" : "-16.04",
 	"output_tp" : "-1.50",
-	"output_lra" : "3.50",
-	"output_thresh" : "-26.73",
+	"output_lra" : "3.80",
+	"output_thresh" : "-26.67",
 	"normalization_type" : "dynamic",
-	"target_offset" : "0.00"
+	"target_offset" : "0.04"
 }
-[out#0/wav @ 0x5559b52786c0] video:0KiB audio:10796KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000923%
-size=   10797KiB time=00:00:38.40 bitrate=2303.3kbits/s speed=31.1x    
+[out#0/wav @ 0x558b6d9f46c0] video:0KiB audio:11034KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000903%
+size=   11034KiB time=00:00:39.30 bitrate=2300.0kbits/s speed=30.4x    

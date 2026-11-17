@@ -43,6 +43,10 @@ def words(text):
     # Java method/class spelling may be displayed without its spoken spaces.
     text = text.lower().replace('’', "'").replace("'", '')
     text = text.replace('get bean', 'getbean').replace('application context', 'applicationcontext')
+    # These are display-only spellings of the class and package names in the
+    # revised narration. They do not alter raw ASR text or its measured WER.
+    text = re.sub(r'\bfactory\s+config\b', 'factoryconfig', text)
+    text = re.sub(r'\blesson\s+dot\s+scan\b', 'lesson.scan', text)
     text = text.replace('@bean', 'bean').replace('@component', 'component')
     return re.findall(r'[a-z0-9]+', text)
 

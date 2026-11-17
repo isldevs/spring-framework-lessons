@@ -12,7 +12,7 @@
     "-i",
     "/workspace/spring-framework-lessons/output/week-01/day-03/source/evidence/final-recap-hold-reference.png",
     "-filter_complex",
-    "[0:v]trim=start_frame=2081,setpts=PTS-STARTPTS,crop=880:980:100:330[recap];[1:v]scale=in_range=full:out_range=tv:out_color_matrix=bt709,format=yuv420p[reference];[recap][reference]ssim=stats_file=/workspace/spring-framework-lessons/output/week-01/day-03/source/evidence/final-recap-hold-ssim-frames.txt",
+    "[0:v]trim=start_frame=2154,setpts=PTS-STARTPTS,crop=880:980:100:330[recap];[1:v]scale=in_range=full:out_range=tv:out_color_matrix=bt709,format=yuv420p[reference];[recap][reference]ssim=stats_file=/workspace/spring-framework-lessons/output/week-01/day-03/source/evidence/final-recap-hold-ssim-frames.txt",
     "-frames:v",
     "120",
     "-an",

@@ -16,7 +16,7 @@ For the factory path, ctx.register(FactoryConfig.class) activates @Configuration
 
 For the scanning path, the application registers ScanConfig, whose @ComponentScan("lesson.scan") discovers @Component Worker. Its class-based definition exists before the Worker singleton. The annotated Outside class lives in lesson.outside and remains excluded from that configured scan. An annotation alone does not activate scanning, and the package boundary matters. The pictures illustrate selected application definitions, not an exhaustive list of Spring infrastructure beans.
 
-Actual verification: **3 JUnit tests passed; 0 failed**. They check the unregistered lookup, factory definition and single factory call, both retrievable default singletons, repeated-lookup identity, scanned class metadata and outside-package exclusion. Main compilation, test compilation, JUnit and the standalone application all exited 0 with empty stderr. Actual proof includes:
+Retained genuine verification: **3 JUnit tests passed; 0 failed**. They check the unregistered lookup, factory definition and single factory call, both retrievable default singletons, repeated-lookup identity, scanned class metadata and outside-package exclusion. Main compilation, test compilation, JUnit and the standalone application all exited 0 with empty stderr. The Java sources are unchanged in this pacing revision; these are the prior actual results, checked against the current source hashes, rather than a claimed new Java execution. Actual proof includes:
 
 ```text
 plain class missing: true
@@ -35,7 +35,7 @@ Run source/rebuild.sh, or the explicit steps from the lesson directory:
 
 ```sh
 bash source/voice/setup.sh
-source/voice/.venv/bin/python source/voice/generate.py --speed 0.80 --hook-speed 1.00 --voice am_puck80_fenrir20
+source/voice/.venv/bin/python source/voice/generate.py --speed 1.02 --hook-speed 1.02 --voice am_puck80_fenrir20
 source/voice/.venv/bin/python source/voice/qa.py --asr-model base.en
 source/voice/.venv/bin/python source/voice/split_captions.py
 python -m venv source/animation/.venv
@@ -48,7 +48,11 @@ source/animation/.venv/bin/python source/animation/package_platforms.py
 
 The production environment uses Python 3.12, Pillow 13.0.0, NumPy 2.3.5, SciPy 1.17.0 and FFmpeg/FFprobe 7.1.5. Voice dependencies have a separate locked environment. Kokoro model and voice bundle downloads are checksum-pinned in voice/models.sha256. Downloaded models, caches, environments and Python bytecode are excluded from Git and ZIP delivery.
 
-Seven coherent utterances use the licensed 80% am_puck / 20% am_fenrir male English blend. Only the short hook uses inference speed 1.00; the other phrases use 0.80. These are model inference controls, not waveform stretching or pitch shifting. Actual sample-derived utterance times, scene cuts, caption cues and the exact two-second recap hold are retained in timing.json and ../storyboard.md. Actual source narration is38.387208s, frame-rounded to38.400000s/2304frames. The complete recap hold is34.679125–36.679125s before Thanks. Source narration is ../narration.wav. Raw full-stream ASR is72expected/73recognized words, edit distance2, WER2.7778%; the classpath/class path spacing discrepancy is preserved in raw results and separately normalized for alignment. Phonemes, signal/pitch/pause measurements and alignment provenance are in voice/.
+Seven coherent utterances use the licensed80%am_puck/20%am_fenrir male English blend at **inference1.02 for all scenes**. External scene joins are0.08s, with a separate2s reading hold and0.25s final tail. The user rejected the previous0.80-body pace. Do not slow the model merely to reach a duration target: write enough useful explanation at a normal1.0–1.05 pace instead. These are model controls, not waveform stretching or pitch shifting.
+
+Current source narration is **39.230750s**, rounded to **39.233333s/2354frames**. The complete recap hold is **35.890000–37.890000s** before Thanks. Literal inputs, sample-derived utterance boundaries, scene cuts and ASR-aligned caption/event anchors are in timing.json and ../storyboard.md. Fresh full-stream ASR recognizes **96/96 normalized words**, edit distance0, WER0.000000. Code-name display aliases preserve raw recognition and timing provenance. Source narration is ../narration.wav; phonemes, signal/pitch/pause measurements and review limits are in voice/.
+
+The old file had near-immediate source onset0.015104s; its perceived delay came from slow delivery and visual staging rather than a seconds-long initial audio offset. The new missing lookup and outside-scan failure reveal only0.30s after their respective request/name cues. Factory metadata/call/Client reveals follow spoken keywords, rather than waiting until the end of the sentence. The two-second complete-diagram reading hold remains intentional.
 
 No auditory acceptance is claimed. Humanlike naturalness, perceived younger-to-middle adult male age, subtle synthesis artifacts and final pronunciation require listening that is unavailable in this runtime. Objective recognition and signal metrics do not satisfy that essential review, so strict overall approval remains incomplete.
 

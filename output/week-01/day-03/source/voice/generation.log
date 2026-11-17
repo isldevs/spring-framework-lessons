@@ -1,24 +1,24 @@
-synth 0 Why isn't this a Spring bean? speed 1.0
+synth 0 Why isn't this a Spring bean? speed 1.02
 single scene batch; phonemes 31
-duration 1.4863333333333333 total 1.6063333333333332 phoneme timings 0
-synth 1 A class on the classpath isn't automatically registered. Give Spring a registration path. speed 0.8
-single scene batch; phonemes 90
-duration 7.179958333333333 total 8.966291666666667 phoneme timings 0
-synth 2 Register configuration with a bean method. Spring calls the factory and manages its result. speed 0.8
-single scene batch; phonemes 99
-duration 7.784833333333333 total 16.931125 phoneme timings 0
-synth 3 Or add the component annotation, then scan the package containing your class. speed 0.8
-single scene batch; phonemes 79
-duration 5.654791666666667 total 22.76591666666667 phoneme timings 0
-synth 4 Miss that package, and even an annotated class stays unregistered. speed 0.8
-single scene batch; phonemes 71
-duration 5.055416666666667 total 28.001333333333335 phoneme timings 0
-synth 5 Our tests retrieve both. Two paths, one result: Spring knows which beans to manage. speed 0.8
-single scene batch; phonemes 91
-duration 6.677791666666667 total 36.679125 phoneme timings 0
-synth 6 Thanks for watching. speed 0.8
+duration 1.4615 total 1.5415 phoneme timings 0
+synth 1 The class compiles, but the context has no registration for it. Asking for Client fails. speed 1.02
+single scene batch; phonemes 101
+duration 5.63075 total 7.25225 phoneme timings 0
+synth 2 Register Factory Config, then refresh. Its bean method returns the Client that Spring manages. speed 1.02
+single scene batch; phonemes 101
+duration 6.043416666666666 total 13.375666666666667 phoneme timings 0
+synth 3 Or add the component annotation to Worker, then configure a scan of its package. Spring discovers and registers it. speed 1.02
+single scene batch; phonemes 121
+duration 7.211625 total 20.667291666666667 phoneme timings 0
+synth 4 The scan covers lesson dot scan. Outside lives in another package, so its annotation isn't picked up. speed 1.02
+single scene batch; phonemes 109
+duration 6.315708333333333 total 27.063000000000002 phoneme timings 0
+synth 5 Our three tests pass: both registered beans are found; the class outside the scan stays missing. Registration tells Spring what to manage. speed 1.02
+single scene batch; phonemes 146
+duration 8.827 total 37.89 phoneme timings 0
+synth 6 Thanks for watching. speed 1.02
 single scene batch; phonemes 21
-duration 1.3580833333333333 total 38.387208333333334 phoneme timings 0
+duration 1.09075 total 39.23075 phoneme timings 0
 {
   "sample_rate": 48000,
   "voice": "am_puck80_fenrir20",
@@ -27,111 +27,104 @@ duration 1.3580833333333333 total 38.387208333333334 phoneme timings 0
     "am_fenrir": 0.2
   },
   "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
-  "speed": 0.8,
-  "hook_speed": 1.0,
+  "speed": 1.02,
+  "hook_speed": 1.02,
   "inference_speed_per_scene": {
-    "1": 1.0,
-    "2": 0.8,
-    "3": 0.8,
-    "4": 0.8,
-    "5": 0.8,
-    "6": 0.8,
-    "7": 0.8
+    "1": 1.02,
+    "2": 1.02,
+    "3": 1.02,
+    "4": 1.02,
+    "5": 1.02,
+    "6": 1.02,
+    "7": 1.02
   },
   "one_inference_batch_per_scene": true,
-  "regenerated_scene_only": 4,
-  "reused_scene_segments": [
-    1,
-    2,
-    3,
-    5,
-    6,
-    7
-  ],
+  "regenerated_scene_only": null,
+  "reused_scene_segments": [],
   "recap_hold_seconds": 2.0,
-  "recap_hold_start": 34.679125,
-  "recap_hold_end": 36.679125,
-  "thanks_start": 36.679125,
-  "thanks_end": 38.387208,
-  "duration": 38.387208333333334,
+  "recap_hold_start": 35.89,
+  "recap_hold_end": 37.89,
+  "thanks_start": 37.89,
+  "thanks_end": 39.23075,
+  "duration": 39.23075,
   "scenes": [
     {
       "scene": 1,
       "start": 0.0,
-      "end": 1.606333
+      "end": 1.5415
     },
     {
       "scene": 2,
-      "start": 1.606333,
-      "end": 8.966292
+      "start": 1.5415,
+      "end": 7.25225
     },
     {
       "scene": 3,
-      "start": 8.966292,
-      "end": 16.931125
+      "start": 7.25225,
+      "end": 13.375667
     },
     {
       "scene": 4,
-      "start": 16.931125,
-      "end": 22.765917
+      "start": 13.375667,
+      "end": 20.667292
     },
     {
       "scene": 5,
-      "start": 22.765917,
-      "end": 28.001333
+      "start": 20.667292,
+      "end": 27.063
     },
     {
       "scene": 6,
-      "start": 28.001333,
-      "end": 36.679125
+      "start": 27.063,
+      "end": 37.89
     },
     {
       "scene": 7,
-      "start": 36.679125,
-      "end": 38.387208
+      "start": 37.89,
+      "end": 39.23075
     }
   ],
   "phrases": [
     {
       "scene": 1,
       "start": 0.0,
-      "end": 1.486333,
+      "end": 1.4615,
       "text": "Why isn't this a Spring bean?"
     },
     {
       "scene": 2,
-      "start": 1.606333,
-      "end": 8.786292,
-      "text": "A class on the classpath isn't automatically registered. Give Spring a registration path."
+      "start": 1.5415,
+      "end": 7.17225,
+      "text": "The class compiles, but the context has no registration for it. Asking for Client fails."
     },
     {
       "scene": 3,
-      "start": 8.966292,
-      "end": 16.751125,
-      "text": "Register configuration with a bean method. Spring calls the factory and manages its result."
+      "start": 7.25225,
+      "end": 13.295667,
+      "text": "Register Factory Config, then refresh. Its bean method returns the Client that Spring manages."
     },
     {
       "scene": 4,
-      "start": 16.931125,
-      "end": 22.585917,
-      "text": "Or add the component annotation, then scan the package containing your class."
+      "start": 13.375667,
+      "end": 20.587292,
+      "text": "Or add the component annotation to Worker, then configure a scan of its package. Spring discovers and registers it."
     },
     {
       "scene": 5,
-      "start": 22.765917,
-      "end": 27.821333,
-      "text": "Miss that package, and even an annotated class stays unregistered."
+      "start": 20.667292,
+      "end": 26.983,
+      "text": "The scan covers lesson dot scan. Outside lives in another package, so its annotation isn't picked up."
     },
     {
       "scene": 6,
-      "start": 28.001333,
-      "end": 34.679125,
-      "text": "Our tests retrieve both. Two paths, one result: Spring knows which beans to manage."
+      "start": 27.063,
+      "end": 35.89,
+      "text": "Our three tests pass: both registered beans are found; the class outside the scan stays missing. Registration tells Spring what to manage."
     },
     {
       "scene": 7,
-      "start": 36.679125,
-      "end": 38.037208,
+      "start": 37.89,
+      "end": 38.98075,
       "text": "Thanks for watching."
     }
   ],
@@ -139,43 +132,43 @@ duration 1.3580833333333333 total 38.387208333333334 phoneme timings 0
     {
       "scene": 1,
       "start": 0.0,
-      "end": 1.486333,
+      "end": 1.4615,
       "text": "Why isn't this a Spring bean?"
     },
     {
       "scene": 2,
-      "start": 1.606333,
-      "end": 8.786292,
-      "text": "A class on the classpath isn't automatically registered. Give Spring a registration path."
+      "start": 1.5415,
+      "end": 7.17225,
+      "text": "The class compiles, but the context has no registration for it. Asking for Client fails."
     },
     {
       "scene": 3,
-      "start": 8.966292,
-      "end": 16.751125,
-      "text": "Register configuration with a bean method. Spring calls the factory and manages its result."
+      "start": 7.25225,
+      "end": 13.295667,
+      "text": "Register Factory Config, then refresh. Its bean method returns the Client that Spring manages."
     },
     {
       "scene": 4,
-      "start": 16.931125,
-      "end": 22.585917,
-      "text": "Or add the component annotation, then scan the package containing your class."
+      "start": 13.375667,
+      "end": 20.587292,
+      "text": "Or add the component annotation to Worker, then configure a scan of its package. Spring discovers and registers it."
     },
     {
       "scene": 5,
-      "start": 22.765917,
-      "end": 27.821333,
-      "text": "Miss that package, and even an annotated class stays unregistered."
+      "start": 20.667292,
+      "end": 26.983,
+      "text": "The scan covers lesson dot scan. Outside lives in another package, so its annotation isn't picked up."
     },
     {
       "scene": 6,
-      "start": 28.001333,
-      "end": 34.679125,
-      "text": "Our tests retrieve both. Two paths, one result: Spring knows which beans to manage."
+      "start": 27.063,
+      "end": 35.89,
+      "text": "Our three tests pass: both registered beans are found; the class outside the scan stays missing. Registration tells Spring what to manage."
     },
     {
       "scene": 7,
-      "start": 36.679125,
-      "end": 38.037208,
+      "start": 37.89,
+      "end": 38.98075,
       "text": "Thanks for watching."
     }
   ],

@@ -4,7 +4,7 @@ Generated educational videos, reproducible Java examples, animation sources and 
 
 ## Bean registration
 
-Approved topic **Bean registration**, publication date **2026-11-18**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Rendered **38.40 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. An immediate spoken/animated missing-bean hook leads through registered @Bean factory configuration, configured @Component scanning and an excluded package. The complete two-path recap holds for two seconds before Thanks; the cover is a separate PNG.
+Approved topic **Bean registration**, publication date **2026-11-18**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Rendered **39.23 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The corrected version uses normal1.02 narration, brief scene joins and earlier visual results after the user rejected the old slow0.80 delivery. An immediate spoken/animated missing-bean hook leads through registered @Bean factory configuration, configured @Component scanning and an excluded package. The complete two-path recap holds for two seconds before Thanks; the cover is a separate PNG.
 
 - [Finished MP4](output/week-01/day-03/video.mp4) · [Complete ZIP](output/week-01/day-03-production.zip)
 - [Cover](output/week-01/day-03/cover.png) · [Subtitles](output/week-01/day-03/subtitles.srt) · [Narration audio](output/week-01/day-03/narration.wav)
@@ -14,7 +14,7 @@ Approved topic **Bean registration**, publication date **2026-11-18**, proposed 
 - [Asset rights](output/week-01/day-03/asset-rights.md) · [Originality review](output/week-01/day-03/originality-review.md)
 - [QA report](output/week-01/day-03/verification-report.md) · [SHA-256](output/week-01/day-03/checksums.sha256) · [Actual Java and tests](output/week-01/day-03/source/java/README.md)
 
-Three actual Spring 6.2.11 JUnit tests passed. Main/test compilation and standalone execution passed, and both platform copies passed probe/decode/hash checks. **Overall strict completion remains incomplete because auditory voice acceptance is unavailable in this runtime.** Licensed local male Kokoro narration and objective QA are delivered; no listening approval is claimed. Nothing was uploaded, scheduled or published to either social platform.
+The unchanged Java sources match the retained actual3/3Spring6.2.11-tested version. The corrected master and both platform copies passed fresh probe/decode/hash checks. **Overall strict completion remains incomplete because auditory voice acceptance is unavailable in this runtime.** Licensed local male Kokoro narration and objective QA are delivered; no listening approval is claimed. Nothing was uploaded, scheduled or published to either social platform.
 
 ## ApplicationContext
 

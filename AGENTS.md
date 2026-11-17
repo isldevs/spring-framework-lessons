@@ -16,6 +16,7 @@ The user has authorized this repository as the destination for generated iSLDevs
 - Retain the finished MP4, separate branded cover, synchronized subtitles and narration, scripts, storyboard, platform metadata, rights/originality notes, QA evidence and SHA-256 manifests. Preserve the runnable Java example and animation/audio source.
 - Exclude virtual environments, Python bytecode, model caches, downloaded binary speech models and large transient caches. Keep the model hashes, license evidence, dependency locks, download scripts and reproduction instructions needed to recreate those dependencies.
 - Verify actual encoded files and packaged copies. Never fabricate Java output, test results or listening reviews. Keep any unmet quality requirement clearly documented; automated transcript or pitch checks do not establish human voice naturalness.
+- The user rejected narration generated at0.80 as slow and delayed. Keep speech near normal conversational model pacing (about1.00–1.05); never slow it merely to fill the duration target. Add useful explanation when more runtime is needed, keep ordinary scene joins brief, and reveal visual results on the relevant spoken words rather than waiting for an utterance to finish.
 - Push to GitHub only. Do not upload, schedule or publish videos to YouTube or Facebook unless the user explicitly authorizes that separate action.
 
 ## Required handoff after every video generation or update

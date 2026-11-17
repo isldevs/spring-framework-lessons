@@ -254,11 +254,12 @@ def recap_complete_at(cues):return float(cues.get('complete',4.8))
 def recap_scene(u,elapsed=None,cues=None,scene_duration=None,proof_cues=None):
     cues=cues or {};proof_cues=proof_cues or {};duration=scene_duration or 9.0;t=u*duration if elapsed is None else elapsed
     at=lambda key,default:float(proof_cues.get(key,cues.get(key,default)))
-    bean=at('bean',.3);scan=at('scan',1.0);takeaway=at('takeaway',2.0);complete=at('complete',4.0)
+    bean=at('bean',.3);scan=at('scan',1.0);outside=at('outside',1.6);takeaway=at('takeaway',2.0);complete=at('complete',4.0)
     im=base(5,'ACTUAL REGISTRATION TESTS',['Tell Spring what','to manage.'])
     box(im,(120,625,960,790),fill='#112532',outline=GREEN,r=19)
-    if t>=bean:txt(im,'@Bean retrieved: true',145,642,38,GREEN,mono=True)
-    if t>=scan:txt(im,'scan retrieved: true',145,706,38,GREEN,mono=True)
+    if t>=bean:txt(im,'@Bean retrieved: true',145,637,35,GREEN,mono=True)
+    if t>=scan:txt(im,'scan retrieved: true',145,688,35,GREEN,mono=True)
+    if t>=outside:txt(im,'outside scan missing: true',145,739,35,GREEN,mono=True)
     box(im,(120,823,960,909),fill=CARD,outline=PURPLE,r=18)
     txt(im,'registered configuration → refresh()',145,845,35,PURPLE,mono=True)
     if t>=takeaway:

@@ -4,8 +4,8 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/spring-framework-lessons/out
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf61.7.103
-  Duration: 00:00:38.40, start: 0.000000, bitrate: 424 kb/s
-  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 218 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+  Duration: 00:00:39.23, start: 0.000000, bitrate: 431 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 225 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
       Metadata:
         handler_name    : VideoHandler
         vendor_id       : [0][0][0][0]
@@ -34,7 +34,7 @@ Output #0, null, to 'pipe:':
         handler_name    : SoundHandler
         vendor_id       : [0][0][0][0]
         encoder         : Lavc61.19.101 pcm_s16le
-[silencedetect @ 0x7f6cd0002000] silence_start: 38.1985
-[silencedetect @ 0x7f6cd0002000] silence_end: 38.4 | silence_duration: 0.2015
-[out#0/null @ 0x55b15a057100] video:990KiB audio:7200KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame= 2304 fps=685 q=-0.0 Lsize=N/A time=00:00:38.40 bitrate=N/A speed=11.4x    
+[silencedetect @ 0x7fa570002000] silence_start: 39.061583
+[silencedetect @ 0x7fa570002000] silence_end: 39.232 | silence_duration: 0.170417
+[out#0/null @ 0x56026bd25140] video:1011KiB audio:7356KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2354 fps=870 q=-0.0 Lsize=N/A time=00:00:39.23 bitrate=N/A speed=14.5x    

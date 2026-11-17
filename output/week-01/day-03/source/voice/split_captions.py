@@ -9,23 +9,30 @@ ROOT=Path(__file__).resolve().parent
 p=ROOT.parent/'timing.json';d=json.loads(p.read_text());orig=d['phrases']
 CAPTIONS=[
 ["Why isn't this a Spring bean?"],
-['A class on the classpath',"isn't automatically registered.",'Give Spring a registration path.'],
-['Register configuration','with a @Bean method.','Spring calls the factory','and manages its result.'],
-['Or add the @Component annotation,','then scan the package','containing your class.'],
-['Miss that package,','and even an annotated class','stays unregistered.'],
-['Our tests retrieve both.','Two paths, one result:','Spring knows which beans to manage.'],
+['The class compiles,','but the context has no','registration for it.','Asking for Client fails.'],
+['Register FactoryConfig,','then refresh.','Its @Bean method returns the Client','that Spring manages.'],
+['Or add the @Component annotation','to Worker,','then configure a scan of its package.','Spring discovers and registers it.'],
+['The scan covers lesson.scan.','Outside lives in another package,',"so its annotation isn't picked up."],
+['Our three tests pass:','both registered beans are found;','the class outside the scan','stays missing.','Registration tells Spring','what to manage.'],
 ['Thanks for watching.'],
 ]
 def normalize(s):
  s=s.lower().replace('getbean','get bean').replace('class path','classpath')
+ s=re.sub(r'\bfactory\s*config\b','factoryconfig',s)
+ s=re.sub(r'\blesson(?:\s+dot\s+|\.)scan\b','lessonscan',s)
  return re.findall(r'[a-z0-9]+',s.replace('’','').replace("'",''))
+
 asr=json.loads((ROOT/'asr-alignment.json').read_text());words=[]
 for s in asr['segments']:
  for w in s['words']:
   for token in normalize(w['word']):words.append(dict(w,token=token))
 canonical=[];i=0
 while i<len(words):
- if i+1<len(words) and words[i]['token']=='class' and words[i+1]['token']=='path':
+ if i+2<len(words) and [x['token'] for x in words[i:i+3]]==['lesson','dot','scan']:
+  canonical.append({**words[i],'token':'lessonscan','end':words[i+2]['end'],'recognized_components':['lesson','dot','scan']});i+=3
+ elif i+1<len(words) and [x['token'] for x in words[i:i+2]]==['factory','config']:
+  canonical.append({**words[i],'token':'factoryconfig','end':words[i+1]['end'],'recognized_components':['factory','config']});i+=2
+ elif i+1<len(words) and [x['token'] for x in words[i:i+2]]==['class','path']:
   canonical.append({**words[i],'token':'classpath','end':words[i+1]['end'],'recognized_components':['class','path']});i+=2
  else:canonical.append(words[i]);i+=1
 words=canonical
@@ -52,35 +59,37 @@ def anchor(number,token,occurrence=0):
 def word_end(number,token,occurrence=0):
  hits=[w for w in by_scene[number] if w['token']==token]
  return round(min(scenes[number]['end'],hits[occurrence]['end']),6)
-call=anchor(3,'calls');definition=round(min(word_end(3,'method')+.06,call-.12),6)
-instance=anchor(3,'result');lookup=round(instance+.40,6)
-assert scenes[3]['end']-lookup>=1.0
-assert scenes[3]['start']<definition<call<instance<lookup<scenes[4]['start']
-scan=anchor(4,'scan');span=scenes[4]['end']-.08-scan
-assert span>.75
-scan_lookup=round(scenes[4]['end']-1.50,6)
-scan_instance=round(min(scan+.38,scan_lookup-.45),6)
+# Reveal the action on its spoken keyword, rather than waiting for a phrase end.
+call=anchor(3,'returns');definition=anchor(3,'bean')
+instance=anchor(3,'client');lookup=round(max(instance+.40,scenes[3]['end']-1.1),6)
+assert scenes[3]['end']-lookup>=.75
+assert scenes[3]['start']<=definition<call<instance<lookup<scenes[4]['start']
+scan=anchor(4,'scan');scan_lookup=round(scenes[4]['end']-1.25,6)
+scan_instance=round(min(scan+.40,scan_lookup-.45),6)
 scan_definition=round(min(scan+.12,scan_instance-.15),6)
 scanning={'annotation':anchor(4,'component'),'scan':scan,'definition':scan_definition,'instance':scan_instance,'lookup':scan_lookup}
-assert scanning['annotation']<scanning['scan']<scanning['definition']<scanning['instance']<scanning['lookup']<scenes[5]['start']
-proof={'bean':anchor(6,'retrieve'),'scan':anchor(6,'both'),'takeaway':anchor(6,'two'),'complete':round(min(word_end(6,'manage')+.10,d['recap_hold_start']-.05),6)}
+assert scanning['annotation']<scan<scan_definition<scan_instance<scan_lookup<scenes[5]['start']
+request=round(scenes[2]['start']+.12,6);failed=round(request+.30,6)
+# Outside's exclusion is already the point when its name appears, not seconds later.
+outside=anchor(5,'outside');miss=round(outside+.30,6)
+proof={'bean':anchor(6,'found'),'scan':round(anchor(6,'outside')-.10,6),'outside':anchor(6,'missing'),'takeaway':anchor(6,'registration'),'complete':round(min(word_end(6,'manage')+.03,d['recap_hold_start']-.05),6)}
 start=scenes[6]['start']
-absolute={'register':start,'bean':proof['bean'],'factory':proof['bean'],'scan':proof['scan'],'definition':anchor(6,'spring'),'lookup':anchor(6,'manage'),'complete':proof['complete'],'recap_hold_start':d['recap_hold_start'],'recap_hold_end':d['recap_hold_end']}
+absolute={'register':start,'bean':proof['bean'],'factory':proof['bean'],'scan':proof['scan'],'definition':proof['takeaway'],'lookup':anchor(6,'manage'),'complete':proof['complete'],'recap_hold_start':d['recap_hold_start'],'recap_hold_end':d['recap_hold_end']}
 d['recap_cues']={'relative_to':'scene_start',**{k:round(v-start,6) for k,v in absolute.items()}}
 d['recap_cues_absolute']=absolute
 d['scene_cues_absolute']={
- 'missing':{'request':round(scenes[2]['start']+.35,6),'fail':anchor(2,'registered'),'definition':anchor(2,'registration'),'registration':anchor(2,'registration')},
- 'factory':{'register':scenes[3]['start'],'configuration':anchor(3,'configuration'),'definition':definition,'call':call,'instance':instance,'lookup':lookup},
+ 'missing':{'request':request,'fail':failed,'definition':anchor(2,'registration'),'registration':anchor(2,'registration')},
+ 'factory':{'register':scenes[3]['start'],'configuration':anchor(3,'factoryconfig'),'definition':definition,'call':call,'instance':instance,'lookup':lookup},
  'scanning':scanning,
- 'boundary':{'outside':scenes[5]['start'],'annotation':anchor(5,'annotated'),'miss':anchor(5,'unregistered')},
- 'proof':proof,
- 'recap':absolute,
+ 'boundary':{'outside':outside,'annotation':anchor(5,'annotation'),'miss':miss},
+ 'proof':proof,'recap':absolute,
 }
-record={'text_transformations':[{'display':'@Bean','spoken':'bean','reason':'Java annotation spelling; punctuation omitted for strict speech-word comparison'},{'display':'@Component','spoken':'component','reason':'Java annotation spelling; punctuation omitted for strict speech-word comparison'}],
- 'timing_sources':'asr-alignment.json: unprompted full-stream ASR plus separate unprompted final-phrase crop only if required',
- 'raw_wer_unchanged':True,'orthographic_alignment_normalization':"Recognized 'class path' uses one technical compound classpath for caption alignment; raw transcript and strict WER are unchanged.",
- 'derived_animation_anchors':{'factory_definition':'method word end +.06s, capped .12s before calls','factory_lookup':'instance reveal +.40s; current1.011125s reading window before next scene','scan_registration_instance_lookup':'definition scan+.12s, instance scan+.38s; lookup next scene start−1.50s, instance capped .45s before lookup','missing_request':'sample-derived scene2start+.35s','recap_steps':'known scene start and observed retrieve/both/Spring/manage word anchors; illustrative overview stages'},
- 'scene_start_clamps':'First/last cue boundaries use exact sample-derived utterance edits. Intermediate ASR times are clamped within their utterance. ASR short-outro drift into the reading hold is overridden by known synthesis edits, with raw timestamps retained. No words inserted.',
+record={'text_transformations':[{'display':'@Bean','spoken':'bean'},{'display':'@Component','spoken':'component'},{'display':'FactoryConfig','spoken':'Factory Config'},{'display':'lesson.scan','spoken':'lesson dot scan'}],
+ 'timing_sources':'Untouched unprompted full-stream ASR, with sample-derived scene/utterance bounds overriding boundary drift only.',
+ 'raw_wer_unchanged':True,
+ 'orthographic_alignment_normalization':'Java class/package spellings merge independently recognized word spans; raw transcript and WER remain untouched.',
+ 'derived_animation_anchors':{'missing_lookup':'scene2start+.12s; expected failure .30s later','factory_definition':'bean word start','factory_call':'returns word start','factory_instance':'Client word start','factory_lookup':'after instance+.40s and about1.1s before next scene','scan_definition_instance':'scan+.12/.40s; lookup1.25s before next scene','outside_missing':'Outside word start+.30s','recap':'observed proof/takeaway words, then complete2s hold'},
+ 'scene_start_clamps':'Caption first/last boundaries use known synthesis edits; intermediate ASR boundaries stay within their utterance. Raw ASR is preserved.',
  'hook_ending_asr_s':word_end(1,'bean')}
 (ROOT/'alignment-normalization.json').write_text(json.dumps(record,indent=2)+'\n')
 d['caption_method']='Seven coherent scene utterances; exact sample-derived edit boundaries. Intermediate caption/event anchors use independent unprompted base.en ASR (~20ms grid). Annotation display punctuation is explicit. Raw WER unchanged. Derived factory/scanning/lookup/recap stages are explanatory timings, not runtime measurements. Exact2s reading hold precedes separate spoken Thanks.'

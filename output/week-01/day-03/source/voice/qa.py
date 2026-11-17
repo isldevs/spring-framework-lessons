@@ -43,3 +43,7 @@ try:
  metrics.update({'f0_voiced_frames':int(len(f)),'f0_10pct_hz':float(np.percentile(f,10)),'f0_50pct_hz':float(np.percentile(f,50)),'f0_90pct_hz':float(np.percentile(f,90)),'f0_std_semitones':float(np.std(12*np.log2(f/np.median(f))))})
 except Exception as e:metrics['prosody_error']=str(e)
 (ROOT/'qa-metrics.json').write_text(json.dumps(metrics,indent=2)+'\n');print(metrics,flush=True)
+
+# Refresh pause evidence for this exact narration, not an earlier candidate.
+import silence_qa
+silence_qa.main()

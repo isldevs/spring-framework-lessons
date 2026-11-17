@@ -10,10 +10,10 @@ ROOT=Path(__file__).resolve().parent
 OUT=ROOT.parent.parent
 # The literal approved speech inputs live next to timing for reproducibility.
 inputs=json.loads((ROOT.parent/'script-input.json').read_text())
-CHUNKS=[(i+1,text,[0.12,0.18,0.18,0.18,0.18,2.0,0.35][i]) for i,text in enumerate(inputs['phrases'])]
+CHUNKS=[(i+1,text,[0.08,0.08,0.08,0.08,0.08,2.0,0.25][i]) for i,text in enumerate(inputs['phrases'])]
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--speed',type=float,default=0.80);p.add_argument('--voice',default='am_puck80_fenrir20');p.add_argument('--hook-speed',type=float,default=1.00);p.add_argument('--sample',action='store_true');p.add_argument('--regenerate-scene',type=int,default=0);a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--speed',type=float,default=1.02);p.add_argument('--voice',default='am_puck80_fenrir20');p.add_argument('--hook-speed',type=float,default=1.02);p.add_argument('--sample',action='store_true');p.add_argument('--regenerate-scene',type=int,default=0);a=p.parse_args()
  sessopt=ort.SessionOptions();sessopt.intra_op_num_threads=3;sessopt.inter_op_num_threads=1
  session=ort.InferenceSession(str(ROOT/'models/kokoro-v1.0.onnx'),sess_options=sessopt,providers=['CPUExecutionProvider'])
  k=Kokoro.from_session(session,str(ROOT/'models/voices-v1.0.bin'))

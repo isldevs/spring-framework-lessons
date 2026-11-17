@@ -4,8 +4,8 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/spring-framework-lessons/out
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf61.7.103
-  Duration: 00:00:38.40, start: 0.000000, bitrate: 424 kb/s
-  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 218 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+  Duration: 00:00:39.23, start: 0.000000, bitrate: 431 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 225 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
       Metadata:
         handler_name    : VideoHandler
         vendor_id       : [0][0][0][0]
@@ -34,18 +34,18 @@ Output #0, null, to 'pipe:':
         handler_name    : SoundHandler
         vendor_id       : [0][0][0][0]
         encoder         : Lavc61.19.101 pcm_s16le
-[Parsed_loudnorm_0 @ 0x7f8b78002080] 
+[Parsed_loudnorm_0 @ 0x7fa994002080] 
 {
-	"input_i" : "-15.81",
-	"input_tp" : "-0.87",
-	"input_lra" : "3.60",
-	"input_thresh" : "-26.68",
-	"output_i" : "-15.73",
+	"input_i" : "-15.89",
+	"input_tp" : "-1.22",
+	"input_lra" : "3.80",
+	"input_thresh" : "-26.69",
+	"output_i" : "-15.83",
 	"output_tp" : "-1.50",
-	"output_lra" : "3.60",
-	"output_thresh" : "-26.46",
+	"output_lra" : "3.70",
+	"output_thresh" : "-26.45",
 	"normalization_type" : "dynamic",
-	"target_offset" : "-0.27"
+	"target_offset" : "-0.17"
 }
-[out#0/null @ 0x559fe24b7100] video:990KiB audio:28800KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame= 2304 fps=410 q=-0.0 Lsize=N/A time=00:00:38.40 bitrate=N/A speed=6.84x    
+[out#0/null @ 0x5642c1ec0140] video:1011KiB audio:29424KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2354 fps=542 q=-0.0 Lsize=N/A time=00:00:39.23 bitrate=N/A speed=9.03x    

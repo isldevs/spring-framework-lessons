@@ -2,13 +2,14 @@
   "approved_topic": "Bean registration",
   "phrases": [
     "Why isn't this a Spring bean?",
-    "A class on the classpath isn't automatically registered. Give Spring a registration path.",
-    "Register configuration with a bean method. Spring calls the factory and manages its result.",
-    "Or add the component annotation, then scan the package containing your class.",
-    "Miss that package, and even an annotated class stays unregistered.",
-    "Our tests retrieve both. Two paths, one result: Spring knows which beans to manage.",
+    "The class compiles, but the context has no registration for it. Asking for Client fails.",
+    "Register Factory Config, then refresh. Its bean method returns the Client that Spring manages.",
+    "Or add the component annotation to Worker, then configure a scan of its package. Spring discovers and registers it.",
+    "The scan covers lesson dot scan. Outside lives in another package, so its annotation isn't picked up.",
+    "Our three tests pass: both registered beans are found; the class outside the scan stays missing. Registration tells Spring what to manage.",
     "Thanks for watching."
   ],
   "hook_original": "Why isn't this Java class a Spring bean?",
-  "hook_shortening_reason": "Spoken pacing; the first frame explicitly shows the plain Java class and Spring lookup failure."
+  "hook_shortening_reason": "Spoken pacing; the first frame explicitly shows the plain Java class and Spring lookup failure.",
+  "pacing_revision": "User rejected slow/delayed delivery. Normal inference speed1.02, concise scene joins; expand useful explanation instead of slowing speech to hit duration."
 }

@@ -1,99 +1,86 @@
-# Bean registration — verification report
+# Bean registration — pacing correction and verification
 
-**Encoded master and both platform copies: technical validation PASS. Overall strict completion: INCOMPLETE because the required auditory voice review is unavailable.**
+**Corrected master and both platform copies: technical PASS. Overall auditory acceptance remains INCOMPLETE.** The user reported that the earlier version sounded slow and delayed. This revision regenerates the narration and retimes the animation; it does not claim a listening review that this runtime cannot perform.
 
-An actual narrated MP4 and licensed local male Kokoro WAV are delivered. No listening approval is claimed for human naturalness, pronunciation, perceived younger-to-middle adult age or subtle synthesis artifacts. Automated recognition and signal measurements cannot substitute for that review. No fallback TTS or automatic platform publication was used.
+## Why the earlier version felt delayed
 
-## Approved curriculum and publication metadata
+The previous audio/video streams started at zero, and speech began after about15ms. The main problems were body narration generated at0.80 speed to fill the runtime, stacked scene pauses, and visual results revealed late. That pacing choice was a production mistake.
 
-Exact topic **Bean registration**, Week01 — Spring IoC Foundations, Day3 Wednesday. Publication date remains **2026-11-18**; proposed time remains **19:00 Asia/Phnom_Penh**, UTC+07:00, equivalent to12:00UTC. These are prepared metadata, not an actual scheduled post. Public media/copy contain no week/day/episode numbering. `source/production-settings.json` retains the approved inputs. The earlier different-topic Day3 files remain in Git history at d05b1a3; the current directory implements the approved topic.
+| Measured comparison | Earlier version | Corrected version |
+| --- | --- | --- |
+| Body model speed |0.80 |1.02 |
+| Normalized spoken words |72 |96 |
+| Words/minute across utterance spans, including native pauses |122.74 |157.46 |
+| Added ordinary scene joins |0.84s total |0.40s total |
+| Added joins + reading hold + final tail |3.19s |2.65s |
+| Lookup request → missing result |2.504s |0.300s |
+| Factory call reveal → Client instance |2.640s |0.680s |
+| Outside class reveal → missing result |3.294s |0.300s |
+| Required complete-recap reading hold |2.00s |2.00s |
 
-## Actual encoded master
+The utterance word rate increases28.29%. The fuller explanation keeps the video near39s without deliberately dragging fewer words. These are arithmetic/signal measurements, not a certification of naturalness. Actual baseline records and a reproducible comparison are retained in `source/evidence/pacing-baseline.json`, `pacing-comparison.json` and `source/animation/pacing_comparison.py`. Earlier media remain in Git history at b2faf0913dcd5353af483db231b6a8bfe82ec00e.
 
-| Property | Actual result |
+## Approved lesson and publication plan
+
+Topic **Bean registration**, publication date **2026-11-18**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC) are unchanged. Week/day identifiers remain internal. The video still opens with the spoken/animated question from frame one, uses a separate cover PNG and ends with the complete overview held for two seconds before Thanks. No social-platform upload, scheduling or publication occurred.
+
+## Actual corrected encoded file
+
+| Property | Measured value |
 | --- | --- |
-| Duration | **38.400000s**, within35–40s and strictly below45s |
+| Container/video duration | **39.233333s** |
 | Picture | Native1080×1920, progressive H.264, yuv420p8-bit |
-| Frame rate/count | Constant60/1FPS;2304decoded frames and2304timestamps checked |
-| Color | Rec.709 matrix/transfer/primaries, limited/tv range, SDR |
-| Audio | AAC stereo,48000Hz; stream duration38.387s |
-| Narration WAV |38.387208s,48000Hz mono PCM24 |
-| Encoded loudness | −15.81LUFS integrated, −0.87dBTP true peak,3.60LU range |
-| Scenes/subtitles |7scenes;18SRT cues, maximum35characters |
+| Frame rate/count | Constant60FPS;2354decoded frames and2354timestamps checked |
+| Color | Rec.709 matrix, transfer and primaries; limited range SDR |
+| Audio | AAC stereo,48000Hz; stream duration39.231s |
+| Clean narration |39.230750s,48000Hz mono PCM24 |
+| Loudness | −15.89LUFS integrated, −1.22dBTP true peak,3.80LU range |
+| Structure |7scenes;23SRT cues, maximum37characters |
 | Full decode | Exit0 with empty FFmpeg error log |
 | Black intervals |0detected with retained settings |
 
 Master SHA-256:
 
 ```text
-b4ca78bb820dd008a9b598b525dc4041353e0bf49007f006b2f76bee28eb63b9  video.mp4
+49d895bd36c7b93eb9bb6154f43a7320ea2689603b3ad90026f0e593f40d2d7f  video.mp4
 ```
 
-Raw FFprobe output, commands, stdout/stderr, assertions and hashes are retained under `source/evidence/final-*`; see [final-summary.json](source/evidence/final-summary.json). Audio is sample-derived; picture ends12.792ms later on its next60FPS boundary, retaining the quiet Thanks card without black frames.
+All values come from the actual final MP4. The picture extends about2.6ms beyond the source audio to reach the next60FPS boundary, retaining the closing card. Raw FFprobe/commands/stdout/stderr, comparisons and hashes are in `source/evidence/final-*`; [final-summary.json](source/evidence/final-summary.json) is the machine record.
 
-## Genuine Java/Spring compilation and testing
+## Narration and subtitle checks
 
-Actual Spring Framework **6.2.11** runs on OpenJDK **21.0.13**. Eclipse ECJ **3.40.0** compiles Java17-target classes; Maven, javac and Spring Boot are not used. Ten pinned compiler/runtime/test jars have Maven Central provenance, verified hashes and retained licenses/notices. JUnit Jupiter5.12.2 / console platform1.12.2 executes the tests.
+All seven coherent utterances use local licensed Kokoro80%am_puck/20%am_fenrir at **1.02** model inference. Ordinary inserted joins are **0.08s**, the complete-diagram hold is2s, and the final audio tail is0.25s. No waveform time stretching, pitch shifting or substitute TTS was used.
 
-**3JUnit tests passed,0failed.** Main compilation, test compilation, JUnit and the standalone RegistrationDemo all exited0 with empty stderr.
+Raw unprompted full-stream Whisper base.en recognizes **96/96words**, edit distance0 and WER0. Raw ASR remains unchanged. Display formatting of FactoryConfig, lesson.scan, @Bean and @Component is documented separately; independently observed word spans are merged for those Java spellings. The23captions use exact sample-derived utterance boundaries and approximate20ms ASR word timing within each utterance. Known synthesis boundaries override boundary drift only.
 
-1. A refreshed context without Client registration has no client definition or singleton. getBean(Client.class) throws the expected NoSuchBeanDefinitionException, and no Client constructor runs. This proves the missing-bean failure is registration-related rather than an unrefreshed context.
-2. The application registers FactoryConfig and refreshes. A BeanFactoryPostProcessor observes a client BeanDefinition with factoryConfig/client factory metadata before any Client singleton or factory call. Spring then invokes the @Bean method once. Typed/named repeated retrieval returns the same Client, with one candidate, one constructor and one factory call.
-3. Registered ScanConfig configures @ComponentScan("lesson.scan"). The Worker class definition is observed before its constructor. Worker is retrievable and reused as the same default singleton. Outside has @Component but lives in lesson.outside; its definition is absent, its lookup throws the expected missing-bean exception and its constructor never runs.
+Clean WAV onset above−60dBFS is **0.015104s**, peak−1.514415dBFS,0clipped samples and zero-valued endpoints. Voiced median F0 is113.26Hz, variation4.64semitones. The refreshed−45dBFS/120ms source silence scan finds the longest pre-hold quiet interval **0.567250s**, versus the previous0.675875s. The encoded−50dBFS/150ms scan detects only the intended closing quiet tail from39.061583s. Original quiet NumPy music/event cues remain ducked beneath speech; measured two-pass mixing and continuous audio are retained.
 
-Actual standalone proof includes:
+The updated word rate, zero transcript errors and signal metrics do not establish perceived age, human naturalness or every pronunciation detail. No auditory acceptance of this corrected version is claimed.
 
-```text
-plain class missing: true
-@Bean definition: client
-@Bean factory called
-Client created
-@Bean retrieved: true
-scan definition: worker
-Worker created
-scan retrieved: true
-outside scan missing: true
-```
+## Animation synchronization and readability
 
-JUnit additionally captures `@Bean definition before instance: true` and `scan definition before instance: true`. Logs, exact commands, exit codes, XML and source hashes substantiate these results in [java-verification-result.json](source/evidence/java-verification-result.json). The media validator independently checks current source hashes against the tested hashes and verifies the four displayed outcome lines in actual application stdout; it does not claim to rerun Java.
+The failure panel now responds0.30s after the drawn request. The factory definition appears on the spoken bean-method phrase; the factory call follows “returns” and Client appears on its name, rather than waiting for a phrase-ending “result.” The Outside exclusion appears0.30s after that class is introduced. Three genuine closing proof lines now follow the narrated outcomes.
 
-The successful paths use separate contexts and default non-lazy singletons. Pictures illustrate selected application definitions, while infrastructure/configuration registrations also exist. Both demonstrated paths create BeanDefinitions before their instances; other registration APIs, including direct singleton registration, are outside this focused comparison. The script therefore says to give Spring a registration path rather than claiming every Spring bean must have a BeanDefinition or that these are the only possible routes.
+Current edit anchors: request1.6615/failure1.9615; registered factory configuration7.25225/definition9.94/call10.58/Client11.26/lookup12.275667; scan16.6/definition16.72/Worker17.0/complete graph17.35/lookup19.417292; Outside23.02/missing23.32. These are explanatory animation timings, not Spring execution benchmarks.
 
-Eight official Spring pages were actually retrieved with HTTP200; source URLs, resolved URLs, response hashes, HTML/text and claim excerpts remain under `java-doc-*`. References include [@Bean6.2 reference](https://docs.spring.io/spring-framework/reference/6.2/core/beans/java/bean-annotation.html), [component scanning6.2 reference](https://docs.spring.io/spring-framework/reference/6.2/core/beans/classpath-scanning.html), and [AnnotationConfigApplicationContext6.2.11 API](https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html). Both public publishing links were separately fetched HTTP200; evidence is in `publishing-reference-check.json`.
+The production agent viewed actual decoded opening snapshots at0/.25/.5/1/2s, all seven scene stills, and before/after all six cuts at mobile scale. No clipped labels, caption collisions or crowded connections were observed. The opening core has113unique sampled frames and first changes at1/60s. Five encoded/source opening comparisons have minimum SSIM0.998607. All254source safe-bound samples pass X=90..990,Y=250..1520; a fresh217state preflight also passes.
 
-## Hook, meaningful animation and mobile inspection
+The complete recap holds **35.89–37.89s** before separate Thanks. All120source hold samples are identical in the diagram crop; all120encoded comparisons pass with minimum SSIM0.998215. Actual last frame2353 matches the Thanks source with SSIM0.999186. See [visual review](source/evidence/visual-review.md). This is decoded-still and automated timing inspection, not continuous viewing on a physical phone or an auditory review.
 
-The requested question is shortened for spoken pacing to **“Why isn't this a Spring bean?”** A plain Java Client class and missing Spring registration are visible from frame one. Its complete synthesized utterance lasts1.486333s; raw ASR recognizes its final word by1.04s. Narration exceeds−60dBFS at0.015104s. The first two encoded seconds measure−15.58dBFS RMS.
+## Java evidence retained and rechecked
 
-The core opening has100unique sampled frames, with the first visual change at1/60s. Five actual encoded opening snapshots at0/.25/.5/1/2s match corresponding source frames with minimum SSIM0.998607. No greeting, logo intro, fade, static cover/title hold or black opening delays the hook. A separate1080×1920 cover PNG is delivered.
+The Java sources are unchanged. Their retained genuine verification has **3passing JUnit tests,0failures**, with main/test compilation, JUnit and standalone execution exit0 and empty stderr. This media revision checks that current source hashes equal that tested version and that the displayed outcome lines exist in its actual stdout; it does not claim a new Java run.
 
-Explanatory animation anchors:
+The tests verify an unregistered Client lookup in a refreshed context, a registered FactoryConfig/@Bean factory definition before instance/factory call, retrievable and reused Client, a configured component scan finding Worker, and annotated Outside excluded from lesson.scan. Both positive examples use separate contexts and default non-lazy singletons. Actual proof includes `plain class missing: true`, `@Bean retrieved: true`, `scan retrieved: true` and `outside scan missing: true`.
 
-- Missing lookup request1.956333s → verified missing result4.460s.
-- Registered factory configuration8.966292s → definition12.160s → factory call12.880s → Client15.520s → lookup15.920s.
-- Configured scan19.500s → definition19.620s → Worker19.880s → complete graph20.230s → lookup21.265917s.
-- Annotated outside-package class remains missing at26.060s.
+Actual retained toolchain: Spring6.2.11, JDK21.0.13, ECJ3.40.0 compiling Java17-target classes, JUnit Jupiter5.12.2 / console platform1.12.2,10pinned jars. No Boot, Maven or javac is claimed. [Java results](source/evidence/java-verification-result.json), XML/logs, hashes and runner remain reproducible. The earlier8official Spring pages and2publishing-link HTTP200 checks are retained; no new documentation fetch is claimed for this pacing-only revision.
 
-These anchors explain causal ordering and are not measurements of Spring execution speed. The factory lookup/FOUND display remains visible1.011125s before its cut, and the scanned lookup1.50s. Actual decoded transition frames confirm both positive states after their instances exist.
+Pictures show selected application definitions, not every infrastructure bean. The factory and configured scan are two valid registration paths; other APIs, including direct singleton registration, remain outside the focused example. The approved topic/date and publishing text are preserved.
 
-The production agent inspected actual decoded opening, all seven scene stills and all six transition pairs at mobile scale. No clipped labels, caption collisions or crowded diagram connections were observed. All250source safe-bound samples passed X=90..990,Y=250..1520 for important bright content; an additional217state preflight passed. [Visual-review scope](source/evidence/visual-review.md) distinguishes these checks from physical-phone playback or continuous human viewing.
+## Packages, rights and remaining requirement
 
-All18SRT cues match the final narration/timeline with documented annotation/compound formatting. Captions are burned into the picture from the opening hook. The final overview merges the registered @Bean/configured component-scan paths through definitions to managed beans/getBean, alongside actual proof and one takeaway. It holds complete **34.679125–36.679125s**, exactly2s before separate spoken Thanks. All120source hold samples are pixel-identical in the diagram crop; all120encoded comparisons pass with minimum SSIM0.997991. Actual last frame2303 matches the Thanks source with SSIM0.998690.
+Both corrected platform copies were independently FFprobed and fully decoded with exit0 and empty error logs. Their2354frame MP4s are byte-identical to the corrected master SHA-256 above; covers/SRT match current assets. Separate platform manifests, metadata and phone-ready copy are retained. Upload ZIPs pass CRC checks; finalization also checks every production-ZIP member and refreshes archive hashes.
 
-## Voice, audio continuity and remaining review
+[Asset rights](asset-rights.md) and [originality review](originality-review.md) retain unchanged commercial-use provenance and review limits. Models/environments/Python bytecode are excluded; runnable Java, animation, audio/TTS sources, locks and license evidence are included.
 
-Local Kokoro v1.0 uses80%am_puck/20%am_fenrir male English styles, one coherent inference batch per scene. Hook model speed is1.00, body0.80. An earlier ambiguous component phrase was independently transcribed, then replaced by a complete coherent utterance: “Or add the component annotation, then scan the package containing your class.” No word-level voice splicing, waveform stretching, pitch shifting or substitute TTS is used.
-
-Raw unprompted full-stream Whisper base.en recognition has **72expected/73recognized words, edit distance2, WER0.027778 (2.7778%)**. The discrepancy is `classpath` versus `class path`. The raw result remains intact; compound timing spans and @Bean/@Component display formatting are documented separately. Known sample-derived utterance boundaries take precedence over ASR drift across the silent reading hold. No expected words or listening result were silently fabricated.
-
-Clean WAV peak is−1.514415dBFS, with0clipped samples and zero-valued endpoints. Median voiced F0 is115.24Hz, with3.88semitones variation; those measurements do not establish perceived age or naturalness. Quiet joins use4ms microfades. The longest pre-hold source quiet interval is0.675875s between phrases.
-
-Original Python/NumPy A-minor-add9 harmonic audio and five timed registration cues are mixed beneath narration with speech ducking and measured two-pass normalization. The final−50dBFS/150ms silence scan detects only the intended quiet tail from38.1985s. Full decoding, source endpoints and retained mix/silence/loudness evidence support technical continuity; subtle auditory artifacts cannot be certified without listening.
-
-## Packages, rights and status
-
-Both platform MP4s were independently FFprobed and fully decoded with exit0 and empty error logs. Each2304frame copy equals the master SHA-256 above; each packaged cover and SRT equals its current master asset. Platform folders contain their own metadata/hashtags, phone-ready text, technical notes, FFprobe output and checked manifests. [Platform validation](source/evidence/platform-validation-summary.json) records these actual results. Upload ZIPs pass CRC checks; the final delivery audit checks the complete production ZIP and every archived member as well.
-
-[Asset rights](asset-rights.md) and [originality review](originality-review.md) retain provenance and license evidence. Production uses free/open-source tools, procedural graphics and original synthesized audio, with no stock footage or sampled song. No exhaustive plagiarism screening or worldwide novelty claim is made. Reproducible Java/tests, Pillow/NumPy sources, dependency records and Kokoro setup are included; downloaded speech models, environments and Python bytecode are excluded.
-
-**Remaining essential requirement:** actual auditory acceptance of smooth human explanation, pronunciation, perceived male age and subtle synthesis artifacts. This runtime cannot ingest the audio for that review. The narrated MP4 and technical verification are delivered, but strict overall approval remains incomplete for that reason. Nothing was uploaded, scheduled or published to YouTube or Facebook.
+**Remaining incomplete requirement:** actual auditory acceptance of smooth human explanation, pronunciation, perceived male age and subtle artifacts. The runtime cannot ingest the audio for listening review. The corrected media and technical checks are delivered, but overall strict approval remains incomplete for that reason. Nothing was uploaded, scheduled or published to YouTube or Facebook.

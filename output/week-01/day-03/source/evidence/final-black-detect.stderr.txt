@@ -4,8 +4,8 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/spring-framework-lessons/out
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf61.7.103
-  Duration: 00:00:38.40, start: 0.000000, bitrate: 424 kb/s
-  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 218 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+  Duration: 00:00:39.23, start: 0.000000, bitrate: 431 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 225 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
       Metadata:
         handler_name    : VideoHandler
         vendor_id       : [0][0][0][0]
@@ -28,5 +28,5 @@ Output #0, null, to 'pipe:':
         handler_name    : VideoHandler
         vendor_id       : [0][0][0][0]
         encoder         : Lavc61.19.101 wrapped_avframe
-[out#0/null @ 0x55ecc129e140] video:990KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame= 2304 fps=501 q=-0.0 Lsize=N/A time=00:00:38.40 bitrate=N/A speed=8.35x    
+[out#0/null @ 0x5654a3420180] video:1011KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2354 fps=641 q=-0.0 Lsize=N/A time=00:00:39.23 bitrate=N/A speed=10.7x    

@@ -6,7 +6,7 @@ command -v ffmpeg >/dev/null
 command -v ffprobe >/dev/null
 bash source/java/run.sh
 bash source/voice/setup.sh
-source/voice/.venv/bin/python source/voice/generate.py --speed 0.80 --hook-speed 1.00 --voice am_puck80_fenrir20
+source/voice/.venv/bin/python source/voice/generate.py --speed 1.02 --hook-speed 1.02 --voice am_puck80_fenrir20
 source/voice/.venv/bin/python source/voice/qa.py --asr-model base.en
 source/voice/.venv/bin/python source/voice/split_captions.py
 python -m venv source/animation/.venv

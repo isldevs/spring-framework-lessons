@@ -21,5 +21,14 @@
   "fps": 60,
   "voice_perceptual_review": "INCOMPLETE: no auditory listening review available or performed",
   "publication": "No automatic upload, scheduling or publication",
-  "technical_status": "PASS: actual three Java tests, encoded master and both platform copies"
+  "technical_status": "PASS: corrected encoded master and both copies; retained Java3/3results with matching sources",
+  "pacing_revision": {
+    "feedback": "Earlier voice felt delayed and slow; rejected0.80 body pacing.",
+    "all_scene_inference_speed": 1.02,
+    "normal_scene_gap_s": 0.08,
+    "ordinary_joins_total_s": 0.4,
+    "voice_utterance_wpm": 157.4598661864505,
+    "result_reveal_wait_s": 0.3,
+    "rule": "Never slow speech just to fill the duration target."
+  }
 }

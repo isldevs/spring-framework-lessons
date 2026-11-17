@@ -2,25 +2,34 @@
   "text_transformations": [
     {
       "display": "@Bean",
-      "spoken": "bean",
-      "reason": "Java annotation spelling; punctuation omitted for strict speech-word comparison"
+      "spoken": "bean"
     },
     {
       "display": "@Component",
-      "spoken": "component",
-      "reason": "Java annotation spelling; punctuation omitted for strict speech-word comparison"
+      "spoken": "component"
+    },
+    {
+      "display": "FactoryConfig",
+      "spoken": "Factory Config"
+    },
+    {
+      "display": "lesson.scan",
+      "spoken": "lesson dot scan"
     }
   ],
-  "timing_sources": "asr-alignment.json: unprompted full-stream ASR plus separate unprompted final-phrase crop only if required",
+  "timing_sources": "Untouched unprompted full-stream ASR, with sample-derived scene/utterance bounds overriding boundary drift only.",
   "raw_wer_unchanged": true,
-  "orthographic_alignment_normalization": "Recognized 'class path' uses one technical compound classpath for caption alignment; raw transcript and strict WER are unchanged.",
+  "orthographic_alignment_normalization": "Java class/package spellings merge independently recognized word spans; raw transcript and WER remain untouched.",
   "derived_animation_anchors": {
-    "factory_definition": "method word end +.06s, capped .12s before calls",
-    "factory_lookup": "instance reveal +.40s; current1.011125s reading window before next scene",
-    "scan_registration_instance_lookup": "definition scan+.12s, instance scan+.38s; lookup next scene start\u22121.50s, instance capped .45s before lookup",
-    "missing_request": "sample-derived scene2start+.35s",
-    "recap_steps": "known scene start and observed retrieve/both/Spring/manage word anchors; illustrative overview stages"
+    "missing_lookup": "scene2start+.12s; expected failure .30s later",
+    "factory_definition": "bean word start",
+    "factory_call": "returns word start",
+    "factory_instance": "Client word start",
+    "factory_lookup": "after instance+.40s and about1.1s before next scene",
+    "scan_definition_instance": "scan+.12/.40s; lookup1.25s before next scene",
+    "outside_missing": "Outside word start+.30s",
+    "recap": "observed proof/takeaway words, then complete2s hold"
   },
-  "scene_start_clamps": "First/last cue boundaries use exact sample-derived utterance edits. Intermediate ASR times are clamped within their utterance. ASR short-outro drift into the reading hold is overridden by known synthesis edits, with raw timestamps retained. No words inserted.",
-  "hook_ending_asr_s": 1.04
+  "scene_start_clamps": "Caption first/last boundaries use known synthesis edits; intermediate ASR boundaries stay within their utterance. Raw ASR is preserved.",
+  "hook_ending_asr_s": 1.02
 }

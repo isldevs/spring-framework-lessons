@@ -1,22 +1,22 @@
 [
   {
-    "time": 4.46,
+    "time": 1.9615,
     "purpose": "unregistered class lookup is missing"
   },
   {
-    "time": 12.88,
+    "time": 10.58,
     "purpose": "registered bean factory is called"
   },
   {
-    "time": 19.62,
+    "time": 16.72,
     "purpose": "configured scan registers Worker definition"
   },
   {
-    "time": 26.06,
+    "time": 23.32,
     "purpose": "annotated class outside scan remains missing"
   },
   {
-    "time": 34.04,
+    "time": 35.19,
     "purpose": "complete two-path registration overview"
   }
 ]
