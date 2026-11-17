@@ -1,0 +1,2 @@
+Nov 17, 2026 4:29:49 PM org.springframework.context.support.AbstractApplicationContext refresh
+WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'MissingBeanDemo$Service': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'MissingBeanDemo$Repo' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}

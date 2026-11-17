@@ -1,0 +1,6 @@
+startup exception: UnsatisfiedDependencyException
+root cause: NoSuchBeanDefinitionException
+failed context active: false
+fixed context active: true
+same repository: true
+business result: ready
