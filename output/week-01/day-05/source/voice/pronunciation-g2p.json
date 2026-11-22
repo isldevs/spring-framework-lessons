@@ -1,0 +1,59 @@
+{
+  "word_distinctions": {
+    "bean": "bˈiːn",
+    "beans": "bˈiːnz",
+    "Client": "klˈaɪənt",
+    "alpha": "ˈælfə",
+    "beta": "bˈeɪɾə",
+    "named lookup": "nˈeɪmd lˈʊkʌp",
+    "type-only lookup": "tˈaɪpˈoʊnli lˈʊkʌp",
+    "primary": "pɹˈaɪmɚɹi",
+    "ambiguous": "æmbˈɪɡjuːəs",
+    "annotation": "ˌænətˈeɪʃən",
+    "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "Two names. One ambiguous type.",
+      "phonemes": "tˈuː nˈeɪmz. wˈʌn æmbˈɪɡjuːəs tˈaɪp.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 2,
+      "text": "This factory method registers a Client named alpha. The annotation supplies its explicit bean name.",
+      "phonemes": "ðɪs fˈæktɚɹi mˈɛθəd ɹˈɛdʒɪstɚz ɐ klˈaɪənt nˈeɪmd ˈælfə. ðɪ ˌænətˈeɪʃən səplˈaɪz ɪts ɛksplˈɪsɪt bˈiːn nˈeɪm.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 3,
+      "text": "Ask for alpha by name, and Spring returns that bean. Add the type argument to check its type too.",
+      "phonemes": "ˈæsk fɔːɹ ˈælfə baɪ nˈeɪm, ænd spɹˈɪŋ ɹᵻtˈɜːnz ðæt bˈiːn. ˈæd ðə tˈaɪp ˈɑːɹɡjuːmənt tə tʃˈɛk ɪts tˈaɪp tˈuː.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 4,
+      "text": "With just one Client, a type-only lookup returns the same object. Now register beta as a second Client.",
+      "phonemes": "wɪð dʒˈʌst wˈʌn klˈaɪənt, ɐ tˈaɪpˈoʊnli lˈʊkʌp ɹᵻtˈɜːnz ðə sˈeɪm ˈɑːbdʒɛkt. nˈaʊ ɹˈɛdʒɪstɚ bˈeɪɾə æz ɐ sˈɛkənd klˈaɪənt.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 5,
+      "text": "Both beans have clear names, but both match Client. With no primary selected, this type-only lookup is ambiguous.",
+      "phonemes": "bˈoʊθ bˈiːnz hæv klˈɪɹ nˈeɪmz, bˌʌt bˈoʊθ mˈætʃ klˈaɪənt. wɪð nˈoʊ pɹˈaɪmɚɹi sᵻlˈɛktᵻd, ðɪs tˈaɪpˈoʊnli lˈʊkʌp ɪz æmbˈɪɡjuːəs.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 6,
+      "text": "Our tests verify named results and type failure. Names identify beans; they don't resolve this type tie.",
+      "phonemes": "ˌaʊɚ tˈɛsts vˈɛɹᵻfˌaɪ nˈeɪmd ɹɪzˈʌlts ænd tˈaɪp fˈeɪlɪɹ. nˈeɪmz aɪdˈɛntᵻfˌaɪ bˈiːnz; ðeɪ dˈoʊnt ɹᵻzˈɑːlv ðɪs tˈaɪp tˈaɪ.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 7,
+      "text": "Thanks for watching.",
+      "phonemes": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ.",
+      "inference_batches": 1
+    }
+  ]
+}

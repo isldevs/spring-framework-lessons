@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/java/bean-annotation.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/java/bean-annotation.html",
+    "http_status": 200,
+    "response_sha256": "95c32d2f5c4a4d4561577160e2ef3c34f0fd22f4d8913002988cb8df39b34b2e"
+  },
+  {
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html",
+    "http_status": 200,
+    "response_sha256": "11978416e785b9773307070fb9ef6eb446c8ed35cf39c9d24676d4c5c7ce670c"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "initial_candidate_duration_s": 40.9275,
+  "initial_body_speed": 1.02,
+  "initial_hook_duration_s": 1.787625,
+  "reason_for_revision": "Above preferred40s; shortened only the complete final explanation utterance, preserving normal inference."
+}

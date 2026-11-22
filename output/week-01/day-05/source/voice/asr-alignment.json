@@ -1,0 +1,693 @@
+{
+  "model": "faster-whisper base.en int8",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.4,
+      "text": " Two names, one ambiguous type.",
+      "avg_logprob": -0.12013118068820663,
+      "words": [
+        {
+          "word": " Two",
+          "start": 0.0,
+          "end": 0.12,
+          "probability": 0.511853814125061
+        },
+        {
+          "word": " names,",
+          "start": 0.12,
+          "end": 0.28,
+          "probability": 0.9876975417137146
+        },
+        {
+          "word": " one",
+          "start": 0.46,
+          "end": 0.68,
+          "probability": 0.986021101474762
+        },
+        {
+          "word": " ambiguous",
+          "start": 0.68,
+          "end": 1.04,
+          "probability": 0.9738628268241882
+        },
+        {
+          "word": " type.",
+          "start": 1.04,
+          "end": 1.4,
+          "probability": 0.992156982421875
+        }
+      ]
+    },
+    {
+      "start": 1.84,
+      "end": 4.46,
+      "text": " This factory method registers a client named alpha.",
+      "avg_logprob": -0.12013118068820663,
+      "words": [
+        {
+          "word": " This",
+          "start": 1.84,
+          "end": 1.96,
+          "probability": 0.9956568479537964
+        },
+        {
+          "word": " factory",
+          "start": 1.96,
+          "end": 2.2,
+          "probability": 0.9408128261566162
+        },
+        {
+          "word": " method",
+          "start": 2.2,
+          "end": 2.66,
+          "probability": 0.9855889678001404
+        },
+        {
+          "word": " registers",
+          "start": 2.66,
+          "end": 3.14,
+          "probability": 0.9941856861114502
+        },
+        {
+          "word": " a",
+          "start": 3.14,
+          "end": 3.46,
+          "probability": 0.9982686042785645
+        },
+        {
+          "word": " client",
+          "start": 3.46,
+          "end": 3.72,
+          "probability": 0.9957024455070496
+        },
+        {
+          "word": " named",
+          "start": 3.72,
+          "end": 4.2,
+          "probability": 0.9884178042411804
+        },
+        {
+          "word": " alpha.",
+          "start": 4.2,
+          "end": 4.46,
+          "probability": 0.739396870136261
+        }
+      ]
+    },
+    {
+      "start": 5.1,
+      "end": 7.68,
+      "text": " The annotation supplies its explicit bean name.",
+      "avg_logprob": -0.12013118068820663,
+      "words": [
+        {
+          "word": " The",
+          "start": 5.1,
+          "end": 5.14,
+          "probability": 0.9956966638565063
+        },
+        {
+          "word": " annotation",
+          "start": 5.14,
+          "end": 5.42,
+          "probability": 0.9913103580474854
+        },
+        {
+          "word": " supplies",
+          "start": 5.42,
+          "end": 6.18,
+          "probability": 0.9818589091300964
+        },
+        {
+          "word": " its",
+          "start": 6.18,
+          "end": 6.56,
+          "probability": 0.9242340326309204
+        },
+        {
+          "word": " explicit",
+          "start": 6.56,
+          "end": 6.96,
+          "probability": 0.9988157749176025
+        },
+        {
+          "word": " bean",
+          "start": 6.96,
+          "end": 7.36,
+          "probability": 0.7056495547294617
+        },
+        {
+          "word": " name.",
+          "start": 7.36,
+          "end": 7.68,
+          "probability": 0.9819979071617126
+        }
+      ]
+    },
+    {
+      "start": 8.28,
+      "end": 11.14,
+      "text": " Ask for alpha by name and spring returns that bean.",
+      "avg_logprob": -0.12013118068820663,
+      "words": [
+        {
+          "word": " Ask",
+          "start": 8.28,
+          "end": 8.5,
+          "probability": 0.9325442910194397
+        },
+        {
+          "word": " for",
+          "start": 8.5,
+          "end": 8.7,
+          "probability": 0.9991675615310669
+        },
+        {
+          "word": " alpha",
+          "start": 8.7,
+          "end": 8.88,
+          "probability": 0.9623509049415588
+        },
+        {
+          "word": " by",
+          "start": 8.88,
+          "end": 9.28,
+          "probability": 0.9923251867294312
+        },
+        {
+          "word": " name",
+          "start": 9.28,
+          "end": 9.58,
+          "probability": 0.9967858791351318
+        },
+        {
+          "word": " and",
+          "start": 9.58,
+          "end": 9.84,
+          "probability": 0.770474910736084
+        },
+        {
+          "word": " spring",
+          "start": 9.84,
+          "end": 10.1,
+          "probability": 0.7913111448287964
+        },
+        {
+          "word": " returns",
+          "start": 10.1,
+          "end": 10.52,
+          "probability": 0.9965839385986328
+        },
+        {
+          "word": " that",
+          "start": 10.52,
+          "end": 10.88,
+          "probability": 0.9891446232795715
+        },
+        {
+          "word": " bean.",
+          "start": 10.88,
+          "end": 11.14,
+          "probability": 0.979025661945343
+        }
+      ]
+    },
+    {
+      "start": 11.68,
+      "end": 13.76,
+      "text": " Add the type argument to check its type too.",
+      "avg_logprob": -0.12013118068820663,
+      "words": [
+        {
+          "word": " Add",
+          "start": 11.68,
+          "end": 11.78,
+          "probability": 0.996075451374054
+        },
+        {
+          "word": " the",
+          "start": 11.78,
+          "end": 11.92,
+          "probability": 0.9964277148246765
+        },
+        {
+          "word": " type",
+          "start": 11.92,
+          "end": 12.12,
+          "probability": 0.9901970624923706
+        },
+        {
+          "word": " argument",
+          "start": 12.12,
+          "end": 12.46,
+          "probability": 0.9958428740501404
+        },
+        {
+          "word": " to",
+          "start": 12.46,
+          "end": 12.84,
+          "probability": 0.9973135590553284
+        },
+        {
+          "word": " check",
+          "start": 12.84,
+          "end": 13.02,
+          "probability": 0.9991092085838318
+        },
+        {
+          "word": " its",
+          "start": 13.02,
+          "end": 13.18,
+          "probability": 0.9060157537460327
+        },
+        {
+          "word": " type",
+          "start": 13.18,
+          "end": 13.46,
+          "probability": 0.9960088729858398
+        },
+        {
+          "word": " too.",
+          "start": 13.46,
+          "end": 13.76,
+          "probability": 0.26046767830848694
+        }
+      ]
+    },
+    {
+      "start": 14.44,
+      "end": 16.78,
+      "text": " With just one client, a type only lookup",
+      "avg_logprob": -0.12013118068820663,
+      "words": [
+        {
+          "word": " With",
+          "start": 14.44,
+          "end": 14.56,
+          "probability": 0.9973234534263611
+        },
+        {
+          "word": " just",
+          "start": 14.56,
+          "end": 14.74,
+          "probability": 0.9989437460899353
+        },
+        {
+          "word": " one",
+          "start": 14.74,
+          "end": 15.0,
+          "probability": 0.9984322190284729
+        },
+        {
+          "word": " client,",
+          "start": 15.0,
+          "end": 15.36,
+          "probability": 0.9986509680747986
+        },
+        {
+          "word": " a",
+          "start": 15.66,
+          "end": 15.7,
+          "probability": 0.9962109327316284
+        },
+        {
+          "word": " type",
+          "start": 15.7,
+          "end": 15.94,
+          "probability": 0.9141139388084412
+        },
+        {
+          "word": " only",
+          "start": 15.94,
+          "end": 16.3,
+          "probability": 0.6190582513809204
+        },
+        {
+          "word": " lookup",
+          "start": 16.3,
+          "end": 16.78,
+          "probability": 0.6898133158683777
+        }
+      ]
+    },
+    {
+      "start": 16.78,
+      "end": 18.2,
+      "text": " returns the same object.",
+      "avg_logprob": -0.12013118068820663,
+      "words": [
+        {
+          "word": " returns",
+          "start": 16.78,
+          "end": 17.24,
+          "probability": 0.9965940117835999
+        },
+        {
+          "word": " the",
+          "start": 17.24,
+          "end": 17.62,
+          "probability": 0.9982624650001526
+        },
+        {
+          "word": " same",
+          "start": 17.62,
+          "end": 17.88,
+          "probability": 0.9996868371963501
+        },
+        {
+          "word": " object.",
+          "start": 17.88,
+          "end": 18.2,
+          "probability": 0.9990277290344238
+        }
+      ]
+    },
+    {
+      "start": 18.94,
+      "end": 20.94,
+      "text": " Now register beta as a second client.",
+      "avg_logprob": -0.12013118068820663,
+      "words": [
+        {
+          "word": " Now",
+          "start": 18.94,
+          "end": 19.06,
+          "probability": 0.9983500242233276
+        },
+        {
+          "word": " register",
+          "start": 19.06,
+          "end": 19.46,
+          "probability": 0.88435298204422
+        },
+        {
+          "word": " beta",
+          "start": 19.46,
+          "end": 19.82,
+          "probability": 0.9726966619491577
+        },
+        {
+          "word": " as",
+          "start": 19.82,
+          "end": 20.26,
+          "probability": 0.9951643943786621
+        },
+        {
+          "word": " a",
+          "start": 20.26,
+          "end": 20.36,
+          "probability": 0.9836636781692505
+        },
+        {
+          "word": " second",
+          "start": 20.36,
+          "end": 20.62,
+          "probability": 0.9990835189819336
+        },
+        {
+          "word": " client.",
+          "start": 20.62,
+          "end": 20.94,
+          "probability": 0.9990183115005493
+        }
+      ]
+    },
+    {
+      "start": 21.7,
+      "end": 24.42,
+      "text": " Both beans have clear names, but both match client.",
+      "avg_logprob": -0.12013118068820663,
+      "words": [
+        {
+          "word": " Both",
+          "start": 21.7,
+          "end": 21.88,
+          "probability": 0.9983194470405579
+        },
+        {
+          "word": " beans",
+          "start": 21.88,
+          "end": 22.16,
+          "probability": 0.9647303223609924
+        },
+        {
+          "word": " have",
+          "start": 22.16,
+          "end": 22.58,
+          "probability": 0.9981654286384583
+        },
+        {
+          "word": " clear",
+          "start": 22.58,
+          "end": 22.8,
+          "probability": 0.9973280429840088
+        },
+        {
+          "word": " names,",
+          "start": 22.8,
+          "end": 23.14,
+          "probability": 0.9985904097557068
+        },
+        {
+          "word": " but",
+          "start": 23.22,
+          "end": 23.52,
+          "probability": 0.9988813996315002
+        },
+        {
+          "word": " both",
+          "start": 23.52,
+          "end": 23.76,
+          "probability": 0.9995065927505493
+        },
+        {
+          "word": " match",
+          "start": 23.76,
+          "end": 24.08,
+          "probability": 0.9735236763954163
+        },
+        {
+          "word": " client.",
+          "start": 24.08,
+          "end": 24.42,
+          "probability": 0.9580854177474976
+        }
+      ]
+    },
+    {
+      "start": 24.98,
+      "end": 27.98,
+      "text": " With no primary selected, this type only lookup is ambiguous.",
+      "avg_logprob": -0.12013118068820663,
+      "words": [
+        {
+          "word": " With",
+          "start": 24.98,
+          "end": 25.06,
+          "probability": 0.9972435235977173
+        },
+        {
+          "word": " no",
+          "start": 25.06,
+          "end": 25.24,
+          "probability": 0.998805046081543
+        },
+        {
+          "word": " primary",
+          "start": 25.24,
+          "end": 25.5,
+          "probability": 0.9907729625701904
+        },
+        {
+          "word": " selected,",
+          "start": 25.5,
+          "end": 25.98,
+          "probability": 0.9961381554603577
+        },
+        {
+          "word": " this",
+          "start": 26.38,
+          "end": 26.44,
+          "probability": 0.9981949925422668
+        },
+        {
+          "word": " type",
+          "start": 26.44,
+          "end": 26.72,
+          "probability": 0.9964112639427185
+        },
+        {
+          "word": " only",
+          "start": 26.72,
+          "end": 27.06,
+          "probability": 0.9927865862846375
+        },
+        {
+          "word": " lookup",
+          "start": 27.06,
+          "end": 27.38,
+          "probability": 0.9556936621665955
+        },
+        {
+          "word": " is",
+          "start": 27.38,
+          "end": 27.68,
+          "probability": 0.9988277554512024
+        },
+        {
+          "word": " ambiguous.",
+          "start": 27.68,
+          "end": 27.98,
+          "probability": 0.9977648258209229
+        }
+      ]
+    },
+    {
+      "start": 28.98,
+      "end": 31.66,
+      "text": " Our tests verify named results and type failure.",
+      "avg_logprob": -0.34566184205393635,
+      "words": [
+        {
+          "word": " Our",
+          "start": 28.72,
+          "end": 29.08,
+          "probability": 0.2919098734855652
+        },
+        {
+          "word": " tests",
+          "start": 29.08,
+          "end": 29.32,
+          "probability": 0.9058055281639099
+        },
+        {
+          "word": " verify",
+          "start": 29.32,
+          "end": 29.64,
+          "probability": 0.9851489067077637
+        },
+        {
+          "word": " named",
+          "start": 29.64,
+          "end": 30.14,
+          "probability": 0.9494557976722717
+        },
+        {
+          "word": " results",
+          "start": 30.14,
+          "end": 30.64,
+          "probability": 0.9857046604156494
+        },
+        {
+          "word": " and",
+          "start": 30.64,
+          "end": 31.0,
+          "probability": 0.9697902202606201
+        },
+        {
+          "word": " type",
+          "start": 31.0,
+          "end": 31.2,
+          "probability": 0.9894264936447144
+        },
+        {
+          "word": " failure.",
+          "start": 31.2,
+          "end": 31.66,
+          "probability": 0.9261693954467773
+        }
+      ]
+    },
+    {
+      "start": 32.22,
+      "end": 35.2,
+      "text": " Names identify beans they don't resolve this type tie.",
+      "avg_logprob": -0.34566184205393635,
+      "words": [
+        {
+          "word": " Names",
+          "start": 32.22,
+          "end": 32.28,
+          "probability": 0.9845832586288452
+        },
+        {
+          "word": " identify",
+          "start": 32.28,
+          "end": 32.88,
+          "probability": 0.9961326122283936
+        },
+        {
+          "word": " beans",
+          "start": 32.88,
+          "end": 33.44,
+          "probability": 0.7915727496147156
+        },
+        {
+          "word": " they",
+          "start": 33.44,
+          "end": 33.88,
+          "probability": 0.627507746219635
+        },
+        {
+          "word": " don't",
+          "start": 33.88,
+          "end": 34.08,
+          "probability": 0.9874750971794128
+        },
+        {
+          "word": " resolve",
+          "start": 34.08,
+          "end": 34.36,
+          "probability": 0.9973785877227783
+        },
+        {
+          "word": " this",
+          "start": 34.36,
+          "end": 34.7,
+          "probability": 0.9944834113121033
+        },
+        {
+          "word": " type",
+          "start": 34.7,
+          "end": 34.96,
+          "probability": 0.9870429039001465
+        },
+        {
+          "word": " tie.",
+          "start": 34.96,
+          "end": 35.2,
+          "probability": 0.9625207781791687
+        }
+      ]
+    },
+    {
+      "start": 37.9,
+      "end": 38.74,
+      "text": " Thanks for watching.",
+      "avg_logprob": -0.34566184205393635,
+      "words": [
+        {
+          "word": " Thanks",
+          "start": 37.68,
+          "end": 38.04,
+          "probability": 0.9820209741592407
+        },
+        {
+          "word": " for",
+          "start": 38.04,
+          "end": 38.22,
+          "probability": 0.9961519837379456
+        },
+        {
+          "word": " watching.",
+          "start": 38.22,
+          "end": 38.74,
+          "probability": 0.9968302845954895
+        }
+      ]
+    }
+  ],
+  "alignment_provenance": "Unmodified complete full-stream ASR"
+}

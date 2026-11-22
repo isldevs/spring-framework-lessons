@@ -1,0 +1,5 @@
+getBean("alpha", Client.class) selects the bean named alpha and checks its type.
+
+@Qualifier is injection metadata. The separate qualifier test shows that injection can choose beta while this example's direct getBean(Client.class) lookup remains ambiguous.
+
+Which lookup would you use here?

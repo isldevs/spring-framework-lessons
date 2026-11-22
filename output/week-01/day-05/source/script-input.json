@@ -1,0 +1,15 @@
+{
+  "approved_topic": "Bean naming",
+  "phrases": [
+    "Two names. One ambiguous type.",
+    "This factory method registers a Client named alpha. The annotation supplies its explicit bean name.",
+    "Ask for alpha by name, and Spring returns that bean. Add the type argument to check its type too.",
+    "With just one Client, a type-only lookup returns the same object. Now register beta as a second Client.",
+    "Both beans have clear names, but both match Client. With no primary selected, this type-only lookup is ambiguous.",
+    "Our tests verify named results and type failure. Names identify beans; they don't resolve this type tie.",
+    "Thanks for watching."
+  ],
+  "hook_original": "Two bean names can change what Spring finds.",
+  "hook_refinement_reason": "Clarifies that distinct names do not themselves resolve type ambiguity; shortened for the opening two seconds.",
+  "normal_pacing_edit": "Concise final verification/takeaway removes redundancy while retaining normal1.02 inference; no waveform stretching."
+}

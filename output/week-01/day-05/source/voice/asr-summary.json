@@ -1,0 +1,8 @@
+{
+  "reference_words": 97,
+  "asr_words": 97,
+  "edit_distance": 0,
+  "normalized_word_error_rate": 0.0,
+  "transcript": "Two names, one ambiguous type. This factory method registers a client named alpha. The annotation supplies its explicit bean name. Ask for alpha by name and spring returns that bean. Add the type argument to check its type too. With just one client, a type only lookup returns the same object. Now register beta as a second client. Both beans have clear names, but both match client. With no primary selected, this type only lookup is ambiguous. Our tests verify named results and type failure. Names identify beans they don't resolve this type tie. Thanks for watching.",
+  "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
+}

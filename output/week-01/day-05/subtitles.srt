@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:01,788
+Two names. One ambiguous type.
+
+2
+00:00:01,868 --> 00:00:03,140
+This factory method registers
+
+3
+00:00:03,140 --> 00:00:05,100
+a Client named alpha.
+
+4
+00:00:05,100 --> 00:00:06,180
+The annotation supplies
+
+5
+00:00:06,180 --> 00:00:08,208
+its explicit bean name.
+
+6
+00:00:08,288 --> 00:00:09,580
+Ask for alpha by name,
+
+7
+00:00:09,580 --> 00:00:11,680
+and Spring returns that bean.
+
+8
+00:00:11,680 --> 00:00:12,460
+Add the type argument
+
+9
+00:00:12,460 --> 00:00:14,390
+to check its type too.
+
+10
+00:00:14,470 --> 00:00:15,660
+With just one Client,
+
+11
+00:00:15,660 --> 00:00:17,240
+a type-only lookup returns
+
+12
+00:00:17,240 --> 00:00:18,940
+the same object.
+
+13
+00:00:18,940 --> 00:00:19,820
+Now register beta
+
+14
+00:00:19,820 --> 00:00:21,634
+as a second Client.
+
+15
+00:00:21,714 --> 00:00:23,220
+Both beans have clear names,
+
+16
+00:00:23,220 --> 00:00:24,980
+but both match Client.
+
+17
+00:00:24,980 --> 00:00:26,380
+With no primary selected,
+
+18
+00:00:26,380 --> 00:00:28,953
+this type-only lookup is ambiguous.
+
+19
+00:00:29,033 --> 00:00:30,640
+Our tests verify named results
+
+20
+00:00:30,640 --> 00:00:32,220
+and type failure.
+
+21
+00:00:32,220 --> 00:00:33,440
+Names identify beans;
+
+22
+00:00:33,440 --> 00:00:35,945
+they don't resolve this type tie.
+
+23
+00:00:37,945 --> 00:00:39,036
+Thanks for watching.
+

@@ -1,0 +1,22 @@
+[
+  {
+    "time": 4.2,
+    "purpose": "explicit bean name assigned"
+  },
+  {
+    "time": 9.0,
+    "purpose": "named lookup returns alpha"
+  },
+  {
+    "time": 16.0,
+    "purpose": "single-candidate type lookup returns same object"
+  },
+  {
+    "time": 24.06,
+    "purpose": "two-candidate type lookup is ambiguous"
+  },
+  {
+    "time": 35.23,
+    "purpose": "complete name-versus-type overview"
+  }
+]

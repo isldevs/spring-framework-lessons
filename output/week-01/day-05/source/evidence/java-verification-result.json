@@ -1,0 +1,82 @@
+{
+  "spring_framework_version": "6.2.11",
+  "micrometer_version": "1.15.4",
+  "compiler": "ECJ3.40.0",
+  "class_file_target": "Java17",
+  "runtime": "openjdk version \"21.0.13\" 2026-10-20\nOpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)",
+  "compile_main_exit_code": 0,
+  "compile_tests_exit_code": 0,
+  "junit_exit_code": 0,
+  "application_exit_code": 0,
+  "compile_stderr_empty": true,
+  "junit_stderr_empty": true,
+  "application_stderr_empty": true,
+  "junit_reports": [
+    {
+      "file": "build/test-results/TEST-junit-jupiter.xml",
+      "name": "JUnit Jupiter",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.223",
+      "hostname": "9817a439c06d",
+      "timestamp": "2026-11-20T15:50:24"
+    },
+    {
+      "file": "build/test-results/TEST-junit-platform-suite.xml",
+      "name": "JUnit Platform Suite",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.002",
+      "hostname": "9817a439c06d",
+      "timestamp": "2026-11-20T15:50:24"
+    },
+    {
+      "file": "build/test-results/TEST-junit-vintage.xml",
+      "name": "JUnit Vintage",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.001",
+      "hostname": "9817a439c06d",
+      "timestamp": "2026-11-20T15:50:24"
+    }
+  ],
+  "tests_found": 4,
+  "tests_succeeded": 4,
+  "tests_failed": 0,
+  "proof_lines": [
+    "qualifier injection remains distinct: passed",
+    "single named/type identity: passed",
+    "named type check: passed",
+    "two named beans/type ambiguity: passed"
+  ],
+  "application_stdout_lines": [
+    "named alpha: alpha",
+    "typed name alpha: alpha",
+    "single type same: true",
+    "named beta: beta",
+    "type lookup: NoUniqueBeanDefinitionException",
+    "type candidates: 2",
+    "type message: No qualifying bean of type 'lesson.naming.Client' available: expected single matching bean but found 2: alpha,beta"
+  ],
+  "source_sha256": {
+    "src/main/java/lesson/naming/AlphaConfig.java": "cd84ae0625a7e66ea3a6010121bb177704e859ca0f1931dd5e03d5f060190531",
+    "src/main/java/lesson/naming/BetaConfig.java": "3d3ab19984b4a1d5fe3b66b401e145d17f84e508938f8bb5253e131223b31ef0",
+    "src/main/java/lesson/naming/Client.java": "e73b2107b6aa6a6948e7a9dc491c6a9816f10e54d732ff7e1cdef75c63ea88ed",
+    "src/main/java/lesson/naming/NamingDemo.java": "c63ee6b90cdbac1a76b367c8a9c10960b2ffc13e9f427f06a9c4bad26ec72810",
+    "src/test/java/lesson/naming/NamingTests.java": "aaab1827be5f3d52ed2e1493679f51b8df21e4eed1befb77260e89ad43588fd6"
+  },
+  "scope": "Actual Spring6.2.11 explicit bean naming, named and named+type lookup, unique type lookup, two-candidate ambiguity, selected-name type guard and separate qualifier constructor injection.",
+  "verified_semantics": {
+    "explicit_name_replaces_method_default": true,
+    "single_name_and_type_same_instance": true,
+    "two_distinct_names_same_type_ambiguous_without_primary": true,
+    "named_plus_type_checks_selected_bean": true,
+    "qualifier_injection_does_not_resolve_getBean_class": true
+  }
+}

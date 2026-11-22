@@ -1,0 +1,16 @@
+{
+  "text_transformations": [],
+  "timing_sources": "Unmodified unprompted full-stream ASR with sample-derived utterance boundaries. No expected words inserted.",
+  "raw_wer_unchanged": true,
+  "orthographic_alignment_normalization": "Optional look up/lookup compound alignment only; no such raw discrepancy in the current zero-WER run.",
+  "derived_animation_anchors": {
+    "registration": "observed alpha word; definition+.10s, instance+.35s",
+    "named_lookup": "observed alpha request, returned reference+.30s; typed guard on type word",
+    "single_type": "observed type word and return+.30s",
+    "second": "observed now/beta registration; definition+.10s, instance+.35s",
+    "ambiguity": "observed match word, two candidates+.10s and failure+.30s",
+    "proof_recap": "observed named/type/names/tie words, then exact2s reading hold"
+  },
+  "scene_start_clamps": "Known synthesis edits constrain caption first/last boundaries and ASR drift. Intermediate ASR word times are approximately20ms-grid estimates.",
+  "hook_ending_asr_s": 1.4
+}

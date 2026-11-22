@@ -1,0 +1,7 @@
+named alpha: alpha
+typed name alpha: alpha
+single type same: true
+named beta: beta
+type lookup: NoUniqueBeanDefinitionException
+type candidates: 2
+type message: No qualifying bean of type 'lesson.naming.Client' available: expected single matching bean but found 2: alpha,beta

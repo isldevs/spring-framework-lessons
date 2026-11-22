@@ -1,0 +1,25 @@
+{
+  "curriculum": {
+    "week": "01",
+    "week_name": "Spring IoC Foundations",
+    "day": 5,
+    "weekday": "Friday",
+    "exact_topic": "Bean naming",
+    "publish_date": "2026-11-20",
+    "publish_time": "19:00",
+    "timezone": "Asia/Phnom_Penh",
+    "publication_time_status": "proposed",
+    "equivalent_utc": "2026-11-20T12:00:00Z"
+  },
+  "public_numbering": false,
+  "target_seconds": [
+    35,
+    40
+  ],
+  "strict_max_seconds": 45,
+  "fps": 60,
+  "opening": "Immediate spoken/animated named-vs-type hook; separate cover only",
+  "voice_perceptual_review": "INCOMPLETE: no auditory listening review available or performed",
+  "publication": "No automatic upload, scheduling or publication",
+  "technical_status": "PASS: four actual Java tests, encoded master and both platform copies"
+}

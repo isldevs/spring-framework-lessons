@@ -1,0 +1,97 @@
+[
+  {
+    "name": "bean-reference",
+    "url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/java/bean-annotation.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/java/bean-annotation.html",
+    "http_status": 200,
+    "html_sha256": "95c32d2f5c4a4d4561577160e2ef3c34f0fd22f4d8913002988cb8df39b34b2e",
+    "excerpts": [
+      {
+        "needle": "@Bean(\"myThing\") public Thing thing()",
+        "verbatim_context": ", however, with the name attribute, as the following example shows: Java Kotlin @Configuration public class AppConfig { @Bean(\"myThing\") public Thing thing() { return new Thing(); } } @Configuration class AppConfig { @Bean(\"myThing\") fun thing() = Thing() } Bean Aliasing As discussed in Naming Beans , it is sometimes desirable to give a single bean multiple names, otherwise known as bean aliasing. The name attribute of the @Bean annotation accepts a String array for this purpose. The following example shows how to set a number of aliases for a bean: Java Kotlin @Configuration public class AppConfig {"
+      }
+    ]
+  },
+  {
+    "name": "bean-annotation",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/Bean.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/Bean.html",
+    "http_status": 200,
+    "html_sha256": "005f85b5dffd7c175b515635bbd5bfc2d0d6c71a0a96efa5d82dcc381c0297e9",
+    "excerpts": [
+      {
+        "needle": "if explicit naming is desired, the name attribute (or its alias value ) may be used.",
+        "verbatim_context": "rategy for determining the name of a bean is to use the name of the @Bean method. This is convenient and intuitive, but if explicit naming is desired, the name attribute (or its alias value ) may be used. Also note that name accepts an array of Strings, allowing for multiple names (i.e. a primary bean name plus one or more aliases) for a single bean. @Bean({\"b1\", \"b2\"}) // bean available as 'b1' and 'b2', but not 'myBean' public MyBean myBean() { // instantiate and configure MyBean obj return obj; } Profile, Scope, Lazy, DependsOn, Primary, Order Note that the @Bean annotation does not provide attributes for profile, scope, lazy, depends-on or pr"
+      },
+      {
+        "needle": "// bean available as 'b1' and 'b2', but not 'myBean'",
+        "verbatim_context": " allowing for multiple names (i.e. a primary bean name plus one or more aliases) for a single bean. @Bean({\"b1\", \"b2\"}) // bean available as 'b1' and 'b2', but not 'myBean' public MyBean myBean() { // instantiate and configure MyBean obj return obj; } Profile, Scope, Lazy, DependsOn, Primary, Order Note that the @Bean annotation does not provide attributes for profile, scope, lazy, depends-on or primary. Rather, it should be used in conjunction with @Scope , @Lazy , @DependsOn and @Primary annotations to declare those semantics. For example: @Bean @Profile(\"production\") @Scope(\"prototype\") public MyBean myBean() { "
+      }
+    ]
+  },
+  {
+    "name": "bean-factory",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html",
+    "http_status": 200,
+    "html_sha256": "11978416e785b9773307070fb9ef6eb446c8ed35cf39c9d24676d4c5c7ce670c",
+    "excerpts": [
+      {
+        "needle": "getBean Object getBean ( String name) throws BeansException Return an instance, which may be shared or independent, of the specified bean.",
+        "verbatim_context": "BEAN_PREFIX_CHAR Character variant of FACTORY_BEAN_PREFIX . Since: 6.2.6 See Also: Constant Field Values Method Details getBean Object getBean ( String name) throws BeansException Return an instance, which may be shared or independent, of the specified bean. This method allows a Spring BeanFactory to be used as a replacement for the Singleton or Prototype design pattern. Callers may retain references to returned objects in the case of Singleton beans. Translates aliases back to the corresponding canonical bean name. Will ask the parent factory if the bean cannot be found in this factory instance. Parameters: name - the name of the bean to retrieve Returns: an instance of the bean. Note that the retu"
+      },
+      {
+        "needle": "provides a measure of type safety by throwing a BeanNotOfRequiredTypeException if the bean is not of the required type.",
+        "verbatim_context": "eturn an instance, which may be shared or independent, of the specified bean. Behaves the same as getBean(String) , but provides a measure of type safety by throwing a BeanNotOfRequiredTypeException if the bean is not of the required type. This means that ClassCastException can't be thrown on casting the result correctly, as can happen with getBean(String) . Translates aliases back to the corresponding canonical bean name. Will ask the parent factory if the bean cannot be found in this factory instance. Parameters: name - the name of the bean to retrieve requiredType - type the bean must match; can be an interface or superclass Returns: an instance of the bean. Note that the retur"
+      },
+      {
+        "needle": "Return the bean instance that uniquely matches the given object type, if any.",
+        "verbatim_context": "] getAliases ( String name) Return the aliases for the given bean name, if any. <T> T getBean ( Class <T> requiredType) Return the bean instance that uniquely matches the given object type, if any. <T> T getBean ( Class <T> requiredType, Object ... args) Return an instance, which may be shared or independent, of the specified bean. Object getBean ( String name) Return an instance, which may be shared or independent, of the specified bean. <T> T getBean ( String name, Class <T> requiredType) Return an instance, which may be shared or independent, of the specified bean. Object getBean ( String name, Object ... args) Return an instance, which"
+      },
+      {
+        "needle": "NoUniqueBeanDefinitionException - if more than one bean of the given type was found",
+        "verbatim_context": "e single bean matching the required type Throws: NoSuchBeanDefinitionException - if no bean of the given type was found NoUniqueBeanDefinitionException - if more than one bean of the given type was found BeansException - if the bean could not be created Since: 3.0 See Also: ListableBeanFactory getBean <T> T getBean ( Class <T> requiredType, Object ... args) throws BeansException Return an instance, which may be shared or independent, of the specified bean. Allows for specifying explicit constructor arguments / factory method arguments, overriding the specified default arguments (if any) in the bean definition. Note that the provided arguments ne"
+      }
+    ]
+  },
+  {
+    "name": "no-unique",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/NoUniqueBeanDefinitionException.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/NoUniqueBeanDefinitionException.html",
+    "http_status": 200,
+    "html_sha256": "c9ba09ccad1da5e47dc1cb1de8ab2ba3311f17d21948876d5b7cfd29a826a212"
+  },
+  {
+    "name": "wrong-type",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanNotOfRequiredTypeException.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanNotOfRequiredTypeException.html",
+    "http_status": 200,
+    "html_sha256": "208c802145fc035828496148188bdc521cc91339539d0b81533d9db02f1fded7"
+  },
+  {
+    "name": "qualifiers",
+    "url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/annotation-config/autowired-qualifiers.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/annotation-config/autowired-qualifiers.html",
+    "http_status": 200,
+    "html_sha256": "bc03e9691755a6120a24ed1ec127f3648e4c3f213d7c0d3f2dca75ca87c4f6cc",
+    "excerpts": [
+      {
+        "needle": "qualifier values, even with the bean name fallback, always have narrowing semantics within the set of type matches.",
+        "verbatim_context": "ans by name, @Autowired is fundamentally about type-driven injection with optional semantic qualifiers. This means that qualifier values, even with the bean name fallback, always have narrowing semantics within the set of type matches. They do not semantically express a reference to a unique bean id . Good qualifier values are main or EMEA or persistent , expressing characteristics of a specific component that are independent from the bean id , which may be auto-generated in case of an anonymous bean definition such as the one in the preceding example. Qualifiers also apply to typed collections, as discussed earlier \u2014 for example, to Set<MovieCatalog> . In this case, all match"
+      }
+    ]
+  },
+  {
+    "name": "primary",
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/Primary.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/Primary.html",
+    "http_status": 200,
+    "html_sha256": "b302bff6fc68e597a7578c1f7ad2933ea69c4b198c2ed44852a5a349fbbc141e",
+    "excerpts": [
+      {
+        "needle": "If exactly one 'primary' bean exists among the candidates, it will be the autowired value.",
+        "verbatim_context": "s that a bean should be given preference when multiple candidates are qualified to autowire a single-valued dependency. If exactly one 'primary' bean exists among the candidates, it will be the autowired value. Primary beans only have an effect when finding multiple candidates for single injection points. All type-matching beans are included when autowiring arrays, collections, maps, or ObjectProvider streams. This annotation is semantically equivalent to the <bean> element's primary attribute in Spring XML. May be used on any class directly or indirectly annotated with @Component or on methods annotated with @ Bean . Example @Component public class Fo"
+      }
+    ]
+  }
+]

@@ -2,6 +2,20 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## Bean naming
+
+Approved topic **Bean naming**, publication date **2026-11-20**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Rendered **39.30 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The immediate animated/spoken hook compares two named Client instances with their shared type. Named lookup, a required-type check, single-candidate type success and two-candidate ambiguity remain distinct. The complete recap holds for two seconds before Thanks; the cover is separate.
+
+- [MP4](output/week-01/day-05/video.mp4) · [Complete ZIP](output/week-01/day-05-production.zip)
+- [Cover](output/week-01/day-05/cover.png) · [Subtitles](output/week-01/day-05/subtitles.srt) · [Narration audio](output/week-01/day-05/narration.wav)
+- [Narration script](output/week-01/day-05/narration-script.md) · [Timed storyboard](output/week-01/day-05/storyboard.md) · [Recap](output/week-01/day-05/recap.png)
+- [YouTube metadata, hashtags and tags](output/week-01/day-05/youtube-metadata.md) · [Facebook metadata and hashtags](output/week-01/day-05/facebook-metadata.md)
+- [YouTube upload package](output/week-01/day-05-youtube-shorts-upload.zip) · [Facebook upload package](output/week-01/day-05-facebook-reels-upload.zip)
+- [Asset rights](output/week-01/day-05/asset-rights.md) · [Originality review](output/week-01/day-05/originality-review.md)
+- [QA report](output/week-01/day-05/verification-report.md) · [SHA-256](output/week-01/day-05/checksums.sha256) · [Actual Java and tests](output/week-01/day-05/source/java/README.md)
+
+Four actual Spring6.2.11 JUnit tests passed, including a separate qualifier-injection case. Master and both platform copies passed technical validation. **Overall strict approval remains incomplete because auditory voice acceptance is unavailable in this runtime.** Licensed local male Kokoro narration, raw ASR and review limitations are delivered. Nothing was uploaded, scheduled or published to either social platform.
+
 ## Bean registration
 
 Approved topic **Bean registration**, publication date **2026-11-18**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Rendered **39.23 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The corrected version uses normal1.02 narration, brief scene joins and earlier visual results after the user rejected the old slow0.80 delivery. An immediate spoken/animated missing-bean hook leads through registered @Bean factory configuration, configured @Component scanning and an excluded package. The complete two-path recap holds for two seconds before Thanks; the cover is a separate PNG.

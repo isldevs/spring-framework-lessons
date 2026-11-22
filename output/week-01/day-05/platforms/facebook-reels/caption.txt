@@ -1,0 +1,9 @@
+Two clear bean names can still leave one ambiguous type query. ☕
+
+Spring can retrieve alpha by name and check that it is a Client. When only one Client is registered, a type-only lookup returns that same object.
+
+Add beta as another Client, with no selection preference, and the type-only query becomes ambiguous. The names still identify the two beans.
+
+Names identify. Type queries match candidates.
+
+#BeanNaming #SpringFramework #SpringIoC #Java #JavaDevelopers #iSLDevs

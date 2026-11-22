@@ -1,0 +1,43 @@
+{
+  "anchors": {
+    "registration_s": 4.3,
+    "name_assigned_s": 4.2,
+    "first_instance_s": 4.65,
+    "named_request_s": 8.7,
+    "named_return_s": 9.0,
+    "typed_name_check_s": 11.92,
+    "single_type_lookup_s": 15.7,
+    "single_type_return_s": 16.0,
+    "second_registration_s": 18.94,
+    "second_instance_s": 19.91,
+    "two_instances_complete_s": 20.26,
+    "ambiguous_query_s": 23.76,
+    "ambiguity_s": 24.06
+  },
+  "registration_before_named_lookup": true,
+  "named_lookup_and_type_check_order_verified": true,
+  "single_type_lookup_precedes_second_registration": true,
+  "second_instance_before_type_ambiguity": true,
+  "complete_two_instance_graph_before_query": true,
+  "actual_two_client_type_ambiguity_verified": true,
+  "java_tests_found": 4,
+  "java_tests_succeeded": 4,
+  "java_current_sources_match_tested_hashes": true,
+  "java_raw_application_stdout_matches_proofs": true,
+  "actual_java_proof_lines": [
+    "named alpha: alpha",
+    "named beta: beta",
+    "single type same: true",
+    "type candidates: 2",
+    "type lookup: NoUniqueBeanDefinitionException",
+    "typed name alpha: alpha"
+  ],
+  "java_verified_semantics": {
+    "explicit_name_replaces_method_default": true,
+    "named_plus_type_checks_selected_bean": true,
+    "qualifier_injection_does_not_resolve_getBean_class": true,
+    "single_name_and_type_same_instance": true,
+    "two_distinct_names_same_type_ambiguous_without_primary": true
+  },
+  "basis": "Explanatory renderer anchors verify visual ordering, not Spring wall-clock execution. Passed compiled Java/JUnit evidence separately verifies explicitly named lookups, typed named lookup, single-bean type lookup and two-candidate type ambiguity without a primary. Qualifier injection is a distinct tested case; a named lookup is not described as a qualifier. This media validator does not claim to run Java again."
+}

@@ -13,7 +13,7 @@ These are the user's standing preferences and the decisions made while producing
 ## Approved curriculum and schedule
 
 - Preserve the curriculum exactly as supplied in each new production prompt. Never replace an approved lesson with an adjacent topic or move its publication date.
-- Approved Week01 — Spring IoC Foundations slots: Day2 Tuesday **ApplicationContext**, publish date **2026-11-17**; Day3 Wednesday **Bean registration**, publish date **2026-11-18**. Both use proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). The proposed time remains a metadata field; do not automatically schedule or publish.
+- Approved Week01 — Spring IoC Foundations slots: Day2 Tuesday **ApplicationContext**, publish date **2026-11-17**; Day3 Wednesday **Bean registration**, publish date **2026-11-18**. Approved Day4 Thursday **Missing bean** remains2026-11-19, and Day5 Friday **Bean naming** remains2026-11-20. All use proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). The proposed time remains a metadata field; do not automatically schedule or publish.
 - The earlier generated How Spring Dependency Injection Works at day-02 was superseded by this explicit curriculum correction. Its media/source remain in Git history at d3040a5; the current day-02 directory must contain ApplicationContext.
 - New explicit instructions take precedence over older lesson-specific visual defaults, including the previous static opening-cover hold.
 
@@ -75,7 +75,19 @@ Follow the full mandatory checklist in `AGENTS.md`; do not shorten it to a video
 - The user uploads from a phone. Metadata files or download links do NOT replace inline copyable publishing text. Include both formats every time a video is generated or updated.
 - Never say completed/verified without identifying any remaining incomplete essential requirement.
 
-## Latest implemented reference: Bean registration — corrected pacing
+## Latest implemented reference: Bean naming
+
+- Approved exact topic **Bean naming**, media/source `output/week-01/day-05/`. Publication **2026-11-20**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). No automatic upload, scheduling or publication. Day04 Missing bean work remains a separate unfinished checkpoint; preserve its working files and do not claim it completed by the Day05 delivery.
+- Actual master **39.300000s**, native1080×1920,60FPS,H.264/AAC48kHz,Rec.709SDR,2358frames;7scenes,23SRT cues,max35characters. Immediate hook “Two names. One ambiguous type.” refines the requested wording for accuracy/pacing. Separate cover; no static opening hold.
+- Real Spring6.2.11: @Bean("alpha") Client client() explicitly names alpha; client is not an extra name. getBean("alpha") selects by name, getBean("alpha",Client.class) checks the selected type; a single-Client type lookup returns the same default singleton. A fresh context with alpha+beta has two distinct Client objects, no primary/other preference, and direct getBean(Client.class) throws NoUniqueBeanDefinitionException after successful initialization. Names remain usable and the context stays ready; do not call this startup failure.
+- Four actual JUnit tests pass: explicit-name/single identity; two-name/two-instance type ambiguity; wrong required-type guard; @Qualifier("beta") constructor injection selecting beta while direct type-only lookup stays ambiguous. Do not conflate getBean(name) with qualifiers or imply every multi-candidate query fails. Both pictured objects share Client type; alpha/beta are separate beans, not aliases.
+- JDK21.0.13, ECJ3.40 targetingJava17,10pinned jars; no Boot/Maven/javac. Main/test compilation,JUnit,app exit0 with empty stderr. Seven unique official Spring pages HTTP200; both publishing links independently checked and hashed. Source hashes match actual tested sources.
+- Animation anchors: registration4.3/first instance4.65; named request8.7/return9.0/type guard11.92; single-type query15.7/return16; fresh two-bean registration18.94/second instance19.91/complete graph20.26; ambiguous query23.76/failure24.06. These are edit anchors, not runtime measurements.
+- Complete recap hold **35.945417–37.945417s** precedes Thanks. All2358timestamps,5opening snapshots,6transition pairs,7scene stills,single-type-return anchor,120encoded hold frames and last frame checked;254source safe bounds plus217preflight states pass.
+- Male Kokoro80%am_puck/20%am_fenrir at1.02 for all7coherent batches;0.08s joins. Actual raw unprompted ASR97/97words,0WER; sourceonset0.015s,0clipped. Human naturalness, pronunciation and perceived age remain unverified by listening; never represent automated metrics as auditory approval.
+- Master SHA-256 **3b882122e03afd42b9505b6e7f570741719c3704f86ca11b1453ee92584c9c83**. Both platform copies independently probe/decode/hash PASS and equal the master. Archive names use day-05 prefix. Always give the full download handoff AND five separate phone-copyable publishing blocks; refresh every manifest/archive after edits.
+
+## Previous implemented reference: Bean registration — corrected pacing
 
 - Exact approved topic **Bean registration**, media/source `output/week-01/day-03/`. Publication **2026-11-18**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). No automatic upload, scheduling or publication.
 - The user rejected the earlier0.80-body voice as slow/delayed. That file remains in Git history at b2faf0913dcd5353af483db231b6a8bfe82ec00e. Speech had begun after15ms; slow inference, stacked pauses and late visual reveals caused the perception. Do not repeat duration-padding with slow narration.

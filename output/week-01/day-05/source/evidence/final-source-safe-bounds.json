@@ -1,0 +1,2288 @@
+[
+  {
+    "time": 0.0,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1510
+    ]
+  },
+  {
+    "time": 0.016666666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1510
+    ]
+  },
+  {
+    "time": 0.03333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1510
+    ]
+  },
+  {
+    "time": 0.05,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.06666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.08333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.1,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.11666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.1167265625,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.13333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.15,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.16666666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.18333333333333332,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.2,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.21666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.23333333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.233453125,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.25,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.26666666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.2833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.3,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.31666666666666665,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.3333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.35,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.3501796875,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.36666666666666664,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.38333333333333336,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.4,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.4166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.43333333333333335,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.45,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.4666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.46690625,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.48333333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.5,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.5166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.5333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.55,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.5666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.5833333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.5836328125,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.6,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.6166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.6333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.65,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.6666666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.6833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.7,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.700359375,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.7166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.7333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.75,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.7666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.7833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.8,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.8166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.8170859375,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.8333333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.85,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.8666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.8833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.8938125,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.9,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.9166666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.9333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.9338125,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.95,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.9666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 0.9833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.0,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.0166666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.0333333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.05,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.0505390625,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.0666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.0833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.1,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.1166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.1333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.15,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.1666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.167265625,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.1833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.2,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.2166666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.2333333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.25,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.2666666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.2833333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.2839921875,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.3,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.3166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.3333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.35,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.3666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.3833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.4,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.40071875,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.4166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.4333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.45,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.4666666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.4833333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.5,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.5166666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.5174453125,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.5333333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.55,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.5666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.5833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.6,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.6166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.6333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.634171875,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.65,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.6666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.6833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.7,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.7166666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.7333333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.75,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.7508984375,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.7666666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.7833333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.8,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.8166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.8333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.85,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.8666666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      960,
+      1511
+    ]
+  },
+  {
+    "time": 1.867625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 1.8833333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 1.9,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 1.9166666666666667,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 1.9333333333333333,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 1.95,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 1.9666666666666666,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 1.9833333333333334,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 2.2689140625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 2.5038125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 2.670203125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 3.0714921874999996,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 3.4727812499999997,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 3.8740703125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 4.12,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 4.275359375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 4.6766484375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 5.0779375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 5.4792265625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 5.64,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 5.880515625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 6.2818046875,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 6.683093749999999,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 7.0843828124999995,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 7.194125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 7.4856718749999995,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 7.8869609375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 8.28825,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 8.6746015625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 8.934125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 9.060953125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 9.447304687499999,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 9.83365625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 10.2200078125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 10.606359375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 10.629999999999999,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 10.9927109375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 11.3790625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 11.7654140625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 12.07,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 12.151765625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 12.5381171875,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 12.924468749999999,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 13.310820312499999,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 13.4249375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 13.697171875,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 14.0835234375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 14.469875,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 14.922627625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 15.0649375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 15.37538025,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 15.828132875,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 16.2808855,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 16.45,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 16.733638125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 17.18639075,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 17.639143375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 18.09,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 18.091896,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 18.544648625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 18.99740125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 19.380000000000003,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 19.450153874999998,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 19.9029065,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 20.355659125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 20.726958500000002,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 20.808411749999998,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 21.261164375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 21.713917,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 22.171362312499998,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 22.466958499999997,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 22.628807625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 23.0862529375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 23.54369825,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 24.001143562499998,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 24.1,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 24.458588874999997,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 24.9160341875,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 25.3734795,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 25.68,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 25.830924812499998,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 26.288370125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 26.7458154375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 27.20326075,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 27.660706062499997,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 27.666521,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 28.118151374999997,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 28.5755966875,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 29.033042,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 29.590065437499998,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 29.836520999999998,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 30.147088874999998,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 30.704112312499998,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 31.261135749999998,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 31.43,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 31.818159187499997,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 32.375182625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 32.83,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 32.9322060625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 33.4892295,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 34.0462529375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 34.603276375,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 34.692708499999995,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 35.1602998125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 35.71732325,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 36.2743466875,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 36.831370125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 37.3883935625,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "time": 37.945417,
+    "bright_content_bounds": [
+      100,
+      274,
+      949,
+      1511
+    ]
+  },
+  {
+    "time": 38.029213874999996,
+    "bright_content_bounds": [
+      100,
+      274,
+      951,
+      1511
+    ]
+  },
+  {
+    "time": 38.11301075,
+    "bright_content_bounds": [
+      100,
+      274,
+      953,
+      1511
+    ]
+  },
+  {
+    "time": 38.196807625,
+    "bright_content_bounds": [
+      100,
+      274,
+      955,
+      1511
+    ]
+  },
+  {
+    "time": 38.280604499999995,
+    "bright_content_bounds": [
+      100,
+      274,
+      957,
+      1511
+    ]
+  },
+  {
+    "time": 38.364401375,
+    "bright_content_bounds": [
+      100,
+      274,
+      959,
+      1511
+    ]
+  },
+  {
+    "time": 38.44819825,
+    "bright_content_bounds": [
+      100,
+      274,
+      961,
+      1511
+    ]
+  },
+  {
+    "time": 38.490792,
+    "bright_content_bounds": [
+      100,
+      274,
+      962,
+      1511
+    ]
+  },
+  {
+    "time": 38.531995125,
+    "bright_content_bounds": [
+      100,
+      274,
+      963,
+      1511
+    ]
+  },
+  {
+    "time": 38.615792,
+    "bright_content_bounds": [
+      100,
+      274,
+      964,
+      1511
+    ]
+  },
+  {
+    "time": 38.699588874999996,
+    "bright_content_bounds": [
+      100,
+      274,
+      966,
+      1511
+    ]
+  },
+  {
+    "time": 38.78338575,
+    "bright_content_bounds": [
+      100,
+      274,
+      968,
+      1511
+    ]
+  },
+  {
+    "time": 38.867182625,
+    "bright_content_bounds": [
+      100,
+      274,
+      970,
+      1511
+    ]
+  },
+  {
+    "time": 38.9509795,
+    "bright_content_bounds": [
+      100,
+      274,
+      972,
+      1511
+    ]
+  },
+  {
+    "time": 39.034776375,
+    "bright_content_bounds": [
+      100,
+      274,
+      974,
+      1511
+    ]
+  },
+  {
+    "time": 39.11857325,
+    "bright_content_bounds": [
+      100,
+      274,
+      976,
+      1511
+    ]
+  },
+  {
+    "time": 39.202370125,
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  }
+]
