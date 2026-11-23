@@ -69,6 +69,8 @@ These are the user's standing preferences and the decisions made while producing
 
 Follow the full mandatory checklist in `AGENTS.md`; do not shorten it to a video/ZIP link pair.
 
+- Phone delivery must let the user open a player, preview and play the video, then download it. Raw GitHub download links and workspace file links alone did not meet this need. Provide a deployed player page with native controls, inline mobile playback and a same-origin MP4 download button. Current owner-private Bean naming player: https://isldevs-bean-naming-player.sivlayyi-bs.chatgpt.site; reproducible page source is in `tools/mobile-video-preview/`. Preserve its audience and report actual deployment/browser verification honestly.
+
 - Start with actual title, duration, resolution, FPS, video/audio codecs, audio sample rate, color space and verification status.
 - Provide clickable download links for: MP4/complete ZIP; cover/SRT; narration audio/script; timed storyboard; YouTube metadata/hashtags/tags; Facebook metadata/hashtags; asset rights/originality review; QA report/SHA-256; both platform upload packages. Include the GitHub commit link.
 - In that SAME response, also paste five separate copyable text blocks: YouTube title; YouTube description WITH hashtags; comma-separated YouTube tags; pinned comment; Facebook caption WITH hashtags.

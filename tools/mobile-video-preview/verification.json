@@ -1,0 +1,26 @@
+{
+  "deployment_status": "succeeded",
+  "url": "https://isldevs-bean-naming-player.sivlayyi-bs.chatgpt.site",
+  "project_id": "appgprj_6b047779cd208191a67df679c22738a2",
+  "deployment_id": "appgdep_6b047805564c8191a5ea9e0b493c812f",
+  "site_source_commit": "7e30c7b1a7445770ba81fed75597076a00ad237f",
+  "audience": "owner-private",
+  "original_video_sha256": "3b882122e03afd42b9505b6e7f570741719c3704f86ca11b1453ee92584c9c83",
+  "video_changed": false,
+  "checks": {
+    "native_player_controls": "pass",
+    "inline_mobile_attribute": "pass",
+    "same_origin_video_and_download": "pass",
+    "no_autoplay": "pass",
+    "poster_file": "pass",
+    "javascript_syntax": "pass",
+    "deployment_archive_structure": "pass",
+    "archived_video_hash": "pass",
+    "rebuild_script": "pass",
+    "site_source_remote_commit": "pass",
+    "native_deployment_result": "pass"
+  },
+  "browser_playback_tested": false,
+  "physical_phone_tested": false,
+  "limitation": "Required managed browser tool unavailable; no listening acceptance or on-phone playback review is claimed."
+}

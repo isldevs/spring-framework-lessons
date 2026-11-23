@@ -4,6 +4,8 @@ Generated educational videos, reproducible Java examples, animation sources and 
 
 ## Bean naming
 
+Phone preview: [Play the video, then download the MP4](https://isldevs-bean-naming-player.sivlayyi-bs.chatgpt.site). This owner-private player requires the owner's ChatGPT account. [Player source and rebuild instructions](tools/mobile-video-preview/README.md).
+
 Approved topic **Bean naming**, publication date **2026-11-20**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Rendered **39.30 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**. The immediate animated/spoken hook compares two named Client instances with their shared type. Named lookup, a required-type check, single-candidate type success and two-candidate ambiguity remain distinct. The complete recap holds for two seconds before Thanks; the cover is separate.
 
 - [MP4](output/week-01/day-05/video.mp4) · [Complete ZIP](output/week-01/day-05-production.zip)
