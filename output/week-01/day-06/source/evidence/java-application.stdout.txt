@@ -1,0 +1,13 @@
+A alpha: alpha
+B beta: beta
+A beta: missing
+A beta exception: NoSuchBeanDefinitionException
+B alpha: missing
+B alpha exception: NoSuchBeanDefinitionException
+child shared: shared
+child shared same: true
+child owns shared: false
+child local: local
+parent local: missing
+parent local exception: NoSuchBeanDefinitionException
+parent active after child close: true

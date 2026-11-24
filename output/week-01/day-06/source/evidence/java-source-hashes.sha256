@@ -1,0 +1,7 @@
+5909d190e53325c7a408b1856df4952a3810aa823d2f833124890e5ab6567c0b  src/main/java/lesson/contexts/AConfig.java
+fef43217dd13d90bd9cb394672d84d43078f772f8dff7f923ebd28153f328229  src/main/java/lesson/contexts/BConfig.java
+2e1be6be437034fcfa68563d1ca0fc9b087297bcc43439e88412437a9e2fbdbb  src/main/java/lesson/contexts/ChildConfig.java
+7320bd5b3f1b1f3f31f0f383501203058d61648915152452b89edaacc0e7fc15  src/main/java/lesson/contexts/ContextsDemo.java
+22d99be063c4397b1291f4ec86c12ac249f9a1f26114c4a0b70dadfcabb7c2d8  src/main/java/lesson/contexts/Item.java
+72c2fe36e76467aeb56de9e56d6530108eb26036f3d05a60925ee531f2e7ee56  src/main/java/lesson/contexts/ParentConfig.java
+376f054f5f97f15e85075ec965d1fc028e2aa0fed15c625c51e58de2d60a262d  src/test/java/lesson/contexts/ContextsTests.java

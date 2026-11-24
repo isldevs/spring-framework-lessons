@@ -1,0 +1,13 @@
+{
+  "command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-i",
+    "/workspace/spring-framework-lessons/output/week-01/day-06/platforms/facebook-reels/facebook-reels.mp4",
+    "-f",
+    "null",
+    "-"
+  ],
+  "exit_code": 0
+}

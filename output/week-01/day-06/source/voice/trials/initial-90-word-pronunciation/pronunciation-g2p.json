@@ -1,0 +1,61 @@
+{
+  "word_distinctions": {
+    "bean": "bˈiːn",
+    "beans": "bˈiːnz",
+    "context": "kˈɑːntɛkst",
+    "contexts": "kˈɑːntɛksts",
+    "alpha": "ˈælfə",
+    "beta": "bˈeɪɾə",
+    "registry": "ɹˈɛdʒɪstɹi",
+    "registries": "ɹˈɛdʒɪstɹiz",
+    "parent": "pˈɛɹənt",
+    "child": "tʃˈaɪld",
+    "refreshing": "ɹᵻfɹˈɛʃɪŋ",
+    "named bean": "nˈeɪmd bˈiːn",
+    "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "Two contexts. Different beans?",
+      "phonemes": "tˈuː kˈɑːntɛksts. dˈɪfɹənt bˈiːnz?",
+      "inference_batches": 1
+    },
+    {
+      "scene": 2,
+      "text": "Yes. Register alpha in context A, and beta in B. Each independent context has its own registry.",
+      "phonemes": "jˈɛs. ɹˈɛdʒɪstɚɹ ˈælfə ɪn kˈɑːntɛkst ˈeɪ, ænd bˈeɪɾə ɪn bˈiː. ˈiːtʃ ˌɪndᵻpˈɛndənt kˈɑːntɛkst hɐz ɪts ˈoʊn ɹˈɛdʒɪstɹi.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 3,
+      "text": "A finds alpha, but beta is missing. Sharing one Java application doesn't connect these registries.",
+      "phonemes": "ɐ fˈaɪndz ˈælfə, bˌʌt bˈeɪɾə ɪz mˈɪsɪŋ. ʃˈɛɹɪŋ wˈʌn dʒˈɑːvə ˌæplɪkˈeɪʃən dˈʌzənt kənˈɛkt ðiːz ɹˈɛdʒɪstɹiz.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 4,
+      "text": "Create a fresh parent and child. Set the parent before refreshing the child. The registries stay separate.",
+      "phonemes": "kɹiːˈeɪt ɐ fɹˈɛʃ pˈɛɹənt ænd tʃˈaɪld. sˈɛt ðə pˈɛɹənt bᵻfˌɔːɹ ɹᵻfɹˈɛʃɪŋ ðə tʃˈaɪld. ðə ɹˈɛdʒɪstɹiz stˈeɪ sˈɛpɹət.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 5,
+      "text": "The child checks locally first. A missing named bean can be found in its parent.",
+      "phonemes": "ðə tʃˈaɪld tʃˈɛks lˈoʊkəli fˈɜːst. ɐ mˈɪsɪŋ nˈeɪmd bˈiːn kæn biː fˈaʊnd ɪn ɪts pˈɛɹənt.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 6,
+      "text": "The parent cannot search its children. Our tests confirm both directions: child to parent works; parent to child doesn't.",
+      "phonemes": "ðə pˈɛɹənt kænˈɑːt sˈɜːtʃ ɪts tʃˈɪldɹən. ˌaʊɚ tˈɛsts kənfˈɜːm bˈoʊθ dᵻɹˈɛkʃənz: tʃˈaɪld tə pˈɛɹənt wˈɜːks; pˈɛɹənt tə tʃˈaɪld dˈʌzənt.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 7,
+      "text": "Thanks for watching.",
+      "phonemes": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ.",
+      "inference_batches": 1
+    }
+  ]
+}

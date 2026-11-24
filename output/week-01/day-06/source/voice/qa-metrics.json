@@ -1,0 +1,17 @@
+{
+  "duration_s": 38.1125,
+  "sample_rate": 48000,
+  "channels": 1,
+  "peak_dbfs": -1.5144139336161295,
+  "rms_dbfs": -20.42321230524059,
+  "clipped_samples": 0,
+  "speech_above_minus60db_onset_s": 0.014979166666666667,
+  "speech_above_minus60db_end_s": 37.847145833333336,
+  "endpoint_first_sample": 0.0,
+  "endpoint_last_sample": 0.0,
+  "f0_voiced_frames": 2246,
+  "f0_10pct_hz": 87.33919097053123,
+  "f0_50pct_hz": 115.24475340612051,
+  "f0_90pct_hz": 175.69028351347504,
+  "f0_std_semitones": 4.6532017700651425
+}

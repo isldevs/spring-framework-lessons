@@ -1,0 +1,28 @@
+independent context isolation: passed
+child parent fallback same instance: passed
+local named bean shadows parent: passed
+parent cannot see child local bean: passed
+╷
+├─ JUnit Platform Suite ✔
+├─ JUnit Jupiter ✔
+│  └─ ContextsTests ✔
+│     ├─ independentContextsKeepSeparateRegistriesAndLookups() ✔
+│     ├─ childFallsBackToSameParentBeanWithoutCopyingItsDefinition() ✔
+│     ├─ childSameNameShadowsParentForNamedLookup() ✔
+│     └─ parentCannotLookDownIntoChildByDefault() ✔
+└─ JUnit Vintage ✔
+
+Test run finished after 296 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         4 tests found           ]
+[         0 tests skipped         ]
+[         4 tests started         ]
+[         0 tests aborted         ]
+[         4 tests successful      ]
+[         0 tests failed          ]
+

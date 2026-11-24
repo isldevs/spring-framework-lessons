@@ -1,0 +1,18 @@
+{
+  "approved_topic": "Multiple contexts",
+  "approved_publication_date": "2026-11-21",
+  "proposed_publish_time": "19:00 Asia/Phnom_Penh",
+  "phrases": [
+    "Two contexts. Different beans?",
+    "Yes. Register alpha in context A, and beta in B. Each independent context has its own registry.",
+    "Context A finds alpha, but beta is missing. Sharing one Java application doesn't connect these registries.",
+    "Create a fresh parent and child. Set the parent before refreshing the child. The registries stay separate.",
+    "The child checks locally first. A missing named bean can be found in its parent.",
+    "The parent cannot search its children. Our tests confirm both directions: child to parent works; parent to child doesn't.",
+    "Thanks for watching."
+  ],
+  "hook_original": "Can two Spring contexts see different beans?",
+  "hook_refinement_reason": "A shorter spoken question lets the full hook land in about two seconds while the first frame shows different lookup results in separate registries.",
+  "semantic_scope": "Demonstrated named getBean lookups; fresh parent-child contexts with link set before child refresh; parent instances are not copied to the child.",
+  "pronunciation_edit": "Add Context before scene3 letter A, so G2P reads the context label as /e\u026a/ rather than the indefinite article /\u0250/. No change to inference speed."
+}

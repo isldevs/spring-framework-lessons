@@ -1,0 +1,91 @@
+Loading Whisper small.en
+{'start': np.float64(0.0), 'end': np.float64(1.36), 'text': ' Two contexts, different beans.', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' Two', 'start': np.float64(0.0), 'end': np.float64(0.16), 'probability': np.float64(0.31133079528808594)}, {'word': ' contexts,', 'start': np.float64(0.16), 'end': np.float64(0.6), 'probability': np.float64(0.7114912271499634)}, {'word': ' different', 'start': np.float64(0.84), 'end': np.float64(1.02), 'probability': np.float64(0.981590747833252)}, {'word': ' beans.', 'start': np.float64(1.02), 'end': np.float64(1.36), 'probability': np.float64(0.5773903727531433)}]}
+{'start': np.float64(2.0), 'end': np.float64(5.3), 'text': ' Yes, register alpha in context A and beta in B.', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' Yes,', 'start': np.float64(2.0), 'end': np.float64(2.06), 'probability': np.float64(0.9443446397781372)}, {'word': ' register', 'start': np.float64(2.66), 'end': np.float64(2.66), 'probability': np.float64(0.9815623164176941)}, {'word': ' alpha', 'start': np.float64(2.66), 'end': np.float64(2.94), 'probability': np.float64(0.7759066820144653)}, {'word': ' in', 'start': np.float64(2.94), 'end': np.float64(3.28), 'probability': np.float64(0.9122157096862793)}, {'word': ' context', 'start': np.float64(3.28), 'end': np.float64(3.74), 'probability': np.float64(0.9196237921714783)}, {'word': ' A', 'start': np.float64(3.74), 'end': np.float64(4.26), 'probability': np.float64(0.8102046847343445)}, {'word': ' and', 'start': np.float64(4.26), 'end': np.float64(4.56), 'probability': np.float64(0.9147377610206604)}, {'word': ' beta', 'start': np.float64(4.56), 'end': np.float64(4.82), 'probability': np.float64(0.881844162940979)}, {'word': ' in', 'start': np.float64(4.82), 'end': np.float64(5.06), 'probability': np.float64(0.7611833214759827)}, {'word': ' B.', 'start': np.float64(5.06), 'end': np.float64(5.3), 'probability': np.float64(0.9953866600990295)}]}
+{'start': np.float64(5.68), 'end': np.float64(8.28), 'text': ' Each independent context has its own registry.', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' Each', 'start': np.float64(5.68), 'end': np.float64(5.82), 'probability': np.float64(0.9892606735229492)}, {'word': ' independent', 'start': np.float64(5.82), 'end': np.float64(6.38), 'probability': np.float64(0.9941895008087158)}, {'word': ' context', 'start': np.float64(6.38), 'end': np.float64(7.02), 'probability': np.float64(0.9939993619918823)}, {'word': ' has', 'start': np.float64(7.02), 'end': np.float64(7.28), 'probability': np.float64(0.9977672100067139)}, {'word': ' its', 'start': np.float64(7.28), 'end': np.float64(7.48), 'probability': np.float64(0.985484778881073)}, {'word': ' own', 'start': np.float64(7.48), 'end': np.float64(7.7), 'probability': np.float64(0.998582124710083)}, {'word': ' registry.', 'start': np.float64(7.7), 'end': np.float64(8.28), 'probability': np.float64(0.9964589476585388)}]}
+{'start': np.float64(9.34), 'end': np.float64(11.82), 'text': ' Context A finds alpha, but beta is missing.', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' Context', 'start': np.float64(9.34), 'end': np.float64(9.34), 'probability': np.float64(0.8995044827461243)}, {'word': ' A', 'start': np.float64(9.34), 'end': np.float64(9.68), 'probability': np.float64(0.9450697302818298)}, {'word': ' finds', 'start': np.float64(9.68), 'end': np.float64(10.06), 'probability': np.float64(0.9856235980987549)}, {'word': ' alpha,', 'start': np.float64(10.06), 'end': np.float64(10.48), 'probability': np.float64(0.9804532527923584)}, {'word': ' but', 'start': np.float64(10.68), 'end': np.float64(10.74), 'probability': np.float64(0.9985742568969727)}, {'word': ' beta', 'start': np.float64(10.74), 'end': np.float64(11.12), 'probability': np.float64(0.9944865107536316)}, {'word': ' is', 'start': np.float64(11.12), 'end': np.float64(11.4), 'probability': np.float64(0.9981712102890015)}, {'word': ' missing.', 'start': np.float64(11.4), 'end': np.float64(11.82), 'probability': np.float64(0.9987503290176392)}]}
+{'start': np.float64(12.44), 'end': np.float64(13.84), 'text': ' Sharing one Java application', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' Sharing', 'start': np.float64(12.44), 'end': np.float64(12.44), 'probability': np.float64(0.9952948689460754)}, {'word': ' one', 'start': np.float64(12.44), 'end': np.float64(12.82), 'probability': np.float64(0.9897230863571167)}, {'word': ' Java', 'start': np.float64(12.82), 'end': np.float64(13.14), 'probability': np.float64(0.9504920840263367)}, {'word': ' application', 'start': np.float64(13.14), 'end': np.float64(13.84), 'probability': np.float64(0.9948875308036804)}]}
+{'start': np.float64(13.84), 'end': np.float64(15.5), 'text': " doesn't connect these registries.", 'avg_logprob': -0.09887083295064095, 'words': [{'word': " doesn't", 'start': np.float64(13.84), 'end': np.float64(14.26), 'probability': np.float64(0.9928833246231079)}, {'word': ' connect', 'start': np.float64(14.26), 'end': np.float64(14.6), 'probability': np.float64(0.9987020492553711)}, {'word': ' these', 'start': np.float64(14.6), 'end': np.float64(14.88), 'probability': np.float64(0.9662407040596008)}, {'word': ' registries.', 'start': np.float64(14.88), 'end': np.float64(15.5), 'probability': np.float64(0.9968809485435486)}]}
+{'start': np.float64(16.24), 'end': np.float64(17.82), 'text': ' Create a fresh parent and child.', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' Create', 'start': np.float64(16.24), 'end': np.float64(16.4), 'probability': np.float64(0.9560184478759766)}, {'word': ' a', 'start': np.float64(16.4), 'end': np.float64(16.58), 'probability': np.float64(0.9983204007148743)}, {'word': ' fresh', 'start': np.float64(16.58), 'end': np.float64(16.78), 'probability': np.float64(0.9852628707885742)}, {'word': ' parent', 'start': np.float64(16.78), 'end': np.float64(17.2), 'probability': np.float64(0.9968423843383789)}, {'word': ' and', 'start': np.float64(17.2), 'end': np.float64(17.38), 'probability': np.float64(0.9239173531532288)}, {'word': ' child.', 'start': np.float64(17.38), 'end': np.float64(17.82), 'probability': np.float64(0.9980280995368958)}]}
+{'start': np.float64(18.06), 'end': np.float64(20.2), 'text': ' Set the parent before refreshing the child.', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' Set', 'start': np.float64(18.06), 'end': np.float64(18.3), 'probability': np.float64(0.9962356686592102)}, {'word': ' the', 'start': np.float64(18.3), 'end': np.float64(18.44), 'probability': np.float64(0.9985129237174988)}, {'word': ' parent', 'start': np.float64(18.44), 'end': np.float64(18.7), 'probability': np.float64(0.9982900023460388)}, {'word': ' before', 'start': np.float64(18.7), 'end': np.float64(19.06), 'probability': np.float64(0.9944135546684265)}, {'word': ' refreshing', 'start': np.float64(19.06), 'end': np.float64(19.54), 'probability': np.float64(0.9990217685699463)}, {'word': ' the', 'start': np.float64(19.54), 'end': np.float64(19.78), 'probability': np.float64(0.9989463686943054)}, {'word': ' child.', 'start': np.float64(19.78), 'end': np.float64(20.2), 'probability': np.float64(0.999541163444519)}]}
+{'start': np.float64(20.56), 'end': np.float64(21.84), 'text': ' The registry stays separate.', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' The', 'start': np.float64(20.56), 'end': np.float64(20.62), 'probability': np.float64(0.9974853992462158)}, {'word': ' registry', 'start': np.float64(20.62), 'end': np.float64(20.98), 'probability': np.float64(0.8816046714782715)}, {'word': ' stays', 'start': np.float64(20.98), 'end': np.float64(21.4), 'probability': np.float64(0.7105086445808411)}, {'word': ' separate.', 'start': np.float64(21.4), 'end': np.float64(21.84), 'probability': np.float64(0.997867226600647)}]}
+{'start': np.float64(22.36), 'end': np.float64(24.0), 'text': ' The child checks locally first.', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' The', 'start': np.float64(22.36), 'end': np.float64(22.48), 'probability': np.float64(0.9952953457832336)}, {'word': ' child', 'start': np.float64(22.48), 'end': np.float64(22.82), 'probability': np.float64(0.9994655251502991)}, {'word': ' checks', 'start': np.float64(22.82), 'end': np.float64(23.16), 'probability': np.float64(0.9980723857879639)}, {'word': ' locally', 'start': np.float64(23.16), 'end': np.float64(23.58), 'probability': np.float64(0.9968163371086121)}, {'word': ' first.', 'start': np.float64(23.58), 'end': np.float64(24.0), 'probability': np.float64(0.9767951965332031)}]}
+{'start': np.float64(24.36), 'end': np.float64(26.68), 'text': ' A missing named bean can be found in its parent.', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' A', 'start': np.float64(24.36), 'end': np.float64(24.46), 'probability': np.float64(0.9957937002182007)}, {'word': ' missing', 'start': np.float64(24.46), 'end': np.float64(24.72), 'probability': np.float64(0.9965739250183105)}, {'word': ' named', 'start': np.float64(24.72), 'end': np.float64(25.06), 'probability': np.float64(0.9583467245101929)}, {'word': ' bean', 'start': np.float64(25.06), 'end': np.float64(25.38), 'probability': np.float64(0.8783034086227417)}, {'word': ' can', 'start': np.float64(25.38), 'end': np.float64(25.6), 'probability': np.float64(0.996748685836792)}, {'word': ' be', 'start': np.float64(25.6), 'end': np.float64(25.72), 'probability': np.float64(0.9992567896842957)}, {'word': ' found', 'start': np.float64(25.72), 'end': np.float64(25.98), 'probability': np.float64(0.999804675579071)}, {'word': ' in', 'start': np.float64(25.98), 'end': np.float64(26.18), 'probability': np.float64(0.9823498725891113)}, {'word': ' its', 'start': np.float64(26.18), 'end': np.float64(26.34), 'probability': np.float64(0.9933006763458252)}, {'word': ' parent.', 'start': np.float64(26.34), 'end': np.float64(26.68), 'probability': np.float64(0.9987478256225586)}]}
+{'start': np.float64(27.2), 'end': np.float64(29.04), 'text': ' The parent cannot search its children.', 'avg_logprob': -0.09887083295064095, 'words': [{'word': ' The', 'start': np.float64(27.2), 'end': np.float64(27.34), 'probability': np.float64(0.9940921664237976)}, {'word': ' parent', 'start': np.float64(27.34), 'end': np.float64(27.64), 'probability': np.float64(0.9982848763465881)}, {'word': ' cannot', 'start': np.float64(27.64), 'end': np.float64(28.0), 'probability': np.float64(0.987883985042572)}, {'word': ' search', 'start': np.float64(28.0), 'end': np.float64(28.36), 'probability': np.float64(0.999407172203064)}, {'word': ' its', 'start': np.float64(28.36), 'end': np.float64(28.62), 'probability': np.float64(0.993263840675354)}, {'word': ' children.', 'start': np.float64(28.62), 'end': np.float64(29.04), 'probability': np.float64(0.9990593791007996)}]}
+{'start': np.float64(29.04), 'end': np.float64(31.28), 'text': ' Our tests confirm both directions.', 'avg_logprob': -0.33096098303794863, 'words': [{'word': ' Our', 'start': np.float64(29.04), 'end': np.float64(29.54), 'probability': np.float64(0.525995135307312)}, {'word': ' tests', 'start': np.float64(29.54), 'end': np.float64(29.9), 'probability': np.float64(0.992566704750061)}, {'word': ' confirm', 'start': np.float64(29.9), 'end': np.float64(30.38), 'probability': np.float64(0.9970213770866394)}, {'word': ' both', 'start': np.float64(30.38), 'end': np.float64(30.7), 'probability': np.float64(0.9983776807785034)}, {'word': ' directions.', 'start': np.float64(30.7), 'end': np.float64(31.28), 'probability': np.float64(0.9984506368637085)}]}
+{'start': np.float64(31.9), 'end': np.float64(32.7), 'text': ' Child to parent works.', 'avg_logprob': -0.33096098303794863, 'words': [{'word': ' Child', 'start': np.float64(31.9), 'end': np.float64(31.9), 'probability': np.float64(0.7360981106758118)}, {'word': ' to', 'start': np.float64(31.9), 'end': np.float64(32.12), 'probability': np.float64(0.717002272605896)}, {'word': ' parent', 'start': np.float64(32.12), 'end': np.float64(32.38), 'probability': np.float64(0.8737026453018188)}, {'word': ' works.', 'start': np.float64(32.38), 'end': np.float64(32.7), 'probability': np.float64(0.9925162196159363)}]}
+{'start': np.float64(33.06), 'end': np.float64(34.6), 'text': " Parent to child doesn't.", 'avg_logprob': -0.33096098303794863, 'words': [{'word': ' Parent', 'start': np.float64(33.06), 'end': np.float64(33.16), 'probability': np.float64(0.9867503046989441)}, {'word': ' to', 'start': np.float64(33.16), 'end': np.float64(33.36), 'probability': np.float64(0.9962514042854309)}, {'word': ' child', 'start': np.float64(33.36), 'end': np.float64(33.72), 'probability': np.float64(0.996160626411438)}, {'word': " doesn't.", 'start': np.float64(33.72), 'end': np.float64(34.6), 'probability': np.float64(0.9922818541526794)}]}
+{'start': 36.76, 'end': np.float64(37.54), 'text': ' Thanks for watching.', 'avg_logprob': -0.33096098303794863, 'words': [{'word': ' Thanks', 'start': np.float64(36.56), 'end': np.float64(36.92), 'probability': np.float64(0.9812333583831787)}, {'word': ' for', 'start': np.float64(36.92), 'end': np.float64(37.1), 'probability': np.float64(0.9989494681358337)}, {'word': ' watching.', 'start': np.float64(37.1), 'end': np.float64(37.54), 'probability': np.float64(0.9990119934082031)}]}
+{'model': 'faster-whisper small.en int8', 'narration_sha256': 'f6aa1ffad01550e40ea0c7c01e68572ad437ddf214460d96ce9bb3aa7525953b', 'reference_words': 91, 'asr_words': 91, 'edit_distance': 2, 'normalized_word_error_rate': 0.02197802197802198, 'transcript': "Two contexts, different beans. Yes, register alpha in context A and beta in B. Each independent context has its own registry. Context A finds alpha, but beta is missing. Sharing one Java application doesn't connect these registries. Create a fresh parent and child. Set the parent before refreshing the child. The registry stays separate. The child checks locally first. A missing named bean can be found in its parent. The parent cannot search its children. Our tests confirm both directions. Child to parent works. Parent to child doesn't. Thanks for watching.", 'normalization': 'lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt'}
+{'duration_s': 38.1125, 'sample_rate': 48000, 'channels': 1, 'peak_dbfs': -1.5144139336161295, 'rms_dbfs': -20.42321230524059, 'clipped_samples': 0, 'speech_above_minus60db_onset_s': 0.014979166666666667, 'speech_above_minus60db_end_s': 37.847145833333336, 'endpoint_first_sample': 0.0, 'endpoint_last_sample': 0.0}
+{'duration_s': 38.1125, 'sample_rate': 48000, 'channels': 1, 'peak_dbfs': -1.5144139336161295, 'rms_dbfs': -20.42321230524059, 'clipped_samples': 0, 'speech_above_minus60db_onset_s': 0.014979166666666667, 'speech_above_minus60db_end_s': 37.847145833333336, 'endpoint_first_sample': 0.0, 'endpoint_last_sample': 0.0, 'f0_voiced_frames': 2246, 'f0_10pct_hz': 87.33919097053123, 'f0_50pct_hz': 115.24475340612051, 'f0_90pct_hz': 175.69028351347504, 'f0_std_semitones': 4.6532017700651425}
+{
+  "threshold_dbfs": -45,
+  "minimum_duration_s": 0.12,
+  "intervals": [
+    {
+      "start": 1.590208,
+      "end": 1.811146,
+      "duration": 0.22093799999999986
+    },
+    {
+      "start": 5.430042,
+      "end": 5.665083,
+      "duration": 0.23504099999999983
+    },
+    {
+      "start": 8.365729,
+      "end": 8.914604,
+      "duration": 0.5488750000000007
+    },
+    {
+      "start": 11.925125,
+      "end": 12.172104,
+      "duration": 0.24697899999999962
+    },
+    {
+      "start": 15.648125,
+      "end": 16.167979,
+      "duration": 0.5198539999999987
+    },
+    {
+      "start": 20.406292,
+      "end": 20.539729,
+      "duration": 0.1334370000000007
+    },
+    {
+      "start": 21.865312,
+      "end": 22.409021,
+      "duration": 0.5437089999999998
+    },
+    {
+      "start": 24.204062,
+      "end": 24.366271,
+      "duration": 0.1622090000000007
+    },
+    {
+      "start": 26.823583,
+      "end": 27.2505,
+      "duration": 0.42691699999999955
+    },
+    {
+      "start": 29.273521,
+      "end": 29.445125,
+      "duration": 0.1716040000000021
+    },
+    {
+      "start": 34.259083,
+      "end": 36.793833,
+      "duration": 2.5347500000000025
+    },
+    {
+      "start": 37.72925,
+      "end": 38.1125,
+      "duration": 0.38324999999999676
+    }
+  ],
+  "longest_pre_recap_hold": {
+    "start": 8.365729,
+    "end": 8.914604,
+    "duration": 0.5488750000000007
+  }
+}

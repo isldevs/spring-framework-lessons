@@ -1,0 +1,24 @@
+{
+  "status": "succeeded",
+  "url": "https://isldevs-multiple-contexts-player.sivlayyi-bs.chatgpt.site",
+  "project_id": "appgprj_6b05485fe77c819181a1ac12a9e5ebda",
+  "deployment_id": "appgdep_6b0549f4dccc8191b6becba401485483",
+  "site_source_commit": "44fd2aea59d533316a4b11e73a3a99879e3bcd6e",
+  "audience": "owner-private",
+  "video_sha256": "af155cc6dd42523d81b3297e2c2d3caa45739e0fddb54643480273524dd5a302",
+  "media_transcoded": false,
+  "checks_performed": [
+    "native player controls and playsinline attributes",
+    "same-origin MP4 source with video/mp4 source type",
+    "three download links point to copied assets",
+    "actual FFprobe duration inserted",
+    "inline JavaScript syntax",
+    "deployment archive contents and MP4 hash",
+    "pushed source commit matches remote",
+    "native Sites successful deployment result"
+  ],
+  "browser_playback_tested": false,
+  "physical_phone_tested": false,
+  "auditory_review_performed": false,
+  "remaining_limit": "Managed browser tool and auditory ingestion unavailable; no on-phone playback or perceptual narration acceptance is claimed."
+}

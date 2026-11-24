@@ -1,0 +1,49 @@
+{
+  "anchors": {
+    "independent_registration_s": 2.66,
+    "local_lookup_s": 8.898042,
+    "independent_missing_s": 11.4,
+    "parent_set_s": 18.06,
+    "child_refresh_s": 19.06,
+    "child_local_check_s": 23.16,
+    "parent_fallback_s": 26.34,
+    "parent_return_s": 26.54,
+    "reverse_lookup_s": 27.34,
+    "reverse_missing_s": 28.62,
+    "recap_complete_s": 34.63
+  },
+  "independent_registration_before_lookup": true,
+  "fresh_parent_link_before_child_refresh": true,
+  "local_named_check_before_parent_fallback": true,
+  "parent_fallback_before_reference_return": true,
+  "parent_does_not_search_child_registry": true,
+  "parent_bean_not_copied_to_child_registry": true,
+  "java_tests_found": 4,
+  "java_tests_succeeded": 4,
+  "java_current_sources_match_tested_hashes": true,
+  "java_raw_application_stdout_matches_proofs": true,
+  "java_raw_junit_stdout_matches_proofs": true,
+  "actual_java_proof_lines": [
+    "A alpha: alpha",
+    "A beta exception: NoSuchBeanDefinitionException",
+    "A beta: missing",
+    "B alpha exception: NoSuchBeanDefinitionException",
+    "B alpha: missing",
+    "B beta: beta",
+    "child local: local",
+    "child owns shared: false",
+    "child shared same: true",
+    "child shared: shared",
+    "parent active after child close: true",
+    "parent local exception: NoSuchBeanDefinitionException",
+    "parent local: missing"
+  ],
+  "java_verified_semantics": {
+    "child_local_named_bean_shadows_parent": true,
+    "child_named_lookup_falls_back_to_parent": true,
+    "independent_registries_both_direction_isolation": true,
+    "parent_cannot_see_child_local_by_default": true,
+    "parent_instance_not_copied_to_child_registry": true
+  },
+  "basis": "Explanatory renderer anchors verify visual ordering, not Spring wall-clock execution. Compiled and executed Spring/JUnit evidence separately verifies independent context registries, child-to-parent named lookup fallback, the same parent singleton reference, no reverse lookup, and local same-name shadowing. A child does not copy its parent bean definitions or instances. This media validator does not claim to run Java again."
+}

@@ -1,0 +1,25 @@
+{
+  "text_transformations": [
+    {
+      "token_index": 51,
+      "observed": "registry",
+      "script": "registries",
+      "start": 20.62,
+      "end": 20.98,
+      "reason": "Known synthesis text/G2P plural-number alignment; raw ASR remains unchanged."
+    },
+    {
+      "token_index": 52,
+      "observed": "stays",
+      "script": "stay",
+      "start": 20.98,
+      "end": 21.4,
+      "reason": "Known synthesis text/G2P plural-number alignment; raw ASR remains unchanged."
+    }
+  ],
+  "timing_sources": "Unmodified unprompted full-stream ASR with sample-derived utterance boundaries. Two known synthesis caption labels registries/stay align to observed registry/stays spans; raw transcript and error score are unchanged. No timing spans inserted.",
+  "raw_wer_unchanged": true,
+  "derived_animation_anchors": "Named script words; alpha result+.15s and parent reference return+.20s illustrate cause and effect, not measured Spring runtime.",
+  "scene_start_clamps": "Known synthesis edits constrain caption first/last boundaries and ASR drift. Intermediate ASR word times are approximately20ms-grid estimates.",
+  "hook_ending_asr_s": 1.36
+}

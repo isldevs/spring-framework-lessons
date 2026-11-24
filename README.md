@@ -2,6 +2,22 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## Multiple contexts
+
+[Play the video, then download on your phone](https://isldevs-multiple-contexts-player.sivlayyi-bs.chatgpt.site). Owner-private player; sign in with the owner's ChatGPT account if prompted. Player deployment succeeded; browser/physical-phone playback was not tested here.
+
+Approved topic **Multiple contexts**, publication **2026-11-21**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Actual **38.116667 seconds**, **1080×1920**, **60 FPS**, **H.264/AAC**, **48 kHz**, **Rec.709 SDR**, 2287 frames. Seven scenes show separate A/B registries, a fresh parent-child link before child refresh, local-first named lookup and parent fallback, followed by no reverse visibility. The shared instance stays in the parent; the complete recap holds for two seconds before Thanks.
+
+- [MP4](output/week-01/day-06/video.mp4) · [Complete ZIP](output/week-01/day-06-production.zip)
+- [Cover](output/week-01/day-06/cover.png) · [SRT](output/week-01/day-06/subtitles.srt) · [Narration](output/week-01/day-06/narration.wav)
+- [Narration script](output/week-01/day-06/narration-script.md) · [Timed storyboard](output/week-01/day-06/storyboard.md)
+- [YouTube metadata, hashtags and tags](output/week-01/day-06/youtube-metadata.md) · [Facebook metadata and hashtags](output/week-01/day-06/facebook-metadata.md)
+- [YouTube upload package](output/week-01/day-06-youtube-shorts-upload.zip) · [Facebook upload package](output/week-01/day-06-facebook-reels-upload.zip)
+- [Asset rights](output/week-01/day-06/asset-rights.md) · [Originality review](output/week-01/day-06/originality-review.md)
+- [QA report](output/week-01/day-06/verification-report.md) · [SHA-256](output/week-01/day-06/checksums.sha256) · [Reproducible sources](output/week-01/day-06/source/README.md)
+
+Four actual Spring6.2.11 JUnit tests passed. Master and both platform copies passed probe/decode/hash checks. Final raw ASR has2substitutions/91words, explicitly documented rather than reported as zero-error. **Overall strict approval remains incomplete because auditory voice acceptance is unavailable.** No social upload, scheduling or publication occurred.
+
 ## Bean naming
 
 Phone preview: [Play the video, then download the MP4](https://isldevs-bean-naming-player.sivlayyi-bs.chatgpt.site). This owner-private player requires the owner's ChatGPT account. [Player source and rebuild instructions](tools/mobile-video-preview/README.md).

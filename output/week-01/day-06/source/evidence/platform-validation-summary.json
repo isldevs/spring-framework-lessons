@@ -1,0 +1,66 @@
+{
+  "master_sha256": "af155cc6dd42523d81b3297e2c2d3caa45739e0fddb54643480273524dd5a302",
+  "results": [
+    {
+      "platform": "youtube-shorts",
+      "path": "platforms/youtube-shorts/youtube-shorts.mp4",
+      "sha256": "af155cc6dd42523d81b3297e2c2d3caa45739e0fddb54643480273524dd5a302",
+      "byte_identical_to_master": true,
+      "duration_s": 38.116667,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "decoded_frames": 2287,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "color_primaries": "bt709",
+      "color_transfer": "bt709",
+      "color_space": "bt709",
+      "color_range": "tv",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "full_decode_exit_code": 0,
+      "full_decode_stderr_empty": true,
+      "cover_dimensions": [
+        1080,
+        1920
+      ],
+      "cover_byte_identical_to_master": true,
+      "subtitles_byte_identical_to_master": true,
+      "subtitle_cues": 22,
+      "technical_result": "PASS"
+    },
+    {
+      "platform": "facebook-reels",
+      "path": "platforms/facebook-reels/facebook-reels.mp4",
+      "sha256": "af155cc6dd42523d81b3297e2c2d3caa45739e0fddb54643480273524dd5a302",
+      "byte_identical_to_master": true,
+      "duration_s": 38.116667,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "decoded_frames": 2287,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "color_primaries": "bt709",
+      "color_transfer": "bt709",
+      "color_space": "bt709",
+      "color_range": "tv",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "full_decode_exit_code": 0,
+      "full_decode_stderr_empty": true,
+      "cover_dimensions": [
+        1080,
+        1920
+      ],
+      "cover_byte_identical_to_master": true,
+      "subtitles_byte_identical_to_master": true,
+      "subtitle_cues": 22,
+      "technical_result": "PASS"
+    }
+  ],
+  "both_exports_byte_identical": true,
+  "technical_status": "PASS",
+  "perceptual_voice_review": "UNVERIFIED: no auditory review performed"
+}

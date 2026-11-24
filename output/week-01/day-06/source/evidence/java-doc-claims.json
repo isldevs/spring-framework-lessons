@@ -1,0 +1,39 @@
+[
+  {
+    "claim": "Named lookup can fall back through the parent hierarchy when absent locally; a local name takes precedence.",
+    "page": "bean-factory",
+    "exact_excerpt": "In contrast to the methods in ListableBeanFactory , all of the operations in this interface will also check parent factories if this is a HierarchicalBeanFactory . If a bean is not found in this factory instance, the immediate parent factory will be asked. Beans in this factory instance are supposed to override beans of the same name in any parent factory. Bean factory implementations should support the standard bean lifecycle interfaces as far as possible. The full set of initialization methods and their standard order is: BeanNameAware's setBeanName BeanClassLoaderAware's setBeanClassLoader ",
+    "verified_test": "childFallsBackToSameParentBeanWithoutCopyingItsDefinition; childSameNameShadowsParentForNamedLookup"
+  },
+  {
+    "claim": "containsLocalBean ignores ancestor definitions; inherited visibility does not imply a copied local bean.",
+    "page": "hierarchical-bean-factory",
+    "exact_excerpt": "Return whether the local bean factory contains a bean of the given name, ignoring beans defined in ancestor contexts. BeanFactory getParentBeanFactory () Return the parent bean factory, or null if there is none. Methods inherited from inter",
+    "verified_test": "childFallsBackToSameParentBeanWithoutCopyingItsDefinition"
+  },
+  {
+    "claim": "Local enumeration must not be described as recursively including ancestor beans.",
+    "page": "listable-bean-factory",
+    "exact_excerpt": "If this is a HierarchicalBeanFactory , the return values will not take any BeanFactory hierarchy into account, but will relate only to the beans defined in the current factory. Use the BeanFactoryUtils helper class to consider beans in ancestor factories too. The methods in this interface will just respect bean definitions of this factory. They will ignore any singleton beans that have been registered by other means like Confi",
+    "verified_test": "childFallsBackToSameParentBeanWithoutCopyingItsDefinition"
+  },
+  {
+    "claim": "The parent relationship is explicitly configured. This example sets it before child refresh.",
+    "page": "configurable-context",
+    "exact_excerpt": "setParent ( ApplicationContext parent) Set the parent of this application context. Methods inherited from interface org.springframework.context. ApplicationCont",
+    "verified_test": "all parent-child cases"
+  },
+  {
+    "claim": "The empty annotation context is populated with register and manually refreshed.",
+    "page": "annotation-context",
+    "exact_excerpt": "Create a new AnnotationConfigApplicationContext that needs to be populated through register(java.lang.Class<?>...) calls and then manually refreshed . AnnotationConfigApplicationContext ( Class <?>... componentClasses) Create a new Annotati",
+    "verified_test": "all parent-child cases"
+  },
+  {
+    "claim": "Independent contexts have separate factories, no parent, and cannot resolve each other's local bean names. The parent cannot descend into a child by default.",
+    "page": "bean-factory",
+    "exact_excerpt": "If a bean is not found in this factory instance, the immediate parent factory will be asked. Beans in this factory instance are supposed to override beans of the same name in any parent factory. Bean factory im",
+    "verified_test": "independentContextsKeepSeparateRegistriesAndLookups; parentCannotLookDownIntoChildByDefault",
+    "qualification": "The non-reverse and independent assertions are established by the actual tests, not by a fabricated documentation quote."
+  }
+]

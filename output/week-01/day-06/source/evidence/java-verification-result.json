@@ -1,0 +1,90 @@
+{
+  "spring_framework_version": "6.2.11",
+  "micrometer_version": "1.15.4",
+  "compiler": "ECJ3.40.0",
+  "class_file_target": "Java17",
+  "runtime": "openjdk version \"21.0.13\" 2026-10-20\nOpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)",
+  "compile_main_exit_code": 0,
+  "compile_tests_exit_code": 0,
+  "junit_exit_code": 0,
+  "application_exit_code": 0,
+  "compile_stderr_empty": true,
+  "junit_stderr_empty": true,
+  "application_stderr_empty": true,
+  "junit_reports": [
+    {
+      "file": "build/test-results/TEST-junit-jupiter.xml",
+      "name": "JUnit Jupiter",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.231",
+      "hostname": "4a9851f79ddd",
+      "timestamp": "2026-11-24T08:14:38"
+    },
+    {
+      "file": "build/test-results/TEST-junit-platform-suite.xml",
+      "name": "JUnit Platform Suite",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.002",
+      "hostname": "4a9851f79ddd",
+      "timestamp": "2026-11-24T08:14:37"
+    },
+    {
+      "file": "build/test-results/TEST-junit-vintage.xml",
+      "name": "JUnit Vintage",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.001",
+      "hostname": "4a9851f79ddd",
+      "timestamp": "2026-11-24T08:14:38"
+    }
+  ],
+  "tests_found": 4,
+  "tests_succeeded": 4,
+  "tests_failed": 0,
+  "proof_lines": [
+    "independent context isolation: passed",
+    "child parent fallback same instance: passed",
+    "local named bean shadows parent: passed",
+    "parent cannot see child local bean: passed"
+  ],
+  "application_stdout_lines": [
+    "A alpha: alpha",
+    "B beta: beta",
+    "A beta: missing",
+    "A beta exception: NoSuchBeanDefinitionException",
+    "B alpha: missing",
+    "B alpha exception: NoSuchBeanDefinitionException",
+    "child shared: shared",
+    "child shared same: true",
+    "child owns shared: false",
+    "child local: local",
+    "parent local: missing",
+    "parent local exception: NoSuchBeanDefinitionException",
+    "parent active after child close: true"
+  ],
+  "source_sha256": {
+    "src/main/java/lesson/contexts/AConfig.java": "5909d190e53325c7a408b1856df4952a3810aa823d2f833124890e5ab6567c0b",
+    "src/main/java/lesson/contexts/BConfig.java": "fef43217dd13d90bd9cb394672d84d43078f772f8dff7f923ebd28153f328229",
+    "src/main/java/lesson/contexts/ChildConfig.java": "2e1be6be437034fcfa68563d1ca0fc9b087297bcc43439e88412437a9e2fbdbb",
+    "src/main/java/lesson/contexts/ContextsDemo.java": "7320bd5b3f1b1f3f31f0f383501203058d61648915152452b89edaacc0e7fc15",
+    "src/main/java/lesson/contexts/Item.java": "22d99be063c4397b1291f4ec86c12ac249f9a1f26114c4a0b70dadfcabb7c2d8",
+    "src/main/java/lesson/contexts/ParentConfig.java": "72c2fe36e76467aeb56de9e56d6530108eb26036f3d05a60925ee531f2e7ee56",
+    "src/test/java/lesson/contexts/ContextsTests.java": "376f054f5f97f15e85075ec965d1fc028e2aa0fed15c625c51e58de2d60a262d"
+  },
+  "scope": "Actual Spring6.2.11 independent context registries, named-lookup parent fallback, same parent singleton reference, local-definition/enumeration boundaries, no reverse visibility, local name shadowing and child-first close.",
+  "verified_semantics": {
+    "independent_registries_both_direction_isolation": true,
+    "child_named_lookup_falls_back_to_parent": true,
+    "parent_instance_not_copied_to_child_registry": true,
+    "parent_cannot_see_child_local_by_default": true,
+    "child_local_named_bean_shadows_parent": true
+  }
+}

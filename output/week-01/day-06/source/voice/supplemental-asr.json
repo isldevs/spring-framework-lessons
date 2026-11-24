@@ -1,0 +1,22 @@
+{
+  "needed": false,
+  "script_alignment_substitutions": [
+    {
+      "token_index": 51,
+      "observed": "registry",
+      "script": "registries",
+      "start": 20.62,
+      "end": 20.98,
+      "reason": "Known synthesis text/G2P plural-number alignment; raw ASR remains unchanged."
+    },
+    {
+      "token_index": 52,
+      "observed": "stays",
+      "script": "stay",
+      "start": 20.98,
+      "end": 21.4,
+      "reason": "Known synthesis text/G2P plural-number alignment; raw ASR remains unchanged."
+    }
+  ],
+  "raw_asr_score_unchanged": true
+}

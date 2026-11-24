@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "bean-factory",
+    "requested_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "sha256": "11978416e785b9773307070fb9ef6eb446c8ed35cf39c9d24676d4c5c7ce670c",
+    "bytes": 69307,
+    "fetched_at_utc": "2026-11-24T08:14:10.030270+00:00",
+    "html_file": "java-doc-bean-factory.html",
+    "text_file": "java-doc-bean-factory.txt"
+  },
+  {
+    "slug": "hierarchical-bean-factory",
+    "requested_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/HierarchicalBeanFactory.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/HierarchicalBeanFactory.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "sha256": "d0e4abedeb2ea4a68c61936178708ef32c8913d9d7a301b422c352c9605d6814",
+    "bytes": 17591,
+    "fetched_at_utc": "2026-11-24T08:14:10.008331+00:00",
+    "html_file": "java-doc-hierarchical-bean-factory.html",
+    "text_file": "java-doc-hierarchical-bean-factory.txt"
+  },
+  {
+    "slug": "listable-bean-factory",
+    "requested_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/ListableBeanFactory.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/ListableBeanFactory.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "sha256": "98cdc3d36bcbd58d4b356afec8e98d4e2176480f58b6c081555ac6716c81da51",
+    "bytes": 76361,
+    "fetched_at_utc": "2026-11-24T08:14:10.037408+00:00",
+    "html_file": "java-doc-listable-bean-factory.html",
+    "text_file": "java-doc-listable-bean-factory.txt"
+  },
+  {
+    "slug": "configurable-context",
+    "requested_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "sha256": "6f49ef18c3a28f3a101d8a926f1983d195c9c7655e03b0ee299cf539e477ba18",
+    "bytes": 68715,
+    "fetched_at_utc": "2026-11-24T08:14:10.130505+00:00",
+    "html_file": "java-doc-configurable-context.html",
+    "text_file": "java-doc-configurable-context.txt"
+  },
+  {
+    "slug": "annotation-context",
+    "requested_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/AnnotationConfigApplicationContext.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "sha256": "da884c7bb73fbc12b14d81eb7050573359163366b46cc774a25f312280c5d1f0",
+    "bytes": 59813,
+    "fetched_at_utc": "2026-11-24T08:14:10.010619+00:00",
+    "html_file": "java-doc-annotation-context.html",
+    "text_file": "java-doc-annotation-context.txt"
+  }
+]

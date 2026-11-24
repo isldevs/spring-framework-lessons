@@ -1,0 +1,5 @@
+A named lookup starts in the child and can fall back to its parent. A parent lookup does not search down into child contexts.
+
+If the child registers its own bean named shared, that local name hides the parent's shared bean for the child's lookup. The parent bean stays unchanged.
+
+Which beans would you put in a parent context?

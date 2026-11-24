@@ -1,0 +1,20 @@
+{
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-i",
+    "/workspace/spring-framework-lessons/output/week-01/day-06/video.mp4",
+    "-t",
+    "2",
+    "-f",
+    "f32le",
+    "-ac",
+    "1",
+    "-ar",
+    "48000",
+    "pipe:1"
+  ],
+  "exit_code": 0
+}

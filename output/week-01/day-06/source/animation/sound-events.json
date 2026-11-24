@@ -1,0 +1,26 @@
+[
+  {
+    "time": 2.66,
+    "purpose": "alpha registered in context A"
+  },
+  {
+    "time": 11.4,
+    "purpose": "independent A cannot find beta"
+  },
+  {
+    "time": 18.06,
+    "purpose": "parent linked before child refresh"
+  },
+  {
+    "time": 26.54,
+    "purpose": "child receives the same parent instance reference"
+  },
+  {
+    "time": 28.62,
+    "purpose": "parent cannot look up its child bean"
+  },
+  {
+    "time": 34.63,
+    "purpose": "complete directional-visibility overview"
+  }
+]

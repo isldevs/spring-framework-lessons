@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:01,705
+Two contexts. Different beans?
+
+2
+00:00:01,785 --> 00:00:02,940
+Yes. Register alpha
+
+3
+00:00:02,940 --> 00:00:05,680
+in context A, and beta in B.
+
+4
+00:00:05,680 --> 00:00:07,020
+Each independent context
+
+5
+00:00:07,020 --> 00:00:08,818
+has its own registry.
+
+6
+00:00:08,898 --> 00:00:10,680
+Context A finds alpha,
+
+7
+00:00:10,680 --> 00:00:12,440
+but beta is missing.
+
+8
+00:00:12,440 --> 00:00:13,840
+Sharing one Java application
+
+9
+00:00:13,840 --> 00:00:16,071
+doesn't connect these registries.
+
+10
+00:00:16,151 --> 00:00:18,060
+Create a fresh parent and child.
+
+11
+00:00:18,060 --> 00:00:19,060
+Set the parent before
+
+12
+00:00:19,060 --> 00:00:20,560
+refreshing the child.
+
+13
+00:00:20,560 --> 00:00:22,311
+The registries stay separate.
+
+14
+00:00:22,391 --> 00:00:24,360
+The child checks locally first.
+
+15
+00:00:24,360 --> 00:00:25,380
+A missing named bean
+
+16
+00:00:25,380 --> 00:00:27,147
+can be found in its parent.
+
+17
+00:00:27,227 --> 00:00:28,360
+The parent cannot search
+
+18
+00:00:28,360 --> 00:00:29,040
+its children.
+
+19
+00:00:29,040 --> 00:00:31,900
+Our tests confirm both directions:
+
+20
+00:00:31,900 --> 00:00:33,060
+child to parent works;
+
+21
+00:00:33,060 --> 00:00:34,772
+parent to child doesn't.
+
+22
+00:00:36,772 --> 00:00:37,862
+Thanks for watching.
+

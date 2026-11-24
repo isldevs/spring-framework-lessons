@@ -1,0 +1,8 @@
+{
+  "reference_words": 90,
+  "asr_words": 90,
+  "edit_distance": 4,
+  "normalized_word_error_rate": 0.044444444444444446,
+  "transcript": "Two contexts, different beings. Yes, register alpha in context A and beta and B. Each independent context has its own registry. A finds alpha, but beta is missing. Sharing one Java application doesn't connect these registries. Create a fresh parent and child. Set the parent before refreshing the child. The registry stays separate. The child checks locally first. A missing named bean can be found in its parent. The parent cannot search its children. Our tests confirm both directions. Child to parent works. Parent to child doesn't. Thanks for watching.",
+  "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
+}
