@@ -1,0 +1,40 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/workspace/spring-framework-lessons/output/week-01/day-07/video.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:00:37.00, start: 0.000000, bitrate: 443 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, 237 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Input #1, png_pipe, from '/workspace/spring-framework-lessons/output/week-01/day-07/source/evidence/final-opening-source-30.png':
+  Duration: N/A, bitrate: N/A
+  Stream #1:0: Video: png, rgb24(pc, gbr/unknown/unknown), 1080x1920, 60 fps, 60 tbr, 60 tbn
+Stream mapping:
+  Stream #0:0 (h264) -> trim:default
+  Stream #1:0 (png) -> scale:default
+  ssim:default -> Stream #0:0 (png)
+Press [q] to stop, [?] for help
+[Parsed_ssim_4 @ 0x7f8af4012140] not matching timebases found between first input: 1/15360 and second input 1/60, results may be incorrect!
+[fc#0 @ 0x557156441200] [vo0->#0:0 @ 0x557156451f80] No information about the input framerate is available. Falling back to a default value of 25fps. Use the -r option if you want a different framerate.
+Output #0, image2, to '/workspace/spring-framework-lessons/output/week-01/day-07/source/evidence/final-opening-decoded-30.png':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/bt709, progressive), 1080x1920, q=2-31, 200 kb/s, 25 fps, 25 tbn
+      Metadata:
+        encoder         : Lavc61.19.101 png
+[Parsed_ssim_4 @ 0x7f8af4012140] SSIM Y:0.999548 (33.448022) U:0.997436 (25.910102) V:0.997797 (26.569138) All:0.998904 (29.601871)
+[image2 @ 0x5571565d0040] The specified filename '/workspace/spring-framework-lessons/output/week-01/day-07/source/evidence/final-opening-decoded-30.png' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5571565d0040] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 0x5571565cff40] video:276KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.104x    

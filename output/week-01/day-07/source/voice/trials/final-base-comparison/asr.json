@@ -1,0 +1,578 @@
+{
+  "model": "faster-whisper base.en int8",
+  "narration_sha256": "cbbedc48165a835978f87a82d162d72182ab52684a492f75fc9accae0f3080ff",
+  "reference_words": 78,
+  "asr_words": 78,
+  "edit_distance": 3,
+  "normalized_word_error_rate": 0.038461538461538464,
+  "transcript": "Context-loaded wiring checked. Springs' JUnit support loads our configuration before the test. It creates a repository and supplies it to our service. Retrieve the required service beam from the context. Compare its repository with the context's repository. Assert there the same object, matching values aren't enough. Run the smoke test, it passes. Context-loaded required beam found expected dependency confirmed. This checks wiring for our configuration. Test-order behavior separately. Load look-up assert. Thanks for watching.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.48,
+      "text": " Context-loaded wiring checked.",
+      "words": [
+        {
+          "word": " Context",
+          "start": 0.0,
+          "end": 0.22,
+          "probability": 0.8629522919654846
+        },
+        {
+          "word": "-loaded",
+          "start": 0.22,
+          "end": 0.68,
+          "probability": 0.6251464188098907
+        },
+        {
+          "word": " wiring",
+          "start": 0.68,
+          "end": 1.02,
+          "probability": 0.8928689956665039
+        },
+        {
+          "word": " checked.",
+          "start": 1.02,
+          "end": 1.48,
+          "probability": 0.9733918309211731
+        }
+      ]
+    },
+    {
+      "start": 1.96,
+      "end": 4.26,
+      "text": " Springs' JUnit support loads our configuration",
+      "words": [
+        {
+          "word": " Springs'",
+          "start": 1.96,
+          "end": 2.12,
+          "probability": 0.6355618238449097
+        },
+        {
+          "word": " JUnit",
+          "start": 2.42,
+          "end": 2.92,
+          "probability": 0.8675334751605988
+        },
+        {
+          "word": " support",
+          "start": 2.92,
+          "end": 3.22,
+          "probability": 0.9738255143165588
+        },
+        {
+          "word": " loads",
+          "start": 3.22,
+          "end": 3.7,
+          "probability": 0.9935001730918884
+        },
+        {
+          "word": " our",
+          "start": 3.7,
+          "end": 3.98,
+          "probability": 0.9947921633720398
+        },
+        {
+          "word": " configuration",
+          "start": 3.98,
+          "end": 4.26,
+          "probability": 0.9969409108161926
+        }
+      ]
+    },
+    {
+      "start": 4.96,
+      "end": 5.54,
+      "text": " before the test.",
+      "words": [
+        {
+          "word": " before",
+          "start": 4.74,
+          "end": 5.08,
+          "probability": 0.9981516003608704
+        },
+        {
+          "word": " the",
+          "start": 5.08,
+          "end": 5.32,
+          "probability": 0.9990643858909607
+        },
+        {
+          "word": " test.",
+          "start": 5.32,
+          "end": 5.54,
+          "probability": 0.9939471483230591
+        }
+      ]
+    },
+    {
+      "start": 6.12,
+      "end": 9.26,
+      "text": " It creates a repository and supplies it to our service.",
+      "words": [
+        {
+          "word": " It",
+          "start": 6.12,
+          "end": 6.16,
+          "probability": 0.9947744011878967
+        },
+        {
+          "word": " creates",
+          "start": 6.16,
+          "end": 6.46,
+          "probability": 0.9986742734909058
+        },
+        {
+          "word": " a",
+          "start": 6.46,
+          "end": 6.74,
+          "probability": 0.9965115189552307
+        },
+        {
+          "word": " repository",
+          "start": 6.74,
+          "end": 7.24,
+          "probability": 0.9807628393173218
+        },
+        {
+          "word": " and",
+          "start": 7.24,
+          "end": 7.86,
+          "probability": 0.9315692782402039
+        },
+        {
+          "word": " supplies",
+          "start": 7.86,
+          "end": 8.12,
+          "probability": 0.9936809539794922
+        },
+        {
+          "word": " it",
+          "start": 8.12,
+          "end": 8.56,
+          "probability": 0.9970017075538635
+        },
+        {
+          "word": " to",
+          "start": 8.56,
+          "end": 8.72,
+          "probability": 0.9989301562309265
+        },
+        {
+          "word": " our",
+          "start": 8.72,
+          "end": 8.86,
+          "probability": 0.9988617897033691
+        },
+        {
+          "word": " service.",
+          "start": 8.86,
+          "end": 9.26,
+          "probability": 0.990256667137146
+        }
+      ]
+    },
+    {
+      "start": 10.02,
+      "end": 12.38,
+      "text": " Retrieve the required service beam from the context.",
+      "words": [
+        {
+          "word": " Retrieve",
+          "start": 10.02,
+          "end": 10.36,
+          "probability": 0.9399136006832123
+        },
+        {
+          "word": " the",
+          "start": 10.36,
+          "end": 10.56,
+          "probability": 0.9986421465873718
+        },
+        {
+          "word": " required",
+          "start": 10.56,
+          "end": 10.82,
+          "probability": 0.9807087182998657
+        },
+        {
+          "word": " service",
+          "start": 10.82,
+          "end": 11.4,
+          "probability": 0.988046407699585
+        },
+        {
+          "word": " beam",
+          "start": 11.4,
+          "end": 11.62,
+          "probability": 0.2766655683517456
+        },
+        {
+          "word": " from",
+          "start": 11.62,
+          "end": 11.9,
+          "probability": 0.9977654218673706
+        },
+        {
+          "word": " the",
+          "start": 11.9,
+          "end": 12.0,
+          "probability": 0.9979007244110107
+        },
+        {
+          "word": " context.",
+          "start": 12.0,
+          "end": 12.38,
+          "probability": 0.9809207916259766
+        }
+      ]
+    },
+    {
+      "start": 13.24,
+      "end": 16.18,
+      "text": " Compare its repository with the context's repository.",
+      "words": [
+        {
+          "word": " Compare",
+          "start": 13.24,
+          "end": 13.24,
+          "probability": 0.9929722547531128
+        },
+        {
+          "word": " its",
+          "start": 13.24,
+          "end": 13.56,
+          "probability": 0.9325647950172424
+        },
+        {
+          "word": " repository",
+          "start": 13.56,
+          "end": 14.1,
+          "probability": 0.9950594902038574
+        },
+        {
+          "word": " with",
+          "start": 14.1,
+          "end": 14.64,
+          "probability": 0.9982643723487854
+        },
+        {
+          "word": " the",
+          "start": 14.64,
+          "end": 14.76,
+          "probability": 0.9961972236633301
+        },
+        {
+          "word": " context's",
+          "start": 14.76,
+          "end": 15.48,
+          "probability": 0.8087480664253235
+        },
+        {
+          "word": " repository.",
+          "start": 15.48,
+          "end": 16.18,
+          "probability": 0.9960189461708069
+        }
+      ]
+    },
+    {
+      "start": 16.78,
+      "end": 19.94,
+      "text": " Assert there the same object, matching values aren't enough.",
+      "words": [
+        {
+          "word": " Assert",
+          "start": 16.78,
+          "end": 16.98,
+          "probability": 0.9332740306854248
+        },
+        {
+          "word": " there",
+          "start": 16.98,
+          "end": 17.22,
+          "probability": 0.6873540878295898
+        },
+        {
+          "word": " the",
+          "start": 17.22,
+          "end": 17.44,
+          "probability": 0.9848340749740601
+        },
+        {
+          "word": " same",
+          "start": 17.44,
+          "end": 17.7,
+          "probability": 0.9994540810585022
+        },
+        {
+          "word": " object,",
+          "start": 17.7,
+          "end": 18.12,
+          "probability": 0.9975142478942871
+        },
+        {
+          "word": " matching",
+          "start": 18.54,
+          "end": 18.7,
+          "probability": 0.9910620450973511
+        },
+        {
+          "word": " values",
+          "start": 18.7,
+          "end": 19.32,
+          "probability": 0.9977879524230957
+        },
+        {
+          "word": " aren't",
+          "start": 19.32,
+          "end": 19.72,
+          "probability": 0.994542807340622
+        },
+        {
+          "word": " enough.",
+          "start": 19.72,
+          "end": 19.94,
+          "probability": 0.9998171925544739
+        }
+      ]
+    },
+    {
+      "start": 20.56,
+      "end": 22.26,
+      "text": " Run the smoke test, it passes.",
+      "words": [
+        {
+          "word": " Run",
+          "start": 20.56,
+          "end": 20.78,
+          "probability": 0.9904385209083557
+        },
+        {
+          "word": " the",
+          "start": 20.78,
+          "end": 20.98,
+          "probability": 0.996572732925415
+        },
+        {
+          "word": " smoke",
+          "start": 20.98,
+          "end": 21.2,
+          "probability": 0.7298956513404846
+        },
+        {
+          "word": " test,",
+          "start": 21.2,
+          "end": 21.58,
+          "probability": 0.9822887182235718
+        },
+        {
+          "word": " it",
+          "start": 21.9,
+          "end": 22.0,
+          "probability": 0.9969532489776611
+        },
+        {
+          "word": " passes.",
+          "start": 22.0,
+          "end": 22.26,
+          "probability": 0.9993078708648682
+        }
+      ]
+    },
+    {
+      "start": 22.84,
+      "end": 24.88,
+      "text": " Context-loaded required beam found",
+      "words": [
+        {
+          "word": " Context",
+          "start": 22.84,
+          "end": 23.04,
+          "probability": 0.9935227632522583
+        },
+        {
+          "word": "-loaded",
+          "start": 23.04,
+          "end": 23.66,
+          "probability": 0.9881654679775238
+        },
+        {
+          "word": " required",
+          "start": 23.66,
+          "end": 24.1,
+          "probability": 0.931659996509552
+        },
+        {
+          "word": " beam",
+          "start": 24.1,
+          "end": 24.5,
+          "probability": 0.8993246555328369
+        },
+        {
+          "word": " found",
+          "start": 24.5,
+          "end": 24.88,
+          "probability": 0.8486427664756775
+        }
+      ]
+    },
+    {
+      "start": 24.88,
+      "end": 26.6,
+      "text": " expected dependency confirmed.",
+      "words": [
+        {
+          "word": " expected",
+          "start": 24.88,
+          "end": 25.48,
+          "probability": 0.09208589047193527
+        },
+        {
+          "word": " dependency",
+          "start": 25.48,
+          "end": 26.04,
+          "probability": 0.9949106574058533
+        },
+        {
+          "word": " confirmed.",
+          "start": 26.04,
+          "end": 26.6,
+          "probability": 0.9960972666740417
+        }
+      ]
+    },
+    {
+      "start": 27.32,
+      "end": 29.44,
+      "text": " This checks wiring for our configuration.",
+      "words": [
+        {
+          "word": " This",
+          "start": 27.18,
+          "end": 27.52,
+          "probability": 0.1506756991147995
+        },
+        {
+          "word": " checks",
+          "start": 27.52,
+          "end": 27.86,
+          "probability": 0.9707611203193665
+        },
+        {
+          "word": " wiring",
+          "start": 27.86,
+          "end": 28.18,
+          "probability": 0.9958454966545105
+        },
+        {
+          "word": " for",
+          "start": 28.18,
+          "end": 28.66,
+          "probability": 0.9986432194709778
+        },
+        {
+          "word": " our",
+          "start": 28.66,
+          "end": 28.78,
+          "probability": 0.991233766078949
+        },
+        {
+          "word": " configuration.",
+          "start": 28.78,
+          "end": 29.44,
+          "probability": 0.9963751435279846
+        }
+      ]
+    },
+    {
+      "start": 30.02,
+      "end": 31.38,
+      "text": " Test-order behavior separately.",
+      "words": [
+        {
+          "word": " Test",
+          "start": 30.02,
+          "end": 30.14,
+          "probability": 0.9491612315177917
+        },
+        {
+          "word": "-order",
+          "start": 30.14,
+          "end": 30.44,
+          "probability": 0.5419763177633286
+        },
+        {
+          "word": " behavior",
+          "start": 30.44,
+          "end": 30.78,
+          "probability": 0.8469186425209045
+        },
+        {
+          "word": " separately.",
+          "start": 30.78,
+          "end": 31.38,
+          "probability": 0.9914810657501221
+        }
+      ]
+    },
+    {
+      "start": 32.1,
+      "end": 33.0,
+      "text": " Load look-up assert.",
+      "words": [
+        {
+          "word": " Load",
+          "start": 32.1,
+          "end": 32.14,
+          "probability": 0.9578355550765991
+        },
+        {
+          "word": " look",
+          "start": 32.14,
+          "end": 32.42,
+          "probability": 0.4080059826374054
+        },
+        {
+          "word": "-up",
+          "start": 32.42,
+          "end": 32.66,
+          "probability": 0.6562790125608444
+        },
+        {
+          "word": " assert.",
+          "start": 32.66,
+          "end": 33.0,
+          "probability": 0.9137983918190002
+        }
+      ]
+    },
+    {
+      "start": 35.06,
+      "end": 36.42,
+      "text": " Thanks for watching.",
+      "words": [
+        {
+          "word": " Thanks",
+          "start": 35.06,
+          "end": 35.74,
+          "probability": 0.9541230797767639
+        },
+        {
+          "word": " for",
+          "start": 35.74,
+          "end": 35.92,
+          "probability": 0.9952192902565002
+        },
+        {
+          "word": " watching.",
+          "start": 35.92,
+          "end": 36.42,
+          "probability": 0.997665524482727
+        }
+      ]
+    }
+  ],
+  "purpose": "Independent bounded model comparison after small.en bean/contraction/compound mismatches. No prompt; primary small.en output remains untouched."
+}

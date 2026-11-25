@@ -1,0 +1,4 @@
+b8d1f52f60efe908ac3ca24f1336e70258d24b1548dd4abac540726fdc3b3316  src/main/java/lesson/smoke/Config.java
+a6ac0f741ac321614e8b62e834b7b77995ba5234d476b2be5611ac5f025ef47c  src/main/java/lesson/smoke/OrderService.java
+dd0bf7de4674e9daea931433deaed102e5c918bf6963391e5967d48e64256b28  src/main/java/lesson/smoke/Repo.java
+8d4c2077ae74d209c1da9f1579c0ff96f94bcafd087bf71996dcc6a0a0b624eb  src/test/java/lesson/smoke/ContextSmokeTest.java

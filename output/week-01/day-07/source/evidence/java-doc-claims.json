@@ -1,0 +1,54 @@
+{
+  "scope": "Version-matched official API excerpts; application behavior coverage is determined by the actual test assertions, not by this API documentation.",
+  "claims": [
+    {
+      "claim": "@SpringJUnitConfig combines JUnit Jupiter extension registration with Spring context configuration.",
+      "page": "spring-junit-config",
+      "exact_excerpt": "@SpringJUnitConfig is a composed annotation that combines @ExtendWith(SpringExtension.class) from JUnit Jupiter with @ContextConfiguration from the Spring TestContext Framework . This annotation will be inherited from an enclosing test class by default. See @NestedTestConfiguration for details. Since: 5.0 Author: Sam Brannen See",
+      "text_offset": 502
+    },
+    {
+      "claim": "SpringExtension integrates Spring TestContext support with JUnit Jupiter.",
+      "page": "spring-extension",
+      "exact_excerpt": "SpringExtension integrates the Spring TestContext Framework into JUnit 5's Jupiter programming model. To use this extension, simply annotate a JUnit Jupiter based test class with @ExtendWith(SpringExtension.class) , @SpringJUnitConfig , or @SpringJUnitWebConfig . Since: 5.0 Author: Sam Brannen, Simon Basl\u00e9 See Also: EnabledIf Di",
+      "text_offset": 1486
+    },
+    {
+      "claim": "The extension delegates preparation of the JUnit test instance to TestContextManager.",
+      "page": "spring-extension",
+      "exact_excerpt": "void postProcessTestInstance ( Object testInstance, org.junit.jupiter.api.extension.ExtensionContext context) Delegates to TestContextManager.prepareTestInstance(java.lang.Object) . Object resolveParameter (org.junit.jupiter.api.extension.P",
+      "text_offset": 3468
+    },
+    {
+      "claim": "@ContextConfiguration provides metadata determining which ApplicationContext is loaded for the integration test.",
+      "page": "context-configuration",
+      "exact_excerpt": "@ContextConfiguration is an annotation that can be applied to a test class to define metadata that is used to determine how to load and configure an ApplicationContext for integration tests. Supported Resource Types Context loaders may choose to support either path-based resource locations (typically XML configuration files) or class-based resources. Alternatively, context loaders may choose to support path-based and class-based resourc",
+      "text_offset": 438
+    },
+    {
+      "claim": "@DirtiesContext can close and evict the test context.",
+      "page": "dirties-context",
+      "exact_excerpt": "the ApplicationContext associated with a test is dirty and should therefore be closed and removed from the context cache. Use this annotation if a test has modified the context \u2014 for example, by modifying the state of a singleton bean, modifying the state of an embedded database, etc. Subsequent tests that request the same context will be supplied",
+      "text_offset": 471
+    },
+    {
+      "claim": "AFTER_CLASS is an after-current-class lifecycle mode.",
+      "page": "dirties-context",
+      "exact_excerpt": "After current test class : when declared at the class level with class mode set to AFTER_CLASS BEFORE_* modes are supported by the DirtiesContextBeforeModesTestExecutionListener ; AFTER_* mo",
+      "text_offset": 2088
+    },
+    {
+      "claim": "Typed getBean lookup selects a uniquely matching bean instance.",
+      "page": "bean-factory",
+      "exact_excerpt": "<T> T getBean ( Class <T> requiredType) Return the bean instance that uniquely matches the given object type, if any. <T> T getBean ( Class <T> requiredType, Object ... args) Return an instance, which may be shared or in",
+      "text_offset": 7012
+    },
+    {
+      "claim": "assertSame checks that the expected and actual references identify the same object.",
+      "page": "junit-assertions",
+      "exact_excerpt": "Assert that the expected object and the actual object are the same object. static void assertSame ( Object expected, Object actual, String message) Assert that the expected object",
+      "text_offset": 37455
+    }
+  ],
+  "cleanup_note": "DirtiesContext docs recommend it when a test has modified the context. Explicit AFTER_CLASS cleanup is supported, but normal non-mutating smoke tests can retain the TestContext cache."
+}

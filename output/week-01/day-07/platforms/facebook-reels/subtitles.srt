@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:01,838
+Context loaded. Wiring checked?
+
+2
+00:00:01,918 --> 00:00:03,840
+Spring's JUnit support loads
+
+3
+00:00:03,840 --> 00:00:06,120
+our configuration before the test.
+
+4
+00:00:06,120 --> 00:00:07,320
+It creates a repository
+
+5
+00:00:07,320 --> 00:00:10,014
+and supplies it to our service.
+
+6
+00:00:10,094 --> 00:00:11,700
+Retrieve the required service bean
+
+7
+00:00:11,700 --> 00:00:12,927
+from the context.
+
+8
+00:00:13,007 --> 00:00:14,280
+Compare its repository
+
+9
+00:00:14,280 --> 00:00:16,820
+with the context's repository.
+
+10
+00:00:16,820 --> 00:00:18,660
+Assert they're the same object.
+
+11
+00:00:18,660 --> 00:00:20,532
+Matching values aren't enough.
+
+12
+00:00:20,612 --> 00:00:21,980
+Run the smoke test.
+
+13
+00:00:21,980 --> 00:00:23,700
+It passes: context loaded,
+
+14
+00:00:23,700 --> 00:00:25,520
+required bean found,
+
+15
+00:00:25,520 --> 00:00:27,449
+expected dependency confirmed.
+
+16
+00:00:27,529 --> 00:00:28,360
+This checks wiring
+
+17
+00:00:28,360 --> 00:00:29,460
+for our configuration.
+
+18
+00:00:29,460 --> 00:00:32,260
+Test order behavior separately.
+
+19
+00:00:32,260 --> 00:00:33,645
+Load, look up, assert.
+
+20
+00:00:35,645 --> 00:00:36,736
+Thanks for watching.
+

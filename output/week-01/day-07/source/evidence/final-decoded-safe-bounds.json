@@ -1,0 +1,326 @@
+[
+  {
+    "image": "final-anchor-config_load_s.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-anchor-context_ready_s.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-anchor-expected_repo_lookup_s.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-anchor-identity_assert_s.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-anchor-identity_pass_s.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-anchor-recap_complete_s.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-anchor-repo_created_s.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-anchor-required_found_s.png",
+    "bright_content_bounds": [
+      98,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-anchor-required_lookup_s.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-anchor-service_wired_s.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-anchor-test_pass_s.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-decoded-scene-1.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-decoded-scene-2.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-decoded-scene-3.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-decoded-scene-4.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-decoded-scene-5.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-decoded-scene-6.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-decoded-scene-7.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      973,
+      1511
+    ]
+  },
+  {
+    "image": "final-decoded-thanks-last.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      979,
+      1511
+    ]
+  },
+  {
+    "image": "final-opening-decoded-0.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1510
+    ]
+  },
+  {
+    "image": "final-opening-decoded-120.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-opening-decoded-15.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-opening-decoded-30.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-opening-decoded-60.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-1-0.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-1-1.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-2-0.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-2-1.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-3-0.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-3-1.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-4-0.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-4-1.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-5-0.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-5-1.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-6-0.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      978,
+      1511
+    ]
+  },
+  {
+    "image": "final-transition-6-1.png",
+    "bright_content_bounds": [
+      100,
+      274,
+      949,
+      1511
+    ]
+  }
+]

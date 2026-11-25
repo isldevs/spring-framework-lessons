@@ -1,0 +1,58 @@
+{
+  "word_distinctions": {
+    "bean": "bˈiːn",
+    "JUnit": "dʒˈeɪ jˈuːnɪt",
+    "Spring": "spɹˈɪŋ",
+    "context": "kˈɑːntɛkst",
+    "repository": "ɹᵻpˈɑːzɪtˌɔːɹi",
+    "wiring": "wˈaɪɚɹɪŋ",
+    "identity": "aɪdˈɛntᵻɾi",
+    "assert": "ɐsˈɜːt",
+    "smoke test": "smˈoʊk tˈɛst",
+    "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "Context loaded. Wiring checked?",
+      "phonemes": "kˈɑːntɛkst lˈoʊdᵻd. wˈaɪɚɹɪŋ tʃˈɛkt?",
+      "inference_batches": 1
+    },
+    {
+      "scene": 2,
+      "text": "Spring's JUnit support loads our configuration before the test. It creates a repository and supplies it to our service.",
+      "phonemes": "spɹˈɪŋz dʒˈeɪ jˈuːnɪt səpˈɔːɹt lˈoʊdz ˌaʊɚ kənfˌɪɡjɚɹˈeɪʃən bᵻfˌɔːɹ ðə tˈɛst. ɪt kɹiːˈeɪts ɐ ɹᵻpˈɑːzɪtˌɔːɹi ænd səplˈaɪz ɪt tʊ ˌaʊɚ sˈɜːvɪs.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 3,
+      "text": "Retrieve the required service bean from the context.",
+      "phonemes": "ɹᵻtɹˈiːv ðə ɹᵻkwˈaɪɚd sˈɜːvɪs bˈiːn fɹʌmðə kˈɑːntɛkst.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 4,
+      "text": "Compare its repository with the context's repository. Assert they're the same object. Matching values aren't enough.",
+      "phonemes": "kəmpˈɛɹ ɪts ɹᵻpˈɑːzɪtˌɔːɹi wɪððə kˈɑːntɛksts ɹᵻpˈɑːzɪtˌɔːɹi. ɐsˈɜːt ðeɪɚ ðə sˈeɪm ˈɑːbdʒɛkt. mˈætʃɪŋ vˈæljuːz ˌɑːɹnt ɪnˈʌf.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 5,
+      "text": "Run the smoke test. It passes: context loaded, required bean found, expected dependency confirmed.",
+      "phonemes": "ɹˈʌn ðə smˈoʊk tˈɛst. ɪt pˈæsᵻz: kˈɑːntɛkst lˈoʊdᵻd, ɹᵻkwˈaɪɚd bˈiːn fˈaʊnd, ɛkspˈɛktᵻd dᵻpˈɛndənsi kənfˈɜːmd.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 6,
+      "text": "This checks wiring for our configuration. Test order behavior separately. Load, look up, assert.",
+      "phonemes": "ðɪs tʃˈɛks wˈaɪɚɹɪŋ fɔːɹ ˌaʊɚ kənfˌɪɡjɚɹˈeɪʃən. tˈɛst ˈɔːɹdɚ bᵻhˈeɪvjɚ sˈɛpɹətli. lˈoʊd, lˈʊk ˈʌp, ɐsˈɜːt.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 7,
+      "text": "Thanks for watching.",
+      "phonemes": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ.",
+      "inference_batches": 1
+    }
+  ]
+}

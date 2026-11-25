@@ -1,0 +1,23 @@
+{
+  "status": "succeeded",
+  "url": "https://isldevs-context-smoke-test-player.sivlayyi-bs.chatgpt.site",
+  "project_id": "appgprj_6b061dfb58a881918f70773aacec3058",
+  "deployment_id": "appgdep_6b06630596f48191979b13b0a9247d12",
+  "site_source_commit": "b9bee11fe097988074d56cf93fda73601e08ce21",
+  "audience": "owner-private",
+  "video_sha256": "cddd6f1b3dd42e6e35d361e0300fb2d2482e12ec5424cb88be360e2999d99be1",
+  "media_transcoded": false,
+  "checks_performed": [
+    "native controls and playsinline attributes",
+    "same-origin video source and three downloads",
+    "actual FFprobe duration inserted",
+    "inline JavaScript syntax",
+    "archive contents and MP4 hash",
+    "pushed source commit matches remote",
+    "native Sites successful deployment"
+  ],
+  "browser_playback_tested": false,
+  "physical_phone_tested": false,
+  "auditory_review_performed": false,
+  "limitation": "No supported managed browser/audio-listening tool was available; no on-phone playback or perceptual voice acceptance is claimed."
+}

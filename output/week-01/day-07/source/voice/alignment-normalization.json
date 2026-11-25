@@ -1,0 +1,70 @@
+{
+  "text_transformations": [
+    {
+      "raw_token_start": 27,
+      "raw_token_end": 28,
+      "observed_tokens": [
+        "being"
+      ],
+      "script_tokens": [
+        "bean"
+      ],
+      "start": 11.44,
+      "end": 11.7,
+      "reason": "Known synthesis bean phoneme /b\u02c8i\u02d0n/; raw ASR heard being. This caption label is not pronunciation acceptance."
+    },
+    {
+      "raw_token_start": 39,
+      "raw_token_end": 41,
+      "observed_tokens": [
+        "they",
+        "are"
+      ],
+      "script_tokens": [
+        "theyre"
+      ],
+      "start": 17.04,
+      "end": 17.36,
+      "reason": "Orthographic contraction: observed they are spans align to scripted theyre."
+    },
+    {
+      "raw_token_start": 57,
+      "raw_token_end": 58,
+      "observed_tokens": [
+        "being"
+      ],
+      "script_tokens": [
+        "bean"
+      ],
+      "start": 24.24,
+      "end": 24.6,
+      "reason": "Known synthesis bean phoneme /b\u02c8i\u02d0n/; raw ASR heard being. This caption label is not pronunciation acceptance."
+    },
+    {
+      "raw_token_start": 73,
+      "raw_token_end": 74,
+      "observed_tokens": [
+        "lookup"
+      ],
+      "script_tokens": [
+        "look",
+        "up"
+      ],
+      "start": 32.26,
+      "end": 32.64,
+      "reason": "Orthographic compound: both script labels share the observed lookup span; no within-word timing boundary is invented."
+    }
+  ],
+  "timing_sources": "Unmodified unprompted full-stream ASR with sample-derived utterance boundaries. Any caption-only label transformations are explicitly listed; raw transcript and error score are unchanged. No timing spans invented.",
+  "raw_wer_unchanged": true,
+  "derived_animation_anchors": "Script keyword spans; required service return+.15s and identity success+.10s illustrate cause and effect, not measured Spring runtime.",
+  "scene_start_clamps": "Known synthesis edits constrain caption first/last boundaries and ASR drift. Intermediate ASR word times are approximately20ms-grid estimates.",
+  "hook_ending_asr_s": 1.68,
+  "recap_edit_derivation": {
+    "needed": true,
+    "observed_load_start": 32.26,
+    "observed_lookup_start": 32.26,
+    "derived_lookup_reveal": 32.42,
+    "basis": "ASR Load has zero duration at lookup start. Diagram reveals are staggered by160ms for readability within the phrase; this is an illustrative edit, not an observed subword boundary or Spring runtime."
+  }
+}

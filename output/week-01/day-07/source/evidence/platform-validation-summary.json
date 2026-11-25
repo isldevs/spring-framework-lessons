@@ -1,0 +1,66 @@
+{
+  "master_sha256": "cddd6f1b3dd42e6e35d361e0300fb2d2482e12ec5424cb88be360e2999d99be1",
+  "results": [
+    {
+      "platform": "youtube-shorts",
+      "path": "platforms/youtube-shorts/youtube-shorts.mp4",
+      "sha256": "cddd6f1b3dd42e6e35d361e0300fb2d2482e12ec5424cb88be360e2999d99be1",
+      "byte_identical_to_master": true,
+      "duration_s": 37.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "decoded_frames": 2220,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "color_primaries": "bt709",
+      "color_transfer": "bt709",
+      "color_space": "bt709",
+      "color_range": "tv",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "full_decode_exit_code": 0,
+      "full_decode_stderr_empty": true,
+      "cover_dimensions": [
+        1080,
+        1920
+      ],
+      "cover_byte_identical_to_master": true,
+      "subtitles_byte_identical_to_master": true,
+      "subtitle_cues": 20,
+      "technical_result": "PASS"
+    },
+    {
+      "platform": "facebook-reels",
+      "path": "platforms/facebook-reels/facebook-reels.mp4",
+      "sha256": "cddd6f1b3dd42e6e35d361e0300fb2d2482e12ec5424cb88be360e2999d99be1",
+      "byte_identical_to_master": true,
+      "duration_s": 37.0,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "decoded_frames": 2220,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "color_primaries": "bt709",
+      "color_transfer": "bt709",
+      "color_space": "bt709",
+      "color_range": "tv",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "full_decode_exit_code": 0,
+      "full_decode_stderr_empty": true,
+      "cover_dimensions": [
+        1080,
+        1920
+      ],
+      "cover_byte_identical_to_master": true,
+      "subtitles_byte_identical_to_master": true,
+      "subtitle_cues": 20,
+      "technical_result": "PASS"
+    }
+  ],
+  "both_exports_byte_identical": true,
+  "technical_status": "PASS",
+  "perceptual_voice_review": "UNVERIFIED: no auditory review performed"
+}

@@ -1,0 +1,1 @@
+context smoke test, Spring testing, Spring Framework, SpringJUnitConfig, JUnit 5, Spring TestContext, ApplicationContext, getBean, constructor injection, assertSame, Java, iSLDevs

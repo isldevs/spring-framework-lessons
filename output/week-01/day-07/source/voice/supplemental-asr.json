@@ -1,0 +1,60 @@
+{
+  "needed": false,
+  "script_alignment_transformations": [
+    {
+      "raw_token_start": 27,
+      "raw_token_end": 28,
+      "observed_tokens": [
+        "being"
+      ],
+      "script_tokens": [
+        "bean"
+      ],
+      "start": 11.44,
+      "end": 11.7,
+      "reason": "Known synthesis bean phoneme /bˈiːn/; raw ASR heard being. This caption label is not pronunciation acceptance."
+    },
+    {
+      "raw_token_start": 39,
+      "raw_token_end": 41,
+      "observed_tokens": [
+        "they",
+        "are"
+      ],
+      "script_tokens": [
+        "theyre"
+      ],
+      "start": 17.04,
+      "end": 17.36,
+      "reason": "Orthographic contraction: observed they are spans align to scripted theyre."
+    },
+    {
+      "raw_token_start": 57,
+      "raw_token_end": 58,
+      "observed_tokens": [
+        "being"
+      ],
+      "script_tokens": [
+        "bean"
+      ],
+      "start": 24.24,
+      "end": 24.6,
+      "reason": "Known synthesis bean phoneme /bˈiːn/; raw ASR heard being. This caption label is not pronunciation acceptance."
+    },
+    {
+      "raw_token_start": 73,
+      "raw_token_end": 74,
+      "observed_tokens": [
+        "lookup"
+      ],
+      "script_tokens": [
+        "look",
+        "up"
+      ],
+      "start": 32.26,
+      "end": 32.64,
+      "reason": "Orthographic compound: both script labels share the observed lookup span; no within-word timing boundary is invented."
+    }
+  ],
+  "raw_asr_score_unchanged": true
+}

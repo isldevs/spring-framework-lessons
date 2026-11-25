@@ -1,0 +1,1 @@
+Spring Context Smoke Test: What Does It Prove?

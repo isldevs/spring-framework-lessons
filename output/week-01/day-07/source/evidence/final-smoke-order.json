@@ -1,0 +1,40 @@
+{
+  "anchors": {
+    "config_load_s": 4.06,
+    "repo_created_s": 6.8,
+    "service_wired_s": 7.9,
+    "context_ready_s": 9.47,
+    "required_lookup_s": 10.094,
+    "required_found_s": 11.59,
+    "expected_repo_lookup_s": 15.58,
+    "identity_assert_s": 16.82,
+    "identity_pass_s": 18.36,
+    "test_pass_s": 22.06,
+    "recap_complete_s": 33.17
+  },
+  "configuration_before_bean_creation": true,
+  "repo_created_before_constructor_wiring": true,
+  "context_ready_before_required_lookup": true,
+  "required_lookup_before_required_result": true,
+  "expected_repo_lookup_before_identity_assertion": true,
+  "identity_assertion_before_test_pass": true,
+  "selected_configuration_and_wiring_only": true,
+  "business_behavior_tested": false,
+  "java_tests_found": 1,
+  "java_tests_succeeded": 1,
+  "java_current_sources_match_tested_hashes": true,
+  "java_raw_junit_stdout_matches_proofs": true,
+  "actual_java_proof_lines": [
+    "bean found: true",
+    "wiring same: true"
+  ],
+  "java_verified_semantics": {
+    "business_behavior_tested": false,
+    "constructor_dependency_is_same_context_repo": true,
+    "framework_owned_context_lifecycle": true,
+    "required_order_service_retrievable": true,
+    "required_repo_retrievable": true,
+    "spring_test_context_loads_selected_configuration": true
+  },
+  "basis": "Explanatory renderer anchors verify visual ordering, not Spring/JUnit wall-clock performance. Compiled and executed JUnit/Spring TestContext evidence separately verifies the selected @SpringJUnitConfig configuration loads, required OrderService and Repo beans are retrievable, and assertSame confirms the constructor dependency is that exact context Repo. Framework-owned lifecycle is retained; no standalone application execution or business-behavior test is claimed. This media validator checks recorded execution evidence and does not rerun Java."
+}

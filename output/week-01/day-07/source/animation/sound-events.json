@@ -1,0 +1,22 @@
+[
+  {
+    "time": 7.9,
+    "purpose": "Spring supplies Repo to the service constructor"
+  },
+  {
+    "time": 11.59,
+    "purpose": "required service reference retrieved"
+  },
+  {
+    "time": 18.36,
+    "purpose": "repository identity assertion holds"
+  },
+  {
+    "time": 22.06,
+    "purpose": "actual JUnit smoke test passes"
+  },
+  {
+    "time": 33.17,
+    "purpose": "complete configuration wiring smoke-test overview"
+  }
+]

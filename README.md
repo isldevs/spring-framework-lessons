@@ -2,6 +2,22 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## Context smoke test
+
+[Preview, play and download on your phone](https://isldevs-context-smoke-test-player.sivlayyi-bs.chatgpt.site). This owner-private player may require the owner's ChatGPT sign-in. Deployment succeeded; browser/physical-phone playback was not tested here.
+
+Approved topic **Context smoke test**, publication **2026-11-22**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Actual **37.000000 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC 48 kHz**, **Rec.709 SDR**,2220frames. Seven scenes show Spring's JUnit configuration loading, managed Repo/OrderService creation and constructor wiring, required lookup, exact-reference assertion and actual test result. The complete diagram holds two seconds before Thanks; order behavior remains outside this smoke test's coverage.
+
+- [MP4](output/week-01/day-07/video.mp4) · [Complete ZIP](output/week-01/day-07-production.zip)
+- [Cover](output/week-01/day-07/cover.png) · [SRT](output/week-01/day-07/subtitles.srt) · [Narration](output/week-01/day-07/narration.wav)
+- [Narration script](output/week-01/day-07/narration-script.md) · [Timed storyboard](output/week-01/day-07/storyboard.md)
+- [YouTube metadata, hashtags and tags](output/week-01/day-07/youtube-metadata.md) · [Facebook metadata and hashtags](output/week-01/day-07/facebook-metadata.md)
+- [YouTube upload package](output/week-01/day-07-youtube-shorts-upload.zip) · [Facebook upload package](output/week-01/day-07-facebook-reels-upload.zip)
+- [Asset rights](output/week-01/day-07/asset-rights.md) · [Originality review](output/week-01/day-07/originality-review.md)
+- [QA report](output/week-01/day-07/verification-report.md) · [SHA-256](output/week-01/day-07/checksums.sha256) · [Reproducible sources](output/week-01/day-07/source/README.md)
+
+**1/1 actual JUnit/Spring TestContext smoke test passed** using `@SpringJUnitConfig` and `assertSame`; no standalone app execution or business-behavior coverage is claimed. Master and both platform copies passed technical checks. **Strict approval remains incomplete for auditory narration acceptance.** Raw ASR differences and caption-only mapping provenance remain explicit. No YouTube/Facebook upload, scheduling or publication occurred.
+
 ## Multiple contexts
 
 [Play the video, then download on your phone](https://isldevs-multiple-contexts-player.sivlayyi-bs.chatgpt.site). Owner-private player; sign in with the owner's ChatGPT account if prompted. Player deployment succeeded; browser/physical-phone playback was not tested here.

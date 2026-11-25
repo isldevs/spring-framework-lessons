@@ -1,0 +1,49 @@
+{
+  "master_sha256": "cddd6f1b3dd42e6e35d361e0300fb2d2482e12ec5424cb88be360e2999d99be1",
+  "lesson_manifest_files_verified": 423,
+  "platforms": [
+    {
+      "platform": "youtube-shorts",
+      "manifest_files_verified": 10,
+      "archive_matches_current_folder": true,
+      "archive_crc_pass": true
+    },
+    {
+      "platform": "facebook-reels",
+      "manifest_files_verified": 7,
+      "archive_matches_current_folder": true,
+      "archive_crc_pass": true
+    }
+  ],
+  "production_archive_crc_pass": true,
+  "production_archive_matches_current_files": true,
+  "archive_hashes_verified": 3,
+  "archives": [
+    {
+      "file": "day-07-youtube-shorts-upload.zip",
+      "bytes": 1986742,
+      "sha256": "f076b542477c15bc73d5e9c63d5b23db7dc826ff8efa4f69ce3b5bc6a2731089"
+    },
+    {
+      "file": "day-07-facebook-reels-upload.zip",
+      "bytes": 1985501,
+      "sha256": "515bd9d86ab14a2af00c943b7b26f90493e950fe491cd97a79229a3ab0da9e8f"
+    },
+    {
+      "file": "day-07-production.zip",
+      "bytes": 60767400,
+      "sha256": "1e3d591b951b72b43acef769c70a10e54092dfa045199f58e7e2bc1a233582d9"
+    }
+  ],
+  "excluded": [
+    ".venv",
+    "__pycache__",
+    "models",
+    "venv",
+    "*.pyc",
+    "*.pyo",
+    "symlinks"
+  ],
+  "strict_overall_status": "INCOMPLETE: perceptual voice review unavailable",
+  "publication": "No YouTube/Facebook upload, scheduling or publication"
+}

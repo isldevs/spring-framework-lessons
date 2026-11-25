@@ -1,0 +1,18 @@
+{
+  "approved_topic": "Context smoke test",
+  "approved_publication_date": "2026-11-22",
+  "proposed_publish_time": "19:00 Asia/Phnom_Penh",
+  "phrases": [
+    "Context loaded. Wiring checked?",
+    "Spring's JUnit support loads our configuration before the test. It creates a repository and supplies it to our service.",
+    "Retrieve the required service bean from the context.",
+    "Compare its repository with the context's repository. Assert they're the same object. Matching values aren't enough.",
+    "Run the smoke test. It passes: context loaded, required bean found, expected dependency confirmed.",
+    "This checks wiring for our configuration. Test order behavior separately. Load, look up, assert.",
+    "Thanks for watching."
+  ],
+  "hook_original": "Your app starts, but did Spring wire it?",
+  "hook_refinement_reason": "Shortens the spoken hook to land within two seconds and asks whether expected wiring was checked without implying successful context startup establishes comprehensive correctness.",
+  "semantic_scope": "SpringJUnitConfig selected Config loads; getBean required OrderService and Repo; assertSame(service.repository(),contextRepo). A passing smoke test does not prove order behavior or other configurations; no full application test claim.",
+  "normal_pacing_edit": "Two complete scenes shortened for clarity and 35\u201340s target; normal1.02 retained, no waveform stretching."
+}

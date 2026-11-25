@@ -1,0 +1,16 @@
+{
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostats",
+    "-i",
+    "/workspace/spring-framework-lessons/output/week-01/day-07/video.mp4",
+    "-vf",
+    "blackdetect=d=0.01:pix_th=0.015:pic_th=0.99",
+    "-an",
+    "-f",
+    "null",
+    "-"
+  ],
+  "exit_code": 0
+}

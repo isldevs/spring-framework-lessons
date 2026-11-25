@@ -1,0 +1,12 @@
+{
+  "samples": 217,
+  "unique_text_bounds": 108,
+  "safe_area": [
+    90,
+    250,
+    990,
+    1520
+  ],
+  "violations": [],
+  "passed": true
+}

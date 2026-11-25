@@ -1,0 +1,5 @@
+A passing smoke test says that this selected context loaded and these assertions passed.
+
+assertSame checks whether the service holds the exact Repo instance retrieved from the context. It does not compare only values.
+
+Which business behavior would you test separately?

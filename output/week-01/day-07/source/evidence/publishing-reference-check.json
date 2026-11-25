@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/junit/jupiter/SpringJUnitConfig.html",
+    "http_status": 200,
+    "final_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/junit/jupiter/SpringJUnitConfig.html",
+    "bytes": 20664,
+    "sha256": "f49bd66fe9900b3e698599123452e1a483c2816d8bb11009f31027891e76b182"
+  },
+  {
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/junit/jupiter/SpringExtension.html",
+    "http_status": 200,
+    "final_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/junit/jupiter/SpringExtension.html",
+    "bytes": 40953,
+    "sha256": "555746f4fe3a89866e2f3141f2c05c900c17936a9c973c8c59c59b6eebb836a2"
+  }
+]

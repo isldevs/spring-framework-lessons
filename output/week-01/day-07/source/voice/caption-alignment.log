@@ -1,0 +1,48 @@
+{
+  "captions": 20,
+  "caption_max": 34,
+  "scene_cues_absolute": {
+    "load": {
+      "configuration": 4.06,
+      "repo": 6.8,
+      "injection": 7.9,
+      "ready": 9.47
+    },
+    "lookup": {
+      "request": 10.094,
+      "return": 11.59
+    },
+    "identity": {
+      "repository": 15.58,
+      "actual": 13.6,
+      "expected": 15.58,
+      "assertion": 16.82,
+      "pass": 18.36
+    },
+    "proof": {
+      "result": 20.611958,
+      "pass": 22.06,
+      "bean": 24.24,
+      "wiring": 25.58
+    },
+    "recap": {
+      "scope": 27.529125,
+      "behavior": 30.52,
+      "load": 32.26,
+      "lookup": 32.42,
+      "assert": 32.64,
+      "complete": 33.17
+    }
+  },
+  "recap_cues_absolute": {
+    "scope": 27.529125,
+    "behavior": 30.52,
+    "load": 32.26,
+    "lookup": 32.42,
+    "assert": 32.64,
+    "complete": 33.17,
+    "recap_hold_start": 33.644792,
+    "recap_hold_end": 35.644792
+  },
+  "hook_end": 1.68
+}

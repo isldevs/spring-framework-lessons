@@ -1,0 +1,79 @@
+{
+  "spring_framework_version": "6.2.11",
+  "spring_test_version": "6.2.11",
+  "micrometer_version": "1.15.4",
+  "junit_jupiter_version": "5.12.2",
+  "junit_platform_version": "1.12.2",
+  "compiler": "ECJ3.40.0",
+  "class_file_target": "Java17",
+  "runtime": "openjdk version \"21.0.13\" 2026-10-20\nOpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)",
+  "compile_main_exit_code": 0,
+  "compile_tests_exit_code": 0,
+  "junit_exit_code": 0,
+  "compile_stderr_empty": true,
+  "junit_stderr_empty": true,
+  "application_execution": "Not performed; this lesson verifies the actual JUnit/Spring test execution.",
+  "junit_reports": [
+    {
+      "file": "build/test-results/TEST-junit-jupiter.xml",
+      "name": "JUnit Jupiter",
+      "tests": "1",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.234",
+      "hostname": "15d0c52dfdf7",
+      "timestamp": "2026-11-24T23:27:06"
+    },
+    {
+      "file": "build/test-results/TEST-junit-platform-suite.xml",
+      "name": "JUnit Platform Suite",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.002",
+      "hostname": "15d0c52dfdf7",
+      "timestamp": "2026-11-24T23:27:05"
+    },
+    {
+      "file": "build/test-results/TEST-junit-vintage.xml",
+      "name": "JUnit Vintage",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.001",
+      "hostname": "15d0c52dfdf7",
+      "timestamp": "2026-11-24T23:27:06"
+    }
+  ],
+  "tests_found": 1,
+  "tests_succeeded": 1,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "proof_lines": [
+    "bean found: true",
+    "wiring same: true"
+  ],
+  "test_stdout_proof_lines": [
+    "bean found: true",
+    "wiring same: true"
+  ],
+  "source_sha256": {
+    "src/main/java/lesson/smoke/Config.java": "b8d1f52f60efe908ac3ca24f1336e70258d24b1548dd4abac540726fdc3b3316",
+    "src/main/java/lesson/smoke/OrderService.java": "a6ac0f741ac321614e8b62e834b7b77995ba5234d476b2be5611ac5f025ef47c",
+    "src/main/java/lesson/smoke/Repo.java": "dd0bf7de4674e9daea931433deaed102e5c918bf6963391e5967d48e64256b28",
+    "src/test/java/lesson/smoke/ContextSmokeTest.java": "8d4c2077ae74d209c1da9f1579c0ff96f94bcafd087bf71996dcc6a0a0b624eb"
+  },
+  "context_loading_mechanism": "@SpringJUnitConfig(Config.class) with SpringExtension/TestContext framework",
+  "scope": "One real JUnit test loads the selected Config, retrieves OrderService/Repo and checks constructor dependency identity. No business behavior or full-application coverage is inferred.",
+  "verified_semantics": {
+    "spring_test_context_loads_selected_configuration": true,
+    "required_order_service_retrievable": true,
+    "required_repo_retrievable": true,
+    "constructor_dependency_is_same_context_repo": true,
+    "framework_owned_context_lifecycle": true,
+    "business_behavior_tested": false
+  }
+}

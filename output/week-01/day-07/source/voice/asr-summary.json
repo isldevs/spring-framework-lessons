@@ -1,0 +1,10 @@
+{
+  "model": "faster-whisper small.en int8",
+  "narration_sha256": "cbbedc48165a835978f87a82d162d72182ab52684a492f75fc9accae0f3080ff",
+  "reference_words": 78,
+  "asr_words": 78,
+  "edit_distance": 6,
+  "normalized_word_error_rate": 0.07692307692307693,
+  "transcript": "Context loaded, wiring checked. Springs JUnit support loads our configuration before the test. It creates a repository and supplies it to our service. Retrieve the required service being from the context. Compare its repository with the context's repository. Assert they are the same object. Matching values aren't enough. Run the smoke test, it passes. Context loaded required being found, expected dependency confirmed. This checks wiring for our configuration, test order behavior separately, load lookup assert. Thanks for watching.",
+  "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
+}

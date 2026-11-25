@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "spring-junit-config",
+    "requested_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/junit/jupiter/SpringJUnitConfig.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/junit/jupiter/SpringJUnitConfig.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "sha256": "f49bd66fe9900b3e698599123452e1a483c2816d8bb11009f31027891e76b182",
+    "bytes": 20664,
+    "fetched_at_utc": "2026-11-24T23:26:29.533263+00:00",
+    "html_file": "java-doc-spring-junit-config.html",
+    "text_file": "java-doc-spring-junit-config.txt",
+    "text_sha256": "528ed5f7f4309da582aac54f463f988321091da6a7c9b385169eabccd7fdcd37"
+  },
+  {
+    "slug": "spring-extension",
+    "requested_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/junit/jupiter/SpringExtension.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/junit/jupiter/SpringExtension.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "sha256": "555746f4fe3a89866e2f3141f2c05c900c17936a9c973c8c59c59b6eebb836a2",
+    "bytes": 40953,
+    "fetched_at_utc": "2026-11-24T23:26:29.523392+00:00",
+    "html_file": "java-doc-spring-extension.html",
+    "text_file": "java-doc-spring-extension.txt",
+    "text_sha256": "eae6b9561377307254ce964efebf906e678df20e2baec552fac6436b9598f19f"
+  },
+  {
+    "slug": "context-configuration",
+    "requested_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/ContextConfiguration.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/ContextConfiguration.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "sha256": "bd68a268ab5f6a169a859fa42d8a35881957b1c7347bb67affb3fe3d21fb4f53",
+    "bytes": 34403,
+    "fetched_at_utc": "2026-11-24T23:26:29.558213+00:00",
+    "html_file": "java-doc-context-configuration.html",
+    "text_file": "java-doc-context-configuration.txt",
+    "text_sha256": "7e3d3c228c77e752475dc70cb1c3375438ee118e48ffeae89fd51745ecb1270f"
+  },
+  {
+    "slug": "dirties-context",
+    "requested_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/annotation/DirtiesContext.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/annotation/DirtiesContext.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "sha256": "6050396ffb6d0f072bd1f7e54fc5693180f49d2f7c635d64afbd0c293b869df7",
+    "bytes": 17727,
+    "fetched_at_utc": "2026-11-24T23:26:29.561933+00:00",
+    "html_file": "java-doc-dirties-context.html",
+    "text_file": "java-doc-dirties-context.txt",
+    "text_sha256": "e2d01f92b3d8de19438c063872dcb2113836ffc9387f758838b6e1c0c797b47d"
+  },
+  {
+    "slug": "bean-factory",
+    "requested_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html",
+    "resolved_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html",
+    "http_status": 200,
+    "content_type": "text/html",
+    "sha256": "11978416e785b9773307070fb9ef6eb446c8ed35cf39c9d24676d4c5c7ce670c",
+    "bytes": 69307,
+    "fetched_at_utc": "2026-11-24T23:26:29.551285+00:00",
+    "html_file": "java-doc-bean-factory.html",
+    "text_file": "java-doc-bean-factory.txt",
+    "text_sha256": "4d46bc7a567efff25e7c763363293c29e0a8de3662bec9e18ccf3672b81b237b"
+  },
+  {
+    "slug": "junit-assertions",
+    "requested_url": "https://docs.junit.org/5.12.2/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html",
+    "resolved_url": "https://docs.junit.org/5.12.2/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "sha256": "38f78e31eeb5e476f48ea727191f8abc11f2c4eb3ba71cec31c3af76723981d4",
+    "bytes": 781447,
+    "fetched_at_utc": "2026-11-24T23:26:30.716177+00:00",
+    "html_file": "java-doc-junit-assertions.html",
+    "text_file": "java-doc-junit-assertions.txt",
+    "text_sha256": "5d3a02ca5818bf76be79d2decb3363edbc4a5eaed2ad9f42c7d25b421147f637"
+  }
+]

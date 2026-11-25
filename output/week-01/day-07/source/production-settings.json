@@ -1,0 +1,25 @@
+{
+  "curriculum": {
+    "week": "01",
+    "week_name": "Spring IoC Foundations",
+    "day": 7,
+    "weekday": "Sunday",
+    "exact_topic": "Context smoke test",
+    "publish_date": "2026-11-22",
+    "publish_time": "19:00",
+    "timezone": "Asia/Phnom_Penh",
+    "publication_time_status": "proposed",
+    "equivalent_utc": "2026-11-22T12:00:00Z"
+  },
+  "public_numbering": false,
+  "target_seconds": [
+    35,
+    40
+  ],
+  "strict_max_seconds": 45,
+  "fps": 60,
+  "opening": "Immediate spoken and animated context-ready versus expected-wiring assertion question; separate cover only",
+  "voice_perceptual_review": "INCOMPLETE unless an actual auditory review is available and performed",
+  "publication": "No automatic upload, scheduling or publication to social platforms",
+  "technical_scope": "SpringJUnitConfig selects Config; Spring TestContext support loads an ApplicationContext and injects it into the JUnit-created test instance; context owns Repo and OrderService. Required lookup and same-instance dependency assertion are checked; order behavior and other configurations are not proved."
+}

@@ -1,0 +1,86 @@
+Loading Whisper small.en
+{'start': np.float64(0.0), 'end': np.float64(1.68), 'text': ' Context loaded, wiring checked.', 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' Context', 'start': np.float64(0.0), 'end': np.float64(0.36), 'probability': np.float64(0.5477756261825562)}, {'word': ' loaded,', 'start': np.float64(0.36), 'end': np.float64(0.66), 'probability': np.float64(0.3329308032989502)}, {'word': ' wiring', 'start': np.float64(0.92), 'end': np.float64(1.16), 'probability': np.float64(0.9153510332107544)}, {'word': ' checked.', 'start': np.float64(1.16), 'end': np.float64(1.68), 'probability': np.float64(0.9940935969352722)}]}
+{'start': np.float64(2.12), 'end': np.float64(4.64), 'text': ' Springs JUnit support loads our configuration', 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' Springs', 'start': np.float64(2.12), 'end': np.float64(2.36), 'probability': np.float64(0.5515174269676208)}, {'word': ' JUnit', 'start': np.float64(2.36), 'end': np.float64(3.0), 'probability': np.float64(0.765243649482727)}, {'word': ' support', 'start': np.float64(3.0), 'end': np.float64(3.4), 'probability': np.float64(0.5672534108161926)}, {'word': ' loads', 'start': np.float64(3.4), 'end': np.float64(3.84), 'probability': np.float64(0.9800969958305359)}, {'word': ' our', 'start': np.float64(3.84), 'end': np.float64(4.06), 'probability': np.float64(0.99363774061203)}, {'word': ' configuration', 'start': np.float64(4.06), 'end': np.float64(4.64), 'probability': np.float64(0.9958897233009338)}]}
+{'start': np.float64(4.64), 'end': np.float64(5.7), 'text': ' before the test.', 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' before', 'start': np.float64(4.64), 'end': np.float64(5.18), 'probability': np.float64(0.9948989748954773)}, {'word': ' the', 'start': np.float64(5.18), 'end': np.float64(5.38), 'probability': np.float64(0.9980612397193909)}, {'word': ' test.', 'start': np.float64(5.38), 'end': np.float64(5.7), 'probability': np.float64(0.9982067346572876)}]}
+{'start': np.float64(6.12), 'end': np.float64(9.42), 'text': ' It creates a repository and supplies it to our service.', 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' It', 'start': np.float64(6.12), 'end': np.float64(6.22), 'probability': np.float64(0.9910354614257812)}, {'word': ' creates', 'start': np.float64(6.22), 'end': np.float64(6.58), 'probability': np.float64(0.9975559711456299)}, {'word': ' a', 'start': np.float64(6.58), 'end': np.float64(6.8), 'probability': np.float64(0.9966009855270386)}, {'word': ' repository', 'start': np.float64(6.8), 'end': np.float64(7.32), 'probability': np.float64(0.9796305894851685)}, {'word': ' and', 'start': np.float64(7.32), 'end': np.float64(7.9), 'probability': np.float64(0.9578813910484314)}, {'word': ' supplies', 'start': np.float64(7.9), 'end': np.float64(8.34), 'probability': np.float64(0.9975134134292603)}, {'word': ' it', 'start': np.float64(8.34), 'end': np.float64(8.6), 'probability': np.float64(0.9978951215744019)}, {'word': ' to', 'start': np.float64(8.6), 'end': np.float64(8.76), 'probability': np.float64(0.998387336730957)}, {'word': ' our', 'start': np.float64(8.76), 'end': np.float64(8.94), 'probability': np.float64(0.9988645315170288)}, {'word': ' service.', 'start': np.float64(8.94), 'end': np.float64(9.42), 'probability': np.float64(0.994556188583374)}]}
+{'start': np.float64(10.18), 'end': np.float64(12.58), 'text': ' Retrieve the required service being from the context.', 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' Retrieve', 'start': np.float64(10.18), 'end': np.float64(10.48), 'probability': np.float64(0.9569036960601807)}, {'word': ' the', 'start': np.float64(10.48), 'end': np.float64(10.62), 'probability': np.float64(0.9969590902328491)}, {'word': ' required', 'start': np.float64(10.62), 'end': np.float64(11.0), 'probability': np.float64(0.984626829624176)}, {'word': ' service', 'start': np.float64(11.0), 'end': np.float64(11.44), 'probability': np.float64(0.9947668313980103)}, {'word': ' being', 'start': np.float64(11.44), 'end': np.float64(11.7), 'probability': np.float64(0.5130575299263)}, {'word': ' from', 'start': np.float64(11.7), 'end': np.float64(11.94), 'probability': np.float64(0.9966222047805786)}, {'word': ' the', 'start': np.float64(11.94), 'end': np.float64(12.1), 'probability': np.float64(0.9962332844734192)}, {'word': ' context.', 'start': np.float64(12.1), 'end': np.float64(12.58), 'probability': np.float64(0.989767849445343)}]}
+{'start': np.float64(13.02), 'end': np.float64(16.28), 'text': " Compare its repository with the context's repository.", 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' Compare', 'start': np.float64(13.02), 'end': np.float64(13.34), 'probability': np.float64(0.9940945506095886)}, {'word': ' its', 'start': np.float64(13.34), 'end': np.float64(13.6), 'probability': np.float64(0.9344322681427002)}, {'word': ' repository', 'start': np.float64(13.6), 'end': np.float64(14.28), 'probability': np.float64(0.997437596321106)}, {'word': ' with', 'start': np.float64(14.28), 'end': np.float64(14.68), 'probability': np.float64(0.9970985651016235)}, {'word': ' the', 'start': np.float64(14.68), 'end': np.float64(14.94), 'probability': np.float64(0.9949885010719299)}, {'word': " context's", 'start': np.float64(14.94), 'end': np.float64(15.58), 'probability': np.float64(0.8957529366016388)}, {'word': ' repository.', 'start': np.float64(15.58), 'end': np.float64(16.28), 'probability': np.float64(0.9979953765869141)}]}
+{'start': np.float64(16.82), 'end': np.float64(18.26), 'text': ' Assert they are the same object.', 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' Assert', 'start': np.float64(16.82), 'end': np.float64(17.04), 'probability': np.float64(0.9843258559703827)}, {'word': ' they', 'start': np.float64(17.04), 'end': np.float64(17.28), 'probability': np.float64(0.9817853569984436)}, {'word': ' are', 'start': np.float64(17.28), 'end': np.float64(17.36), 'probability': np.float64(0.8553299307823181)}, {'word': ' the', 'start': np.float64(17.36), 'end': np.float64(17.5), 'probability': np.float64(0.9969912767410278)}, {'word': ' same', 'start': np.float64(17.5), 'end': np.float64(17.78), 'probability': np.float64(0.9995896220207214)}, {'word': ' object.', 'start': np.float64(17.78), 'end': np.float64(18.26), 'probability': np.float64(0.9989997744560242)}]}
+{'start': np.float64(18.66), 'end': np.float64(20.1), 'text': " Matching values aren't enough.", 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' Matching', 'start': np.float64(18.66), 'end': np.float64(19.04), 'probability': np.float64(0.978545218706131)}, {'word': ' values', 'start': np.float64(19.04), 'end': np.float64(19.42), 'probability': np.float64(0.9983886480331421)}, {'word': " aren't", 'start': np.float64(19.42), 'end': np.float64(19.68), 'probability': np.float64(0.9951374530792236)}, {'word': ' enough.', 'start': np.float64(19.68), 'end': np.float64(20.1), 'probability': np.float64(0.9998816251754761)}]}
+{'start': np.float64(20.66), 'end': np.float64(22.46), 'text': ' Run the smoke test, it passes.', 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' Run', 'start': np.float64(20.66), 'end': np.float64(20.84), 'probability': np.float64(0.9963794350624084)}, {'word': ' the', 'start': np.float64(20.84), 'end': np.float64(21.04), 'probability': np.float64(0.997532844543457)}, {'word': ' smoke', 'start': np.float64(21.04), 'end': np.float64(21.34), 'probability': np.float64(0.7999781966209412)}, {'word': ' test,', 'start': np.float64(21.34), 'end': np.float64(21.72), 'probability': np.float64(0.9576295614242554)}, {'word': ' it', 'start': np.float64(21.98), 'end': np.float64(22.06), 'probability': np.float64(0.993572473526001)}, {'word': ' passes.', 'start': np.float64(22.06), 'end': np.float64(22.46), 'probability': np.float64(0.9995012283325195)}]}
+{'start': np.float64(23.22), 'end': np.float64(25.04), 'text': ' Context loaded required being found,', 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' Context', 'start': np.float64(23.22), 'end': np.float64(23.22), 'probability': np.float64(0.9886196851730347)}, {'word': ' loaded', 'start': np.float64(23.22), 'end': np.float64(23.7), 'probability': np.float64(0.9089499115943909)}, {'word': ' required', 'start': np.float64(23.7), 'end': np.float64(24.24), 'probability': np.float64(0.616116464138031)}, {'word': ' being', 'start': np.float64(24.24), 'end': np.float64(24.6), 'probability': np.float64(0.8766928911209106)}, {'word': ' found,', 'start': np.float64(24.6), 'end': np.float64(25.04), 'probability': np.float64(0.9993246793746948)}]}
+{'start': np.float64(25.52), 'end': np.float64(26.94), 'text': ' expected dependency confirmed.', 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' expected', 'start': np.float64(25.52), 'end': np.float64(25.58), 'probability': np.float64(0.9848790764808655)}, {'word': ' dependency', 'start': np.float64(25.58), 'end': np.float64(26.32), 'probability': np.float64(0.9951506853103638)}, {'word': ' confirmed.', 'start': np.float64(26.32), 'end': np.float64(26.94), 'probability': np.float64(0.9905940294265747)}]}
+{'start': np.float64(27.44), 'end': np.float64(29.46), 'text': ' This checks wiring for our configuration,', 'avg_logprob': -0.12312755964498605, 'words': [{'word': ' This', 'start': np.float64(27.44), 'end': np.float64(27.68), 'probability': np.float64(0.9979228377342224)}, {'word': ' checks', 'start': np.float64(27.68), 'end': np.float64(27.94), 'probability': np.float64(0.996260404586792)}, {'word': ' wiring', 'start': np.float64(27.94), 'end': np.float64(28.36), 'probability': np.float64(0.9962384700775146)}, {'word': ' for', 'start': np.float64(28.36), 'end': np.float64(28.7), 'probability': np.float64(0.9989761114120483)}, {'word': ' our', 'start': np.float64(28.7), 'end': np.float64(28.86), 'probability': np.float64(0.9976007342338562)}, {'word': ' configuration,', 'start': np.float64(28.86), 'end': np.float64(29.46), 'probability': np.float64(0.998503565788269)}]}
+{'start': np.float64(29.46), 'end': np.float64(31.58), 'text': ' test order behavior separately,', 'avg_logprob': -0.43403118997812273, 'words': [{'word': ' test', 'start': np.float64(29.46), 'end': np.float64(30.22), 'probability': np.float64(0.22875195741653442)}, {'word': ' order', 'start': np.float64(30.22), 'end': np.float64(30.52), 'probability': np.float64(0.8950503468513489)}, {'word': ' behavior', 'start': np.float64(30.52), 'end': np.float64(30.94), 'probability': np.float64(0.8136518597602844)}, {'word': ' separately,', 'start': np.float64(30.94), 'end': np.float64(31.58), 'probability': np.float64(0.9928984642028809)}]}
+{'start': np.float64(32.26), 'end': np.float64(33.14), 'text': ' load lookup assert.', 'avg_logprob': -0.43403118997812273, 'words': [{'word': ' load', 'start': np.float64(32.26), 'end': np.float64(32.26), 'probability': np.float64(0.910798966884613)}, {'word': ' lookup', 'start': np.float64(32.26), 'end': np.float64(32.64), 'probability': np.float64(0.4851119816303253)}, {'word': ' assert.', 'start': np.float64(32.64), 'end': np.float64(33.14), 'probability': np.float64(0.5506516695022583)}]}
+{'start': np.float64(35.32), 'end': np.float64(36.44), 'text': ' Thanks for watching.', 'avg_logprob': -0.43403118997812273, 'words': [{'word': ' Thanks', 'start': np.float64(35.32), 'end': np.float64(35.8), 'probability': np.float64(0.9732827544212341)}, {'word': ' for', 'start': np.float64(35.8), 'end': np.float64(36.0), 'probability': np.float64(0.9991439580917358)}, {'word': ' watching.', 'start': np.float64(36.0), 'end': np.float64(36.44), 'probability': np.float64(0.9986442923545837)}]}
+{'model': 'faster-whisper small.en int8', 'narration_sha256': 'cbbedc48165a835978f87a82d162d72182ab52684a492f75fc9accae0f3080ff', 'reference_words': 78, 'asr_words': 78, 'edit_distance': 6, 'normalized_word_error_rate': 0.07692307692307693, 'transcript': "Context loaded, wiring checked. Springs JUnit support loads our configuration before the test. It creates a repository and supplies it to our service. Retrieve the required service being from the context. Compare its repository with the context's repository. Assert they are the same object. Matching values aren't enough. Run the smoke test, it passes. Context loaded required being found, expected dependency confirmed. This checks wiring for our configuration, test order behavior separately, load lookup assert. Thanks for watching.", 'normalization': 'lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt'}
+Alignment requires review: Full-stream mismatch exceeds an omitted final phrase; inspect before alignment
+{'duration_s': 36.98554166666667, 'sample_rate': 48000, 'channels': 1, 'peak_dbfs': -1.514415166281326, 'rms_dbfs': -21.8254616845396, 'clipped_samples': 0, 'speech_above_minus60db_onset_s': 0.015104166666666667, 'speech_above_minus60db_end_s': 36.7135625, 'endpoint_first_sample': 0.0, 'endpoint_last_sample': 0.0}
+{'duration_s': 36.98554166666667, 'sample_rate': 48000, 'channels': 1, 'peak_dbfs': -1.514415166281326, 'rms_dbfs': -21.8254616845396, 'clipped_samples': 0, 'speech_above_minus60db_onset_s': 0.015104166666666667, 'speech_above_minus60db_end_s': 36.7135625, 'endpoint_first_sample': 0.0, 'endpoint_last_sample': 0.0, 'f0_voiced_frames': 2190, 'f0_10pct_hz': 86.8361542464227, 'f0_50pct_hz': 113.26491752180321, 'f0_90pct_hz': 173.6723084928454, 'f0_std_semitones': 4.618137347526833}
+{
+  "threshold_dbfs": -45,
+  "minimum_duration_s": 0.12,
+  "intervals": [
+    {
+      "start": 1.722562,
+      "end": 1.941187,
+      "duration": 0.21862500000000007
+    },
+    {
+      "start": 5.818667,
+      "end": 6.113167,
+      "duration": 0.2945000000000002
+    },
+    {
+      "start": 9.517125,
+      "end": 10.110708,
+      "duration": 0.5935830000000006
+    },
+    {
+      "start": 12.720313,
+      "end": 13.024333,
+      "duration": 0.3040199999999995
+    },
+    {
+      "start": 16.515958,
+      "end": 16.756625,
+      "duration": 0.2406669999999984
+    },
+    {
+      "start": 20.164167,
+      "end": 20.634875,
+      "duration": 0.4707080000000019
+    },
+    {
+      "start": 22.644792,
+      "end": 22.835979,
+      "duration": 0.19118699999999933
+    },
+    {
+      "start": 27.087021,
+      "end": 27.552021,
+      "duration": 0.46499999999999986
+    },
+    {
+      "start": 29.786729,
+      "end": 29.967271,
+      "duration": 0.1805419999999991
+    },
+    {
+      "start": 33.306021,
+      "end": 35.667104,
+      "duration": 2.3610830000000007
+    },
+    {
+      "start": 36.600354,
+      "end": 36.985542,
+      "duration": 0.3851879999999994
+    }
+  ],
+  "longest_pre_recap_hold": {
+    "start": 9.517125,
+    "end": 10.110708,
+    "duration": 0.5935830000000006
+  }
+}

@@ -1,0 +1,3 @@
+# Superseded duration candidate
+
+The initial89-word narration measured41.940083s at1.02. Root approved shorter whole scenes3and6 to fit the35–40s preference without slowing speech. This folder retains the original input/timing, the two old scene recordings and the recorded old-master hash. The initial full master is not bundled. Other original scene segments are unchanged in the final segment set; PCM quantization means reconstruction from saved individual scenes need not match the original full-master hash bit-for-bit. This trial has no recognition/listening acceptance claim and does not describe final timing.
