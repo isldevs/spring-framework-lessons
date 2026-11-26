@@ -1,0 +1,17 @@
+A Spring-managed class with a single constructor can use constructor injection without @Autowired.
+
+OrderService requests PaymentGateway through its constructor. Config imports OrderService and DemoPaymentGateway, so this context has one matching gateway candidate. Spring resolves that dependency and supplies its reference to the constructor.
+
+Two real JUnit tests verify the single unannotated constructor, the injected gateway's identity, service execution returning demo-paid:2500, and a manual-construction control. The gateway is an in-memory demo; no real payment is processed.
+
+With new OrderService(gateway), you still provide the constructor argument yourself. Spring does not automatically wire arbitrary objects created with new.
+
+Verified with Spring Framework 6.2.11 and JUnit 5.12.2. The single-constructor annotation rule has applied since Spring 4.3.
+
+Narration is AI-generated.
+
+Official Spring references:
+https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html
+https://docs.spring.io/spring-framework/reference/6.2/core/beans/annotation-config/autowired.html
+
+#ConstructorInjection #SpringFramework #DependencyInjection #Java #Autowired #Shorts #iSLDevs

@@ -1,0 +1,27 @@
+{
+  "curriculum": {
+    "week": "02",
+    "week_name": "Dependency Injection",
+    "day": 1,
+    "weekday": "Monday",
+    "exact_topic": "Constructor injection",
+    "publish_date": "2026-11-23",
+    "publish_time": "19:00",
+    "timezone": "Asia/Phnom_Penh",
+    "publication_time_status": "proposed",
+    "equivalent_utc": "2026-11-23T12:00:00Z"
+  },
+  "public_numbering": false,
+  "target_seconds": [
+    35,
+    40
+  ],
+  "strict_max_seconds": 45,
+  "fps": 60,
+  "opening": "Complete sourceframe0identicalcover;stableheadline0\u20131withmovingconstructor-dependencyreference;1\u20132travellingcodecard+sequentialheadingtransition;immediatehookandseparateexactspokenphrasecaption",
+  "thumbnail": "IntervariableBlack900;white3lines;blue0866FFhighlight20radius18x8padding;head104/96/104pixels",
+  "captions": "InterBold70052pixels;measuredtextbbox;black209alpha/82percent;12radius26x14padding;dynamicwidthmax840;center540,1380;max2lines",
+  "voice_perceptual_review": "INCOMPLETEunlessactualauditoryreviewisperformed",
+  "publication": "NoautomaticYouTube/Facebookpublication;manualapprovalrequired",
+  "technical_scope": "Spring-managedOrderServiceexactlyoneconstructornoAutowired;ConfigimportsmanagedService/DemoPaymentGateway;onePaymentGatewaycandidate;constructorreferenceanddeterministicdemoexecution;manualnewusessuppliedcallerargument"
+}

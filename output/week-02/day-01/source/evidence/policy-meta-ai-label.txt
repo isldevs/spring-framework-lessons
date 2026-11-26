@@ -1,0 +1,8 @@
+How Meta Is Preparing for the 2026 US Midterm Elections Dismiss locale prompt
+https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/
+HTTP 200
+ResponseSHA256 7a89643f07d2df4e140ce540d4d02466fc254b47d5845f70dce47e1162371468
+
+Exact excerpt (<=25words):
+We require people to use this disclosure and label tool when they post organic content with a photorealistic video or realistic-sounding audio that was digitally
+

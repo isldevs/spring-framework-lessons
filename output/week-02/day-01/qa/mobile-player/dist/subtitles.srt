@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:01,755
+No Autowired? This still works.
+
+2
+00:00:01,835 --> 00:00:03,080
+This Spring-managed service
+
+3
+00:00:03,080 --> 00:00:04,720
+has one constructor.
+
+4
+00:00:04,720 --> 00:00:06,620
+Spring selects it automatically.
+
+5
+00:00:06,620 --> 00:00:08,592
+Autowired is optional here.
+
+6
+00:00:08,672 --> 00:00:10,760
+Spring reads its parameter type:
+
+7
+00:00:10,760 --> 00:00:12,700
+PaymentGateway. In our context,
+
+8
+00:00:12,700 --> 00:00:14,727
+one matching bean is available.
+
+9
+00:00:14,807 --> 00:00:16,200
+Spring supplies that instance
+
+10
+00:00:16,200 --> 00:00:17,560
+through the constructor.
+
+11
+00:00:17,560 --> 00:00:19,433
+The service keeps the reference.
+
+12
+00:00:19,513 --> 00:00:20,660
+Now an order calls
+
+13
+00:00:20,660 --> 00:00:22,280
+the injected gateway.
+
+14
+00:00:22,280 --> 00:00:23,960
+Our test checks the same instance
+
+15
+00:00:23,960 --> 00:00:25,707
+and the returned result.
+
+16
+00:00:25,787 --> 00:00:27,280
+Creating an object with new
+
+17
+00:00:27,280 --> 00:00:30,200
+still means supplying arguments yourself.
+
+18
+00:00:30,200 --> 00:00:31,000
+Let Spring wire
+
+19
+00:00:31,000 --> 00:00:32,921
+the beans it manages.
+
+20
+00:00:34,921 --> 00:00:36,012
+Thanks for watching.
+

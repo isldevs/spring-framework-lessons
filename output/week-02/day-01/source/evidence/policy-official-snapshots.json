@@ -1,0 +1,199 @@
+[
+  {
+    "slug": "youtube-disclosure",
+    "requested_url": "https://support.google.com/youtube/answer/14328491?hl=en",
+    "retrieved_utc": "2026-11-26T05:36:29.321621+00:00",
+    "http_status": 200,
+    "final_url": "https://support.google.com/youtube/answer/14328491?hl=en",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "83022b8155c95403dafa7bb9389d58a1a3e256925b8184bc96927991db873494",
+    "response_bytes": 1644480,
+    "title": "Disclosing use of GenAI content - Android phone & tablet - YouTube Help",
+    "terms_found": [
+      {
+        "needle": "meaningfully altered",
+        "index": 4998
+      },
+      {
+        "needle": "realistic",
+        "index": 2485
+      },
+      {
+        "needle": "own voice",
+        "index": 4590
+      }
+    ],
+    "exact_excerpt": "to disclose content that is generated or meaningfully altered with AI when it appears realistic. Examples of content, edits, or video assistance that creators need",
+    "excerpt_word_count": 25,
+    "reviewed_claims": [
+      "YouTube requires disclosure for realistic AI-generated or meaningfully altered content; non-realistic animation/production assistance examples can be exempt.",
+      "The current documented upload control is AI use under Attributes. Labels may appear for non-music AI audio. Disclosure alone is not a monetization approval."
+    ],
+    "application": "The animation is schematic, but the intended realistic Kokoro narrator must be assessed separately. Do not claim a blanket TTS exemption or human recording.",
+    "manual_confirmation": "Review current AI use prompt; disclose when the realistic-AI definition applies, and consider a transparent AI-narration statement.",
+    "primary_source": true
+  },
+  {
+    "slug": "youtube-monetization",
+    "requested_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "retrieved_utc": "2026-11-26T05:36:29.322251+00:00",
+    "http_status": 200,
+    "final_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "14f77e7477bcc2f72a9b61e89475c1287692a52ff356cbc4a05cae4cae9ae924",
+    "response_bytes": 1659269,
+    "title": "YouTube channel monetization policies - YouTube Help",
+    "terms_found": [
+      {
+        "needle": "inauthentic",
+        "index": 2551
+      },
+      {
+        "needle": "mass-produced",
+        "index": 2472
+      },
+      {
+        "needle": "reused content",
+        "index": 2757
+      }
+    ],
+    "exact_excerpt": "We are also renaming this policy from “repetitious content” to “inauthentic content.” This type of content has always been ineligible for monetization under our existing",
+    "excerpt_word_count": 25,
+    "reviewed_claims": [
+      "Channel monetization evaluates originality and substantive educational value and excludes generic/repetitive, low-value mass-produced content.",
+      "A consistent intro/outro can coexist with meaningful variation; copyright permission and reused-content monetization assessment remain separate."
+    ],
+    "application": "Original lesson-specific script, tested Java, custom mechanism animation and original audio support substantive value. Repeating branding/templates alone cannot establish eligibility.",
+    "manual_confirmation": "Owner must check account/channel eligibility, upload notices and rights; do not guarantee monetization or distribution.",
+    "primary_source": true
+  },
+  {
+    "slug": "youtube-shorts-thumbnail",
+    "requested_url": "https://support.google.com/youtube/answer/10343433?hl=en",
+    "retrieved_utc": "2026-11-26T05:36:29.322672+00:00",
+    "http_status": 200,
+    "final_url": "https://support.google.com/youtube/answer/10343433?hl=en",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "cdd426963d22ef70a2da1948c4650fa7c2696fcf8df4f5f91e34caee6f205afa",
+    "response_bytes": 1653975,
+    "title": "Create YouTube Shorts - Android phone & tablet - YouTube Help",
+    "terms_found": [
+      {
+        "needle": "thumbnail",
+        "index": 6353
+      },
+      {
+        "needle": "frame",
+        "index": 6418
+      }
+    ],
+    "exact_excerpt": "Select a thumbnail How to CHOOSE your Shorts ✨Thumbnail✨ You can choose a frame from your Short to be used as the thumbnail before and",
+    "excerpt_word_count": 25,
+    "reviewed_claims": [
+      "The official Shorts creation page documents manual frame selection in the YouTube app before or after upload."
+    ],
+    "application": "Recommend choosing an opening frame during the stable0–1s composition. The MP4 cannot force automatic thumbnail selection.",
+    "manual_confirmation": "Use the available thumbnail edit/picker control in the current app; inspect the displayed crop and save selection.",
+    "primary_source": true
+  },
+  {
+    "slug": "meta-ai-label",
+    "requested_url": "https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/",
+    "retrieved_utc": "2026-11-26T05:36:29.323091+00:00",
+    "http_status": 200,
+    "final_url": "https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "7a89643f07d2df4e140ce540d4d02466fc254b47d5845f70dce47e1162371468",
+    "response_bytes": 349022,
+    "title": "How Meta Is Preparing for the 2026 US Midterm Elections Dismiss locale prompt",
+    "terms_found": [
+      {
+        "needle": "realistic-sounding",
+        "index": 7529
+      },
+      {
+        "needle": "disclose",
+        "index": 4985
+      },
+      {
+        "needle": "AI info",
+        "index": 7234
+      }
+    ],
+    "exact_excerpt": "We require people to use this disclosure and label tool when they post organic content with a photorealistic video or realistic-sounding audio that was digitally",
+    "excerpt_word_count": 25,
+    "reviewed_claims": [
+      "The2026Meta article reiterates that organic photorealistic video or realistic-sounding digitally created/altered audio requires the self-disclosure/label tool."
+    ],
+    "application": "The generic organic-content sentence is relevant to realistic AI narration; no political-advertising classification is inferred for this Java lesson.",
+    "manual_confirmation": "Use the current Meta AI disclosure/label control for realistic-sounding generated narration and confirm the setting before publication.",
+    "primary_source": true
+  },
+  {
+    "slug": "meta-originality",
+    "requested_url": "https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/",
+    "retrieved_utc": "2026-11-26T05:36:30.333649+00:00",
+    "http_status": 200,
+    "final_url": "https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "daf1a21b48205f021c633d6c0f956f385037347c439376b2b771c0753fcc64cd",
+    "response_bytes": 598461,
+    "title": "Rewarding Original Creators on Facebook Dismiss locale prompt",
+    "terms_found": [
+      {
+        "needle": "produced directly",
+        "index": 5164
+      },
+      {
+        "needle": "unoriginal",
+        "index": 3150
+      },
+      {
+        "needle": "monetization",
+        "index": 3115
+      }
+    ],
+    "exact_excerpt": "Here’s what this means in practice: Content filmed or produced directly by a creator or owner of a Profile or Page is considered original content",
+    "excerpt_word_count": 25,
+    "reviewed_claims": [
+      "Meta identifies content produced directly by the creator/owner as original and deprioritizes duplicative uploads or minor edits with little original value."
+    ],
+    "application": "This production uses original technical explanation, source/renders and demo verification rather than copied clips or creator images. A visual style influence is not a copied media asset.",
+    "manual_confirmation": "Owner must confirm provenance, account/program eligibility and any platform originality decision; no approval guarantee.",
+    "primary_source": true
+  },
+  {
+    "slug": "meta-reels-cover",
+    "requested_url": "https://business-auth.facebook.com/business/learn/lessons/what-are-fb-ig-reels",
+    "retrieved_utc": "2026-11-26T05:36:30.369605+00:00",
+    "http_status": 200,
+    "final_url": "https://business-auth.facebook.com/business/learn/lessons/what-are-fb-ig-reels",
+    "content_type": "text/html; charset=\"utf-8\"",
+    "response_sha256": "1dd86b8e855264755bbf136b91368f02ea7685eb7a33be9f193217f4443af40a",
+    "response_bytes": 363975,
+    "title": "Creating Business Reels on Facebook and Instagram Lesson | Meta for Business",
+    "terms_found": [
+      {
+        "needle": "cover image",
+        "index": 4534
+      },
+      {
+        "needle": "Facebook",
+        "index": 27
+      },
+      {
+        "needle": "interface",
+        "index": 3823
+      }
+    ],
+    "exact_excerpt": "Here you can Preview your reel, Edit cover image, Add a caption , and include Hashtags , a Poll or a Prompt . You can",
+    "excerpt_word_count": 25,
+    "reviewed_claims": [
+      "The official Meta business tutorial describes an Edit cover image step and says its Instagram-focused steps are similar on Facebook.",
+      "The tutorial explicitly warns interface features/locations may vary."
+    ],
+    "application": "This is conditional guidance, not verification of the owner’s specific Facebook cover UI.",
+    "manual_confirmation": "Where a Facebook/Business Suite cover or thumbnail control is offered, select cover.png or the recognizable opening frame and inspect feed/profile crops. Actual account/device UI was not tested.",
+    "primary_source": true
+  }
+]

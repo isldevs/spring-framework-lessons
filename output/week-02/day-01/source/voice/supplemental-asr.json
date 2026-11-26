@@ -1,0 +1,49 @@
+{
+  "needed": false,
+  "reason": "Full final narration recognized; only reviewed compound spellings need caption labels.",
+  "script_alignment_transformations": [
+    {
+      "raw_token_start": 1,
+      "raw_token_end": 3,
+      "observed_tokens": [
+        "auto",
+        "wired"
+      ],
+      "script_tokens": [
+        "autowired"
+      ],
+      "start": 0.18,
+      "end": 0.76,
+      "reason": "Orthographic compound: two observed auto/wired spans map to scripted Autowired; raw recognition remains unchanged."
+    },
+    {
+      "raw_token_start": 17,
+      "raw_token_end": 19,
+      "observed_tokens": [
+        "auto",
+        "wired"
+      ],
+      "script_tokens": [
+        "autowired"
+      ],
+      "start": 6.62,
+      "end": 7.12,
+      "reason": "Orthographic compound: two observed auto/wired spans map to scripted Autowired; raw recognition remains unchanged."
+    },
+    {
+      "raw_token_start": 27,
+      "raw_token_end": 29,
+      "observed_tokens": [
+        "payment",
+        "gateway"
+      ],
+      "script_tokens": [
+        "paymentgateway"
+      ],
+      "start": 10.76,
+      "end": 11.34,
+      "reason": "CamelCase class label: two observed payment/gateway spans map to scripted PaymentGateway; no unheard timing span is created."
+    }
+  ],
+  "raw_asr_score_unchanged": true
+}

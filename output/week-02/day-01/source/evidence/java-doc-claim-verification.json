@@ -1,0 +1,68 @@
+{
+  "scope": "Official API and reference evidence for implicit single-constructor injection into a Spring-managed bean. Actual configuration registration, injection identity, service execution and manually-created object control are separately verified by the compiled tests, not presumed from these documents.",
+  "version_scope": "Four Spring API pages pinned to6.2.11 and JUnit Assertions pinned to5.12.2. The Spring autowired reference is the6.2 documentation branch; its explicit historical4.3 statement is retained with a content hash rather than falsely labeled a6.2.11-specific reference release.",
+  "claims": [
+    {
+      "claim": "For a Spring bean class with exactly one constructor, that constructor is used even without @Autowired.",
+      "page": "autowired",
+      "source_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html",
+      "source_html_sha256": "4674d532b219ae67ffd7e3d00580037e34b1b39b6034272405bfe5d61908f75e",
+      "exact_excerpt": "If a class only declares a single constructor to begin with, it will always be used, even if not annotated. An annotated constructor does not have to be public. Aut",
+      "text_offset": 1532
+    },
+    {
+      "claim": "Autowired constructor resolution considers dependencies that can be satisfied by matching beans in the Spring container.",
+      "page": "autowired",
+      "source_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html",
+      "source_html_sha256": "4674d532b219ae67ffd7e3d00580037e34b1b39b6034272405bfe5d61908f75e",
+      "exact_excerpt": "The constructor with the greatest number of dependencies that can be satisfied by matching beans in the Spring container will be chosen. If none of the candidates can be satisfied, then a primary/default constructor (if present) will be used. Si",
+      "text_offset": 1126
+    },
+    {
+      "claim": "The documented single-constructor annotation omission has been supported since Spring Framework4.3.",
+      "page": "autowired-reference",
+      "source_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/annotation-config/autowired.html",
+      "source_html_sha256": "cc48d00ce559e94e3d83a4dccac12c6466a270c4ea6c52e232b04909ccfa1372",
+      "exact_excerpt": "As of Spring Framework 4.3, an @Autowired annotation on such a constructor is no longer necessary if the target bean defines only one constructor to begin with. However, if several constructors are available and there is no primary/default constructor, at least one of the constructors must be annotated with @Autowired in order to instruct the container which one to use.",
+      "text_offset": 11547
+    },
+    {
+      "claim": "@Import can register regular component classes, as used by the selected demo configuration.",
+      "page": "import",
+      "source_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/Import.html",
+      "source_html_sha256": "af552221d7d3b3a655dbb02956c0eb8e4a5f85b7215707a48fe07d2c2e026fb9",
+      "exact_excerpt": "Allows for importing @Configuration classes, ImportSelector and ImportBeanDefinitionRegistrar implementations, as well as regular component classes (as of 4.2; analogous to AnnotationConfigApplicationContext.register(java.lang.Class<?>...) ). @Bean definitions declared in imported",
+      "text_offset": 551
+    },
+    {
+      "claim": "@SpringJUnitConfig combines the JUnit Jupiter SpringExtension with Spring context configuration metadata.",
+      "page": "spring-junit-config",
+      "source_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/test/context/junit/jupiter/SpringJUnitConfig.html",
+      "source_html_sha256": "f49bd66fe9900b3e698599123452e1a483c2816d8bb11009f31027891e76b182",
+      "exact_excerpt": "@SpringJUnitConfig is a composed annotation that combines @ExtendWith(SpringExtension.class) from JUnit Jupiter with @ContextConfiguration from the Spring TestContext Framework . This annotation will be inherited from an enclosing test class by default. See @NestedTestConfiguration for detai",
+      "text_offset": 502
+    },
+    {
+      "claim": "Typed getBean lookup returns the bean instance uniquely matching the requested object type.",
+      "page": "bean-factory",
+      "source_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html",
+      "source_html_sha256": "11978416e785b9773307070fb9ef6eb446c8ed35cf39c9d24676d4c5c7ce670c",
+      "exact_excerpt": "<T> T getBean ( Class <T> requiredType) Return the bean instance that uniquely matches the given object type, if any. <T> T getBean ( Class <T> requiredType, Object ... args) Return an insta",
+      "text_offset": 7012
+    },
+    {
+      "claim": "assertSame verifies that expected and actual refer to the same object, not merely equal values.",
+      "page": "junit-assertions",
+      "source_url": "https://docs.junit.org/5.12.2/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html",
+      "source_html_sha256": "38f78e31eeb5e476f48ea727191f8abc11f2c4eb3ba71cec31c3af76723981d4",
+      "exact_excerpt": "Assert that the expected object and the actual object are the same object. static void assertSame ( Object expected, Object actual, String message) Assert that the expected object",
+      "text_offset": 37455
+    }
+  ],
+  "limits": [
+    "A single-constructor rule concerns Spring-managed beans, not arbitrary objects created with new.",
+    "The demo has exactly one registered PaymentGateway candidate; multiple-candidate selection is outside this lesson.",
+    "DemoPaymentGateway returns a deterministic demo string; the test does not process a real payment.",
+    "These documentation excerpts do not claim any test passed; actual JUnit evidence records results separately."
+  ]
+}

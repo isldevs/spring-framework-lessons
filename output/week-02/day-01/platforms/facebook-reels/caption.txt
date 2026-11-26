@@ -1,0 +1,11 @@
+No @Autowired on this constructor. Spring can still supply the dependency. ☕
+
+This OrderService is managed by Spring and has one constructor. Its PaymentGateway parameter tells the container what to resolve. With one matching gateway available, Spring passes that instance into the constructor.
+
+The real context tests check the reference and the returned demo result. They also confirm that a service you create with new uses the gateway you provide yourself.
+
+One constructor makes the dependency clear.
+
+Narration is AI-generated.
+
+#ConstructorInjection #SpringFramework #DependencyInjection #Java #Autowired #JavaDevelopers #iSLDevs

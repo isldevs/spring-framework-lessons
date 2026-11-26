@@ -1,0 +1,5 @@
+The key conditions here are a Spring-managed service, one constructor, and one matching PaymentGateway candidate.
+
+For a plain Java test, new OrderService(fakeGateway) makes the dependency explicit without starting Spring.
+
+What behavior would your fake gateway return?

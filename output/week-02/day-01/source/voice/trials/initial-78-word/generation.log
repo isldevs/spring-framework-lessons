@@ -1,0 +1,177 @@
+synth 0 No Autowired? This still works. speed 1.02
+single scene batch; phonemes 36
+duration 1.755125 total 1.8351250000000001 phoneme timings 0
+synth 1 This Spring-managed service has one constructor. Autowired is optional here. speed 1.02
+single scene batch; phonemes 80
+duration 4.576 total 6.491125 phoneme timings 0
+synth 2 Spring reads its parameter type: PaymentGateway. In our context, one matching bean is available. speed 1.02
+single scene batch; phonemes 107
+duration 6.0555 total 12.626625 phoneme timings 0
+synth 3 Spring supplies that instance through the constructor. The service keeps the reference. speed 1.02
+single scene batch; phonemes 80
+duration 4.626125 total 17.33275 phoneme timings 0
+synth 4 Now an order calls the injected gateway. Our test checks the same instance and the returned result. speed 1.02
+single scene batch; phonemes 106
+duration 6.193583333333334 total 23.606333333333335 phoneme timings 0
+synth 5 Creating an object with new still means supplying arguments yourself. Let Spring wire the beans it manages. speed 1.02
+single scene batch; phonemes 122
+duration 7.134458333333333 total 32.74079166666667 phoneme timings 0
+synth 6 Thanks for watching. speed 1.02
+single scene batch; phonemes 21
+duration 1.09075 total 34.081541666666666 phoneme timings 0
+{
+  "sample_rate": 48000,
+  "voice": "am_puck80_fenrir20",
+  "voice_blend": {
+    "am_puck": 0.8,
+    "am_fenrir": 0.2
+  },
+  "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
+  "speed": 1.02,
+  "hook_speed": 1.02,
+  "inference_speed_per_scene": {
+    "1": 1.02,
+    "2": 1.02,
+    "3": 1.02,
+    "4": 1.02,
+    "5": 1.02,
+    "6": 1.02,
+    "7": 1.02
+  },
+  "one_inference_batch_per_scene": true,
+  "regenerated_scene_only": null,
+  "regenerated_scenes": [],
+  "reused_scene_segments": [],
+  "recap_hold_seconds": 2.0,
+  "recap_hold_start": 30.740792,
+  "recap_hold_end": 32.740792,
+  "thanks_start": 32.740792,
+  "thanks_end": 34.081542,
+  "duration": 34.081541666666666,
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 1.835125
+    },
+    {
+      "scene": 2,
+      "start": 1.835125,
+      "end": 6.491125
+    },
+    {
+      "scene": 3,
+      "start": 6.491125,
+      "end": 12.626625
+    },
+    {
+      "scene": 4,
+      "start": 12.626625,
+      "end": 17.33275
+    },
+    {
+      "scene": 5,
+      "start": 17.33275,
+      "end": 23.606333
+    },
+    {
+      "scene": 6,
+      "start": 23.606333,
+      "end": 32.740792
+    },
+    {
+      "scene": 7,
+      "start": 32.740792,
+      "end": 34.081542
+    }
+  ],
+  "phrases": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 1.755125,
+      "text": "No Autowired? This still works."
+    },
+    {
+      "scene": 2,
+      "start": 1.835125,
+      "end": 6.411125,
+      "text": "This Spring-managed service has one constructor. Autowired is optional here."
+    },
+    {
+      "scene": 3,
+      "start": 6.491125,
+      "end": 12.546625,
+      "text": "Spring reads its parameter type: PaymentGateway. In our context, one matching bean is available."
+    },
+    {
+      "scene": 4,
+      "start": 12.626625,
+      "end": 17.25275,
+      "text": "Spring supplies that instance through the constructor. The service keeps the reference."
+    },
+    {
+      "scene": 5,
+      "start": 17.33275,
+      "end": 23.526333,
+      "text": "Now an order calls the injected gateway. Our test checks the same instance and the returned result."
+    },
+    {
+      "scene": 6,
+      "start": 23.606333,
+      "end": 30.740792,
+      "text": "Creating an object with new still means supplying arguments yourself. Let Spring wire the beans it manages."
+    },
+    {
+      "scene": 7,
+      "start": 32.740792,
+      "end": 33.831542,
+      "text": "Thanks for watching."
+    }
+  ],
+  "captions": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 1.755125,
+      "text": "No Autowired? This still works."
+    },
+    {
+      "scene": 2,
+      "start": 1.835125,
+      "end": 6.411125,
+      "text": "This Spring-managed service has one constructor. Autowired is optional here."
+    },
+    {
+      "scene": 3,
+      "start": 6.491125,
+      "end": 12.546625,
+      "text": "Spring reads its parameter type: PaymentGateway. In our context, one matching bean is available."
+    },
+    {
+      "scene": 4,
+      "start": 12.626625,
+      "end": 17.25275,
+      "text": "Spring supplies that instance through the constructor. The service keeps the reference."
+    },
+    {
+      "scene": 5,
+      "start": 17.33275,
+      "end": 23.526333,
+      "text": "Now an order calls the injected gateway. Our test checks the same instance and the returned result."
+    },
+    {
+      "scene": 6,
+      "start": 23.606333,
+      "end": 30.740792,
+      "text": "Creating an object with new still means supplying arguments yourself. Let Spring wire the beans it manages."
+    },
+    {
+      "scene": 7,
+      "start": 32.740792,
+      "end": 33.831542,
+      "text": "Thanks for watching."
+    }
+  ],
+  "caption_method": "Scene utterance boundaries are exact synthesis edit points. Shorter display captions will use independent ASR word timing."
+}

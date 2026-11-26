@@ -2,6 +2,24 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## Constructor injection
+
+Approved topic **Constructor injection**, publication **2026-11-23**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). The actual narrated candidate is **36.266667 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC 48 kHz**, **Rec.709 SDR**,2176frames.
+
+The new cover uses Inter Black900 at104/96/104px with white multiline text and a rounded#0866FFkeyword highlight. Source frame0 exactly matches cover.png. The headline stays stable0–1s while the dependency reference moves;1–2s carries the constructor code into the explanation. Actual encoded first-frame/source SSIM is0.998835, with no lossy pixel-identity claim. Captions use measured52pxInterBold700, white on82%black rounded panels with26/14pxpadding and variable text width.
+
+- [Rendered MP4](output/week-02/day-01/video.mp4) · [Complete ZIP](output/week-02/day-01-production.zip)
+- [Cover](output/week-02/day-01/cover.png) · [Actual first frame](output/week-02/day-01/first-frame.png) · [Opening/crop QA](output/week-02/day-01/qa/)
+- [Thumbnail settings](output/week-02/day-01/thumbnail-style.json) · [Caption settings](output/week-02/day-01/subtitle-style.json) · [SRT](output/week-02/day-01/subtitles.srt)
+- [Narration](output/week-02/day-01/narration.wav) · [Script](output/week-02/day-01/narration-script.md) · [Storyboard](output/week-02/day-01/storyboard.md)
+- [YouTube metadata](output/week-02/day-01/youtube-metadata.md) · [Facebook metadata](output/week-02/day-01/facebook-metadata.md)
+- [YouTube package](output/week-02/day-01-youtube-shorts-upload.zip) · [Facebook package](output/week-02/day-01-facebook-reels-upload.zip)
+- [Rights](output/week-02/day-01/asset-rights.md) · [Originality](output/week-02/day-01/originality-review.md) · [Policy/manual review](output/week-02/day-01/platform-policy-review.md)
+- [Verification](output/week-02/day-01/verification-report.md) · [Checksums](output/week-02/day-01/checksums.sha256) · [Sources](output/week-02/day-01/source/README.md)
+- [Prepared unpublished player files](output/week-02/day-01/qa/mobile-player/dist/)
+
+**2/2 real JUnit tests passed**, confirming implicit single-constructor injection, one gateway candidate, injected identity, demo execution and caller-provided arguments for new objects. All encoded/style/package checks passed. **Production remains incomplete for auditory voice acceptance.** No listening, browser or physical-phone approval is claimed. The new player is prepared locally; manual approval is required before deployment. No social upload, scheduling, thumbnail selection or publication occurred. Repository delivery retains its separate standing authorization.
+
 ## Context smoke test
 
 [Preview, play and download on your phone](https://isldevs-context-smoke-test-player.sivlayyi-bs.chatgpt.site). This owner-private player may require the owner's ChatGPT sign-in. Deployment succeeded; browser/physical-phone playback was not tested here.

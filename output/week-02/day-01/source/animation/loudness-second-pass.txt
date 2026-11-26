@@ -1,0 +1,30 @@
+[aist#0:0/pcm_s16le @ 0x56357a40e500] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/spring-framework-lessons/output/week-02/day-01/source/animation/premix.wav':
+  Duration: 00:00:36.26, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s24le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/workspace/spring-framework-lessons/output/week-02/day-01/source/animation/mix.wav':
+  Metadata:
+    ISFT            : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s24le
+size=    3840KiB time=00:00:14.29 bitrate=2199.9kbits/s speed=28.6x    
+size=    8960KiB time=00:00:32.39 bitrate=2265.5kbits/s speed=32.4x    
+[Parsed_loudnorm_0 @ 0x7f089c002800] 
+{
+	"input_i" : "-16.50",
+	"input_tp" : "-1.50",
+	"input_lra" : "4.00",
+	"input_thresh" : "-27.33",
+	"output_i" : "-16.01",
+	"output_tp" : "-1.50",
+	"output_lra" : "3.30",
+	"output_thresh" : "-26.64",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.01"
+}
+[out#0/wav @ 0x56357a40e6c0] video:0KiB audio:10199KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000977%
+size=   10199KiB time=00:00:36.30 bitrate=2301.6kbits/s speed=29.5x    

@@ -1,0 +1,147 @@
+[
+  {
+    "slug": "youtube-disclosure",
+    "requested_url": "https://support.google.com/youtube/answer/14328491?hl=en",
+    "retrieved_utc": "2026-11-26T05:33:30.532331+00:00",
+    "http_status": 200,
+    "final_url": "https://support.google.com/youtube/answer/14328491?hl=en",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "cb743f42ad91e7616904d37ed4eda2648a3b21665e9ce43de9c2b8cb4303398c",
+    "response_bytes": 1644484,
+    "title": "Disclosing use of GenAI content - Android phone & tablet - YouTube Help",
+    "terms_found": [
+      {
+        "needle": "meaningfully altered",
+        "index": 4998
+      },
+      {
+        "needle": "realistic",
+        "index": 2485
+      },
+      {
+        "needle": "own voice",
+        "index": 4590
+      }
+    ],
+    "exact_excerpt": "to disclose content that is generated or meaningfully altered with AI when it appears realistic. Examples of content, edits, or video assistance that creators need",
+    "excerpt_word_count": 25
+  },
+  {
+    "slug": "youtube-monetization",
+    "requested_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "retrieved_utc": "2026-11-26T05:33:30.533179+00:00",
+    "http_status": 200,
+    "final_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "e0cd633c05c25347dc693122778531b604ce7da850bf5f45f202f0595a6f0cba",
+    "response_bytes": 1659263,
+    "title": "YouTube channel monetization policies - YouTube Help",
+    "terms_found": [
+      {
+        "needle": "inauthentic",
+        "index": 2551
+      },
+      {
+        "needle": "mass-produced",
+        "index": 2472
+      },
+      {
+        "needle": "reused content",
+        "index": 2757
+      }
+    ],
+    "exact_excerpt": "We are also renaming this policy from “repetitious content” to “inauthentic content.” This type of content has always been ineligible for monetization under our existing",
+    "excerpt_word_count": 25
+  },
+  {
+    "slug": "youtube-shorts-thumbnail",
+    "requested_url": "https://support.google.com/youtube/answer/10059070?hl=en",
+    "retrieved_utc": "2026-11-26T05:33:30.533635+00:00",
+    "http_status": 200,
+    "final_url": "https://support.google.com/youtube/answer/10059070?hl=en",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "0ce454c3de72b6f9d97112d5d3d040137dd9d3665186df8d97bb41225f43fb01",
+    "response_bytes": 1643710,
+    "title": "Get started creating YouTube Shorts - YouTube Help",
+    "terms_found": [],
+    "exact_excerpt": "",
+    "review_limit": "Expected terms not found; do not infer page supports requested claim."
+  },
+  {
+    "slug": "meta-ai-label",
+    "requested_url": "https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/",
+    "retrieved_utc": "2026-11-26T05:33:30.534060+00:00",
+    "http_status": 200,
+    "final_url": "https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "a0c0f0038f1948345778b22341029e377c23f158298f990fab01794bc3838bff",
+    "response_bytes": 351580,
+    "title": "Our Approach to Labeling AI-Generated Content and Manipulated Media Dismiss locale prompt",
+    "terms_found": [
+      {
+        "needle": "disclose",
+        "index": 3455
+      },
+      {
+        "needle": "AI info",
+        "index": 3320
+      }
+    ],
+    "exact_excerpt": "We will begin adding “AI info” labels to a wider range of video, audio and image content when we detect industry standard AI image indicators",
+    "excerpt_word_count": 25
+  },
+  {
+    "slug": "meta-originality",
+    "requested_url": "https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/",
+    "retrieved_utc": "2026-11-26T05:33:31.575732+00:00",
+    "http_status": 200,
+    "final_url": "https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "daf1a21b48205f021c633d6c0f956f385037347c439376b2b771c0753fcc64cd",
+    "response_bytes": 598461,
+    "title": "Rewarding Original Creators on Facebook Dismiss locale prompt",
+    "terms_found": [
+      {
+        "needle": "produced directly",
+        "index": 5164
+      },
+      {
+        "needle": "unoriginal",
+        "index": 3150
+      },
+      {
+        "needle": "monetization",
+        "index": 3115
+      }
+    ],
+    "exact_excerpt": "Here’s what this means in practice: Content filmed or produced directly by a creator or owner of a Profile or Page is considered original content",
+    "excerpt_word_count": 25
+  },
+  {
+    "slug": "meta-reels-cover",
+    "requested_url": "https://business-auth.facebook.com/business/learn/lessons/what-are-fb-ig-reels",
+    "retrieved_utc": "2026-11-26T05:33:31.603645+00:00",
+    "http_status": 200,
+    "final_url": "https://business-auth.facebook.com/business/learn/lessons/what-are-fb-ig-reels",
+    "content_type": "text/html; charset=\"utf-8\"",
+    "response_sha256": "ec1d71612c48982052f91c1c34618cc6b6875a9d93c56a38bc7d2b27f7da5b7c",
+    "response_bytes": 385990,
+    "title": "Creating Business Reels on Facebook and Instagram Lesson | Meta for Business",
+    "terms_found": [
+      {
+        "needle": "cover image",
+        "index": 4534
+      },
+      {
+        "needle": "Facebook",
+        "index": 27
+      },
+      {
+        "needle": "interface",
+        "index": 3823
+      }
+    ],
+    "exact_excerpt": "Here you can Preview your reel, Edit cover image, Add a caption , and include Hashtags , a Poll or a Prompt . You can",
+    "excerpt_word_count": 25
+  }
+]

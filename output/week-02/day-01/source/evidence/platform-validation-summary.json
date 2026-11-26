@@ -1,0 +1,89 @@
+{
+  "master_sha256": "1a48348ee337885b7d5fa73c4747368907b02e6bc353f0386a69fcfe6b7a2b10",
+  "results": [
+    {
+      "platform": "youtube-shorts",
+      "path": "platforms/youtube-shorts/youtube-shorts.mp4",
+      "sha256": "1a48348ee337885b7d5fa73c4747368907b02e6bc353f0386a69fcfe6b7a2b10",
+      "byte_identical_to_master": true,
+      "duration_s": 36.266667,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "decoded_frames": 2176,
+      "video_codec": "h264",
+      "video_profile": "High",
+      "audio_codec": "aac",
+      "color_space": "bt709",
+      "color_transfer": "bt709",
+      "color_primaries": "bt709",
+      "color_range": "tv",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "full_decode_exit_code": 0,
+      "full_decode_stderr_empty": true,
+      "copied_assets": {
+        "cover.png": "825135102ec996db0218d71824af5a57e1b91f2943c0fd824e7e5e75130466c9",
+        "first-frame.png": "86de09fc166afa9771f4c678ade2a63462ae813c9983c49f36b6bed22ec19082",
+        "subtitles.srt": "239fe539dd5e73fd0aefc4753ea74bac5e55177b9eb602563eb5836c12b8090a",
+        "thumbnail-style.json": "af9fb13a2cb7f0c4749fbc64aed09ef89d7e314d7751efcf975b4ab6730ec25f",
+        "subtitle-style.json": "d106acf4b6cba875324a84c0ac35f03845f137bd5c56c132a90a6155be8aa06f",
+        "platform-policy-review.md": "5733eb1bfd7f08f782e3330cf242884753d07f1c9697d1d918d64f0b566f11c7"
+      },
+      "cover_dimensions": [
+        1080,
+        1920
+      ],
+      "first_frame_dimensions": [
+        1080,
+        1920
+      ],
+      "subtitle_cues": 20,
+      "technical_result": "PASS"
+    },
+    {
+      "platform": "facebook-reels",
+      "path": "platforms/facebook-reels/facebook-reels.mp4",
+      "sha256": "1a48348ee337885b7d5fa73c4747368907b02e6bc353f0386a69fcfe6b7a2b10",
+      "byte_identical_to_master": true,
+      "duration_s": 36.266667,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "decoded_frames": 2176,
+      "video_codec": "h264",
+      "video_profile": "High",
+      "audio_codec": "aac",
+      "color_space": "bt709",
+      "color_transfer": "bt709",
+      "color_primaries": "bt709",
+      "color_range": "tv",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "full_decode_exit_code": 0,
+      "full_decode_stderr_empty": true,
+      "copied_assets": {
+        "cover.png": "825135102ec996db0218d71824af5a57e1b91f2943c0fd824e7e5e75130466c9",
+        "first-frame.png": "86de09fc166afa9771f4c678ade2a63462ae813c9983c49f36b6bed22ec19082",
+        "subtitles.srt": "239fe539dd5e73fd0aefc4753ea74bac5e55177b9eb602563eb5836c12b8090a",
+        "thumbnail-style.json": "af9fb13a2cb7f0c4749fbc64aed09ef89d7e314d7751efcf975b4ab6730ec25f",
+        "subtitle-style.json": "d106acf4b6cba875324a84c0ac35f03845f137bd5c56c132a90a6155be8aa06f",
+        "platform-policy-review.md": "5733eb1bfd7f08f782e3330cf242884753d07f1c9697d1d918d64f0b566f11c7"
+      },
+      "cover_dimensions": [
+        1080,
+        1920
+      ],
+      "first_frame_dimensions": [
+        1080,
+        1920
+      ],
+      "subtitle_cues": 20,
+      "technical_result": "PASS"
+    }
+  ],
+  "both_exports_byte_identical": true,
+  "technical_status": "PASS",
+  "perceptual_voice_review": "UNVERIFIED: no auditory review claimed",
+  "publication": "Prepared packages only; manual approval required"
+}

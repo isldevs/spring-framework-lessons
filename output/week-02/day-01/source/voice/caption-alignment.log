@@ -1,0 +1,41 @@
+{
+  "captions": 20,
+  "max_characters": 41,
+  "cue_word_min": 3,
+  "cue_word_max": 6,
+  "duration": 36.261916666666664,
+  "scene_cues_absolute": {
+    "managed": {
+      "one": 3.34,
+      "select": 4.88,
+      "optional": 7.34
+    },
+    "resolve": {
+      "parameter": 10.76,
+      "search": 11.96,
+      "match": 12.88
+    },
+    "inject": {
+      "supply": 15.1,
+      "store": 18.02,
+      "ready": 19.04
+    },
+    "execute": {
+      "call": 20.24,
+      "result": 22.14,
+      "instance": 23.28,
+      "verify": 25.25
+    },
+    "recap": {
+      "manual": 27.02,
+      "load": 30.32,
+      "resolve": 30.64,
+      "supply": 31.24,
+      "execute": 31.78,
+      "complete": 32.33
+    }
+  },
+  "recap_hold_start": 32.921167,
+  "recap_hold_end": 34.921167,
+  "hook_utterance_end": 1.755125
+}

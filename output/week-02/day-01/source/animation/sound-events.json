@@ -1,0 +1,22 @@
+[
+  {
+    "time": 12.88,
+    "purpose": "one PaymentGateway candidate resolves"
+  },
+  {
+    "time": 15.1,
+    "purpose": "Spring supplies the constructor argument"
+  },
+  {
+    "time": 22.14,
+    "purpose": "app receives the demo service result"
+  },
+  {
+    "time": 25.25,
+    "purpose": "actual context test verifies reference and result"
+  },
+  {
+    "time": 32.33,
+    "purpose": "complete constructor-injection overview"
+  }
+]

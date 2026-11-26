@@ -1,0 +1,10 @@
+{
+  "model": "faster-whisper small.en int8",
+  "narration_sha256": "55029410b326510b359fccfb0dbfd556511b35ca08feddda25e7b256f45d4e48",
+  "reference_words": 83,
+  "asr_words": 86,
+  "edit_distance": 6,
+  "normalized_word_error_rate": 0.07228915662650602,
+  "transcript": "No auto-wired, this still works. This Spring managed service has one constructor, Spring selects it automatically, auto-wired is optional here. Spring reads its parameter type, payment gateway, in our context, one matching bean is available. Spring supplies that instance through the constructor, the service keeps the reference. Now an order calls the injected gateway, our test checks the same instance and the returned result. Creating an object with new still means supplying arguments yourself. Let Spring wire the beans it manages. Thanks for watching.",
+  "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
+}

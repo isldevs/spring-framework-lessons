@@ -1,0 +1,19 @@
+{
+  "status": "prepared-unpublished",
+  "manual_approval_required": true,
+  "reason": "Latest brief: Do not publish automatically. Wait for manual approval.",
+  "local_player": "qa/mobile-player/dist/index.html",
+  "source": "source/mobile-preview/",
+  "site_registered": false,
+  "site_deployed": false,
+  "video_sha256": "1a48348ee337885b7d5fa73c4747368907b02e6bc353f0386a69fcfe6b7a2b10",
+  "checks": [
+    "native controls/playsinline/source/download wiring",
+    "actual FFprobe duration inserted",
+    "JavaScript syntax",
+    "copied MP4 byte hash matches master"
+  ],
+  "browser_playback_tested": false,
+  "physical_phone_tested": false,
+  "auditory_review_performed": false
+}

@@ -1,0 +1,120 @@
+{
+  "font_family": "Inter",
+  "font_weight": 900,
+  "font_size": 104,
+  "font_sizes": [
+    104,
+    96,
+    104
+  ],
+  "font_axes": {
+    "opsz": 32,
+    "wght": 900
+  },
+  "text_color": "#FFFFFF",
+  "headline_lines": [
+    "Spring Injection",
+    "No @Autowired?",
+    "It still works."
+  ],
+  "headline_bounds": [
+    110,
+    499,
+    929,
+    879
+  ],
+  "headline_line_bounds": [
+    {
+      "text": "Spring Injection",
+      "size": 104,
+      "origin": [
+        110,
+        475
+      ],
+      "bbox": [
+        110,
+        499,
+        912,
+        598
+      ]
+    },
+    {
+      "text": "No @Autowired?",
+      "size": 96,
+      "origin": [
+        128,
+        626
+      ],
+      "bbox": [
+        128,
+        637,
+        929,
+        730
+      ]
+    },
+    {
+      "text": "It still works.",
+      "size": 104,
+      "origin": [
+        110,
+        777
+      ],
+      "bbox": [
+        110,
+        801,
+        755,
+        879
+      ]
+    }
+  ],
+  "headline_roi": [
+    100,
+    450,
+    990,
+    905
+  ],
+  "technical_roi": [
+    100,
+    930,
+    980,
+    1275
+  ],
+  "highlight": {
+    "background": "#0866FF",
+    "corner_radius": 20,
+    "padding": [
+      18,
+      8
+    ],
+    "bounds": [
+      110,
+      629,
+      947,
+      738
+    ]
+  },
+  "font_file": "source/assets/Inter-Variable.ttf",
+  "font_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+  "safe_area": [
+    90,
+    250,
+    990,
+    1520
+  ],
+  "source_frame0_pixel_identical_to_cover": true,
+  "stable_headline_seconds": [
+    0,
+    1
+  ],
+  "technical_transition_seconds": [
+    1,
+    2
+  ],
+  "opening_caption": "No Autowired? This still works.",
+  "caption_region": [
+    90,
+    1295,
+    990,
+    1505
+  ]
+}

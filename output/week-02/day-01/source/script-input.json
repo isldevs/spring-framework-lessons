@@ -1,0 +1,19 @@
+{
+  "approved_topic": "Constructor injection",
+  "theme": "Dependency Injection",
+  "approved_publication_date": "2026-11-23",
+  "proposed_publish_time": "19:00 Asia/Phnom_Penh",
+  "phrases": [
+    "No Autowired? This still works.",
+    "This Spring-managed service has one constructor. Spring selects it automatically. Autowired is optional here.",
+    "Spring reads its parameter type: PaymentGateway. In our context, one matching bean is available.",
+    "Spring supplies that instance through the constructor. The service keeps the reference.",
+    "Now an order calls the injected gateway. Our test checks the same instance and the returned result.",
+    "Creating an object with new still means supplying arguments yourself. Let Spring wire the beans it manages.",
+    "Thanks for watching."
+  ],
+  "mandatory_hook": "No Autowired? This still works.",
+  "opening": "Exact complete cover composition in source frame0; stable headline0\u20131s with technical background motion; purposeful transition1\u20132s; independent opening caption because headline is not exactly spoken hook.",
+  "semantic_scope": "Spring-managed OrderService has exactly one constructor without Autowired; exactly one PaymentGateway candidate resolves, injected reference and demo execution verified. new objects still require caller-provided constructor args; no automatic injection for arbitrary new objects.",
+  "pacing_edit": "Root-approved useful single-constructor selection explanation added at normal1.02 to meet35\u201340s without slowing."
+}

@@ -1,0 +1,1298 @@
+{
+  "video_sha256": "1a48348ee337885b7d5fa73c4747368907b02e6bc353f0386a69fcfe6b7a2b10",
+  "duration": 36.266667,
+  "video_duration": 36.266667,
+  "audio_duration": 36.262,
+  "frames": 2176,
+  "timestamps_checked": 2176,
+  "fps": "60/1",
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "pixel_format": "yuv420p",
+  "color_space": "bt709",
+  "color_transfer": "bt709",
+  "color_primaries": "bt709",
+  "audio_sample_rate": "48000",
+  "audio_channels": 2,
+  "srt_cues": 20,
+  "source_safe_bounds_samples": 251,
+  "decoded_safe_bounds_samples": 40,
+  "decoded_safe_bounds_sampled_only": true,
+  "caption_words_match_script": true,
+  "scenes_count": 7,
+  "target_duration_35_40_pass": true,
+  "caption_max_characters": 41,
+  "opening_static_cover_hold": false,
+  "opening_source_unique_core_frames": 51,
+  "opening_thumbnail_composition_preserved_first_second": true,
+  "source_frame0_exact_cover": true,
+  "opening_headline_stable_through_one_second": true,
+  "opening_first_visual_change_s": 0.016666666666666666,
+  "opening_frame0_source_ssim": 0.998835,
+  "opening_ssim_minimum": 0.997725,
+  "opening_encoded_snapshots_compared": 8,
+  "decoded_transition_pairs_retained": 6,
+  "source_narration_onset_s": 0.015020833333333334,
+  "source_spoken_hook_end_s": 1.755125,
+  "spoken_hook_complete_within_two_seconds": true,
+  "hook_completion_within_two_seconds_is_not_required_by_current_brief": true,
+  "asr_model": "faster-whisper small.en int8",
+  "asr_reference_words": 83,
+  "asr_recognized_words": 86,
+  "asr_edit_distance": 6,
+  "asr_normalized_word_error_rate": 0.07228915662650602,
+  "asr_matches_current_narration_sha256": true,
+  "encoded_first_two_seconds_rms_dbfs": -16.405747205532176,
+  "integrated_loudness_lufs": -15.86,
+  "true_peak_dbtp": -1.32,
+  "loudness_range_lu": 3.1,
+  "decode_error_log_empty": true,
+  "black_intervals_detected": 0,
+  "silence_intervals": [
+    "36.019979"
+  ],
+  "implicit_single_constructor_verified": true,
+  "constructor_autowired_absent_verified": true,
+  "single_gateway_candidate_verified": true,
+  "injected_gateway_identity_verified": true,
+  "service_execution_result_verified": true,
+  "manual_construction_scope_verified": true,
+  "real_payment_performed": false,
+  "graph_ready_s": 19.04,
+  "application_use_start_s": 20.24,
+  "graph_ready_before_application_use": true,
+  "mechanism_anchors": {
+    "managed_service_s": 1.835125,
+    "single_constructor_s": 3.34,
+    "parameter_type_s": 10.76,
+    "candidate_resolved_s": 12.88,
+    "constructor_supplied_s": 15.1,
+    "reference_stored_s": 18.02,
+    "service_ready_s": 19.04,
+    "service_call_s": 20.24,
+    "service_result_s": 22.14,
+    "verification_s": 25.25,
+    "manual_scope_s": 27.02,
+    "recap_complete_s": 32.33
+  },
+  "constructor_injection_causality": {
+    "anchors": {
+      "managed_service_s": 1.835125,
+      "single_constructor_s": 3.34,
+      "parameter_type_s": 10.76,
+      "candidate_resolved_s": 12.88,
+      "constructor_supplied_s": 15.1,
+      "reference_stored_s": 18.02,
+      "service_ready_s": 19.04,
+      "service_call_s": 20.24,
+      "service_result_s": 22.14,
+      "verification_s": 25.25,
+      "manual_scope_s": 27.02,
+      "recap_complete_s": 32.33
+    },
+    "managed_single_constructor_without_autowired": true,
+    "parameter_type_before_candidate_resolution": true,
+    "candidate_resolved_before_constructor_supply": true,
+    "service_ready_before_execution": true,
+    "execution_before_verified_result": true,
+    "manual_new_uses_caller_arguments": true,
+    "real_payment_performed": false,
+    "java_tests_found": 2,
+    "java_tests_succeeded": 2,
+    "java_current_sources_match_tested_hashes": true,
+    "java_raw_junit_stdout_matches_proofs": true,
+    "actual_java_proof_lines": [
+      "autowired: false",
+      "constructors: 1",
+      "gateway same: true",
+      "manual uses caller: true",
+      "order result: demo-paid:2500"
+    ],
+    "java_verified_semantics": {
+      "constructor_dependency_is_same_context_gateway": true,
+      "framework_owned_context_lifecycle": true,
+      "implicit_single_constructor_injection": true,
+      "manual_object_not_context_singleton": true,
+      "manual_objects_use_caller_supplied_gateway": true,
+      "real_payment_performed": false,
+      "service_execution_delegates_to_demo_gateway": true,
+      "single_constructor_has_no_autowired_annotation": true,
+      "single_matching_payment_gateway": true
+    },
+    "basis": "Animated edit anchors establish explanatory ordering, not measured Spring/JUnit wall-clock performance. Recorded real JUnit/Spring context execution independently verifies one unannotated constructor, one matching PaymentGateway candidate, the injected reference and deterministic in-memory service result. Manual construction uses caller-supplied arguments; arbitrary new objects are not automatically injected. No standalone app main, real payment or comprehensive application test is claimed. This media validator checks recorded execution evidence without rerunning Java."
+  },
+  "opening_qa": {
+    "required_files": [
+      "qa/opening-0.0s.png",
+      "qa/opening-0.5s.png",
+      "qa/opening-1.0s.png",
+      "qa/opening-2.0s.png",
+      "qa/cover-feed-9x16.png",
+      "qa/cover-grid-square.png",
+      "qa/cover-feed-3x4.png",
+      "qa/mobile-preview.png"
+    ],
+    "source_frame0_cover_exact": true,
+    "first_frame": {
+      "mean_absolute_rgb_error": 1.510543659979424,
+      "maximum_channel_error": 117,
+      "source_frame0_equals_cover_pixels": true,
+      "encoded_frame0_source_ssim": 0.998835,
+      "lossy_decoded_pixel_identity_claimed": false
+    },
+    "headline_stable_through_one_second": true,
+    "headline_samples": 61,
+    "headline_roi": [
+      100,
+      450,
+      990,
+      905
+    ],
+    "technical_roi": [
+      100,
+      930,
+      980,
+      1275
+    ],
+    "technical_first_motion_s": 0.016666666666666666,
+    "technical_unique_frames_first_second": 51,
+    "maximum_changed_technical_pixels_first_second": 354,
+    "transition_samples": [
+      {
+        "frame": 61,
+        "time_s": 1.0166666666666666,
+        "mean_absolute_rgb_delta": 0.09008085776748971
+      },
+      {
+        "frame": 62,
+        "time_s": 1.0333333333333334,
+        "mean_absolute_rgb_delta": 1.346814236111111
+      },
+      {
+        "frame": 63,
+        "time_s": 1.05,
+        "mean_absolute_rgb_delta": 0.8753522055041152
+      },
+      {
+        "frame": 64,
+        "time_s": 1.0666666666666667,
+        "mean_absolute_rgb_delta": 2.0875135030864196
+      },
+      {
+        "frame": 65,
+        "time_s": 1.0833333333333333,
+        "mean_absolute_rgb_delta": 2.7096780156893003
+      },
+      {
+        "frame": 66,
+        "time_s": 1.1,
+        "mean_absolute_rgb_delta": 2.5142682613168725
+      },
+      {
+        "frame": 67,
+        "time_s": 1.1166666666666667,
+        "mean_absolute_rgb_delta": 3.0871873392489713
+      },
+      {
+        "frame": 68,
+        "time_s": 1.1333333333333333,
+        "mean_absolute_rgb_delta": 2.5498842592592594
+      },
+      {
+        "frame": 69,
+        "time_s": 1.15,
+        "mean_absolute_rgb_delta": 3.173070183899177
+      },
+      {
+        "frame": 70,
+        "time_s": 1.1666666666666667,
+        "mean_absolute_rgb_delta": 3.1654480131172837
+      },
+      {
+        "frame": 71,
+        "time_s": 1.1833333333333333,
+        "mean_absolute_rgb_delta": 3.557342946244856
+      },
+      {
+        "frame": 72,
+        "time_s": 1.2,
+        "mean_absolute_rgb_delta": 3.1718314364711935
+      },
+      {
+        "frame": 73,
+        "time_s": 1.2166666666666666,
+        "mean_absolute_rgb_delta": 3.091394032921811
+      },
+      {
+        "frame": 74,
+        "time_s": 1.2333333333333334,
+        "mean_absolute_rgb_delta": 3.071313978909465
+      },
+      {
+        "frame": 75,
+        "time_s": 1.25,
+        "mean_absolute_rgb_delta": 2.9956653485082305
+      },
+      {
+        "frame": 76,
+        "time_s": 1.2666666666666666,
+        "mean_absolute_rgb_delta": 2.9200223443930042
+      },
+      {
+        "frame": 77,
+        "time_s": 1.2833333333333334,
+        "mean_absolute_rgb_delta": 3.004294624485597
+      },
+      {
+        "frame": 78,
+        "time_s": 1.3,
+        "mean_absolute_rgb_delta": 2.757926633230453
+      },
+      {
+        "frame": 79,
+        "time_s": 1.3166666666666667,
+        "mean_absolute_rgb_delta": 2.659090470679012
+      },
+      {
+        "frame": 80,
+        "time_s": 1.3333333333333333,
+        "mean_absolute_rgb_delta": 2.457031410751029
+      },
+      {
+        "frame": 81,
+        "time_s": 1.35,
+        "mean_absolute_rgb_delta": 2.511603170010288
+      },
+      {
+        "frame": 82,
+        "time_s": 1.3666666666666667,
+        "mean_absolute_rgb_delta": 2.3284143518518516
+      },
+      {
+        "frame": 83,
+        "time_s": 1.3833333333333333,
+        "mean_absolute_rgb_delta": 2.2638760288065845
+      },
+      {
+        "frame": 84,
+        "time_s": 1.4,
+        "mean_absolute_rgb_delta": 2.1328454539609054
+      },
+      {
+        "frame": 85,
+        "time_s": 1.4166666666666667,
+        "mean_absolute_rgb_delta": 2.1130009002057615
+      },
+      {
+        "frame": 86,
+        "time_s": 1.4333333333333333,
+        "mean_absolute_rgb_delta": 1.9806031378600824
+      },
+      {
+        "frame": 87,
+        "time_s": 1.45,
+        "mean_absolute_rgb_delta": 1.9064679783950618
+      },
+      {
+        "frame": 88,
+        "time_s": 1.4666666666666666,
+        "mean_absolute_rgb_delta": 1.8596072852366254
+      },
+      {
+        "frame": 89,
+        "time_s": 1.4833333333333334,
+        "mean_absolute_rgb_delta": 1.8626805234053498
+      },
+      {
+        "frame": 90,
+        "time_s": 1.5,
+        "mean_absolute_rgb_delta": 1.8594844714506173
+      },
+      {
+        "frame": 91,
+        "time_s": 1.5166666666666666,
+        "mean_absolute_rgb_delta": 1.8641333912037037
+      },
+      {
+        "frame": 92,
+        "time_s": 1.5333333333333334,
+        "mean_absolute_rgb_delta": 1.9593611754115225
+      },
+      {
+        "frame": 93,
+        "time_s": 1.55,
+        "mean_absolute_rgb_delta": 1.9099458269032923
+      },
+      {
+        "frame": 94,
+        "time_s": 1.5666666666666667,
+        "mean_absolute_rgb_delta": 1.8987835969650206
+      },
+      {
+        "frame": 95,
+        "time_s": 1.5833333333333333,
+        "mean_absolute_rgb_delta": 1.9330542695473252
+      },
+      {
+        "frame": 96,
+        "time_s": 1.6,
+        "mean_absolute_rgb_delta": 1.9719831854423868
+      },
+      {
+        "frame": 97,
+        "time_s": 1.6166666666666667,
+        "mean_absolute_rgb_delta": 1.9387961355452674
+      },
+      {
+        "frame": 98,
+        "time_s": 1.6333333333333333,
+        "mean_absolute_rgb_delta": 1.9636080568415637
+      },
+      {
+        "frame": 99,
+        "time_s": 1.65,
+        "mean_absolute_rgb_delta": 1.997828253600823
+      },
+      {
+        "frame": 100,
+        "time_s": 1.6666666666666667,
+        "mean_absolute_rgb_delta": 2.0074689750514403
+      },
+      {
+        "frame": 101,
+        "time_s": 1.6833333333333333,
+        "mean_absolute_rgb_delta": 2.0337651105967076
+      },
+      {
+        "frame": 102,
+        "time_s": 1.7,
+        "mean_absolute_rgb_delta": 1.9847833076131687
+      },
+      {
+        "frame": 103,
+        "time_s": 1.7166666666666666,
+        "mean_absolute_rgb_delta": 1.989068287037037
+      },
+      {
+        "frame": 104,
+        "time_s": 1.7333333333333334,
+        "mean_absolute_rgb_delta": 2.006203221450617
+      },
+      {
+        "frame": 105,
+        "time_s": 1.75,
+        "mean_absolute_rgb_delta": 1.9977348572530864
+      },
+      {
+        "frame": 106,
+        "time_s": 1.7666666666666666,
+        "mean_absolute_rgb_delta": 3.677917952674897
+      },
+      {
+        "frame": 107,
+        "time_s": 1.7833333333333334,
+        "mean_absolute_rgb_delta": 1.9781550604423868
+      },
+      {
+        "frame": 108,
+        "time_s": 1.8,
+        "mean_absolute_rgb_delta": 1.9490695730452674
+      },
+      {
+        "frame": 109,
+        "time_s": 1.8166666666666667,
+        "mean_absolute_rgb_delta": 1.9651419431584363
+      },
+      {
+        "frame": 110,
+        "time_s": 1.8333333333333333,
+        "mean_absolute_rgb_delta": 1.9461773405349794
+      },
+      {
+        "frame": 111,
+        "time_s": 1.85,
+        "mean_absolute_rgb_delta": 3.5587321566358026
+      },
+      {
+        "frame": 112,
+        "time_s": 1.8666666666666667,
+        "mean_absolute_rgb_delta": 1.8386538708847737
+      },
+      {
+        "frame": 113,
+        "time_s": 1.8833333333333333,
+        "mean_absolute_rgb_delta": 1.682939814814815
+      },
+      {
+        "frame": 114,
+        "time_s": 1.9,
+        "mean_absolute_rgb_delta": 1.6531094071502057
+      },
+      {
+        "frame": 115,
+        "time_s": 1.9166666666666667,
+        "mean_absolute_rgb_delta": 1.6466104038065843
+      },
+      {
+        "frame": 116,
+        "time_s": 1.9333333333333333,
+        "mean_absolute_rgb_delta": 1.322960551697531
+      },
+      {
+        "frame": 117,
+        "time_s": 1.95,
+        "mean_absolute_rgb_delta": 1.2925983796296296
+      },
+      {
+        "frame": 118,
+        "time_s": 1.9666666666666666,
+        "mean_absolute_rgb_delta": 0.6678460969650206
+      },
+      {
+        "frame": 119,
+        "time_s": 1.9833333333333334,
+        "mean_absolute_rgb_delta": 0.6374837641460905
+      },
+      {
+        "frame": 120,
+        "time_s": 2.0,
+        "mean_absolute_rgb_delta": 0.11863876028806584
+      },
+      {
+        "frame": 121,
+        "time_s": 2.0166666666666666,
+        "mean_absolute_rgb_delta": 0.0
+      }
+    ],
+    "transition_maximum_mean_rgb_delta": 3.677917952674897,
+    "encoded_snapshots": [
+      {
+        "frame": 0,
+        "time_s": 0.0,
+        "source_ssim": 0.998835,
+        "decoded_image": "final-opening-decoded-0.png"
+      },
+      {
+        "frame": 15,
+        "time_s": 0.25,
+        "source_ssim": 0.998908,
+        "decoded_image": "final-opening-decoded-15.png"
+      },
+      {
+        "frame": 30,
+        "time_s": 0.5,
+        "source_ssim": 0.998908,
+        "decoded_image": "final-opening-decoded-30.png"
+      },
+      {
+        "frame": 60,
+        "time_s": 1.0,
+        "source_ssim": 0.998929,
+        "decoded_image": "final-opening-decoded-60.png"
+      },
+      {
+        "frame": 75,
+        "time_s": 1.25,
+        "source_ssim": 0.998239,
+        "decoded_image": "final-opening-decoded-75.png"
+      },
+      {
+        "frame": 90,
+        "time_s": 1.5,
+        "source_ssim": 0.998292,
+        "decoded_image": "final-opening-decoded-90.png"
+      },
+      {
+        "frame": 105,
+        "time_s": 1.75,
+        "source_ssim": 0.997725,
+        "decoded_image": "final-opening-decoded-105.png"
+      },
+      {
+        "frame": 120,
+        "time_s": 2.0,
+        "source_ssim": 0.998354,
+        "decoded_image": "final-opening-decoded-120.png"
+      }
+    ],
+    "crop_previews": [
+      {
+        "image": "cover-feed-9x16.png",
+        "source_crop": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "preview_size": [
+          360,
+          640
+        ],
+        "entire_headline_inside_crop": true
+      },
+      {
+        "image": "cover-grid-square.png",
+        "source_crop": [
+          0,
+          420,
+          1080,
+          1500
+        ],
+        "preview_size": [
+          360,
+          360
+        ],
+        "entire_headline_inside_crop": true
+      },
+      {
+        "image": "cover-feed-3x4.png",
+        "source_crop": [
+          0,
+          240,
+          1080,
+          1680
+        ],
+        "preview_size": [
+          360,
+          480
+        ],
+        "entire_headline_inside_crop": true
+      }
+    ],
+    "caption_checks": {
+      "fonts": [
+        {
+          "file": "source/assets/Inter-Variable.ttf",
+          "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+          "actual_family": "Inter",
+          "base_face": "Regular",
+          "license_file": "source/assets/Inter-OFL.txt"
+        },
+        {
+          "file": "source/assets/Inter-Variable.ttf",
+          "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+          "actual_family": "Inter",
+          "base_face": "Regular",
+          "license_file": "source/assets/Inter-OFL.txt"
+        }
+      ],
+      "captions": [
+        {
+          "text": "No Autowired? This still works.",
+          "rect": [
+            144.0,
+            1346.0,
+            937.0,
+            1414.0
+          ],
+          "text_bounds": [
+            [
+              170,
+              1360,
+              911,
+              1400
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 5,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "This Spring-managed service",
+          "rect": [
+            160.0,
+            1341.0,
+            921.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              186,
+              1355,
+              895,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "has one constructor.",
+          "rect": [
+            268.0,
+            1346.0,
+            811.0,
+            1414.0
+          ],
+          "text_bounds": [
+            [
+              294,
+              1360,
+              785,
+              1400
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Spring selects it automatically.",
+          "rect": [
+            147.0,
+            1341.0,
+            933.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              173,
+              1355,
+              907,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Autowired is optional here.",
+          "rect": [
+            194.0,
+            1341.0,
+            886.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              220,
+              1355,
+              860,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Spring reads its parameter type:",
+          "rect": [
+            128.0,
+            1341.0,
+            951.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              154,
+              1355,
+              925,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 5,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "PaymentGateway. In our context,",
+          "rect": [
+            120.0,
+            1341.0,
+            959.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              146,
+              1355,
+              933,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "one matching bean is available.",
+          "rect": [
+            141.0,
+            1341.0,
+            939.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              167,
+              1355,
+              913,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 5,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Spring supplies that instance",
+          "rect": [
+            164.0,
+            1341.0,
+            915.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              190,
+              1355,
+              889,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "through the constructor.",
+          "rect": [
+            222.0,
+            1341.0,
+            859.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              248,
+              1355,
+              833,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "The service keeps the reference.",
+          "rect": [
+            123.0,
+            1341.0,
+            957.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              149,
+              1355,
+              931,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 5,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Now an order calls",
+          "rect": [
+            293.0,
+            1346.0,
+            787.0,
+            1414.0
+          ],
+          "text_bounds": [
+            [
+              319,
+              1360,
+              761,
+              1400
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "the injected gateway.",
+          "rect": [
+            260.0,
+            1341.0,
+            821.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              286,
+              1355,
+              795,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Our test checks the same instance",
+          "rect": [
+            208.0,
+            1321.0,
+            871.0,
+            1439.0
+          ],
+          "text_bounds": [
+            [
+              234,
+              1335,
+              845,
+              1375
+            ],
+            [
+              436,
+              1385,
+              644,
+              1425
+            ]
+          ],
+          "lines": 2,
+          "font_size": 52,
+          "word_count": 6,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "and the returned result.",
+          "rect": [
+            233.0,
+            1346.0,
+            847.0,
+            1414.0
+          ],
+          "text_bounds": [
+            [
+              259,
+              1360,
+              821,
+              1400
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Creating an object with new",
+          "rect": [
+            178.0,
+            1341.0,
+            901.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              204,
+              1355,
+              875,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 5,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "still means supplying arguments yourself.",
+          "rect": [
+            126.0,
+            1311.0,
+            955.0,
+            1449.0
+          ],
+          "text_bounds": [
+            [
+              152,
+              1325,
+              929,
+              1375
+            ],
+            [
+              437,
+              1385,
+              643,
+              1435
+            ]
+          ],
+          "lines": 2,
+          "font_size": 52,
+          "word_count": 5,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Let Spring wire",
+          "rect": [
+            333.0,
+            1341.0,
+            747.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              359,
+              1355,
+              721,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "the beans it manages.",
+          "rect": [
+            252.0,
+            1341.0,
+            829.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              278,
+              1355,
+              803,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Thanks for watching.",
+          "rect": [
+            262.0,
+            1341.0,
+            819.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              288,
+              1355,
+              793,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        }
+      ],
+      "measured_layouts_passed": true,
+      "preferred_phrase_lengths_all": true,
+      "scope": "Measured glyph/rectangle bounds, actual alpha-compositing probe and source underlay check; not auditory acceptance."
+    },
+    "thumbnail_settings": {
+      "font_family": "Inter",
+      "font_weight": 900,
+      "font_size": 104,
+      "font_sizes": [
+        104,
+        96,
+        104
+      ],
+      "font_axes": {
+        "opsz": 32,
+        "wght": 900
+      },
+      "text_color": "#FFFFFF",
+      "headline_lines": [
+        "Spring Injection",
+        "No @Autowired?",
+        "It still works."
+      ],
+      "headline_bounds": [
+        110,
+        499,
+        929,
+        879
+      ],
+      "headline_line_bounds": [
+        {
+          "text": "Spring Injection",
+          "size": 104,
+          "origin": [
+            110,
+            475
+          ],
+          "bbox": [
+            110,
+            499,
+            912,
+            598
+          ]
+        },
+        {
+          "text": "No @Autowired?",
+          "size": 96,
+          "origin": [
+            128,
+            626
+          ],
+          "bbox": [
+            128,
+            637,
+            929,
+            730
+          ]
+        },
+        {
+          "text": "It still works.",
+          "size": 104,
+          "origin": [
+            110,
+            777
+          ],
+          "bbox": [
+            110,
+            801,
+            755,
+            879
+          ]
+        }
+      ],
+      "headline_roi": [
+        100,
+        450,
+        990,
+        905
+      ],
+      "technical_roi": [
+        100,
+        930,
+        980,
+        1275
+      ],
+      "highlight": {
+        "background": "#0866FF",
+        "corner_radius": 20,
+        "padding": [
+          18,
+          8
+        ],
+        "bounds": [
+          110,
+          629,
+          947,
+          738
+        ]
+      },
+      "font_file": "source/assets/Inter-Variable.ttf",
+      "font_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "safe_area": [
+        90,
+        250,
+        990,
+        1520
+      ],
+      "source_frame0_pixel_identical_to_cover": true,
+      "stable_headline_seconds": [
+        0,
+        1
+      ],
+      "technical_transition_seconds": [
+        1,
+        2
+      ],
+      "opening_caption": "No Autowired? This still works.",
+      "caption_region": [
+        90,
+        1295,
+        990,
+        1505
+      ]
+    },
+    "subtitle_settings": {
+      "font_family": "Inter",
+      "font_weight": 700,
+      "font_size": 52,
+      "font_axes": {
+        "opsz": 32,
+        "wght": 700
+      },
+      "text_color": "#FFFFFF",
+      "background": {
+        "color": "#000000",
+        "opacity": 0.82,
+        "alpha": 209,
+        "corner_radius": 12
+      },
+      "padding": [
+        26,
+        14
+      ],
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ],
+      "max_lines": 2,
+      "caption_region": [
+        90,
+        1295,
+        990,
+        1505
+      ],
+      "font_file": "source/assets/Inter-Variable.ttf",
+      "font_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "measurement": "PillowImageDraw.textbbox; actualglyphbounds;RGBAalpha_composite",
+      "line_gap": 10
+    },
+    "review_scope": "Actual decoded opening images and source style/layout correspondence. Preview crops model likely feed/grid crops; no automatic platform selection, physical-phone playback or perceptual listening approval is claimed."
+  },
+  "recap_hold_start": 32.921167,
+  "recap_hold_end": 34.921167,
+  "recap_hold_seconds": 2.0,
+  "recap_hold_is_before_thanks": true,
+  "recap_hold_source_samples": 120,
+  "recap_hold_crop": [
+    100,
+    330,
+    980,
+    1290
+  ],
+  "recap_hold_source_pixel_identical": true,
+  "recap_hold_decoded_frames": 120,
+  "recap_hold_ssim_minimum": 0.998044,
+  "recap_hold_ssim_average": 0.9982179083333335,
+  "thanks_start": 34.921167,
+  "thanks_end": 36.261917,
+  "thanks_frame_checked": 2175,
+  "thanks_final_frame_ssim": 0.999317,
+  "thanks_caption_and_script_match": true,
+  "intentional_recap_hold_or_closing_quiet_allowed": true,
+  "perceptual_voice_review": "UNVERIFIED: no auditory listening review performed",
+  "required_delivery_files_nonempty": true
+}

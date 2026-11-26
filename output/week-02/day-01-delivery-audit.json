@@ -1,0 +1,50 @@
+{
+  "master_sha256": "1a48348ee337885b7d5fa73c4747368907b02e6bc353f0386a69fcfe6b7a2b10",
+  "lesson_manifest_files_verified": 483,
+  "required_nonempty_files_verified": 30,
+  "platforms": [
+    {
+      "platform": "youtube-shorts",
+      "manifest_files_verified": 14,
+      "archive_matches_current_folder": true,
+      "archive_crc_pass": true
+    },
+    {
+      "platform": "facebook-reels",
+      "manifest_files_verified": 11,
+      "archive_matches_current_folder": true,
+      "archive_crc_pass": true
+    }
+  ],
+  "production_archive_crc_pass": true,
+  "production_archive_matches_current_files": true,
+  "archive_hashes_verified": 3,
+  "archives": [
+    {
+      "file": "day-01-youtube-shorts-upload.zip",
+      "bytes": 2418780,
+      "sha256": "9899f03dd81eb354ae5f822887daf36772c1881d960a34005607f9250d225dc2"
+    },
+    {
+      "file": "day-01-facebook-reels-upload.zip",
+      "bytes": 2417574,
+      "sha256": "7d234bedf316057d4f36cb178a9f20e32593d6e6f3e253fa5d30ccaa36d7e4d2"
+    },
+    {
+      "file": "day-01-production.zip",
+      "bytes": 69513171,
+      "sha256": "d6a045c0c37f66821b182e6164bd1360565f9bbb82eb051261ef6df2ef86929a"
+    }
+  ],
+  "excluded": [
+    ".venv",
+    "__pycache__",
+    "models",
+    "venv",
+    "*.pyc",
+    "*.pyo",
+    "symlinks"
+  ],
+  "strict_overall_status": "INCOMPLETE: perceptual voice acceptance is not certified by technical checks",
+  "publication": "No social upload, scheduling, publication or live preview deployment; manual approval required. Repository file delivery remains separately authorized."
+}

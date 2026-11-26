@@ -1,0 +1,8 @@
+{
+  "resolved_by": "Three explicit compound spelling caption-label merges",
+  "initial_error": {
+    "error": "Inspect raw ASR differences before recording caption-only transformations",
+    "raw_asr_preserved": true
+  },
+  "raw_asr_preserved": true
+}

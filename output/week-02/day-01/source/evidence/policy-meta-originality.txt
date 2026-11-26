@@ -1,0 +1,8 @@
+Rewarding Original Creators on Facebook Dismiss locale prompt
+https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/
+HTTP 200
+ResponseSHA256 daf1a21b48205f021c633d6c0f956f385037347c439376b2b771c0753fcc64cd
+
+Exact excerpt (<=25words):
+Here’s what this means in practice: Content filmed or produced directly by a creator or owner of a Profile or Page is considered original content
+

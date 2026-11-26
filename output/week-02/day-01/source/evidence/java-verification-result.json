@@ -1,0 +1,93 @@
+{
+  "spring_framework_version": "6.2.11",
+  "spring_test_version": "6.2.11",
+  "micrometer_version": "1.15.4",
+  "junit_jupiter_version": "5.12.2",
+  "junit_platform_version": "1.12.2",
+  "compiler": "ECJ3.40.0",
+  "class_file_target": "Java17",
+  "runtime": "openjdk version \"21.0.13\" 2026-10-20\nOpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)",
+  "compile_main_exit_code": 0,
+  "compile_tests_exit_code": 0,
+  "junit_exit_code": 0,
+  "compile_stderr_empty": true,
+  "junit_stderr_empty": true,
+  "application_execution": "Not performed; this lesson verifies the actual JUnit/Spring test execution.",
+  "junit_reports": [
+    {
+      "file": "build/test-results/TEST-junit-jupiter.xml",
+      "name": "JUnit Jupiter",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.233",
+      "hostname": "e24c89347a6d",
+      "timestamp": "2026-11-26T05:23:56"
+    },
+    {
+      "file": "build/test-results/TEST-junit-platform-suite.xml",
+      "name": "JUnit Platform Suite",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.002",
+      "hostname": "e24c89347a6d",
+      "timestamp": "2026-11-26T05:23:56"
+    },
+    {
+      "file": "build/test-results/TEST-junit-vintage.xml",
+      "name": "JUnit Vintage",
+      "tests": "0",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "time": "0.001",
+      "hostname": "e24c89347a6d",
+      "timestamp": "2026-11-26T05:23:56"
+    }
+  ],
+  "tests_found": 2,
+  "tests_succeeded": 2,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "proof_lines": [
+    "constructors: 1",
+    "autowired: false",
+    "gateway same: true",
+    "order result: demo-paid:2500",
+    "manual uses caller: true"
+  ],
+  "test_stdout_proof_lines": [
+    "constructors: 1",
+    "autowired: false",
+    "gateway same: true",
+    "order result: demo-paid:2500",
+    "manual uses caller: true"
+  ],
+  "source_sha256": {
+    "src/main/java/lesson/constructor/Config.java": "6a285f10f91e7620d6f5ec9471833d6ffbc9f6a9321ab9889f9cd3cf939fef24",
+    "src/main/java/lesson/constructor/DemoPaymentGateway.java": "d476ffe4c571dffd435a0deca7fe49cc65adbd616851e2bff06836a28c0ba25e",
+    "src/main/java/lesson/constructor/OrderService.java": "2ff5f46b8de7ab8a04b4d37f7708cf1252d1915c151866d8be31d538a1486efb",
+    "src/main/java/lesson/constructor/PaymentGateway.java": "182634fa154c96575360c929e1136b9b862f7bac8cd704817d98099e94ccbd07",
+    "src/test/java/lesson/constructor/ConstructorInjectionTest.java": "079f66e0b3d0525b64256e7808b34f29c5bc66521f7817038be0efcd5e7cf9ae"
+  },
+  "context_loading_mechanism": "@SpringJUnitConfig(Config.class) with SpringExtension/TestContext framework",
+  "scope": "Two real JUnit tests verify the Spring-managed OrderService has one unannotated constructor, the container resolves its only PaymentGateway candidate, the exact gateway reference is injected and service execution returns a deterministic in-memory demo result; manually created objects use caller-supplied arguments. No real payment or comprehensive application test is claimed.",
+  "constructor_count": 1,
+  "constructor_autowired_present": false,
+  "payment_gateway_candidates": 1,
+  "service_execution_result": "demo-paid:2500",
+  "verified_semantics": {
+    "implicit_single_constructor_injection": true,
+    "single_constructor_has_no_autowired_annotation": true,
+    "single_matching_payment_gateway": true,
+    "constructor_dependency_is_same_context_gateway": true,
+    "service_execution_delegates_to_demo_gateway": true,
+    "manual_objects_use_caller_supplied_gateway": true,
+    "manual_object_not_context_singleton": true,
+    "framework_owned_context_lifecycle": true,
+    "real_payment_performed": false
+  }
+}

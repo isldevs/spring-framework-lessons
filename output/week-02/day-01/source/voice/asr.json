@@ -1,0 +1,634 @@
+{
+  "model": "faster-whisper small.en int8",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.52,
+      "text": " No auto-wired, this still works.",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " No",
+          "start": 0.0,
+          "end": 0.18,
+          "probability": 0.9027316570281982
+        },
+        {
+          "word": " auto",
+          "start": 0.18,
+          "end": 0.44,
+          "probability": 0.7128658890724182
+        },
+        {
+          "word": "-wired,",
+          "start": 0.44,
+          "end": 0.76,
+          "probability": 0.8372175097465515
+        },
+        {
+          "word": " this",
+          "start": 0.82,
+          "end": 1.02,
+          "probability": 0.9915485978126526
+        },
+        {
+          "word": " still",
+          "start": 1.02,
+          "end": 1.2,
+          "probability": 0.9979982972145081
+        },
+        {
+          "word": " works.",
+          "start": 1.2,
+          "end": 1.52,
+          "probability": 0.9983192086219788
+        }
+      ]
+    },
+    {
+      "start": 1.9,
+      "end": 4.18,
+      "text": " This Spring managed service has one constructor,",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " This",
+          "start": 1.9,
+          "end": 2.0,
+          "probability": 0.9483175873756409
+        },
+        {
+          "word": " Spring",
+          "start": 2.0,
+          "end": 2.3,
+          "probability": 0.5342038869857788
+        },
+        {
+          "word": " managed",
+          "start": 2.3,
+          "end": 2.62,
+          "probability": 0.3133876919746399
+        },
+        {
+          "word": " service",
+          "start": 2.62,
+          "end": 3.08,
+          "probability": 0.9934017062187195
+        },
+        {
+          "word": " has",
+          "start": 3.08,
+          "end": 3.34,
+          "probability": 0.9959238767623901
+        },
+        {
+          "word": " one",
+          "start": 3.34,
+          "end": 3.66,
+          "probability": 0.9815893769264221
+        },
+        {
+          "word": " constructor,",
+          "start": 3.66,
+          "end": 4.18,
+          "probability": 0.9818445444107056
+        }
+      ]
+    },
+    {
+      "start": 4.72,
+      "end": 6.1,
+      "text": " Spring selects it automatically,",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 4.72,
+          "end": 4.88,
+          "probability": 0.8906188607215881
+        },
+        {
+          "word": " selects",
+          "start": 4.88,
+          "end": 5.22,
+          "probability": 0.9969655871391296
+        },
+        {
+          "word": " it",
+          "start": 5.22,
+          "end": 5.5,
+          "probability": 0.9965500831604004
+        },
+        {
+          "word": " automatically,",
+          "start": 5.5,
+          "end": 6.1,
+          "probability": 0.99610435962677
+        }
+      ]
+    },
+    {
+      "start": 6.62,
+      "end": 8.12,
+      "text": " auto-wired is optional here.",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " auto",
+          "start": 6.62,
+          "end": 6.76,
+          "probability": 0.8802018761634827
+        },
+        {
+          "word": "-wired",
+          "start": 6.76,
+          "end": 7.12,
+          "probability": 0.9866521954536438
+        },
+        {
+          "word": " is",
+          "start": 7.12,
+          "end": 7.34,
+          "probability": 0.9833196997642517
+        },
+        {
+          "word": " optional",
+          "start": 7.34,
+          "end": 7.78,
+          "probability": 0.9989892840385437
+        },
+        {
+          "word": " here.",
+          "start": 7.78,
+          "end": 8.12,
+          "probability": 0.9927281141281128
+        }
+      ]
+    },
+    {
+      "start": 8.78,
+      "end": 11.34,
+      "text": " Spring reads its parameter type, payment gateway,",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 8.78,
+          "end": 8.98,
+          "probability": 0.9931405186653137
+        },
+        {
+          "word": " reads",
+          "start": 8.98,
+          "end": 9.3,
+          "probability": 0.988717794418335
+        },
+        {
+          "word": " its",
+          "start": 9.3,
+          "end": 9.52,
+          "probability": 0.9049399495124817
+        },
+        {
+          "word": " parameter",
+          "start": 9.52,
+          "end": 9.92,
+          "probability": 0.9817402362823486
+        },
+        {
+          "word": " type,",
+          "start": 9.92,
+          "end": 10.38,
+          "probability": 0.9921817779541016
+        },
+        {
+          "word": " payment",
+          "start": 10.76,
+          "end": 10.9,
+          "probability": 0.4400269091129303
+        },
+        {
+          "word": " gateway,",
+          "start": 10.9,
+          "end": 11.34,
+          "probability": 0.6158125996589661
+        }
+      ]
+    },
+    {
+      "start": 11.7,
+      "end": 14.14,
+      "text": " in our context, one matching bean is available.",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " in",
+          "start": 11.7,
+          "end": 11.84,
+          "probability": 0.9460042119026184
+        },
+        {
+          "word": " our",
+          "start": 11.84,
+          "end": 11.96,
+          "probability": 0.9986847043037415
+        },
+        {
+          "word": " context,",
+          "start": 11.96,
+          "end": 12.44,
+          "probability": 0.9981738328933716
+        },
+        {
+          "word": " one",
+          "start": 12.7,
+          "end": 12.88,
+          "probability": 0.9798118472099304
+        },
+        {
+          "word": " matching",
+          "start": 12.88,
+          "end": 13.28,
+          "probability": 0.9934671521186829
+        },
+        {
+          "word": " bean",
+          "start": 13.28,
+          "end": 13.54,
+          "probability": 0.5350995659828186
+        },
+        {
+          "word": " is",
+          "start": 13.54,
+          "end": 13.74,
+          "probability": 0.9967381358146667
+        },
+        {
+          "word": " available.",
+          "start": 13.74,
+          "end": 14.14,
+          "probability": 0.9994595646858215
+        }
+      ]
+    },
+    {
+      "start": 14.88,
+      "end": 17.16,
+      "text": " Spring supplies that instance through the constructor,",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 14.88,
+          "end": 15.1,
+          "probability": 0.9946181178092957
+        },
+        {
+          "word": " supplies",
+          "start": 15.1,
+          "end": 15.52,
+          "probability": 0.9964902997016907
+        },
+        {
+          "word": " that",
+          "start": 15.52,
+          "end": 15.82,
+          "probability": 0.9973993301391602
+        },
+        {
+          "word": " instance",
+          "start": 15.82,
+          "end": 16.2,
+          "probability": 0.9970695376396179
+        },
+        {
+          "word": " through",
+          "start": 16.2,
+          "end": 16.5,
+          "probability": 0.993691086769104
+        },
+        {
+          "word": " the",
+          "start": 16.5,
+          "end": 16.68,
+          "probability": 0.9992192983627319
+        },
+        {
+          "word": " constructor,",
+          "start": 16.68,
+          "end": 17.16,
+          "probability": 0.9983383417129517
+        }
+      ]
+    },
+    {
+      "start": 17.56,
+      "end": 18.96,
+      "text": " the service keeps the reference.",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " the",
+          "start": 17.56,
+          "end": 17.68,
+          "probability": 0.9952633380889893
+        },
+        {
+          "word": " service",
+          "start": 17.68,
+          "end": 18.02,
+          "probability": 0.9980294108390808
+        },
+        {
+          "word": " keeps",
+          "start": 18.02,
+          "end": 18.32,
+          "probability": 0.995335042476654
+        },
+        {
+          "word": " the",
+          "start": 18.32,
+          "end": 18.56,
+          "probability": 0.998853325843811
+        },
+        {
+          "word": " reference.",
+          "start": 18.56,
+          "end": 18.96,
+          "probability": 0.9991424083709717
+        }
+      ]
+    },
+    {
+      "start": 19.52,
+      "end": 21.94,
+      "text": " Now an order calls the injected gateway,",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " Now",
+          "start": 19.52,
+          "end": 19.76,
+          "probability": 0.9983207583427429
+        },
+        {
+          "word": " an",
+          "start": 19.76,
+          "end": 19.96,
+          "probability": 0.6468754410743713
+        },
+        {
+          "word": " order",
+          "start": 19.96,
+          "end": 20.24,
+          "probability": 0.9857015609741211
+        },
+        {
+          "word": " calls",
+          "start": 20.24,
+          "end": 20.66,
+          "probability": 0.9853589534759521
+        },
+        {
+          "word": " the",
+          "start": 20.66,
+          "end": 20.92,
+          "probability": 0.9934618473052979
+        },
+        {
+          "word": " injected",
+          "start": 20.92,
+          "end": 21.4,
+          "probability": 0.9873231053352356
+        },
+        {
+          "word": " gateway,",
+          "start": 21.4,
+          "end": 21.94,
+          "probability": 0.9836897253990173
+        }
+      ]
+    },
+    {
+      "start": 22.28,
+      "end": 25.22,
+      "text": " our test checks the same instance and the returned result.",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " our",
+          "start": 22.28,
+          "end": 22.44,
+          "probability": 0.9906288981437683
+        },
+        {
+          "word": " test",
+          "start": 22.44,
+          "end": 22.7,
+          "probability": 0.9771820902824402
+        },
+        {
+          "word": " checks",
+          "start": 22.7,
+          "end": 23.02,
+          "probability": 0.9941399097442627
+        },
+        {
+          "word": " the",
+          "start": 23.02,
+          "end": 23.28,
+          "probability": 0.9951282739639282
+        },
+        {
+          "word": " same",
+          "start": 23.28,
+          "end": 23.54,
+          "probability": 0.9982991814613342
+        },
+        {
+          "word": " instance",
+          "start": 23.54,
+          "end": 23.96,
+          "probability": 0.9986951947212219
+        },
+        {
+          "word": " and",
+          "start": 23.96,
+          "end": 24.26,
+          "probability": 0.9571364521980286
+        },
+        {
+          "word": " the",
+          "start": 24.26,
+          "end": 24.38,
+          "probability": 0.9965873956680298
+        },
+        {
+          "word": " returned",
+          "start": 24.38,
+          "end": 24.74,
+          "probability": 0.9801517128944397
+        },
+        {
+          "word": " result.",
+          "start": 24.74,
+          "end": 25.22,
+          "probability": 0.997676432132721
+        }
+      ]
+    },
+    {
+      "start": 25.84,
+      "end": 27.94,
+      "text": " Creating an object with new still means",
+      "avg_logprob": -0.12287110908489142,
+      "words": [
+        {
+          "word": " Creating",
+          "start": 25.84,
+          "end": 26.1,
+          "probability": 0.9954159259796143
+        },
+        {
+          "word": " an",
+          "start": 26.1,
+          "end": 26.34,
+          "probability": 0.9977128505706787
+        },
+        {
+          "word": " object",
+          "start": 26.34,
+          "end": 26.76,
+          "probability": 0.9984151124954224
+        },
+        {
+          "word": " with",
+          "start": 26.76,
+          "end": 27.02,
+          "probability": 0.9980618357658386
+        },
+        {
+          "word": " new",
+          "start": 27.02,
+          "end": 27.28,
+          "probability": 0.9948975443840027
+        },
+        {
+          "word": " still",
+          "start": 27.28,
+          "end": 27.6,
+          "probability": 0.9437804222106934
+        },
+        {
+          "word": " means",
+          "start": 27.6,
+          "end": 27.94,
+          "probability": 0.9658474326133728
+        }
+      ]
+    },
+    {
+      "start": 27.94,
+      "end": 29.66,
+      "text": " supplying arguments yourself.",
+      "avg_logprob": -0.30895439697348553,
+      "words": [
+        {
+          "word": " supplying",
+          "start": 27.94,
+          "end": 28.58,
+          "probability": 0.9187225103378296
+        },
+        {
+          "word": " arguments",
+          "start": 28.58,
+          "end": 29.14,
+          "probability": 0.9984365105628967
+        },
+        {
+          "word": " yourself.",
+          "start": 29.14,
+          "end": 29.66,
+          "probability": 0.994201123714447
+        }
+      ]
+    },
+    {
+      "start": 30.2,
+      "end": 32.28,
+      "text": " Let Spring wire the beans it manages.",
+      "avg_logprob": -0.30895439697348553,
+      "words": [
+        {
+          "word": " Let",
+          "start": 30.2,
+          "end": 30.32,
+          "probability": 0.9751131534576416
+        },
+        {
+          "word": " Spring",
+          "start": 30.32,
+          "end": 30.64,
+          "probability": 0.04515659436583519
+        },
+        {
+          "word": " wire",
+          "start": 30.64,
+          "end": 31.0,
+          "probability": 0.8972570896148682
+        },
+        {
+          "word": " the",
+          "start": 31.0,
+          "end": 31.24,
+          "probability": 0.9982271790504456
+        },
+        {
+          "word": " beans",
+          "start": 31.24,
+          "end": 31.54,
+          "probability": 0.8018573522567749
+        },
+        {
+          "word": " it",
+          "start": 31.54,
+          "end": 31.78,
+          "probability": 0.9955649971961975
+        },
+        {
+          "word": " manages.",
+          "start": 31.78,
+          "end": 32.28,
+          "probability": 0.9915669560432434
+        }
+      ]
+    },
+    {
+      "start": 34.9,
+      "end": 35.72,
+      "text": " Thanks for watching.",
+      "avg_logprob": -0.30895439697348553,
+      "words": [
+        {
+          "word": " Thanks",
+          "start": 34.61,
+          "end": 35.08,
+          "probability": 0.9772853255271912
+        },
+        {
+          "word": " for",
+          "start": 35.08,
+          "end": 35.28,
+          "probability": 0.999022364616394
+        },
+        {
+          "word": " watching.",
+          "start": 35.28,
+          "end": 35.72,
+          "probability": 0.997041642665863
+        }
+      ]
+    }
+  ]
+}

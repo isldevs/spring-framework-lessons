@@ -1,0 +1,90 @@
+Loading Whisper small.en
+{'start': np.float64(0.0), 'end': np.float64(1.52), 'text': ' No auto-wired, this still works.', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' No', 'start': np.float64(0.0), 'end': np.float64(0.18), 'probability': np.float64(0.9027316570281982)}, {'word': ' auto', 'start': np.float64(0.18), 'end': np.float64(0.44), 'probability': np.float64(0.7128658890724182)}, {'word': '-wired,', 'start': np.float64(0.44), 'end': np.float64(0.76), 'probability': np.float64(0.8372175097465515)}, {'word': ' this', 'start': np.float64(0.82), 'end': np.float64(1.02), 'probability': np.float64(0.9915485978126526)}, {'word': ' still', 'start': np.float64(1.02), 'end': np.float64(1.2), 'probability': np.float64(0.9979982972145081)}, {'word': ' works.', 'start': np.float64(1.2), 'end': np.float64(1.52), 'probability': np.float64(0.9983192086219788)}]}
+{'start': np.float64(1.9), 'end': np.float64(4.18), 'text': ' This Spring managed service has one constructor,', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' This', 'start': np.float64(1.9), 'end': np.float64(2.0), 'probability': np.float64(0.9483175873756409)}, {'word': ' Spring', 'start': np.float64(2.0), 'end': np.float64(2.3), 'probability': np.float64(0.5342038869857788)}, {'word': ' managed', 'start': np.float64(2.3), 'end': np.float64(2.62), 'probability': np.float64(0.3133876919746399)}, {'word': ' service', 'start': np.float64(2.62), 'end': np.float64(3.08), 'probability': np.float64(0.9934017062187195)}, {'word': ' has', 'start': np.float64(3.08), 'end': np.float64(3.34), 'probability': np.float64(0.9959238767623901)}, {'word': ' one', 'start': np.float64(3.34), 'end': np.float64(3.66), 'probability': np.float64(0.9815893769264221)}, {'word': ' constructor,', 'start': np.float64(3.66), 'end': np.float64(4.18), 'probability': np.float64(0.9818445444107056)}]}
+{'start': np.float64(4.72), 'end': np.float64(6.1), 'text': ' Spring selects it automatically,', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' Spring', 'start': np.float64(4.72), 'end': np.float64(4.88), 'probability': np.float64(0.8906188607215881)}, {'word': ' selects', 'start': np.float64(4.88), 'end': np.float64(5.22), 'probability': np.float64(0.9969655871391296)}, {'word': ' it', 'start': np.float64(5.22), 'end': np.float64(5.5), 'probability': np.float64(0.9965500831604004)}, {'word': ' automatically,', 'start': np.float64(5.5), 'end': np.float64(6.1), 'probability': np.float64(0.99610435962677)}]}
+{'start': np.float64(6.62), 'end': np.float64(8.12), 'text': ' auto-wired is optional here.', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' auto', 'start': np.float64(6.62), 'end': np.float64(6.76), 'probability': np.float64(0.8802018761634827)}, {'word': '-wired', 'start': np.float64(6.76), 'end': np.float64(7.12), 'probability': np.float64(0.9866521954536438)}, {'word': ' is', 'start': np.float64(7.12), 'end': np.float64(7.34), 'probability': np.float64(0.9833196997642517)}, {'word': ' optional', 'start': np.float64(7.34), 'end': np.float64(7.78), 'probability': np.float64(0.9989892840385437)}, {'word': ' here.', 'start': np.float64(7.78), 'end': np.float64(8.12), 'probability': np.float64(0.9927281141281128)}]}
+{'start': np.float64(8.78), 'end': np.float64(11.34), 'text': ' Spring reads its parameter type, payment gateway,', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' Spring', 'start': np.float64(8.78), 'end': np.float64(8.98), 'probability': np.float64(0.9931405186653137)}, {'word': ' reads', 'start': np.float64(8.98), 'end': np.float64(9.3), 'probability': np.float64(0.988717794418335)}, {'word': ' its', 'start': np.float64(9.3), 'end': np.float64(9.52), 'probability': np.float64(0.9049399495124817)}, {'word': ' parameter', 'start': np.float64(9.52), 'end': np.float64(9.92), 'probability': np.float64(0.9817402362823486)}, {'word': ' type,', 'start': np.float64(9.92), 'end': np.float64(10.38), 'probability': np.float64(0.9921817779541016)}, {'word': ' payment', 'start': np.float64(10.76), 'end': np.float64(10.9), 'probability': np.float64(0.4400269091129303)}, {'word': ' gateway,', 'start': np.float64(10.9), 'end': np.float64(11.34), 'probability': np.float64(0.6158125996589661)}]}
+{'start': np.float64(11.7), 'end': np.float64(14.14), 'text': ' in our context, one matching bean is available.', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' in', 'start': np.float64(11.7), 'end': np.float64(11.84), 'probability': np.float64(0.9460042119026184)}, {'word': ' our', 'start': np.float64(11.84), 'end': np.float64(11.96), 'probability': np.float64(0.9986847043037415)}, {'word': ' context,', 'start': np.float64(11.96), 'end': np.float64(12.44), 'probability': np.float64(0.9981738328933716)}, {'word': ' one', 'start': np.float64(12.7), 'end': np.float64(12.88), 'probability': np.float64(0.9798118472099304)}, {'word': ' matching', 'start': np.float64(12.88), 'end': np.float64(13.28), 'probability': np.float64(0.9934671521186829)}, {'word': ' bean', 'start': np.float64(13.28), 'end': np.float64(13.54), 'probability': np.float64(0.5350995659828186)}, {'word': ' is', 'start': np.float64(13.54), 'end': np.float64(13.74), 'probability': np.float64(0.9967381358146667)}, {'word': ' available.', 'start': np.float64(13.74), 'end': np.float64(14.14), 'probability': np.float64(0.9994595646858215)}]}
+{'start': np.float64(14.88), 'end': np.float64(17.16), 'text': ' Spring supplies that instance through the constructor,', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' Spring', 'start': np.float64(14.88), 'end': np.float64(15.1), 'probability': np.float64(0.9946181178092957)}, {'word': ' supplies', 'start': np.float64(15.1), 'end': np.float64(15.52), 'probability': np.float64(0.9964902997016907)}, {'word': ' that', 'start': np.float64(15.52), 'end': np.float64(15.82), 'probability': np.float64(0.9973993301391602)}, {'word': ' instance', 'start': np.float64(15.82), 'end': np.float64(16.2), 'probability': np.float64(0.9970695376396179)}, {'word': ' through', 'start': np.float64(16.2), 'end': np.float64(16.5), 'probability': np.float64(0.993691086769104)}, {'word': ' the', 'start': np.float64(16.5), 'end': np.float64(16.68), 'probability': np.float64(0.9992192983627319)}, {'word': ' constructor,', 'start': np.float64(16.68), 'end': np.float64(17.16), 'probability': np.float64(0.9983383417129517)}]}
+{'start': np.float64(17.56), 'end': np.float64(18.96), 'text': ' the service keeps the reference.', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' the', 'start': np.float64(17.56), 'end': np.float64(17.68), 'probability': np.float64(0.9952633380889893)}, {'word': ' service', 'start': np.float64(17.68), 'end': np.float64(18.02), 'probability': np.float64(0.9980294108390808)}, {'word': ' keeps', 'start': np.float64(18.02), 'end': np.float64(18.32), 'probability': np.float64(0.995335042476654)}, {'word': ' the', 'start': np.float64(18.32), 'end': np.float64(18.56), 'probability': np.float64(0.998853325843811)}, {'word': ' reference.', 'start': np.float64(18.56), 'end': np.float64(18.96), 'probability': np.float64(0.9991424083709717)}]}
+{'start': np.float64(19.52), 'end': np.float64(21.94), 'text': ' Now an order calls the injected gateway,', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' Now', 'start': np.float64(19.52), 'end': np.float64(19.76), 'probability': np.float64(0.9983207583427429)}, {'word': ' an', 'start': np.float64(19.76), 'end': np.float64(19.96), 'probability': np.float64(0.6468754410743713)}, {'word': ' order', 'start': np.float64(19.96), 'end': np.float64(20.24), 'probability': np.float64(0.9857015609741211)}, {'word': ' calls', 'start': np.float64(20.24), 'end': np.float64(20.66), 'probability': np.float64(0.9853589534759521)}, {'word': ' the', 'start': np.float64(20.66), 'end': np.float64(20.92), 'probability': np.float64(0.9934618473052979)}, {'word': ' injected', 'start': np.float64(20.92), 'end': np.float64(21.4), 'probability': np.float64(0.9873231053352356)}, {'word': ' gateway,', 'start': np.float64(21.4), 'end': np.float64(21.94), 'probability': np.float64(0.9836897253990173)}]}
+{'start': np.float64(22.28), 'end': np.float64(25.22), 'text': ' our test checks the same instance and the returned result.', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' our', 'start': np.float64(22.28), 'end': np.float64(22.44), 'probability': np.float64(0.9906288981437683)}, {'word': ' test', 'start': np.float64(22.44), 'end': np.float64(22.7), 'probability': np.float64(0.9771820902824402)}, {'word': ' checks', 'start': np.float64(22.7), 'end': np.float64(23.02), 'probability': np.float64(0.9941399097442627)}, {'word': ' the', 'start': np.float64(23.02), 'end': np.float64(23.28), 'probability': np.float64(0.9951282739639282)}, {'word': ' same', 'start': np.float64(23.28), 'end': np.float64(23.54), 'probability': np.float64(0.9982991814613342)}, {'word': ' instance', 'start': np.float64(23.54), 'end': np.float64(23.96), 'probability': np.float64(0.9986951947212219)}, {'word': ' and', 'start': np.float64(23.96), 'end': np.float64(24.26), 'probability': np.float64(0.9571364521980286)}, {'word': ' the', 'start': np.float64(24.26), 'end': np.float64(24.38), 'probability': np.float64(0.9965873956680298)}, {'word': ' returned', 'start': np.float64(24.38), 'end': np.float64(24.74), 'probability': np.float64(0.9801517128944397)}, {'word': ' result.', 'start': np.float64(24.74), 'end': np.float64(25.22), 'probability': np.float64(0.997676432132721)}]}
+{'start': np.float64(25.84), 'end': np.float64(27.94), 'text': ' Creating an object with new still means', 'avg_logprob': -0.12287110908489142, 'words': [{'word': ' Creating', 'start': np.float64(25.84), 'end': np.float64(26.1), 'probability': np.float64(0.9954159259796143)}, {'word': ' an', 'start': np.float64(26.1), 'end': np.float64(26.34), 'probability': np.float64(0.9977128505706787)}, {'word': ' object', 'start': np.float64(26.34), 'end': np.float64(26.76), 'probability': np.float64(0.9984151124954224)}, {'word': ' with', 'start': np.float64(26.76), 'end': np.float64(27.02), 'probability': np.float64(0.9980618357658386)}, {'word': ' new', 'start': np.float64(27.02), 'end': np.float64(27.28), 'probability': np.float64(0.9948975443840027)}, {'word': ' still', 'start': np.float64(27.28), 'end': np.float64(27.6), 'probability': np.float64(0.9437804222106934)}, {'word': ' means', 'start': np.float64(27.6), 'end': np.float64(27.94), 'probability': np.float64(0.9658474326133728)}]}
+{'start': np.float64(27.94), 'end': np.float64(29.66), 'text': ' supplying arguments yourself.', 'avg_logprob': -0.30895439697348553, 'words': [{'word': ' supplying', 'start': np.float64(27.94), 'end': np.float64(28.58), 'probability': np.float64(0.9187225103378296)}, {'word': ' arguments', 'start': np.float64(28.58), 'end': np.float64(29.14), 'probability': np.float64(0.9984365105628967)}, {'word': ' yourself.', 'start': np.float64(29.14), 'end': np.float64(29.66), 'probability': np.float64(0.994201123714447)}]}
+{'start': np.float64(30.2), 'end': np.float64(32.28), 'text': ' Let Spring wire the beans it manages.', 'avg_logprob': -0.30895439697348553, 'words': [{'word': ' Let', 'start': np.float64(30.2), 'end': np.float64(30.32), 'probability': np.float64(0.9751131534576416)}, {'word': ' Spring', 'start': np.float64(30.32), 'end': np.float64(30.64), 'probability': np.float64(0.04515659436583519)}, {'word': ' wire', 'start': np.float64(30.64), 'end': np.float64(31.0), 'probability': np.float64(0.8972570896148682)}, {'word': ' the', 'start': np.float64(31.0), 'end': np.float64(31.24), 'probability': np.float64(0.9982271790504456)}, {'word': ' beans', 'start': np.float64(31.24), 'end': np.float64(31.54), 'probability': np.float64(0.8018573522567749)}, {'word': ' it', 'start': np.float64(31.54), 'end': np.float64(31.78), 'probability': np.float64(0.9955649971961975)}, {'word': ' manages.', 'start': np.float64(31.78), 'end': np.float64(32.28), 'probability': np.float64(0.9915669560432434)}]}
+{'start': 34.9, 'end': np.float64(35.72), 'text': ' Thanks for watching.', 'avg_logprob': -0.30895439697348553, 'words': [{'word': ' Thanks', 'start': np.float64(34.61), 'end': np.float64(35.08), 'probability': np.float64(0.9772853255271912)}, {'word': ' for', 'start': np.float64(35.08), 'end': np.float64(35.28), 'probability': np.float64(0.999022364616394)}, {'word': ' watching.', 'start': np.float64(35.28), 'end': np.float64(35.72), 'probability': np.float64(0.997041642665863)}]}
+{'model': 'faster-whisper small.en int8', 'narration_sha256': '55029410b326510b359fccfb0dbfd556511b35ca08feddda25e7b256f45d4e48', 'reference_words': 83, 'asr_words': 86, 'edit_distance': 6, 'normalized_word_error_rate': 0.07228915662650602, 'transcript': 'No auto-wired, this still works. This Spring managed service has one constructor, Spring selects it automatically, auto-wired is optional here. Spring reads its parameter type, payment gateway, in our context, one matching bean is available. Spring supplies that instance through the constructor, the service keeps the reference. Now an order calls the injected gateway, our test checks the same instance and the returned result. Creating an object with new still means supplying arguments yourself. Let Spring wire the beans it manages. Thanks for watching.', 'normalization': 'lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt'}
+Alignment requires review: Inspect raw ASR differences before recording caption-only transformations
+{'duration_s': 36.261916666666664, 'sample_rate': 48000, 'channels': 1, 'peak_dbfs': -1.514415166281326, 'rms_dbfs': -19.825930881870406, 'clipped_samples': 0, 'speech_above_minus60db_onset_s': 0.015020833333333334, 'speech_above_minus60db_end_s': 35.996604166666664, 'endpoint_first_sample': 0.0, 'endpoint_last_sample': 0.0}
+{'duration_s': 36.261916666666664, 'sample_rate': 48000, 'channels': 1, 'peak_dbfs': -1.514415166281326, 'rms_dbfs': -19.825930881870406, 'clipped_samples': 0, 'speech_above_minus60db_onset_s': 0.015020833333333334, 'speech_above_minus60db_end_s': 35.996604166666664, 'endpoint_first_sample': 0.0, 'endpoint_last_sample': 0.0, 'f0_voiced_frames': 2080, 'f0_10pct_hz': 88.35402348603154, 'f0_50pct_hz': 113.26491752180321, 'f0_90pct_hz': 173.77291583766723, 'f0_std_semitones': 4.633526872801391}
+{
+  "threshold_dbfs": -45,
+  "minimum_duration_s": 0.12,
+  "intervals": [
+    {
+      "start": 1.649458,
+      "end": 1.857417,
+      "duration": 0.207959
+    },
+    {
+      "start": 6.414396,
+      "end": 6.542083,
+      "duration": 0.12768699999999988
+    },
+    {
+      "start": 8.167438,
+      "end": 8.687417,
+      "duration": 0.5199789999999993
+    },
+    {
+      "start": 11.600958,
+      "end": 11.742771,
+      "duration": 0.14181299999999908
+    },
+    {
+      "start": 14.339104,
+      "end": 14.830542,
+      "duration": 0.4914379999999987
+    },
+    {
+      "start": 17.458312,
+      "end": 17.579313,
+      "duration": 0.12100099999999969
+    },
+    {
+      "start": 19.140958,
+      "end": 19.531917,
+      "duration": 0.3909589999999987
+    },
+    {
+      "start": 22.114875,
+      "end": 22.303104,
+      "duration": 0.18822899999999976
+    },
+    {
+      "start": 25.351604,
+      "end": 25.802896,
+      "duration": 0.45129200000000225
+    },
+    {
+      "start": 29.889292,
+      "end": 30.165396,
+      "duration": 0.2761040000000001
+    },
+    {
+      "start": 32.497771,
+      "end": 34.94325,
+      "duration": 2.445478999999999
+    },
+    {
+      "start": 35.888562,
+      "end": 36.261917,
+      "duration": 0.37335499999999655
+    }
+  ],
+  "longest_pre_recap_hold": {
+    "start": 8.167438,
+    "end": 8.687417,
+    "duration": 0.5199789999999993
+  }
+}

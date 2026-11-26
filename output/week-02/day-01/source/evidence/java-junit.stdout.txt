@@ -1,0 +1,27 @@
+constructors: 1
+autowired: false
+gateway same: true
+order result: demo-paid:2500
+manual uses caller: true
+╷
+├─ JUnit Platform Suite ✔
+├─ JUnit Jupiter ✔
+│  └─ ConstructorInjectionTest ✔
+│     ├─ springUsesTheOnlyConstructorWithoutAutowired() ✔
+│     └─ newUsesOnlyTheCallerSuppliedArgument() ✔
+└─ JUnit Vintage ✔
+
+Test run finished after 323 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         2 tests found           ]
+[         0 tests skipped         ]
+[         2 tests started         ]
+[         0 tests aborted         ]
+[         2 tests successful      ]
+[         0 tests failed          ]
+

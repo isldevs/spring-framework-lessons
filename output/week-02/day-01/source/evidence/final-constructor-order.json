@@ -1,0 +1,46 @@
+{
+  "anchors": {
+    "managed_service_s": 1.835125,
+    "single_constructor_s": 3.34,
+    "parameter_type_s": 10.76,
+    "candidate_resolved_s": 12.88,
+    "constructor_supplied_s": 15.1,
+    "reference_stored_s": 18.02,
+    "service_ready_s": 19.04,
+    "service_call_s": 20.24,
+    "service_result_s": 22.14,
+    "verification_s": 25.25,
+    "manual_scope_s": 27.02,
+    "recap_complete_s": 32.33
+  },
+  "managed_single_constructor_without_autowired": true,
+  "parameter_type_before_candidate_resolution": true,
+  "candidate_resolved_before_constructor_supply": true,
+  "service_ready_before_execution": true,
+  "execution_before_verified_result": true,
+  "manual_new_uses_caller_arguments": true,
+  "real_payment_performed": false,
+  "java_tests_found": 2,
+  "java_tests_succeeded": 2,
+  "java_current_sources_match_tested_hashes": true,
+  "java_raw_junit_stdout_matches_proofs": true,
+  "actual_java_proof_lines": [
+    "autowired: false",
+    "constructors: 1",
+    "gateway same: true",
+    "manual uses caller: true",
+    "order result: demo-paid:2500"
+  ],
+  "java_verified_semantics": {
+    "constructor_dependency_is_same_context_gateway": true,
+    "framework_owned_context_lifecycle": true,
+    "implicit_single_constructor_injection": true,
+    "manual_object_not_context_singleton": true,
+    "manual_objects_use_caller_supplied_gateway": true,
+    "real_payment_performed": false,
+    "service_execution_delegates_to_demo_gateway": true,
+    "single_constructor_has_no_autowired_annotation": true,
+    "single_matching_payment_gateway": true
+  },
+  "basis": "Animated edit anchors establish explanatory ordering, not measured Spring/JUnit wall-clock performance. Recorded real JUnit/Spring context execution independently verifies one unannotated constructor, one matching PaymentGateway candidate, the injected reference and deterministic in-memory service result. Manual construction uses caller-supplied arguments; arbitrary new objects are not automatically injected. No standalone app main, real payment or comprehensive application test is claimed. This media validator checks recorded execution evidence without rerunning Java."
+}

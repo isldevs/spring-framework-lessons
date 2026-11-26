@@ -1,0 +1,57 @@
+{
+  "word_distinctions": {
+    "Autowired": "ˌɔːɾoʊwˈaɪɚd",
+    "PaymentGateway": "pˈeɪmənt ɡˈeɪtweɪ",
+    "Spring-managed": "spɹˈɪŋmˈænɪdʒd",
+    "new": "nˈuː",
+    "constructor": "kənstɹˈʌktɚ",
+    "bean": "bˈiːn",
+    "injection": "ɪndʒˈɛkʃən",
+    "gateway": "ɡˈeɪtweɪ",
+    "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "No Autowired? This still works.",
+      "phonemes": "nˈoʊ ˌɔːɾoʊwˈaɪɚd? ðɪs stˈɪl wˈɜːks.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 2,
+      "text": "This Spring-managed service has one constructor. Spring selects it automatically. Autowired is optional here.",
+      "phonemes": "ðɪs spɹˈɪŋmˈænɪdʒd sˈɜːvɪs hɐz wˈʌn kənstɹˈʌktɚ. spɹˈɪŋ sᵻlˈɛkts ɪɾ ˌɔːɾəmˈæɾɪkli. ˌɔːɾoʊwˈaɪɚd ɪz ˈɑːpʃənəl hˈɪɹ.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 3,
+      "text": "Spring reads its parameter type: PaymentGateway. In our context, one matching bean is available.",
+      "phonemes": "spɹˈɪŋ ɹˈiːdz ɪts pɚɹˈæmɪɾɚ tˈaɪp: pˈeɪmənt ɡˈeɪtweɪ. ɪn ˌaʊɚ kˈɑːntɛkst, wˈʌn mˈætʃɪŋ bˈiːn ɪz ɐvˈeɪləbəl.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 4,
+      "text": "Spring supplies that instance through the constructor. The service keeps the reference.",
+      "phonemes": "spɹˈɪŋ səplˈaɪz ðæt ˈɪnstəns θɹuː ðə kənstɹˈʌktɚ. ðə sˈɜːvɪs kˈiːps ðə ɹˈɛfɹəns.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 5,
+      "text": "Now an order calls the injected gateway. Our test checks the same instance and the returned result.",
+      "phonemes": "nˈaʊ ɐn ˈɔːɹdɚ kˈɔːlz ðɪ ɪndʒˈɛktᵻd ɡˈeɪtweɪ. ˌaʊɚ tˈɛst tʃˈɛks ðə sˈeɪm ˈɪnstəns ænd ðə ɹᵻtˈɜːnd ɹɪzˈʌlt.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 6,
+      "text": "Creating an object with new still means supplying arguments yourself. Let Spring wire the beans it manages.",
+      "phonemes": "kɹiːˈeɪɾɪŋ ɐn ˈɑːbdʒɛkt wɪð nˈuː stˈɪl mˈiːnz səplˈaɪɪŋ ˈɑːɹɡjuːmənts jɔːɹsˈɛlf. lˈɛt spɹˈɪŋ wˈaɪɚ ðə bˈiːnz ɪt mˈænɪdʒᵻz.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 7,
+      "text": "Thanks for watching.",
+      "phonemes": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ.",
+      "inference_batches": 1
+    }
+  ]
+}

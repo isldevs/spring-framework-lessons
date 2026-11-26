@@ -1,0 +1,1 @@
+constructor injection, Spring Framework, dependency injection, Autowired, single constructor, OrderService, PaymentGateway, Spring beans, Java, Spring IoC, JUnit 5, iSLDevs
