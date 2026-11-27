@@ -1,0 +1,34 @@
+{
+  "needed": false,
+  "reason": "Full-stream narration and outro have observed spans. One compound spelling and one An/and difference need known-input caption labels; no additional recognition was run.",
+  "script_alignment_transformations": [
+    {
+      "raw_token_start": 13,
+      "raw_token_end": 15,
+      "observed_tokens": [
+        "payment",
+        "gateway"
+      ],
+      "script_tokens": [
+        "paymentgateway"
+      ],
+      "start": 3.7,
+      "end": 4.4,
+      "reason": "CamelCase class label: two observed payment/gateway spans map to scripted PaymentGateway; no unheard timing span is created."
+    },
+    {
+      "raw_token_start": 25,
+      "raw_token_end": 26,
+      "observed_tokens": [
+        "and"
+      ],
+      "script_tokens": [
+        "an"
+      ],
+      "start": 9.4,
+      "end": 9.82,
+      "reason": "Known synthesis input says An unrelated, while raw recognition says and unrelated. Reuse the observed token span for the scripted caption only; pronunciation remains unverified and raw error remains in the score."
+    }
+  ],
+  "raw_asr_score_unchanged": true
+}

@@ -1,0 +1,11 @@
+A matching type is only part of the story. ☕
+
+OrderService needs a PaymentGateway. In this Spring context, two beans match that type, but the backup is excluded from autowiring. Spring supplies the one eligible gateway through the constructor. A logger named gateway cannot satisfy that required type.
+
+Three real tests check the injected reference and reproduce startup failure when the required candidate is missing or the only match is ineligible.
+
+This is a simplified example. Qualifiers, primary settings and other rules can also affect what Spring selects.
+
+Narration is AI-generated.
+
+#DependencyInjection #SpringFramework #SpringBeans #Java #ConstructorInjection #JavaDevelopers #iSLDevs

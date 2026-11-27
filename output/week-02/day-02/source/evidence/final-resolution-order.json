@@ -1,0 +1,90 @@
+{
+  "anchors": {
+    "required_type_s": 3.7,
+    "dependency_descriptor_s": 5.02,
+    "compatible_candidates_s": 8.24,
+    "unrelated_excluded_s": 9.82,
+    "eligibility_filter_s": 13.54,
+    "selected_candidate_s": 15.14,
+    "constructor_supplied_s": 17.48,
+    "reference_stored_s": 19.48,
+    "no_eligible_candidate_s": 20.88,
+    "startup_failure_s": 23.66,
+    "verification_s": 26.22,
+    "selection_scope_s": 27.72,
+    "recap_match_s": 31.96,
+    "recap_filter_s": 32.24,
+    "recap_inject_s": 32.72,
+    "recap_complete_s": 33.09
+  },
+  "required_type_before_compatible_discovery": true,
+  "compatible_candidates_before_eligibility_filter": true,
+  "one_eligible_candidate_before_constructor_supply": true,
+  "constructor_supply_before_stored_reference": true,
+  "missing_eligible_candidate_before_startup_failure": true,
+  "ready_service_reference_marked_without_business_execution": true,
+  "real_payment_performed": false,
+  "java_tests_found": 3,
+  "java_tests_succeeded": 3,
+  "java_current_sources_match_tested_hashes": true,
+  "java_raw_junit_stdout_matches_proofs": true,
+  "actual_java_proof_lines": [
+    "compatible candidates: 2",
+    "disabled candidate missing: true",
+    "disabled compatible candidates: 1",
+    "disabled eligible candidates: 0",
+    "eligible candidates: 1",
+    "gateway same: true",
+    "missing candidate: true",
+    "missing exception: NoSuchBeanDefinitionException",
+    "missing startup exception: UnsatisfiedDependencyException",
+    "unrelated ignored: true"
+  ],
+  "actual_runtime_trace": {
+    "observer": "TracingBeanFactory subclass delegates all decisions to Spring",
+    "spring_framework_version": "6.2.11",
+    "events": [
+      "resolveDependency: PaymentGateway",
+      "compatible types: [eligibleGateway, backupGateway]",
+      "isAutowireCandidate eligibleGateway: true",
+      "isAutowireCandidate backupGateway: false",
+      "eligible candidates: [eligibleGateway]"
+    ],
+    "scope": "Actual successful PaymentGateway constructor dependency; not a universal resolution sequence or timing benchmark."
+  },
+  "java_verified_semantics": {
+    "autowire_disabled_candidate_filtered": true,
+    "compatible_type_candidates_discovered": true,
+    "matching_disabled_bean_is_not_eligible": true,
+    "missing_required_candidate_fails_startup": true,
+    "one_eligible_gateway_injected_by_reference": true,
+    "real_payment_performed": false,
+    "unrelated_named_bean_ignored_for_required_type": true
+  },
+  "framework_version": "6.2.11",
+  "framework_source_hashes_checked": {
+    "DefaultListableBeanFactory.java": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+    "AutowiredAnnotationBeanPostProcessor.java": "ed59d1865a485629b8067a5f80b0822cf127829de4a08c5476eb904188274c25",
+    "AutowireCandidateResolver.java": "86ff8add8567d6c83eff921f49c377ae400a5226e7aea31a2e8a6f727da0f4e7",
+    "SimpleAutowireCandidateResolver.java": "b7ffd2ce6a715675f38cdf081180e73fe226dcb70c83a07e8e7599ec0d691afd",
+    "GenericTypeAwareAutowireCandidateResolver.java": "3f56b091a42d41701f2e07e9a60b8368edd2d0419e8181256c0545010fe59a2f",
+    "QualifierAnnotationAutowireCandidateResolver.java": "cfba5373e8921668097591bea131d159a9c4c74cc6028e97be4e57a3eb0caf45"
+  },
+  "source_inspection_and_documentation_provenance": {
+    "framework_source_jar_sha256": "f5fcf8046c9f5e0ef7cd183d2ac6b0e5d23cd7f27c174234243c71a5e6399c75",
+    "framework_source_hashes_checked": {
+      "DefaultListableBeanFactory.java": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "AutowiredAnnotationBeanPostProcessor.java": "ed59d1865a485629b8067a5f80b0822cf127829de4a08c5476eb904188274c25",
+      "AutowireCandidateResolver.java": "86ff8add8567d6c83eff921f49c377ae400a5226e7aea31a2e8a6f727da0f4e7",
+      "SimpleAutowireCandidateResolver.java": "b7ffd2ce6a715675f38cdf081180e73fe226dcb70c83a07e8e7599ec0d691afd",
+      "GenericTypeAwareAutowireCandidateResolver.java": "3f56b091a42d41701f2e07e9a60b8368edd2d0419e8181256c0545010fe59a2f",
+      "QualifierAnnotationAutowireCandidateResolver.java": "cfba5373e8921668097591bea131d159a9c4c74cc6028e97be4e57a3eb0caf45"
+    },
+    "framework_verbatim_excerpts_checked": 13,
+    "official_spring_pages_hash_checked": 6,
+    "official_spring_claims_verbatim_checked": 7,
+    "policy_retained_excerpt_records_consistent": 6,
+    "policy_check_scope": "Fetched metadata and short retained excerpts are internally consistent. Full policy responses were not retained; response hashes are fetch-time evidence, not recomputed here. No platform approval is implied."
+  },
+  "basis": "Animated edit anchors establish explanatory ordering, not measured Spring/JUnit wall-clock performance. Three recorded actual JUnit/Spring context tests independently verify two compatible types, one eligible candidate, unrelated same-named bean exclusion, exact constructor reference and two required-candidate startup failures. The actual observer delegates all selection decisions to Spring. The simplified sequence is specific to this dependency; Spring6.2.11 also has shortcut and name-related paths, and qualifier/primary rules can affect selection. No standalone app main, business execution, real payment, comprehensive application test, universal type-first sequence or resolution performance is claimed. This media validator checks recorded execution/source evidence without rerunning Java."
+}

@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-11-27T05:45:14.001991+00:00",
+  "narration_sha256": "1ddc31b7429c55f54cc144f2d0ed0c7c42660d56f24f73c23058cfc345869d90",
+  "input_script_sha256": "c2fb69a0a76b71c4d6ddbe7f167af98c3cace4860e53dff7e3d7d5145f2c1241",
+  "model_file_hashes": {
+    "kokoro-v1.0.onnx": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
+    "voices-v1.0.bin": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d"
+  },
+  "style_vector_hashes": {
+    "am_puck": "fcf73c989033e9233e0b98713eca600c8c74dcc1614b37009d5450ff4a2274a0",
+    "am_fenrir": "c27989f741f7ee34d273a39d8a595cc0837d35f5ced9a29b7cc162614616df43"
+  },
+  "voice_blend": {
+    "am_puck": 0.8,
+    "am_fenrir": 0.2
+  },
+  "model_name": "Kokoro-82M v1.0 ONNX float32",
+  "male_english_voice_listing": "licenses/Kokoro-82M-voices.md: am_puck and am_fenrir American male",
+  "license_scope": "Kokoro model/style-bank Apache-2.0 per model card; kokoro-onnx MIT. No individual voice sample or external music asset is embedded. Voice output is synthetic.",
+  "license_snapshots_sha256": {
+    "licenses/Kokoro-82M-model-card.md": "91dcabced89db6f109b8786642f50402d3ee87450e8189589b6f85520e7f4d78",
+    "licenses/Kokoro-82M-voices.md": "ec7e4941ad7e194af61e3455928528a9ff5360c7c505e412efab27d6a69ea106",
+    "licenses/Kokoro-LICENSE.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/Whisper-LICENSE.txt": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+    "licenses/faster-whisper-LICENSE.txt": "af6798135e729f8aa6c853936d037dfdea449734d26b8ea6a89805fca758c0d5",
+    "licenses/faster-whisper-small.en-model-card.md": "c87ff776137c2ecb30ee3b324b4cf5f38abf9423464613641ee45430bf580851",
+    "licenses/kokoro-onnx-LICENSE.txt": "f61fdd0217de9ece8fa699912848d91187d84879fc2e689f0906d0c1299e955e",
+    "licenses/kokoro-onnx-README.md": "26c1abe64de52f1c22fe17e95b45c5aa3767604ab704ee851994d22c7c4e6582",
+    "licenses/model-release.json": "2d2e1b3b4afdaa332439b930597fef6faf464a6776ec203872ba8408406bf7ad"
+  },
+  "package_versions": {
+    "kokoro-onnx": "0.6.1",
+    "onnxruntime": "1.31.1",
+    "numpy": "2.5.4",
+    "soundfile": "0.14.0",
+    "scipy": "1.18.1",
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.9.0",
+    "librosa": "1.0.1",
+    "phonemizer": "3.6.0",
+    "espeakng-loader": "0.2.4"
+  },
+  "inference_settings": {
+    "speed": 1.02,
+    "hook_speed": 1.02,
+    "sentence_pause": 0.18,
+    "clause_pause": 0.045,
+    "one_batch_per_scene": true,
+    "ordinary_edit_joins_seconds": 0.08,
+    "recap_hold_seconds": 2.0,
+    "ending_tail_seconds": 0.25,
+    "phoneme_overrides": false,
+    "time_stretch_or_pitch_shift": false
+  },
+  "listening_review": {
+    "performed": false,
+    "naturalness": "UNVERIFIED",
+    "pronunciation": "UNVERIFIED",
+    "perceived_age": "UNVERIFIED",
+    "reason": "No audio listening/ingestion tool is available to this production agent. Signal, G2P and recognition checks cannot establish subjective acceptance."
+  },
+  "asr_model": {
+    "repo_id": "Systran/faster-whisper-small.en",
+    "revision": "d1d751a5f8271d482d14ca55d9e2deeebbae577f",
+    "files": {
+      "config.json": "666a9605530ac1f61fa8177f3702b4dacec9966749e42610839fcc32661d5fae",
+      "model.bin": "62b2a45b05ee59acb4a5341b33ee35e041395d378d418a18acfe4c9e768ee37a",
+      "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df",
+      "vocabulary.txt": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+    },
+    "usage": "Independent unprompted English recognition only. Does not determine narration naturalness or subjective acceptance."
+  },
+  "software_licenses": {
+    "kokoro-onnx": "MIT",
+    "Kokoro-82M_and_voice_style_bank": "Apache-2.0",
+    "faster-whisper": "MIT",
+    "Whisper_model": "MIT",
+    "NumPy": "BSD-3-Clause",
+    "SciPy": "BSD-3-Clause",
+    "soundfile": "BSD-3-Clause",
+    "ONNX Runtime": "MIT",
+    "librosa": "ISC",
+    "eSpeak NG phonemizer": "GPL-3.0; runtime production tool, not embedded audio asset"
+  }
+}

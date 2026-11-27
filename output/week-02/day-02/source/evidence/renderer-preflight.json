@@ -1,0 +1,15 @@
+{
+  "samples": 224,
+  "unique_text_bounds": 223,
+  "safe_area": [
+    90,
+    250,
+    990,
+    1520
+  ],
+  "violations": [],
+  "caption_layouts": 208,
+  "source_cover_frame0_exact": true,
+  "headline_roi_stable_first_second": true,
+  "passed": true
+}

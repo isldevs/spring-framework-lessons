@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-11-27T05:47:38.827681+00:00",
+  "records": [
+    {
+      "file": "licenses/Kokoro-82M-model-card.md",
+      "source_url": "https://huggingface.co/hexgrad/Kokoro-82M/raw/main/README.md",
+      "sha256": "91dcabced89db6f109b8786642f50402d3ee87450e8189589b6f85520e7f4d78",
+      "evidence_origin": "Reused retained upstream license/card snapshot from prior local Kokoro environment; current model/style bytes verified against retained hashes, no new HTTP fetch claimed"
+    },
+    {
+      "file": "licenses/Kokoro-82M-voices.md",
+      "source_url": "https://huggingface.co/hexgrad/Kokoro-82M/raw/main/VOICES.md",
+      "sha256": "ec7e4941ad7e194af61e3455928528a9ff5360c7c505e412efab27d6a69ea106",
+      "evidence_origin": "Reused retained upstream license/card snapshot from prior local Kokoro environment; current model/style bytes verified against retained hashes, no new HTTP fetch claimed"
+    },
+    {
+      "file": "licenses/Kokoro-LICENSE.txt",
+      "source_url": "https://huggingface.co/hexgrad/Kokoro-82M/raw/main/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "evidence_origin": "Reused retained upstream license/card snapshot from prior local Kokoro environment; current model/style bytes verified against retained hashes, no new HTTP fetch claimed"
+    },
+    {
+      "file": "licenses/kokoro-onnx-LICENSE.txt",
+      "source_url": "https://raw.githubusercontent.com/thewh1teagle/kokoro-onnx/main/LICENSE",
+      "sha256": "f61fdd0217de9ece8fa699912848d91187d84879fc2e689f0906d0c1299e955e",
+      "evidence_origin": "Reused retained upstream license/card snapshot from prior local Kokoro environment; current model/style bytes verified against retained hashes, no new HTTP fetch claimed"
+    },
+    {
+      "file": "licenses/kokoro-onnx-README.md",
+      "source_url": "https://raw.githubusercontent.com/thewh1teagle/kokoro-onnx/main/README.md",
+      "sha256": "26c1abe64de52f1c22fe17e95b45c5aa3767604ab704ee851994d22c7c4e6582",
+      "evidence_origin": "Reused retained upstream license/card snapshot from prior local Kokoro environment; current model/style bytes verified against retained hashes, no new HTTP fetch claimed"
+    },
+    {
+      "file": "licenses/model-release.json",
+      "source_url": "https://api.github.com/repos/thewh1teagle/kokoro-onnx/releases/197246951",
+      "sha256": "2d2e1b3b4afdaa332439b930597fef6faf464a6776ec203872ba8408406bf7ad",
+      "evidence_origin": "Reused retained upstream license/card snapshot from prior local Kokoro environment; current model/style bytes verified against retained hashes, no new HTTP fetch claimed"
+    },
+    {
+      "file": "licenses/Whisper-LICENSE.txt",
+      "source_url": "https://raw.githubusercontent.com/openai/whisper/main/LICENSE",
+      "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+      "evidence_origin": "Downloaded successfully during this lesson with curl -fL; exit0"
+    },
+    {
+      "file": "licenses/faster-whisper-LICENSE.txt",
+      "source_url": "https://raw.githubusercontent.com/SYSTRAN/faster-whisper/master/LICENSE",
+      "sha256": "af6798135e729f8aa6c853936d037dfdea449734d26b8ea6a89805fca758c0d5",
+      "evidence_origin": "Downloaded successfully during this lesson with curl -fL; exit0"
+    },
+    {
+      "file": "licenses/faster-whisper-small.en-model-card.md",
+      "source_url": "https://huggingface.co/Systran/faster-whisper-small.en/raw/d1d751a5f8271d482d14ca55d9e2deeebbae577f/README.md",
+      "sha256": "c87ff776137c2ecb30ee3b324b4cf5f38abf9423464613641ee45430bf580851",
+      "evidence_origin": "Downloaded successfully during this lesson with curl -fL; exit0"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+synth 0 How does Spring know what to inject? speed 1.02
+single scene batch; phonemes 38
+duration 1.6041666666666667 total 1.6841666666666668 phoneme timings 0
+synth 1 The order service constructor requests a PaymentGateway. Spring reads that dependency. speed 1.02
+single scene batch; phonemes 91
+duration 5.154375 total 6.918541666666667 phoneme timings 0
+synth 2 The bean factory finds compatible types. An unrelated logger won't match. Matching beans must also be eligible. speed 1.02
+single scene batch; phonemes 125
+duration 7.6655 total 14.664041666666666 phoneme timings 0
+synth 3 Here, one eligible gateway remains. Spring supplies its instance to the constructor. speed 1.02
+single scene batch; phonemes 88
+duration 5.256958333333333 total 20.000999999999998 phoneme timings 0
+synth 4 Without an eligible candidate, this required constructor dependency stops context startup. speed 1.02
+single scene batch; phonemes 102
+duration 5.742083333333333 total 25.82308333333333 phoneme timings 0
+synth 5 Our tests verify both outcomes. Qualifiers and primary settings can also affect selection. Match, filter, inject. speed 1.02
+single scene batch; phonemes 127
+duration 7.854125 total 35.677208333333326 phoneme timings 0
+synth 6 Thanks for watching. speed 1.02
+single scene batch; phonemes 21
+duration 1.09075 total 37.017958333333326 phoneme timings 0
+{
+  "sample_rate": 48000,
+  "voice": "am_puck80_fenrir20",
+  "voice_blend": {
+    "am_puck": 0.8,
+    "am_fenrir": 0.2
+  },
+  "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
+  "speed": 1.02,
+  "hook_speed": 1.02,
+  "inference_speed_per_scene": {
+    "1": 1.02,
+    "2": 1.02,
+    "3": 1.02,
+    "4": 1.02,
+    "5": 1.02,
+    "6": 1.02,
+    "7": 1.02
+  },
+  "one_inference_batch_per_scene": true,
+  "regenerated_scene_only": null,
+  "regenerated_scenes": [],
+  "reused_scene_segments": [],
+  "recap_hold_seconds": 2.0,
+  "recap_hold_start": 33.677208,
+  "recap_hold_end": 35.677208,
+  "thanks_start": 35.677208,
+  "thanks_end": 37.017958,
+  "duration": 37.01795833333333,
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 1.684167
+    },
+    {
+      "scene": 2,
+      "start": 1.684167,
+      "end": 6.918542
+    },
+    {
+      "scene": 3,
+      "start": 6.918542,
+      "end": 14.664042
+    },
+    {
+      "scene": 4,
+      "start": 14.664042,
+      "end": 20.001
+    },
+    {
+      "scene": 5,
+      "start": 20.001,
+      "end": 25.823083
+    },
+    {
+      "scene": 6,
+      "start": 25.823083,
+      "end": 35.677208
+    },
+    {
+      "scene": 7,
+      "start": 35.677208,
+      "end": 37.017958
+    }
+  ],
+  "phrases": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 1.604167,
+      "text": "How does Spring know what to inject?"
+    },
+    {
+      "scene": 2,
+      "start": 1.684167,
+      "end": 6.838542,
+      "text": "The order service constructor requests a PaymentGateway. Spring reads that dependency."
+    },
+    {
+      "scene": 3,
+      "start": 6.918542,
+      "end": 14.584042,
+      "text": "The bean factory finds compatible types. An unrelated logger won't match. Matching beans must also be eligible."
+    },
+    {
+      "scene": 4,
+      "start": 14.664042,
+      "end": 19.921,
+      "text": "Here, one eligible gateway remains. Spring supplies its instance to the constructor."
+    },
+    {
+      "scene": 5,
+      "start": 20.001,
+      "end": 25.743083,
+      "text": "Without an eligible candidate, this required constructor dependency stops context startup."
+    },
+    {
+      "scene": 6,
+      "start": 25.823083,
+      "end": 33.677208,
+      "text": "Our tests verify both outcomes. Qualifiers and primary settings can also affect selection. Match, filter, inject."
+    },
+    {
+      "scene": 7,
+      "start": 35.677208,
+      "end": 36.767958,
+      "text": "Thanks for watching."
+    }
+  ],
+  "captions": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 1.604167,
+      "text": "How does Spring know what to inject?"
+    },
+    {
+      "scene": 2,
+      "start": 1.684167,
+      "end": 6.838542,
+      "text": "The order service constructor requests a PaymentGateway. Spring reads that dependency."
+    },
+    {
+      "scene": 3,
+      "start": 6.918542,
+      "end": 14.584042,
+      "text": "The bean factory finds compatible types. An unrelated logger won't match. Matching beans must also be eligible."
+    },
+    {
+      "scene": 4,
+      "start": 14.664042,
+      "end": 19.921,
+      "text": "Here, one eligible gateway remains. Spring supplies its instance to the constructor."
+    },
+    {
+      "scene": 5,
+      "start": 20.001,
+      "end": 25.743083,
+      "text": "Without an eligible candidate, this required constructor dependency stops context startup."
+    },
+    {
+      "scene": 6,
+      "start": 25.823083,
+      "end": 33.677208,
+      "text": "Our tests verify both outcomes. Qualifiers and primary settings can also affect selection. Match, filter, inject."
+    },
+    {
+      "scene": 7,
+      "start": 35.677208,
+      "end": 36.767958,
+      "text": "Thanks for watching."
+    }
+  ],
+  "caption_method": "Scene utterance boundaries are exact synthesis edit points. Shorter display captions will use independent ASR word timing."
+}

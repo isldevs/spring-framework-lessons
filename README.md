@@ -2,6 +2,24 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## Dependency resolution
+
+Approved topic **Dependency resolution**, publication **2026-11-24**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Actual narrated candidate **37.033333 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC 48 kHz**, **Rec.709 SDR**,2222frames. No approved curriculum date or sequence was changed.
+
+The Inter Black900/104px cover reads How Spring / Finds Your / Dependencies with only Dependencies highlighted in rounded#0866FFblue. Source frame0 equals cover.png; the full headline stays stable0–1s with immediate speech and type-request motion. The constructor card moves into the explanation1–2s. Actual encoded frame0/source SSIM0.998942; no lossy pixel-identity claim. Eighteen measured52pxInterBold captions use white text and rounded82%black panels.
+
+- [Rendered MP4](output/week-02/day-02/video.mp4) · [Complete ZIP](output/week-02/day-02-production.zip)
+- [Cover](output/week-02/day-02/cover.png) · [Actual first frame](output/week-02/day-02/first-frame.png) · [Opening/crop QA](output/week-02/day-02/qa/)
+- [Thumbnail settings](output/week-02/day-02/thumbnail-style.json) · [Caption settings](output/week-02/day-02/subtitle-style.json) · [SRT](output/week-02/day-02/subtitles.srt)
+- [Narration](output/week-02/day-02/narration.wav) · [Script](output/week-02/day-02/narration-script.md) · [Storyboard](output/week-02/day-02/storyboard.md)
+- [YouTube metadata](output/week-02/day-02/youtube-metadata.md) · [Facebook metadata](output/week-02/day-02/facebook-metadata.md)
+- [YouTube package](output/week-02/day-02-youtube-shorts-upload.zip) · [Facebook package](output/week-02/day-02-facebook-reels-upload.zip)
+- [Rights](output/week-02/day-02/asset-rights.md) · [Originality](output/week-02/day-02/originality-review.md) · [Policy/manual review](output/week-02/day-02/platform-policy-review.md)
+- [Verification](output/week-02/day-02/verification-report.md) · [Checksums](output/week-02/day-02/checksums.sha256) · [Sources](output/week-02/day-02/source/README.md)
+- [Prepared unpublished player files](output/week-02/day-02/qa/mobile-player/dist/)
+
+**3/3 real Spring/JUnit tests passed**: two compatible registered gateway types filter to one eligible constructor candidate; an unrelated same-named logger is excluded; missing and disabled-only candidate contexts fail as asserted. Two expected refresh warnings are retained. Exact Spring6.2.11 sources confirm this simplified example without claiming a universal type-first/name-only algorithm. Master and both packages passed technical probe/decode/hash checks. The complete flow holds two seconds before Thanks. **Production remains incomplete for perceptual voice acceptance**; no listening, browser or physical-phone approval is claimed. The mobile player is prepared locally, unpublished pending manual approval. No social upload, scheduling or cover selection occurred.
+
 ## Constructor injection
 
 Approved topic **Constructor injection**, publication **2026-11-23**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). The actual narrated candidate is **36.266667 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC 48 kHz**, **Rec.709 SDR**,2176frames.

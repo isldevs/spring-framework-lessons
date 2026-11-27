@@ -1,0 +1,18 @@
+How does Spring know what to inject into a constructor?
+
+This Spring-managed OrderService requests PaymentGateway. In our example, the bean factory discovers two compatible beans, filters out a backup marked autowireCandidate=false, and supplies the remaining eligible gateway. The backup is still a registered bean; it is simply excluded from autowiring. An unrelated logger named gateway does not match the required type.
+
+Three real JUnit tests verify the exact injected reference, a missing-type startup failure, and a startup failure when the only matching bean is ineligible. The failures produce UnsatisfiedDependencyException with NoSuchBeanDefinitionException as the root cause.
+
+This is a simplified, verified resolution path. Qualifiers, primary settings, injection-point names and other rules can also affect selection. Spring does not always resolve dependencies solely by name or solely by type.
+
+Verified with Spring Framework 6.2.11 and JUnit 5.12.2. No real payment is processed.
+
+Narration is AI-generated.
+
+Official Spring references:
+https://docs.spring.io/spring-framework/reference/6.2/core/beans/dependencies/factory-collaborators.html
+https://docs.spring.io/spring-framework/reference/6.2/core/beans/annotation-config/autowired-qualifiers.html
+https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/support/DefaultListableBeanFactory.html
+
+#DependencyInjection #SpringFramework #SpringBeans #Java #ConstructorInjection #Shorts #iSLDevs

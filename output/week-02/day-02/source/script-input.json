@@ -1,0 +1,24 @@
+{
+  "approved_topic": "Dependency resolution",
+  "theme": "Dependency Injection",
+  "curriculum": {
+    "week": 2,
+    "total_weeks": 78,
+    "day": 2,
+    "weekday": "Tuesday"
+  },
+  "approved_publication_date": "2026-11-24",
+  "proposed_publish_time": "19:00 Asia/Phnom_Penh",
+  "phrases": [
+    "How does Spring know what to inject?",
+    "The order service constructor requests a PaymentGateway. Spring reads that dependency.",
+    "The bean factory finds compatible types. An unrelated logger won't match. Matching beans must also be eligible.",
+    "Here, one eligible gateway remains. Spring supplies its instance to the constructor.",
+    "Without an eligible candidate, this required constructor dependency stops context startup.",
+    "Our tests verify both outcomes. Qualifiers and primary settings can also affect selection. Match, filter, inject.",
+    "Thanks for watching."
+  ],
+  "mandatory_hook": "How does Spring know what to inject?",
+  "opening": "Full How Spring / Finds Your / Dependencies cover in sourceframe0; stable headline0\u20131withtechnicalmotion;purposeful1\u20132transition;separatefullhookcaption.",
+  "semantic_scope": "Simplified demonstrated single-valued required constructor path: compatible registeredtypes theneligiblecandidates,uniqueeligibleGatewayinjected;unrelatedAuditLoggerignored,autowireCandidate=falsematchingbackupnotinjected;freshmissingcandidatecontextfailsstartup. Qualifiers/primary/name shortcuts and other paths can matter;notuniversaltype-only/name-only/orderclaim."
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "ffmpeg",
+    "-y",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-ss",
+    "8.290000000000001",
+    "-i",
+    "/workspace/spring-framework-lessons/output/week-02/day-02/video.mp4",
+    "-frames:v",
+    "1",
+    "/workspace/spring-framework-lessons/output/week-02/day-02/source/evidence/final-anchor-compatible_candidates_s.png"
+  ],
+  "exit_code": 0
+}

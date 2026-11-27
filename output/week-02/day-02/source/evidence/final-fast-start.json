@@ -1,0 +1,27 @@
+{
+  "top_level_atoms": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "bytes": 32
+    },
+    {
+      "type": "moov",
+      "offset": 32,
+      "bytes": 60447
+    },
+    {
+      "type": "free",
+      "offset": 60479,
+      "bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 60487,
+      "bytes": 2150152
+    }
+  ],
+  "moov_before_mdat": true,
+  "moov_offset": 32,
+  "first_mdat_offset": 60487
+}

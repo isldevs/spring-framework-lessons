@@ -1,0 +1,38 @@
+{
+  "captions": 18,
+  "max_characters": 40,
+  "cue_word_min": 3,
+  "cue_word_max": 7,
+  "duration": 37.01795833333333,
+  "scene_cues_absolute": {
+    "required": {
+      "parameter": 3.7,
+      "descriptor": 5.02
+    },
+    "discovery": {
+      "types": 8.24,
+      "unrelated": 9.82,
+      "eligibility": 13.54
+    },
+    "selection": {
+      "unique": 15.14,
+      "supply": 17.48,
+      "stored": 19.48
+    },
+    "missing": {
+      "no_candidate": 20.88,
+      "failure": 23.66
+    },
+    "recap": {
+      "verify": 26.22,
+      "scope": 27.72,
+      "match": 31.96,
+      "filter": 32.24,
+      "inject": 32.72,
+      "complete": 33.09
+    }
+  },
+  "recap_hold_start": 33.677208,
+  "recap_hold_end": 35.677208,
+  "hook_utterance_end": 1.604167
+}

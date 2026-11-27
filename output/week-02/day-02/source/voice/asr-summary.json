@@ -1,0 +1,10 @@
+{
+  "model": "faster-whisper small.en int8",
+  "narration_sha256": "1ddc31b7429c55f54cc144f2d0ed0c7c42660d56f24f73c23058cfc345869d90",
+  "reference_words": 77,
+  "asr_words": 78,
+  "edit_distance": 3,
+  "normalized_word_error_rate": 0.03896103896103896,
+  "transcript": "How does Spring know what to inject? The order service constructor requests a payment gateway. Spring reads that dependency. The bean factory finds compatible types and unrelated logger won't match. Matching beans must also be eligible. Here, one eligible gateway remains. Spring supplies its instance to the constructor. Without an eligible candidate, this required constructor dependency stops context startup. Our tests verify both outcomes. Qualifiers and primary settings can also affect selection. Match, filter, inject. Thanks for watching.",
+  "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
+}

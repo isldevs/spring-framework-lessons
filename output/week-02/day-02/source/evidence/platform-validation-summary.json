@@ -1,0 +1,94 @@
+{
+  "master_sha256": "6d02917cfc303376091b2b2f78604b1544d28a289dbdefe61745dc9263c3341e",
+  "results": [
+    {
+      "platform": "youtube-shorts",
+      "path": "platforms/youtube-shorts/youtube-shorts.mp4",
+      "sha256": "6d02917cfc303376091b2b2f78604b1544d28a289dbdefe61745dc9263c3341e",
+      "byte_identical_to_master": true,
+      "duration_s": 37.033333,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "decoded_frames": 2222,
+      "video_codec": "h264",
+      "video_profile": "High",
+      "audio_codec": "aac",
+      "color_space": "bt709",
+      "color_transfer": "bt709",
+      "color_primaries": "bt709",
+      "color_range": "tv",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "full_decode_exit_code": 0,
+      "full_decode_stderr_empty": true,
+      "copied_assets": {
+        "cover.png": "8d702c845a73a2c10d82075c1f5bbfdf659356029e4308a60711c5915d0b0972",
+        "first-frame.png": "7954c0f86acc095293ad62023897ee81aed5215e2606fc65a7997ecfe8994839",
+        "subtitles.srt": "ab851b0ec6cb7d84cae6aad4f22bf57333bd509ebb0fa1584b1af2b153286592",
+        "thumbnail-style.json": "11c504cdb8906741232299e8caea9340847174cf2ca55dcef2efd8bbc729e1b5",
+        "subtitle-style.json": "d106acf4b6cba875324a84c0ac35f03845f137bd5c56c132a90a6155be8aa06f",
+        "platform-policy-review.md": "7f2e129f5eed8c6665931144462ec308caf78a541acf410e8446a71fbc8cd79d"
+      },
+      "cover_dimensions": [
+        1080,
+        1920
+      ],
+      "first_frame_dimensions": [
+        1080,
+        1920
+      ],
+      "subtitle_cues": 18,
+      "technical_result": "PASS"
+    },
+    {
+      "platform": "facebook-reels",
+      "path": "platforms/facebook-reels/facebook-reels.mp4",
+      "sha256": "6d02917cfc303376091b2b2f78604b1544d28a289dbdefe61745dc9263c3341e",
+      "byte_identical_to_master": true,
+      "duration_s": 37.033333,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "decoded_frames": 2222,
+      "video_codec": "h264",
+      "video_profile": "High",
+      "audio_codec": "aac",
+      "color_space": "bt709",
+      "color_transfer": "bt709",
+      "color_primaries": "bt709",
+      "color_range": "tv",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "full_decode_exit_code": 0,
+      "full_decode_stderr_empty": true,
+      "copied_assets": {
+        "cover.png": "8d702c845a73a2c10d82075c1f5bbfdf659356029e4308a60711c5915d0b0972",
+        "first-frame.png": "7954c0f86acc095293ad62023897ee81aed5215e2606fc65a7997ecfe8994839",
+        "subtitles.srt": "ab851b0ec6cb7d84cae6aad4f22bf57333bd509ebb0fa1584b1af2b153286592",
+        "thumbnail-style.json": "11c504cdb8906741232299e8caea9340847174cf2ca55dcef2efd8bbc729e1b5",
+        "subtitle-style.json": "d106acf4b6cba875324a84c0ac35f03845f137bd5c56c132a90a6155be8aa06f",
+        "platform-policy-review.md": "7f2e129f5eed8c6665931144462ec308caf78a541acf410e8446a71fbc8cd79d"
+      },
+      "cover_dimensions": [
+        1080,
+        1920
+      ],
+      "first_frame_dimensions": [
+        1080,
+        1920
+      ],
+      "subtitle_cues": 18,
+      "technical_result": "PASS"
+    }
+  ],
+  "publishing_metadata_sha256": {
+    "youtube-metadata.md": "f0cb114bbd00ef82f122955eb338511a75a3571ea18c71b51d779f55052e12a6",
+    "facebook-metadata.md": "2c9a9fdee6df571f0d98c56041efd5963d5ef785a1dae8e9f4a419a72baaa452",
+    "platform-policy-review.md": "7f2e129f5eed8c6665931144462ec308caf78a541acf410e8446a71fbc8cd79d"
+  },
+  "both_exports_byte_identical": true,
+  "technical_status": "PASS",
+  "perceptual_voice_review": "UNVERIFIED: no auditory review claimed",
+  "publication": "Prepared packages only; manual approval required"
+}

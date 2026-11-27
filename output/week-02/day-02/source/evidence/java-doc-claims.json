@@ -1,0 +1,68 @@
+{
+  "scope": "Official documentation supports required-type compatibility, candidate eligibility, optional qualifiers/primary/name matching and implicit single-constructor injection. Actual candidate discovery, filtering, injection identity and startup failures are separately verified by compiled JUnit tests and a delegated Spring observer.",
+  "version_scope": "Four Spring API pages pinned to6.2.11; qualifiers and primary reference pages are the6.2 branch. Source-code inspection separately pins implementation details to the checksum-verified6.2.11 source JAR.",
+  "claims": [
+    {
+      "claim": "For a Spring bean with a single constructor, Spring uses that constructor without requiring @Autowired.",
+      "page": "autowired",
+      "source_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html",
+      "source_html_sha256": "4674d532b219ae67ffd7e3d00580037e34b1b39b6034272405bfe5d61908f75e",
+      "exact_excerpt": "If a class only declares a single constructor to begin with, it will always be used, even if not annotated.",
+      "text_offset": 1532
+    },
+    {
+      "claim": "@Bean(autowireCandidate=false) removes this bean from consideration for autowiring.",
+      "page": "bean",
+      "source_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/context/annotation/Bean.html",
+      "source_html_sha256": "005f85b5dffd7c175b515635bbd5bfc2d0d6c71a0a96efa5d82dcc381c0297e9",
+      "exact_excerpt": "autowireCandidate boolean autowireCandidate Is this bean a candidate for getting autowired into some other bean at all? Default is true ; set this to false for internal delegates that are not meant to get in the way of beans of the same type in other places.",
+      "text_offset": 8702
+    },
+    {
+      "claim": "Qualifiers narrow compatible type matches; selection is not solely a bean-name lookup.",
+      "page": "qualifiers-reference",
+      "source_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/annotation-config/autowired-qualifiers.html",
+      "source_html_sha256": "bc03e9691755a6120a24ed1ec127f3648e4c3f213d7c0d3f2dca75ca87c4f6cc",
+      "exact_excerpt": "You can associate qualifier values with specific arguments, narrowing the set of type matches so that a specific bean is chosen for each argument.",
+      "text_offset": 11323
+    },
+    {
+      "claim": "Bean-name fallback does not make an incompatible type into a matching dependency.",
+      "page": "qualifiers-reference",
+      "source_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/annotation-config/autowired-qualifiers.html",
+      "source_html_sha256": "bc03e9691755a6120a24ed1ec127f3648e4c3f213d7c0d3f2dca75ca87c4f6cc",
+      "exact_excerpt": "qualifier values, even with the bean name fallback, always have narrowing semantics within the set of type matches. They do not semantically express a reference to a unique bean id",
+      "text_offset": 14173
+    },
+    {
+      "claim": "Spring6.2 can use a matching-name shortcut; the example's observed full candidate route is not a universal ordering claim.",
+      "page": "qualifiers-reference",
+      "source_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/annotation-config/autowired-qualifiers.html",
+      "source_html_sha256": "bc03e9691755a6120a24ed1ec127f3648e4c3f213d7c0d3f2dca75ca87c4f6cc",
+      "exact_excerpt": "As of 6.2, the container applies fast shortcut resolution for bean name matches, bypassing the full type matching algorithm when the parameter name matches the bean name and no type, qualifier, primary, or fallback conditions override the match.",
+      "text_offset": 15694
+    },
+    {
+      "claim": "@Primary can choose among candidates for a single-valued dependency.",
+      "page": "primary-reference",
+      "source_url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/annotation-config/autowired-primary.html",
+      "source_html_sha256": "e3736e52faf611d650d6f0648078daa000195efe5b14c67ab4e4851d627c63a1",
+      "exact_excerpt": "If exactly one primary bean exists among the candidates, it becomes the autowired value.",
+      "text_offset": 11449
+    },
+    {
+      "claim": "Typed getBean returns the bean instance that uniquely matches the requested type, if any.",
+      "page": "bean-factory",
+      "source_url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/BeanFactory.html",
+      "source_html_sha256": "11978416e785b9773307070fb9ef6eb446c8ed35cf39c9d24676d4c5c7ce670c",
+      "exact_excerpt": "Return the bean instance that uniquely matches the given object type, if any.",
+      "text_offset": 7052
+    }
+  ],
+  "limits": [
+    "The controlled test follows Spring's full candidate enumeration path, not every dependency-resolution path.",
+    "No qualifier or primary selection is executed in these tests; those features are documented context only.",
+    "A registered bean can be retrievable explicitly while excluded from autowiring; the actual test verifies that distinction.",
+    "No real payment or standalone app run is claimed."
+  ]
+}

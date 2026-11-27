@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:01,604
+How does Spring know what to inject?
+
+2
+00:00:01,684 --> 00:00:03,040
+The order service constructor
+
+3
+00:00:03,040 --> 00:00:04,900
+requests a PaymentGateway.
+
+4
+00:00:04,900 --> 00:00:06,839
+Spring reads that dependency.
+
+5
+00:00:06,919 --> 00:00:09,400
+The bean factory finds compatible types.
+
+6
+00:00:09,400 --> 00:00:12,080
+An unrelated logger won't match.
+
+7
+00:00:12,080 --> 00:00:14,584
+Matching beans must also be eligible.
+
+8
+00:00:14,664 --> 00:00:17,380
+Here, one eligible gateway remains.
+
+9
+00:00:17,380 --> 00:00:18,540
+Spring supplies its instance
+
+10
+00:00:18,540 --> 00:00:19,921
+to the constructor.
+
+11
+00:00:20,001 --> 00:00:21,700
+Without an eligible candidate,
+
+12
+00:00:21,700 --> 00:00:23,660
+this required constructor dependency
+
+13
+00:00:23,660 --> 00:00:25,743
+stops context startup.
+
+14
+00:00:25,823 --> 00:00:27,720
+Our tests verify both outcomes.
+
+15
+00:00:27,720 --> 00:00:29,760
+Qualifiers and primary settings
+
+16
+00:00:29,760 --> 00:00:31,960
+can also affect selection.
+
+17
+00:00:31,960 --> 00:00:33,677
+Match, filter, inject.
+
+18
+00:00:35,677 --> 00:00:36,768
+Thanks for watching.
+

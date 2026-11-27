@@ -1,0 +1,36 @@
+{
+  "curriculum": {
+    "week": "02",
+    "week_name": "Dependency Injection",
+    "day": 2,
+    "weekday": "Tuesday",
+    "exact_topic": "Dependency resolution",
+    "publish_date": "2026-11-24",
+    "publish_time": "19:00",
+    "timezone": "Asia/Phnom_Penh",
+    "publication_time_status": "proposed",
+    "equivalent_utc": "2026-11-24T12:00:00Z"
+  },
+  "public_numbering": false,
+  "target_seconds": [
+    35,
+    40
+  ],
+  "strict_max_seconds": 45,
+  "fps": 60,
+  "opening": "Full How Spring / Finds Your / Dependencies cover in sourceframe0, including separate exact fullhook caption; stableheadline0\u20131withmovingtype-requestcarrier;1\u20132travellingconstructorparametercodecard; nofadeblack;immediatenarration",
+  "opening_transition_semantics": "The constructor code containing PaymentGateway travels into the required-dependency explanation. The request then becomes type and required-flag metadata. Movement is illustrative, not runtime performance.",
+  "thumbnail": "IntervariableBlack900/opsz32;white3lines;onlyDependenciesblue0866FFhighlight20radius18x8padding;104/104/104px",
+  "captions": "InterBold700/opsz32/52px;actualtextbbox;black209alpha/82percent;12radius26x14padding;dynamicwidthmax840;center540,1380;max2lines;balancedfullhookcaption",
+  "voice_perceptual_review": "INCOMPLETE unless actual auditory review is performed. ASR/metrics are not listening acceptance.",
+  "publication": "No automatic YouTube/Facebook publication or new hosted-player deployment; manual approval required.",
+  "technical_scope": "Controlled Spring6.2.11 required single-constructor example: compatible PaymentGateway candidates eligibleGateway and backupGateway, backup is registered but autowireCandidate=false; unrelated bean named gateway has AuditLogger type; one eligibleGateway reference supplied to OrderService; fresh MissingConfig context has no eligible PaymentGateway and refresh fails. No arbitrary-new injection, actual payment, standalone app execution or universal type-first/name-only algorithm claim.",
+  "visual_simplification": "Rows depict bean metadata/candidates; filtering does not delete registered beans. The sample deliberately defeats the unrelated same-name shortcut. Qualifiers, primary and other resolution paths can also matter.",
+  "verification_proof_source": "source/evidence/java-verification-result.json and java-junit.stdout.txt",
+  "source_render_interfaces": {
+    "mechanism_anchors": "16 narrated/illustrative edit points; not runtime measurements",
+    "graph_ready_at": "reference_stored_s",
+    "application_use_start": "compatibility alias for ready service, not an application invocation"
+  },
+  "audio": "Original NumPy G-minor-add9 quiet harmonic score; speech-envelope ducking; five synchronized gentle pings; two-pass FFmpeg EBU R128 target-16LUFS/-1.5dBTP"
+}

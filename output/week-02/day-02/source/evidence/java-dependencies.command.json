@@ -1,0 +1,9 @@
+{
+  "command": [
+    "sha256sum",
+    "-c",
+    "dependencies.sha256"
+  ],
+  "cwd": "/workspace/spring-framework-lessons/output/week-02/day-02/source/java",
+  "exit_code": 0
+}

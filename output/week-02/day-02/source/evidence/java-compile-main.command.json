@@ -1,0 +1,25 @@
+{
+  "command": [
+    "java",
+    "-jar",
+    "lib/ecj-3.40.0.jar",
+    "-17",
+    "-parameters",
+    "-warn:none",
+    "-cp",
+    "lib/ecj-3.40.0.jar:lib/junit-platform-console-standalone-1.12.2.jar:lib/micrometer-commons-1.15.4.jar:lib/micrometer-observation-1.15.4.jar:lib/spring-aop-6.2.11.jar:lib/spring-beans-6.2.11.jar:lib/spring-context-6.2.11.jar:lib/spring-core-6.2.11.jar:lib/spring-expression-6.2.11.jar:lib/spring-jcl-6.2.11.jar:lib/spring-test-6.2.11.jar",
+    "-d",
+    "build/main",
+    "src/main/java/lesson/resolution/AuditLogger.java",
+    "src/main/java/lesson/resolution/BackupPaymentGateway.java",
+    "src/main/java/lesson/resolution/DemoPaymentGateway.java",
+    "src/main/java/lesson/resolution/MissingConfig.java",
+    "src/main/java/lesson/resolution/OnlyDisabledConfig.java",
+    "src/main/java/lesson/resolution/OrderService.java",
+    "src/main/java/lesson/resolution/PaymentGateway.java",
+    "src/main/java/lesson/resolution/SuccessConfig.java",
+    "src/main/java/lesson/resolution/TracingBeanFactory.java"
+  ],
+  "cwd": "/workspace/spring-framework-lessons/output/week-02/day-02/source/java",
+  "exit_code": 0
+}

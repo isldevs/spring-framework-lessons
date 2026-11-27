@@ -1,0 +1,20 @@
+{
+  "binary_jar_url": "https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.2.11/spring-beans-6.2.11.jar",
+  "http_status": 200,
+  "binary_jar_sha256": "f9ba5dedee94947b11d930209ff1a12bbe9e28b1b4f73c5baeba2fb3fe32d08e",
+  "binary_jar_size_bytes": 890054,
+  "extracted_files": [
+    {
+      "file": "LICENSE.txt",
+      "archive_member": "META-INF/license.txt",
+      "sha256": "3826b6af06dd7f9a82fa25a4359569a71b444f8489813abbc9803e7eb17fde8b",
+      "size_bytes": 15694
+    },
+    {
+      "file": "NOTICE.txt",
+      "archive_member": "META-INF/notice.txt",
+      "sha256": "cc00a811828235903e7549f1d6a87bb2b1b2efaa21022316cb28d9b80f5ff337",
+      "size_bytes": 477
+    }
+  ]
+}

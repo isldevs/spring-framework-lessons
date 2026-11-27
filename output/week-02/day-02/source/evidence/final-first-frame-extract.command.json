@@ -1,0 +1,15 @@
+{
+  "command": [
+    "ffmpeg",
+    "-y",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-i",
+    "/workspace/spring-framework-lessons/output/week-02/day-02/video.mp4",
+    "-frames:v",
+    "1",
+    "/workspace/spring-framework-lessons/output/week-02/day-02/first-frame.png"
+  ],
+  "exit_code": 0
+}

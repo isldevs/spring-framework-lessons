@@ -1,0 +1,398 @@
+[
+  {
+    "image": "final-anchor-compatible_candidates_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-anchor-constructor_supplied_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-anchor-dependency_descriptor_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-anchor-eligibility_filter_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-anchor-no_eligible_candidate_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-anchor-recap_complete_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-anchor-recap_filter_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-anchor-recap_inject_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-anchor-recap_match_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-anchor-reference_stored_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1399
+    ]
+  },
+  {
+    "image": "final-anchor-required_type_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-anchor-selected_candidate_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1429
+    ]
+  },
+  {
+    "image": "final-anchor-selection_scope_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-anchor-startup_failure_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1402
+    ]
+  },
+  {
+    "image": "final-anchor-unrelated_excluded_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1429
+    ]
+  },
+  {
+    "image": "final-anchor-verification_s.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-decoded-scene-1.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-decoded-scene-2.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-decoded-scene-3.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-decoded-scene-4.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1399
+    ]
+  },
+  {
+    "image": "final-decoded-scene-5.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1402
+    ]
+  },
+  {
+    "image": "final-decoded-scene-6.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1285
+    ]
+  },
+  {
+    "image": "final-decoded-scene-7.png",
+    "bright_content_bounds": [
+      111,
+      289,
+      790,
+      1404
+    ]
+  },
+  {
+    "image": "final-decoded-thanks-last.png",
+    "bright_content_bounds": [
+      111,
+      289,
+      765,
+      1012
+    ]
+  },
+  {
+    "image": "final-opening-decoded-0.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-opening-decoded-105.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1399
+    ]
+  },
+  {
+    "image": "final-opening-decoded-120.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1399
+    ]
+  },
+  {
+    "image": "final-opening-decoded-15.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-opening-decoded-30.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-opening-decoded-60.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-opening-decoded-75.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-opening-decoded-90.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-transition-1-0.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1275
+    ]
+  },
+  {
+    "image": "final-transition-1-1.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1399
+    ]
+  },
+  {
+    "image": "final-transition-2-0.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1268
+    ]
+  },
+  {
+    "image": "final-transition-2-1.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1434
+    ]
+  },
+  {
+    "image": "final-transition-3-0.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1275
+    ]
+  },
+  {
+    "image": "final-transition-3-1.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1429
+    ]
+  },
+  {
+    "image": "final-transition-4-0.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1269
+    ]
+  },
+  {
+    "image": "final-transition-4-1.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-transition-5-0.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1287
+    ]
+  },
+  {
+    "image": "final-transition-5-1.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1404
+    ]
+  },
+  {
+    "image": "final-transition-6-0.png",
+    "bright_content_bounds": [
+      110,
+      289,
+      970,
+      1285
+    ]
+  },
+  {
+    "image": "final-transition-6-1.png",
+    "bright_content_bounds": [
+      111,
+      289,
+      790,
+      1404
+    ]
+  }
+]

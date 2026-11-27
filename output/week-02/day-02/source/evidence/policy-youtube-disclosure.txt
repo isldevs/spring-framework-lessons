@@ -1,0 +1,8 @@
+Disclosing use of GenAI content - Android phone & tablet - YouTube Help
+https://support.google.com/youtube/answer/14328491?hl=en
+HTTP 200
+ResponseSHA256 b02c5fbff4acc48f0146034ba7eddc43f99a8c3f56474cd1f9211e40fa46fc93
+
+Exact excerpt (<=25words):
+to disclose content that is generated or meaningfully altered with AI when it appears realistic. Examples of content, edits, or video assistance that creators need
+

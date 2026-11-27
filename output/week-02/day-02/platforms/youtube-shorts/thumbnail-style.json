@@ -1,0 +1,136 @@
+{
+  "font_family": "Inter",
+  "font_weight": 900,
+  "font_size": 104,
+  "font_sizes": [
+    104,
+    104,
+    104
+  ],
+  "font_axes": {
+    "opsz": 32,
+    "wght": 900
+  },
+  "text_color": "#FFFFFF",
+  "headline_lines": [
+    "How Spring",
+    "Finds Your",
+    "Dependencies"
+  ],
+  "headline_bounds": [
+    110,
+    499,
+    851,
+    899
+  ],
+  "headline_line_bounds": [
+    {
+      "text": "How Spring",
+      "size": 104,
+      "origin": [
+        110,
+        475
+      ],
+      "bbox": [
+        110,
+        499,
+        697,
+        598
+      ]
+    },
+    {
+      "text": "Finds Your",
+      "size": 104,
+      "origin": [
+        110,
+        626
+      ],
+      "bbox": [
+        110,
+        650,
+        641,
+        728
+      ]
+    },
+    {
+      "text": "Dependencies",
+      "size": 104,
+      "origin": [
+        128,
+        777
+      ],
+      "bbox": [
+        128,
+        801,
+        851,
+        899
+      ]
+    }
+  ],
+  "headline_roi": [
+    100,
+    450,
+    990,
+    915
+  ],
+  "technical_roi": [
+    100,
+    930,
+    980,
+    1275
+  ],
+  "highlight": {
+    "background": "#0866FF",
+    "corner_radius": 20,
+    "padding": [
+      18,
+      8
+    ],
+    "bounds": [
+      110,
+      793,
+      869,
+      907
+    ]
+  },
+  "font_file": "source/assets/Inter-Variable.ttf",
+  "font_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+  "safe_area": [
+    90,
+    250,
+    990,
+    1520
+  ],
+  "source_frame0_pixel_identical_to_cover": true,
+  "stable_headline_seconds": [
+    0,
+    1
+  ],
+  "technical_transition_seconds": [
+    1,
+    2
+  ],
+  "highlighted_phrase": "Dependencies",
+  "technical_background": "OrderService constructor PaymentGateway type request to BeanFactory; simplified demonstrated path",
+  "crop_checks": {
+    "square": [
+      0,
+      420,
+      1080,
+      1500
+    ],
+    "portrait": [
+      0,
+      240,
+      1080,
+      1680
+    ]
+  },
+  "opening_caption": "How does Spring know what to inject?",
+  "caption_region": [
+    90,
+    1295,
+    990,
+    1505
+  ]
+}

@@ -1,0 +1,95 @@
+Loading Whisper small.en
+{'start': np.float64(0.0), 'end': np.float64(1.32), 'text': ' How does Spring know what to inject?', 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' How', 'start': np.float64(0.0), 'end': np.float64(0.14), 'probability': np.float64(0.5363844037055969)}, {'word': ' does', 'start': np.float64(0.14), 'end': np.float64(0.34), 'probability': np.float64(0.8376137614250183)}, {'word': ' Spring', 'start': np.float64(0.34), 'end': np.float64(0.5), 'probability': np.float64(0.6008240580558777)}, {'word': ' know', 'start': np.float64(0.5), 'end': np.float64(0.68), 'probability': np.float64(0.9891772866249084)}, {'word': ' what', 'start': np.float64(0.68), 'end': np.float64(0.84), 'probability': np.float64(0.9927142262458801)}, {'word': ' to', 'start': np.float64(0.84), 'end': np.float64(0.98), 'probability': np.float64(0.9988880753517151)}, {'word': ' inject?', 'start': np.float64(0.98), 'end': np.float64(1.32), 'probability': np.float64(0.995333731174469)}]}
+{'start': np.float64(1.76), 'end': np.float64(4.4), 'text': ' The order service constructor requests a payment gateway.', 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' The', 'start': np.float64(1.76), 'end': np.float64(1.8), 'probability': np.float64(0.9133993983268738)}, {'word': ' order', 'start': np.float64(1.8), 'end': np.float64(2.0), 'probability': np.float64(0.8625789880752563)}, {'word': ' service', 'start': np.float64(2.0), 'end': np.float64(2.44), 'probability': np.float64(0.9813811779022217)}, {'word': ' constructor', 'start': np.float64(2.44), 'end': np.float64(3.04), 'probability': np.float64(0.9587951302528381)}, {'word': ' requests', 'start': np.float64(3.04), 'end': np.float64(3.48), 'probability': np.float64(0.9849107265472412)}, {'word': ' a', 'start': np.float64(3.48), 'end': np.float64(3.7), 'probability': np.float64(0.9728832244873047)}, {'word': ' payment', 'start': np.float64(3.7), 'end': np.float64(3.96), 'probability': np.float64(0.9764419794082642)}, {'word': ' gateway.', 'start': np.float64(3.96), 'end': np.float64(4.4), 'probability': np.float64(0.9937112331390381)}]}
+{'start': np.float64(4.9), 'end': np.float64(6.28), 'text': ' Spring reads that dependency.', 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' Spring', 'start': np.float64(4.9), 'end': np.float64(5.02), 'probability': np.float64(0.9899519085884094)}, {'word': ' reads', 'start': np.float64(5.02), 'end': np.float64(5.4), 'probability': np.float64(0.9932243227958679)}, {'word': ' that', 'start': np.float64(5.4), 'end': np.float64(5.68), 'probability': np.float64(0.9964659214019775)}, {'word': ' dependency.', 'start': np.float64(5.68), 'end': np.float64(6.28), 'probability': np.float64(0.9891487956047058)}]}
+{'start': np.float64(7.02), 'end': np.float64(9.4), 'text': ' The bean factory finds compatible types', 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' The', 'start': np.float64(7.02), 'end': np.float64(7.02), 'probability': np.float64(0.9037280678749084)}, {'word': ' bean', 'start': np.float64(7.02), 'end': np.float64(7.22), 'probability': np.float64(0.3865400552749634)}, {'word': ' factory', 'start': np.float64(7.22), 'end': np.float64(7.62), 'probability': np.float64(0.9334973692893982)}, {'word': ' finds', 'start': np.float64(7.62), 'end': np.float64(8.24), 'probability': np.float64(0.9605798125267029)}, {'word': ' compatible', 'start': np.float64(8.24), 'end': np.float64(8.82), 'probability': np.float64(0.9920904636383057)}, {'word': ' types', 'start': np.float64(8.82), 'end': np.float64(9.4), 'probability': np.float64(0.9979267120361328)}]}
+{'start': np.float64(9.4), 'end': np.float64(11.6), 'text': " and unrelated logger won't match.", 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' and', 'start': np.float64(9.4), 'end': np.float64(9.82), 'probability': np.float64(0.28483790159225464)}, {'word': ' unrelated', 'start': np.float64(9.82), 'end': np.float64(10.34), 'probability': np.float64(0.9834200143814087)}, {'word': ' logger', 'start': np.float64(10.34), 'end': np.float64(10.86), 'probability': np.float64(0.9862550497055054)}, {'word': " won't", 'start': np.float64(10.86), 'end': np.float64(11.24), 'probability': np.float64(0.9960468709468842)}, {'word': ' match.', 'start': np.float64(11.24), 'end': np.float64(11.6), 'probability': np.float64(0.9995686411857605)}]}
+{'start': np.float64(12.08), 'end': np.float64(13.96), 'text': ' Matching beans must also be eligible.', 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' Matching', 'start': np.float64(12.08), 'end': np.float64(12.36), 'probability': np.float64(0.9634876251220703)}, {'word': ' beans', 'start': np.float64(12.36), 'end': np.float64(12.62), 'probability': np.float64(0.9449101686477661)}, {'word': ' must', 'start': np.float64(12.62), 'end': np.float64(12.94), 'probability': np.float64(0.9951575398445129)}, {'word': ' also', 'start': np.float64(12.94), 'end': np.float64(13.34), 'probability': np.float64(0.9986911416053772)}, {'word': ' be', 'start': np.float64(13.34), 'end': np.float64(13.54), 'probability': np.float64(0.9996787309646606)}, {'word': ' eligible.', 'start': np.float64(13.54), 'end': np.float64(13.96), 'probability': np.float64(0.9985331296920776)}]}
+{'start': np.float64(14.68), 'end': np.float64(16.9), 'text': ' Here, one eligible gateway remains.', 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' Here,', 'start': np.float64(14.68), 'end': np.float64(14.94), 'probability': np.float64(0.9976038336753845)}, {'word': ' one', 'start': np.float64(15.14), 'end': np.float64(15.34), 'probability': np.float64(0.979870080947876)}, {'word': ' eligible', 'start': np.float64(15.34), 'end': np.float64(15.84), 'probability': np.float64(0.9949663281440735)}, {'word': ' gateway', 'start': np.float64(15.84), 'end': np.float64(16.32), 'probability': np.float64(0.991757333278656)}, {'word': ' remains.', 'start': np.float64(16.32), 'end': np.float64(16.9), 'probability': np.float64(0.9967484474182129)}]}
+{'start': np.float64(17.38), 'end': np.float64(19.4), 'text': ' Spring supplies its instance to the constructor.', 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' Spring', 'start': np.float64(17.38), 'end': np.float64(17.48), 'probability': np.float64(0.9954284429550171)}, {'word': ' supplies', 'start': np.float64(17.48), 'end': np.float64(17.94), 'probability': np.float64(0.9966519474983215)}, {'word': ' its', 'start': np.float64(17.94), 'end': np.float64(18.2), 'probability': np.float64(0.9686313271522522)}, {'word': ' instance', 'start': np.float64(18.2), 'end': np.float64(18.54), 'probability': np.float64(0.9957336783409119)}, {'word': ' to', 'start': np.float64(18.54), 'end': np.float64(18.8), 'probability': np.float64(0.9993162155151367)}, {'word': ' the', 'start': np.float64(18.8), 'end': np.float64(18.9), 'probability': np.float64(0.9996646642684937)}, {'word': ' constructor.', 'start': np.float64(18.9), 'end': np.float64(19.4), 'probability': np.float64(0.9954368472099304)}]}
+{'start': np.float64(20.02), 'end': np.float64(21.5), 'text': ' Without an eligible candidate,', 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' Without', 'start': np.float64(20.02), 'end': np.float64(20.24), 'probability': np.float64(0.9957211017608643)}, {'word': ' an', 'start': np.float64(20.24), 'end': np.float64(20.42), 'probability': np.float64(0.9986627101898193)}, {'word': ' eligible', 'start': np.float64(20.42), 'end': np.float64(20.88), 'probability': np.float64(0.996740996837616)}, {'word': ' candidate,', 'start': np.float64(20.88), 'end': np.float64(21.5), 'probability': np.float64(0.9993450045585632)}]}
+{'start': np.float64(21.7), 'end': np.float64(25.22), 'text': ' this required constructor dependency stops context startup.', 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' this', 'start': np.float64(21.7), 'end': np.float64(21.84), 'probability': np.float64(0.9970337152481079)}, {'word': ' required', 'start': np.float64(21.84), 'end': np.float64(22.4), 'probability': np.float64(0.9949069619178772)}, {'word': ' constructor', 'start': np.float64(22.4), 'end': np.float64(22.98), 'probability': np.float64(0.9968919157981873)}, {'word': ' dependency', 'start': np.float64(22.98), 'end': np.float64(23.66), 'probability': np.float64(0.9949547648429871)}, {'word': ' stops', 'start': np.float64(23.66), 'end': np.float64(24.16), 'probability': np.float64(0.9951831698417664)}, {'word': ' context', 'start': np.float64(24.16), 'end': np.float64(24.72), 'probability': np.float64(0.9340305924415588)}, {'word': ' startup.', 'start': np.float64(24.72), 'end': np.float64(25.22), 'probability': np.float64(0.9099363088607788)}]}
+{'start': np.float64(25.8), 'end': np.float64(27.72), 'text': ' Our tests verify both outcomes.', 'avg_logprob': -0.0984242056856061, 'words': [{'word': ' Our', 'start': np.float64(25.8), 'end': np.float64(25.96), 'probability': np.float64(0.9768096804618835)}, {'word': ' tests', 'start': np.float64(25.96), 'end': np.float64(26.22), 'probability': np.float64(0.9814884662628174)}, {'word': ' verify', 'start': np.float64(26.22), 'end': np.float64(26.74), 'probability': np.float64(0.995398223400116)}, {'word': ' both', 'start': np.float64(26.74), 'end': np.float64(27.08), 'probability': np.float64(0.9984879493713379)}, {'word': ' outcomes.', 'start': np.float64(27.08), 'end': np.float64(27.72), 'probability': np.float64(0.9965662360191345)}]}
+{'start': np.float64(27.72), 'end': np.float64(31.28), 'text': ' Qualifiers and primary settings can also affect selection.', 'avg_logprob': -0.31651037710684315, 'words': [{'word': ' Qualifiers', 'start': np.float64(27.72), 'end': np.float64(28.68), 'probability': np.float64(0.8301645517349243)}, {'word': ' and', 'start': np.float64(28.68), 'end': np.float64(29.02), 'probability': np.float64(0.8036279678344727)}, {'word': ' primary', 'start': np.float64(29.02), 'end': np.float64(29.28), 'probability': np.float64(0.4829736053943634)}, {'word': ' settings', 'start': np.float64(29.28), 'end': np.float64(29.76), 'probability': np.float64(0.982135534286499)}, {'word': ' can', 'start': np.float64(29.76), 'end': np.float64(30.06), 'probability': np.float64(0.9936880469322205)}, {'word': ' also', 'start': np.float64(30.06), 'end': np.float64(30.42), 'probability': np.float64(0.9963405728340149)}, {'word': ' affect', 'start': np.float64(30.42), 'end': np.float64(30.76), 'probability': np.float64(0.9548062682151794)}, {'word': ' selection.', 'start': np.float64(30.76), 'end': np.float64(31.28), 'probability': np.float64(0.9570372104644775)}]}
+{'start': np.float64(31.96), 'end': np.float64(33.04), 'text': ' Match, filter, inject.', 'avg_logprob': -0.31651037710684315, 'words': [{'word': ' Match,', 'start': np.float64(31.96), 'end': np.float64(31.96), 'probability': np.float64(0.9421343803405762)}, {'word': ' filter,', 'start': np.float64(32.24), 'end': np.float64(32.44), 'probability': np.float64(0.19330483675003052)}, {'word': ' inject.', 'start': np.float64(32.72), 'end': np.float64(33.04), 'probability': np.float64(0.9899408221244812)}]}
+{'start': 35.68, 'end': np.float64(36.44), 'text': ' Thanks for watching.', 'avg_logprob': -0.31651037710684315, 'words': [{'word': ' Thanks', 'start': np.float64(35.49), 'end': np.float64(35.84), 'probability': np.float64(0.9814010858535767)}, {'word': ' for', 'start': np.float64(35.84), 'end': np.float64(36.02), 'probability': np.float64(0.9992781281471252)}, {'word': ' watching.', 'start': np.float64(36.02), 'end': np.float64(36.44), 'probability': np.float64(0.9986831545829773)}]}
+{'model': 'faster-whisper small.en int8', 'narration_sha256': '1ddc31b7429c55f54cc144f2d0ed0c7c42660d56f24f73c23058cfc345869d90', 'reference_words': 77, 'asr_words': 78, 'edit_distance': 3, 'normalized_word_error_rate': 0.03896103896103896, 'transcript': "How does Spring know what to inject? The order service constructor requests a payment gateway. Spring reads that dependency. The bean factory finds compatible types and unrelated logger won't match. Matching beans must also be eligible. Here, one eligible gateway remains. Spring supplies its instance to the constructor. Without an eligible candidate, this required constructor dependency stops context startup. Our tests verify both outcomes. Qualifiers and primary settings can also affect selection. Match, filter, inject. Thanks for watching.", 'normalization': 'lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt'}
+Alignment requires review: ('Unreviewed recognition difference', 25, 24, ['and', 'unrelated', 'logger', 'wont'], ['an', 'unrelated', 'logger', 'wont'])
+{'duration_s': 37.01795833333333, 'sample_rate': 48000, 'channels': 1, 'peak_dbfs': -1.514415166281326, 'rms_dbfs': -20.89682254750184, 'clipped_samples': 0, 'speech_above_minus60db_onset_s': 0.015125, 'speech_above_minus60db_end_s': 36.75204166666666, 'endpoint_first_sample': 0.0, 'endpoint_last_sample': 0.0}
+{'duration_s': 37.01795833333333, 'sample_rate': 48000, 'channels': 1, 'peak_dbfs': -1.514415166281326, 'rms_dbfs': -20.89682254750184, 'clipped_samples': 0, 'speech_above_minus60db_onset_s': 0.015125, 'speech_above_minus60db_end_s': 36.75204166666666, 'endpoint_first_sample': 0.0, 'endpoint_last_sample': 0.0, 'f0_voiced_frames': 2185, 'f0_10pct_hz': 88.86585313719385, 'f0_50pct_hz': 113.9210545140623, 'f0_90pct_hz': 170.68872218367378, 'f0_std_semitones': 4.499611157090484}
+{
+  "threshold_dbfs": -45,
+  "minimum_duration_s": 0.12,
+  "intervals": [
+    {
+      "start": 1.464646,
+      "end": 1.705688,
+      "duration": 0.2410420000000002
+    },
+    {
+      "start": 4.527146,
+      "end": 4.686521,
+      "duration": 0.15937499999999982
+    },
+    {
+      "start": 6.508083,
+      "end": 6.9365,
+      "duration": 0.4284169999999996
+    },
+    {
+      "start": 9.551083,
+      "end": 9.719,
+      "duration": 0.1679169999999992
+    },
+    {
+      "start": 11.709854,
+      "end": 11.895563,
+      "duration": 0.18570899999999924
+    },
+    {
+      "start": 14.124771,
+      "end": 14.687271,
+      "duration": 0.5625
+    },
+    {
+      "start": 17.008042,
+      "end": 17.149167,
+      "duration": 0.14112499999999883
+    },
+    {
+      "start": 19.593583,
+      "end": 20.023708,
+      "duration": 0.4301250000000003
+    },
+    {
+      "start": 25.426687,
+      "end": 25.839375,
+      "duration": 0.4126879999999993
+    },
+    {
+      "start": 27.898958,
+      "end": 28.120104,
+      "duration": 0.22114600000000095
+    },
+    {
+      "start": 31.492229,
+      "end": 31.668646,
+      "duration": 0.1764170000000007
+    },
+    {
+      "start": 33.249958,
+      "end": 35.699292,
+      "duration": 2.4493340000000003
+    },
+    {
+      "start": 36.634708,
+      "end": 37.017958,
+      "duration": 0.38324999999999676
+    }
+  ],
+  "longest_pre_recap_hold": {
+    "start": 14.124771,
+    "end": 14.687271,
+    "duration": 0.5625
+  }
+}

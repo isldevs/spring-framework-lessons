@@ -1,0 +1,1390 @@
+{
+  "video_sha256": "6d02917cfc303376091b2b2f78604b1544d28a289dbdefe61745dc9263c3341e",
+  "validated_file_sha256": {
+    "video.mp4": "6d02917cfc303376091b2b2f78604b1544d28a289dbdefe61745dc9263c3341e",
+    "cover.png": "8d702c845a73a2c10d82075c1f5bbfdf659356029e4308a60711c5915d0b0972",
+    "first-frame.png": "7954c0f86acc095293ad62023897ee81aed5215e2606fc65a7997ecfe8994839",
+    "thumbnail-style.json": "11c504cdb8906741232299e8caea9340847174cf2ca55dcef2efd8bbc729e1b5",
+    "subtitle-style.json": "d106acf4b6cba875324a84c0ac35f03845f137bd5c56c132a90a6155be8aa06f",
+    "subtitles.srt": "ab851b0ec6cb7d84cae6aad4f22bf57333bd509ebb0fa1584b1af2b153286592",
+    "narration.wav": "1ddc31b7429c55f54cc144f2d0ed0c7c42660d56f24f73c23058cfc345869d90",
+    "source/timing.json": "4f7030534fc46fa67c5f7492c9db33df559143b21b38f9f681e871713b34e2bf",
+    "source/script-input.json": "c2fb69a0a76b71c4d6ddbe7f167af98c3cace4860e53dff7e3d7d5145f2c1241",
+    "source/animation/render.py": "2a754b582051bab650c001b4d4dd651cabc664a6a0440130edd36ca578e4cde2",
+    "source/animation/validate.py": "966d85f08f03a9c402185f5a150991a476ab158ac3916bb859e2b4e8a6ebdb55",
+    "source/animation/opening_qa.py": "9a3b5c6ad5a932425111b588173493921c8266050620c6f2aa729a89d3474e88",
+    "source/animation/audio_mix.py": "16040a199a8a6b4b39457ae0e0ad4d5777ee58cb50833508998bd1c7e10f4dc0",
+    "source/animation/mix.wav": "d61cff5e7365584f9d7a22bda801a9705bdba7d0754016b9e2b80a8180269769",
+    "source/voice/asr-summary.json": "bf18e3369ed5982703f06c435b5513b62c2a3bc64e74affcb87faeeb0e96cc99",
+    "source/voice/asr.json": "35e5b9ca6ba2a6d6672a34e5bb881c856e99d40eeedbb95f57ff2df661f5fc2a",
+    "source/voice/alignment-normalization.json": "616425c7be4a9b8aa651900c61b2b1c62ada04616588cda9c12ce459e40ea8c5",
+    "source/evidence/java-verification-result.json": "0474782e730eec077c1f4d32630e533f2c2505449d7bff308e492b129c0e30da",
+    "source/evidence/java-runtime-trace.json": "d107d81796311f3626ac0a8802da7c54d05959f55f8fef548252a79eea33f2c4",
+    "source/evidence/java-junit.stdout.txt": "ce042541207985ce020d29608c9f050ce969d11a1cac88f30cd659ef32fcdcbd",
+    "source/evidence/java-junit.stderr.txt": "f040e4038b41d4940376c507da2a12178547cdf93b65c7cf7c0df11546d6c788",
+    "source/evidence/java-implementation-sources.json": "9a90163f1a34ce0ce4c63f2310f51ffc4011811fbfb5a95de88204a99b5c6713",
+    "source/evidence/java-implementation-inspection.json": "a995ccbc24111fe96bc63a8de4c53f0ad1fed2d97ccfa709375d05180a489f3a",
+    "source/evidence/java-doc-official-documentation.json": "6c8923dcb15e534ebaa12cee202fd99c15c639c0eae0cdaf7a551f4265129354",
+    "source/evidence/java-doc-claim-verification.json": "32d761f599e20b4ca9b0564c11a052262c216935be7beadd325bdb4c204a623f",
+    "source/evidence/policy-official-snapshots.json": "7be8c676751d016fb57489ff1c220408dba097ce443267dbc3edd50d5931d82f"
+  },
+  "duration": 37.033333,
+  "video_duration": 37.033333,
+  "audio_duration": 37.018,
+  "frames": 2222,
+  "timestamps_checked": 2222,
+  "fps": "60/1",
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "pixel_format": "yuv420p",
+  "fast_start": {
+    "top_level_atoms": [
+      {
+        "type": "ftyp",
+        "offset": 0,
+        "bytes": 32
+      },
+      {
+        "type": "moov",
+        "offset": 32,
+        "bytes": 60447
+      },
+      {
+        "type": "free",
+        "offset": 60479,
+        "bytes": 8
+      },
+      {
+        "type": "mdat",
+        "offset": 60487,
+        "bytes": 2150152
+      }
+    ],
+    "moov_before_mdat": true,
+    "moov_offset": 32,
+    "first_mdat_offset": 60487
+  },
+  "color_space": "bt709",
+  "color_transfer": "bt709",
+  "color_primaries": "bt709",
+  "audio_sample_rate": "48000",
+  "audio_channels": 2,
+  "srt_cues": 18,
+  "source_safe_bounds_samples": 250,
+  "decoded_safe_bounds_samples": 44,
+  "decoded_safe_bounds_sampled_only": true,
+  "caption_words_match_script": true,
+  "scenes_count": 7,
+  "target_duration_35_40_pass": true,
+  "caption_max_characters": 40,
+  "opening_static_cover_hold": false,
+  "opening_source_unique_core_frames": 51,
+  "opening_thumbnail_composition_preserved_first_second": true,
+  "source_frame0_exact_cover": true,
+  "opening_headline_stable_through_one_second": true,
+  "opening_first_visual_change_s": 0.016666666666666666,
+  "opening_frame0_source_ssim": 0.998942,
+  "opening_ssim_minimum": 0.998288,
+  "opening_encoded_snapshots_compared": 8,
+  "decoded_transition_pairs_retained": 6,
+  "source_narration_onset_s": 0.015125,
+  "source_spoken_hook_end_s": 1.604167,
+  "spoken_hook_complete_within_two_seconds": true,
+  "hook_completion_within_two_seconds_is_not_required_by_current_brief": true,
+  "asr_model": "faster-whisper small.en int8",
+  "asr_reference_words": 77,
+  "asr_recognized_words": 78,
+  "asr_edit_distance": 3,
+  "asr_normalized_word_error_rate": 0.03896103896103896,
+  "asr_matches_current_narration_sha256": true,
+  "encoded_first_two_seconds_rms_dbfs": -15.497218075651318,
+  "integrated_loudness_lufs": -15.86,
+  "true_peak_dbtp": -1.37,
+  "loudness_range_lu": 3.5,
+  "decode_error_log_empty": true,
+  "black_intervals_detected": 0,
+  "silence_intervals": [
+    "36.806042"
+  ],
+  "compatible_type_discovery_verified": true,
+  "eligible_candidate_filtering_verified": true,
+  "unrelated_same_named_bean_excluded_verified": true,
+  "injected_gateway_identity_verified": true,
+  "missing_and_disabled_candidate_failures_verified": true,
+  "framework_implementation_sources_verified": true,
+  "real_payment_performed": false,
+  "graph_ready_s": 19.48,
+  "application_use_start_s": 19.48,
+  "graph_ready_before_application_use": null,
+  "application_execution_claimed": false,
+  "mechanism_anchors": {
+    "required_type_s": 3.7,
+    "dependency_descriptor_s": 5.02,
+    "compatible_candidates_s": 8.24,
+    "unrelated_excluded_s": 9.82,
+    "eligibility_filter_s": 13.54,
+    "selected_candidate_s": 15.14,
+    "constructor_supplied_s": 17.48,
+    "reference_stored_s": 19.48,
+    "no_eligible_candidate_s": 20.88,
+    "startup_failure_s": 23.66,
+    "verification_s": 26.22,
+    "selection_scope_s": 27.72,
+    "recap_match_s": 31.96,
+    "recap_filter_s": 32.24,
+    "recap_inject_s": 32.72,
+    "recap_complete_s": 33.09
+  },
+  "dependency_resolution_causality": {
+    "anchors": {
+      "required_type_s": 3.7,
+      "dependency_descriptor_s": 5.02,
+      "compatible_candidates_s": 8.24,
+      "unrelated_excluded_s": 9.82,
+      "eligibility_filter_s": 13.54,
+      "selected_candidate_s": 15.14,
+      "constructor_supplied_s": 17.48,
+      "reference_stored_s": 19.48,
+      "no_eligible_candidate_s": 20.88,
+      "startup_failure_s": 23.66,
+      "verification_s": 26.22,
+      "selection_scope_s": 27.72,
+      "recap_match_s": 31.96,
+      "recap_filter_s": 32.24,
+      "recap_inject_s": 32.72,
+      "recap_complete_s": 33.09
+    },
+    "required_type_before_compatible_discovery": true,
+    "compatible_candidates_before_eligibility_filter": true,
+    "one_eligible_candidate_before_constructor_supply": true,
+    "constructor_supply_before_stored_reference": true,
+    "missing_eligible_candidate_before_startup_failure": true,
+    "ready_service_reference_marked_without_business_execution": true,
+    "real_payment_performed": false,
+    "java_tests_found": 3,
+    "java_tests_succeeded": 3,
+    "java_current_sources_match_tested_hashes": true,
+    "java_raw_junit_stdout_matches_proofs": true,
+    "actual_java_proof_lines": [
+      "compatible candidates: 2",
+      "disabled candidate missing: true",
+      "disabled compatible candidates: 1",
+      "disabled eligible candidates: 0",
+      "eligible candidates: 1",
+      "gateway same: true",
+      "missing candidate: true",
+      "missing exception: NoSuchBeanDefinitionException",
+      "missing startup exception: UnsatisfiedDependencyException",
+      "unrelated ignored: true"
+    ],
+    "actual_runtime_trace": {
+      "observer": "TracingBeanFactory subclass delegates all decisions to Spring",
+      "spring_framework_version": "6.2.11",
+      "events": [
+        "resolveDependency: PaymentGateway",
+        "compatible types: [eligibleGateway, backupGateway]",
+        "isAutowireCandidate eligibleGateway: true",
+        "isAutowireCandidate backupGateway: false",
+        "eligible candidates: [eligibleGateway]"
+      ],
+      "scope": "Actual successful PaymentGateway constructor dependency; not a universal resolution sequence or timing benchmark."
+    },
+    "java_verified_semantics": {
+      "autowire_disabled_candidate_filtered": true,
+      "compatible_type_candidates_discovered": true,
+      "matching_disabled_bean_is_not_eligible": true,
+      "missing_required_candidate_fails_startup": true,
+      "one_eligible_gateway_injected_by_reference": true,
+      "real_payment_performed": false,
+      "unrelated_named_bean_ignored_for_required_type": true
+    },
+    "framework_version": "6.2.11",
+    "framework_source_hashes_checked": {
+      "DefaultListableBeanFactory.java": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "AutowiredAnnotationBeanPostProcessor.java": "ed59d1865a485629b8067a5f80b0822cf127829de4a08c5476eb904188274c25",
+      "AutowireCandidateResolver.java": "86ff8add8567d6c83eff921f49c377ae400a5226e7aea31a2e8a6f727da0f4e7",
+      "SimpleAutowireCandidateResolver.java": "b7ffd2ce6a715675f38cdf081180e73fe226dcb70c83a07e8e7599ec0d691afd",
+      "GenericTypeAwareAutowireCandidateResolver.java": "3f56b091a42d41701f2e07e9a60b8368edd2d0419e8181256c0545010fe59a2f",
+      "QualifierAnnotationAutowireCandidateResolver.java": "cfba5373e8921668097591bea131d159a9c4c74cc6028e97be4e57a3eb0caf45"
+    },
+    "source_inspection_and_documentation_provenance": {
+      "framework_source_jar_sha256": "f5fcf8046c9f5e0ef7cd183d2ac6b0e5d23cd7f27c174234243c71a5e6399c75",
+      "framework_source_hashes_checked": {
+        "DefaultListableBeanFactory.java": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+        "AutowiredAnnotationBeanPostProcessor.java": "ed59d1865a485629b8067a5f80b0822cf127829de4a08c5476eb904188274c25",
+        "AutowireCandidateResolver.java": "86ff8add8567d6c83eff921f49c377ae400a5226e7aea31a2e8a6f727da0f4e7",
+        "SimpleAutowireCandidateResolver.java": "b7ffd2ce6a715675f38cdf081180e73fe226dcb70c83a07e8e7599ec0d691afd",
+        "GenericTypeAwareAutowireCandidateResolver.java": "3f56b091a42d41701f2e07e9a60b8368edd2d0419e8181256c0545010fe59a2f",
+        "QualifierAnnotationAutowireCandidateResolver.java": "cfba5373e8921668097591bea131d159a9c4c74cc6028e97be4e57a3eb0caf45"
+      },
+      "framework_verbatim_excerpts_checked": 13,
+      "official_spring_pages_hash_checked": 6,
+      "official_spring_claims_verbatim_checked": 7,
+      "policy_retained_excerpt_records_consistent": 6,
+      "policy_check_scope": "Fetched metadata and short retained excerpts are internally consistent. Full policy responses were not retained; response hashes are fetch-time evidence, not recomputed here. No platform approval is implied."
+    },
+    "basis": "Animated edit anchors establish explanatory ordering, not measured Spring/JUnit wall-clock performance. Three recorded actual JUnit/Spring context tests independently verify two compatible types, one eligible candidate, unrelated same-named bean exclusion, exact constructor reference and two required-candidate startup failures. The actual observer delegates all selection decisions to Spring. The simplified sequence is specific to this dependency; Spring6.2.11 also has shortcut and name-related paths, and qualifier/primary rules can affect selection. No standalone app main, business execution, real payment, comprehensive application test, universal type-first sequence or resolution performance is claimed. This media validator checks recorded execution/source evidence without rerunning Java."
+  },
+  "opening_qa": {
+    "required_files": [
+      "qa/opening-0.0s.png",
+      "qa/opening-0.5s.png",
+      "qa/opening-1.0s.png",
+      "qa/opening-2.0s.png",
+      "qa/cover-feed-9x16.png",
+      "qa/cover-grid-square.png",
+      "qa/cover-feed-3x4.png",
+      "qa/mobile-preview.png"
+    ],
+    "source_frame0_cover_exact": true,
+    "first_frame": {
+      "mean_absolute_rgb_error": 1.454871238425926,
+      "maximum_channel_error": 122,
+      "source_frame0_equals_cover_pixels": true,
+      "encoded_frame0_source_ssim": 0.998942,
+      "lossy_decoded_pixel_identity_claimed": false
+    },
+    "headline_stable_through_one_second": true,
+    "headline_samples": 61,
+    "headline_roi": [
+      100,
+      450,
+      990,
+      915
+    ],
+    "technical_roi": [
+      100,
+      930,
+      980,
+      1275
+    ],
+    "technical_first_motion_s": 0.016666666666666666,
+    "technical_unique_frames_first_second": 51,
+    "maximum_changed_technical_pixels_first_second": 354,
+    "transition_samples": [
+      {
+        "frame": 61,
+        "time_s": 1.0166666666666666,
+        "mean_absolute_rgb_delta": 0.0825684799382716
+      },
+      {
+        "frame": 62,
+        "time_s": 1.0333333333333334,
+        "mean_absolute_rgb_delta": 1.2279300090020575
+      },
+      {
+        "frame": 63,
+        "time_s": 1.05,
+        "mean_absolute_rgb_delta": 0.8408281893004115
+      },
+      {
+        "frame": 64,
+        "time_s": 1.0666666666666667,
+        "mean_absolute_rgb_delta": 1.952533275462963
+      },
+      {
+        "frame": 65,
+        "time_s": 1.0833333333333333,
+        "mean_absolute_rgb_delta": 2.471123488940329
+      },
+      {
+        "frame": 66,
+        "time_s": 1.1,
+        "mean_absolute_rgb_delta": 2.369076806841564
+      },
+      {
+        "frame": 67,
+        "time_s": 1.1166666666666667,
+        "mean_absolute_rgb_delta": 2.8431095679012346
+      },
+      {
+        "frame": 68,
+        "time_s": 1.1333333333333333,
+        "mean_absolute_rgb_delta": 2.394017489711934
+      },
+      {
+        "frame": 69,
+        "time_s": 1.15,
+        "mean_absolute_rgb_delta": 2.9422537294238684
+      },
+      {
+        "frame": 70,
+        "time_s": 1.1666666666666667,
+        "mean_absolute_rgb_delta": 2.94165814686214
+      },
+      {
+        "frame": 71,
+        "time_s": 1.1833333333333333,
+        "mean_absolute_rgb_delta": 3.272464152520576
+      },
+      {
+        "frame": 72,
+        "time_s": 1.2,
+        "mean_absolute_rgb_delta": 2.960604263117284
+      },
+      {
+        "frame": 73,
+        "time_s": 1.2166666666666666,
+        "mean_absolute_rgb_delta": 2.890214441872428
+      },
+      {
+        "frame": 74,
+        "time_s": 1.2333333333333334,
+        "mean_absolute_rgb_delta": 2.8823133680555557
+      },
+      {
+        "frame": 75,
+        "time_s": 1.25,
+        "mean_absolute_rgb_delta": 2.8182359182098766
+      },
+      {
+        "frame": 76,
+        "time_s": 1.2666666666666666,
+        "mean_absolute_rgb_delta": 2.753915091306584
+      },
+      {
+        "frame": 77,
+        "time_s": 1.2833333333333334,
+        "mean_absolute_rgb_delta": 2.778920556841564
+      },
+      {
+        "frame": 78,
+        "time_s": 1.3,
+        "mean_absolute_rgb_delta": 2.599762409979424
+      },
+      {
+        "frame": 79,
+        "time_s": 1.3166666666666667,
+        "mean_absolute_rgb_delta": 2.519896958590535
+      },
+      {
+        "frame": 80,
+        "time_s": 1.3333333333333333,
+        "mean_absolute_rgb_delta": 2.373724119084362
+      },
+      {
+        "frame": 81,
+        "time_s": 1.35,
+        "mean_absolute_rgb_delta": 2.392111947016461
+      },
+      {
+        "frame": 82,
+        "time_s": 1.3666666666666667,
+        "mean_absolute_rgb_delta": 2.2335484182098764
+      },
+      {
+        "frame": 83,
+        "time_s": 1.3833333333333333,
+        "mean_absolute_rgb_delta": 2.15770608281893
+      },
+      {
+        "frame": 84,
+        "time_s": 1.4,
+        "mean_absolute_rgb_delta": 2.060859375
+      },
+      {
+        "frame": 85,
+        "time_s": 1.4166666666666667,
+        "mean_absolute_rgb_delta": 2.022502572016461
+      },
+      {
+        "frame": 86,
+        "time_s": 1.4333333333333333,
+        "mean_absolute_rgb_delta": 1.9225684799382716
+      },
+      {
+        "frame": 87,
+        "time_s": 1.45,
+        "mean_absolute_rgb_delta": 1.8625675154320989
+      },
+      {
+        "frame": 88,
+        "time_s": 1.4666666666666666,
+        "mean_absolute_rgb_delta": 1.8534492348251028
+      },
+      {
+        "frame": 89,
+        "time_s": 1.4833333333333334,
+        "mean_absolute_rgb_delta": 1.8382968428497943
+      },
+      {
+        "frame": 90,
+        "time_s": 1.5,
+        "mean_absolute_rgb_delta": 1.8467663323045267
+      },
+      {
+        "frame": 91,
+        "time_s": 1.5166666666666666,
+        "mean_absolute_rgb_delta": 1.8574993569958849
+      },
+      {
+        "frame": 92,
+        "time_s": 1.5333333333333334,
+        "mean_absolute_rgb_delta": 1.8658963477366255
+      },
+      {
+        "frame": 93,
+        "time_s": 1.55,
+        "mean_absolute_rgb_delta": 1.9061906828703703
+      },
+      {
+        "frame": 94,
+        "time_s": 1.5666666666666667,
+        "mean_absolute_rgb_delta": 1.9278777649176955
+      },
+      {
+        "frame": 95,
+        "time_s": 1.5833333333333333,
+        "mean_absolute_rgb_delta": 1.9619201710390946
+      },
+      {
+        "frame": 96,
+        "time_s": 1.6,
+        "mean_absolute_rgb_delta": 1.9835079089506173
+      },
+      {
+        "frame": 97,
+        "time_s": 1.6166666666666667,
+        "mean_absolute_rgb_delta": 4.15767907664609
+      },
+      {
+        "frame": 98,
+        "time_s": 1.6333333333333333,
+        "mean_absolute_rgb_delta": 1.9518859310699588
+      },
+      {
+        "frame": 99,
+        "time_s": 1.65,
+        "mean_absolute_rgb_delta": 1.987774402006173
+      },
+      {
+        "frame": 100,
+        "time_s": 1.6666666666666667,
+        "mean_absolute_rgb_delta": 1.9737078832304527
+      },
+      {
+        "frame": 101,
+        "time_s": 1.6833333333333333,
+        "mean_absolute_rgb_delta": 2.0937189750514404
+      },
+      {
+        "frame": 102,
+        "time_s": 1.7,
+        "mean_absolute_rgb_delta": 3.5400901813271606
+      },
+      {
+        "frame": 103,
+        "time_s": 1.7166666666666666,
+        "mean_absolute_rgb_delta": 2.0019560185185186
+      },
+      {
+        "frame": 104,
+        "time_s": 1.7333333333333334,
+        "mean_absolute_rgb_delta": 2.0007261123971194
+      },
+      {
+        "frame": 105,
+        "time_s": 1.75,
+        "mean_absolute_rgb_delta": 1.9933330118312758
+      },
+      {
+        "frame": 106,
+        "time_s": 1.7666666666666666,
+        "mean_absolute_rgb_delta": 2.0127142811213994
+      },
+      {
+        "frame": 107,
+        "time_s": 1.7833333333333334,
+        "mean_absolute_rgb_delta": 1.9798299254115226
+      },
+      {
+        "frame": 108,
+        "time_s": 1.8,
+        "mean_absolute_rgb_delta": 1.9573109567901235
+      },
+      {
+        "frame": 109,
+        "time_s": 1.8166666666666667,
+        "mean_absolute_rgb_delta": 1.9624791023662551
+      },
+      {
+        "frame": 110,
+        "time_s": 1.8333333333333333,
+        "mean_absolute_rgb_delta": 1.945297389403292
+      },
+      {
+        "frame": 111,
+        "time_s": 1.85,
+        "mean_absolute_rgb_delta": 1.8631296617798354
+      },
+      {
+        "frame": 112,
+        "time_s": 1.8666666666666667,
+        "mean_absolute_rgb_delta": 1.8445465213477366
+      },
+      {
+        "frame": 113,
+        "time_s": 1.8833333333333333,
+        "mean_absolute_rgb_delta": 1.6872574266975309
+      },
+      {
+        "frame": 114,
+        "time_s": 1.9,
+        "mean_absolute_rgb_delta": 1.659200424382716
+      },
+      {
+        "frame": 115,
+        "time_s": 1.9166666666666667,
+        "mean_absolute_rgb_delta": 1.6557150205761317
+      },
+      {
+        "frame": 116,
+        "time_s": 1.9333333333333333,
+        "mean_absolute_rgb_delta": 1.3281376993312757
+      },
+      {
+        "frame": 117,
+        "time_s": 1.95,
+        "mean_absolute_rgb_delta": 1.2972133809156379
+      },
+      {
+        "frame": 118,
+        "time_s": 1.9666666666666666,
+        "mean_absolute_rgb_delta": 0.6719079539609053
+      },
+      {
+        "frame": 119,
+        "time_s": 1.9833333333333334,
+        "mean_absolute_rgb_delta": 0.6396191808127571
+      },
+      {
+        "frame": 120,
+        "time_s": 2.0,
+        "mean_absolute_rgb_delta": 0.10015512474279835
+      },
+      {
+        "frame": 121,
+        "time_s": 2.0166666666666666,
+        "mean_absolute_rgb_delta": 0.0
+      }
+    ],
+    "transition_maximum_mean_rgb_delta": 4.15767907664609,
+    "encoded_snapshots": [
+      {
+        "frame": 0,
+        "time_s": 0.0,
+        "source_ssim": 0.998942,
+        "decoded_image": "final-opening-decoded-0.png"
+      },
+      {
+        "frame": 15,
+        "time_s": 0.25,
+        "source_ssim": 0.998976,
+        "decoded_image": "final-opening-decoded-15.png"
+      },
+      {
+        "frame": 30,
+        "time_s": 0.5,
+        "source_ssim": 0.998978,
+        "decoded_image": "final-opening-decoded-30.png"
+      },
+      {
+        "frame": 60,
+        "time_s": 1.0,
+        "source_ssim": 0.998997,
+        "decoded_image": "final-opening-decoded-60.png"
+      },
+      {
+        "frame": 75,
+        "time_s": 1.25,
+        "source_ssim": 0.99843,
+        "decoded_image": "final-opening-decoded-75.png"
+      },
+      {
+        "frame": 90,
+        "time_s": 1.5,
+        "source_ssim": 0.998491,
+        "decoded_image": "final-opening-decoded-90.png"
+      },
+      {
+        "frame": 105,
+        "time_s": 1.75,
+        "source_ssim": 0.998288,
+        "decoded_image": "final-opening-decoded-105.png"
+      },
+      {
+        "frame": 120,
+        "time_s": 2.0,
+        "source_ssim": 0.998394,
+        "decoded_image": "final-opening-decoded-120.png"
+      }
+    ],
+    "crop_previews": [
+      {
+        "image": "cover-feed-9x16.png",
+        "source_crop": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "preview_size": [
+          360,
+          640
+        ],
+        "entire_headline_inside_crop": true
+      },
+      {
+        "image": "cover-grid-square.png",
+        "source_crop": [
+          0,
+          420,
+          1080,
+          1500
+        ],
+        "preview_size": [
+          360,
+          360
+        ],
+        "entire_headline_inside_crop": true
+      },
+      {
+        "image": "cover-feed-3x4.png",
+        "source_crop": [
+          0,
+          240,
+          1080,
+          1680
+        ],
+        "preview_size": [
+          360,
+          480
+        ],
+        "entire_headline_inside_crop": true
+      }
+    ],
+    "caption_checks": {
+      "fonts": [
+        {
+          "file": "source/assets/Inter-Variable.ttf",
+          "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+          "actual_family": "Inter",
+          "base_face": "Regular",
+          "license_file": "source/assets/Inter-OFL.txt"
+        },
+        {
+          "file": "source/assets/Inter-Variable.ttf",
+          "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+          "actual_family": "Inter",
+          "base_face": "Regular",
+          "license_file": "source/assets/Inter-OFL.txt"
+        }
+      ],
+      "captions": [
+        {
+          "text": "How does Spring know what to inject?",
+          "rect": [
+            238.0,
+            1311.0,
+            841.0,
+            1449.0
+          ],
+          "text_bounds": [
+            [
+              264,
+              1325,
+              815,
+              1375
+            ],
+            [
+              362,
+              1385,
+              717,
+              1435
+            ]
+          ],
+          "lines": 2,
+          "font_size": 52,
+          "word_count": 7,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "The order service constructor",
+          "rect": [
+            156.0,
+            1346.0,
+            923.0,
+            1414.0
+          ],
+          "text_bounds": [
+            [
+              182,
+              1360,
+              897,
+              1400
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "requests a PaymentGateway.",
+          "rect": [
+            165.0,
+            1341.0,
+            915.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              191,
+              1355,
+              889,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Spring reads that dependency.",
+          "rect": [
+            148.0,
+            1341.0,
+            933.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              174,
+              1355,
+              907,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "The bean factory finds compatible types.",
+          "rect": [
+            244.0,
+            1311.0,
+            836.0,
+            1449.0
+          ],
+          "text_bounds": [
+            [
+              270,
+              1325,
+              810,
+              1375
+            ],
+            [
+              324,
+              1385,
+              755,
+              1435
+            ]
+          ],
+          "lines": 2,
+          "font_size": 52,
+          "word_count": 6,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "An unrelated logger won't match.",
+          "rect": [
+            205.0,
+            1316.0,
+            875.0,
+            1444.0
+          ],
+          "text_bounds": [
+            [
+              231,
+              1330,
+              849,
+              1380
+            ],
+            [
+              457,
+              1390,
+              623,
+              1430
+            ]
+          ],
+          "lines": 2,
+          "font_size": 52,
+          "word_count": 5,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Matching beans must also be eligible.",
+          "rect": [
+            164.0,
+            1311.0,
+            917.0,
+            1449.0
+          ],
+          "text_bounds": [
+            [
+              190,
+              1325,
+              891,
+              1375
+            ],
+            [
+              448,
+              1385,
+              632,
+              1435
+            ]
+          ],
+          "lines": 2,
+          "font_size": 52,
+          "word_count": 6,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Here, one eligible gateway remains.",
+          "rect": [
+            200.0,
+            1316.0,
+            879.0,
+            1444.0
+          ],
+          "text_bounds": [
+            [
+              226,
+              1330,
+              853,
+              1380
+            ],
+            [
+              437,
+              1390,
+              643,
+              1430
+            ]
+          ],
+          "lines": 2,
+          "font_size": 52,
+          "word_count": 5,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Spring supplies its instance",
+          "rect": [
+            184.0,
+            1341.0,
+            896.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              210,
+              1355,
+              870,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "to the constructor.",
+          "rect": [
+            292.0,
+            1346.0,
+            787.0,
+            1414.0
+          ],
+          "text_bounds": [
+            [
+              318,
+              1360,
+              761,
+              1400
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Without an eligible candidate,",
+          "rect": [
+            158.0,
+            1341.0,
+            921.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              184,
+              1355,
+              895,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "this required constructor dependency",
+          "rect": [
+            215.0,
+            1311.0,
+            865.0,
+            1449.0
+          ],
+          "text_bounds": [
+            [
+              241,
+              1325,
+              839,
+              1375
+            ],
+            [
+              390,
+              1385,
+              689,
+              1435
+            ]
+          ],
+          "lines": 2,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "stops context startup.",
+          "rect": [
+            248.0,
+            1343.0,
+            831.0,
+            1417.0
+          ],
+          "text_bounds": [
+            [
+              274,
+              1357,
+              805,
+              1403
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Our tests verify both outcomes.",
+          "rect": [
+            136.0,
+            1341.0,
+            945.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              162,
+              1355,
+              919,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 5,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Qualifiers and primary settings",
+          "rect": [
+            146.0,
+            1341.0,
+            934.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              172,
+              1355,
+              908,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "can also affect selection.",
+          "rect": [
+            217.0,
+            1346.0,
+            863.0,
+            1414.0
+          ],
+          "text_bounds": [
+            [
+              243,
+              1360,
+              837,
+              1400
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 4,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Match, filter, inject.",
+          "rect": [
+            288.0,
+            1341.0,
+            793.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              314,
+              1355,
+              767,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        },
+        {
+          "text": "Thanks for watching.",
+          "rect": [
+            262.0,
+            1341.0,
+            819.0,
+            1419.0
+          ],
+          "text_bounds": [
+            [
+              288,
+              1355,
+              793,
+              1405
+            ]
+          ],
+          "lines": 1,
+          "font_size": 52,
+          "word_count": 3,
+          "preferred_3_7_words": true,
+          "actual_black_alpha_probe": [
+            22,
+            14,
+            7
+          ]
+        }
+      ],
+      "measured_layouts_passed": true,
+      "preferred_phrase_lengths_all": true,
+      "scope": "Measured glyph/rectangle bounds, actual alpha-compositing probe and source underlay check; not auditory acceptance."
+    },
+    "thumbnail_settings": {
+      "font_family": "Inter",
+      "font_weight": 900,
+      "font_size": 104,
+      "font_sizes": [
+        104,
+        104,
+        104
+      ],
+      "font_axes": {
+        "opsz": 32,
+        "wght": 900
+      },
+      "text_color": "#FFFFFF",
+      "headline_lines": [
+        "How Spring",
+        "Finds Your",
+        "Dependencies"
+      ],
+      "headline_bounds": [
+        110,
+        499,
+        851,
+        899
+      ],
+      "headline_line_bounds": [
+        {
+          "text": "How Spring",
+          "size": 104,
+          "origin": [
+            110,
+            475
+          ],
+          "bbox": [
+            110,
+            499,
+            697,
+            598
+          ]
+        },
+        {
+          "text": "Finds Your",
+          "size": 104,
+          "origin": [
+            110,
+            626
+          ],
+          "bbox": [
+            110,
+            650,
+            641,
+            728
+          ]
+        },
+        {
+          "text": "Dependencies",
+          "size": 104,
+          "origin": [
+            128,
+            777
+          ],
+          "bbox": [
+            128,
+            801,
+            851,
+            899
+          ]
+        }
+      ],
+      "headline_roi": [
+        100,
+        450,
+        990,
+        915
+      ],
+      "technical_roi": [
+        100,
+        930,
+        980,
+        1275
+      ],
+      "highlight": {
+        "background": "#0866FF",
+        "corner_radius": 20,
+        "padding": [
+          18,
+          8
+        ],
+        "bounds": [
+          110,
+          793,
+          869,
+          907
+        ]
+      },
+      "font_file": "source/assets/Inter-Variable.ttf",
+      "font_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "safe_area": [
+        90,
+        250,
+        990,
+        1520
+      ],
+      "source_frame0_pixel_identical_to_cover": true,
+      "stable_headline_seconds": [
+        0,
+        1
+      ],
+      "technical_transition_seconds": [
+        1,
+        2
+      ],
+      "highlighted_phrase": "Dependencies",
+      "technical_background": "OrderService constructor PaymentGateway type request to BeanFactory; simplified demonstrated path",
+      "crop_checks": {
+        "square": [
+          0,
+          420,
+          1080,
+          1500
+        ],
+        "portrait": [
+          0,
+          240,
+          1080,
+          1680
+        ]
+      },
+      "opening_caption": "How does Spring know what to inject?",
+      "caption_region": [
+        90,
+        1295,
+        990,
+        1505
+      ]
+    },
+    "subtitle_settings": {
+      "font_family": "Inter",
+      "font_weight": 700,
+      "font_size": 52,
+      "font_axes": {
+        "opsz": 32,
+        "wght": 700
+      },
+      "text_color": "#FFFFFF",
+      "background": {
+        "color": "#000000",
+        "opacity": 0.82,
+        "alpha": 209,
+        "corner_radius": 12
+      },
+      "padding": [
+        26,
+        14
+      ],
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ],
+      "max_lines": 2,
+      "caption_region": [
+        90,
+        1295,
+        990,
+        1505
+      ],
+      "font_file": "source/assets/Inter-Variable.ttf",
+      "font_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "measurement": "PillowImageDraw.textbbox; actualglyphbounds;RGBAalpha_composite",
+      "line_gap": 10
+    },
+    "review_scope": "Actual decoded opening images and source style/layout correspondence. Preview crops model likely feed/grid crops; no automatic platform selection, physical-phone playback or perceptual listening approval is claimed."
+  },
+  "recap_hold_start": 33.677208,
+  "recap_hold_end": 35.677208,
+  "recap_hold_seconds": 2.0,
+  "recap_hold_is_before_thanks": true,
+  "recap_hold_source_samples": 120,
+  "recap_hold_crop": [
+    100,
+    330,
+    980,
+    1290
+  ],
+  "recap_hold_source_pixel_identical": true,
+  "recap_hold_decoded_frames": 120,
+  "recap_hold_ssim_minimum": 0.9974,
+  "recap_hold_ssim_average": 0.99799715,
+  "thanks_start": 35.677208,
+  "thanks_end": 37.017958,
+  "thanks_frame_checked": 2221,
+  "thanks_final_frame_ssim": 0.999339,
+  "thanks_caption_and_script_match": true,
+  "intentional_recap_hold_or_closing_quiet_allowed": true,
+  "perceptual_voice_review": "UNVERIFIED: no auditory listening review performed",
+  "required_delivery_files_nonempty": true
+}

@@ -1,0 +1,36 @@
+{
+  "font_family": "Inter",
+  "font_weight": 700,
+  "font_size": 52,
+  "font_axes": {
+    "opsz": 32,
+    "wght": 700
+  },
+  "text_color": "#FFFFFF",
+  "background": {
+    "color": "#000000",
+    "opacity": 0.82,
+    "alpha": 209,
+    "corner_radius": 12
+  },
+  "padding": [
+    26,
+    14
+  ],
+  "max_width": 840,
+  "center": [
+    540,
+    1380
+  ],
+  "max_lines": 2,
+  "caption_region": [
+    90,
+    1295,
+    990,
+    1505
+  ],
+  "font_file": "source/assets/Inter-Variable.ttf",
+  "font_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+  "measurement": "PillowImageDraw.textbbox; actualglyphbounds;RGBAalpha_composite",
+  "line_gap": 10
+}

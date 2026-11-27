@@ -1,0 +1,57 @@
+{
+  "word_distinctions": {
+    "eligible": "ˈɛlɪdʒəbəl",
+    "PaymentGateway": "pˈeɪmənt ɡˈeɪtweɪ",
+    "qualifiers": "kwˈɔlɪfˌaɪɚz",
+    "primary": "pɹˈaɪmɚɹi",
+    "constructor": "kənstɹˈʌktɚ",
+    "dependency resolution": "dᵻpˈɛndənsi ɹˌɛzəlˈuːʃən",
+    "bean factory": "bˈiːn fˈæktɚɹi",
+    "gateway": "ɡˈeɪtweɪ",
+    "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "How does Spring know what to inject?",
+      "phonemes": "hˌaʊ dˈʌz spɹˈɪŋ nˈoʊ wʌt tʊ ɪndʒˈɛkt?",
+      "inference_batches": 1
+    },
+    {
+      "scene": 2,
+      "text": "The order service constructor requests a PaymentGateway. Spring reads that dependency.",
+      "phonemes": "ðɪ ˈɔːɹdɚ sˈɜːvɪs kənstɹˈʌktɚ ɹᵻkwˈɛsts ɐ pˈeɪmənt ɡˈeɪtweɪ. spɹˈɪŋ ɹˈiːdz ðæt dᵻpˈɛndənsi.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 3,
+      "text": "The bean factory finds compatible types. An unrelated logger won't match. Matching beans must also be eligible.",
+      "phonemes": "ðə bˈiːn fˈæktɚɹi fˈaɪndz kəmpˈæɾᵻbəl tˈaɪps. ɐn ˌʌnɹᵻlˈeɪɾᵻd lˈɔɡɚ woʊnt mˈætʃ. mˈætʃɪŋ bˈiːnz mˈʌst ˈɔːlsoʊ biː ˈɛlɪdʒəbəl.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 4,
+      "text": "Here, one eligible gateway remains. Spring supplies its instance to the constructor.",
+      "phonemes": "hˈɪɹ, wˈʌn ˈɛlɪdʒəbəl ɡˈeɪtweɪ ɹᵻmˈeɪnz. spɹˈɪŋ səplˈaɪz ɪts ˈɪnstəns tə ðə kənstɹˈʌktɚ.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 5,
+      "text": "Without an eligible candidate, this required constructor dependency stops context startup.",
+      "phonemes": "wɪðˌaʊt ɐn ˈɛlɪdʒəbəl kˈændᵻdˌeɪt, ðɪs ɹᵻkwˈaɪɚd kənstɹˈʌktɚ dᵻpˈɛndənsi stˈɑːps kˈɑːntɛkst stˈɑːɹɾʌp.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 6,
+      "text": "Our tests verify both outcomes. Qualifiers and primary settings can also affect selection. Match, filter, inject.",
+      "phonemes": "ˌaʊɚ tˈɛsts vˈɛɹᵻfˌaɪ bˈoʊθ ˈaʊtkʌmz. kwˈɔlɪfˌaɪɚz ænd pɹˈaɪmɚɹi sˈɛɾɪŋz kæn ˈɔːlsoʊ ɐfˈɛkt sᵻlˈɛkʃən. mˈætʃ, fˈɪltɚ, ɪndʒˈɛkt.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 7,
+      "text": "Thanks for watching.",
+      "phonemes": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ.",
+      "inference_batches": 1
+    }
+  ]
+}

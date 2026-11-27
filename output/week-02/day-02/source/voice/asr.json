@@ -1,0 +1,586 @@
+{
+  "model": "faster-whisper small.en int8",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.32,
+      "text": " How does Spring know what to inject?",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " How",
+          "start": 0.0,
+          "end": 0.14,
+          "probability": 0.5363844037055969
+        },
+        {
+          "word": " does",
+          "start": 0.14,
+          "end": 0.34,
+          "probability": 0.8376137614250183
+        },
+        {
+          "word": " Spring",
+          "start": 0.34,
+          "end": 0.5,
+          "probability": 0.6008240580558777
+        },
+        {
+          "word": " know",
+          "start": 0.5,
+          "end": 0.68,
+          "probability": 0.9891772866249084
+        },
+        {
+          "word": " what",
+          "start": 0.68,
+          "end": 0.84,
+          "probability": 0.9927142262458801
+        },
+        {
+          "word": " to",
+          "start": 0.84,
+          "end": 0.98,
+          "probability": 0.9988880753517151
+        },
+        {
+          "word": " inject?",
+          "start": 0.98,
+          "end": 1.32,
+          "probability": 0.995333731174469
+        }
+      ]
+    },
+    {
+      "start": 1.76,
+      "end": 4.4,
+      "text": " The order service constructor requests a payment gateway.",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " The",
+          "start": 1.76,
+          "end": 1.8,
+          "probability": 0.9133993983268738
+        },
+        {
+          "word": " order",
+          "start": 1.8,
+          "end": 2.0,
+          "probability": 0.8625789880752563
+        },
+        {
+          "word": " service",
+          "start": 2.0,
+          "end": 2.44,
+          "probability": 0.9813811779022217
+        },
+        {
+          "word": " constructor",
+          "start": 2.44,
+          "end": 3.04,
+          "probability": 0.9587951302528381
+        },
+        {
+          "word": " requests",
+          "start": 3.04,
+          "end": 3.48,
+          "probability": 0.9849107265472412
+        },
+        {
+          "word": " a",
+          "start": 3.48,
+          "end": 3.7,
+          "probability": 0.9728832244873047
+        },
+        {
+          "word": " payment",
+          "start": 3.7,
+          "end": 3.96,
+          "probability": 0.9764419794082642
+        },
+        {
+          "word": " gateway.",
+          "start": 3.96,
+          "end": 4.4,
+          "probability": 0.9937112331390381
+        }
+      ]
+    },
+    {
+      "start": 4.9,
+      "end": 6.28,
+      "text": " Spring reads that dependency.",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 4.9,
+          "end": 5.02,
+          "probability": 0.9899519085884094
+        },
+        {
+          "word": " reads",
+          "start": 5.02,
+          "end": 5.4,
+          "probability": 0.9932243227958679
+        },
+        {
+          "word": " that",
+          "start": 5.4,
+          "end": 5.68,
+          "probability": 0.9964659214019775
+        },
+        {
+          "word": " dependency.",
+          "start": 5.68,
+          "end": 6.28,
+          "probability": 0.9891487956047058
+        }
+      ]
+    },
+    {
+      "start": 7.02,
+      "end": 9.4,
+      "text": " The bean factory finds compatible types",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " The",
+          "start": 7.02,
+          "end": 7.02,
+          "probability": 0.9037280678749084
+        },
+        {
+          "word": " bean",
+          "start": 7.02,
+          "end": 7.22,
+          "probability": 0.3865400552749634
+        },
+        {
+          "word": " factory",
+          "start": 7.22,
+          "end": 7.62,
+          "probability": 0.9334973692893982
+        },
+        {
+          "word": " finds",
+          "start": 7.62,
+          "end": 8.24,
+          "probability": 0.9605798125267029
+        },
+        {
+          "word": " compatible",
+          "start": 8.24,
+          "end": 8.82,
+          "probability": 0.9920904636383057
+        },
+        {
+          "word": " types",
+          "start": 8.82,
+          "end": 9.4,
+          "probability": 0.9979267120361328
+        }
+      ]
+    },
+    {
+      "start": 9.4,
+      "end": 11.6,
+      "text": " and unrelated logger won't match.",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " and",
+          "start": 9.4,
+          "end": 9.82,
+          "probability": 0.28483790159225464
+        },
+        {
+          "word": " unrelated",
+          "start": 9.82,
+          "end": 10.34,
+          "probability": 0.9834200143814087
+        },
+        {
+          "word": " logger",
+          "start": 10.34,
+          "end": 10.86,
+          "probability": 0.9862550497055054
+        },
+        {
+          "word": " won't",
+          "start": 10.86,
+          "end": 11.24,
+          "probability": 0.9960468709468842
+        },
+        {
+          "word": " match.",
+          "start": 11.24,
+          "end": 11.6,
+          "probability": 0.9995686411857605
+        }
+      ]
+    },
+    {
+      "start": 12.08,
+      "end": 13.96,
+      "text": " Matching beans must also be eligible.",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " Matching",
+          "start": 12.08,
+          "end": 12.36,
+          "probability": 0.9634876251220703
+        },
+        {
+          "word": " beans",
+          "start": 12.36,
+          "end": 12.62,
+          "probability": 0.9449101686477661
+        },
+        {
+          "word": " must",
+          "start": 12.62,
+          "end": 12.94,
+          "probability": 0.9951575398445129
+        },
+        {
+          "word": " also",
+          "start": 12.94,
+          "end": 13.34,
+          "probability": 0.9986911416053772
+        },
+        {
+          "word": " be",
+          "start": 13.34,
+          "end": 13.54,
+          "probability": 0.9996787309646606
+        },
+        {
+          "word": " eligible.",
+          "start": 13.54,
+          "end": 13.96,
+          "probability": 0.9985331296920776
+        }
+      ]
+    },
+    {
+      "start": 14.68,
+      "end": 16.9,
+      "text": " Here, one eligible gateway remains.",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " Here,",
+          "start": 14.68,
+          "end": 14.94,
+          "probability": 0.9976038336753845
+        },
+        {
+          "word": " one",
+          "start": 15.14,
+          "end": 15.34,
+          "probability": 0.979870080947876
+        },
+        {
+          "word": " eligible",
+          "start": 15.34,
+          "end": 15.84,
+          "probability": 0.9949663281440735
+        },
+        {
+          "word": " gateway",
+          "start": 15.84,
+          "end": 16.32,
+          "probability": 0.991757333278656
+        },
+        {
+          "word": " remains.",
+          "start": 16.32,
+          "end": 16.9,
+          "probability": 0.9967484474182129
+        }
+      ]
+    },
+    {
+      "start": 17.38,
+      "end": 19.4,
+      "text": " Spring supplies its instance to the constructor.",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 17.38,
+          "end": 17.48,
+          "probability": 0.9954284429550171
+        },
+        {
+          "word": " supplies",
+          "start": 17.48,
+          "end": 17.94,
+          "probability": 0.9966519474983215
+        },
+        {
+          "word": " its",
+          "start": 17.94,
+          "end": 18.2,
+          "probability": 0.9686313271522522
+        },
+        {
+          "word": " instance",
+          "start": 18.2,
+          "end": 18.54,
+          "probability": 0.9957336783409119
+        },
+        {
+          "word": " to",
+          "start": 18.54,
+          "end": 18.8,
+          "probability": 0.9993162155151367
+        },
+        {
+          "word": " the",
+          "start": 18.8,
+          "end": 18.9,
+          "probability": 0.9996646642684937
+        },
+        {
+          "word": " constructor.",
+          "start": 18.9,
+          "end": 19.4,
+          "probability": 0.9954368472099304
+        }
+      ]
+    },
+    {
+      "start": 20.02,
+      "end": 21.5,
+      "text": " Without an eligible candidate,",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " Without",
+          "start": 20.02,
+          "end": 20.24,
+          "probability": 0.9957211017608643
+        },
+        {
+          "word": " an",
+          "start": 20.24,
+          "end": 20.42,
+          "probability": 0.9986627101898193
+        },
+        {
+          "word": " eligible",
+          "start": 20.42,
+          "end": 20.88,
+          "probability": 0.996740996837616
+        },
+        {
+          "word": " candidate,",
+          "start": 20.88,
+          "end": 21.5,
+          "probability": 0.9993450045585632
+        }
+      ]
+    },
+    {
+      "start": 21.7,
+      "end": 25.22,
+      "text": " this required constructor dependency stops context startup.",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " this",
+          "start": 21.7,
+          "end": 21.84,
+          "probability": 0.9970337152481079
+        },
+        {
+          "word": " required",
+          "start": 21.84,
+          "end": 22.4,
+          "probability": 0.9949069619178772
+        },
+        {
+          "word": " constructor",
+          "start": 22.4,
+          "end": 22.98,
+          "probability": 0.9968919157981873
+        },
+        {
+          "word": " dependency",
+          "start": 22.98,
+          "end": 23.66,
+          "probability": 0.9949547648429871
+        },
+        {
+          "word": " stops",
+          "start": 23.66,
+          "end": 24.16,
+          "probability": 0.9951831698417664
+        },
+        {
+          "word": " context",
+          "start": 24.16,
+          "end": 24.72,
+          "probability": 0.9340305924415588
+        },
+        {
+          "word": " startup.",
+          "start": 24.72,
+          "end": 25.22,
+          "probability": 0.9099363088607788
+        }
+      ]
+    },
+    {
+      "start": 25.8,
+      "end": 27.72,
+      "text": " Our tests verify both outcomes.",
+      "avg_logprob": -0.0984242056856061,
+      "words": [
+        {
+          "word": " Our",
+          "start": 25.8,
+          "end": 25.96,
+          "probability": 0.9768096804618835
+        },
+        {
+          "word": " tests",
+          "start": 25.96,
+          "end": 26.22,
+          "probability": 0.9814884662628174
+        },
+        {
+          "word": " verify",
+          "start": 26.22,
+          "end": 26.74,
+          "probability": 0.995398223400116
+        },
+        {
+          "word": " both",
+          "start": 26.74,
+          "end": 27.08,
+          "probability": 0.9984879493713379
+        },
+        {
+          "word": " outcomes.",
+          "start": 27.08,
+          "end": 27.72,
+          "probability": 0.9965662360191345
+        }
+      ]
+    },
+    {
+      "start": 27.72,
+      "end": 31.28,
+      "text": " Qualifiers and primary settings can also affect selection.",
+      "avg_logprob": -0.31651037710684315,
+      "words": [
+        {
+          "word": " Qualifiers",
+          "start": 27.72,
+          "end": 28.68,
+          "probability": 0.8301645517349243
+        },
+        {
+          "word": " and",
+          "start": 28.68,
+          "end": 29.02,
+          "probability": 0.8036279678344727
+        },
+        {
+          "word": " primary",
+          "start": 29.02,
+          "end": 29.28,
+          "probability": 0.4829736053943634
+        },
+        {
+          "word": " settings",
+          "start": 29.28,
+          "end": 29.76,
+          "probability": 0.982135534286499
+        },
+        {
+          "word": " can",
+          "start": 29.76,
+          "end": 30.06,
+          "probability": 0.9936880469322205
+        },
+        {
+          "word": " also",
+          "start": 30.06,
+          "end": 30.42,
+          "probability": 0.9963405728340149
+        },
+        {
+          "word": " affect",
+          "start": 30.42,
+          "end": 30.76,
+          "probability": 0.9548062682151794
+        },
+        {
+          "word": " selection.",
+          "start": 30.76,
+          "end": 31.28,
+          "probability": 0.9570372104644775
+        }
+      ]
+    },
+    {
+      "start": 31.96,
+      "end": 33.04,
+      "text": " Match, filter, inject.",
+      "avg_logprob": -0.31651037710684315,
+      "words": [
+        {
+          "word": " Match,",
+          "start": 31.96,
+          "end": 31.96,
+          "probability": 0.9421343803405762
+        },
+        {
+          "word": " filter,",
+          "start": 32.24,
+          "end": 32.44,
+          "probability": 0.19330483675003052
+        },
+        {
+          "word": " inject.",
+          "start": 32.72,
+          "end": 33.04,
+          "probability": 0.9899408221244812
+        }
+      ]
+    },
+    {
+      "start": 35.68,
+      "end": 36.44,
+      "text": " Thanks for watching.",
+      "avg_logprob": -0.31651037710684315,
+      "words": [
+        {
+          "word": " Thanks",
+          "start": 35.49,
+          "end": 35.84,
+          "probability": 0.9814010858535767
+        },
+        {
+          "word": " for",
+          "start": 35.84,
+          "end": 36.02,
+          "probability": 0.9992781281471252
+        },
+        {
+          "word": " watching.",
+          "start": 36.02,
+          "end": 36.44,
+          "probability": 0.9986831545829773
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "time": 13.54,
+    "purpose": "matching metadata is filtered for injection eligibility"
+  },
+  {
+    "time": 17.48,
+    "purpose": "Spring supplies the selected managed reference"
+  },
+  {
+    "time": 23.66,
+    "purpose": "fresh missing-candidate context fails to refresh"
+  },
+  {
+    "time": 26.22,
+    "purpose": "actual context test verification"
+  },
+  {
+    "time": 33.09,
+    "purpose": "complete dependency-resolution overview"
+  }
+]

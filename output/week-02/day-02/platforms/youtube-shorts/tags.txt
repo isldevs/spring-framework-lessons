@@ -1,0 +1,1 @@
+dependency resolution, Spring Framework, dependency injection, Spring beans, constructor injection, PaymentGateway, OrderService, autowire candidate, bean factory, DefaultListableBeanFactory, NoSuchBeanDefinitionException, UnsatisfiedDependencyException, Java, JUnit 5, iSLDevs

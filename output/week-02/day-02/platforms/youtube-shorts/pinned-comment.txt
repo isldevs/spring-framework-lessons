@@ -1,0 +1,5 @@
+Registered does not always mean eligible for autowiring.
+
+Our backup PaymentGateway is registered, but autowireCandidate=false excludes it from this constructor dependency. The unrelated bean named gateway is not a PaymentGateway at all.
+
+The verified outcome: two compatible types, one eligible candidate, and the same gateway reference injected into OrderService. Qualifiers, primary settings and other resolution rules still matter in other configurations.

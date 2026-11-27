@@ -1,0 +1,38 @@
+TRACE resolveDependency: PaymentGateway
+TRACE compatible types: [eligibleGateway, backupGateway]
+TRACE isAutowireCandidate eligibleGateway: true
+TRACE isAutowireCandidate backupGateway: false
+TRACE eligible candidates: [eligibleGateway]
+compatible candidates: 2
+eligible candidates: 1
+unrelated ignored: true
+gateway same: true
+disabled candidate missing: true
+disabled compatible candidates: 1
+disabled eligible candidates: 0
+missing candidate: true
+missing exception: NoSuchBeanDefinitionException
+missing startup exception: UnsatisfiedDependencyException
+╷
+├─ JUnit Platform Suite ✔
+├─ JUnit Jupiter ✔
+│  └─ DependencyResolutionTest ✔
+│     ├─ compatibleTypesAreFilteredBeforeTheExpectedGatewayIsInjected() ✔
+│     ├─ matchingButDisabledBeanStillLeavesNoEligibleCandidate() ✔
+│     └─ missingRequiredTypeFailsContextStartup() ✔
+└─ JUnit Vintage ✔
+
+Test run finished after 210 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         3 tests found           ]
+[         0 tests skipped         ]
+[         3 tests started         ]
+[         0 tests aborted         ]
+[         3 tests successful      ]
+[         0 tests failed          ]
+

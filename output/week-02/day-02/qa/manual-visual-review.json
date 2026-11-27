@@ -1,0 +1,27 @@
+{
+  "reviewer": "Root production agent, visual image inspection only",
+  "video_sha256": "6d02917cfc303376091b2b2f78604b1544d28a289dbdefe61745dc9263c3341e",
+  "images_viewed": [
+    "cover.png",
+    "first-frame.png",
+    "qa/cover-grid-square.png",
+    "qa/cover-feed-3x4.png",
+    "source/evidence/final-opening-mobile-contact.png",
+    "source/evidence/final-decoded-mobile-contact.png",
+    "source/evidence/final-decoded-transition-contact.png",
+    "source/evidence/final-decoded-thanks-last.png"
+  ],
+  "observations": [
+    "Complete white Inter headline and Dependencies blue highlight are readable in small feed/grid previews.",
+    "Opening hook caption is separately balanced across two lines.",
+    "Same constructor code card moves into the dependency-request explanation, with no black fade.",
+    "All seven scenes and six transition pairs were inspected as decoded still contacts.",
+    "Backup remains under registered beans, with visible autowireCandidate:false; fresh MissingConfig label separates failure context.",
+    "No clipping or technical/caption collision observed in inspected images. Supporting framework metadata labels are smaller than main headings.",
+    "Actual final frame shows Thanks for watching."
+  ],
+  "scope": "Sampled still-image visual review, not every frame, listening, browser playback or a physical-phone test.",
+  "listening_approved": false,
+  "browser_playback_tested": false,
+  "physical_phone_tested": false
+}

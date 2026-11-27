@@ -1,0 +1,12 @@
+{
+  "observer": "TracingBeanFactory subclass delegates all decisions to Spring",
+  "spring_framework_version": "6.2.11",
+  "events": [
+    "resolveDependency: PaymentGateway",
+    "compatible types: [eligibleGateway, backupGateway]",
+    "isAutowireCandidate eligibleGateway: true",
+    "isAutowireCandidate backupGateway: false",
+    "eligible candidates: [eligibleGateway]"
+  ],
+  "scope": "Actual successful PaymentGateway constructor dependency; not a universal resolution sequence or timing benchmark."
+}

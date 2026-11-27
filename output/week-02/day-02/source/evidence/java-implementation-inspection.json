@@ -1,0 +1,125 @@
+{
+  "evidence_kind": "official pinned source inspection, not runtime execution",
+  "spring_version": "6.2.11",
+  "source_jar_sha256": "f5fcf8046c9f5e0ef7cd183d2ac6b0e5d23cd7f27c174234243c71a5e6399c75",
+  "excerpts": [
+    {
+      "id": "constructor-selection",
+      "file": "../java/framework/AutowiredAnnotationBeanPostProcessor.java",
+      "source_file_sha256": "ed59d1865a485629b8067a5f80b0822cf127829de4a08c5476eb904188274c25",
+      "line_start": 450,
+      "line_end": 452,
+      "excerpt": "\t\t\t\t\telse if (rawCandidates.length == 1 && rawCandidates[0].getParameterCount() > 0) {\n\t\t\t\t\t\tcandidateConstructors = new Constructor<?>[] {rawCandidates[0]};\n\t\t\t\t\t}",
+      "interpretation": "The only declared constructor with parameters is a candidate without @Autowired."
+    },
+    {
+      "id": "resolve-entry",
+      "file": "../java/framework/DefaultListableBeanFactory.java",
+      "source_file_sha256": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "line_start": 1622,
+      "line_end": 1644,
+      "excerpt": "\tpublic Object resolveDependency(DependencyDescriptor descriptor, @Nullable String requestingBeanName,\n\t\t\t@Nullable Set<String> autowiredBeanNames, @Nullable TypeConverter typeConverter) throws BeansException {\n\n\t\tdescriptor.initParameterNameDiscovery(getParameterNameDiscoverer());\n\t\tif (Optional.class == descriptor.getDependencyType()) {\n\t\t\treturn createOptionalDependency(descriptor, requestingBeanName);\n\t\t}\n\t\telse if (ObjectFactory.class == descriptor.getDependencyType() ||\n\t\t\t\tObjectProvider.class == descriptor.getDependencyType()) {\n\t\t\treturn new DependencyObjectProvider(descriptor, requestingBeanName);\n\t\t}\n\t\telse if (jakartaInjectProviderClass == descriptor.getDependencyType()) {\n\t\t\treturn new Jsr330Factory().createDependencyProvider(descriptor, requestingBeanName);\n\t\t}\n\t\telse if (descriptor.supportsLazyResolution()) {\n\t\t\tObject result = getAutowireCandidateResolver().getLazyResolutionProxyIfNecessary(\n\t\t\t\t\tdescriptor, requestingBeanName);\n\t\t\tif (result != null) {\n\t\t\t\treturn result;\n\t\t\t}\n\t\t}\n\t\treturn doResolveDependency(descriptor, requestingBeanName, autowiredBeanNames, typeConverter);\n\t}",
+      "interpretation": "Optional/provider/lazy cases are handled before ordinary resolution."
+    },
+    {
+      "id": "shortcut-and-value",
+      "file": "../java/framework/DefaultListableBeanFactory.java",
+      "source_file_sha256": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "line_start": 1648,
+      "line_end": 1663,
+      "excerpt": "\tpublic Object doResolveDependency(DependencyDescriptor descriptor, @Nullable String beanName,\n\t\t\t@Nullable Set<String> autowiredBeanNames, @Nullable TypeConverter typeConverter) throws BeansException {\n\n\t\tInjectionPoint previousInjectionPoint = ConstructorResolver.setCurrentInjectionPoint(descriptor);\n\t\ttry {\n\t\t\t// Step 1: pre-resolved shortcut for single bean match, for example, from @Autowired\n\t\t\tObject shortcut = descriptor.resolveShortcut(this);\n\t\t\tif (shortcut != null) {\n\t\t\t\treturn shortcut;\n\t\t\t}\n\n\t\t\tClass<?> type = descriptor.getDependencyType();\n\n\t\t\t// Step 2: pre-defined value or expression, for example, from @Value\n\t\t\tObject value = getAutowireCandidateResolver().getSuggestedValue(descriptor);\n\t\t\tif (value != null) {",
+      "interpretation": "A pre-resolved shortcut and suggested value precede name and candidate search."
+    },
+    {
+      "id": "name-shortcut",
+      "file": "../java/framework/DefaultListableBeanFactory.java",
+      "source_file_sha256": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "line_start": 1682,
+      "line_end": 1707,
+      "excerpt": "\t\t\t// Step 3: shortcut for declared dependency name or qualifier-suggested name matching target bean name\n\t\t\tif (descriptor.usesStandardBeanLookup()) {\n\t\t\t\tString dependencyName = descriptor.getDependencyName();\n\t\t\t\tif (dependencyName == null || !containsBean(dependencyName)) {\n\t\t\t\t\tString suggestedName = getAutowireCandidateResolver().getSuggestedName(descriptor);\n\t\t\t\t\tdependencyName = (suggestedName != null && containsBean(suggestedName) ? suggestedName : null);\n\t\t\t\t}\n\t\t\t\tif (dependencyName != null) {\n\t\t\t\t\tdependencyName = canonicalName(dependencyName);  // dependency name can be alias of target name\n\t\t\t\t\tif (isTypeMatch(dependencyName, type) && isAutowireCandidate(dependencyName, descriptor) &&\n\t\t\t\t\t\t\t!isFallback(dependencyName) && !hasPrimaryConflict(dependencyName, type) &&\n\t\t\t\t\t\t\t!isSelfReference(beanName, dependencyName)) {\n\t\t\t\t\t\tif (autowiredBeanNames != null) {\n\t\t\t\t\t\t\tautowiredBeanNames.add(dependencyName);\n\t\t\t\t\t\t}\n\t\t\t\t\t\tboolean preExisting = containsSingleton(dependencyName);\n\t\t\t\t\t\tObject dependencyBean = getBean(dependencyName);\n\t\t\t\t\t\tif (preExisting && dependencyBean instanceof NullBean) {\n\t\t\t\t\t\t\t// for backwards compatibility with addCandidateEntry in the regular code path\n\t\t\t\t\t\t\tdependencyBean = null;\n\t\t\t\t\t\t}\n\t\t\t\t\t\treturn resolveInstance(dependencyBean, descriptor, type, dependencyName);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n",
+      "interpretation": "A dependency/suggested name shortcut must also satisfy type and eligibility checks."
+    },
+    {
+      "id": "full-search-and-required-failure",
+      "file": "../java/framework/DefaultListableBeanFactory.java",
+      "source_file_sha256": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "line_start": 1713,
+      "line_end": 1726,
+      "excerpt": "\t\t\t// Step 4b: direct bean matches, possibly direct beans of type Collection / Map\n\t\t\tMap<String, Object> matchingBeans = findAutowireCandidates(beanName, type, descriptor);\n\t\t\tif (matchingBeans.isEmpty()) {\n\t\t\t\t// Step 4c (fallback): custom Collection / Map declarations for collecting multiple beans\n\t\t\t\tmultipleBeans = resolveMultipleBeansFallback(descriptor, beanName, autowiredBeanNames, typeConverter);\n\t\t\t\tif (multipleBeans != null) {\n\t\t\t\t\treturn multipleBeans;\n\t\t\t\t}\n\t\t\t\t// Raise exception if nothing found for required injection point\n\t\t\t\tif (isRequired(descriptor)) {\n\t\t\t\t\traiseNoMatchingBeanFound(type, descriptor.getResolvableType(), descriptor);\n\t\t\t\t}\n\t\t\t\treturn null;\n\t\t\t}",
+      "interpretation": "An unresolved required singular dependency raises a missing-bean error."
+    },
+    {
+      "id": "single-candidate-selection",
+      "file": "../java/framework/DefaultListableBeanFactory.java",
+      "source_file_sha256": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "line_start": 1731,
+      "line_end": 1762,
+      "excerpt": "\t\t\t// Step 5: determine single candidate\n\t\t\tif (matchingBeans.size() > 1) {\n\t\t\t\tautowiredBeanName = determineAutowireCandidate(matchingBeans, descriptor);\n\t\t\t\tif (autowiredBeanName == null) {\n\t\t\t\t\tif (isRequired(descriptor) || !indicatesArrayCollectionOrMap(type)) {\n\t\t\t\t\t\t// Raise exception if no clear match found for required injection point\n\t\t\t\t\t\treturn descriptor.resolveNotUnique(descriptor.getResolvableType(), matchingBeans);\n\t\t\t\t\t}\n\t\t\t\t\telse {\n\t\t\t\t\t\t// In case of an optional Collection/Map, silently ignore a non-unique case:\n\t\t\t\t\t\t// possibly it was meant to be an empty collection of multiple regular beans\n\t\t\t\t\t\t// (before 4.3 in particular when we didn't even look for collection beans).\n\t\t\t\t\t\treturn null;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tinstanceCandidate = matchingBeans.get(autowiredBeanName);\n\t\t\t}\n\t\t\telse {\n\t\t\t\t// We have exactly one match.\n\t\t\t\tMap.Entry<String, Object> entry = matchingBeans.entrySet().iterator().next();\n\t\t\t\tautowiredBeanName = entry.getKey();\n\t\t\t\tinstanceCandidate = entry.getValue();\n\t\t\t}\n\n\t\t\t// Step 6: validate single result\n\t\t\tif (autowiredBeanNames != null) {\n\t\t\t\tautowiredBeanNames.add(autowiredBeanName);\n\t\t\t}\n\t\t\tif (instanceCandidate instanceof Class) {\n\t\t\t\tinstanceCandidate = descriptor.resolveCandidate(autowiredBeanName, type, this);\n\t\t\t}\n\t\t\treturn resolveInstance(instanceCandidate, descriptor, type, autowiredBeanName);",
+      "interpretation": "Multiple matches need selection; one remaining match is used and validated."
+    },
+    {
+      "id": "type-discovery-and-eligibility",
+      "file": "../java/framework/DefaultListableBeanFactory.java",
+      "source_file_sha256": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "line_start": 1956,
+      "line_end": 1977,
+      "excerpt": "\tprotected Map<String, Object> findAutowireCandidates(\n\t\t\t@Nullable String beanName, Class<?> requiredType, DependencyDescriptor descriptor) {\n\n\t\tString[] candidateNames = BeanFactoryUtils.beanNamesForTypeIncludingAncestors(\n\t\t\t\tthis, requiredType, true, descriptor.isEager());\n\t\tMap<String, Object> result = CollectionUtils.newLinkedHashMap(candidateNames.length);\n\t\tfor (Map.Entry<Class<?>, Object> classObjectEntry : this.resolvableDependencies.entrySet()) {\n\t\t\tClass<?> autowiringType = classObjectEntry.getKey();\n\t\t\tif (autowiringType.isAssignableFrom(requiredType)) {\n\t\t\t\tObject autowiringValue = classObjectEntry.getValue();\n\t\t\t\tautowiringValue = AutowireUtils.resolveAutowiringValue(autowiringValue, requiredType);\n\t\t\t\tif (requiredType.isInstance(autowiringValue)) {\n\t\t\t\t\tresult.put(ObjectUtils.identityToString(autowiringValue), autowiringValue);\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tfor (String candidate : candidateNames) {\n\t\t\tif (!isSelfReference(beanName, candidate) && isAutowireCandidate(candidate, descriptor)) {\n\t\t\t\taddCandidateEntry(result, candidate, descriptor, requiredType);\n\t\t\t}\n\t\t}",
+      "interpretation": "Type-compatible bean names are discovered; self-reference and eligibility checks filter them."
+    },
+    {
+      "id": "fallback-candidate-passes",
+      "file": "../java/framework/DefaultListableBeanFactory.java",
+      "source_file_sha256": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "line_start": 1978,
+      "line_end": 2002,
+      "excerpt": "\t\tif (result.isEmpty()) {\n\t\t\tboolean multiple = indicatesArrayCollectionOrMap(requiredType);\n\t\t\t// Consider fallback matches if the first pass failed to find anything...\n\t\t\tDependencyDescriptor fallbackDescriptor = descriptor.forFallbackMatch();\n\t\t\tfor (String candidate : candidateNames) {\n\t\t\t\tif (!isSelfReference(beanName, candidate) && isAutowireCandidate(candidate, fallbackDescriptor) &&\n\t\t\t\t\t\t(!multiple || getAutowireCandidateResolver().hasQualifier(descriptor))) {\n\t\t\t\t\taddCandidateEntry(result, candidate, descriptor, requiredType);\n\t\t\t\t}\n\t\t\t}\n\t\t\tif (result.isEmpty() && !multiple) {\n\t\t\t\t// Consider self references as a final pass...\n\t\t\t\t// but in the case of a dependency collection, not the very same bean itself.\n\t\t\t\tfor (String candidate : candidateNames) {\n\t\t\t\t\tif (isSelfReference(beanName, candidate) &&\n\t\t\t\t\t\t\t(!(descriptor instanceof MultiElementDescriptor) || !beanName.equals(candidate)) &&\n\t\t\t\t\t\t\tisAutowireCandidate(candidate, fallbackDescriptor)) {\n\t\t\t\t\t\taddCandidateEntry(result, candidate, descriptor, requiredType);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn result;\n\t}\n",
+      "interpretation": "Fallback and self-reference passes exist when the ordinary candidate pass is empty."
+    },
+    {
+      "id": "candidate-resolver-delegation",
+      "file": "../java/framework/DefaultListableBeanFactory.java",
+      "source_file_sha256": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "line_start": 956,
+      "line_end": 969,
+      "excerpt": "\tprotected boolean isAutowireCandidate(String beanName, RootBeanDefinition mbd,\n\t\t\tDependencyDescriptor descriptor, AutowireCandidateResolver resolver) {\n\n\t\tString bdName = transformedBeanName(beanName);\n\t\tresolveBeanClass(mbd, bdName);\n\t\tif (mbd.isFactoryMethodUnique && mbd.factoryMethodToIntrospect == null) {\n\t\t\tnew ConstructorResolver(this).resolveFactoryMethodIfPossible(mbd);\n\t\t}\n\t\tBeanDefinitionHolder holder = (beanName.equals(bdName) ?\n\t\t\t\tthis.mergedBeanDefinitionHolders.computeIfAbsent(beanName,\n\t\t\t\t\t\tkey -> new BeanDefinitionHolder(mbd, beanName, getAliases(bdName))) :\n\t\t\t\tnew BeanDefinitionHolder(mbd, beanName, getAliases(bdName)));\n\t\treturn resolver.isAutowireCandidate(holder, descriptor);\n\t}",
+      "interpretation": "The bean factory delegates eligibility to its configured candidate resolver."
+    },
+    {
+      "id": "candidate-definition-flag",
+      "file": "../java/framework/AutowireCandidateResolver.java",
+      "source_file_sha256": "86ff8add8567d6c83eff921f49c377ae400a5226e7aea31a2e8a6f727da0f4e7",
+      "line_start": 44,
+      "line_end": 46,
+      "excerpt": "\tdefault boolean isAutowireCandidate(BeanDefinitionHolder bdHolder, DependencyDescriptor descriptor) {\n\t\treturn bdHolder.getBeanDefinition().isAutowireCandidate();\n\t}",
+      "interpretation": "The base eligibility check consults BeanDefinition.isAutowireCandidate()."
+    },
+    {
+      "id": "generic-type-eligibility",
+      "file": "../java/framework/GenericTypeAwareAutowireCandidateResolver.java",
+      "source_file_sha256": "3f56b091a42d41701f2e07e9a60b8368edd2d0419e8181256c0545010fe59a2f",
+      "line_start": 64,
+      "line_end": 70,
+      "excerpt": "\tpublic boolean isAutowireCandidate(BeanDefinitionHolder bdHolder, DependencyDescriptor descriptor) {\n\t\tif (!super.isAutowireCandidate(bdHolder, descriptor)) {\n\t\t\t// If explicitly false, do not proceed with any other checks...\n\t\t\treturn false;\n\t\t}\n\t\treturn checkGenericTypeMatch(bdHolder, descriptor);\n\t}",
+      "interpretation": "Explicitly ineligible definitions fail before generic-type checks."
+    },
+    {
+      "id": "qualifier-eligibility",
+      "file": "../java/framework/QualifierAnnotationAutowireCandidateResolver.java",
+      "source_file_sha256": "cfba5373e8921668097591bea131d159a9c4c74cc6028e97be4e57a3eb0caf45",
+      "line_start": 156,
+      "line_end": 170,
+      "excerpt": "\tpublic boolean isAutowireCandidate(BeanDefinitionHolder bdHolder, DependencyDescriptor descriptor) {\n\t\tif (!super.isAutowireCandidate(bdHolder, descriptor)) {\n\t\t\treturn false;\n\t\t}\n\t\tBoolean checked = checkQualifiers(bdHolder, descriptor.getAnnotations());\n\t\tif (checked != Boolean.FALSE) {\n\t\t\tMethodParameter methodParam = descriptor.getMethodParameter();\n\t\t\tif (methodParam != null) {\n\t\t\t\tMethod method = methodParam.getMethod();\n\t\t\t\tif (method == null || void.class == method.getReturnType()) {\n\t\t\t\t\tBoolean methodChecked = checkQualifiers(bdHolder, methodParam.getMethodAnnotations());\n\t\t\t\t\tif (methodChecked != null && checked == null) {\n\t\t\t\t\t\tchecked = methodChecked;\n\t\t\t\t\t}\n\t\t\t\t}",
+      "interpretation": "The annotation-aware resolver preserves prior checks and considers qualifiers."
+    },
+    {
+      "id": "multiple-candidate-selection-policy",
+      "file": "../java/framework/DefaultListableBeanFactory.java",
+      "source_file_sha256": "478406aa60324c84a7dbd5099e5d518ad2f38f66d029485bf6d858fc56576722",
+      "line_start": 2035,
+      "line_end": 2080,
+      "excerpt": "\tprotected String determineAutowireCandidate(Map<String, Object> candidates, DependencyDescriptor descriptor) {\n\t\tClass<?> requiredType = descriptor.getDependencyType();\n\t\t// Step 1: check primary candidate\n\t\tString primaryCandidate = determinePrimaryCandidate(candidates, requiredType);\n\t\tif (primaryCandidate != null) {\n\t\t\treturn primaryCandidate;\n\t\t}\n\t\t// Step 2a: match bean name against declared dependency name\n\t\tString dependencyName = descriptor.getDependencyName();\n\t\tif (dependencyName != null) {\n\t\t\tfor (String beanName : candidates.keySet()) {\n\t\t\t\tif (matchesBeanName(beanName, dependencyName)) {\n\t\t\t\t\treturn beanName;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t// Step 2b: match bean name against qualifier-suggested name\n\t\tString suggestedName = getAutowireCandidateResolver().getSuggestedName(descriptor);\n\t\tif (suggestedName != null) {\n\t\t\tfor (String beanName : candidates.keySet()) {\n\t\t\t\tif (matchesBeanName(beanName, suggestedName)) {\n\t\t\t\t\treturn beanName;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t// Step 3: check highest priority candidate\n\t\tString priorityCandidate = determineHighestPriorityCandidate(candidates, requiredType);\n\t\tif (priorityCandidate != null) {\n\t\t\treturn priorityCandidate;\n\t\t}\n\t\t// Step 4: pick unique default-candidate\n\t\tString defaultCandidate = determineDefaultCandidate(candidates);\n\t\tif (defaultCandidate != null) {\n\t\t\treturn defaultCandidate;\n\t\t}\n\t\t// Step 5: pick directly registered dependency\n\t\tfor (Map.Entry<String, Object> entry : candidates.entrySet()) {\n\t\t\tString candidateName = entry.getKey();\n\t\t\tObject beanInstance = entry.getValue();\n\t\t\tif (beanInstance != null && this.resolvableDependencies.containsValue(beanInstance)) {\n\t\t\t\treturn candidateName;\n\t\t\t}\n\t\t}\n\t\treturn null;\n\t}\n",
+      "interpretation": "Primary, dependency/suggested name, priority, default candidate and resolvable dependencies can affect selection."
+    }
+  ],
+  "lesson_scope": "Simplified ordinary required PaymentGateway constructor dependency; not a complete universal resolution algorithm."
+}
