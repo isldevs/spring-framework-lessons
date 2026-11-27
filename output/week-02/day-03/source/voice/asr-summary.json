@@ -1,0 +1,10 @@
+{
+  "model": "faster-whisper small.en int8",
+  "narration_sha256": "6c4d1565bc50a3deb333cc888eff36a2263dc24c82555b95085193fb0aeed158",
+  "reference_words": 78,
+  "asr_words": 79,
+  "edit_distance": 2,
+  "normalized_word_error_rate": 0.02564102564102564,
+  "transcript": "What if this Spring Bean doesn't exist? A required audit publisher is missing. Spring cannot finish creating the service. Change the constructor parameter to optional of audit publisher. Now absence is allowed. With one matching publisher, Spring supplies an optional containing that managed instance. With no publisher, Spring supplies an empty optional. The service skips this extra notification. Both optional contexts start. Our tests confirm the values. Ambiguity can still fail, keep critical security dependencies required. Thanks for watching.",
+  "normalization": "lowercase, strip apostrophes, punctuation to word boundaries; no ASR prompt"
+}

@@ -1,0 +1,769 @@
+{
+  "font": "Inter",
+  "weight": 700,
+  "size": 52,
+  "center": [
+    540,
+    1380
+  ],
+  "background_alpha": 209,
+  "corner_radius": 12,
+  "padding": [
+    26,
+    14
+  ],
+  "max_width": 840,
+  "layouts": [
+    {
+      "text_lines": [
+        "What if this Spring bean",
+        "doesn't exist?"
+      ],
+      "text_bounds": [
+        [
+          252,
+          1330,
+          827,
+          1380
+        ],
+        [
+          372,
+          1390,
+          707,
+          1430
+        ]
+      ],
+      "rect": [
+        226,
+        1316,
+        853,
+        1444
+      ],
+      "origins": [
+        [
+          252,
+          1318
+        ],
+        [
+          372,
+          1378
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "A required audit publisher is",
+        "missing."
+      ],
+      "text_bounds": [
+        [
+          205,
+          1325,
+          875,
+          1375
+        ],
+        [
+          440,
+          1385,
+          640,
+          1435
+        ]
+      ],
+      "rect": [
+        179,
+        1311,
+        901,
+        1449
+      ],
+      "origins": [
+        [
+          205,
+          1313
+        ],
+        [
+          440,
+          1373
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Spring cannot finish creating the",
+        "service."
+      ],
+      "text_bounds": [
+        [
+          148,
+          1330,
+          931,
+          1380
+        ],
+        [
+          446,
+          1390,
+          635,
+          1430
+        ]
+      ],
+      "rect": [
+        122,
+        1316,
+        957,
+        1444
+      ],
+      "origins": [
+        [
+          148,
+          1318
+        ],
+        [
+          446,
+          1378
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Change the constructor",
+        "parameter"
+      ],
+      "text_bounds": [
+        [
+          254,
+          1327,
+          827,
+          1377
+        ],
+        [
+          414,
+          1387,
+          665,
+          1433
+        ]
+      ],
+      "rect": [
+        228,
+        1313,
+        853,
+        1447
+      ],
+      "origins": [
+        [
+          254,
+          1315
+        ],
+        [
+          414,
+          1371
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "to Optional of AuditPublisher."
+      ],
+      "text_bounds": [
+        [
+          189,
+          1355,
+          891,
+          1405
+        ]
+      ],
+      "rect": [
+        163,
+        1341,
+        917,
+        1419
+      ],
+      "origins": [
+        [
+          189,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Now absence is allowed."
+      ],
+      "text_bounds": [
+        [
+          247,
+          1360,
+          833,
+          1400
+        ]
+      ],
+      "rect": [
+        221,
+        1346,
+        859,
+        1414
+      ],
+      "origins": [
+        [
+          247,
+          1348
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "With one matching publisher,"
+      ],
+      "text_bounds": [
+        [
+          190,
+          1355,
+          889,
+          1405
+        ]
+      ],
+      "rect": [
+        164,
+        1341,
+        915,
+        1419
+      ],
+      "origins": [
+        [
+          190,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Spring supplies an Optional"
+      ],
+      "text_bounds": [
+        [
+          212,
+          1355,
+          869,
+          1405
+        ]
+      ],
+      "rect": [
+        186,
+        1341,
+        895,
+        1419
+      ],
+      "origins": [
+        [
+          212,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "containing that managed",
+        "instance."
+      ],
+      "text_bounds": [
+        [
+          240,
+          1330,
+          840,
+          1380
+        ],
+        [
+          430,
+          1390,
+          650,
+          1430
+        ]
+      ],
+      "rect": [
+        214,
+        1316,
+        866,
+        1444
+      ],
+      "origins": [
+        [
+          240,
+          1318
+        ],
+        [
+          430,
+          1378
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "With no publisher,"
+      ],
+      "text_bounds": [
+        [
+          324,
+          1355,
+          755,
+          1405
+        ]
+      ],
+      "rect": [
+        298,
+        1341,
+        781,
+        1419
+      ],
+      "origins": [
+        [
+          324,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Spring supplies an empty",
+        "Optional."
+      ],
+      "text_bounds": [
+        [
+          236,
+          1325,
+          845,
+          1375
+        ],
+        [
+          432,
+          1385,
+          649,
+          1435
+        ]
+      ],
+      "rect": [
+        210,
+        1311,
+        871,
+        1449
+      ],
+      "origins": [
+        [
+          236,
+          1313
+        ],
+        [
+          432,
+          1373
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "The service skips this extra",
+        "notification."
+      ],
+      "text_bounds": [
+        [
+          214,
+          1330,
+          867,
+          1380
+        ],
+        [
+          396,
+          1390,
+          684,
+          1430
+        ]
+      ],
+      "rect": [
+        188,
+        1316,
+        893,
+        1444
+      ],
+      "origins": [
+        [
+          214,
+          1318
+        ],
+        [
+          396,
+          1378
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Both optional contexts start."
+      ],
+      "text_bounds": [
+        [
+          200,
+          1355,
+          881,
+          1405
+        ]
+      ],
+      "rect": [
+        174,
+        1341,
+        907,
+        1419
+      ],
+      "origins": [
+        [
+          200,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Our tests confirm the values."
+      ],
+      "text_bounds": [
+        [
+          195,
+          1360,
+          885,
+          1400
+        ]
+      ],
+      "rect": [
+        169,
+        1346,
+        911,
+        1414
+      ],
+      "origins": [
+        [
+          195,
+          1348
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Ambiguity can still fail."
+      ],
+      "text_bounds": [
+        [
+          268,
+          1355,
+          811,
+          1405
+        ]
+      ],
+      "rect": [
+        242,
+        1341,
+        837,
+        1419
+      ],
+      "origins": [
+        [
+          268,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Keep critical security",
+        "dependencies required."
+      ],
+      "text_bounds": [
+        [
+          286,
+          1325,
+          794,
+          1375
+        ],
+        [
+          257,
+          1385,
+          823,
+          1435
+        ]
+      ],
+      "rect": [
+        231,
+        1311,
+        849,
+        1449
+      ],
+      "origins": [
+        [
+          286,
+          1313
+        ],
+        [
+          257,
+          1373
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Thanks for watching."
+      ],
+      "text_bounds": [
+        [
+          288,
+          1355,
+          793,
+          1405
+        ]
+      ],
+      "rect": [
+        262,
+        1341,
+        819,
+        1419
+      ],
+      "origins": [
+        [
+          288,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    }
+  ]
+}

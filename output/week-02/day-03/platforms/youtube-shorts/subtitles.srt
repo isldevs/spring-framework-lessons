@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:01,913
+What if this Spring bean doesn't exist?
+
+2
+00:00:01,993 --> 00:00:04,580
+A required audit publisher is missing.
+
+3
+00:00:04,580 --> 00:00:06,785
+Spring cannot finish creating the service.
+
+4
+00:00:06,865 --> 00:00:08,260
+Change the constructor parameter
+
+5
+00:00:08,260 --> 00:00:10,680
+to Optional of AuditPublisher.
+
+6
+00:00:10,680 --> 00:00:12,379
+Now absence is allowed.
+
+7
+00:00:12,459 --> 00:00:14,140
+With one matching publisher,
+
+8
+00:00:14,140 --> 00:00:15,400
+Spring supplies an Optional
+
+9
+00:00:15,400 --> 00:00:17,675
+containing that managed instance.
+
+10
+00:00:17,755 --> 00:00:18,800
+With no publisher,
+
+11
+00:00:18,800 --> 00:00:20,980
+Spring supplies an empty Optional.
+
+12
+00:00:20,980 --> 00:00:23,774
+The service skips this extra notification.
+
+13
+00:00:23,854 --> 00:00:25,920
+Both optional contexts start.
+
+14
+00:00:25,920 --> 00:00:27,520
+Our tests confirm the values.
+
+15
+00:00:27,520 --> 00:00:29,720
+Ambiguity can still fail.
+
+16
+00:00:29,720 --> 00:00:32,839
+Keep critical security dependencies required.
+
+17
+00:00:34,839 --> 00:00:35,930
+Thanks for watching.
+

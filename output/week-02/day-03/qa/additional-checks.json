@@ -1,0 +1,8 @@
+{
+  "encoded_recap_frames_checked": 120,
+  "recap_comparison": "120x216 decoded RGB samples, all120frames",
+  "max_mean_rgb_difference_from_first": 0.0014531893004115226,
+  "timestamps_checked": 2171,
+  "constant60fps": true,
+  "scope": "Automated continuity checks, not auditory acceptance."
+}

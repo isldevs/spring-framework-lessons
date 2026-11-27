@@ -1,0 +1,22 @@
+[
+  {
+    "time": 2.492583,
+    "purpose": "required failure"
+  },
+  {
+    "time": 7.36475,
+    "purpose": "Optional constructor"
+  },
+  {
+    "time": 12.959333,
+    "purpose": "present managed reference"
+  },
+  {
+    "time": 18.255125,
+    "purpose": "absent empty value"
+  },
+  {
+    "time": 24.354,
+    "purpose": "test verification"
+  }
+]

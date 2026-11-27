@@ -1,0 +1,29 @@
+{
+  "font": "Inter",
+  "font_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+  "weight": 900,
+  "axes": {
+    "opsz": 32,
+    "wght": 900
+  },
+  "size": 104,
+  "headline": [
+    "Missing Bean?",
+    "Spring Can",
+    "Still Start"
+  ],
+  "highlight": "Missing Bean?",
+  "color": "#FFFFFF",
+  "highlight_background": "#0866FF",
+  "radius": 20,
+  "padding": [
+    18,
+    8
+  ],
+  "safe_area": [
+    90,
+    250,
+    990,
+    1520
+  ]
+}

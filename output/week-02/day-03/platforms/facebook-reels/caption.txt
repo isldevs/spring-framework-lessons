@@ -1,0 +1,9 @@
+No AuditPublisher bean? This service can still start. ☕
+
+Optional<AuditPublisher> makes absence explicit: one candidate gives a present value; no candidate gives an empty value. The service skips the extra notification when empty.
+
+Four actual Spring/JUnit tests check startup, values, reference identity and ambiguity. Optional does not fix every resolution error. Keep critical security dependencies required.
+
+Narration is AI-generated.
+
+#SpringFramework #DependencyInjection #Java #SpringBeans #Optional #JavaDevelopers #iSLDevs

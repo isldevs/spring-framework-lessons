@@ -1,0 +1,600 @@
+{
+  "model": "faster-whisper small.en int8",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.58,
+      "text": " What if this Spring Bean doesn't exist?",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " What",
+          "start": 0.0,
+          "end": 0.12,
+          "probability": 0.7160921096801758
+        },
+        {
+          "word": " if",
+          "start": 0.12,
+          "end": 0.24,
+          "probability": 0.9880929589271545
+        },
+        {
+          "word": " this",
+          "start": 0.24,
+          "end": 0.38,
+          "probability": 0.9687888622283936
+        },
+        {
+          "word": " Spring",
+          "start": 0.38,
+          "end": 0.64,
+          "probability": 0.5710106492042542
+        },
+        {
+          "word": " Bean",
+          "start": 0.64,
+          "end": 0.88,
+          "probability": 0.7823874354362488
+        },
+        {
+          "word": " doesn't",
+          "start": 0.88,
+          "end": 1.22,
+          "probability": 0.992957204580307
+        },
+        {
+          "word": " exist?",
+          "start": 1.22,
+          "end": 1.58,
+          "probability": 0.9959172606468201
+        }
+      ]
+    },
+    {
+      "start": 2.08,
+      "end": 3.96,
+      "text": " A required audit publisher is missing.",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " A",
+          "start": 2.08,
+          "end": 2.08,
+          "probability": 0.6214823126792908
+        },
+        {
+          "word": " required",
+          "start": 2.08,
+          "end": 2.56,
+          "probability": 0.9565265774726868
+        },
+        {
+          "word": " audit",
+          "start": 2.56,
+          "end": 2.9,
+          "probability": 0.84356689453125
+        },
+        {
+          "word": " publisher",
+          "start": 2.9,
+          "end": 3.38,
+          "probability": 0.9604949951171875
+        },
+        {
+          "word": " is",
+          "start": 3.38,
+          "end": 3.6,
+          "probability": 0.9971442818641663
+        },
+        {
+          "word": " missing.",
+          "start": 3.6,
+          "end": 3.96,
+          "probability": 0.9960436820983887
+        }
+      ]
+    },
+    {
+      "start": 4.58,
+      "end": 6.34,
+      "text": " Spring cannot finish creating the service.",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 4.58,
+          "end": 4.64,
+          "probability": 0.9782550930976868
+        },
+        {
+          "word": " cannot",
+          "start": 4.64,
+          "end": 5.0,
+          "probability": 0.9791154861450195
+        },
+        {
+          "word": " finish",
+          "start": 5.0,
+          "end": 5.38,
+          "probability": 0.9969135522842407
+        },
+        {
+          "word": " creating",
+          "start": 5.38,
+          "end": 5.74,
+          "probability": 0.9973573088645935
+        },
+        {
+          "word": " the",
+          "start": 5.74,
+          "end": 5.94,
+          "probability": 0.9955835938453674
+        },
+        {
+          "word": " service.",
+          "start": 5.94,
+          "end": 6.34,
+          "probability": 0.993123471736908
+        }
+      ]
+    },
+    {
+      "start": 7.12,
+      "end": 8.26,
+      "text": " Change the constructor parameter",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " Change",
+          "start": 7.12,
+          "end": 7.12,
+          "probability": 0.9657676815986633
+        },
+        {
+          "word": " the",
+          "start": 7.12,
+          "end": 7.36,
+          "probability": 0.9984294772148132
+        },
+        {
+          "word": " constructor",
+          "start": 7.36,
+          "end": 7.76,
+          "probability": 0.9082435965538025
+        },
+        {
+          "word": " parameter",
+          "start": 7.76,
+          "end": 8.26,
+          "probability": 0.9936496615409851
+        }
+      ]
+    },
+    {
+      "start": 8.26,
+      "end": 10.18,
+      "text": " to optional of audit publisher.",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " to",
+          "start": 8.26,
+          "end": 8.66,
+          "probability": 0.9975674152374268
+        },
+        {
+          "word": " optional",
+          "start": 8.66,
+          "end": 9.04,
+          "probability": 0.5479906797409058
+        },
+        {
+          "word": " of",
+          "start": 9.04,
+          "end": 9.32,
+          "probability": 0.9530166387557983
+        },
+        {
+          "word": " audit",
+          "start": 9.32,
+          "end": 9.66,
+          "probability": 0.6947620511054993
+        },
+        {
+          "word": " publisher.",
+          "start": 9.66,
+          "end": 10.18,
+          "probability": 0.4016439914703369
+        }
+      ]
+    },
+    {
+      "start": 10.68,
+      "end": 11.92,
+      "text": " Now absence is allowed.",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " Now",
+          "start": 10.68,
+          "end": 10.84,
+          "probability": 0.9934280514717102
+        },
+        {
+          "word": " absence",
+          "start": 10.84,
+          "end": 11.26,
+          "probability": 0.6666996479034424
+        },
+        {
+          "word": " is",
+          "start": 11.26,
+          "end": 11.52,
+          "probability": 0.9974072575569153
+        },
+        {
+          "word": " allowed.",
+          "start": 11.52,
+          "end": 11.92,
+          "probability": 0.9977622032165527
+        }
+      ]
+    },
+    {
+      "start": 12.48,
+      "end": 14.72,
+      "text": " With one matching publisher, Spring supplies",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " With",
+          "start": 12.48,
+          "end": 12.58,
+          "probability": 0.9956738352775574
+        },
+        {
+          "word": " one",
+          "start": 12.58,
+          "end": 12.84,
+          "probability": 0.9957067370414734
+        },
+        {
+          "word": " matching",
+          "start": 12.84,
+          "end": 13.2,
+          "probability": 0.9950413107872009
+        },
+        {
+          "word": " publisher,",
+          "start": 13.2,
+          "end": 13.8,
+          "probability": 0.9956755042076111
+        },
+        {
+          "word": " Spring",
+          "start": 14.14,
+          "end": 14.3,
+          "probability": 0.9018788933753967
+        },
+        {
+          "word": " supplies",
+          "start": 14.3,
+          "end": 14.72,
+          "probability": 0.9010096788406372
+        }
+      ]
+    },
+    {
+      "start": 14.72,
+      "end": 17.16,
+      "text": " an optional containing that managed instance.",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " an",
+          "start": 14.72,
+          "end": 14.98,
+          "probability": 0.9713337421417236
+        },
+        {
+          "word": " optional",
+          "start": 14.98,
+          "end": 15.4,
+          "probability": 0.9883493185043335
+        },
+        {
+          "word": " containing",
+          "start": 15.4,
+          "end": 15.94,
+          "probability": 0.9973050355911255
+        },
+        {
+          "word": " that",
+          "start": 15.94,
+          "end": 16.26,
+          "probability": 0.9884737133979797
+        },
+        {
+          "word": " managed",
+          "start": 16.26,
+          "end": 16.68,
+          "probability": 0.9860599040985107
+        },
+        {
+          "word": " instance.",
+          "start": 16.68,
+          "end": 17.16,
+          "probability": 0.9972954392433167
+        }
+      ]
+    },
+    {
+      "start": 17.76,
+      "end": 20.66,
+      "text": " With no publisher, Spring supplies an empty optional.",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " With",
+          "start": 17.76,
+          "end": 17.88,
+          "probability": 0.9957284331321716
+        },
+        {
+          "word": " no",
+          "start": 17.88,
+          "end": 18.14,
+          "probability": 0.9956786036491394
+        },
+        {
+          "word": " publisher,",
+          "start": 18.14,
+          "end": 18.62,
+          "probability": 0.9975478053092957
+        },
+        {
+          "word": " Spring",
+          "start": 18.8,
+          "end": 19.08,
+          "probability": 0.9654443860054016
+        },
+        {
+          "word": " supplies",
+          "start": 19.08,
+          "end": 19.48,
+          "probability": 0.9886142015457153
+        },
+        {
+          "word": " an",
+          "start": 19.48,
+          "end": 19.78,
+          "probability": 0.9751958250999451
+        },
+        {
+          "word": " empty",
+          "start": 19.78,
+          "end": 20.16,
+          "probability": 0.9971157312393188
+        },
+        {
+          "word": " optional.",
+          "start": 20.16,
+          "end": 20.66,
+          "probability": 0.9697508811950684
+        }
+      ]
+    },
+    {
+      "start": 20.98,
+      "end": 23.24,
+      "text": " The service skips this extra notification.",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " The",
+          "start": 20.98,
+          "end": 21.12,
+          "probability": 0.989611029624939
+        },
+        {
+          "word": " service",
+          "start": 21.12,
+          "end": 21.44,
+          "probability": 0.992840051651001
+        },
+        {
+          "word": " skips",
+          "start": 21.44,
+          "end": 21.88,
+          "probability": 0.993263453245163
+        },
+        {
+          "word": " this",
+          "start": 21.88,
+          "end": 22.12,
+          "probability": 0.9970492720603943
+        },
+        {
+          "word": " extra",
+          "start": 22.12,
+          "end": 22.54,
+          "probability": 0.9989098310470581
+        },
+        {
+          "word": " notification.",
+          "start": 22.54,
+          "end": 23.24,
+          "probability": 0.9985132813453674
+        }
+      ]
+    },
+    {
+      "start": 23.88,
+      "end": 25.6,
+      "text": " Both optional contexts start.",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " Both",
+          "start": 23.88,
+          "end": 24.08,
+          "probability": 0.9919571876525879
+        },
+        {
+          "word": " optional",
+          "start": 24.08,
+          "end": 24.56,
+          "probability": 0.9950476884841919
+        },
+        {
+          "word": " contexts",
+          "start": 24.56,
+          "end": 25.12,
+          "probability": 0.5482350587844849
+        },
+        {
+          "word": " start.",
+          "start": 25.12,
+          "end": 25.6,
+          "probability": 0.9903123378753662
+        }
+      ]
+    },
+    {
+      "start": 25.92,
+      "end": 27.52,
+      "text": " Our tests confirm the values.",
+      "avg_logprob": -0.1073853384668582,
+      "words": [
+        {
+          "word": " Our",
+          "start": 25.92,
+          "end": 26.02,
+          "probability": 0.993601381778717
+        },
+        {
+          "word": " tests",
+          "start": 26.02,
+          "end": 26.34,
+          "probability": 0.9777591228485107
+        },
+        {
+          "word": " confirm",
+          "start": 26.34,
+          "end": 26.82,
+          "probability": 0.9873421788215637
+        },
+        {
+          "word": " the",
+          "start": 26.82,
+          "end": 27.06,
+          "probability": 0.9994290471076965
+        },
+        {
+          "word": " values.",
+          "start": 27.06,
+          "end": 27.52,
+          "probability": 0.9983325600624084
+        }
+      ]
+    },
+    {
+      "start": 27.52,
+      "end": 29.38,
+      "text": " Ambiguity can still fail,",
+      "avg_logprob": -0.39422956357399624,
+      "words": [
+        {
+          "word": " Ambiguity",
+          "start": 27.52,
+          "end": 28.46,
+          "probability": 0.6782518128554026
+        },
+        {
+          "word": " can",
+          "start": 28.46,
+          "end": 28.7,
+          "probability": 0.9972027540206909
+        },
+        {
+          "word": " still",
+          "start": 28.7,
+          "end": 28.98,
+          "probability": 0.9982837438583374
+        },
+        {
+          "word": " fail,",
+          "start": 28.98,
+          "end": 29.38,
+          "probability": 0.9868380427360535
+        }
+      ]
+    },
+    {
+      "start": 29.72,
+      "end": 32.14,
+      "text": " keep critical security dependencies required.",
+      "avg_logprob": -0.39422956357399624,
+      "words": [
+        {
+          "word": " keep",
+          "start": 29.72,
+          "end": 29.86,
+          "probability": 0.9726346135139465
+        },
+        {
+          "word": " critical",
+          "start": 29.86,
+          "end": 30.24,
+          "probability": 0.939358115196228
+        },
+        {
+          "word": " security",
+          "start": 30.24,
+          "end": 30.78,
+          "probability": 0.9876095056533813
+        },
+        {
+          "word": " dependencies",
+          "start": 30.78,
+          "end": 31.4,
+          "probability": 0.9800917506217957
+        },
+        {
+          "word": " required.",
+          "start": 31.4,
+          "end": 32.14,
+          "probability": 0.995771586894989
+        }
+      ]
+    },
+    {
+      "start": 34.8,
+      "end": 35.62,
+      "text": " Thanks for watching.",
+      "avg_logprob": -0.39422956357399624,
+      "words": [
+        {
+          "word": " Thanks",
+          "start": 34.56,
+          "end": 35.0,
+          "probability": 0.9692242741584778
+        },
+        {
+          "word": " for",
+          "start": 35.0,
+          "end": 35.18,
+          "probability": 0.9992696642875671
+        },
+        {
+          "word": " watching.",
+          "start": 35.18,
+          "end": 35.62,
+          "probability": 0.9987677335739136
+        }
+      ]
+    }
+  ]
+}

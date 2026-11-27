@@ -1,0 +1,36 @@
+{
+  "manifest_files_verified": 291,
+  "platform_copies": [
+    {
+      "platform": "youtube-shorts",
+      "probe_pass": true,
+      "full_decode_pass": true,
+      "master_hash_equal": true
+    },
+    {
+      "platform": "facebook-reels",
+      "probe_pass": true,
+      "full_decode_pass": true,
+      "master_hash_equal": true
+    }
+  ],
+  "zip_crcs_and_production_member_hashes": true,
+  "archives": [
+    {
+      "name": "day-03-youtube-shorts-upload.zip",
+      "bytes": 2167498,
+      "sha256": "613d098cbaf05de8bf4a69fcf1dd09026734a8e1d63db3ad29b4e36f96388ded"
+    },
+    {
+      "name": "day-03-facebook-reels-upload.zip",
+      "bytes": 2166508,
+      "sha256": "fc4bd142d6e09702907012df68b7dd9d745548f83202217ac3bf566130b36a43"
+    },
+    {
+      "name": "day-03-production.zip",
+      "bytes": 51779543,
+      "sha256": "f51419e999b1fb992848d2f4cfd3c0d73a10da9a6a030a86cf0c19b03b4e5475"
+    }
+  ],
+  "status": "INCOMPLETE for perceptual listening acceptance"
+}

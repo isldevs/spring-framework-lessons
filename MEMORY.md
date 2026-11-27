@@ -83,7 +83,13 @@ Follow the full mandatory checklist in `AGENTS.md`; do not shorten it to a video
 - The user uploads from a phone. Metadata files or download links do NOT replace inline copyable publishing text. Include both formats every time a video is generated or updated.
 - Never say completed/verified without identifying any remaining incomplete essential requirement.
 
-## Latest implemented reference: Dependency resolution
+## Latest implemented reference: Optional dependencies
+
+- Approved exact topic **Optional dependencies**,2026-11-25 proposed19:00Asia/Phnom_Penh,output/week-02/day-03. Actual36.183333s/native1080×1920/60FPS/H264AAC48k/Rec709SDR/2171frames. Four real tests pass with Spring6.2.11/JUnit5.12.2: required missing fails refresh; Optional missing starts empty; Optional present assertSame managed publisher; ambiguity still fails. Extra notification is not critical security. Keep security dependencies required. Two negative-case warnings expected. Exact source hashes and official Optional documentation retained.
+- Cover Missing Bean? / Spring Can / Still Start, only firstlineblue, Inter900/104px. Sourceframe0=cover,headline stable61checks0–1s,motion1/60,technicalcardtravels1–2. Seventeen Inter700/52px measuredRGBA209rounded captions,ASR/sampleedges,notuniformestimates. Seven fresh Kokoro batches80Puck20Fenrir1.02;36.179958sWAV,onset15ms,rawsmall.en2edits/78WER2.5641%,onlyAuditPublishercompoundspacing. No auditory acceptance: strict INCOMPLETE. No browser/phone playback approval.
+- Recap32.839208–34.8392082s beforeThanks. Source120holdframes+encoded120downsampledframeschecked;all2171timestamps;actualdecodedopening/stills/crop/lastframeviewed. FinalSHAf5e9cac779da494b03be9569ebd814a8e9d6a41766bd8d612236fcf03cd9d75b. Manualpublicationrequired,preparedlocalplayerunpublished;ordinaryGitHubdeliveryauthorized. Fullmandatorydownloadhandoffplusfivecopyblockscontinues.
+
+## Previous implemented reference: Dependency resolution
 
 - Exact approved topic **Dependency resolution**, `output/week-02/day-02/`, publication **2026-11-24**, proposed **19:00 Asia/Phnom_Penh**. Actual master **37.033333s**,1080×1920,60FPS,H.264/AAC48kHzstereo,Rec.709SDR,2222frames. Preserve all earlier media/unrelated unfinishedDay04. No social upload/schedule/thumbnailselection/publication/newliveplayer; manualapprovalrequired. StandingGitHubfile/sourcepushremainsauthorized.
 - Actual **3/3 JUnit tests pass**,0failure/skip. Spring/spring-test6.2.11,JUnit5.12.2/platform1.12.2,Micrometer1.15.4,ECJ3.40target17/JDK21.0.13,11pinnedchecksumJARs. Main/test compilation and JUnit exit0; compile stderr is empty, JUnit stderr contains2expected negative-context warnings. TenJava/testsourcehashesmatchactualrun. Nomainapp/business/paymentrunclaimed.
@@ -183,3 +189,5 @@ Follow the full mandatory checklist in `AGENTS.md`; do not shorten it to a video
 - Media source and QA: `output/week-01/day-01/`. All generated files and packages are already in GitHub history.
 - Technical checks passed. Perceptual voice acceptance remains unverified because this runtime could not perform listening review. This is NOT a record of the voice having been auditorily approved.
 - The complete final-handoff requirement was additionally saved in commit33d32efbe82a96dd482f00cebb2515b776dd2081. Read current AGENTS and this memory rather than relying only on past chat summaries.
+
+Approved additional Week02 slot: **Optional dependencies**, Wednesday **2026-11-25**, proposed19:00Asia/Phnom_Penh. Deliver under output/week-02/day-03. Demonstrate required-absent failure, Optional absent/present outcomes, ambiguity caveat and never optionalize critical security to hide failure. Preserve newest style/hand-off/manual-publication rules.

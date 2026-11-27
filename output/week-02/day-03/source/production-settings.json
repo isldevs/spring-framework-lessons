@@ -1,0 +1,16 @@
+{
+  "topic": "Optional dependencies",
+  "publication_date": "2026-11-25",
+  "publication_time": "19:00Asia/Phnom_Penh(proposed)",
+  "scenes": 7,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "fps": 60,
+  "thumbnail": "Inter900/104px,Missing Bean? blue0866FF",
+  "captions": "Inter700/52px,RGBA209black,radius12,padding26/14,dynamicmax840",
+  "voice": "localKokoro80Puck20Fenrir1.02",
+  "strict_status": "INCOMPLETE: listening acceptance unavailable",
+  "manual_publication": true
+}

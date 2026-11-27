@@ -1,0 +1,30 @@
+optional absent: started, empty=true
+required absent: startup failed
+required root: NoSuchBeanDefinitionException
+optional present: started, same=true
+optional ambiguity: startup failed
+ambiguity root: NoUniqueBeanDefinitionException
+╷
+├─ JUnit Platform Suite ✔
+├─ JUnit Jupiter ✔
+│  └─ OptionalTest ✔
+│     ├─ optionalAbsentStartsEmpty() ✔
+│     ├─ requiredAbsentFails() ✔
+│     ├─ optionalPresentStartsWithSameReference() ✔
+│     └─ optionalDoesNotHideAmbiguity() ✔
+└─ JUnit Vintage ✔
+
+Test run finished after 309 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         4 tests found           ]
+[         0 tests skipped         ]
+[         4 tests started         ]
+[         0 tests aborted         ]
+[         4 tests successful      ]
+[         0 tests failed          ]
+

@@ -1,0 +1,1 @@
+Optional handles a missing candidate. It does not hide ambiguity: two competing AuditPublisher beans still fail in our test. Use this for genuinely optional features, and handle Optional.empty() explicitly.

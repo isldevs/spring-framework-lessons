@@ -46,3 +46,5 @@ This is the user's mandatory delivery format. A link-only or shortened handoff i
 4. Do not substitute metadata download links for the inline copyable publishing text. Include both.
 5. Push generated files and reproducible sources to https://github.com/isldevs/spring-framework-lessons.git, following the safe normal-push workflow above. Include the resulting GitHub commit link in the handoff.
 6. Keep status truthful: completed rendering/packaging or automated checks do not establish perceptual listening acceptance. Disclose outstanding requirements without inventing results.
+
+Approved additional Week02 slot: **Optional dependencies**, Wednesday **2026-11-25**, proposed19:00Asia/Phnom_Penh. Deliver under output/week-02/day-03. Demonstrate required-absent failure, Optional absent/present outcomes, ambiguity caveat and never optionalize critical security to hide failure. Preserve newest style/hand-off/manual-publication rules.

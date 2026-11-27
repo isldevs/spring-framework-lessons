@@ -1,0 +1,3 @@
+# Actual visual inspection
+
+Root inspected the actual decoded first-frame.png, encoded seven-scene mobile contact, final opening1.5s sample, square cover crop and last-frame.png. Main headings, type labels and captions are readable in these samples; supporting code metadata is smaller. No clipping/caption collision observed. Revised transition keeps the technical card visible while retiring headline words, avoiding superimposed headings. Source preflight tests250states and encoded opening/source comparisons supplement the sampled still review. No every-frame manual viewing, audio listening, browser or physical-phone review is claimed.

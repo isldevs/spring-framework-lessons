@@ -1,0 +1,14 @@
+{
+  "topic": "Optional dependencies",
+  "publication_date": "2026-11-25",
+  "time": "19:00 Asia/Phnom_Penh (proposed)",
+  "phrases": [
+    "What if this Spring bean doesn't exist?",
+    "A required audit publisher is missing. Spring cannot finish creating the service.",
+    "Change the constructor parameter to Optional of AuditPublisher. Now absence is allowed.",
+    "With one matching publisher, Spring supplies an Optional containing that managed instance.",
+    "With no publisher, Spring supplies an empty Optional. The service skips this extra notification.",
+    "Both optional contexts start. Our tests confirm the values. Ambiguity can still fail. Keep critical security dependencies required.",
+    "Thanks for watching."
+  ]
+}

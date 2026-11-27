@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://docs.spring.io/spring-framework/reference/6.2/core/beans/annotation-config/autowired.html",
+    "status": 200,
+    "sha256": "cc48d00ce559e94e3d83a4dccac12c6466a270c4ea6c52e232b04909ccfa1372",
+    "optional_found": true
+  },
+  {
+    "url": "https://docs.spring.io/spring-framework/docs/6.2.11/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html",
+    "status": 200,
+    "sha256": "4674d532b219ae67ffd7e3d00580037e34b1b39b6034272405bfe5d61908f75e",
+    "optional_found": true
+  }
+]

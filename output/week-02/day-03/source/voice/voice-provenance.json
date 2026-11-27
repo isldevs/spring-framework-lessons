@@ -1,0 +1,11 @@
+{
+  "voice_blend": {
+    "am_puck": 0.8,
+    "am_fenrir": 0.2
+  },
+  "speed": 1.02,
+  "fresh_utterances": 7,
+  "model_sha_verification": "models/kokoro-v1.0.onnx: OK\nmodels/voices-v1.0.bin: OK\n",
+  "narration_sha256": "6c4d1565bc50a3deb333cc888eff36a2263dc24c82555b95085193fb0aeed158",
+  "listening_acceptance": "UNVERIFIED"
+}

@@ -1,0 +1,85 @@
+{
+  "family": [
+    "Inter",
+    "Regular"
+  ],
+  "source_repository": "https://github.com/google/fonts",
+  "source_commit": "6ebe737e44fd64ee736bbc6feed6136a6dbfd222",
+  "license": "SIL Open Font License 1.1; permits commercial use and redistribution subject to its conditions",
+  "license_verified_text": "Permission is hereby granted, free of charge",
+  "files": [
+    {
+      "file": "Inter-Variable.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/6ebe737e44fd64ee736bbc6feed6136a6dbfd222/ofl/inter/Inter%5Bopsz,wght%5D.ttf",
+      "http_status": 200,
+      "bytes": 876576,
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    {
+      "file": "Inter-OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/6ebe737e44fd64ee736bbc6feed6136a6dbfd222/ofl/inter/OFL.txt",
+      "http_status": 200,
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    }
+  ],
+  "variation_axes": [
+    {
+      "minimum": 14,
+      "default": 14,
+      "maximum": 32,
+      "name": "Optical size"
+    },
+    {
+      "minimum": 100,
+      "default": 400,
+      "maximum": 900,
+      "name": "Weight"
+    }
+  ],
+  "verified_weights": {
+    "700": {
+      "variation_axes": [
+        14,
+        700
+      ],
+      "actual_bbox": [
+        0,
+        20,
+        738,
+        114
+      ],
+      "advance": 738.296875,
+      "glyph_render_sha256": "bc6a23c9a8b17bd07b05431f7fe3e4a237deca5910aa203e02a33cec6cde4362"
+    },
+    "800": {
+      "variation_axes": [
+        14,
+        800
+      ],
+      "actual_bbox": [
+        0,
+        19,
+        750,
+        114
+      ],
+      "advance": 750.3125,
+      "glyph_render_sha256": "9361d113ed75c593e52b0e42323861ccba0a7eebce4ab988880cac959254a011"
+    },
+    "900": {
+      "variation_axes": [
+        14,
+        900
+      ],
+      "actual_bbox": [
+        0,
+        18,
+        763,
+        114
+      ],
+      "advance": 763.453125,
+      "glyph_render_sha256": "252df4999ca33b716d5655c8377b1159be78a45d9070205173adafc257863bc9"
+    }
+  },
+  "verification": "Actual Pillow/FreeType variable-font instance rendering at700,800,900 produced distinct glyph rasters; no font substitution."
+}

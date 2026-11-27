@@ -1,0 +1,16 @@
+[
+  {
+    "tag": "replace",
+    "expected": [
+      "auditpublisher"
+    ],
+    "observed": [
+      "audit",
+      "publisher"
+    ],
+    "observed_span": [
+      9.32,
+      10.18
+    ]
+  }
+]

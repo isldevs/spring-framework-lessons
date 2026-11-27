@@ -1,0 +1,53 @@
+{
+  "word_distinctions": {
+    "Optional": "ˈɑːpʃənəl",
+    "AuditPublisher": "ˈɔːdɪt pˈʌblɪʃɚ",
+    "ambiguity": "ˌæmbɪɡjˈuːɪɾi",
+    "constructor": "kənstɹˈʌktɚ",
+    "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "What if this Spring bean doesn't exist?",
+      "phonemes": "wˌʌt ɪf ðɪs spɹˈɪŋ bˈiːn dˈʌzənt ɛɡzˈɪst?",
+      "inference_batches": 1
+    },
+    {
+      "scene": 2,
+      "text": "A required audit publisher is missing. Spring cannot finish creating the service.",
+      "phonemes": "ɐ ɹᵻkwˈaɪɚd ˈɔːdɪt pˈʌblɪʃɚɹ ɪz mˈɪsɪŋ. spɹˈɪŋ kænˈɑːt fˈɪnɪʃ kɹiːˈeɪɾɪŋ ðə sˈɜːvɪs.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 3,
+      "text": "Change the constructor parameter to Optional of AuditPublisher. Now absence is allowed.",
+      "phonemes": "tʃˈeɪndʒ ðə kənstɹˈʌktɚ pɚɹˈæmɪɾɚ tʊ ˈɑːpʃənəl ʌv ˈɔːdɪt pˈʌblɪʃɚ. nˈaʊ ˈæbsəns ɪz ɐlˈaʊd.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 4,
+      "text": "With one matching publisher, Spring supplies an Optional containing that managed instance.",
+      "phonemes": "wɪð wˈʌn mˈætʃɪŋ pˈʌblɪʃɚ, spɹˈɪŋ səplˈaɪz ɐn ˈɑːpʃənəl kəntˈeɪnɪŋ ðæt mˈænɪdʒd ˈɪnstəns.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 5,
+      "text": "With no publisher, Spring supplies an empty Optional. The service skips this extra notification.",
+      "phonemes": "wɪð nˈoʊ pˈʌblɪʃɚ, spɹˈɪŋ səplˈaɪz ɐn ˈɛmpti ˈɑːpʃənəl. ðə sˈɜːvɪs skˈɪps ðɪs ˈɛkstɹə nˌoʊɾɪfɪkˈeɪʃən.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 6,
+      "text": "Both optional contexts start. Our tests confirm the values. Ambiguity can still fail. Keep critical security dependencies required.",
+      "phonemes": "bˈoʊθ ˈɑːpʃənəl kˈɑːntɛksts stˈɑːɹt. ˌaʊɚ tˈɛsts kənfˈɜːm ðə vˈæljuːz. ˌæmbɪɡjˈuːɪɾi kæn stˈɪl fˈeɪl. kˈiːp kɹˈɪɾɪkəl sᵻkjˈʊɹɹᵻɾi dᵻpˈɛndənsiz ɹᵻkwˈaɪɚd.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 7,
+      "text": "Thanks for watching.",
+      "phonemes": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ.",
+      "inference_batches": 1
+    }
+  ]
+}

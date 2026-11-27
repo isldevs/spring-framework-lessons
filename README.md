@@ -2,6 +2,17 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## Optional dependencies
+
+Approved topic **Optional dependencies**, publication **2026-11-25**, proposed **19:00 Asia/Phnom_Penh**. Actual **36.183333s**,1080×1920,60FPS,H.264/AAC48kHz,Rec.709SDR. Four real Spring6.2.11/JUnit tests pass: required absent fails; Optional absent starts empty; Optional present starts with the same managed reference; ambiguity still fails. Full decode/black/cover/source/frame timestamp checks passed. Complete recap holds two seconds before Thanks. **Production remains incomplete for auditory voice acceptance**; no listening/browser/physical-phone approval is claimed. No social publication or new live-player deployment.
+
+- [MP4](output/week-02/day-03/video.mp4) · [Complete ZIP](output/week-02/day-03-production.zip)
+- [Cover](output/week-02/day-03/cover.png) · [SRT](output/week-02/day-03/subtitles.srt) · [Narration](output/week-02/day-03/narration.wav)
+- [Script](output/week-02/day-03/narration-script.md) · [Storyboard](output/week-02/day-03/storyboard.md)
+- [YouTube metadata](output/week-02/day-03/youtube-metadata.md) · [Facebook metadata](output/week-02/day-03/facebook-metadata.md)
+- [YouTube package](output/week-02/day-03-youtube-shorts-upload.zip) · [Facebook package](output/week-02/day-03-facebook-reels-upload.zip)
+- [QA](output/week-02/day-03/verification-report.md) · [SHA256](output/week-02/day-03/checksums.sha256) · [Sources](output/week-02/day-03/source/README.md)
+
 ## Dependency resolution
 
 Approved topic **Dependency resolution**, publication **2026-11-24**, proposed **19:00 Asia/Phnom_Penh** (12:00 UTC). Actual narrated candidate **37.033333 seconds**, native **1080×1920**, **60 FPS**, **H.264/AAC 48 kHz**, **Rec.709 SDR**,2222frames. No approved curriculum date or sequence was changed.

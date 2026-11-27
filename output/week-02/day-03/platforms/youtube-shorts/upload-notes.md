@@ -1,0 +1,1 @@
+Publication2026-11-25, proposed19:00Asia/Phnom_Penh. Manual approval and voice listening acceptance required. Select opening thumbnail frame where supported. Review current AI controls. No publishing performed.

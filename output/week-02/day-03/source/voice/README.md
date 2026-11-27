@@ -1,0 +1,5 @@
+# Local Kokoro voice
+
+Seven fresh coherent utterances, normal1.02,80%am_puck/20%am_fenrir,0.08s joins and2s recap hold before Thanks. Generated48kHz monoPCM24. Models are local and Apache2.0 per retained card; inference MIT. setup.sh, dependency lock, model/style hashes and ASR revision hashes permit reproduction. No word splicing, time stretching, pitch shifting or substitute TTS. ASR is unprompted small.en. Actual raw score is2edits/78words=2.5641%, only AuditPublisher→audit publisher compound spelling. align.py maps that observed span to known synthesis text solely for captions, preserving raw timing/score. No invented subword timing/evenly divided captions. Source utterance edges are sample-derived.
+
+Listening acceptance remains INCOMPLETE: supported auditory review is unavailable. Smoothness, pronunciation, humanlike rhythm and perceived age are not certified by ASR/G2P/signal measurements. Review actual narration and final mix before publication. Browser/phone playback also untested.

@@ -1,0 +1,8 @@
+YouTube channel monetization policies - YouTube Help
+https://support.google.com/youtube/answer/1311392?hl=en
+HTTP 200
+ResponseSHA256 15267ebb3ef44ea9640863a2ca8341650b0b5e3a127b56a319624fa019a7a4e8
+
+Exact excerpt (<=25words):
+We are also renaming this policy from “repetitious content” to “inauthentic content.” This type of content has always been ineligible for monetization under our existing
+
