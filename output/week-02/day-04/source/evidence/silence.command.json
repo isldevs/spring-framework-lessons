@@ -1,0 +1,1 @@
+["ffmpeg", "-hide_banner", "-i", "/workspace/spring-framework-lessons/output/week-02/day-04/video.mp4", "-af", "silencedetect=noise=-45dB:d=0.6", "-vn", "-f", "null", "-"]

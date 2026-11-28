@@ -1,0 +1,1 @@
+Run bash run.sh to verify two actual JUnit/Spring context tests. See ../README.md and src/ for minimal configurations and assertions. Java21 runtime, ECJ3.40/Java17target,Spring6.2.11,JUnit5.12.2/platform1.12.2. Negative refresh warning and real nested exception stack trace retained; source hashes match executed files.

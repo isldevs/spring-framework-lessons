@@ -1,0 +1,22 @@
+[
+  {
+    "time": 2.641875,
+    "purpose": "ServiceA requests B"
+  },
+  {
+    "time": 6.247917,
+    "purpose": "B requests A"
+  },
+  {
+    "time": 13.42,
+    "purpose": "cycle failure"
+  },
+  {
+    "time": 19.148333,
+    "purpose": "acyclic redesign"
+  },
+  {
+    "time": 25.636667,
+    "purpose": "test verification"
+  }
+]

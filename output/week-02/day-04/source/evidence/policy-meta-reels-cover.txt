@@ -1,0 +1,8 @@
+Creating Business Reels on Facebook and Instagram Lesson | Meta for Business
+https://business-auth.facebook.com/business/learn/lessons/what-are-fb-ig-reels
+HTTP 200
+ResponseSHA256 27c35ed4f799e50d0e54bafe81686a4ffaddb091a0b13fd56746f2159aae35b2
+
+Exact excerpt (<=25words):
+Here you can Preview your reel, Edit cover image, Add a caption , and include Hashtags , a Poll or a Prompt . You can
+

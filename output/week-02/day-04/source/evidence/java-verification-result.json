@@ -1,0 +1,23 @@
+{
+  "tests_found": 2,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "source_sha256": {
+    "src/test/java/lesson/circular/CircularTest.java": "19360d284639ee6478a10bc486666c87ae88bd87f45ae8964f6b5c0065f63456",
+    "src/main/java/lesson/circular/Configs.java": "eaf80a4bbaad82af6e2fa7e5dbc8af7172cd056810a833dfa4aa9c25d7d16a49"
+  },
+  "spring": "6.2.11",
+  "junit": "5.12.2",
+  "proof_lines": [
+    "acyclic context: started",
+    "managed references: same",
+    "orchestration result: A then B",
+    "constructor cycle: startup failed",
+    "outer exception: UnsatisfiedDependencyException",
+    "nested cause: BeanCurrentlyInCreationException"
+  ],
+  "runtime": "openjdk version \"21.0.13\" 2026-10-20\nOpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)\n",
+  "compile_exit": 0,
+  "junit_exit": 0,
+  "warnings": "Expected negative refresh warnings retained in stderr"
+}

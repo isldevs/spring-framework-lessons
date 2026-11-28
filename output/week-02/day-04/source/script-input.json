@@ -1,0 +1,14 @@
+{
+  "topic": "Circular dependencies",
+  "publication_date": "2026-11-26",
+  "time": "19:00 Asia/Phnom_Penh (proposed)",
+  "phrases": [
+    "These two services can't finish starting.",
+    "Spring starts Service A, whose constructor needs Service B.",
+    "But Service B needs Service A first. The arguments must exist before construction. Neither constructor can finish.",
+    "Startup fails with a bean currently in creation exception. This is a constructor cycle.",
+    "Refactor the collaboration. An orchestration service calls A and B; they no longer depend on each other.",
+    "Our tests confirm failure before, and successful startup after. Other circular references behave differently. Redesign the dependency graph.",
+    "Thanks for watching."
+  ]
+}

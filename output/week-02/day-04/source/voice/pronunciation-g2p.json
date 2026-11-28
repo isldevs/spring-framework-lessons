@@ -1,0 +1,53 @@
+{
+  "word_distinctions": {
+    "Service A": "sˈɜːvɪs ˈeɪ",
+    "Service B": "sˈɜːvɪs bˈiː",
+    "orchestration": "ˌɔːɹkᵻstɹˈeɪʃən",
+    "constructor": "kənstɹˈʌktɚ",
+    "Thanks for watching.": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ."
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "These two services can't finish starting.",
+      "phonemes": "ðiːz tˈuː sˈɜːvɪsᵻz kˈænt fˈɪnɪʃ stˈɑːɹɾɪŋ.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 2,
+      "text": "Spring starts Service A, whose constructor needs Service B.",
+      "phonemes": "spɹˈɪŋ stˈɑːɹts sˈɜːvɪs ˈeɪ, hˌuːz kənstɹˈʌktɚ nˈiːdz sˈɜːvɪs bˈiː.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 3,
+      "text": "But Service B needs Service A first. The arguments must exist before construction. Neither constructor can finish.",
+      "phonemes": "bˌʌt sˈɜːvɪs bˈiː nˈiːdz sˈɜːvɪs ɐ fˈɜːst. ðɪ ˈɑːɹɡjuːmənts mˈʌst ɛɡzˈɪst bᵻfˌɔːɹ kənstɹˈʌkʃən. nˈiːðɚ kənstɹˈʌktɚ kæn fˈɪnɪʃ.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 4,
+      "text": "Startup fails with a bean currently in creation exception. This is a constructor cycle.",
+      "phonemes": "stˈɑːɹɾʌp fˈeɪlz wɪð ɐ bˈiːn kˈɜːɹəntli ɪn kɹiːˈeɪʃən ɛksˈɛpʃən. ðɪs ɪz ɐ kənstɹˈʌktɚ sˈaɪkəl.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 5,
+      "text": "Refactor the collaboration. An orchestration service calls A and B; they no longer depend on each other.",
+      "phonemes": "ɹᵻfˈæktɚ ðə kəlˌæbɚɹˈeɪʃən. ɐn ˌɔːɹkᵻstɹˈeɪʃən sˈɜːvɪs kˈɔːlz ɐ ænd bˈiː; ðeɪ nˌoʊ lˈɑːŋɡɚ dᵻpˈɛnd ˌɔn ˈiːtʃ ˈʌðɚ.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 6,
+      "text": "Our tests confirm failure before, and successful startup after. Other circular references behave differently. Redesign the dependency graph.",
+      "phonemes": "ˌaʊɚ tˈɛsts kənfˈɜːm fˈeɪlɪɹ bᵻfˈɔːɹ, ænd səksˈɛsfəl stˈɑːɹɾʌp ˈæftɚ. ˈʌðɚ sˈɜːkjʊlɚ ɹˈɛfɹənsᵻz bᵻhˈeɪv dˈɪfɹəntli. ɹˌiːdɪzˈaɪn ðə dᵻpˈɛndənsi ɡɹˈæf.",
+      "inference_batches": 1
+    },
+    {
+      "scene": 7,
+      "text": "Thanks for watching.",
+      "phonemes": "θˈæŋks fɔːɹ wˈɑːtʃɪŋ.",
+      "inference_batches": 1
+    }
+  ]
+}

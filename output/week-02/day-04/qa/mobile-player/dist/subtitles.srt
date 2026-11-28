@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:02,062
+These two services can't finish starting.
+
+2
+00:00:02,142 --> 00:00:03,680
+Spring starts Service A,
+
+3
+00:00:03,680 --> 00:00:05,668
+whose constructor needs Service B.
+
+4
+00:00:05,748 --> 00:00:08,100
+But Service B needs Service A first.
+
+5
+00:00:08,100 --> 00:00:10,820
+The arguments must exist before construction.
+
+6
+00:00:10,820 --> 00:00:12,840
+Neither constructor can finish.
+
+7
+00:00:12,920 --> 00:00:14,340
+Startup fails with a bean
+
+8
+00:00:14,340 --> 00:00:16,680
+currently in creation exception.
+
+9
+00:00:16,680 --> 00:00:18,568
+This is a constructor cycle.
+
+10
+00:00:18,648 --> 00:00:20,380
+Refactor the collaboration.
+
+11
+00:00:20,380 --> 00:00:22,960
+An orchestration service calls A and B;
+
+12
+00:00:22,960 --> 00:00:25,057
+they no longer depend on each other.
+
+13
+00:00:25,137 --> 00:00:27,020
+Our tests confirm failure before,
+
+14
+00:00:27,020 --> 00:00:28,880
+and successful startup after.
+
+15
+00:00:28,880 --> 00:00:32,000
+Other circular references behave differently.
+
+16
+00:00:32,000 --> 00:00:34,350
+Redesign the dependency graph.
+
+17
+00:00:36,350 --> 00:00:37,441
+Thanks for watching.
+

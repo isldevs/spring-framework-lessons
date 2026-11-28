@@ -1,0 +1,758 @@
+{
+  "font": "Inter",
+  "weight": 700,
+  "size": 52,
+  "center": [
+    540,
+    1380
+  ],
+  "background_alpha": 209,
+  "corner_radius": 12,
+  "padding": [
+    26,
+    14
+  ],
+  "max_width": 840,
+  "layouts": [
+    {
+      "text_lines": [
+        "These two services",
+        "can't finish starting."
+      ],
+      "text_bounds": [
+        [
+          306,
+          1330,
+          773,
+          1370
+        ],
+        [
+          302,
+          1380,
+          779,
+          1430
+        ]
+      ],
+      "rect": [
+        276,
+        1316,
+        805,
+        1444
+      ],
+      "origins": [
+        [
+          306,
+          1318
+        ],
+        [
+          302,
+          1368
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Spring starts Service A,"
+      ],
+      "text_bounds": [
+        [
+          256,
+          1355,
+          823,
+          1405
+        ]
+      ],
+      "rect": [
+        230,
+        1341,
+        849,
+        1419
+      ],
+      "origins": [
+        [
+          256,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "whose constructor needs",
+        "Service B."
+      ],
+      "text_bounds": [
+        [
+          234,
+          1335,
+          846,
+          1375
+        ],
+        [
+          420,
+          1385,
+          660,
+          1425
+        ]
+      ],
+      "rect": [
+        208,
+        1321,
+        872,
+        1439
+      ],
+      "origins": [
+        [
+          234,
+          1323
+        ],
+        [
+          420,
+          1373
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "But Service B needs Service A",
+        "first."
+      ],
+      "text_bounds": [
+        [
+          178,
+          1335,
+          901,
+          1375
+        ],
+        [
+          484,
+          1385,
+          595,
+          1425
+        ]
+      ],
+      "rect": [
+        152,
+        1321,
+        927,
+        1439
+      ],
+      "origins": [
+        [
+          178,
+          1323
+        ],
+        [
+          484,
+          1373
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "The arguments must exist",
+        "before construction."
+      ],
+      "text_bounds": [
+        [
+          228,
+          1330,
+          853,
+          1380
+        ],
+        [
+          296,
+          1390,
+          785,
+          1430
+        ]
+      ],
+      "rect": [
+        202,
+        1316,
+        879,
+        1444
+      ],
+      "origins": [
+        [
+          228,
+          1318
+        ],
+        [
+          296,
+          1378
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Neither constructor can finish."
+      ],
+      "text_bounds": [
+        [
+          176,
+          1360,
+          905,
+          1400
+        ]
+      ],
+      "rect": [
+        150,
+        1346,
+        931,
+        1414
+      ],
+      "origins": [
+        [
+          176,
+          1348
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Startup fails with a bean"
+      ],
+      "text_bounds": [
+        [
+          249,
+          1355,
+          831,
+          1405
+        ]
+      ],
+      "rect": [
+        223,
+        1341,
+        857,
+        1419
+      ],
+      "origins": [
+        [
+          249,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "currently in creation exception."
+      ],
+      "text_bounds": [
+        [
+          168,
+          1355,
+          911,
+          1405
+        ]
+      ],
+      "rect": [
+        142,
+        1341,
+        937,
+        1419
+      ],
+      "origins": [
+        [
+          168,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "This is a constructor cycle."
+      ],
+      "text_bounds": [
+        [
+          220,
+          1355,
+          859,
+          1405
+        ]
+      ],
+      "rect": [
+        194,
+        1341,
+        885,
+        1419
+      ],
+      "origins": [
+        [
+          220,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Refactor the collaboration."
+      ],
+      "text_bounds": [
+        [
+          222,
+          1360,
+          857,
+          1400
+        ]
+      ],
+      "rect": [
+        196,
+        1346,
+        883,
+        1414
+      ],
+      "origins": [
+        [
+          222,
+          1348
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "An orchestration service calls A",
+        "and B;"
+      ],
+      "text_bounds": [
+        [
+          159,
+          1332,
+          921,
+          1372
+        ],
+        [
+          466,
+          1382,
+          614,
+          1429
+        ]
+      ],
+      "rect": [
+        133,
+        1318,
+        947,
+        1443
+      ],
+      "origins": [
+        [
+          159,
+          1320
+        ],
+        [
+          466,
+          1370
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "they no longer depend on each",
+        "other."
+      ],
+      "text_bounds": [
+        [
+          172,
+          1330,
+          908,
+          1380
+        ],
+        [
+          471,
+          1390,
+          609,
+          1430
+        ]
+      ],
+      "rect": [
+        146,
+        1316,
+        934,
+        1444
+      ],
+      "origins": [
+        [
+          172,
+          1318
+        ],
+        [
+          471,
+          1378
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Our tests confirm failure before,"
+      ],
+      "text_bounds": [
+        [
+          158,
+          1356,
+          922,
+          1403
+        ]
+      ],
+      "rect": [
+        132,
+        1342,
+        948,
+        1417
+      ],
+      "origins": [
+        [
+          158,
+          1344
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "and successful startup after."
+      ],
+      "text_bounds": [
+        [
+          198,
+          1355,
+          883,
+          1405
+        ]
+      ],
+      "rect": [
+        172,
+        1341,
+        909,
+        1419
+      ],
+      "origins": [
+        [
+          198,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Other circular references behave",
+        "differently."
+      ],
+      "text_bounds": [
+        [
+          146,
+          1330,
+          933,
+          1370
+        ],
+        [
+          412,
+          1380,
+          669,
+          1430
+        ]
+      ],
+      "rect": [
+        120,
+        1316,
+        959,
+        1444
+      ],
+      "origins": [
+        [
+          146,
+          1318
+        ],
+        [
+          412,
+          1368
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Redesign the dependency graph."
+      ],
+      "text_bounds": [
+        [
+          146,
+          1355,
+          933,
+          1405
+        ]
+      ],
+      "rect": [
+        120,
+        1341,
+        959,
+        1419
+      ],
+      "origins": [
+        [
+          146,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    },
+    {
+      "text_lines": [
+        "Thanks for watching."
+      ],
+      "text_bounds": [
+        [
+          288,
+          1355,
+          793,
+          1405
+        ]
+      ],
+      "rect": [
+        262,
+        1341,
+        819,
+        1419
+      ],
+      "origins": [
+        [
+          288,
+          1343
+        ]
+      ],
+      "font_size": 52,
+      "weight": 700,
+      "opacity": 0.82,
+      "alpha": 209,
+      "padding": [
+        26,
+        14
+      ],
+      "corner_radius": 12,
+      "max_width": 840,
+      "center": [
+        540,
+        1380
+      ]
+    }
+  ]
+}

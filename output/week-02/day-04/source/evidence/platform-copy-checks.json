@@ -1,0 +1,14 @@
+[
+  {
+    "platform": "youtube-shorts",
+    "probe_pass": true,
+    "full_decode_pass": true,
+    "master_hash_equal": true
+  },
+  {
+    "platform": "facebook-reels",
+    "probe_pass": true,
+    "full_decode_pass": true,
+    "master_hash_equal": true
+  }
+]

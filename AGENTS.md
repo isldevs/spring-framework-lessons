@@ -48,3 +48,5 @@ This is the user's mandatory delivery format. A link-only or shortened handoff i
 6. Keep status truthful: completed rendering/packaging or automated checks do not establish perceptual listening acceptance. Disclose outstanding requirements without inventing results.
 
 Approved additional Week02 slot: **Optional dependencies**, Wednesday **2026-11-25**, proposed19:00Asia/Phnom_Penh. Deliver under output/week-02/day-03. Demonstrate required-absent failure, Optional absent/present outcomes, ambiguity caveat and never optionalize critical security to hide failure. Preserve newest style/hand-off/manual-publication rules.
+
+Approved additional Week02 slot: **Circular dependencies**, Thursday **2026-11-26**, proposed19:00Asia/Phnom_Penh,output/week-02/day-04. Reproduce constructor-cycle failure/nested cause and verify acyclic orchestration; distinguish other references and never imply @Lazy/allow-cycles is a universal production fix.

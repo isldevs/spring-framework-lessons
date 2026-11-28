@@ -1,0 +1,1 @@
+["ffprobe", "-v", "error", "-count_frames", "-show_streams", "-show_format", "-of", "json", "/workspace/spring-framework-lessons/output/week-02/day-04/video.mp4"]

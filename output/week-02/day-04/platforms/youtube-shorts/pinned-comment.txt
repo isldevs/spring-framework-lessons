@@ -1,0 +1,1 @@
+Our constructor cycle fails even with circular references enabled. Moving collaboration into an Orchestrator removes the A-to-B-to-A dependency loop. Other circular-reference cases differ, so treat this as a design lesson rather than a universal @Lazy or configuration fix.

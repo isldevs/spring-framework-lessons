@@ -1,0 +1,630 @@
+{
+  "model": "faster-whisper small.en int8",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.9,
+      "text": " These two services can't finish starting.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " These",
+          "start": 0.0,
+          "end": 0.16,
+          "probability": 0.7641371488571167
+        },
+        {
+          "word": " two",
+          "start": 0.16,
+          "end": 0.36,
+          "probability": 0.9788580536842346
+        },
+        {
+          "word": " services",
+          "start": 0.36,
+          "end": 0.72,
+          "probability": 0.9939777851104736
+        },
+        {
+          "word": " can't",
+          "start": 0.72,
+          "end": 1.16,
+          "probability": 0.9863081574440002
+        },
+        {
+          "word": " finish",
+          "start": 1.16,
+          "end": 1.36,
+          "probability": 0.9955820441246033
+        },
+        {
+          "word": " starting.",
+          "start": 1.36,
+          "end": 1.9,
+          "probability": 0.9803614616394043
+        }
+      ]
+    },
+    {
+      "start": 2.4,
+      "end": 5.34,
+      "text": " Spring starts service A, whose constructor needs service B.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " Spring",
+          "start": 2.4,
+          "end": 2.44,
+          "probability": 0.8560644388198853
+        },
+        {
+          "word": " starts",
+          "start": 2.44,
+          "end": 2.7,
+          "probability": 0.8188785910606384
+        },
+        {
+          "word": " service",
+          "start": 2.7,
+          "end": 3.08,
+          "probability": 0.5084324479103088
+        },
+        {
+          "word": " A,",
+          "start": 3.08,
+          "end": 3.42,
+          "probability": 0.9611572027206421
+        },
+        {
+          "word": " whose",
+          "start": 3.68,
+          "end": 3.8,
+          "probability": 0.941067099571228
+        },
+        {
+          "word": " constructor",
+          "start": 3.8,
+          "end": 4.24,
+          "probability": 0.9768535494804382
+        },
+        {
+          "word": " needs",
+          "start": 4.24,
+          "end": 4.6,
+          "probability": 0.9869307279586792
+        },
+        {
+          "word": " service",
+          "start": 4.6,
+          "end": 4.98,
+          "probability": 0.9780970215797424
+        },
+        {
+          "word": " B.",
+          "start": 4.98,
+          "end": 5.34,
+          "probability": 0.9947351217269897
+        }
+      ]
+    },
+    {
+      "start": 5.8,
+      "end": 7.74,
+      "text": " But service B needs service a first.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " But",
+          "start": 5.8,
+          "end": 5.86,
+          "probability": 0.958442747592926
+        },
+        {
+          "word": " service",
+          "start": 5.86,
+          "end": 6.24,
+          "probability": 0.9577702879905701
+        },
+        {
+          "word": " B",
+          "start": 6.24,
+          "end": 6.52,
+          "probability": 0.9942177534103394
+        },
+        {
+          "word": " needs",
+          "start": 6.52,
+          "end": 6.82,
+          "probability": 0.9876960515975952
+        },
+        {
+          "word": " service",
+          "start": 6.82,
+          "end": 7.26,
+          "probability": 0.9862318634986877
+        },
+        {
+          "word": " a",
+          "start": 7.26,
+          "end": 7.42,
+          "probability": 0.4414156377315521
+        },
+        {
+          "word": " first.",
+          "start": 7.42,
+          "end": 7.74,
+          "probability": 0.923477053642273
+        }
+      ]
+    },
+    {
+      "start": 8.1,
+      "end": 10.22,
+      "text": " The arguments must exist before construction.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " The",
+          "start": 8.1,
+          "end": 8.12,
+          "probability": 0.9923998713493347
+        },
+        {
+          "word": " arguments",
+          "start": 8.12,
+          "end": 8.52,
+          "probability": 0.9883506298065186
+        },
+        {
+          "word": " must",
+          "start": 8.52,
+          "end": 8.86,
+          "probability": 0.9987768530845642
+        },
+        {
+          "word": " exist",
+          "start": 8.86,
+          "end": 9.3,
+          "probability": 0.9974263310432434
+        },
+        {
+          "word": " before",
+          "start": 9.3,
+          "end": 9.66,
+          "probability": 0.9979092478752136
+        },
+        {
+          "word": " construction.",
+          "start": 9.66,
+          "end": 10.22,
+          "probability": 0.9966344237327576
+        }
+      ]
+    },
+    {
+      "start": 10.82,
+      "end": 12.26,
+      "text": " Neither constructor can finish.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " Neither",
+          "start": 10.82,
+          "end": 10.94,
+          "probability": 0.9961456060409546
+        },
+        {
+          "word": " constructor",
+          "start": 10.94,
+          "end": 11.5,
+          "probability": 0.9978939890861511
+        },
+        {
+          "word": " can",
+          "start": 11.5,
+          "end": 11.84,
+          "probability": 0.9980064034461975
+        },
+        {
+          "word": " finish.",
+          "start": 11.84,
+          "end": 12.26,
+          "probability": 0.9995313882827759
+        }
+      ]
+    },
+    {
+      "start": 13.24,
+      "end": 16.04,
+      "text": " Startup fails with a bean currently in creation exception.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " Startup",
+          "start": 13.24,
+          "end": 13.24,
+          "probability": 0.713005542755127
+        },
+        {
+          "word": " fails",
+          "start": 13.24,
+          "end": 13.66,
+          "probability": 0.9959949254989624
+        },
+        {
+          "word": " with",
+          "start": 13.66,
+          "end": 13.98,
+          "probability": 0.9840465188026428
+        },
+        {
+          "word": " a",
+          "start": 13.98,
+          "end": 14.14,
+          "probability": 0.9784253239631653
+        },
+        {
+          "word": " bean",
+          "start": 14.14,
+          "end": 14.34,
+          "probability": 0.2707471549510956
+        },
+        {
+          "word": " currently",
+          "start": 14.34,
+          "end": 14.88,
+          "probability": 0.9896348118782043
+        },
+        {
+          "word": " in",
+          "start": 14.88,
+          "end": 15.16,
+          "probability": 0.9944829344749451
+        },
+        {
+          "word": " creation",
+          "start": 15.16,
+          "end": 15.64,
+          "probability": 0.9480828642845154
+        },
+        {
+          "word": " exception.",
+          "start": 15.64,
+          "end": 16.04,
+          "probability": 0.9888947010040283
+        }
+      ]
+    },
+    {
+      "start": 16.68,
+      "end": 18.18,
+      "text": " This is a constructor cycle.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " This",
+          "start": 16.68,
+          "end": 16.8,
+          "probability": 0.9963713884353638
+        },
+        {
+          "word": " is",
+          "start": 16.8,
+          "end": 17.04,
+          "probability": 0.999219536781311
+        },
+        {
+          "word": " a",
+          "start": 17.04,
+          "end": 17.22,
+          "probability": 0.9987891316413879
+        },
+        {
+          "word": " constructor",
+          "start": 17.22,
+          "end": 17.66,
+          "probability": 0.9971274733543396
+        },
+        {
+          "word": " cycle.",
+          "start": 17.66,
+          "end": 18.18,
+          "probability": 0.9988945126533508
+        }
+      ]
+    },
+    {
+      "start": 18.8,
+      "end": 19.86,
+      "text": " Refactor the collaboration.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " Refactor",
+          "start": 18.8,
+          "end": 19.08,
+          "probability": 0.8579767346382141
+        },
+        {
+          "word": " the",
+          "start": 19.08,
+          "end": 19.28,
+          "probability": 0.9875857830047607
+        },
+        {
+          "word": " collaboration.",
+          "start": 19.28,
+          "end": 19.86,
+          "probability": 0.9967681169509888
+        }
+      ]
+    },
+    {
+      "start": 20.38,
+      "end": 22.74,
+      "text": " An orchestration service calls A and B.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " An",
+          "start": 20.38,
+          "end": 20.46,
+          "probability": 0.9604636430740356
+        },
+        {
+          "word": " orchestration",
+          "start": 20.46,
+          "end": 21.12,
+          "probability": 0.9639114141464233
+        },
+        {
+          "word": " service",
+          "start": 21.12,
+          "end": 21.58,
+          "probability": 0.9970382452011108
+        },
+        {
+          "word": " calls",
+          "start": 21.58,
+          "end": 21.96,
+          "probability": 0.9875437021255493
+        },
+        {
+          "word": " A",
+          "start": 21.96,
+          "end": 22.32,
+          "probability": 0.8110194802284241
+        },
+        {
+          "word": " and",
+          "start": 22.32,
+          "end": 22.46,
+          "probability": 0.9918700456619263
+        },
+        {
+          "word": " B.",
+          "start": 22.46,
+          "end": 22.74,
+          "probability": 0.9993842840194702
+        }
+      ]
+    },
+    {
+      "start": 22.96,
+      "end": 24.58,
+      "text": " They no longer depend on each other.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " They",
+          "start": 22.96,
+          "end": 23.06,
+          "probability": 0.995484471321106
+        },
+        {
+          "word": " no",
+          "start": 23.06,
+          "end": 23.28,
+          "probability": 0.9975277781486511
+        },
+        {
+          "word": " longer",
+          "start": 23.28,
+          "end": 23.58,
+          "probability": 0.9996156692504883
+        },
+        {
+          "word": " depend",
+          "start": 23.58,
+          "end": 23.92,
+          "probability": 0.9984210729598999
+        },
+        {
+          "word": " on",
+          "start": 23.92,
+          "end": 24.1,
+          "probability": 0.9994545578956604
+        },
+        {
+          "word": " each",
+          "start": 24.1,
+          "end": 24.28,
+          "probability": 0.9996185302734375
+        },
+        {
+          "word": " other.",
+          "start": 24.28,
+          "end": 24.58,
+          "probability": 0.9989905953407288
+        }
+      ]
+    },
+    {
+      "start": 25.14,
+      "end": 27.02,
+      "text": " Our tests confirm failure before",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " Our",
+          "start": 25.14,
+          "end": 25.26,
+          "probability": 0.9102492928504944
+        },
+        {
+          "word": " tests",
+          "start": 25.26,
+          "end": 25.56,
+          "probability": 0.9852155447006226
+        },
+        {
+          "word": " confirm",
+          "start": 25.56,
+          "end": 26.04,
+          "probability": 0.96584552526474
+        },
+        {
+          "word": " failure",
+          "start": 26.04,
+          "end": 26.56,
+          "probability": 0.996292769908905
+        },
+        {
+          "word": " before",
+          "start": 26.56,
+          "end": 27.02,
+          "probability": 0.9965636134147644
+        }
+      ]
+    },
+    {
+      "start": 27.02,
+      "end": 28.88,
+      "text": " and successful startup after.",
+      "avg_logprob": -0.11738645502951293,
+      "words": [
+        {
+          "word": " and",
+          "start": 27.02,
+          "end": 27.32,
+          "probability": 0.9238628149032593
+        },
+        {
+          "word": " successful",
+          "start": 27.32,
+          "end": 27.72,
+          "probability": 0.9912915825843811
+        },
+        {
+          "word": " startup",
+          "start": 27.72,
+          "end": 28.36,
+          "probability": 0.9197230339050293
+        },
+        {
+          "word": " after.",
+          "start": 28.36,
+          "end": 28.88,
+          "probability": 0.990152895450592
+        }
+      ]
+    },
+    {
+      "start": 28.88,
+      "end": 31.5,
+      "text": " Other circular references behave differently.",
+      "avg_logprob": -0.393894262611866,
+      "words": [
+        {
+          "word": " Other",
+          "start": 28.88,
+          "end": 29.42,
+          "probability": 0.40012288093566895
+        },
+        {
+          "word": " circular",
+          "start": 29.42,
+          "end": 29.86,
+          "probability": 0.985885739326477
+        },
+        {
+          "word": " references",
+          "start": 29.86,
+          "end": 30.48,
+          "probability": 0.9949946403503418
+        },
+        {
+          "word": " behave",
+          "start": 30.48,
+          "end": 30.94,
+          "probability": 0.9924176931381226
+        },
+        {
+          "word": " differently.",
+          "start": 30.94,
+          "end": 31.5,
+          "probability": 0.9960755705833435
+        }
+      ]
+    },
+    {
+      "start": 32.0,
+      "end": 33.7,
+      "text": " Redesign the dependency graph.",
+      "avg_logprob": -0.393894262611866,
+      "words": [
+        {
+          "word": " Redesign",
+          "start": 32.0,
+          "end": 32.54,
+          "probability": 0.9424163699150085
+        },
+        {
+          "word": " the",
+          "start": 32.54,
+          "end": 32.74,
+          "probability": 0.9943365454673767
+        },
+        {
+          "word": " dependency",
+          "start": 32.74,
+          "end": 33.18,
+          "probability": 0.8969869017601013
+        },
+        {
+          "word": " graph.",
+          "start": 33.18,
+          "end": 33.7,
+          "probability": 0.9949783682823181
+        }
+      ]
+    },
+    {
+      "start": 36.339999999999996,
+      "end": 37.12,
+      "text": " Thanks for watching.",
+      "avg_logprob": -0.393894262611866,
+      "words": [
+        {
+          "word": " Thanks",
+          "start": 36.0,
+          "end": 36.52,
+          "probability": 0.97891765832901
+        },
+        {
+          "word": " for",
+          "start": 36.52,
+          "end": 36.68,
+          "probability": 0.998927652835846
+        },
+        {
+          "word": " watching.",
+          "start": 36.68,
+          "end": 37.12,
+          "probability": 0.9983127117156982
+        }
+      ]
+    }
+  ]
+}

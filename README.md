@@ -2,6 +2,17 @@
 
 Generated educational videos, reproducible Java examples, animation sources and platform upload packages for iSLDevs.
 
+## Circular dependencies
+
+Approved topic **Circular dependencies**, publication **2026-11-26**, proposed **19:00 Asia/Phnom_Penh**. Actual narrated candidate **37.700000s**,native1080×1920,60FPS,H.264/AAC48kHz,Rec.709SDR,2262frames. Two real Spring6.2.11/JUnit tests pass: mutual constructor dependencies fail with nested BeanCurrentlyInCreationException even when circular references are enabled; independent A/B plus Orchestrator start and return A then B with exact managed references. Other circular references differ. **Production remains incomplete for actual listening acceptance**; no browser/phone playback approval. No social publication or new live-player deployment.
+
+- [MP4](output/week-02/day-04/video.mp4) · [Complete ZIP](output/week-02/day-04-production.zip)
+- [Cover](output/week-02/day-04/cover.png) · [Actual first frame](output/week-02/day-04/first-frame.png) · [SRT](output/week-02/day-04/subtitles.srt)
+- [Narration](output/week-02/day-04/narration.wav) · [Script](output/week-02/day-04/narration-script.md) · [Storyboard](output/week-02/day-04/storyboard.md)
+- [YouTube metadata](output/week-02/day-04/youtube-metadata.md) · [Facebook metadata](output/week-02/day-04/facebook-metadata.md)
+- [YouTube package](output/week-02/day-04-youtube-shorts-upload.zip) · [Facebook package](output/week-02/day-04-facebook-reels-upload.zip)
+- [QA](output/week-02/day-04/verification-report.md) · [SHA256](output/week-02/day-04/checksums.sha256) · [Sources](output/week-02/day-04/source/README.md)
+
 ## Optional dependencies
 
 Approved topic **Optional dependencies**, publication **2026-11-25**, proposed **19:00 Asia/Phnom_Penh**. Actual **36.183333s**,1080×1920,60FPS,H.264/AAC48kHz,Rec.709SDR. Four real Spring6.2.11/JUnit tests pass: required absent fails; Optional absent starts empty; Optional present starts with the same managed reference; ambiguity still fails. Full decode/black/cover/source/frame timestamp checks passed. Complete recap holds two seconds before Thanks. **Production remains incomplete for auditory voice acceptance**; no listening/browser/physical-phone approval is claimed. No social publication or new live-player deployment.

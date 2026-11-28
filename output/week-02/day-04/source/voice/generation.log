@@ -1,0 +1,186 @@
+synth 0 These two services can't finish starting. speed 1.02
+single scene batch; phonemes 43
+duration 2.061875 total 2.141875 phoneme timings 0
+synth 1 Spring starts Service A, whose constructor needs Service B. speed 1.02
+single scene batch; phonemes 67
+duration 3.5260416666666665 total 5.747916666666667 phoneme timings 0
+synth 2 But Service B needs Service A first. The arguments must exist before construction. Neither constructor can finish. speed 1.02
+single scene batch; phonemes 126
+duration 7.092083333333333 total 12.92 phoneme timings 0
+synth 3 Startup fails with a bean currently in creation exception. This is a constructor cycle. speed 1.02
+single scene batch; phonemes 94
+duration 5.648333333333333 total 18.648333333333333 phoneme timings 0
+synth 4 Refactor the collaboration. An orchestration service calls A and B; they no longer depend on each other. speed 1.02
+single scene batch; phonemes 114
+duration 6.408333333333333 total 25.136666666666667 phoneme timings 0
+synth 5 Our tests confirm failure before, and successful startup after. Other circular references behave differently. Redesign the dependency graph. speed 1.02
+single scene batch; phonemes 149
+duration 9.213541666666666 total 36.350208333333335 phoneme timings 0
+synth 6 Thanks for watching. speed 1.02
+single scene batch; phonemes 21
+duration 1.09075 total 37.690958333333334 phoneme timings 0
+{
+  "sample_rate": 48000,
+  "voice": "am_puck80_fenrir20",
+  "voice_blend": {
+    "am_puck": 0.8,
+    "am_fenrir": 0.2
+  },
+  "delivery_target": "Younger to middle adult male; smooth, connected explanation. No pitch shifting. Perceived age and naturalness require listening acceptance.",
+  "speed": 1.02,
+  "hook_speed": 1.02,
+  "inference_speed_per_scene": {
+    "1": 1.02,
+    "2": 1.02,
+    "3": 1.02,
+    "4": 1.02,
+    "5": 1.02,
+    "6": 1.02,
+    "7": 1.02
+  },
+  "one_inference_batch_per_scene": true,
+  "regenerated_scene_only": 3,
+  "regenerated_scenes": [
+    3
+  ],
+  "reused_scene_segments": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7
+  ],
+  "recap_hold_seconds": 2.0,
+  "recap_hold_start": 34.350208,
+  "recap_hold_end": 36.350208,
+  "thanks_start": 36.350208,
+  "thanks_end": 37.690958,
+  "duration": 37.690958333333334,
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.141875
+    },
+    {
+      "scene": 2,
+      "start": 2.141875,
+      "end": 5.747917
+    },
+    {
+      "scene": 3,
+      "start": 5.747917,
+      "end": 12.92
+    },
+    {
+      "scene": 4,
+      "start": 12.92,
+      "end": 18.648333
+    },
+    {
+      "scene": 5,
+      "start": 18.648333,
+      "end": 25.136667
+    },
+    {
+      "scene": 6,
+      "start": 25.136667,
+      "end": 36.350208
+    },
+    {
+      "scene": 7,
+      "start": 36.350208,
+      "end": 37.690958
+    }
+  ],
+  "phrases": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.061875,
+      "text": "These two services can't finish starting."
+    },
+    {
+      "scene": 2,
+      "start": 2.141875,
+      "end": 5.667917,
+      "text": "Spring starts Service A, whose constructor needs Service B."
+    },
+    {
+      "scene": 3,
+      "start": 5.747917,
+      "end": 12.84,
+      "text": "But Service B needs Service A first. The arguments must exist before construction. Neither constructor can finish."
+    },
+    {
+      "scene": 4,
+      "start": 12.92,
+      "end": 18.568333,
+      "text": "Startup fails with a bean currently in creation exception. This is a constructor cycle."
+    },
+    {
+      "scene": 5,
+      "start": 18.648333,
+      "end": 25.056667,
+      "text": "Refactor the collaboration. An orchestration service calls A and B; they no longer depend on each other."
+    },
+    {
+      "scene": 6,
+      "start": 25.136667,
+      "end": 34.350208,
+      "text": "Our tests confirm failure before, and successful startup after. Other circular references behave differently. Redesign the dependency graph."
+    },
+    {
+      "scene": 7,
+      "start": 36.350208,
+      "end": 37.440958,
+      "text": "Thanks for watching."
+    }
+  ],
+  "captions": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 2.061875,
+      "text": "These two services can't finish starting."
+    },
+    {
+      "scene": 2,
+      "start": 2.141875,
+      "end": 5.667917,
+      "text": "Spring starts Service A, whose constructor needs Service B."
+    },
+    {
+      "scene": 3,
+      "start": 5.747917,
+      "end": 12.84,
+      "text": "But Service B needs Service A first. The arguments must exist before construction. Neither constructor can finish."
+    },
+    {
+      "scene": 4,
+      "start": 12.92,
+      "end": 18.568333,
+      "text": "Startup fails with a bean currently in creation exception. This is a constructor cycle."
+    },
+    {
+      "scene": 5,
+      "start": 18.648333,
+      "end": 25.056667,
+      "text": "Refactor the collaboration. An orchestration service calls A and B; they no longer depend on each other."
+    },
+    {
+      "scene": 6,
+      "start": 25.136667,
+      "end": 34.350208,
+      "text": "Our tests confirm failure before, and successful startup after. Other circular references behave differently. Redesign the dependency graph."
+    },
+    {
+      "scene": 7,
+      "start": 36.350208,
+      "end": 37.440958,
+      "text": "Thanks for watching."
+    }
+  ],
+  "caption_method": "Scene utterance boundaries are exact synthesis edit points. Shorter display captions will use independent ASR word timing."
+}

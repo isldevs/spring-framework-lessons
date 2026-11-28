@@ -1,0 +1,160 @@
+[
+  {
+    "slug": "youtube-disclosure",
+    "requested_url": "https://support.google.com/youtube/answer/14328491?hl=en",
+    "retrieved_utc": "2026-11-28T03:52:01.147578+00:00",
+    "http_status": 200,
+    "final_url": "https://support.google.com/youtube/answer/14328491?hl=en",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "babc89dfe40e8df61f8c923f2f6648a28a2c8cedc822e4bcd01ed9b6aad40d08",
+    "response_bytes": 1644487,
+    "title": "Disclosing use of GenAI content - Android phone & tablet - YouTube Help",
+    "terms_found": [
+      {
+        "needle": "meaningfully altered",
+        "index": 4998
+      },
+      {
+        "needle": "realistic",
+        "index": 2485
+      },
+      {
+        "needle": "own voice",
+        "index": 4590
+      }
+    ],
+    "exact_excerpt": "to disclose content that is generated or meaningfully altered with AI when it appears realistic. Examples of content, edits, or video assistance that creators need",
+    "excerpt_word_count": 25
+  },
+  {
+    "slug": "youtube-monetization",
+    "requested_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "retrieved_utc": "2026-11-28T03:52:01.148197+00:00",
+    "http_status": 200,
+    "final_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "fc2637e58e0705c2113b6edd7dcc02c91f1817b9d62169acf630365f2eae47c4",
+    "response_bytes": 1659261,
+    "title": "YouTube channel monetization policies - YouTube Help",
+    "terms_found": [
+      {
+        "needle": "inauthentic",
+        "index": 2551
+      },
+      {
+        "needle": "mass-produced",
+        "index": 2472
+      },
+      {
+        "needle": "reused content",
+        "index": 2757
+      }
+    ],
+    "exact_excerpt": "We are also renaming this policy from “repetitious content” to “inauthentic content.” This type of content has always been ineligible for monetization under our existing",
+    "excerpt_word_count": 25
+  },
+  {
+    "slug": "youtube-shorts-thumbnail",
+    "requested_url": "https://support.google.com/youtube/answer/10343433?hl=en",
+    "retrieved_utc": "2026-11-28T03:52:01.148764+00:00",
+    "http_status": 200,
+    "final_url": "https://support.google.com/youtube/answer/10343433?hl=en",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "9dc0a0a043699ea7b590d6fd6ea63aede80a5b9cbc6e107719071d7798dd7502",
+    "response_bytes": 1653965,
+    "title": "Create YouTube Shorts - Android phone & tablet - YouTube Help",
+    "terms_found": [
+      {
+        "needle": "thumbnail",
+        "index": 6353
+      },
+      {
+        "needle": "frame",
+        "index": 6418
+      }
+    ],
+    "exact_excerpt": "Select a thumbnail How to CHOOSE your Shorts ✨Thumbnail✨ You can choose a frame from your Short to be used as the thumbnail before and",
+    "excerpt_word_count": 25
+  },
+  {
+    "slug": "meta-ai-label",
+    "requested_url": "https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/",
+    "retrieved_utc": "2026-11-28T03:52:01.149677+00:00",
+    "http_status": 200,
+    "final_url": "https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "4faced6dcea41f452ef3bc3ac316d7f57f71d75e0234ee47271c6cd224325a91",
+    "response_bytes": 349022,
+    "title": "How Meta Is Preparing for the 2026 US Midterm Elections Dismiss locale prompt",
+    "terms_found": [
+      {
+        "needle": "realistic-sounding",
+        "index": 7529
+      },
+      {
+        "needle": "disclose",
+        "index": 4985
+      },
+      {
+        "needle": "AI info",
+        "index": 7234
+      }
+    ],
+    "exact_excerpt": "We require people to use this disclosure and label tool when they post organic content with a photorealistic video or realistic-sounding audio that was digitally",
+    "excerpt_word_count": 25
+  },
+  {
+    "slug": "meta-originality",
+    "requested_url": "https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/",
+    "retrieved_utc": "2026-11-28T03:52:03.256578+00:00",
+    "http_status": 200,
+    "final_url": "https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/",
+    "content_type": "text/html; charset=UTF-8",
+    "response_sha256": "e480ecd4de1c9d3601892a8431eba2a033338930bf8913e93a164169021d80e6",
+    "response_bytes": 598461,
+    "title": "Rewarding Original Creators on Facebook Dismiss locale prompt",
+    "terms_found": [
+      {
+        "needle": "produced directly",
+        "index": 5164
+      },
+      {
+        "needle": "unoriginal",
+        "index": 3150
+      },
+      {
+        "needle": "monetization",
+        "index": 3115
+      }
+    ],
+    "exact_excerpt": "Here’s what this means in practice: Content filmed or produced directly by a creator or owner of a Profile or Page is considered original content",
+    "excerpt_word_count": 25
+  },
+  {
+    "slug": "meta-reels-cover",
+    "requested_url": "https://business-auth.facebook.com/business/learn/lessons/what-are-fb-ig-reels",
+    "retrieved_utc": "2026-11-28T03:52:03.302020+00:00",
+    "http_status": 200,
+    "final_url": "https://business-auth.facebook.com/business/learn/lessons/what-are-fb-ig-reels",
+    "content_type": "text/html; charset=\"utf-8\"",
+    "response_sha256": "27c35ed4f799e50d0e54bafe81686a4ffaddb091a0b13fd56746f2159aae35b2",
+    "response_bytes": 385731,
+    "title": "Creating Business Reels on Facebook and Instagram Lesson | Meta for Business",
+    "terms_found": [
+      {
+        "needle": "cover image",
+        "index": 4534
+      },
+      {
+        "needle": "Facebook",
+        "index": 27
+      },
+      {
+        "needle": "interface",
+        "index": 3823
+      }
+    ],
+    "exact_excerpt": "Here you can Preview your reel, Edit cover image, Add a caption , and include Hashtags , a Poll or a Prompt . You can",
+    "excerpt_word_count": 25
+  }
+]

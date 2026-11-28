@@ -1,0 +1,11 @@
+{
+  "voice_blend": {
+    "am_puck": 0.8,
+    "am_fenrir": 0.2
+  },
+  "speed": 1.02,
+  "narration_sha256": "946c8b0291c6cd03f722257add8b9a42acef7b4250ba0308042da4f43077b7ee",
+  "model_hashes_checked": true,
+  "actual_inference": "7 fresh scene batches; whole scene3 regenerated once",
+  "listening_acceptance": "UNVERIFIED"
+}

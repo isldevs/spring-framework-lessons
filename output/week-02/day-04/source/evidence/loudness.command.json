@@ -1,0 +1,1 @@
+["ffmpeg", "-hide_banner", "-i", "/workspace/spring-framework-lessons/output/week-02/day-04/video.mp4", "-af", "loudnorm=I=-16:TP=-1.5:print_format=json", "-f", "null", "-"]

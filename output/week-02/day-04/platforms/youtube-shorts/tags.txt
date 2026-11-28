@@ -1,0 +1,1 @@
+Spring Framework, circular dependencies, constructor injection, dependency injection, BeanCurrentlyInCreationException, UnsatisfiedDependencyException, orchestration service, acyclic dependencies, Spring startup, Java, JUnit, iSLDevs

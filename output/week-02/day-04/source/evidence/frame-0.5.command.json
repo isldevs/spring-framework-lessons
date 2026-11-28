@@ -1,0 +1,1 @@
+["ffmpeg", "-v", "error", "-y", "-ss", "0.5", "-i", "/workspace/spring-framework-lessons/output/week-02/day-04/video.mp4", "-frames:v", "1", "/workspace/spring-framework-lessons/output/week-02/day-04/qa/opening-0.5s.png"]

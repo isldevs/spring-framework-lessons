@@ -1,0 +1,64 @@
+{
+  "duration": 37.7,
+  "frames": 2262,
+  "fps": "60/1",
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "audio_sample_rate": "48000",
+  "color": "Rec.709 SDR",
+  "decode_pass": true,
+  "black_intervals": 0,
+  "fast_start": true,
+  "opening": [
+    {
+      "time": 0,
+      "mean_absolute_rgb_error": 1.3572014853395062
+    },
+    {
+      "time": 0.5,
+      "mean_absolute_rgb_error": 1.3494526427469136
+    },
+    {
+      "time": 1,
+      "mean_absolute_rgb_error": 1.3491796875
+    },
+    {
+      "time": 1.25,
+      "mean_absolute_rgb_error": 1.3293426890432098
+    },
+    {
+      "time": 1.5,
+      "mean_absolute_rgb_error": 1.2687445344650206
+    },
+    {
+      "time": 1.75,
+      "mean_absolute_rgb_error": 1.2849297518004115
+    },
+    {
+      "time": 2,
+      "mean_absolute_rgb_error": 1.203966049382716
+    }
+  ],
+  "source_cover_frame0_exact": true,
+  "headline_stable_61_samples": true,
+  "motion_begins": 0.016666666666666666,
+  "recap_source_frames_checked": 120,
+  "recap_hold_start": 34.350208,
+  "recap_hold_end": 36.350208,
+  "java_tests": 2,
+  "loudness": {
+    "input_i": "-15.90",
+    "input_tp": "-1.18",
+    "input_lra": "3.60",
+    "input_thresh": "-26.75",
+    "output_i": "-16.01",
+    "output_tp": "-1.50",
+    "output_lra": "3.90",
+    "output_thresh": "-26.68",
+    "normalization_type": "dynamic",
+    "target_offset": "0.01"
+  },
+  "sha256": "355c777fbd5b923956dd5c6cbb0176d5dcdf07e6fa26c43c0316a61fdc732555",
+  "listening_acceptance": "INCOMPLETE: unavailable auditory capability",
+  "browser_phone_playback": "UNTESTED"
+}

@@ -1,0 +1,12 @@
+{
+  "state": "prepared-unpublished",
+  "site_registered": false,
+  "live_url": null,
+  "master_sha256": "355c777fbd5b923956dd5c6cbb0176d5dcdf07e6fa26c43c0316a61fdc732555",
+  "copied_media_hash_equal": true,
+  "controls_inline_and_duration_checked": true,
+  "javascript_syntax_pass": true,
+  "browser_playback_tested": false,
+  "physical_phone_tested": false,
+  "manual_approval_required": true
+}

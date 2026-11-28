@@ -1,0 +1,11 @@
+A needs B. B needs A. Neither constructor can finish. ☕
+
+We reproduced the real Spring startup failure, including its nested BeanCurrentlyInCreationException. Then we moved coordination into an Orchestrator so A and B no longer depend on each other.
+
+Two actual tests verify the failure, successful refactored startup, managed-reference identity and A then B execution.
+
+This is a constructor cycle. Other circular references differ; @Lazy and circular-reference settings are not universal production fixes.
+
+Narration is AI-generated.
+
+#SpringFramework #DependencyInjection #CircularDependencies #Java #SpringBeans #JavaDevelopers #iSLDevs
